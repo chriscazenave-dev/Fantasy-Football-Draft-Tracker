@@ -13,14 +13,14 @@ const INITIAL_TEAMS = [
 ]
 
 const SAMPLE_PROSPECTS = [
-  { id: 1, name: 'Marcus Johnson', position: 'QB', college: 'Alabama' },
-  { id: 2, name: 'DeShawn Williams', position: 'RB', college: 'Ohio State' },
-  { id: 3, name: 'Tyler Smith', position: 'WR', college: 'LSU' },
-  { id: 4, name: 'Jordan Davis', position: 'TE', college: 'Georgia' },
-  { id: 5, name: 'Chris Thompson', position: 'WR', college: 'USC' },
-  { id: 6, name: 'Andre Mitchell', position: 'RB', college: 'Michigan' },
-  { id: 7, name: 'Brandon Lee', position: 'QB', college: 'Clemson' },
-  { id: 8, name: 'Malik Brown', position: 'WR', college: 'Texas' },
+  { id: 1, name: 'Marcus Johnson', position: 'QB', college: 'Alabama', collegeStats: { games: 39, completions: 812, attempts: 1198, passingYards: 10245, passingTDs: 87, interceptions: 14, rushingYards: 623, rushingTDs: 12 } },
+  { id: 2, name: 'DeShawn Williams', position: 'RB', college: 'Ohio State', collegeStats: { games: 36, carries: 642, rushingYards: 3876, rushingTDs: 42, receptions: 87, receivingYards: 714, receivingTDs: 6, fumbles: 4 } },
+  { id: 3, name: 'Tyler Smith', position: 'WR', college: 'LSU', collegeStats: { games: 38, receptions: 198, receivingYards: 3241, receivingTDs: 31, rushingYards: 145, rushingTDs: 2, yardsPerCatch: 16.4, drops: 7 } },
+  { id: 4, name: 'Jordan Davis', position: 'TE', college: 'Georgia', collegeStats: { games: 40, receptions: 142, receivingYards: 1876, receivingTDs: 19, blocksGraded: 88.4, yardsPerCatch: 13.2, drops: 5, rushingTDs: 1 } },
+  { id: 5, name: 'Chris Thompson', position: 'WR', college: 'USC', collegeStats: { games: 35, receptions: 176, receivingYards: 2854, receivingTDs: 26, rushingYards: 210, rushingTDs: 3, yardsPerCatch: 16.2, drops: 9 } },
+  { id: 6, name: 'Andre Mitchell', position: 'RB', college: 'Michigan', collegeStats: { games: 37, carries: 589, rushingYards: 3412, rushingTDs: 36, receptions: 64, receivingYards: 528, receivingTDs: 4, fumbles: 6 } },
+  { id: 7, name: 'Brandon Lee', position: 'QB', college: 'Clemson', collegeStats: { games: 34, completions: 724, attempts: 1105, passingYards: 9187, passingTDs: 72, interceptions: 18, rushingYards: 1241, rushingTDs: 19 } },
+  { id: 8, name: 'Malik Brown', position: 'WR', college: 'Texas', collegeStats: { games: 36, receptions: 164, receivingYards: 2678, receivingTDs: 22, rushingYards: 98, rushingTDs: 1, yardsPerCatch: 16.3, drops: 6 } },
 ]
 
 const NUM_ROUNDS = 3
@@ -44,9 +44,55 @@ function generateInitialPicks(teams, numRounds) {
   return picks
 }
 
+const STAT_LABELS = {
+  games: 'Games',
+  completions: 'Comp',
+  attempts: 'Att',
+  passingYards: 'Pass Yds',
+  passingTDs: 'Pass TD',
+  interceptions: 'INT',
+  rushingYards: 'Rush Yds',
+  rushingTDs: 'Rush TD',
+  carries: 'Carries',
+  receptions: 'Rec',
+  receivingYards: 'Rec Yds',
+  receivingTDs: 'Rec TD',
+  fumbles: 'Fumbles',
+  yardsPerCatch: 'Yds/Catch',
+  drops: 'Drops',
+  blocksGraded: 'Block Grade',
+}
+
+function CollegeStatsTooltip({ prospect, style }) {
+  if (!prospect?.collegeStats) return null
+  const stats = prospect.collegeStats
+  return (
+    <div
+      style={style}
+      className="fixed z-[100] w-64 bg-white rounded-xl border border-gray-200 shadow-2xl p-4 pointer-events-none"
+    >
+      <div className="flex items-center justify-between mb-3">
+        <span className="text-sm font-semibold text-gray-900">{prospect.name}</span>
+        <span className="text-xs px-2 py-0.5 rounded-md bg-gray-100 text-gray-600 border border-gray-200 font-medium">{prospect.position}</span>
+      </div>
+      <div className="text-xs text-gray-500 mb-3 font-medium">{prospect.college} &middot; College Stats</div>
+      <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+        {Object.entries(stats).map(([key, value]) => (
+          <div key={key} className="flex justify-between">
+            <span className="text-xs text-gray-400">{STAT_LABELS[key] || key}</span>
+            <span className="text-xs font-semibold text-gray-800">{typeof value === 'number' && !Number.isInteger(value) ? value.toFixed(1) : value.toLocaleString()}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 function App() {
   const [activeTab, setActiveTab] = useState('prospects')
   const [prospects, setProspects] = useState(SAMPLE_PROSPECTS)
+  const [hoveredProspect, setHoveredProspect] = useState(null)
+  const [tooltipPos, setTooltipPos] = useState({ top: 0, left: 0 })
   const [teams, setTeams] = useState(INITIAL_TEAMS)
   const [draftPicks, setDraftPicks] = useState(() => generateInitialPicks(INITIAL_TEAMS, NUM_ROUNDS))
   const [draftedPlayers, setDraftedPlayers] = useState({})
@@ -59,6 +105,19 @@ function App() {
   const [tradeFrom, setTradeFrom] = useState(null)
   const [tradeTo, setTradeTo] = useState(null)
   const [selectedPicks, setSelectedPicks] = useState([])
+
+  const handleProspectMouseEnter = (prospect, e) => {
+    const rect = e.currentTarget.getBoundingClientRect()
+    setTooltipPos({
+      top: rect.top - 8,
+      left: rect.right + 12,
+    })
+    setHoveredProspect(prospect)
+  }
+
+  const handleProspectMouseLeave = () => {
+    setHoveredProspect(null)
+  }
 
   const positions = ['All', ...new Set(prospects.map(p => p.position))]
 
@@ -343,6 +402,8 @@ function App() {
                         className={`group transition-colors duration-200 ${
                           isDrafted ? 'bg-gray-100/50' : 'hover:bg-white'
                         }`}
+                        onMouseEnter={(e) => handleProspectMouseEnter(prospect, e)}
+                        onMouseLeave={handleProspectMouseLeave}
                       >
                         <td className="px-6 py-4">
                           <span className={`font-medium ${isDrafted ? 'text-gray-400' : 'text-gray-900'}`}>
@@ -421,6 +482,12 @@ function App() {
                   })}
                 </tbody>
               </table>
+              {hoveredProspect && (
+                <CollegeStatsTooltip
+                  prospect={hoveredProspect}
+                  style={{ top: tooltipPos.top, left: tooltipPos.left, transform: 'translateY(-50%)' }}
+                />
+              )}
               {filteredProspects.length === 0 && (
                 <div className="text-center py-20">
                   <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 border border-gray-200">
@@ -486,7 +553,12 @@ function App() {
                       ) : (
                         <div className="space-y-3">
                           {roster.sort((a, b) => (a.pickNumber || 0) - (b.pickNumber || 0)).map(player => (
-                            <div key={player.id} className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors group">
+                            <div
+                              key={player.id}
+                              className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors group"
+                              onMouseEnter={(e) => handleProspectMouseEnter(player, e)}
+                              onMouseLeave={handleProspectMouseLeave}
+                            >
                               <span className="text-gray-400 text-xs font-mono w-5">#{player.pickNumber}</span>
                               <div className="flex-1 min-w-0">
                                 <div className="text-sm font-medium text-gray-900 truncate">{player.name}</div>
