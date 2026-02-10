@@ -1,96 +1,81 @@
-# Splitwise Clone
+# Fantasy Football Draft Tracker
 
-A simplified clone of Splitwise, a web application for splitting expenses with friends and groups.
+A polished web application for tracking fantasy football draft picks, managing team rosters, and facilitating trades with an Apple-style design.
 
 ## Features
 
-- User authentication (register, login, profile)
-- Create and manage groups
-- Add members to groups
-- Add expenses and split them among group members
-- Track balances and settlements
-- View expense history
+- Track draft picks in real-time
+- Manage multiple team rosters
+- View and filter prospect lists
+- Facilitate trades between teams
+- Upload prospect data (CSV/JSON)
+- Beautiful Apple-inspired UI with light theme
+- Responsive design with Tailwind CSS
 
 ## Tech Stack
 
-- **Backend**: Python with Flask
-- **Database**: SQLite (can be configured to use PostgreSQL)
-- **Authentication**: JWT (JSON Web Tokens)
-- **Frontend**: Coming soon (React)
+- **Frontend**: React with Vite
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Deployment**: GitHub Pages
 
 ## Getting Started
 
 ### Prerequisites
 
-- Python 3.8+
-- pip (Python package manager)
+- Node.js 16+
+- npm or yarn
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/splitwise-clone.git
-   cd splitwise-clone/backend
+   git clone https://github.com/chriscazenave-dev/Fantasy-Football-Draft-Tracker.git
+   cd Fantasy-Football-Draft-Tracker/frontend
    ```
 
-2. Create and activate a virtual environment:
+2. Install dependencies:
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   npm install
    ```
 
-3. Install dependencies:
+3. Run the development server:
    ```bash
-   pip install -r requirements.txt
+   npm run dev
    ```
 
-4. Initialize the database:
+   The app will be available at `http://localhost:5173`
+
+4. Build for production:
    ```bash
-   flask db init
-   flask db migrate -m "Initial migration"
-   flask db upgrade
+   npm run build
    ```
 
-5. Run the development server:
-   ```bash
-   python run.py
-   ```
+## Live Demo
 
-   The API will be available at `http://localhost:5000`
+Visit the live application at: [https://chriscazenave-dev.github.io/Fantasy-Football-Draft-Tracker/](https://chriscazenave-dev.github.io/Fantasy-Football-Draft-Tracker/)
 
-## API Documentation
+## Features Overview
 
-### Authentication
+### Prospects Tab
+- View all available prospects
+- Filter by position and search by name
+- Draft players to teams
+- See draft order and current pick
 
-- `POST /api/auth/register` - Register a new user
-- `POST /api/auth/login` - Login and get access token
-- `GET /api/auth/me` - Get current user profile
+### Rosters Tab
+- View all team rosters
+- See drafted players by team
+- Beautiful team icons and color coding
 
-### Groups
+### Trades Tab
+- Facilitate trades between teams
+- Select players from different teams
+- Execute trades with confirmation
 
-- `GET /api/groups` - Get all groups for the current user
-- `POST /api/groups` - Create a new group
-- `GET /api/groups/<group_id>` - Get group details
-- `POST /api/groups/<group_id>/members` - Add a member to a group
-
-### Expenses
-
-- `GET /api/expenses` - Get all expenses for the current user
-- `POST /api/expenses` - Create a new expense
-- `GET /api/expenses/balances` - Get balances for all users
-- `POST /api/expenses/settle` - Mark an expense as settled
-
-## Environment Variables
-
-Create a `.env` file in the `backend` directory with the following variables:
-
-```
-FLASK_APP=run.py
-FLASK_ENV=development
-SECRET_KEY=your-secret-key
-JWT_SECRET_KEY=your-jwt-secret-key
-DATABASE_URL=sqlite:///app.db
-```
+### Data Upload
+- Upload prospect lists via CSV or JSON
+- Flexible data import system
 
 ## License
 
