@@ -106,12 +106,16 @@ function App() {
   const [tradeTo, setTradeTo] = useState(null)
   const [selectedPicks, setSelectedPicks] = useState([])
 
+  const tooltipWidth = 256
+
   const handleProspectMouseEnter = (prospect, e) => {
     const rect = e.currentTarget.getBoundingClientRect()
-    setTooltipPos({
-      top: rect.top - 8,
-      left: rect.right + 12,
-    })
+    let left = rect.left + rect.width / 2 - tooltipWidth / 2
+    const top = rect.top - 8
+
+    left = Math.max(8, Math.min(left, window.innerWidth - tooltipWidth - 8))
+
+    setTooltipPos({ top, left })
     setHoveredProspect(prospect)
   }
 
@@ -482,12 +486,6 @@ function App() {
                   })}
                 </tbody>
               </table>
-              {hoveredProspect && (
-                <CollegeStatsTooltip
-                  prospect={hoveredProspect}
-                  style={{ top: tooltipPos.top, left: tooltipPos.left, transform: 'translateY(-50%)' }}
-                />
-              )}
               {filteredProspects.length === 0 && (
                 <div className="text-center py-20">
                   <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 border border-gray-200">
@@ -784,6 +782,12 @@ function App() {
           </div>
         )}
       </main>
+      {hoveredProspect && (
+        <CollegeStatsTooltip
+          prospect={hoveredProspect}
+          style={{ top: tooltipPos.top, left: tooltipPos.left, transform: 'translateY(-100%)' }}
+        />
+      )}
     </div>
   )
 }
