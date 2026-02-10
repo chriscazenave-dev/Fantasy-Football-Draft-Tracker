@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon } from 'lucide-react'
+import { useState, useEffect, useRef } from 'react'
+import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock } from 'lucide-react'
 
 const INITIAL_TEAMS = [
   { id: 1, name: 'Team Alpha', icon: Shield, color: 'text-red-500', bg: 'bg-red-50' },
@@ -59,8 +59,12 @@ function App() {
   const [tradeFrom, setTradeFrom] = useState(null)
   const [tradeTo, setTradeTo] = useState(null)
   const [selectedPicks, setSelectedPicks] = useState([])
+  const [isDraftActive, setIsDraftActive] = useState(false)
+  const [isPaused, setIsPaused] = useState(false)
+  const [timeRemaining, setTimeRemaining] = useState(120)
+  const timerRef = useRef(null)
 
-  const positions = ['All', ...new Set(prospects.map(p => p.position))]
+  const positions= ['All', ...new Set(prospects.map(p => p.position))]
 
   const getTeamById = (teamId) => teams.find(t => t.id === teamId)
 
@@ -75,6 +79,67 @@ function App() {
     }))
     setDraftOrder(prev => [...prev, { playerId, teamId, pickNumber: currentPick?.id || prev.length + 1 }])
     setOpenDropdown(null)
+    if (isDraftActive) {
+      setTimeRemaining(120)
+    }
+  }
+
+  const handleAutoPick = () => {
+    const currentPick = getCurrentPick()
+    if (!currentPick) return
+    const availablePlayer = prospects.find(p => !draftedPlayers[p.id])
+    if (availablePlayer) {
+      handleDraft(availablePlayer.id, currentPick.currentTeamId)
+    }
+  }
+
+  const handleStartDraft = () => {
+    setIsDraftActive(true)
+    setIsPaused(false)
+    setTimeRemaining(120)
+  }
+
+  const handlePauseDraft = () => {
+    setIsPaused(prev => !prev)
+  }
+
+  const handleRestartDraft = () => {
+    setIsDraftActive(false)
+    setIsPaused(false)
+    setTimeRemaining(120)
+    setDraftOrder([])
+    setDraftedPlayers({})
+  }
+
+  useEffect(() => {
+    if (isDraftActive && !isPaused) {
+      timerRef.current = setInterval(() => {
+        setTimeRemaining(prev => {
+          if (prev <= 1) {
+            return 0
+          }
+          return prev - 1
+        })
+      }, 1000)
+    }
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current)
+        timerRef.current = null
+      }
+    }
+  }, [isDraftActive, isPaused])
+
+  useEffect(() => {
+    if (timeRemaining === 0 && isDraftActive && !isPaused) {
+      handleAutoPick()
+    }
+  }, [timeRemaining])
+
+  const formatTime = (seconds) => {
+    const mins = Math.floor(seconds / 60)
+    const secs = seconds % 60
+    return `${mins}:${secs.toString().padStart(2, '0')}`
   }
 
   const handleUndraft = (playerId) => {
@@ -241,6 +306,44 @@ function App() {
                 <span className="px-2 py-0.5 bg-white rounded-full text-xs text-gray-500 border border-gray-200">
                   Pick {getCurrentPickNumber()} of {draftPicks.length}
                 </span>
+                {isDraftActive && (
+                  <span className={`px-3 py-1 rounded-full text-sm font-bold border flex items-center gap-1.5 ${
+                    timeRemaining <= 30 ? 'bg-red-50 text-red-600 border-red-200' : timeRemaining <= 60 ? 'bg-yellow-50 text-yellow-600 border-yellow-200' : 'bg-green-50 text-green-600 border-green-200'
+                  }`}>
+                    <Clock size={14} />
+                    {formatTime(timeRemaining)}
+                  </span>
+                )}
+                <div className="ml-auto flex items-center gap-2">
+                  {!isDraftActive ? (
+                    <button
+                      onClick={handleStartDraft}
+                      className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-medium rounded-lg transition-all shadow-sm"
+                    >
+                      <Play size={14} />
+                      Start Draft
+                    </button>
+                  ) : (
+                    <>
+                      <button
+                        onClick={handlePauseDraft}
+                        className={`inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-medium rounded-lg transition-all shadow-sm ${
+                          isPaused ? 'bg-green-600 hover:bg-green-700 text-white' : 'bg-yellow-500 hover:bg-yellow-600 text-white'
+                        }`}
+                      >
+                        {isPaused ? <Play size={14} /> : <Pause size={14} />}
+                        {isPaused ? 'Resume' : 'Pause'}
+                      </button>
+                      <button
+                        onClick={handleRestartDraft}
+                        className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-red-600 hover:bg-red-700 text-white text-xs font-medium rounded-lg transition-all shadow-sm"
+                      >
+                        <RotateCcw size={14} />
+                        Restart Draft
+                      </button>
+                    </>
+                  )}
+                </div>
               </div>
               
               <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide mask-fade-right">
