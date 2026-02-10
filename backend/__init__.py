@@ -1,5 +1,4 @@
 from flask import Flask, jsonify
-from flask_jwt_extended import JWTManager
 from flask_migrate import Migrate
 from flask_cors import CORS
 from .models import db
@@ -11,18 +10,21 @@ def create_app(config_class=Config):
     
     # Initialize extensions
     db.init_app(app)
-    jwt = JWTManager(app)
     migrate = Migrate(app, db)
     CORS(app)
     
     # Register blueprints
-    from .auth import auth_bp
-    from .groups import groups_bp
-    from .expenses import expenses_bp
+    from .leagues import leagues_bp
+    from .teams import teams_bp
+    from .prospects import prospects_bp
+    from .draft import draft_bp
+    from .trades import trades_bp
     
-    app.register_blueprint(auth_bp, url_prefix='/api/auth')
-    app.register_blueprint(groups_bp, url_prefix='/api/groups')
-    app.register_blueprint(expenses_bp, url_prefix='/api/expenses')
+    app.register_blueprint(leagues_bp, url_prefix='/api/leagues')
+    app.register_blueprint(teams_bp, url_prefix='/api/teams')
+    app.register_blueprint(prospects_bp, url_prefix='/api/prospects')
+    app.register_blueprint(draft_bp, url_prefix='/api/draft')
+    app.register_blueprint(trades_bp, url_prefix='/api/trades')
     
     # Error handlers
     @app.errorhandler(404)
