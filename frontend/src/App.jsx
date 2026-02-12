@@ -116,6 +116,8 @@ function App() {
   const [futureTradeFrom, setFutureTradeFrom] = useState(null)
   const [futureTradeTo, setFutureTradeTo] = useState(null)
   const [selectedFuturePicks, setSelectedFuturePicks] = useState([])
+  const [selectedFuturePicksTo, setSelectedFuturePicksTo] = useState([])
+  const [futureTradeNote, setFutureTradeNote] = useState('')
   const FUTURE_YEARS = [2026, 2027, 2028]
 
   const tooltipWidth = 256
@@ -297,22 +299,68 @@ function App() {
     )
   }
 
+  const toggleFuturePickSelectionTo = (pickKey) => {
+    setSelectedFuturePicksTo(prev =>
+      prev.includes(pickKey)
+        ? prev.filter(k => k !== pickKey)
+        : [...prev, pickKey]
+    )
+  }
+
   const handleFuturePickTrade = () => {
-    if (!futureTradeFrom || !futureTradeTo || selectedFuturePicks.length === 0) return
+    if (!futureTradeFrom || !futureTradeTo) return
+    if (selectedFuturePicks.length === 0 && selectedFuturePicksTo.length === 0) return
+    const fromOwnerName = TEAM_ID_TO_OWNER[futureTradeFrom]
     const toOwnerName = TEAM_ID_TO_OWNER[futureTradeTo]
-    if (!toOwnerName) return
+    if (!fromOwnerName || !toOwnerName) return
+
+    // Auto-generate footnote for this trade
+    const nextFootnoteId = footnotes.length > 0 ? Math.max(...footnotes.map(f => typeof f.id === 'number' ? f.id : 0)) + 1 : 1
+
+    const describePicks = (pickKeys) => pickKeys.map(key => {
+      const parts = key.split('|')
+      return `${parts[0]} ${parts[1].replace(' Rounder', '')}`
+    }).join(', ')
+
+    const today = new Date()
+    const dateStr = `${today.getMonth() + 1}.${today.getDate()}.${String(today.getFullYear()).slice(2)}`
+
+    let noteText = ''
+    if (selectedFuturePicks.length > 0 && selectedFuturePicksTo.length > 0) {
+      noteText = `${fromOwnerName} trades ${describePicks(selectedFuturePicks)} to ${toOwnerName} for ${describePicks(selectedFuturePicksTo)} - ${dateStr}`
+    } else if (selectedFuturePicks.length > 0) {
+      noteText = `${fromOwnerName} trades ${describePicks(selectedFuturePicks)} to ${toOwnerName} - ${dateStr}`
+    } else {
+      noteText = `${toOwnerName} trades ${describePicks(selectedFuturePicksTo)} to ${fromOwnerName} - ${dateStr}`
+    }
+    if (futureTradeNote.trim()) {
+      noteText = futureTradeNote.trim() + ' - ' + dateStr
+    }
+
+    setFootnotes(prev => [...prev, { id: nextFootnoteId, text: noteText }])
 
     setFuturePickData(prev => {
       const next = JSON.parse(JSON.stringify(prev))
+      // Move "From" team's selected picks to "To" team and attach footnote
       for (const pickKey of selectedFuturePicks) {
         const parts = pickKey.split('|')
-        const yearStr = parts[0]
+        const year = Number(parts[0])
         const round = parts[1]
-        const idxStr = parts[2]
-        const year = Number(yearStr)
-        const idx = Number(idxStr)
-        if (next[year] && next[year][round] && next[year][round][idx]) {
+        const idx = Number(parts[2])
+        if (next[year]?.[round]?.[idx]) {
           next[year][round][idx].owner = toOwnerName
+          next[year][round][idx].notes.push(nextFootnoteId)
+        }
+      }
+      // Move "To" team's selected picks to "From" team and attach footnote
+      for (const pickKey of selectedFuturePicksTo) {
+        const parts = pickKey.split('|')
+        const year = Number(parts[0])
+        const round = parts[1]
+        const idx = Number(parts[2])
+        if (next[year]?.[round]?.[idx]) {
+          next[year][round][idx].owner = fromOwnerName
+          next[year][round][idx].notes.push(nextFootnoteId)
         }
       }
       return next
@@ -321,6 +369,8 @@ function App() {
     setFutureTradeFrom(null)
     setFutureTradeTo(null)
     setSelectedFuturePicks([])
+    setSelectedFuturePicksTo([])
+    setFutureTradeNote('')
   }
 
   const handleFileUpload = (event) => {
@@ -783,96 +833,170 @@ function App() {
             <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-2 bg-purple-500/10 rounded-xl">
-                  <FileText size={20} className="text-purple-500" />
+                  <ArrowRightLeft size={20} className="text-purple-500" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Future Picks Trade Center</h3>
-                  <p className="text-sm text-gray-500">Trade future draft picks (2026–2028) — synced with the Future Picks tab</p>
+                  <p className="text-sm text-gray-500">Two-way trades for future draft picks (2026–2028) — synced with the Future Picks tab</p>
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-                <div className="space-y-2">
-                  <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">From Team</label>
-                  <select
-                    value={futureTradeFrom || ''}
-                    onChange={(e) => {
-                      setFutureTradeFrom(Number(e.target.value) || null)
-                      setSelectedFuturePicks([])
-                    }}
-                    className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition-shadow"
-                  >
-                    <option value="">Select team...</option>
-                    {teams.map(team => (
-                      <option key={team.id} value={team.id}>{team.name} ({team.owner})</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">To Team</label>
-                  <select
-                    value={futureTradeTo || ''}
-                    onChange={(e) => setFutureTradeTo(Number(e.target.value) || null)}
-                    className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition-shadow"
-                  >
-                    <option value="">Select team...</option>
-                    {teams.filter(t => t.id !== futureTradeFrom).map(team => (
-                      <option key={team.id} value={team.id}>{team.name} ({team.owner})</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div className="flex items-end h-full pb-0.5">
-                  <button
-                    onClick={handleFuturePickTrade}
-                    disabled={!futureTradeFrom || !futureTradeTo || selectedFuturePicks.length === 0}
-                    className="w-full px-6 py-3 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed rounded-xl font-medium text-white transition-all shadow-sm disabled:shadow-none"
-                  >
-                    Execute Trade
-                    {selectedFuturePicks.length > 0 && <span className="ml-2 px-2 py-0.5 bg-white/20 rounded-md text-xs">{selectedFuturePicks.length} picks</span>}
-                  </button>
-                </div>
-              </div>
-
-              {futureTradeFrom && (
-                <div className="mt-8 pt-6 border-t border-gray-100">
-                  <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4 block">Select future picks to trade</label>
-                  <div className="flex flex-wrap gap-2">
-                    {getTeamFuturePicks(futureTradeFrom).map(pick => {
-                      const isSelected = selectedFuturePicks.includes(pick.key)
-                      const isTraded = pick.currentOwner !== pick.originalOwner
-                      const roundShort = pick.round.replace(' Rounder', '')
-
-                      return (
-                        <button
-                          key={pick.key}
-                          onClick={() => toggleFuturePickSelection(pick.key)}
-                          className={`group relative px-4 py-3 rounded-xl border text-sm font-medium transition-all duration-200 flex flex-col items-center gap-1 ${
-                            isSelected
-                              ? 'border-purple-500 bg-purple-50 text-purple-600 shadow-sm ring-1 ring-purple-500/20'
-                              : 'border-gray-200 bg-white text-gray-600 hover:bg-gray-50 hover:border-gray-300'
-                          }`}
-                        >
-                          <span className="text-[10px] text-gray-400 font-bold">{pick.year}</span>
-                          <span className={`text-xs font-semibold ${isSelected ? 'text-purple-600' : 'text-gray-900'}`}>{roundShort}</span>
-                          {isTraded && (
-                            <span className="text-[9px] text-amber-600 font-medium">via {pick.originalOwner}</span>
-                          )}
-                          {pick.notes.length > 0 && (
-                            <div className="flex gap-0.5">
-                              {pick.notes.map((n, i) => (
-                                <span key={i} className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-amber-100 text-amber-700 text-[8px] font-bold border border-amber-200">{n}</span>
-                              ))}
-                            </div>
-                          )}
-                        </button>
-                      )
-                    })}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Team A Side */}
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <label className="text-xs font-semibold text-purple-600 uppercase tracking-wider">Team A</label>
+                    <select
+                      value={futureTradeFrom || ''}
+                      onChange={(e) => {
+                        setFutureTradeFrom(Number(e.target.value) || null)
+                        setSelectedFuturePicks([])
+                      }}
+                      className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition-shadow"
+                    >
+                      <option value="">Select team...</option>
+                      {teams.filter(t => t.id !== futureTradeTo).map(team => (
+                        <option key={team.id} value={team.id}>{team.name} ({team.owner})</option>
+                      ))}
+                    </select>
                   </div>
-                  {getTeamFuturePicks(futureTradeFrom).length === 0 && (
-                    <p className="text-gray-400 text-sm italic py-4">No future picks available for this team.</p>
+
+                  {futureTradeFrom && (
+                    <div className="bg-purple-50/50 rounded-xl border border-purple-100 p-4">
+                      <label className="text-xs font-semibold text-purple-500 uppercase tracking-wider mb-3 block">
+                        Picks to send → {futureTradeTo ? teams.find(t => t.id === futureTradeTo)?.name : '...'}
+                      </label>
+                      <div className="flex flex-wrap gap-2">
+                        {getTeamFuturePicks(futureTradeFrom).map(pick => {
+                          const isSelected = selectedFuturePicks.includes(pick.key)
+                          const isTraded = pick.currentOwner !== pick.originalOwner
+                          const roundShort = pick.round.replace(' Rounder', '')
+                          return (
+                            <button
+                              key={pick.key}
+                              onClick={() => toggleFuturePickSelection(pick.key)}
+                              className={`group relative px-3 py-2.5 rounded-xl border text-sm font-medium transition-all duration-200 flex flex-col items-center gap-0.5 ${
+                                isSelected
+                                  ? 'border-purple-500 bg-purple-100 text-purple-700 shadow-sm ring-1 ring-purple-500/20'
+                                  : 'border-gray-200 bg-white text-gray-600 hover:bg-gray-50 hover:border-gray-300'
+                              }`}
+                            >
+                              <span className="text-[10px] text-gray-400 font-bold">{pick.year}</span>
+                              <span className={`text-xs font-semibold ${isSelected ? 'text-purple-700' : 'text-gray-900'}`}>{roundShort}</span>
+                              {isTraded && (
+                                <span className="text-[9px] text-amber-600 font-medium">via {pick.originalOwner}</span>
+                              )}
+                              {pick.notes.length > 0 && (
+                                <div className="flex gap-0.5">
+                                  {pick.notes.map((n, i) => (
+                                    <span key={i} className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-amber-100 text-amber-700 text-[8px] font-bold border border-amber-200">{n}</span>
+                                  ))}
+                                </div>
+                              )}
+                            </button>
+                          )
+                        })}
+                      </div>
+                      {getTeamFuturePicks(futureTradeFrom).length === 0 && (
+                        <p className="text-gray-400 text-sm italic py-2">No future picks available.</p>
+                      )}
+                    </div>
                   )}
+                </div>
+
+                {/* Team B Side */}
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <label className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Team B</label>
+                    <select
+                      value={futureTradeTo || ''}
+                      onChange={(e) => {
+                        setFutureTradeTo(Number(e.target.value) || null)
+                        setSelectedFuturePicksTo([])
+                      }}
+                      className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-shadow"
+                    >
+                      <option value="">Select team...</option>
+                      {teams.filter(t => t.id !== futureTradeFrom).map(team => (
+                        <option key={team.id} value={team.id}>{team.name} ({team.owner})</option>
+                      ))}
+                    </select>
+                  </div>
+
+                  {futureTradeTo && (
+                    <div className="bg-blue-50/50 rounded-xl border border-blue-100 p-4">
+                      <label className="text-xs font-semibold text-blue-500 uppercase tracking-wider mb-3 block">
+                        Picks to send → {futureTradeFrom ? teams.find(t => t.id === futureTradeFrom)?.name : '...'}
+                      </label>
+                      <div className="flex flex-wrap gap-2">
+                        {getTeamFuturePicks(futureTradeTo).map(pick => {
+                          const isSelected = selectedFuturePicksTo.includes(pick.key)
+                          const isTraded = pick.currentOwner !== pick.originalOwner
+                          const roundShort = pick.round.replace(' Rounder', '')
+                          return (
+                            <button
+                              key={pick.key}
+                              onClick={() => toggleFuturePickSelectionTo(pick.key)}
+                              className={`group relative px-3 py-2.5 rounded-xl border text-sm font-medium transition-all duration-200 flex flex-col items-center gap-0.5 ${
+                                isSelected
+                                  ? 'border-blue-500 bg-blue-100 text-blue-700 shadow-sm ring-1 ring-blue-500/20'
+                                  : 'border-gray-200 bg-white text-gray-600 hover:bg-gray-50 hover:border-gray-300'
+                              }`}
+                            >
+                              <span className="text-[10px] text-gray-400 font-bold">{pick.year}</span>
+                              <span className={`text-xs font-semibold ${isSelected ? 'text-blue-700' : 'text-gray-900'}`}>{roundShort}</span>
+                              {isTraded && (
+                                <span className="text-[9px] text-amber-600 font-medium">via {pick.originalOwner}</span>
+                              )}
+                              {pick.notes.length > 0 && (
+                                <div className="flex gap-0.5">
+                                  {pick.notes.map((n, i) => (
+                                    <span key={i} className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-amber-100 text-amber-700 text-[8px] font-bold border border-amber-200">{n}</span>
+                                  ))}
+                                </div>
+                              )}
+                            </button>
+                          )
+                        })}
+                      </div>
+                      {getTeamFuturePicks(futureTradeTo).length === 0 && (
+                        <p className="text-gray-400 text-sm italic py-2">No future picks available.</p>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Trade Note + Execute */}
+              {futureTradeFrom && futureTradeTo && (
+                <div className="mt-6 pt-6 border-t border-gray-100 space-y-4">
+                  <div>
+                    <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5 block">Trade Note (optional — auto-generated if left blank)</label>
+                    <textarea
+                      value={futureTradeNote}
+                      onChange={(e) => setFutureTradeNote(e.target.value)}
+                      placeholder="e.g. Zack trades Calvin Ridley to Dedon for 2026 1st round pick"
+                      className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500/20 resize-none"
+                      rows={2}
+                    />
+                    <p className="text-[10px] text-gray-400 mt-1">This will be saved as footnote #{footnotes.length > 0 ? Math.max(...footnotes.map(f => typeof f.id === 'number' ? f.id : 0)) + 1 : 1} in the Future Picks tab</p>
+                  </div>
+                  <div className="flex items-center justify-between bg-gray-50 rounded-xl p-4">
+                    <div className="flex items-center gap-4 text-sm flex-wrap">
+                      <span className="text-purple-600 font-semibold">{teams.find(t => t.id === futureTradeFrom)?.name}</span>
+                      <span className="text-gray-400">sends {selectedFuturePicks.length} pick{selectedFuturePicks.length !== 1 ? 's' : ''}</span>
+                      <ArrowRightLeft size={16} className="text-gray-300" />
+                      <span className="text-blue-600 font-semibold">{teams.find(t => t.id === futureTradeTo)?.name}</span>
+                      <span className="text-gray-400">sends {selectedFuturePicksTo.length} pick{selectedFuturePicksTo.length !== 1 ? 's' : ''}</span>
+                    </div>
+                    <button
+                      onClick={handleFuturePickTrade}
+                      disabled={selectedFuturePicks.length === 0 && selectedFuturePicksTo.length === 0}
+                      className="px-6 py-2.5 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed rounded-xl font-medium text-white text-sm transition-all shadow-sm disabled:shadow-none flex-shrink-0"
+                    >
+                      Execute Trade
+                    </button>
+                  </div>
                 </div>
               )}
             </div>
