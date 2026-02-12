@@ -1,15 +1,17 @@
 import { useState, useEffect, useRef } from 'react'
-import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock } from 'lucide-react'
+import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText } from 'lucide-react'
+import FutureDraftPicks from './FutureDraftPicks'
+import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER, getOwnerColor } from './futurePicksData'
 
 const INITIAL_TEAMS = [
-  { id: 1, name: 'Team Alpha', icon: Shield, color: 'text-red-500', bg: 'bg-red-50' },
-  { id: 2, name: 'Team Beta', icon: Zap, color: 'text-blue-500', bg: 'bg-blue-50' },
-  { id: 3, name: 'Team Gamma', icon: Flame, color: 'text-green-500', bg: 'bg-green-50' },
-  { id: 4, name: 'Team Delta', icon: Star, color: 'text-yellow-500', bg: 'bg-yellow-50' },
-  { id: 5, name: 'Team Epsilon', icon: Crown, color: 'text-purple-500', bg: 'bg-purple-50' },
-  { id: 6, name: 'Team Zeta', icon: Anchor, color: 'text-pink-500', bg: 'bg-pink-50' },
-  { id: 7, name: 'Team Eta', icon: Target, color: 'text-orange-500', bg: 'bg-orange-50' },
-  { id: 8, name: 'Team Theta', icon: Hexagon, color: 'text-cyan-500', bg: 'bg-cyan-50' },
+  { id: 1, name: 'The Evil Empire', owner: 'jmo morgan', icon: Shield, color: 'text-red-500', bg: 'bg-red-50' },
+  { id: 2, name: 'Whatever who cares', owner: 'Sam Bowlin', icon: Zap, color: 'text-blue-500', bg: 'bg-blue-50' },
+  { id: 3, name: 'Suave Shaheed', owner: 'Nick Casey', icon: Flame, color: 'text-green-500', bg: 'bg-green-50' },
+  { id: 4, name: 'Teddy Bongwater', owner: 'Dylan McElroy', icon: Star, color: 'text-yellow-500', bg: 'bg-yellow-50' },
+  { id: 5, name: 'Team Faircloth', owner: 'Zachary Faircloth, Steven Lambou', icon: Crown, color: 'text-purple-500', bg: 'bg-purple-50' },
+  { id: 6, name: 'Team caz', owner: 'chris caz', icon: Anchor, color: 'text-pink-500', bg: 'bg-pink-50' },
+  { id: 7, name: "Hoidus' Hemmroid", owner: 'Perri Prevost', icon: Target, color: 'text-orange-500', bg: 'bg-orange-50' },
+  { id: 8, name: 'Cheznovs Abduction', owner: 'Austin Dedon', icon: Hexagon, color: 'text-cyan-500', bg: 'bg-cyan-50' },
 ]
 
 const SAMPLE_PROSPECTS = [
@@ -109,6 +111,12 @@ function App() {
   const [isPaused, setIsPaused] = useState(false)
   const [timeRemaining, setTimeRemaining] = useState(120)
   const timerRef = useRef(null)
+  const [futurePickData, setFuturePickData] = useState(INITIAL_PICK_DATA)
+  const [footnotes, setFootnotes] = useState(INITIAL_FOOTNOTES)
+  const [futureTradeFrom, setFutureTradeFrom] = useState(null)
+  const [futureTradeTo, setFutureTradeTo] = useState(null)
+  const [selectedFuturePicks, setSelectedFuturePicks] = useState([])
+  const FUTURE_YEARS = [2026, 2027, 2028]
 
   const tooltipWidth = 256
 
@@ -253,6 +261,68 @@ function App() {
     )
   }
 
+  // Future pick helpers
+  const getTeamFuturePicks = (teamId) => {
+    const ownerName = TEAM_ID_TO_OWNER[teamId]
+    if (!ownerName) return []
+    const picks = []
+    for (const year of FUTURE_YEARS) {
+      const yearData = futurePickData[year]
+      if (!yearData) continue
+      for (const round of ROUNDS) {
+        const roundPicks = yearData[round] || []
+        roundPicks.forEach((pick, idx) => {
+          if (pick.owner === ownerName || OWNER_TO_TEAM_ID[pick.owner] === teamId) {
+            picks.push({
+              year,
+              round,
+              ownerIdx: idx,
+              originalOwner: OWNERS[idx],
+              currentOwner: pick.owner,
+              notes: pick.notes,
+              key: `${year}|${round}|${idx}`,
+            })
+          }
+        })
+      }
+    }
+    return picks
+  }
+
+  const toggleFuturePickSelection = (pickKey) => {
+    setSelectedFuturePicks(prev =>
+      prev.includes(pickKey)
+        ? prev.filter(k => k !== pickKey)
+        : [...prev, pickKey]
+    )
+  }
+
+  const handleFuturePickTrade = () => {
+    if (!futureTradeFrom || !futureTradeTo || selectedFuturePicks.length === 0) return
+    const toOwnerName = TEAM_ID_TO_OWNER[futureTradeTo]
+    if (!toOwnerName) return
+
+    setFuturePickData(prev => {
+      const next = JSON.parse(JSON.stringify(prev))
+      for (const pickKey of selectedFuturePicks) {
+        const parts = pickKey.split('|')
+        const yearStr = parts[0]
+        const round = parts[1]
+        const idxStr = parts[2]
+        const year = Number(yearStr)
+        const idx = Number(idxStr)
+        if (next[year] && next[year][round] && next[year][round][idx]) {
+          next[year][round][idx].owner = toOwnerName
+        }
+      }
+      return next
+    })
+
+    setFutureTradeFrom(null)
+    setFutureTradeTo(null)
+    setSelectedFuturePicks([])
+  }
+
   const handleFileUpload = (event) => {
     const file = event.target.files[0]
     if (!file) return
@@ -328,7 +398,7 @@ function App() {
              <div className="w-8 h-8 rounded-xl bg-black flex items-center justify-center shadow-md">
               <Users size={18} className="text-white" />
             </div>
-            <h1 className="text-xl font-semibold tracking-tight">Fantasy Football<span className="text-gray-400">Draft Tracker</span></h1>
+            <h1 className="text-xl font-semibold tracking-tight">Dynasty<span className="text-gray-400"> Madness</span></h1>
           </div>
           
           <div className="flex bg-gray-100 p-1 rounded-lg border border-gray-200 backdrop-blur-md">
@@ -336,6 +406,7 @@ function App() {
               { id: 'prospects', label: 'Prospects', icon: Users },
               { id: 'teams', label: 'Rosters', icon: UserCircle },
               { id: 'trades', label: 'Trades', icon: ArrowRightLeft },
+              { id: 'futurePicks', label: 'Future Picks', icon: FileText },
               { id: 'upload', label: 'Data', icon: Upload }
             ].map((tab) => (
               <button
@@ -409,7 +480,7 @@ function App() {
                 </div>
               </div>
               
-              <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide mask-fade-right">
+              <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide mask-fade-right">
                 {draftPicks.slice(0, 16).map((pick) => {
                   const team = getTeamById(pick.currentTeamId)
                   const originalTeam = getTeamById(pick.originalTeamId)
@@ -420,24 +491,42 @@ function App() {
                   return (
                     <div
                       key={pick.id}
-                      className={`flex-shrink-0 w-24 p-3 rounded-xl flex flex-col items-center gap-2 transition-all duration-300 ${
+                      className={`flex-shrink-0 w-32 p-4 rounded-2xl flex flex-col items-center gap-3 transition-all duration-300 ${
                         isCurrentPick 
-                          ? 'bg-blue-500 shadow-lg shadow-blue-500/20 scale-105 ring-1 ring-black/5' 
+                          ? 'bg-blue-600 shadow-xl shadow-blue-500/30 scale-105 ring-2 ring-blue-400 ring-offset-2' 
                           : isUsed 
-                            ? 'bg-gray-100 opacity-40 grayscale' 
-                            : 'bg-white border border-gray-200 hover:border-gray-300 hover:shadow-sm'
+                            ? 'bg-gray-50 opacity-50 grayscale' 
+                            : 'bg-white border border-gray-100 shadow-sm hover:border-blue-200 hover:shadow-md'
                       }`}
                     >
-                      <span className={`text-xs font-bold ${isCurrentPick ? 'text-white/90' : 'text-gray-400'}`}>PICK {pick.id}</span>
-                      <div className={`p-1.5 rounded-full ${team?.bg} ${team?.color}`}>
-                        <team.icon size={16} />
-                      </div>
-                      <div className="flex flex-col items-center">
-                         <span className={`text-xs font-medium truncate max-w-full ${isCurrentPick ? 'text-white' : 'text-gray-700'}`}>
-                          {team?.name.replace('Team ', '')}
+                      <div className="flex flex-col items-center gap-1">
+                        <span className={`text-[10px] font-black tracking-widest uppercase ${isCurrentPick ? 'text-blue-100' : 'text-gray-400'}`}>
+                          Pick {pick.id}
                         </span>
+                        <div className={`p-2 rounded-full shadow-inner ${team?.bg} ${team?.color}`}>
+                          <team.icon size={18} />
+                        </div>
+                      </div>
+                      
+                      <div className="flex flex-col items-center text-center w-full min-w-0">
+                         <div className="flex flex-col items-center">
+                           <span className={`text-xs font-bold leading-tight line-clamp-1 ${isCurrentPick ? 'text-white' : 'text-gray-900'}`}>
+                            {team?.name}
+                          </span>
+                          <span className={`text-[10px] truncate w-full ${isCurrentPick ? 'text-blue-100' : 'text-gray-500'}`}>
+                            ({team?.owner})
+                          </span>
+                         </div>
                         {isTraded && (
-                          <span className="text-[10px] text-amber-500 font-medium">from {originalTeam?.name.replace('Team ', '')}</span>
+                          <div className={`mt-1 flex items-center gap-1.5 px-2 py-1 rounded-lg text-[9px] font-bold uppercase tracking-tight ${
+                            isCurrentPick ? 'bg-blue-500 text-blue-100' : 'bg-amber-50 text-amber-600 border border-amber-100'
+                          }`}>
+                            <ArrowRightLeft size={8} className="flex-shrink-0" />
+                            <div className="flex flex-col items-start leading-tight min-w-0">
+                              <span className="truncate w-full text-left">from {originalTeam?.name}</span>
+                              <span className="opacity-80 font-black text-[8px]">({originalTeam?.owner})</span>
+                            </div>
+                          </div>
                         )}
                       </div>
                     </div>
@@ -525,10 +614,13 @@ function App() {
                         <td className="px-6 py-4 text-sm text-gray-500">{prospect.college}</td>
                         <td className="px-6 py-4">
                           {isDrafted ? (
-                            <span className={`inline-flex items-center gap-1.5 pl-1.5 pr-2.5 py-0.5 rounded-full text-xs font-medium border ${draftedTeam.bg} border-transparent ${draftedTeam.color.replace('text-', 'text-opacity-90 text-')}`}>
-                              <draftedTeam.icon size={12} />
-                              {draftedTeam.name}
-                            </span>
+                            <div className="flex flex-col">
+                              <span className={`inline-flex items-center gap-1.5 pl-1.5 pr-2.5 py-0.5 rounded-full text-xs font-medium border ${draftedTeam.bg} border-transparent ${draftedTeam.color.replace('text-', 'text-opacity-90 text-')}`}>
+                                <draftedTeam.icon size={12} />
+                                {draftedTeam.name}
+                              </span>
+                              <span className="text-[10px] text-gray-500 ml-2 mt-0.5">({draftedTeam.owner})</span>
+                            </div>
                           ) : (
                             <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-50 text-green-700 border border-green-200">
                               Available
@@ -574,7 +666,10 @@ function App() {
                                           <div className={`p-1 rounded-full ${team.bg} ${team.color}`}>
                                             <team.icon size={12} />
                                           </div>
-                                          {team.name}
+                                          <div className="flex flex-col items-start">
+                                            <span className="font-medium">{team.name}</span>
+                                            <span className="text-[10px] text-gray-500">({team.owner})</span>
+                                          </div>
                                         </button>
                                       ))}
                                     </div>
@@ -629,7 +724,10 @@ function App() {
                               autoFocus
                             />
                           ) : (
-                            <span className="font-semibold text-gray-900">{team.name}</span>
+                            <div className="flex flex-col">
+                              <span className="font-semibold text-gray-900 leading-tight">{team.name}</span>
+                              <span className="text-[11px] text-gray-500 font-medium">({team.owner})</span>
+                            </div>
                           )}
                         </div>
                         <button
@@ -706,7 +804,7 @@ function App() {
                   >
                     <option value="">Select team...</option>
                     {teams.map(team => (
-                      <option key={team.id} value={team.id}>{team.name}</option>
+                      <option key={team.id} value={team.id}>{team.name} ({team.owner})</option>
                     ))}
                   </select>
                 </div>
@@ -720,7 +818,7 @@ function App() {
                   >
                     <option value="">Select team...</option>
                     {teams.filter(t => t.id !== tradeFrom).map(team => (
-                      <option key={team.id} value={team.id}>{team.name}</option>
+                      <option key={team.id} value={team.id}>{team.name} ({team.owner})</option>
                     ))}
                   </select>
                 </div>
@@ -760,7 +858,7 @@ function App() {
                             <span className="text-xs text-gray-400 group-hover:text-gray-500">R{pick.round}</span>
                             <span className={`text-lg ${isSelected ? 'text-blue-600' : 'text-gray-900'}`}>#{pick.id}</span>
                             {pick.originalTeamId !== pick.currentTeamId && (
-                               <div className="absolute -top-2 -right-2 w-5 h-5 bg-white rounded-full border border-gray-200 flex items-center justify-center shadow-sm" title={`Originally ${originalTeam?.name}`}>
+                               <div className="absolute -top-2 -right-2 w-5 h-5 bg-white rounded-full border border-gray-200 flex items-center justify-center shadow-sm" title={`Originally ${originalTeam?.name} (${originalTeam?.owner})`}>
                                 <ArrowRightLeft size={10} className="text-amber-500" />
                               </div>
                             )}
@@ -787,7 +885,10 @@ function App() {
                          <div className={`p-1 rounded-full ${team.bg} ${team.color}`}>
                            <team.icon size={12} />
                          </div>
-                         <span className="font-semibold text-gray-900">{team.name}</span>
+                         <div className="flex flex-col">
+                           <span className="font-semibold text-gray-900 text-xs leading-tight">{team.name}</span>
+                           <span className="text-[9px] text-gray-500 font-medium">({team.owner})</span>
+                         </div>
                        </div>
                        <span className="text-xs px-2 py-0.5 bg-gray-100 rounded text-gray-500">{teamPicks.length} picks</span>
                     </div>
@@ -810,9 +911,14 @@ function App() {
                                 <span className={`font-medium ${isUsed ? 'text-gray-400' : 'text-gray-700'}`}>Pick {pick.id}</span>
                               </div>
                               {isTraded && (
-                                <span className="text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded text-[10px] border border-amber-100">
-                                  via {originalTeam?.name.split(' ')[1]}
-                                </span>
+                                <div className="flex flex-col items-end ml-2" title={`${originalTeam?.name} (${originalTeam?.owner})`}>
+                                  <span className="text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded-t text-[10px] border-x border-t border-amber-100 font-bold whitespace-nowrap">
+                                    via {originalTeam?.name}
+                                  </span>
+                                  <span className="text-amber-500 bg-amber-50/50 px-1.5 py-0.5 rounded-b text-[8px] border-x border-b border-amber-100 font-medium whitespace-nowrap">
+                                    ({originalTeam?.owner})
+                                  </span>
+                                </div>
                               )}
                             </div>
                           )
@@ -823,7 +929,162 @@ function App() {
                 )
               })}
             </div>
+
+            {/* Future Picks Trade Center */}
+            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm mt-6">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 bg-purple-500/10 rounded-xl">
+                  <FileText size={20} className="text-purple-500" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900">Future Picks Trade Center</h3>
+                  <p className="text-sm text-gray-500">Trade future draft picks (2026–2028) — synced with the Future Picks tab</p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+                <div className="space-y-2">
+                  <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">From Team</label>
+                  <select
+                    value={futureTradeFrom || ''}
+                    onChange={(e) => {
+                      setFutureTradeFrom(Number(e.target.value) || null)
+                      setSelectedFuturePicks([])
+                    }}
+                    className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition-shadow"
+                  >
+                    <option value="">Select team...</option>
+                    {teams.map(team => (
+                      <option key={team.id} value={team.id}>{team.name} ({team.owner})</option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">To Team</label>
+                  <select
+                    value={futureTradeTo || ''}
+                    onChange={(e) => setFutureTradeTo(Number(e.target.value) || null)}
+                    className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition-shadow"
+                  >
+                    <option value="">Select team...</option>
+                    {teams.filter(t => t.id !== futureTradeFrom).map(team => (
+                      <option key={team.id} value={team.id}>{team.name} ({team.owner})</option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="flex items-end h-full pb-0.5">
+                  <button
+                    onClick={handleFuturePickTrade}
+                    disabled={!futureTradeFrom || !futureTradeTo || selectedFuturePicks.length === 0}
+                    className="w-full px-6 py-3 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed rounded-xl font-medium text-white transition-all shadow-sm disabled:shadow-none"
+                  >
+                    Execute Trade
+                    {selectedFuturePicks.length > 0 && <span className="ml-2 px-2 py-0.5 bg-white/20 rounded-md text-xs">{selectedFuturePicks.length} picks</span>}
+                  </button>
+                </div>
+              </div>
+
+              {futureTradeFrom && (
+                <div className="mt-8 pt-6 border-t border-gray-100">
+                  <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4 block">Select future picks to trade</label>
+                  <div className="flex flex-wrap gap-2">
+                    {getTeamFuturePicks(futureTradeFrom).map(pick => {
+                      const isSelected = selectedFuturePicks.includes(pick.key)
+                      const isTraded = pick.currentOwner !== pick.originalOwner
+                      const roundShort = pick.round.replace(' Rounder', '')
+
+                      return (
+                        <button
+                          key={pick.key}
+                          onClick={() => toggleFuturePickSelection(pick.key)}
+                          className={`group relative px-4 py-3 rounded-xl border text-sm font-medium transition-all duration-200 flex flex-col items-center gap-1 ${
+                            isSelected
+                              ? 'border-purple-500 bg-purple-50 text-purple-600 shadow-sm ring-1 ring-purple-500/20'
+                              : 'border-gray-200 bg-white text-gray-600 hover:bg-gray-50 hover:border-gray-300'
+                          }`}
+                        >
+                          <span className="text-[10px] text-gray-400 font-bold">{pick.year}</span>
+                          <span className={`text-xs font-semibold ${isSelected ? 'text-purple-600' : 'text-gray-900'}`}>{roundShort}</span>
+                          {isTraded && (
+                            <span className="text-[9px] text-amber-600 font-medium">via {pick.originalOwner}</span>
+                          )}
+                          {pick.notes.length > 0 && (
+                            <div className="flex gap-0.5">
+                              {pick.notes.map((n, i) => (
+                                <span key={i} className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-amber-100 text-amber-700 text-[8px] font-bold border border-amber-200">{n}</span>
+                              ))}
+                            </div>
+                          )}
+                        </button>
+                      )
+                    })}
+                  </div>
+                  {getTeamFuturePicks(futureTradeFrom).length === 0 && (
+                    <p className="text-gray-400 text-sm italic py-4">No future picks available for this team.</p>
+                  )}
+                </div>
+              )}
+            </div>
+
+            {/* Future Picks Per-Team Overview (2026-2028) */}
+            <h3 className="text-lg font-bold tracking-tight text-gray-900 mt-8 mb-4">Future Picks by Team (2026–2028)</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {teams.map(team => {
+                const futurePicks = getTeamFuturePicks(team.id)
+
+                return (
+                  <div key={team.id} className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                    <div className="p-4 border-b border-gray-100 flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className={`p-1 rounded-full ${team.bg} ${team.color}`}>
+                          <team.icon size={12} />
+                        </div>
+                        <div className="flex flex-col">
+                          <span className="font-semibold text-gray-900 text-xs leading-tight">{team.name}</span>
+                          <span className="text-[9px] text-gray-500 font-medium">({team.owner})</span>
+                        </div>
+                      </div>
+                      <span className="text-xs px-2 py-0.5 bg-purple-100 rounded text-purple-600 font-medium">{futurePicks.length} picks</span>
+                    </div>
+                    <div className="p-2 max-h-72 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200">
+                      <div className="space-y-1">
+                        {futurePicks.length === 0 ? (
+                          <p className="text-gray-400 text-xs italic p-2">No future picks</p>
+                        ) : (
+                          futurePicks.map(pick => {
+                            const isTraded = pick.currentOwner !== pick.originalOwner
+                            const roundShort = pick.round.replace(' Rounder', '')
+                            return (
+                              <div
+                                key={pick.key}
+                                className="flex items-center justify-between text-xs p-2 rounded-lg hover:bg-gray-50"
+                              >
+                                <div className="flex items-center gap-2">
+                                  <span className="text-gray-400 font-mono w-10">{pick.year}</span>
+                                  <span className="font-medium text-gray-700">{roundShort}</span>
+                                </div>
+                                {isTraded && (
+                                  <span className="text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded text-[10px] border border-amber-100 font-bold whitespace-nowrap">
+                                    via {pick.originalOwner}
+                                  </span>
+                                )}
+                              </div>
+                            )
+                          })
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
           </div>
+        )}
+
+        {activeTab === 'futurePicks' && (
+          <FutureDraftPicks pickData={futurePickData} setPickData={setFuturePickData} footnotes={footnotes} setFootnotes={setFootnotes} />
         )}
 
         {activeTab === 'upload' && (
