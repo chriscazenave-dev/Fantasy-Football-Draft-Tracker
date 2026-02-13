@@ -451,7 +451,7 @@ function App() {
             <h1 className="text-xl font-semibold tracking-tight">Dynasty<span className="text-gray-400"> Madness</span></h1>
           </div>
           
-          <div className="flex bg-gray-100 p-1 rounded-lg border border-gray-200 backdrop-blur-md">
+          <div className="flex overflow-x-auto bg-gray-100 p-1 rounded-lg border border-gray-200 backdrop-blur-md">
             {[
               { id: 'prospects', label: 'Prospects', icon: Users },
               { id: 'teams', label: 'Rosters', icon: UserCircle },
@@ -462,14 +462,14 @@ function App() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2 px-4 py-1.5 text-sm font-medium rounded-md transition-all duration-200 ${
+                className={`flex items-center gap-1 md:gap-2 px-2 md:px-4 py-1 md:py-1.5 text-sm font-medium rounded-md transition-all duration-200 ${
                   activeTab === tab.id
                     ? 'bg-white text-black shadow-sm ring-1 ring-black/5'
                     : 'text-gray-500 hover:text-gray-900 hover:bg-gray-200/50'
                 }`}
               >
                 <tab.icon size={14} />
-                {tab.label}
+                <span className="hidden md:inline">{tab.label}</span>
               </button>
             ))}
           </div>
