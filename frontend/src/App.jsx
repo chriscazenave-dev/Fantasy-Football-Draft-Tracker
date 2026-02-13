@@ -439,10 +439,18 @@ function App() {
     return draftPicks.filter(p => p.currentTeamId === teamId)
   }
 
+  const tabs = [
+    { id: 'prospects', label: 'Prospects', icon: Users },
+    { id: 'teams', label: 'Rosters', icon: UserCircle },
+    { id: 'trades', label: 'Trades', icon: ArrowRightLeft },
+    { id: 'futurePicks', label: 'Future Picks', mobileLabel: 'Picks', icon: FileText },
+    { id: 'upload', label: 'Data', icon: Upload }
+  ]
+
   return (
-    <div className="min-h-screen bg-white text-[#1d1d1f] font-sans selection:bg-blue-500/20">
+    <div className="min-h-screen pb-16 md:pb-0 bg-white text-[#1d1d1f] font-sans selection:bg-blue-500/20">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200 px-6 py-4">
+      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200 px-4 md:px-6 py-3 md:py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
              <div className="w-8 h-8 rounded-xl bg-black flex items-center justify-center shadow-md">
@@ -451,14 +459,8 @@ function App() {
             <h1 className="text-xl font-semibold tracking-tight">Dynasty<span className="text-gray-400"> Madness</span></h1>
           </div>
           
-          <div className="flex bg-gray-100 p-1 rounded-lg border border-gray-200 backdrop-blur-md">
-            {[
-              { id: 'prospects', label: 'Prospects', icon: Users },
-              { id: 'teams', label: 'Rosters', icon: UserCircle },
-              { id: 'trades', label: 'Trades', icon: ArrowRightLeft },
-              { id: 'futurePicks', label: 'Future Picks', icon: FileText },
-              { id: 'upload', label: 'Data', icon: Upload }
-            ].map((tab) => (
+          <div className="hidden md:flex bg-gray-100 p-1 rounded-lg border border-gray-200 backdrop-blur-md">
+            {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
@@ -476,8 +478,36 @@ function App() {
         </div>
       </header>
 
+      {/* Mobile Bottom Tab Bar */}
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-t border-gray-200">
+        <div className="flex justify-around items-stretch">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`flex flex-col items-center justify-center gap-0.5 flex-1 py-2.5 transition-colors duration-200 ${
+                activeTab === tab.id
+                  ? 'text-black'
+                  : 'text-gray-400'
+              }`}
+            >
+              <div className={`p-1.5 rounded-full transition-colors duration-200 ${
+                activeTab === tab.id ? 'bg-black/5' : ''
+              }`}>
+                <tab.icon size={20} strokeWidth={activeTab === tab.id ? 2.5 : 1.5} />
+              </div>
+              <span className={`text-[10px] leading-tight ${
+                activeTab === tab.id ? 'font-semibold' : 'font-medium'
+              }`}>
+                {tab.mobileLabel || tab.label}
+              </span>
+            </button>
+          ))}
+        </div>
+      </nav>
+
       {/* Content */}
-      <main className="max-w-7xl mx-auto p-6">
+      <main className="max-w-7xl mx-auto p-4 md:p-6">
         {activeTab === 'prospects' && (
           <div className="space-y-6">
             {/* Draft Order Display */}
