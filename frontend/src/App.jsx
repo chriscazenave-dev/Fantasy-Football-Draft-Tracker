@@ -449,6 +449,10 @@ function App() {
 
   return (
     <div className="min-h-screen pb-16 md:pb-0 bg-white text-[#1d1d1f] font-sans selection:bg-blue-500/20">
+      {/* Chris Banner */}
+      <div className="bg-blue-600 text-white text-center py-2 px-4 font-semibold">
+        Chris
+      </div>
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200 px-4 md:px-6 py-3 md:py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
