@@ -342,9 +342,51 @@ export const INITIAL_PICK_DATA = {
       { owner: 'Jared', notes: [] },
     ],
   },
+  2029: {
+    '1st Rounder': [
+      { owner: 'Dedon', notes: [] },
+      { owner: 'Caz', notes: [] },
+      { owner: 'Perry P', notes: [] },
+      { owner: 'Sam', notes: [] },
+      { owner: 'Nick', notes: [] },
+      { owner: 'Zack', notes: [] },
+      { owner: 'Dylan', notes: [] },
+      { owner: 'Jared', notes: [] },
+    ],
+    '2nd Rounder': [
+      { owner: 'Dedon', notes: [] },
+      { owner: 'Caz', notes: [] },
+      { owner: 'Perry P', notes: [] },
+      { owner: 'Sam', notes: [] },
+      { owner: 'Nick', notes: [] },
+      { owner: 'Zack', notes: [] },
+      { owner: 'Dylan', notes: [] },
+      { owner: 'Jared', notes: [] },
+    ],
+    '3rd Rounder': [
+      { owner: 'Dedon', notes: [] },
+      { owner: 'Caz', notes: [] },
+      { owner: 'Perry P', notes: [] },
+      { owner: 'Sam', notes: [] },
+      { owner: 'Nick', notes: [] },
+      { owner: 'Zack', notes: [] },
+      { owner: 'Dylan', notes: [] },
+      { owner: 'Jared', notes: [] },
+    ],
+    '4th Rounder': [
+      { owner: 'Dedon', notes: [] },
+      { owner: 'Caz', notes: [] },
+      { owner: 'Perry P', notes: [] },
+      { owner: 'Sam', notes: [] },
+      { owner: 'Nick', notes: [] },
+      { owner: 'Zack', notes: [] },
+      { owner: 'Dylan', notes: [] },
+      { owner: 'Jared', notes: [] },
+    ],
+  },
 }
 
-export const INITIAL_FOOTNOTES = [
+export const INITIAL_FOOTNOTES= [
   { id: 1, text: 'Antonio Brown and Tua for Daniel Jones and 3rd round pick - 10.13.21' },
   { id: 2, text: 'Jaylen Waren for a 2023 2nd round pick - 9.14.22' },
   { id: 3, text: 'Christian McCaffery, Daniel Jones, Kenyan Drake for Amon St. Brown, 2023 first round pick, 2023 second round pick, 2024 first round pick, 2024 4th round pick - 10.21.22' },
