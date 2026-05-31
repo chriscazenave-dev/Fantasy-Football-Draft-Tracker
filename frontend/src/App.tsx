@@ -1,9 +1,61 @@
 import { useState, useEffect, useRef } from 'react'
-import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText } from 'lucide-react'
+import { Upload, Users, ChevronDown, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 import FutureDraftPicks from './FutureDraftPicks'
-import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER, getOwnerColor } from './futurePicksData'
+import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER } from './futurePicksData'
+import type { PickData, Footnote } from './futurePicksData'
 
-const INITIAL_TEAMS = [
+interface Team {
+  id: number;
+  name: string;
+  owner: string;
+  icon: LucideIcon;
+  color: string;
+  bg: string;
+}
+
+interface CollegeStats {
+  games?: number;
+  completions?: number;
+  attempts?: number;
+  passingYards?: number;
+  passingTDs?: number;
+  interceptions?: number;
+  rushingYards?: number;
+  rushingTDs?: number;
+  carries?: number;
+  receptions?: number;
+  receivingYards?: number;
+  receivingTDs?: number;
+  fumbles?: number;
+  yardsPerCatch?: number;
+  drops?: number;
+  blocksGraded?: number;
+}
+
+interface Prospect {
+  id: number;
+  name: string;
+  position: string;
+  college: string;
+  collegeStats?: CollegeStats;
+}
+
+interface DraftPick {
+  id: number;
+  round: number;
+  pickInRound: number;
+  originalTeamId: number;
+  currentTeamId: number;
+}
+
+interface DraftEntry {
+  playerId: number;
+  teamId: number;
+  pickNumber: number;
+}
+
+const INITIAL_TEAMS: Team[] = [
   { id: 1, name: 'The Evil Empire', owner: 'jmo morgan', icon: Shield, color: 'text-red-500', bg: 'bg-red-50' },
   { id: 2, name: 'Whatever who cares', owner: 'Sam Bowlin', icon: Zap, color: 'text-blue-500', bg: 'bg-blue-50' },
   { id: 3, name: 'Suave Shaheed', owner: 'Nick Casey', icon: Flame, color: 'text-green-500', bg: 'bg-green-50' },
@@ -14,7 +66,7 @@ const INITIAL_TEAMS = [
   { id: 8, name: 'Cheznovs Abduction', owner: 'Austin Dedon', icon: Hexagon, color: 'text-cyan-500', bg: 'bg-cyan-50' },
 ]
 
-const SAMPLE_PROSPECTS = [
+const SAMPLE_PROSPECTS: Prospect[] = [
   { id: 1, name: 'Marcus Johnson', position: 'QB', college: 'Alabama', collegeStats: { games: 39, completions: 812, attempts: 1198, passingYards: 10245, passingTDs: 87, interceptions: 14, rushingYards: 623, rushingTDs: 12 } },
   { id: 2, name: 'DeShawn Williams', position: 'RB', college: 'Ohio State', collegeStats: { games: 36, carries: 642, rushingYards: 3876, rushingTDs: 42, receptions: 87, receivingYards: 714, receivingTDs: 6, fumbles: 4 } },
   { id: 3, name: 'Tyler Smith', position: 'WR', college: 'LSU', collegeStats: { games: 38, receptions: 198, receivingYards: 3241, receivingTDs: 31, rushingYards: 145, rushingTDs: 2, yardsPerCatch: 16.4, drops: 7 } },
@@ -27,8 +79,8 @@ const SAMPLE_PROSPECTS = [
 
 const NUM_ROUNDS = 3
 
-function generateInitialPicks(teams, numRounds) {
-  const picks = []
+function generateInitialPicks(teams: Team[], numRounds: number): DraftPick[] {
+  const picks: DraftPick[] = []
   let pickNumber = 1
   for (let round = 1; round <= numRounds; round++) {
     const teamOrder = round % 2 === 1 ? teams : [...teams].reverse()
@@ -46,7 +98,7 @@ function generateInitialPicks(teams, numRounds) {
   return picks
 }
 
-const STAT_LABELS = {
+const STAT_LABELS: Record<string, string> = {
   games: 'Games',
   completions: 'Comp',
   attempts: 'Att',
@@ -65,7 +117,12 @@ const STAT_LABELS = {
   blocksGraded: 'Block Grade',
 }
 
-function CollegeStatsTooltip({ prospect, style }) {
+interface CollegeStatsTooltipProps {
+  prospect: Prospect | null;
+  style: React.CSSProperties;
+}
+
+function CollegeStatsTooltip({ prospect, style }: CollegeStatsTooltipProps) {
   if (!prospect?.collegeStats) return null
   const stats = prospect.collegeStats
   return (
@@ -92,37 +149,35 @@ function CollegeStatsTooltip({ prospect, style }) {
 
 function App() {
   const [activeTab, setActiveTab] = useState('prospects')
-  const [prospects, setProspects] = useState(SAMPLE_PROSPECTS)
-  const [hoveredProspect, setHoveredProspect] = useState(null)
+  const [prospects, setProspects] = useState<Prospect[]>(SAMPLE_PROSPECTS)
+  const [hoveredProspect, setHoveredProspect] = useState<Prospect | null>(null)
   const [tooltipPos, setTooltipPos] = useState({ top: 0, left: 0 })
-  const [teams, setTeams] = useState(INITIAL_TEAMS)
-  const [draftPicks, setDraftPicks] = useState(() => generateInitialPicks(INITIAL_TEAMS, NUM_ROUNDS))
-  const [draftedPlayers, setDraftedPlayers] = useState({})
-  const [draftOrder, setDraftOrder] = useState([])
-  const [openDropdown, setOpenDropdown] = useState(null)
+  const [teams, setTeams] = useState<Team[]>(INITIAL_TEAMS)
+  const [draftPicks] = useState<DraftPick[]>(() => generateInitialPicks(INITIAL_TEAMS, NUM_ROUNDS))
+  const [draftedPlayers, setDraftedPlayers] = useState<Record<number, number>>({})
+  const [draftOrder, setDraftOrder] = useState<DraftEntry[]>([])
+  const [openDropdown, setOpenDropdown] = useState<number | null>(null)
   const [filterPosition, setFilterPosition] = useState('All')
   const [filterStatus, setFilterStatus] = useState('All')
-  const [editingTeamId, setEditingTeamId] = useState(null)
+  const [editingTeamId, setEditingTeamId] = useState<number | null>(null)
   const [editingTeamName, setEditingTeamName] = useState('')
-  const [tradeFrom, setTradeFrom] = useState(null)
-  const [tradeTo, setTradeTo] = useState(null)
-  const [selectedPicks, setSelectedPicks] = useState([])
+
   const [isDraftActive, setIsDraftActive] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
   const [timeRemaining, setTimeRemaining] = useState(120)
-  const timerRef = useRef(null)
-  const [futurePickData, setFuturePickData] = useState(INITIAL_PICK_DATA)
-  const [footnotes, setFootnotes] = useState(INITIAL_FOOTNOTES)
-  const [futureTradeFrom, setFutureTradeFrom] = useState(null)
-  const [futureTradeTo, setFutureTradeTo] = useState(null)
-  const [selectedFuturePicks, setSelectedFuturePicks] = useState([])
-  const [selectedFuturePicksTo, setSelectedFuturePicksTo] = useState([])
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
+  const [futurePickData, setFuturePickData] = useState<PickData>(INITIAL_PICK_DATA)
+  const [footnotes, setFootnotes] = useState<Footnote[]>(INITIAL_FOOTNOTES)
+  const [futureTradeFrom, setFutureTradeFrom] = useState<number | null>(null)
+  const [futureTradeTo, setFutureTradeTo] = useState<number | null>(null)
+  const [selectedFuturePicks, setSelectedFuturePicks] = useState<string[]>([])
+  const [selectedFuturePicksTo, setSelectedFuturePicksTo] = useState<string[]>([])
   const [futureTradeNote, setFutureTradeNote] = useState('')
   const FUTURE_YEARS = [2026, 2027, 2028]
 
   const tooltipWidth = 256
 
-  const handleProspectMouseEnter = (prospect, e) => {
+  const handleProspectMouseEnter = (prospect: Prospect, e: React.MouseEvent<HTMLElement>) => {
     const rect = e.currentTarget.getBoundingClientRect()
     let left = rect.left + rect.width / 2 - tooltipWidth / 2
     const top = rect.top - 8
@@ -137,14 +192,14 @@ function App() {
     setHoveredProspect(null)
   }
 
-  const positions= ['All', ...new Set(prospects.map(p => p.position))]
+  const positions = ['All', ...new Set(prospects.map(p => p.position))]
 
-  const getTeamById = (teamId) => teams.find(t => t.id === teamId)
+  const getTeamById = (teamId: number) => teams.find(t => t.id === teamId)
 
   const getCurrentPickNumber = () => draftOrder.length + 1
   const getCurrentPick = () => draftPicks.find(p => p.id === getCurrentPickNumber())
 
-  const handleDraft = (playerId, teamId) => {
+  const handleDraft = (playerId: number, teamId: number) => {
     const currentPick = getCurrentPick()
     setDraftedPlayers(prev => ({
       ...prev,
@@ -209,13 +264,13 @@ function App() {
     }
   }, [timeRemaining])
 
-  const formatTime = (seconds) => {
+  const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60)
     const secs = seconds % 60
     return `${mins}:${secs.toString().padStart(2, '0')}`
   }
 
-  const handleUndraft = (playerId) => {
+  const handleUndraft = (playerId: number) => {
     setDraftedPlayers(prev => {
       const newState = { ...prev }
       delete newState[playerId]
@@ -224,10 +279,10 @@ function App() {
     setDraftOrder(prev => prev.filter(d => d.playerId !== playerId))
   }
 
-  const handleTeamNameEdit = (teamId) => {
+  const handleTeamNameEdit = (teamId: number) => {
     const team = getTeamById(teamId)
     setEditingTeamId(teamId)
-    setEditingTeamName(team.name)
+    setEditingTeamName(team?.name ?? '')
   }
 
   const handleTeamNameSave = () => {
@@ -240,34 +295,11 @@ function App() {
     setEditingTeamName('')
   }
 
-  const handleTrade = () => {
-    if (!tradeFrom || !tradeTo || selectedPicks.length === 0) return
-    
-    setDraftPicks(prev => prev.map(pick => {
-      if (selectedPicks.includes(pick.id)) {
-        return { ...pick, currentTeamId: tradeTo }
-      }
-      return pick
-    }))
-    
-    setTradeFrom(null)
-    setTradeTo(null)
-    setSelectedPicks([])
-  }
-
-  const togglePickSelection = (pickId) => {
-    setSelectedPicks(prev => 
-      prev.includes(pickId) 
-        ? prev.filter(id => id !== pickId)
-        : [...prev, pickId]
-    )
-  }
-
   // Future pick helpers
-  const getTeamFuturePicks = (teamId) => {
+  const getTeamFuturePicks = (teamId: number) => {
     const ownerName = TEAM_ID_TO_OWNER[teamId]
     if (!ownerName) return []
-    const picks = []
+    const picks: { year: number; round: string; ownerIdx: number; originalOwner: string; currentOwner: string; notes: (number | string)[]; key: string }[] = []
     for (const year of FUTURE_YEARS) {
       const yearData = futurePickData[year]
       if (!yearData) continue
@@ -291,7 +323,7 @@ function App() {
     return picks
   }
 
-  const toggleFuturePickSelection = (pickKey) => {
+  const toggleFuturePickSelection = (pickKey: string) => {
     setSelectedFuturePicks(prev =>
       prev.includes(pickKey)
         ? prev.filter(k => k !== pickKey)
@@ -299,7 +331,7 @@ function App() {
     )
   }
 
-  const toggleFuturePickSelectionTo = (pickKey) => {
+  const toggleFuturePickSelectionTo = (pickKey: string) => {
     setSelectedFuturePicksTo(prev =>
       prev.includes(pickKey)
         ? prev.filter(k => k !== pickKey)
@@ -317,7 +349,7 @@ function App() {
     // Auto-generate footnote for this trade
     const nextFootnoteId = footnotes.length > 0 ? Math.max(...footnotes.map(f => typeof f.id === 'number' ? f.id : 0)) + 1 : 1
 
-    const describePicks = (pickKeys) => pickKeys.map(key => {
+    const describePicks = (pickKeys: string[]) => pickKeys.map(key => {
       const parts = key.split('|')
       return `${parts[0]} ${parts[1].replace(' Rounder', '')}`
     }).join(', ')
@@ -373,24 +405,24 @@ function App() {
     setFutureTradeNote('')
   }
 
-  const handleFileUpload = (event) => {
-    const file = event.target.files[0]
+  const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0]
     if (!file) return
 
     const reader = new FileReader()
-    reader.onload = (e) => {
+    reader.onload = (e: ProgressEvent<FileReader>) => {
       try {
-        const text = e.target.result
-        let data
+        const text = e.target?.result as string
+        let data: Record<string, unknown>[] | undefined
 
         if (file.name.endsWith('.json')) {
-          data = JSON.parse(text)
+          data = JSON.parse(text) as Record<string, unknown>[]
         } else if (file.name.endsWith('.csv')) {
           const lines = text.split('\n').filter(line => line.trim())
           const headers = lines[0].split(',').map(h => h.trim().toLowerCase())
           data = lines.slice(1).map((line, index) => {
             const values = line.split(',').map(v => v.trim())
-            const obj = { id: Date.now() + index }
+            const obj: Record<string, string | number> = { id: Date.now() + index }
             headers.forEach((header, i) => {
               obj[header] = values[i] || ''
             })
@@ -400,10 +432,10 @@ function App() {
 
         if (Array.isArray(data) && data.length > 0) {
           setProspects(data.map((p, i) => ({
-            id: p.id || Date.now() + i,
-            name: p.name || 'Unknown',
-            position: p.position || 'N/A',
-            college: p.college || 'N/A'
+            id: (p.id as number) || Date.now() + i,
+            name: (p.name as string) || 'Unknown',
+            position: (p.position as string) || 'N/A',
+            college: (p.college as string) || 'N/A'
           })))
           setDraftedPlayers({})
           alert(`Successfully loaded ${data.length} prospects!`)
@@ -423,19 +455,19 @@ function App() {
     return posMatch && statusMatch
   })
 
-  const getProspectById = (playerId) => prospects.find(p => p.id === playerId)
+  const getProspectById = (playerId: number) => prospects.find(p => p.id === playerId)
 
-  const getTeamRoster = (teamId) => {
+  const getTeamRoster = (teamId: number) => {
     return Object.entries(draftedPlayers)
       .filter(([, tId]) => tId === teamId)
       .map(([playerId]) => {
         const prospect = getProspectById(Number(playerId))
         const draftInfo = draftOrder.find(d => d.playerId === Number(playerId))
-        return { ...prospect, pickNumber: draftInfo?.pickNumber }
+        return { ...(prospect as Prospect), pickNumber: draftInfo?.pickNumber }
       })
   }
 
-  const getTeamPicks = (teamId) => {
+  const getTeamPicks = (teamId: number) => {
     return draftPicks.filter(p => p.currentTeamId === teamId)
   }
 
@@ -564,6 +596,8 @@ function App() {
                 {draftPicks.slice(0, 16).map((pick) => {
                   const team = getTeamById(pick.currentTeamId)
                   const originalTeam = getTeamById(pick.originalTeamId)
+                  if (!team) return null
+                  const TeamIcon = team.icon
                   const isCurrentPick = pick.id === getCurrentPickNumber()
                   const isUsed = pick.id < getCurrentPickNumber()
                   const isTraded = pick.currentTeamId !== pick.originalTeamId
@@ -584,7 +618,7 @@ function App() {
                           Pick {pick.id}
                         </span>
                         <div className={`p-2 rounded-full shadow-inner ${team?.bg} ${team?.color}`}>
-                          <team.icon size={18} />
+                          <TeamIcon size={18} />
                         </div>
                       </div>
                       
@@ -918,7 +952,7 @@ function App() {
                               )}
                               {pick.notes.length > 0 && (
                                 <div className="flex gap-0.5">
-                                  {pick.notes.map((n, i) => (
+                                  {pick.notes.map((n: number | string, i: number) => (
                                     <span key={i} className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-amber-100 text-amber-700 text-[8px] font-bold border border-amber-200">{n}</span>
                                   ))}
                                 </div>
@@ -980,7 +1014,7 @@ function App() {
                               )}
                               {pick.notes.length > 0 && (
                                 <div className="flex gap-0.5">
-                                  {pick.notes.map((n, i) => (
+                                  {pick.notes.map((n: number | string, i: number) => (
                                     <span key={i} className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-amber-100 text-amber-700 text-[8px] font-bold border border-amber-200">{n}</span>
                                   ))}
                                 </div>
