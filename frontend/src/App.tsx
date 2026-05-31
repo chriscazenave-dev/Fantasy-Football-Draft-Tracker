@@ -440,7 +440,7 @@ function App() {
           setDraftedPlayers({})
           alert(`Successfully loaded ${data.length} prospects!`)
         }
-      } catch (err) {
+      } catch {
         alert('Error parsing file. Please ensure it is valid JSON or CSV.')
       }
     }
