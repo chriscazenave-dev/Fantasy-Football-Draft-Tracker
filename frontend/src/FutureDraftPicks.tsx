@@ -1,18 +1,25 @@
 import { useState } from 'react'
-import { FileText, Plus, X, ChevronDown, ChevronRight, MessageSquare } from 'lucide-react'
-import { OWNERS, ROUNDS, getOwnerColor } from './futurePicksData'
+import { FileText, Plus, ChevronDown, ChevronRight } from 'lucide-react'
+import { PickData, Footnote, OWNERS, ROUNDS, getOwnerColor } from './futurePicksData'
 
-export default function FutureDraftPicks({ pickData, setPickData, footnotes, setFootnotes }) {
-  const [expandedYears, setExpandedYears] = useState(() => {
+interface FutureDraftPicksProps {
+  pickData: PickData;
+  setPickData: React.Dispatch<React.SetStateAction<PickData>>;
+  footnotes: Footnote[];
+  setFootnotes: React.Dispatch<React.SetStateAction<Footnote[]>>;
+}
+
+export default function FutureDraftPicks({ pickData, setPickData: _setPickData, footnotes, setFootnotes }: FutureDraftPicksProps) {
+  const [expandedYears, setExpandedYears] = useState<Set<number>>(() => {
     const years = Object.keys(pickData).map(Number)
     return new Set(years)
   })
-  const [hoveredNote, setHoveredNote] = useState(null)
+  const [hoveredNote, setHoveredNote] = useState<number | string | null>(null)
   const [showAddNote, setShowAddNote] = useState(false)
   const [newNoteText, setNewNoteText] = useState('')
   const [tooltipPos, setTooltipPos] = useState({ top: 0, left: 0 })
 
-  const toggleYear = (year) => {
+  const toggleYear = (year: number) => {
     setExpandedYears(prev => {
       const next = new Set(prev)
       if (next.has(year)) {
@@ -32,7 +39,7 @@ export default function FutureDraftPicks({ pickData, setPickData, footnotes, set
     setShowAddNote(false)
   }
 
-  const handleNoteHover = (noteId, e) => {
+  const handleNoteHover = (noteId: number | string, e: React.MouseEvent<HTMLSpanElement>) => {
     const rect = e.currentTarget.getBoundingClientRect()
     setTooltipPos({ top: rect.top - 8, left: rect.left + rect.width / 2 })
     setHoveredNote(noteId)
@@ -42,7 +49,7 @@ export default function FutureDraftPicks({ pickData, setPickData, footnotes, set
     setHoveredNote(null)
   }
 
-  const getFootnoteText = (noteId) => {
+  const getFootnoteText = (noteId: number | string) => {
     const fn = footnotes.find(f => f.id === noteId || String(f.id) === String(noteId))
     return fn ? fn.text : ''
   }

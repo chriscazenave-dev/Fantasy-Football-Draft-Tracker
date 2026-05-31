@@ -1,10 +1,30 @@
-export const OWNERS = ['Dedon', 'Caz', 'Perry P', 'Sam', 'Nick', 'Zack', 'Dylan', 'Jared']
+export interface PickEntry {
+  owner: string;
+  notes: (number | string)[];
+}
 
-export const ROUNDS = ['1st Rounder', '2nd Rounder', '3rd Rounder', '4th Rounder']
+export type RoundName = '1st Rounder' | '2nd Rounder' | '3rd Rounder' | '4th Rounder';
+
+export interface YearData {
+  [round: string]: PickEntry[];
+}
+
+export interface PickData {
+  [year: number]: YearData;
+}
+
+export interface Footnote {
+  id: number;
+  text: string;
+}
+
+export const OWNERS: string[] = ['Dedon', 'Caz', 'Perry P', 'Sam', 'Nick', 'Zack', 'Dylan', 'Jared']
+
+export const ROUNDS: RoundName[] = ['1st Rounder', '2nd Rounder', '3rd Rounder', '4th Rounder']
 
 // Maps owner short names used in the future picks data to INITIAL_TEAMS ids
 // Dedon=8, Caz=6, Perry P/Perri=7, Sam=2, Nick=3, Zack/Zach=5, Dylan=4, Jared=1
-export const OWNER_TO_TEAM_ID = {
+export const OWNER_TO_TEAM_ID: Record<string, number> = {
   'Dedon': 8,
   'Caz': 6,
   'Perry P': 7,
@@ -17,7 +37,7 @@ export const OWNER_TO_TEAM_ID = {
   'Jared': 1,
 }
 
-export const TEAM_ID_TO_OWNER = {
+export const TEAM_ID_TO_OWNER: Record<number, string> = {
   8: 'Dedon',
   6: 'Caz',
   7: 'Perry P',
@@ -28,7 +48,7 @@ export const TEAM_ID_TO_OWNER = {
   1: 'Jared',
 }
 
-export const OWNER_COLORS = {
+export const OWNER_COLORS: Record<string, string> = {
   'Dedon': 'bg-cyan-100 text-cyan-800 border-cyan-200',
   'Caz': 'bg-pink-100 text-pink-800 border-pink-200',
   'Perry P': 'bg-orange-100 text-orange-800 border-orange-200',
@@ -41,13 +61,13 @@ export const OWNER_COLORS = {
   'Jared': 'bg-red-100 text-red-800 border-red-200',
 }
 
-export function getOwnerColor(owner) {
+export function getOwnerColor(owner: string): string {
   return OWNER_COLORS[owner] || 'bg-gray-100 text-gray-800 border-gray-200'
 }
 
 // Each entry: { owner: string, notes: number[] }
 // notes are footnote reference numbers e.g. [3] [10]
-export const INITIAL_PICK_DATA = {
+export const INITIAL_PICK_DATA: PickData = {
   2022: {
     '1st Rounder': [
       { owner: 'Dedon', notes: [] },
@@ -344,7 +364,7 @@ export const INITIAL_PICK_DATA = {
   },
 }
 
-export const INITIAL_FOOTNOTES = [
+export const INITIAL_FOOTNOTES: Footnote[] = [
   { id: 1, text: 'Antonio Brown and Tua for Daniel Jones and 3rd round pick - 10.13.21' },
   { id: 2, text: 'Jaylen Waren for a 2023 2nd round pick - 9.14.22' },
   { id: 3, text: 'Christian McCaffery, Daniel Jones, Kenyan Drake for Amon St. Brown, 2023 first round pick, 2023 second round pick, 2024 first round pick, 2024 4th round pick - 10.21.22' },
