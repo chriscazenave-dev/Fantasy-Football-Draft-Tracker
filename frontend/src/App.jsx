@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText } from 'lucide-react'
+import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LayoutGrid } from 'lucide-react'
 import FutureDraftPicks from './FutureDraftPicks'
 import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER, getOwnerColor } from './futurePicksData'
 
@@ -441,6 +441,7 @@ function App() {
 
   const tabs = [
     { id: 'prospects', label: 'Prospects', icon: Users },
+    { id: 'draftBoard', label: 'Draft Board', mobileLabel: 'Board', icon: LayoutGrid },
     { id: 'teams', label: 'Rosters', icon: UserCircle },
     { id: 'trades', label: 'Trades', icon: ArrowRightLeft },
     { id: 'futurePicks', label: 'Future Picks', mobileLabel: 'Picks', icon: FileText },
@@ -1082,6 +1083,129 @@ function App() {
                   </div>
                 )
               })}
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'draftBoard' && (
+          <div className="space-y-6">
+            <div className="bg-gray-50/80 rounded-2xl p-5 border border-gray-200 shadow-sm">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="p-1.5 bg-blue-500/10 rounded-lg">
+                  <LayoutGrid size={16} className="text-blue-500" />
+                </div>
+                <h3 className="font-semibold text-sm text-gray-900">Draft Board</h3>
+                <span className="px-2 py-0.5 bg-white rounded-full text-xs text-gray-500 border border-gray-200">
+                  {NUM_ROUNDS} Rounds &middot; {teams.length} Teams
+                </span>
+              </div>
+
+              <div className="overflow-x-auto rounded-xl border border-gray-200 bg-white">
+                <table className="w-full border-collapse min-w-[700px]">
+                  <thead>
+                    <tr className="bg-gray-100/80">
+                      <th className="sticky left-0 z-10 bg-gray-100 px-3 py-3 text-[10px] font-bold text-gray-500 uppercase tracking-wider border-r border-gray-200 w-16 text-center">Rd</th>
+                      {teams.map(team => {
+                        const TeamIcon = team.icon
+                        return (
+                          <th key={team.id} className="px-2 py-3 text-center min-w-[120px]">
+                            <div className="flex flex-col items-center gap-1">
+                              <div className={`p-1.5 rounded-full ${team.bg} ${team.color}`}>
+                                <TeamIcon size={14} />
+                              </div>
+                              <span className="text-[10px] font-bold text-gray-900 leading-tight line-clamp-1">{team.name}</span>
+                              <span className="text-[9px] text-gray-500 leading-tight truncate max-w-[100px]">{team.owner}</span>
+                            </div>
+                          </th>
+                        )
+                      })}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {Array.from({ length: NUM_ROUNDS }, (_, roundIdx) => {
+                      const round = roundIdx + 1
+                      return (
+                        <tr key={round} className="border-t border-gray-100">
+                          <td className="sticky left-0 z-10 bg-gray-50 px-3 py-2 text-center border-r border-gray-200">
+                            <span className="text-xs font-bold text-gray-600">{round}</span>
+                          </td>
+                          {teams.map(team => {
+                            const pick = draftPicks.find(p => p.round === round && p.originalTeamId === team.id)
+                            if (!pick) return <td key={team.id} className="px-2 py-2"></td>
+
+                            const ownerTeam = getTeamById(pick.currentTeamId)
+                            const isTraded = pick.currentTeamId !== pick.originalTeamId
+                            const isCurrentPick = pick.id === getCurrentPickNumber()
+                            const draftEntry = draftOrder.find(d => d.pickNumber === pick.id)
+                            const draftedProspect = draftEntry ? prospects.find(p => p.id === draftEntry.playerId) : null
+
+                            const positionColors = {
+                              QB: 'bg-red-100 text-red-700 border-red-200',
+                              RB: 'bg-blue-100 text-blue-700 border-blue-200',
+                              WR: 'bg-green-100 text-green-700 border-green-200',
+                              TE: 'bg-orange-100 text-orange-700 border-orange-200',
+                              K: 'bg-purple-100 text-purple-700 border-purple-200',
+                              DEF: 'bg-gray-200 text-gray-700 border-gray-300',
+                            }
+
+                            return (
+                              <td key={team.id} className="px-1.5 py-1.5">
+                                <div className={`rounded-xl p-2.5 min-h-[70px] flex flex-col justify-between transition-all duration-300 ${
+                                  isCurrentPick
+                                    ? 'bg-blue-50 ring-2 ring-blue-500 shadow-md shadow-blue-500/20 animate-pulse'
+                                    : draftedProspect
+                                      ? 'bg-white border border-gray-100 shadow-sm'
+                                      : 'bg-gray-50/60 border border-dashed border-gray-200'
+                                }`}>
+                                  <div className="flex items-center justify-between mb-1">
+                                    <span className={`text-[9px] font-bold ${
+                                      isCurrentPick ? 'text-blue-600' : 'text-gray-400'
+                                    }`}>#{pick.id}</span>
+                                    {isTraded && (
+                                      <div className="flex items-center gap-0.5 px-1 py-0.5 rounded bg-amber-50 border border-amber-100">
+                                        <ArrowRightLeft size={7} className="text-amber-500" />
+                                        <span className="text-[8px] font-bold text-amber-600 truncate max-w-[50px]">
+                                          {ownerTeam?.name}
+                                        </span>
+                                      </div>
+                                    )}
+                                  </div>
+
+                                  {draftedProspect ? (
+                                    <div className="flex flex-col gap-1">
+                                      <span className="text-[11px] font-semibold text-gray-900 leading-tight line-clamp-1">
+                                        {draftedProspect.name}
+                                      </span>
+                                      <span className={`self-start inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold border ${
+                                        positionColors[draftedProspect.position] || 'bg-gray-100 text-gray-600 border-gray-200'
+                                      }`}>
+                                        {draftedProspect.position}
+                                      </span>
+                                    </div>
+                                  ) : (
+                                    <span className={`text-[10px] italic ${
+                                      isCurrentPick ? 'text-blue-500 font-medium' : 'text-gray-400'
+                                    }`}>
+                                      {isCurrentPick ? 'On the clock' : ''}
+                                    </span>
+                                  )}
+
+                                  {isTraded && ownerTeam && (
+                                    <div className="mt-1 flex items-center gap-1">
+                                      <ownerTeam.icon size={8} className={ownerTeam.color} />
+                                      <span className="text-[8px] text-gray-500 truncate">{ownerTeam.owner}</span>
+                                    </div>
+                                  )}
+                                </div>
+                              </td>
+                            )
+                          })}
+                        </tr>
+                      )
+                    })}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         )}
