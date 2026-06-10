@@ -1165,7 +1165,7 @@ function App() {
                                       <div className="flex items-center gap-0.5 px-1 py-0.5 rounded bg-amber-50 border border-amber-100">
                                         <ArrowRightLeft size={7} className="text-amber-500" />
                                         <span className="text-[8px] font-bold text-amber-600 truncate max-w-[50px]">
-                                          {getTeamById(pick.originalTeamId)?.name}
+                                          {ownerTeam?.name}
                                         </span>
                                       </div>
                                     )}
