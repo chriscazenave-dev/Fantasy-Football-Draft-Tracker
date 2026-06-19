@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText } from 'lucide-react'
+import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut } from 'lucide-react'
 import FutureDraftPicks from './FutureDraftPicks'
 import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER, getOwnerColor } from './futurePicksData'
 
@@ -90,7 +90,7 @@ function CollegeStatsTooltip({ prospect, style }) {
   )
 }
 
-function App() {
+function App({ username, onLogout }) {
   const [activeTab, setActiveTab] = useState('prospects')
   const [prospects, setProspects] = useState(SAMPLE_PROSPECTS)
   const [hoveredProspect, setHoveredProspect] = useState(null)
@@ -459,21 +459,40 @@ function App() {
             <h1 className="text-xl font-semibold tracking-tight">Dynasty<span className="text-gray-400"> Madness</span></h1>
           </div>
           
-          <div className="hidden md:flex bg-gray-100 p-1 rounded-lg border border-gray-200 backdrop-blur-md">
-            {tabs.map((tab) => (
+          <div className="flex items-center gap-3">
+            <div className="hidden md:flex bg-gray-100 p-1 rounded-lg border border-gray-200 backdrop-blur-md">
+              {tabs.map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`flex items-center gap-2 px-4 py-1.5 text-sm font-medium rounded-md transition-all duration-200 ${
+                    activeTab === tab.id
+                      ? 'bg-white text-black shadow-sm ring-1 ring-black/5'
+                      : 'text-gray-500 hover:text-gray-900 hover:bg-gray-200/50'
+                  }`}
+                >
+                  <tab.icon size={14} />
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+
+            {username && (
+              <span className="hidden sm:flex items-center gap-1.5 text-sm text-gray-500">
+                <UserCircle size={16} className="text-gray-400" />
+                {username}
+              </span>
+            )}
+            {onLogout && (
               <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2 px-4 py-1.5 text-sm font-medium rounded-md transition-all duration-200 ${
-                  activeTab === tab.id
-                    ? 'bg-white text-black shadow-sm ring-1 ring-black/5'
-                    : 'text-gray-500 hover:text-gray-900 hover:bg-gray-200/50'
-                }`}
+                onClick={onLogout}
+                title="Log out"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-gray-600 bg-gray-100 rounded-lg border border-gray-200 hover:text-gray-900 hover:bg-gray-200/70 transition-colors duration-200"
               >
-                <tab.icon size={14} />
-                {tab.label}
+                <LogOut size={14} />
+                <span className="hidden sm:inline">Log out</span>
               </button>
-            ))}
+            )}
           </div>
         </div>
       </header>
