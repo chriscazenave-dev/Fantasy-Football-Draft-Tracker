@@ -118,7 +118,7 @@ function App({ username, onLogout }) {
   const [selectedFuturePicks, setSelectedFuturePicks] = useState([])
   const [selectedFuturePicksTo, setSelectedFuturePicksTo] = useState([])
   const [futureTradeNote, setFutureTradeNote] = useState('')
-  const FUTURE_YEARS = [2026, 2027, 2028]
+  const FUTURE_YEARS = [2026, 2027, 2028, 2029]
 
   const tooltipWidth = 256
 
@@ -886,7 +886,7 @@ function App({ username, onLogout }) {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Future Picks Trade Center</h3>
-                  <p className="text-sm text-gray-500">Two-way trades for future draft picks (2026–2028) — synced with the Future Picks tab</p>
+                  <p className="text-sm text-gray-500">Two-way trades for future draft picks (2026–2029) — synced with the Future Picks tab</p>
                 </div>
               </div>
 
@@ -1051,7 +1051,7 @@ function App({ username, onLogout }) {
             </div>
 
             {/* Future Picks Per-Team Overview (2026-2028) */}
-            <h3 className="text-lg font-bold tracking-tight text-gray-900 mt-8 mb-4">Future Picks by Team (2026–2028)</h3>
+            <h3 className="text-lg font-bold tracking-tight text-gray-900 mt-8 mb-4">Future Picks by Team (2026–2029)</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {teams.map(team => {
                 const futurePicks = getTeamFuturePicks(team.id)
