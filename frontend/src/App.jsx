@@ -1,9 +1,11 @@
-import { useState, useEffect, useRef } from 'react'
-import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut, LogIn, Sparkles, Newspaper } from 'lucide-react'
+import { Fragment, useState, useEffect, useRef } from 'react'
+import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut, LogIn, Sparkles, Newspaper, BookOpen, ChevronRight } from 'lucide-react'
 import FutureDraftPicks from './FutureDraftPicks'
 import DraftHype from './DraftHype'
 import HomePage from './HomePage'
 import RostersPage from './RostersPage'
+import PlayerValuesPage from './PlayerValuesPage'
+import { ROOKIE_DETAILS } from './rookieDetailData'
 import { VETERAN_ROSTERS, ROOKIE_PROSPECTS } from './leagueData'
 import { INITIAL_LINEUPS } from './lineupData'
 import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER, getOwnerColor } from './futurePicksData'
@@ -93,6 +95,7 @@ function App({ session, onLogout, onRequestLogin }) {
   const [lineups, setLineups] = useState(INITIAL_LINEUPS)
   const [prospects, setProspects] = useState(ROOKIE_PROSPECTS)
   const [hoveredProspect, setHoveredProspect] = useState(null)
+  const [expandedProspectId, setExpandedProspectId] = useState(null)
   const [tooltipPos, setTooltipPos] = useState({ top: 0, left: 0 })
   const [teams] = useState(INITIAL_TEAMS)
   const [draftPicks, setDraftPicks] = useState(() => generateInitialPicks(INITIAL_TEAMS, NUM_ROUNDS))
@@ -458,6 +461,7 @@ function App({ session, onLogout, onRequestLogin }) {
   const tabs = [
     { id: 'home', label: 'Home', icon: Newspaper },
     { id: 'prospects', label: 'Prospects', icon: Users },
+    { id: 'values', label: 'Player Values', mobileLabel: 'Values', icon: BookOpen },
     { id: 'teams', label: 'Rosters', icon: UserCircle },
     { id: 'trades', label: 'Trades', icon: ArrowRightLeft },
     { id: 'futurePicks', label: 'Future Picks', mobileLabel: 'Picks', icon: FileText },
@@ -557,6 +561,10 @@ function App({ session, onLogout, onRequestLogin }) {
       {/* Content */}
       <main className="max-w-7xl mx-auto p-4 md:p-6">
         {activeTab === 'home' && <HomePage />}
+
+        {activeTab === 'values' && (
+          <PlayerValuesPage teams={teams} draftedPlayers={draftedPlayers} />
+        )}
 
         {activeTab === 'prospects' && (
           <div className="space-y-6">
@@ -744,6 +752,7 @@ function App({ session, onLogout, onRequestLogin }) {
                     <th className="text-left px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Position</th>
                     <th className="text-left px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">NFL Team</th>
                     <th className="text-left px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Rank</th>
+                    <th className="text-left px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">KTC Value</th>
                     <th className="text-left px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Status</th>
                     <th className="text-right px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Action</th>
                   </tr>
@@ -752,10 +761,12 @@ function App({ session, onLogout, onRequestLogin }) {
                   {filteredProspects.map((prospect) => {
                     const draftedTeam = getTeamById(draftedPlayers[prospect.id])
                     const isDrafted = !!draftedTeam
+                    const detail = ROOKIE_DETAILS[prospect.id]
+                    const isExpanded = expandedProspectId === prospect.id
 
                     return (
+                      <Fragment key={prospect.id}>
                       <tr
-                        key={prospect.id}
                         className={`group transition-colors duration-200 ${
                           isDrafted ? 'bg-gray-100/50' : 'hover:bg-white'
                         }`}
@@ -763,9 +774,15 @@ function App({ session, onLogout, onRequestLogin }) {
                         onMouseLeave={handleProspectMouseLeave}
                       >
                         <td className="px-6 py-4">
-                          <span className={`font-medium ${isDrafted ? 'text-gray-400' : 'text-gray-900'}`}>
-                            {prospect.name}
-                          </span>
+                          <button
+                            onClick={() => detail && setExpandedProspectId(isExpanded ? null : prospect.id)}
+                            className={`flex items-center gap-1.5 font-medium text-left ${isDrafted ? 'text-gray-400' : 'text-gray-900'} ${detail ? 'hover:text-blue-600 cursor-pointer' : 'cursor-default'}`}
+                          >
+                            {detail && (
+                              <ChevronRight size={13} className={`flex-shrink-0 text-gray-400 transition-transform duration-200 ${isExpanded ? 'rotate-90' : ''}`} />
+                            )}
+                            {detail?.fullName || prospect.name}
+                          </button>
                         </td>
                         <td className="px-6 py-4">
                           <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-white text-gray-600 border border-gray-200">
@@ -774,6 +791,13 @@ function App({ session, onLogout, onRequestLogin }) {
                         </td>
                         <td className="px-6 py-4 text-sm text-gray-500">{prospect.nflTeam || prospect.college}</td>
                         <td className="px-6 py-4 text-sm text-gray-500">{prospect.rank ? `#${prospect.rank}` : '—'}</td>
+                        <td className="px-6 py-4 text-sm">
+                          {detail?.ktcValue ? (
+                            <span className="font-semibold text-gray-800 tabular-nums">{detail.ktcValue.toLocaleString()}</span>
+                          ) : (
+                            <span className="text-gray-300">—</span>
+                          )}
+                        </td>
                         <td className="px-6 py-4">
                           {isDrafted ? (
                             <div className="flex flex-col">
@@ -863,6 +887,46 @@ function App({ session, onLogout, onRequestLogin }) {
                           )}
                         </td>
                       </tr>
+                      {isExpanded && detail && (
+                        <tr className="bg-blue-50/40">
+                          <td colSpan={7} className="px-6 py-5">
+                            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                              <div className="space-y-2">
+                                <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400">Profile</h4>
+                                <div className="grid grid-cols-2 gap-x-6 gap-y-1.5 text-sm">
+                                  {detail.college && (<><span className="text-gray-500">College</span><span className="font-medium text-gray-900">{detail.college}</span></>)}
+                                  {detail.age != null && (<><span className="text-gray-500">Age</span><span className="font-medium text-gray-900">{detail.age}</span></>)}
+                                  {detail.height && (<><span className="text-gray-500">Height</span><span className="font-medium text-gray-900">{detail.height}</span></>)}
+                                  {detail.weight != null && (<><span className="text-gray-500">Weight</span><span className="font-medium text-gray-900">{detail.weight} lbs</span></>)}
+                                  {detail.draftCapital && (<><span className="text-gray-500">NFL Draft</span><span className="font-medium text-gray-900">{detail.draftCapital}</span></>)}
+                                </div>
+                              </div>
+                              <div className="space-y-2">
+                                <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400">Dynasty Value</h4>
+                                <div className="grid grid-cols-2 gap-x-6 gap-y-1.5 text-sm">
+                                  {detail.ktcValue != null && (<><span className="text-gray-500">KTC Value</span><span className="font-semibold text-gray-900">{detail.ktcValue.toLocaleString()}</span></>)}
+                                  {detail.ktcRookieRank != null && (<><span className="text-gray-500">KTC Rookie Rank</span><span className="font-medium text-gray-900">#{detail.ktcRookieRank}</span></>)}
+                                  {detail.ktcOverallRank != null && (<><span className="text-gray-500">KTC Overall Rank</span><span className="font-medium text-gray-900">#{detail.ktcOverallRank}</span></>)}
+                                  {detail.dsRank != null && (<><span className="text-gray-500">DraftSharks Rank</span><span className="font-medium text-gray-900">#{detail.dsRank} (Tier {detail.dsTier})</span></>)}
+                                  {detail.dsRookieAdp && (<><span className="text-gray-500">Rookie ADP</span><span className="font-medium text-gray-900">{detail.dsRookieAdp}</span></>)}
+                                  {detail.projPtsYear1 != null && (<><span className="text-gray-500">Proj Pts (Yr 1)</span><span className="font-medium text-gray-900">{detail.projPtsYear1}</span></>)}
+                                  {detail.projPts3Yr != null && (<><span className="text-gray-500">Proj Pts (3 Yr)</span><span className="font-medium text-gray-900">{detail.projPts3Yr}</span></>)}
+                                  {detail.projPts5Yr != null && (<><span className="text-gray-500">Proj Pts (5 Yr)</span><span className="font-medium text-gray-900">{detail.projPts5Yr}</span></>)}
+                                </div>
+                              </div>
+                              <div className="space-y-2">
+                                <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400">Scouting Report</h4>
+                                {detail.scoutingReport ? (
+                                  <p className="text-sm text-gray-700 leading-relaxed">{detail.scoutingReport}</p>
+                                ) : (
+                                  <p className="text-sm text-gray-400 italic">No scouting report available.</p>
+                                )}
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      )}
+                      </Fragment>
                     )
                   })}
                 </tbody>
