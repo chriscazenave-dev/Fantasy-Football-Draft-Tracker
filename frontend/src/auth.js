@@ -40,6 +40,14 @@ export function getSession() {
   }
 }
 
+function isLocalDev() {
+  const host = window.location.hostname
+  return host === 'localhost' || host === '127.0.0.1'
+}
+
+const LOCAL_DEV_MESSAGE =
+  'Sign-in is unavailable in local development. The /api auth endpoints only exist on the Vercel deployment (they need AUTH_SECRET and DATABASE_URL). Use "Continue without signing in" to browse the app.'
+
 async function postJson(url, body, headers = {}) {
   let res
   try {
@@ -49,6 +57,7 @@ async function postJson(url, body, headers = {}) {
       body: JSON.stringify(body),
     })
   } catch {
+    if (isLocalDev()) throw new Error(LOCAL_DEV_MESSAGE)
     throw new Error('Could not reach the server. Check your connection and try again.')
   }
 
@@ -60,6 +69,7 @@ async function postJson(url, body, headers = {}) {
   }
 
   if (!res.ok) {
+    if (isLocalDev() && !data) throw new Error(LOCAL_DEV_MESSAGE)
     throw new Error(data?.error || 'Something went wrong. Please try again.')
   }
   if (!data?.token) {

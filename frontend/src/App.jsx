@@ -8,7 +8,11 @@ import PlayerValuesPage from './PlayerValuesPage'
 import { ROOKIE_DETAILS } from './rookieDetailData'
 import { VETERAN_ROSTERS, ROOKIE_PROSPECTS } from './leagueData'
 import { INITIAL_LINEUPS } from './lineupData'
-import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER, getOwnerColor } from './futurePicksData'
+import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER } from './futurePicksData'
+import MockDraftHistory from './MockDraftHistory'
+import CollegeStatsTooltip from './CollegeStatsTooltip'
+import UploadPage from './UploadPage'
+import { generateInitialPicks, formatTime, filterProspects, pickCpuPlayer, loadStored, saveStored, STORAGE_KEYS } from './draftLogic'
 
 const INITIAL_TEAMS = [
   { id: 1, name: 'The Evil Empire', owner: 'jmo morgan', icon: Shield, color: 'text-red-500', bg: 'bg-red-50' },
@@ -25,68 +29,7 @@ const INITIAL_TEAMS = [
 
 const NUM_ROUNDS = 3
 
-function generateInitialPicks(teams, numRounds) {
-  const picks = []
-  let pickNumber = 1
-  for (let round = 1; round <= numRounds; round++) {
-    const teamOrder = round % 2 === 1 ? teams : [...teams].reverse()
-    for (const team of teamOrder) {
-      picks.push({
-        id: pickNumber,
-        round,
-        pickInRound: pickNumber - (round - 1) * teams.length,
-        originalTeamId: team.id,
-        currentTeamId: team.id,
-      })
-      pickNumber++
-    }
-  }
-  return picks
-}
-
-const STAT_LABELS = {
-  games: 'Games',
-  completions: 'Comp',
-  attempts: 'Att',
-  passingYards: 'Pass Yds',
-  passingTDs: 'Pass TD',
-  interceptions: 'INT',
-  rushingYards: 'Rush Yds',
-  rushingTDs: 'Rush TD',
-  carries: 'Carries',
-  receptions: 'Rec',
-  receivingYards: 'Rec Yds',
-  receivingTDs: 'Rec TD',
-  fumbles: 'Fumbles',
-  yardsPerCatch: 'Yds/Catch',
-  drops: 'Drops',
-  blocksGraded: 'Block Grade',
-}
-
-function CollegeStatsTooltip({ prospect, style }) {
-  if (!prospect?.collegeStats) return null
-  const stats = prospect.collegeStats
-  return (
-    <div
-      style={style}
-      className="fixed z-[100] w-64 bg-white rounded-xl border border-gray-200 shadow-2xl p-4 pointer-events-none"
-    >
-      <div className="flex items-center justify-between mb-3">
-        <span className="text-sm font-semibold text-gray-900">{prospect.name}</span>
-        <span className="text-xs px-2 py-0.5 rounded-md bg-gray-100 text-gray-600 border border-gray-200 font-medium">{prospect.position}</span>
-      </div>
-      <div className="text-xs text-gray-500 mb-3 font-medium">{prospect.college} &middot; College Stats</div>
-      <div className="grid grid-cols-2 gap-x-4 gap-y-2">
-        {Object.entries(stats).map(([key, value]) => (
-          <div key={key} className="flex justify-between">
-            <span className="text-xs text-gray-400">{STAT_LABELS[key] || key}</span>
-            <span className="text-xs font-semibold text-gray-800">{typeof value === 'number' && !Number.isInteger(value) ? value.toFixed(1) : value.toLocaleString()}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
+const storedDraftState = loadStored(STORAGE_KEYS.draftState, null)
 
 function App({ session, onLogout, onRequestLogin }) {
   const isAdmin = !!session?.isAdmin
@@ -98,23 +41,22 @@ function App({ session, onLogout, onRequestLogin }) {
   const [expandedProspectId, setExpandedProspectId] = useState(null)
   const [tooltipPos, setTooltipPos] = useState({ top: 0, left: 0 })
   const [teams] = useState(INITIAL_TEAMS)
-  const [draftPicks, setDraftPicks] = useState(() => generateInitialPicks(INITIAL_TEAMS, NUM_ROUNDS))
-  const [draftedPlayers, setDraftedPlayers] = useState({})
-  const [draftOrder, setDraftOrder] = useState([])
+  const [draftPicks] = useState(() => generateInitialPicks(INITIAL_TEAMS, NUM_ROUNDS))
+  const [draftedPlayers, setDraftedPlayers] = useState(() => storedDraftState?.draftedPlayers ?? {})
+  const [draftOrder, setDraftOrder] = useState(() => storedDraftState?.draftOrder ?? [])
   const [openDropdown, setOpenDropdown] = useState(null)
   const [filterPosition, setFilterPosition] = useState('All')
   const [filterStatus, setFilterStatus] = useState('All')
-  const [tradeFrom, setTradeFrom] = useState(null)
-  const [tradeTo, setTradeTo] = useState(null)
-  const [selectedPicks, setSelectedPicks] = useState([])
-  const [isDraftActive, setIsDraftActive] = useState(false)
-  const [isPaused, setIsPaused] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
+  const [isDraftActive, setIsDraftActive] = useState(() => !!storedDraftState?.isMockDraft)
+  const [isPaused, setIsPaused] = useState(() => !!storedDraftState?.isMockDraft)
   const [timeRemaining, setTimeRemaining] = useState(120)
   const timerRef = useRef(null)
   const [hypeMode, setHypeMode] = useState(null)
-  const [isMockDraft, setIsMockDraft] = useState(false)
-  const [mockTeamId, setMockTeamId] = useState(null)
-  const mockSnapshotRef = useRef(null)
+  const [isMockDraft, setIsMockDraft] = useState(() => !!storedDraftState?.isMockDraft)
+  const [mockTeamId, setMockTeamId] = useState(() => storedDraftState?.mockTeamId ?? null)
+  const mockSnapshotRef = useRef(storedDraftState?.mockSnapshot ?? null)
+  const [mockHistory, setMockHistory] = useState(() => loadStored(STORAGE_KEYS.mockHistory, []))
   const [futurePickData, setFuturePickData] = useState(INITIAL_PICK_DATA)
   const [footnotes, setFootnotes] = useState(INITIAL_FOOTNOTES)
   const [futureTradeFrom, setFutureTradeFrom] = useState(null)
@@ -125,6 +67,24 @@ function App({ session, onLogout, onRequestLogin }) {
   const FUTURE_YEARS = [2026, 2027, 2028]
 
   const tooltipWidth = 256
+
+  useEffect(() => {
+    saveStored(STORAGE_KEYS.draftState, {
+      draftedPlayers,
+      draftOrder,
+      isMockDraft,
+      mockTeamId,
+      mockSnapshot: mockSnapshotRef.current,
+    })
+  }, [draftedPlayers, draftOrder, isMockDraft, mockTeamId])
+
+  useEffect(() => {
+    saveStored(STORAGE_KEYS.mockHistory, mockHistory)
+  }, [mockHistory])
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [activeTab])
 
   const handleProspectMouseEnter = (prospect, e) => {
     const rect = e.currentTarget.getBoundingClientRect()
@@ -196,6 +156,12 @@ function App({ session, onLogout, onRequestLogin }) {
   }
 
   const handleEndMockDraft = () => {
+    if (draftOrder.length > 0) {
+      setMockHistory(prev => [
+        { id: Date.now(), date: new Date().toISOString(), mockTeamId, picks: draftOrder },
+        ...prev,
+      ])
+    }
     const snapshot = mockSnapshotRef.current
     mockSnapshotRef.current = null
     setIsMockDraft(false)
@@ -238,33 +204,30 @@ function App({ session, onLogout, onRequestLogin }) {
     }
   }, [isDraftActive, isPaused])
 
+  const draftActionsRef = useRef(null)
   useEffect(() => {
-    if (timeRemaining === 0 && isDraftActive && !isPaused) {
-      handleAutoPick()
-    }
-  }, [timeRemaining])
+    draftActionsRef.current = { handleAutoPick, handleDraft, draftPicks, prospects, draftedPlayers, draftOrder }
+  })
+
+  useEffect(() => {
+    if (timeRemaining !== 0 || !isDraftActive || isPaused) return
+    const timeout = setTimeout(() => draftActionsRef.current.handleAutoPick(), 0)
+    return () => clearTimeout(timeout)
+  }, [timeRemaining, isDraftActive, isPaused])
 
   useEffect(() => {
     if (!isMockDraft || !isDraftActive || isPaused) return
-    if (draftOrder.length >= draftPicks.length) return
     const timeout = setTimeout(() => {
-      const currentPick = draftPicks.find(p => p.id === draftOrder.length + 1)
+      const { handleDraft: draft, draftPicks: picks, prospects: pool, draftedPlayers: drafted, draftOrder: order } = draftActionsRef.current
+      if (order.length >= picks.length) return
+      const currentPick = picks.find(p => p.id === order.length + 1)
       if (!currentPick) return
       if (mockTeamId && currentPick.currentTeamId === mockTeamId) return
-      const available = prospects.filter(p => !draftedPlayers[p.id])
-      if (available.length === 0) return
-      const pool = available.slice(0, 5)
-      const player = pool[Math.floor(Math.random() * pool.length)]
-      handleDraft(player.id, currentPick.currentTeamId)
+      const player = pickCpuPlayer(pool, drafted)
+      if (player) draft(player.id, currentPick.currentTeamId)
     }, 1500)
     return () => clearTimeout(timeout)
   }, [isMockDraft, isDraftActive, isPaused, draftOrder.length, mockTeamId])
-
-  const formatTime = (seconds) => {
-    const mins = Math.floor(seconds / 60)
-    const secs = seconds % 60
-    return `${mins}:${secs.toString().padStart(2, '0')}`
-  }
 
   const handleUndraft = (playerId) => {
     setDraftedPlayers(prev => {
@@ -273,29 +236,6 @@ function App({ session, onLogout, onRequestLogin }) {
       return newState
     })
     setDraftOrder(prev => prev.filter(d => d.playerId !== playerId))
-  }
-
-  const handleTrade = () => {
-    if (!tradeFrom || !tradeTo || selectedPicks.length === 0) return
-    
-    setDraftPicks(prev => prev.map(pick => {
-      if (selectedPicks.includes(pick.id)) {
-        return { ...pick, currentTeamId: tradeTo }
-      }
-      return pick
-    }))
-    
-    setTradeFrom(null)
-    setTradeTo(null)
-    setSelectedPicks([])
-  }
-
-  const togglePickSelection = (pickId) => {
-    setSelectedPicks(prev => 
-      prev.includes(pickId) 
-        ? prev.filter(id => id !== pickId)
-        : [...prev, pickId]
-    )
   }
 
   // Future pick helpers
@@ -443,19 +383,17 @@ function App({ session, onLogout, onRequestLogin }) {
           setDraftedPlayers({})
           alert(`Successfully loaded ${data.length} prospects!`)
         }
-      } catch (err) {
+      } catch {
         alert('Error parsing file. Please ensure it is valid JSON or CSV.')
       }
     }
     reader.readAsText(file)
   }
 
-  const filteredProspects = prospects.filter(p => {
-    const posMatch = filterPosition === 'All' || p.position === filterPosition
-    const statusMatch = filterStatus === 'All' || 
-      (filterStatus === 'Drafted' && draftedPlayers[p.id]) ||
-      (filterStatus === 'Available' && !draftedPlayers[p.id])
-    return posMatch && statusMatch
+  const filteredProspects = filterProspects(prospects, draftedPlayers, {
+    position: filterPosition,
+    status: filterStatus,
+    query: searchQuery,
   })
 
   const tabs = [
@@ -704,17 +642,19 @@ function App({ session, onLogout, onRequestLogin }) {
             </div>
 
             {/* Filters */}
-            <div className="flex items-center gap-4 bg-gray-50/80 p-2 rounded-xl border border-gray-200 shadow-sm">
-              <div className="flex items-center gap-3 px-3 py-1 bg-white rounded-lg border border-gray-200">
+            <div className="flex flex-wrap items-center gap-3 md:gap-4 bg-gray-50/80 p-2 rounded-xl border border-gray-200 shadow-sm">
+              <div className="flex items-center gap-3 px-3 py-1 bg-white rounded-lg border border-gray-200 w-full sm:w-auto">
                 <Search size={14} className="text-gray-400" />
                 <input 
                   type="text" 
                   placeholder="Filter prospects..." 
-                  className="bg-transparent border-none focus:outline-none text-sm w-48 text-gray-900 placeholder-gray-400"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="bg-transparent border-none focus:outline-none text-sm w-full sm:w-48 text-gray-900 placeholder-gray-400"
                 />
               </div>
               
-              <div className="h-6 w-px bg-gray-200"></div>
+              <div className="hidden sm:block h-6 w-px bg-gray-200"></div>
 
               <div className="flex gap-3">
                 <select
@@ -744,8 +684,8 @@ function App({ session, onLogout, onRequestLogin }) {
             </div>
 
             {/* Prospects Table */}
-            <div className="bg-gray-50/80 rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
-              <table className="w-full">
+            <div className="bg-gray-50/80 rounded-2xl overflow-hidden border border-gray-200 shadow-sm overflow-x-auto">
+              <table className="w-full min-w-[640px]">
                 <thead>
                   <tr className="border-b border-gray-200 bg-gray-100/50">
                     <th className="text-left px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Prospect</th>
@@ -941,6 +881,15 @@ function App({ session, onLogout, onRequestLogin }) {
                 </div>
               )}
             </div>
+
+            {!isMockDraft && (
+              <MockDraftHistory
+                history={mockHistory}
+                teams={teams}
+                prospects={prospects}
+                onClear={() => setMockHistory([])}
+              />
+            )}
           </div>
         )}
 
@@ -1189,67 +1138,10 @@ function App({ session, onLogout, onRequestLogin }) {
         )}
 
         {activeTab === 'futurePicks' && (
-          <FutureDraftPicks pickData={futurePickData} setPickData={setFuturePickData} footnotes={footnotes} setFootnotes={setFootnotes} canEdit={isLoggedIn} />
+          <FutureDraftPicks pickData={futurePickData} footnotes={footnotes} setFootnotes={setFootnotes} canEdit={isLoggedIn} />
         )}
 
-        {activeTab === 'upload' && (
-          <div className="max-w-2xl mx-auto py-12">
-            <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm text-center">
-              <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-inner border border-gray-100">
-                <Upload size={32} className="text-gray-400" />
-              </div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Import Data</h2>
-              <p className="text-gray-500 mb-8 max-w-md mx-auto">
-                Drag and drop your CSV or JSON file here to instantly populate your prospect list.
-              </p>
-
-              <div className="relative group cursor-pointer">
-                <input
-                  type="file"
-                  accept=".csv,.json"
-                  onChange={handleFileUpload}
-                  className="absolute inset-0 w-full h-full opacity-0 z-10 cursor-pointer"
-                />
-                <div className="border-2 border-dashed border-gray-200 rounded-2xl p-10 group-hover:border-blue-500/50 group-hover:bg-blue-50/30 transition-all duration-300">
-                  <span className="inline-flex px-4 py-2 bg-black text-white font-medium rounded-lg shadow-sm group-hover:scale-105 transition-transform">
-                    Select File
-                  </span>
-                  <p className="mt-4 text-xs text-gray-400 uppercase tracking-wide">Supports CSV & JSON</p>
-                </div>
-              </div>
-
-              <div className="mt-12 text-left bg-gray-50/50 rounded-xl p-6 border border-gray-100">
-                <h3 className="text-sm font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
-                  Required Format
-                </h3>
-                
-                <div className="space-y-6">
-                  <div>
-                    <p className="text-xs text-gray-500 mb-2 font-mono">CSV Example</p>
-                    <div className="bg-white rounded-lg p-3 border border-gray-200 overflow-x-auto shadow-sm">
-                      <code className="text-xs text-blue-600 font-mono block">name,position,college</code>
-                      <code className="text-xs text-gray-500 font-mono block">Marcus Johnson,QB,Alabama</code>
-                      <code className="text-xs text-gray-500 font-mono block">DeShawn Williams,RB,Ohio State</code>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <p className="text-xs text-gray-500 mb-2 font-mono">JSON Example</p>
-                    <div className="bg-white rounded-lg p-3 border border-gray-200 overflow-x-auto shadow-sm">
-                      <pre className="text-xs text-gray-500 font-mono">
-{`[
-  { "name": "Marcus Johnson", "position": "QB", "college": "Alabama" },
-  { "name": "Tyler Smith", "position": "WR", "college": "LSU" }
-]`}
-                      </pre>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+        {activeTab === 'upload' && <UploadPage onFileUpload={handleFileUpload} />}
       </main>
       {hoveredProspect && (
         <CollegeStatsTooltip

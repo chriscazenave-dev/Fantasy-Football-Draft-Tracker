@@ -28,11 +28,16 @@ npm run preview
 ## Features
 
 - Real-time draft tracking
+- Mock drafts with CPU picks, localStorage persistence, and history
 - Team roster management
 - Prospect filtering and search
-- Trade facilitation
-- CSV/JSON data upload
+- Future pick trade facilitation
+- CSV/JSON data upload (admin-only Data tab)
 - Apple-inspired UI design
+
+## Auth
+
+Sign-in uses the Vercel serverless functions in `api/` and requires `AUTH_SECRET` and `DATABASE_URL` env vars on the deployment. It is not available under `npm run dev`; use "Continue without signing in" locally.
 
 ## Project Structure
 
