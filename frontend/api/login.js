@@ -1,50 +1,4 @@
-import crypto from 'node:crypto'
-
-const TOKEN_TTL_SECONDS = 60 * 60 * 24 * 7 // 7 days
-
-function base64url(input) {
-  return Buffer.from(input)
-    .toString('base64')
-    .replace(/\+/g, '-')
-    .replace(/\//g, '_')
-    .replace(/=+$/, '')
-}
-
-function sign(payloadB64, secret) {
-  return crypto
-    .createHmac('sha256', secret)
-    .update(payloadB64)
-    .digest('base64')
-    .replace(/\+/g, '-')
-    .replace(/\//g, '_')
-    .replace(/=+$/, '')
-}
-
-function safeEqual(a, b) {
-  const ab = Buffer.from(a, 'utf8')
-  const bb = Buffer.from(b, 'utf8')
-  if (ab.length !== bb.length) return false
-  return crypto.timingSafeEqual(ab, bb)
-}
-
-async function readJsonBody(req) {
-  if (req.body && typeof req.body === 'object') return req.body
-  if (typeof req.body === 'string') {
-    try {
-      return JSON.parse(req.body)
-    } catch {
-      return {}
-    }
-  }
-  const chunks = []
-  for await (const chunk of req) chunks.push(chunk)
-  if (chunks.length === 0) return {}
-  try {
-    return JSON.parse(Buffer.concat(chunks).toString('utf8'))
-  } catch {
-    return {}
-  }
-}
+import { getDb, makeToken, readJsonBody, sessionPayload, verifyPassword } from './_authLib.js'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -53,38 +7,35 @@ export default async function handler(req, res) {
   }
 
   const secret = process.env.AUTH_SECRET
-  const usersRaw = process.env.AUTH_USERS
-  if (!secret || !usersRaw) {
-    return res.status(500).json({ error: 'Login is not configured yet. Set AUTH_SECRET and AUTH_USERS.' })
-  }
-
-  let users
-  try {
-    users = JSON.parse(usersRaw)
-  } catch {
-    return res.status(500).json({ error: 'Login is misconfigured (AUTH_USERS is not valid JSON).' })
+  const sql = getDb()
+  if (!secret || !sql) {
+    return res.status(500).json({ error: 'Login is not configured yet. Set AUTH_SECRET and DATABASE_URL.' })
   }
 
   const body = await readJsonBody(req)
-  const username = String(body.username ?? '').trim()
+  const username = String(body.username ?? '').trim().toLowerCase()
   const password = String(body.password ?? '')
 
   if (!username || !password) {
     return res.status(400).json({ error: 'Username and password are required.' })
   }
 
-  const expected = Object.prototype.hasOwnProperty.call(users, username) ? String(users[username]) : null
-  const ok = expected !== null && safeEqual(password, expected)
-  if (!ok) {
+  let rows
+  try {
+    rows = await sql`
+      SELECT username, display_name, team_name, is_admin, must_change_password, password_hash
+      FROM draft_tracker_users WHERE username = ${username}
+    `
+  } catch {
+    return res.status(500).json({ error: 'Could not reach the user database. Try again shortly.' })
+  }
+
+  const user = rows[0]
+  if (!user || !verifyPassword(password, user.password_hash)) {
     return res.status(401).json({ error: 'Incorrect username or password.' })
   }
 
-  const payload = {
-    username,
-    exp: Math.floor(Date.now() / 1000) + TOKEN_TTL_SECONDS,
-  }
-  const payloadB64 = base64url(JSON.stringify(payload))
-  const token = `${payloadB64}.${sign(payloadB64, secret)}`
-
-  return res.status(200).json({ token, username })
+  const payload = sessionPayload(user)
+  const token = makeToken(payload, secret)
+  return res.status(200).json({ token, ...payload })
 }

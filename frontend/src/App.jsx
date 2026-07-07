@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
-import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut } from 'lucide-react'
+import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut, Sparkles } from 'lucide-react'
 import FutureDraftPicks from './FutureDraftPicks'
+import DraftHype from './DraftHype'
+import { VETERAN_ROSTERS, ROOKIE_PROSPECTS } from './leagueData'
 import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER, getOwnerColor } from './futurePicksData'
 
 const INITIAL_TEAMS = [
@@ -14,16 +16,7 @@ const INITIAL_TEAMS = [
   { id: 8, name: 'Cheznovs Abduction', owner: 'Austin Dedon', icon: Hexagon, color: 'text-cyan-500', bg: 'bg-cyan-50' },
 ]
 
-const SAMPLE_PROSPECTS = [
-  { id: 1, name: 'Marcus Johnson', position: 'QB', college: 'Alabama', collegeStats: { games: 39, completions: 812, attempts: 1198, passingYards: 10245, passingTDs: 87, interceptions: 14, rushingYards: 623, rushingTDs: 12 } },
-  { id: 2, name: 'DeShawn Williams', position: 'RB', college: 'Ohio State', collegeStats: { games: 36, carries: 642, rushingYards: 3876, rushingTDs: 42, receptions: 87, receivingYards: 714, receivingTDs: 6, fumbles: 4 } },
-  { id: 3, name: 'Tyler Smith', position: 'WR', college: 'LSU', collegeStats: { games: 38, receptions: 198, receivingYards: 3241, receivingTDs: 31, rushingYards: 145, rushingTDs: 2, yardsPerCatch: 16.4, drops: 7 } },
-  { id: 4, name: 'Jordan Davis', position: 'TE', college: 'Georgia', collegeStats: { games: 40, receptions: 142, receivingYards: 1876, receivingTDs: 19, blocksGraded: 88.4, yardsPerCatch: 13.2, drops: 5, rushingTDs: 1 } },
-  { id: 5, name: 'Chris Thompson', position: 'WR', college: 'USC', collegeStats: { games: 35, receptions: 176, receivingYards: 2854, receivingTDs: 26, rushingYards: 210, rushingTDs: 3, yardsPerCatch: 16.2, drops: 9 } },
-  { id: 6, name: 'Andre Mitchell', position: 'RB', college: 'Michigan', collegeStats: { games: 37, carries: 589, rushingYards: 3412, rushingTDs: 36, receptions: 64, receivingYards: 528, receivingTDs: 4, fumbles: 6 } },
-  { id: 7, name: 'Brandon Lee', position: 'QB', college: 'Clemson', collegeStats: { games: 34, completions: 724, attempts: 1105, passingYards: 9187, passingTDs: 72, interceptions: 18, rushingYards: 1241, rushingTDs: 19 } },
-  { id: 8, name: 'Malik Brown', position: 'WR', college: 'Texas', collegeStats: { games: 36, receptions: 164, receivingYards: 2678, receivingTDs: 22, rushingYards: 98, rushingTDs: 1, yardsPerCatch: 16.3, drops: 6 } },
-]
+
 
 const NUM_ROUNDS = 3
 
@@ -90,9 +83,10 @@ function CollegeStatsTooltip({ prospect, style }) {
   )
 }
 
-function App({ username, onLogout }) {
+function App({ session, onLogout }) {
+  const isAdmin = !!session?.isAdmin
   const [activeTab, setActiveTab] = useState('prospects')
-  const [prospects, setProspects] = useState(SAMPLE_PROSPECTS)
+  const [prospects, setProspects] = useState(ROOKIE_PROSPECTS)
   const [hoveredProspect, setHoveredProspect] = useState(null)
   const [tooltipPos, setTooltipPos] = useState({ top: 0, left: 0 })
   const [teams, setTeams] = useState(INITIAL_TEAMS)
@@ -111,6 +105,9 @@ function App({ username, onLogout }) {
   const [isPaused, setIsPaused] = useState(false)
   const [timeRemaining, setTimeRemaining] = useState(120)
   const timerRef = useRef(null)
+  const [hypeMode, setHypeMode] = useState(null)
+  const [isMockDraft, setIsMockDraft] = useState(false)
+  const mockSnapshotRef = useRef(null)
   const [futurePickData, setFuturePickData] = useState(INITIAL_PICK_DATA)
   const [footnotes, setFootnotes] = useState(INITIAL_FOOTNOTES)
   const [futureTradeFrom, setFutureTradeFrom] = useState(null)
@@ -167,9 +164,36 @@ function App({ username, onLogout }) {
   }
 
   const handleStartDraft = () => {
+    setHypeMode('real')
+  }
+
+  const handleStartMockDraft = () => {
+    setHypeMode('mock')
+  }
+
+  const beginDraft = () => {
+    const mode = hypeMode
+    setHypeMode(null)
+    if (mode === 'mock') {
+      mockSnapshotRef.current = { draftedPlayers, draftOrder }
+      setDraftedPlayers({})
+      setDraftOrder([])
+      setIsMockDraft(true)
+    }
     setIsDraftActive(true)
     setIsPaused(false)
     setTimeRemaining(120)
+  }
+
+  const handleEndMockDraft = () => {
+    const snapshot = mockSnapshotRef.current
+    mockSnapshotRef.current = null
+    setIsMockDraft(false)
+    setIsDraftActive(false)
+    setIsPaused(false)
+    setTimeRemaining(120)
+    setDraftedPlayers(snapshot?.draftedPlayers ?? {})
+    setDraftOrder(snapshot?.draftOrder ?? [])
   }
 
   const handlePauseDraft = () => {
@@ -208,6 +232,21 @@ function App({ username, onLogout }) {
       handleAutoPick()
     }
   }, [timeRemaining])
+
+  useEffect(() => {
+    if (!isMockDraft || !isDraftActive || isPaused) return
+    if (draftOrder.length >= draftPicks.length) return
+    const timeout = setTimeout(() => {
+      const currentPick = draftPicks.find(p => p.id === draftOrder.length + 1)
+      if (!currentPick) return
+      const available = prospects.filter(p => !draftedPlayers[p.id])
+      if (available.length === 0) return
+      const pool = available.slice(0, 5)
+      const player = pool[Math.floor(Math.random() * pool.length)]
+      handleDraft(player.id, currentPick.currentTeamId)
+    }, 1500)
+    return () => clearTimeout(timeout)
+  }, [isMockDraft, isDraftActive, isPaused, draftOrder.length])
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60)
@@ -444,7 +483,7 @@ function App({ username, onLogout }) {
     { id: 'teams', label: 'Rosters', icon: UserCircle },
     { id: 'trades', label: 'Trades', icon: ArrowRightLeft },
     { id: 'futurePicks', label: 'Future Picks', mobileLabel: 'Picks', icon: FileText },
-    { id: 'upload', label: 'Data', icon: Upload }
+    ...(isAdmin ? [{ id: 'upload', label: 'Data', icon: Upload }] : []),
   ]
 
   return (
@@ -477,10 +516,13 @@ function App({ username, onLogout }) {
               ))}
             </div>
 
-            {username && (
+            {session && (
               <span className="hidden sm:flex items-center gap-1.5 text-sm text-gray-500">
                 <UserCircle size={16} className="text-gray-400" />
-                {username}
+                {session.name || session.username}
+                {isAdmin && (
+                  <span className="px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider bg-black text-white rounded-md">Admin</span>
+                )}
               </span>
             )}
             {onLogout && (
@@ -547,33 +589,63 @@ function App({ username, onLogout }) {
                     {formatTime(timeRemaining)}
                   </span>
                 )}
+                {isMockDraft && (
+                  <span className="px-2.5 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-purple-100 text-purple-700 border border-purple-200">
+                    Mock Draft
+                  </span>
+                )}
                 <div className="ml-auto flex items-center gap-2">
                   {!isDraftActive ? (
-                    <button
-                      onClick={handleStartDraft}
-                      className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-medium rounded-lg transition-all shadow-sm"
-                    >
-                      <Play size={14} />
-                      Start Draft
-                    </button>
+                    <>
+                      {isAdmin && (
+                        <button
+                          onClick={handleStartDraft}
+                          className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-medium rounded-lg transition-all shadow-sm"
+                        >
+                          <Play size={14} />
+                          Start Draft
+                        </button>
+                      )}
+                      <button
+                        onClick={handleStartMockDraft}
+                        className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-purple-600 hover:bg-purple-700 text-white text-xs font-medium rounded-lg transition-all shadow-sm"
+                      >
+                        <Sparkles size={14} />
+                        Mock Draft
+                      </button>
+                    </>
                   ) : (
                     <>
-                      <button
-                        onClick={handlePauseDraft}
-                        className={`inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-medium rounded-lg transition-all shadow-sm ${
-                          isPaused ? 'bg-green-600 hover:bg-green-700 text-white' : 'bg-yellow-500 hover:bg-yellow-600 text-white'
-                        }`}
-                      >
-                        {isPaused ? <Play size={14} /> : <Pause size={14} />}
-                        {isPaused ? 'Resume' : 'Pause'}
-                      </button>
-                      <button
-                        onClick={handleRestartDraft}
-                        className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-red-600 hover:bg-red-700 text-white text-xs font-medium rounded-lg transition-all shadow-sm"
-                      >
-                        <RotateCcw size={14} />
-                        Restart Draft
-                      </button>
+                      {(isAdmin || isMockDraft) && (
+                        <button
+                          onClick={handlePauseDraft}
+                          className={`inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-medium rounded-lg transition-all shadow-sm ${
+                            isPaused ? 'bg-green-600 hover:bg-green-700 text-white' : 'bg-yellow-500 hover:bg-yellow-600 text-white'
+                          }`}
+                        >
+                          {isPaused ? <Play size={14} /> : <Pause size={14} />}
+                          {isPaused ? 'Resume' : 'Pause'}
+                        </button>
+                      )}
+                      {isMockDraft ? (
+                        <button
+                          onClick={handleEndMockDraft}
+                          className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-purple-600 hover:bg-purple-700 text-white text-xs font-medium rounded-lg transition-all shadow-sm"
+                        >
+                          <X size={14} />
+                          End Mock Draft
+                        </button>
+                      ) : (
+                        isAdmin && (
+                          <button
+                            onClick={handleRestartDraft}
+                            className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-red-600 hover:bg-red-700 text-white text-xs font-medium rounded-lg transition-all shadow-sm"
+                          >
+                            <RotateCcw size={14} />
+                            Restart Draft
+                          </button>
+                        )
+                      )}
                     </>
                   )}
                 </div>
@@ -681,7 +753,8 @@ function App({ username, onLogout }) {
                   <tr className="border-b border-gray-200 bg-gray-100/50">
                     <th className="text-left px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Prospect</th>
                     <th className="text-left px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Position</th>
-                    <th className="text-left px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">College</th>
+                    <th className="text-left px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">NFL Team</th>
+                    <th className="text-left px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Rank</th>
                     <th className="text-left px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Status</th>
                     <th className="text-right px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Action</th>
                   </tr>
@@ -710,7 +783,8 @@ function App({ username, onLogout }) {
                             {prospect.position}
                           </span>
                         </td>
-                        <td className="px-6 py-4 text-sm text-gray-500">{prospect.college}</td>
+                        <td className="px-6 py-4 text-sm text-gray-500">{prospect.nflTeam || prospect.college}</td>
+                        <td className="px-6 py-4 text-sm text-gray-500">{prospect.rank ? `#${prospect.rank}` : '—'}</td>
                         <td className="px-6 py-4">
                           {isDrafted ? (
                             <div className="flex flex-col">
@@ -829,42 +903,63 @@ function App({ username, onLogout }) {
                             </div>
                           )}
                         </div>
-                        <button
-                          onClick={() => editingTeamId === team.id ? handleTeamNameSave() : handleTeamNameEdit(team.id)}
-                          className="text-gray-400 hover:text-gray-600 transition-colors p-1 hover:bg-gray-100 rounded-md"
-                        >
-                          <Edit2 size={14} />
-                        </button>
+                        {isAdmin && (
+                          <button
+                            onClick={() => editingTeamId === team.id ? handleTeamNameSave() : handleTeamNameEdit(team.id)}
+                            className="text-gray-400 hover:text-gray-600 transition-colors p-1 hover:bg-gray-100 rounded-md"
+                          >
+                            <Edit2 size={14} />
+                          </button>
+                        )}
                       </div>
                       <div className="flex items-center justify-between text-xs text-gray-500 font-medium">
-                        <span>{roster.length} Players</span>
+                        <span>{(VETERAN_ROSTERS[team.id]?.length || 0) + roster.length} Players</span>
                         <span>{teamPicks.filter(p => p.id >= getCurrentPickNumber()).length} Picks Left</span>
                       </div>
                     </div>
                     
-                    <div className="p-4 flex-1 flex flex-col">
-                      {roster.length === 0 ? (
-                        <div className="flex-1 flex flex-col items-center justify-center py-8 text-gray-400 border-2 border-dashed border-gray-100 rounded-xl m-2">
-                           <UserCircle size={24} className="mb-2 opacity-50" />
-                           <p className="text-xs">No players drafted</p>
+                    <div className="p-4 flex-1 flex flex-col gap-4">
+                      {roster.length > 0 && (
+                        <div>
+                          <p className="text-[10px] font-bold uppercase tracking-wider text-gray-400 mb-2">Draft Picks</p>
+                          <div className="space-y-3">
+                            {roster.sort((a, b) => (a.pickNumber || 0) - (b.pickNumber || 0)).map(player => (
+                              <div
+                                key={player.id}
+                                className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors group"
+                                onMouseEnter={(e) => handleProspectMouseEnter(player, e)}
+                                onMouseLeave={handleProspectMouseLeave}
+                              >
+                                <span className="text-gray-400 text-xs font-mono w-5">#{player.pickNumber}</span>
+                                <div className="flex-1 min-w-0">
+                                  <div className="text-sm font-medium text-gray-900 truncate">{player.name}</div>
+                                  <div className="text-xs text-gray-500">{player.position} • {player.nflTeam || player.college}</div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                      {(VETERAN_ROSTERS[team.id]?.length || 0) > 0 ? (
+                        <div className="flex-1">
+                          <p className="text-[10px] font-bold uppercase tracking-wider text-gray-400 mb-2">Roster</p>
+                          <div className="space-y-1 max-h-72 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200 pr-1">
+                            {VETERAN_ROSTERS[team.id].map((player, idx) => (
+                              <div key={idx} className="flex items-center gap-2 px-2 py-1 rounded-lg hover:bg-gray-50">
+                                <span className="text-[10px] font-bold text-gray-400 w-8">{player.position}</span>
+                                <span className="text-xs font-medium text-gray-800 truncate flex-1">{player.name}</span>
+                                <span className="text-[10px] text-gray-400">{player.nflTeam}</span>
+                              </div>
+                            ))}
+                          </div>
                         </div>
                       ) : (
-                        <div className="space-y-3">
-                          {roster.sort((a, b) => (a.pickNumber || 0) - (b.pickNumber || 0)).map(player => (
-                            <div
-                              key={player.id}
-                              className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors group"
-                              onMouseEnter={(e) => handleProspectMouseEnter(player, e)}
-                              onMouseLeave={handleProspectMouseLeave}
-                            >
-                              <span className="text-gray-400 text-xs font-mono w-5">#{player.pickNumber}</span>
-                              <div className="flex-1 min-w-0">
-                                <div className="text-sm font-medium text-gray-900 truncate">{player.name}</div>
-                                <div className="text-xs text-gray-500">{player.position} • {player.college}</div>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
+                        roster.length === 0 && (
+                          <div className="flex-1 flex flex-col items-center justify-center py-8 text-gray-400 border-2 border-dashed border-gray-100 rounded-xl m-2">
+                             <UserCircle size={24} className="mb-2 opacity-50" />
+                             <p className="text-xs">No players</p>
+                          </div>
+                        )
                       )}
                     </div>
                   </div>
@@ -1173,6 +1268,9 @@ function App({ username, onLogout }) {
           prospect={hoveredProspect}
           style={{ top: tooltipPos.top, left: tooltipPos.left, transform: 'translateY(-100%)' }}
         />
+      )}
+      {hypeMode && (
+        <DraftHype mode={hypeMode} onStart={beginDraft} onCancel={() => setHypeMode(null)} />
       )}
     </div>
   )
