@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+/* Warm neutral palette — light tan background, stone-toned grays */
+@theme {
+  --color-gray-50: #f6f4ee;
+  --color-gray-100: #eeebe2;
+  --color-gray-200: #e2ddd0;
+  --color-gray-300: #cfc8b8;
+  --color-gray-400: #a29b8b;
+  --color-gray-500: #7c7568;
+  --color-gray-600: #5d574c;
+  --color-gray-700: #46413a;
+  --color-gray-800: #2f2b25;
+  --color-gray-900: #1f1c17;
+}
+
 @layer utilities {
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
@@ -16,6 +30,6 @@
 }
 
 body {
-  background-color: #ffffff;
-  color: #1d1d1f;
+  background-color: #faf8f3;
+  color: #211d16;
 }

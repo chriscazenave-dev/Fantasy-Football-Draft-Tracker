@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Users, Lock, User, Loader2 } from 'lucide-react'
 import { login } from './auth'
 
-export default function Login({ onSuccess }) {
+export default function Login({ onSuccess, onCancel }) {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
@@ -23,7 +23,7 @@ export default function Login({ onSuccess }) {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white text-[#1d1d1f] font-sans px-4 selection:bg-blue-500/20">
+    <div className="min-h-screen flex items-center justify-center bg-[#faf8f3] text-[#211d16] font-sans px-4 selection:bg-amber-500/20">
       <div className="w-full max-w-sm">
         <div className="flex flex-col items-center mb-8">
           <div className="w-12 h-12 rounded-2xl bg-black flex items-center justify-center shadow-md mb-4">
@@ -32,10 +32,10 @@ export default function Login({ onSuccess }) {
           <h1 className="text-2xl font-semibold tracking-tight">
             Dynasty<span className="text-gray-400"> Madness</span>
           </h1>
-          <p className="text-sm text-gray-500 mt-1">Sign in to access the draft tracker</p>
+          <p className="text-sm text-gray-500 mt-1">Sign in to manage your team</p>
         </div>
 
-        <form onSubmit={handleSubmit} className="bg-gray-50/80 rounded-2xl border border-gray-200 shadow-sm p-6 space-y-4">
+        <form onSubmit={handleSubmit} className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 space-y-4">
           <div>
             <label htmlFor="username" className="block text-xs font-semibold text-gray-600 mb-1.5">
               Username
@@ -88,6 +88,16 @@ export default function Login({ onSuccess }) {
             {loading ? 'Signing in…' : 'Sign in'}
           </button>
         </form>
+
+        {onCancel && (
+          <button
+            type="button"
+            onClick={onCancel}
+            className="w-full mt-4 text-sm text-gray-500 hover:text-gray-800 font-medium transition-colors"
+          >
+            ← Continue without signing in
+          </button>
+        )}
       </div>
     </div>
   )

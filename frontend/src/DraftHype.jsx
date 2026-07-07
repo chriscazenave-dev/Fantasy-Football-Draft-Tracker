@@ -81,8 +81,9 @@ function Fireworks() {
   return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 }
 
-export default function DraftHype({ mode, onStart, onCancel }) {
+export default function DraftHype({ mode, onStart, onCancel, teams = [], needsTeamSelect = false, selectedTeamId = null, onSelectTeam }) {
   const isMock = mode === 'mock'
+  const startDisabled = needsTeamSelect && !selectedTeamId
 
   return (
     <div className="fixed inset-0 z-[200] bg-black overflow-y-auto">
@@ -115,12 +116,35 @@ export default function DraftHype({ mode, onStart, onCancel }) {
           />
         </div>
 
+        {needsTeamSelect && (
+          <div className="w-full max-w-2xl">
+            <p className="text-sm font-bold text-white/80 uppercase tracking-widest mb-3">Who are you drafting for?</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+              {teams.map(team => (
+                <button
+                  key={team.id}
+                  onClick={() => onSelectTeam?.(team.id)}
+                  className={`flex flex-col items-center gap-1 px-3 py-3 rounded-xl border text-center transition-all ${
+                    selectedTeamId === team.id
+                      ? 'border-yellow-400 bg-yellow-400/20 text-white ring-2 ring-yellow-400/50 scale-105'
+                      : 'border-white/20 bg-white/5 text-white/70 hover:bg-white/10 hover:text-white'
+                  }`}
+                >
+                  <span className="text-xs font-bold leading-tight">{team.name}</span>
+                  <span className="text-[10px] opacity-70">({team.owner})</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
         <button
           onClick={onStart}
-          className="group inline-flex items-center gap-3 px-10 py-4 rounded-2xl bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white text-xl font-black uppercase tracking-wider shadow-2xl shadow-orange-500/40 hover:scale-105 active:scale-95 transition-transform"
+          disabled={startDisabled}
+          className="group inline-flex items-center gap-3 px-10 py-4 rounded-2xl bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white text-xl font-black uppercase tracking-wider shadow-2xl shadow-orange-500/40 hover:scale-105 active:scale-95 transition-transform disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
         >
           <Play size={24} className="group-hover:animate-pulse" fill="currentColor" />
-          {isMock ? 'Start Mock Draft' : 'Start The Draft'}
+          {startDisabled ? 'Pick Your Team First' : isMock ? 'Start Mock Draft' : 'Start The Draft'}
         </button>
       </div>
     </div>
