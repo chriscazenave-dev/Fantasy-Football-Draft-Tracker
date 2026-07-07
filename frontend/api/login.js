@@ -1,4 +1,4 @@
-import { getDb, makeToken, readJsonBody, sessionPayload, verifyPassword } from './_authLib.js'
+import { getDb, makeToken, readJsonBody, sessionPayload, setSessionCookie, verifyPassword } from './_authLib.js'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -36,6 +36,6 @@ export default async function handler(req, res) {
   }
 
   const payload = sessionPayload(user)
-  const token = makeToken(payload, secret)
-  return res.status(200).json({ token, ...payload })
+  setSessionCookie(res, makeToken(payload, secret))
+  return res.status(200).json({ ...payload })
 }
