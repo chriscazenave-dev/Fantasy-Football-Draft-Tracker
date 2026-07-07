@@ -1,5 +1,6 @@
 import { Fragment, useState, useEffect, useRef } from 'react'
 import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut, LogIn, Sparkles, Newspaper, ChevronRight } from 'lucide-react'
+import Ably from 'ably'
 import FutureDraftPicks from './FutureDraftPicks'
 import DraftHype from './DraftHype'
 import NewspaperPage from './NewspaperPage'
@@ -12,6 +13,7 @@ import MockDraftHistory from './MockDraftHistory'
 import CollegeStatsTooltip from './CollegeStatsTooltip'
 import UploadPage from './UploadPage'
 import { generateInitialPicks, formatTime, filterProspects, pickCpuPlayer, loadStored, saveStored, STORAGE_KEYS } from './draftLogic'
+import { fetchLeagueState, saveLeagueState } from './leagueState'
 
 const INITIAL_TEAMS = [
   { id: 1, name: 'The Evil Empire', owner: 'jmo morgan', icon: Shield, color: 'text-red-500', bg: 'bg-red-50' },
@@ -28,11 +30,10 @@ const INITIAL_TEAMS = [
 
 const NUM_ROUNDS = 3
 
-const storedDraftState = loadStored(STORAGE_KEYS.draftState, null)
-
 function App({ session, onLogout, onRequestLogin }) {
   const isAdmin = !!session?.isAdmin
   const isLoggedIn = !!session
+  const [storedDraftState] = useState(() => loadStored(STORAGE_KEYS.draftState, null))
   const [activeTab, setActiveTab] = useState('home')
   const [lineups, setLineups] = useState(INITIAL_LINEUPS)
   const [prospects, setProspects] = useState(ROOKIE_PROSPECTS)
@@ -63,7 +64,102 @@ function App({ session, onLogout, onRequestLogin }) {
   const [selectedFuturePicks, setSelectedFuturePicks] = useState([])
   const [selectedFuturePicksTo, setSelectedFuturePicksTo] = useState([])
   const [futureTradeNote, setFutureTradeNote] = useState('')
+  const [isHydrated, setIsHydrated] = useState(false)
+  const versionRef = useRef(0)
+  const skipSaveRef = useRef(false)
+  const saveTimerRef = useRef(null)
+  const isMockRef = useRef(false)
   const FUTURE_YEARS = [2026, 2027, 2028]
+
+  useEffect(() => {
+    isMockRef.current = isMockDraft
+  }, [isMockDraft])
+
+  const applyRemoteState = (state, { skipDraftFields = false } = {}) => {
+    if (!state) return
+    skipSaveRef.current = true
+    if (state.lineups) setLineups(state.lineups)
+    if (state.prospects) setProspects(state.prospects)
+    if (!skipDraftFields) {
+      if (state.draftedPlayers) setDraftedPlayers(state.draftedPlayers)
+      if (state.draftOrder) setDraftOrder(state.draftOrder)
+    }
+    if (state.futurePickData) setFuturePickData(state.futurePickData)
+    if (state.footnotes) setFootnotes(state.footnotes)
+  }
+
+  const refreshFromServer = () => {
+    fetchLeagueState()
+      .then(({ state, version }) => {
+        if (isMockRef.current) return
+        if (version >= versionRef.current) {
+          applyRemoteState(state)
+          versionRef.current = version
+        }
+      })
+      .catch(() => {})
+  }
+
+  // Hydrate shared league state from the server on load
+  useEffect(() => {
+    let cancelled = false
+    fetchLeagueState()
+      .then(({ state, version }) => {
+        if (cancelled) return
+        applyRemoteState(state, { skipDraftFields: isMockRef.current })
+        versionRef.current = version
+      })
+      .catch(() => {})
+      .finally(() => {
+        if (!cancelled) setIsHydrated(true)
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  // Persist league state (debounced). Mock drafts stay local-only.
+  useEffect(() => {
+    if (!isHydrated || isMockDraft || !isLoggedIn) return
+    if (skipSaveRef.current) {
+      skipSaveRef.current = false
+      return
+    }
+    clearTimeout(saveTimerRef.current)
+    const state = { lineups, prospects, draftedPlayers, draftOrder, futurePickData, footnotes }
+    saveTimerRef.current = setTimeout(() => {
+      saveLeagueState(state)
+        .then(({ version }) => {
+          versionRef.current = Math.max(versionRef.current, version)
+        })
+        .catch(() => {})
+    }, 800)
+    return () => clearTimeout(saveTimerRef.current)
+  }, [isHydrated, isLoggedIn, isMockDraft, lineups, prospects, draftedPlayers, draftOrder, futurePickData, footnotes])
+
+  // Realtime sync: refetch when another member saves a change
+  useEffect(() => {
+    const ably = new Ably.Realtime({ authUrl: '/api/ably-token' })
+    const channel = ably.channels.get('league-state')
+    const onUpdate = (msg) => {
+      const version = Number(msg?.data?.version ?? 0)
+      if (version <= versionRef.current || isMockRef.current) return
+      fetchLeagueState()
+        .then(({ state, version: v }) => {
+          if (isMockRef.current) return
+          if (v > versionRef.current) {
+            applyRemoteState(state)
+            versionRef.current = v
+          }
+        })
+        .catch(() => {})
+    }
+    channel.subscribe('update', onUpdate)
+    return () => {
+      channel.unsubscribe('update', onUpdate)
+      ably.close()
+    }
+  }, [])
 
   const tooltipWidth = 256
 
@@ -170,6 +266,7 @@ function App({ session, onLogout, onRequestLogin }) {
     setTimeRemaining(120)
     setDraftedPlayers(snapshot?.draftedPlayers ?? {})
     setDraftOrder(snapshot?.draftOrder ?? [])
+    refreshFromServer()
   }
 
   const handlePauseDraft = () => {
