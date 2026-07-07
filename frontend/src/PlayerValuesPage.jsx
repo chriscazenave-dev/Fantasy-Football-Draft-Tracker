@@ -86,7 +86,7 @@ export default function PlayerValuesPage({ teams, draftedPlayers, dateline }) {
     <div className="max-w-6xl mx-auto font-serif text-[#2b2418]">
       {/* Page header */}
       <div className="border-y-4 border-double border-[#5a4a32] py-5 text-center bg-[#f3ecdb] px-4">
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#8a7a5c] mb-2">The Dynasty Gazette · Page Two</p>
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[#8a7a5c] mb-2">The Dynasty Madness Times · Page Two</p>
         <h1 className="text-3xl md:text-5xl font-black tracking-tight uppercase" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>
           The Value Ledger
         </h1>
