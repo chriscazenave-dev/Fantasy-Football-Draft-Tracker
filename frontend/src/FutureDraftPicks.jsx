@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FileText, Plus, X, ChevronDown, ChevronRight, MessageSquare } from 'lucide-react'
 import { OWNERS, ROUNDS, getOwnerColor } from './futurePicksData'
 
-export default function FutureDraftPicks({ pickData, setPickData, footnotes, setFootnotes, canEdit = true }) {
+export default function FutureDraftPicks({ pickData, footnotes, setFootnotes, canEdit = true }) {
   const [expandedYears, setExpandedYears] = useState(() => {
     const years = Object.keys(pickData).map(Number)
     return new Set(years)
