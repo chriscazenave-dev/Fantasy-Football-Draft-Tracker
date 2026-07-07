@@ -10,6 +10,7 @@ import { VETERAN_ROSTERS, ROOKIE_PROSPECTS } from './leagueData'
 import { INITIAL_LINEUPS } from './lineupData'
 import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, DRAFT_SLOT_ORDER, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER } from './futurePicksData'
 import MockDraftHistory from './MockDraftHistory'
+import DraftPickCelebration from './DraftPickCelebration'
 import CollegeStatsTooltip from './CollegeStatsTooltip'
 import UploadPage from './UploadPage'
 import { generatePicksFromFutureData, formatTime, filterProspects, pickCpuPlayerSmart, loadStored, saveStored, STORAGE_KEYS } from './draftLogic'
@@ -64,6 +65,8 @@ function App({ session, onLogout, onRequestLogin }) {
   const [selectedPlayersFrom, setSelectedPlayersFrom] = useState([])
   const [selectedPlayersTo, setSelectedPlayersTo] = useState([])
   const [futureTradeNote, setFutureTradeNote] = useState('')
+  const [celebration, setCelebration] = useState(null)
+  const [tradeToast, setTradeToast] = useState(null)
   const [isHydrated, setIsHydrated] = useState(false)
   const versionRef = useRef(0)
   const skipSaveRef = useRef(false)
@@ -182,6 +185,12 @@ function App({ session, onLogout, onRequestLogin }) {
     window.scrollTo(0, 0)
   }, [activeTab])
 
+  useEffect(() => {
+    if (!tradeToast) return
+    const t = setTimeout(() => setTradeToast(null), 9000)
+    return () => clearTimeout(t)
+  }, [tradeToast])
+
   const handleProspectMouseEnter = (prospect, e) => {
     const rect = e.currentTarget.getBoundingClientRect()
     let left = rect.left + rect.width / 2 - tooltipWidth / 2
@@ -225,6 +234,40 @@ function App({ session, onLogout, onRequestLogin }) {
     setOpenDropdown(null)
     if (isDraftActive) {
       setTimeRemaining(120)
+    }
+  }
+
+  const POSITION_LABELS = { QB: 'quarterback', RB: 'running back', WR: 'receiver', TE: 'tight end' }
+
+  const describePickFit = (player, teamId) => {
+    const rosterPlayers = [
+      ...getTeamRoster(teamId),
+      ...prospects.filter(p => draftedPlayers[p.id] === teamId),
+    ]
+    const have = rosterPlayers.filter(p => p.position === player.position).length
+    const posLabel = POSITION_LABELS[player.position] || player.position
+    const rankTxt = player.rank ? `the #${player.rank} player on the board` : 'a top prospect'
+    if (have <= 1) {
+      return `You were thin at ${player.position} (${have} rostered) — ${player.name} steps in as ${rankTxt} and an instant contributor at ${posLabel}.`
+    }
+    if (have <= 3) {
+      return `${player.name} deepens your ${player.position} room (now ${have + 1}) and gives you ${rankTxt} to build around.`
+    }
+    return `A best-player-available luxury pick: ${player.name} is ${rankTxt} and adds premium depth at ${posLabel}.`
+  }
+
+  const handleUserMockPick = (playerId, teamId) => {
+    const player = prospects.find(p => p.id === playerId)
+    const currentPick = getCurrentPick()
+    handleDraft(playerId, teamId)
+    if (player) {
+      setCelebration({
+        player,
+        detail: ROOKIE_DETAILS[playerId] || null,
+        team: getTeamById(teamId),
+        pickLabel: currentPick ? `${currentPick.round}.${String(currentPick.pickInRound).padStart(2, '0')}` : null,
+        fit: describePickFit(player, teamId),
+      })
     }
   }
 
@@ -515,6 +558,25 @@ function App({ session, onLogout, onRequestLogin }) {
       })
     }
 
+    // Detect starters vacated by this trade so we can nudge managers to re-set
+    const countVacated = (names, teamId) => {
+      const lu = lineups[teamId]
+      if (!lu || names.length === 0) return null
+      const vacated = Object.values(lu.starters).filter(n => n && names.includes(n)).length
+      return vacated > 0 ? { name: getTeamById(teamId)?.name, count: vacated } : null
+    }
+    const vacatedTeams = [
+      countVacated(selectedPlayersFrom, futureTradeFrom),
+      countVacated(selectedPlayersTo, futureTradeTo),
+    ].filter(Boolean)
+
+    setTradeToast({
+      id: Date.now(),
+      note: noteText,
+      footnoteId: nextFootnoteId,
+      vacatedTeams,
+    })
+
     setFutureTradeFrom(null)
     setFutureTradeTo(null)
     setSelectedFuturePicks([])
@@ -755,7 +817,44 @@ function App({ session, onLogout, onRequestLogin }) {
                 </div>
               </div>
               
-              <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
+              {isDraftActive && (() => {
+                const onClock = getCurrentPick()
+                if (!onClock) return null
+                const clockTeam = getTeamById(onClock.currentTeamId)
+                const onDeck = draftPicks.find(p => p.id === onClock.id + 1)
+                const onDeckTeam = onDeck ? getTeamById(onDeck.currentTeamId) : null
+                const isYou = isMockDraft && onClock.currentTeamId === mockTeamId
+                return (
+                  <div className={`mb-4 flex items-center gap-4 rounded-2xl px-5 py-3 border shadow-sm ${
+                    isYou ? 'bg-purple-600 border-purple-600 text-white' : 'bg-gray-900 border-gray-900 text-white'
+                  }`}>
+                    <div className="animate-clock-pulse flex-shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-white/15">
+                      {clockTeam?.icon ? <clockTeam.icon size={22} /> : <Clock size={22} />}
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-2">
+                        <span className="text-[10px] font-black uppercase tracking-[0.25em] text-white/60">
+                          {isYou ? "You're on the clock" : 'On the clock'}
+                        </span>
+                        <span className="text-[10px] font-mono text-white/50">
+                          Pick {getCurrentPickNumber()} · Rd {onClock.round}.{String(onClock.pickInRound).padStart(2, '0')}
+                        </span>
+                      </div>
+                      <p className="text-lg font-black leading-tight truncate">
+                        {clockTeam?.name} <span className="font-medium text-white/60 text-sm">({TEAM_ID_TO_OWNER[onClock.currentTeamId]})</span>
+                      </p>
+                    </div>
+                    {onDeckTeam && (
+                      <div className="hidden sm:flex flex-col items-end flex-shrink-0 border-l border-white/15 pl-4">
+                        <span className="text-[9px] font-bold uppercase tracking-widest text-white/40">On deck</span>
+                        <span className="text-sm font-semibold text-white/80 truncate max-w-[140px]">{onDeckTeam.name}</span>
+                      </div>
+                    )}
+                  </div>
+                )
+              })()}
+
+              <div className="flex items-center gap-2 overflow-x-auto pt-1 pb-2 pr-4 scrollbar-hide">
                 {draftPicks.map((pick) => {
                   const isCurrentPick = pick.id === getCurrentPickNumber()
                   const isUsed = pick.id < getCurrentPickNumber()
@@ -804,7 +903,7 @@ function App({ session, onLogout, onRequestLogin }) {
               {isMockDraft && draftOrder.length > 0 && (
                 <div className="mt-4 border-t border-gray-200 pt-3">
                   <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Pick-by-pick recap</h4>
-                  <div className="space-y-1.5 max-h-48 overflow-y-auto pr-1">
+                  <div className="space-y-1.5 max-h-48 overflow-y-auto pr-1 fancy-scroll">
                     {[...draftOrder].reverse().map(entry => {
                       const player = prospects.find(x => x.id === entry.playerId)
                       const entryTeam = getTeamById(entry.teamId)
@@ -950,7 +1049,7 @@ function App({ session, onLogout, onRequestLogin }) {
                           ) : isMockDraft && mockTeamId ? (
                             getCurrentPick()?.currentTeamId === mockTeamId ? (
                               <button
-                                onClick={() => handleDraft(prospect.id, mockTeamId)}
+                                onClick={() => handleUserMockPick(prospect.id, mockTeamId)}
                                 className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-purple-600 hover:bg-purple-700 text-white text-xs font-medium rounded-lg transition-all shadow-sm"
                               >
                                 Draft to {getTeamById(mockTeamId)?.name}
@@ -986,7 +1085,7 @@ function App({ session, onLogout, onRequestLogin }) {
                                     <div className="px-3 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b border-gray-100 mb-1">
                                       Select Team
                                     </div>
-                                    <div className="max-h-64 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200">
+                                    <div className="max-h-64 overflow-y-auto fancy-scroll">
                                       {teams.map(team => (
                                         <button
                                           key={team.id}
@@ -1166,7 +1265,7 @@ function App({ session, onLogout, onRequestLogin }) {
                         <p className="text-gray-400 text-sm italic py-2">No future picks available.</p>
                       )}
                       <label className="text-xs font-semibold text-purple-500 uppercase tracking-wider mt-4 mb-2 block">Players to send</label>
-                      <div className="flex flex-wrap gap-1.5 max-h-48 overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-gray-200">
+                      <div className="flex flex-wrap gap-1.5 max-h-48 overflow-y-auto pr-1 fancy-scroll">
                         {getTeamRoster(futureTradeFrom).map(player => {
                           const isSelected = selectedPlayersFrom.includes(player.name)
                           return (
@@ -1252,7 +1351,7 @@ function App({ session, onLogout, onRequestLogin }) {
                         <p className="text-gray-400 text-sm italic py-2">No future picks available.</p>
                       )}
                       <label className="text-xs font-semibold text-blue-500 uppercase tracking-wider mt-4 mb-2 block">Players to send</label>
-                      <div className="flex flex-wrap gap-1.5 max-h-48 overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-gray-200">
+                      <div className="flex flex-wrap gap-1.5 max-h-48 overflow-y-auto pr-1 fancy-scroll">
                         {getTeamRoster(futureTradeTo).map(player => {
                           const isSelected = selectedPlayersTo.includes(player.name)
                           return (
@@ -1333,7 +1432,7 @@ function App({ session, onLogout, onRequestLogin }) {
                       </div>
                       <span className="text-xs px-2 py-0.5 bg-purple-100 rounded text-purple-600 font-medium">{futurePicks.length} picks</span>
                     </div>
-                    <div className="p-2 max-h-72 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200">
+                    <div className="p-2 max-h-72 overflow-y-auto fancy-scroll">
                       <div className="space-y-1">
                         {futurePicks.length === 0 ? (
                           <p className="text-gray-400 text-xs italic p-2">No future picks</p>
@@ -1390,6 +1489,49 @@ function App({ session, onLogout, onRequestLogin }) {
           selectedTeamId={mockTeamId}
           onSelectTeam={setMockTeamId}
         />
+      )}
+      {celebration && (
+        <DraftPickCelebration
+          player={celebration.player}
+          detail={celebration.detail}
+          team={celebration.team}
+          pickLabel={celebration.pickLabel}
+          fit={celebration.fit}
+          onClose={() => setCelebration(null)}
+        />
+      )}
+      {tradeToast && (
+        <div className="fixed bottom-20 md:bottom-6 right-4 left-4 sm:left-auto z-[190] sm:max-w-sm">
+          <div className="animate-toast-in rounded-2xl border border-gray-200 bg-white shadow-2xl overflow-hidden">
+            <div className="flex items-start gap-3 px-4 py-3">
+              <div className="mt-0.5 flex-shrink-0 rounded-full bg-green-100 p-1.5 text-green-700">
+                <Check size={16} />
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="text-sm font-bold text-gray-900">Trade executed</p>
+                <p className="mt-0.5 text-xs text-gray-600 leading-snug">{tradeToast.note}</p>
+                <p className="mt-1 text-[11px] font-medium text-amber-600">
+                  Logged as footnote #{tradeToast.footnoteId} · view in Future Picks
+                </p>
+                {tradeToast.vacatedTeams.length > 0 && (
+                  <button
+                    onClick={() => { setActiveTab('teams'); setTradeToast(null) }}
+                    className="mt-2 inline-flex items-center gap-1 rounded-lg bg-amber-50 px-2.5 py-1 text-[11px] font-semibold text-amber-700 border border-amber-200 hover:bg-amber-100 transition-colors"
+                  >
+                    <ArrowRightLeft size={11} />
+                    {tradeToast.vacatedTeams.map(v => `${v.name} has ${v.count} open starter slot${v.count !== 1 ? 's' : ''}`).join(', ')} — fix lineup
+                  </button>
+                )}
+              </div>
+              <button
+                onClick={() => setTradeToast(null)}
+                className="flex-shrink-0 rounded-full p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition-colors"
+              >
+                <X size={16} />
+              </button>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   )

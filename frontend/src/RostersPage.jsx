@@ -314,7 +314,7 @@ export default function RostersPage({ teams, rosters, lineups, setLineups, userT
                   </button>
                 )}
               </div>
-              <div className="divide-y divide-gray-50 max-h-[560px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200 pr-1">
+              <div className="divide-y divide-gray-50 max-h-[560px] overflow-y-auto fancy-scroll pr-1">
                 {bench.map(player => (
                   <div key={player.name} className="flex items-center gap-3 py-2 px-2 rounded-lg hover:bg-gray-50">
                     <span className="w-11 text-[10px] font-black uppercase tracking-wide text-gray-300">BE</span>

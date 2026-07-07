@@ -73,6 +73,39 @@ export function pickCpuPlayer(prospects, draftedPlayers, poolSize = 5, rng = Mat
 // Rough dynasty superflex roster targets per position
 const POSITION_TARGETS = { QB: 3, RB: 6, WR: 7, TE: 3 }
 
+const pickTemplate = (templates, rng) => templates[Math.floor(rng() * templates.length)]
+
+const BPA_TEMPLATES = [
+  (t, p, rank) => `Best player available — ${rank} was too good for ${t} to pass up.`,
+  (t, p, rank) => `${t} sticks to the board: ${p.name} is the ${rank} player and the clear pick here.`,
+  (t, p, rank) => `No overthinking it — ${t} grabs ${p.name} (${rank}), the top name left.`,
+  (t, p, rank) => `${t} takes the chalk. ${p.name} at ${rank} is the safest bet on the board.`,
+]
+
+const BPA_NEED_TEMPLATES = [
+  (t, p, rank, have) => `${t} takes the best player on the board (${rank}) who also fills a hole at ${p.position} (only ${have} rostered).`,
+  (t, p, rank, have) => `Dream scenario for ${t}: top player left (${rank}) at their thinnest spot — just ${have} ${p.position}s rostered.`,
+  (t, p, rank, have) => `Value meets need — ${t} lands ${p.name} (${rank}) with only ${have} ${p.position}s in the room.`,
+]
+
+const NEED_TEMPLATES = [
+  (t, p, rank, have) => `${t} reaches slightly for need: thin at ${p.position} (${have} rostered), and ${p.name} (${rank}) is the best ${p.position} left.`,
+  (t, p, rank, have) => `${t} drafts for the depth chart — only ${have} ${p.position}s rostered, so ${p.name} (${rank}) is the call.`,
+  (t, p, rank) => `Roster construction pick: ${t} can't leave the draft without a ${p.position}, and ${p.name} (${rank}) is the one.`,
+]
+
+const DEPTH_TEMPLATES = [
+  (t, p, rank) => `${t} adds depth with ${p.name} (${rank}), a strong value at this spot.`,
+  (t, p, rank) => `${t} takes the value: ${p.name} (${rank}) slid a touch and they caught him.`,
+  (t, p, rank) => `Solid, unspectacular, correct — ${t} banks ${p.name} (${rank}) for the bench.`,
+]
+
+const REACH_TEMPLATES = [
+  (t, p, rank) => `${t} falls in love with the tape and reaches for ${p.name} (${rank}) — bold, but they clearly had him higher.`,
+  (t, p, rank) => `Off-script pick: ${t} passes on bigger names to take their guy, ${p.name} (${rank}).`,
+  (t, p, rank) => `${t} zigs while everyone zags — ${p.name} (${rank}) was on nobody else's radar this early.`,
+]
+
 // Realistic CPU pick: heavily favors the top of the board, nudged by
 // positional need based on the team's current roster. Returns the chosen
 // player plus a human-readable reason for the pick.
@@ -85,11 +118,11 @@ export function pickCpuPlayerSmart(prospects, draftedPlayers, team, rosterPlayer
   const counts = {}
   for (const p of rosterPlayers) counts[p.position] = (counts[p.position] || 0) + 1
 
-  const candidates = available.slice(0, 6).map((player, idx) => {
+  const candidates = available.slice(0, 8).map((player, idx) => {
     const target = POSITION_TARGETS[player.position] ?? 2
     const have = counts[player.position] || 0
     const need = Math.max(0, target - have) / target
-    return { player, need, have, weight: (1 / Math.pow(idx + 1, 1.7)) * (1 + need) }
+    return { player, idx, need, have, weight: (1 / Math.pow(idx + 1, 1.7)) * (1 + need) }
   })
 
   const total = candidates.reduce((sum, c) => sum + c.weight, 0)
@@ -103,19 +136,20 @@ export function pickCpuPlayerSmart(prospects, draftedPlayers, team, rosterPlayer
     }
   }
 
-  const { player, need, have } = chosen
+  const { player, idx, need, have } = chosen
   const rankTxt = player.rank ? `#${player.rank} overall` : 'a top-ranked prospect'
   const teamName = team?.name || 'This team'
-  let reason
+  let templates
   if (player === available[0]) {
-    reason = need > 0.3
-      ? `${teamName} takes the best player on the board (${rankTxt}) who also fills a hole at ${player.position} (only ${have} rostered).`
-      : `Best player available — ${rankTxt} was too good for ${teamName} to pass up.`
+    templates = need > 0.3 ? BPA_NEED_TEMPLATES : BPA_TEMPLATES
+  } else if (idx >= 3 && need <= 0.3) {
+    templates = REACH_TEMPLATES
   } else if (need > 0.3) {
-    reason = `${teamName} reaches slightly for need: thin at ${player.position} (${have} rostered), and ${player.name} (${rankTxt}) is the best ${player.position} left.`
+    templates = NEED_TEMPLATES
   } else {
-    reason = `${teamName} adds depth with ${player.name} (${rankTxt}), a strong value at this spot.`
+    templates = DEPTH_TEMPLATES
   }
+  const reason = pickTemplate(templates, rng)(teamName, player, rankTxt, have)
   return { player, reason }
 }
 

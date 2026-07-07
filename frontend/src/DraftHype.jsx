@@ -99,10 +99,10 @@ export default function DraftHype({ mode, onStart, onCancel, teams = [], needsTe
 
       <div className="relative z-10 min-h-full flex flex-col items-center justify-center gap-6 px-4 py-10 text-center">
         <div className="animate-bounce text-5xl md:text-7xl">🏈</div>
-        <h1 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-red-400 to-purple-400 drop-shadow-[0_0_25px_rgba(255,200,0,0.35)]">
+        <h1 className="font-serif text-4xl md:text-6xl font-black tracking-tight text-white drop-shadow-[0_0_25px_rgba(217,119,6,0.35)]">
           {isMock ? 'MOCK DRAFT TIME' : 'THE DRAFT IS HERE'}
         </h1>
-        <p className="text-lg md:text-2xl font-bold text-white/90 uppercase tracking-[0.3em]">
+        <p className="text-lg md:text-2xl font-bold text-amber-300/90 uppercase tracking-[0.3em]">
           {isMock ? 'Practice makes perfect, boys' : "Let's get the boys hype"}
         </p>
 
@@ -141,7 +141,7 @@ export default function DraftHype({ mode, onStart, onCancel, teams = [], needsTe
         <button
           onClick={onStart}
           disabled={startDisabled}
-          className="group inline-flex items-center gap-3 px-10 py-4 rounded-2xl bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white text-xl font-black uppercase tracking-wider shadow-2xl shadow-orange-500/40 hover:scale-105 active:scale-95 transition-transform disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
+          className="group inline-flex items-center gap-3 px-10 py-4 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 text-white text-xl font-black uppercase tracking-wider shadow-2xl shadow-amber-500/40 hover:scale-105 active:scale-95 transition-transform disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
         >
           <Play size={24} className="group-hover:animate-pulse" fill="currentColor" />
           {startDisabled ? 'Pick Your Team First' : isMock ? 'Start Mock Draft' : 'Start The Draft'}
