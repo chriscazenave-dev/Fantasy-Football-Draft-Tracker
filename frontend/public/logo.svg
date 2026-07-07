@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f2b25"/>
+      <stop offset="1" stop-color="#0f0d0a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8c874"/>
+      <stop offset="1" stop-color="#c89b3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <text x="32" y="24" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" fill="#f5f0e6" letter-spacing="1.5">DM</text>
+  <g transform="rotate(-24 32 41)">
+    <ellipse cx="32" cy="41" rx="17" ry="10.5" fill="none" stroke="url(#gold)" stroke-width="2.4"/>
+    <path d="M25 41 H39" stroke="url(#gold)" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M27.5 38.8 v4.4 M31 38.8 v4.4 M34.5 38.8 v4.4 M38 38.8 v4.4" stroke="url(#gold)" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>

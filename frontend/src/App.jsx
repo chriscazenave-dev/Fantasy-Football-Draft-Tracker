@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect, useRef } from 'react'
+import { Fragment, useState, useEffect, useMemo, useRef } from 'react'
 import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut, LogIn, Sparkles, Newspaper, ChevronRight } from 'lucide-react'
 import Ably from 'ably'
 import FutureDraftPicks from './FutureDraftPicks'
@@ -8,11 +8,11 @@ import RostersPage from './RostersPage'
 import { ROOKIE_DETAILS } from './rookieDetailData'
 import { VETERAN_ROSTERS, ROOKIE_PROSPECTS } from './leagueData'
 import { INITIAL_LINEUPS } from './lineupData'
-import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER } from './futurePicksData'
+import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, DRAFT_SLOT_ORDER, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER } from './futurePicksData'
 import MockDraftHistory from './MockDraftHistory'
 import CollegeStatsTooltip from './CollegeStatsTooltip'
 import UploadPage from './UploadPage'
-import { generateInitialPicks, formatTime, filterProspects, pickCpuPlayer, loadStored, saveStored, STORAGE_KEYS } from './draftLogic'
+import { generatePicksFromFutureData, formatTime, filterProspects, pickCpuPlayerSmart, loadStored, saveStored, STORAGE_KEYS } from './draftLogic'
 import { fetchLeagueState, saveLeagueState } from './leagueState'
 
 const INITIAL_TEAMS = [
@@ -26,9 +26,7 @@ const INITIAL_TEAMS = [
   { id: 8, name: 'Cheznovs Abduction', owner: 'Austin Dedon', icon: Hexagon, color: 'text-cyan-500', bg: 'bg-cyan-50' },
 ]
 
-
-
-const NUM_ROUNDS = 3
+const DRAFT_YEAR = 2026
 
 function App({ session, onLogout, onRequestLogin }) {
   const isAdmin = !!session?.isAdmin
@@ -41,7 +39,7 @@ function App({ session, onLogout, onRequestLogin }) {
   const [expandedProspectId, setExpandedProspectId] = useState(null)
   const [tooltipPos, setTooltipPos] = useState({ top: 0, left: 0 })
   const [teams] = useState(INITIAL_TEAMS)
-  const [draftPicks] = useState(() => generateInitialPicks(INITIAL_TEAMS, NUM_ROUNDS))
+  const [rosters, setRosters] = useState(VETERAN_ROSTERS)
   const [draftedPlayers, setDraftedPlayers] = useState(() => storedDraftState?.draftedPlayers ?? {})
   const [draftOrder, setDraftOrder] = useState(() => storedDraftState?.draftOrder ?? [])
   const [openDropdown, setOpenDropdown] = useState(null)
@@ -63,6 +61,8 @@ function App({ session, onLogout, onRequestLogin }) {
   const [futureTradeTo, setFutureTradeTo] = useState(null)
   const [selectedFuturePicks, setSelectedFuturePicks] = useState([])
   const [selectedFuturePicksTo, setSelectedFuturePicksTo] = useState([])
+  const [selectedPlayersFrom, setSelectedPlayersFrom] = useState([])
+  const [selectedPlayersTo, setSelectedPlayersTo] = useState([])
   const [futureTradeNote, setFutureTradeNote] = useState('')
   const [isHydrated, setIsHydrated] = useState(false)
   const versionRef = useRef(0)
@@ -79,6 +79,7 @@ function App({ session, onLogout, onRequestLogin }) {
     if (!state) return
     skipSaveRef.current = true
     if (state.lineups) setLineups(state.lineups)
+    if (state.rosters) setRosters(state.rosters)
     if (state.prospects) setProspects(state.prospects)
     if (!skipDraftFields) {
       if (state.draftedPlayers) setDraftedPlayers(state.draftedPlayers)
@@ -126,7 +127,7 @@ function App({ session, onLogout, onRequestLogin }) {
       return
     }
     clearTimeout(saveTimerRef.current)
-    const state = { lineups, prospects, draftedPlayers, draftOrder, futurePickData, footnotes }
+    const state = { lineups, rosters, prospects, draftedPlayers, draftOrder, futurePickData, footnotes }
     saveTimerRef.current = setTimeout(() => {
       saveLeagueState(state)
         .then(({ version }) => {
@@ -135,7 +136,7 @@ function App({ session, onLogout, onRequestLogin }) {
         .catch(() => {})
     }, 800)
     return () => clearTimeout(saveTimerRef.current)
-  }, [isHydrated, isLoggedIn, isMockDraft, lineups, prospects, draftedPlayers, draftOrder, futurePickData, footnotes])
+  }, [isHydrated, isLoggedIn, isMockDraft, lineups, rosters, prospects, draftedPlayers, draftOrder, futurePickData, footnotes])
 
   // Realtime sync: refetch when another member saves a change
   useEffect(() => {
@@ -200,18 +201,27 @@ function App({ session, onLogout, onRequestLogin }) {
 
   const getTeamById = (teamId) => teams.find(t => t.id === teamId)
 
+  const getTeamRoster = (teamId) => rosters[teamId] || rosters[String(teamId)] || []
+
+  // Live draft board: 2026 picks in standard (non-snake) order, ownership
+  // synced with the Future Picks grid so trades update the board.
+  const draftPicks = useMemo(
+    () => generatePicksFromFutureData(futurePickData[DRAFT_YEAR], ROUNDS, DRAFT_SLOT_ORDER, OWNERS, OWNER_TO_TEAM_ID),
+    [futurePickData]
+  )
+
   const userTeam = session?.team ? teams.find(t => t.name === session.team) : null
 
   const getCurrentPickNumber = () => draftOrder.length + 1
   const getCurrentPick = () => draftPicks.find(p => p.id === getCurrentPickNumber())
 
-  const handleDraft = (playerId, teamId) => {
+  const handleDraft = (playerId, teamId, reason = null) => {
     const currentPick = getCurrentPick()
     setDraftedPlayers(prev => ({
       ...prev,
       [playerId]: teamId
     }))
-    setDraftOrder(prev => [...prev, { playerId, teamId, pickNumber: currentPick?.id || prev.length + 1 }])
+    setDraftOrder(prev => [...prev, { playerId, teamId, pickNumber: currentPick?.id || prev.length + 1, reason }])
     setOpenDropdown(null)
     if (isDraftActive) {
       setTimeRemaining(120)
@@ -221,9 +231,14 @@ function App({ session, onLogout, onRequestLogin }) {
   const handleAutoPick = () => {
     const currentPick = getCurrentPick()
     if (!currentPick) return
-    const availablePlayer = prospects.find(p => !draftedPlayers[p.id])
-    if (availablePlayer) {
-      handleDraft(availablePlayer.id, currentPick.currentTeamId)
+    const team = getTeamById(currentPick.currentTeamId)
+    const rosterPlayers = [
+      ...getTeamRoster(currentPick.currentTeamId),
+      ...prospects.filter(p => draftedPlayers[p.id] === currentPick.currentTeamId),
+    ]
+    const result = pickCpuPlayerSmart(prospects, draftedPlayers, team, rosterPlayers)
+    if (result) {
+      handleDraft(result.player.id, currentPick.currentTeamId, `Clock expired — ${result.reason}`)
     }
   }
 
@@ -302,7 +317,7 @@ function App({ session, onLogout, onRequestLogin }) {
 
   const draftActionsRef = useRef(null)
   useEffect(() => {
-    draftActionsRef.current = { handleAutoPick, handleDraft, draftPicks, prospects, draftedPlayers, draftOrder }
+    draftActionsRef.current = { handleAutoPick, handleDraft, draftPicks, prospects, draftedPlayers, draftOrder, teams, getTeamRoster }
   })
 
   useEffect(() => {
@@ -314,13 +329,18 @@ function App({ session, onLogout, onRequestLogin }) {
   useEffect(() => {
     if (!isMockDraft || !isDraftActive || isPaused) return
     const timeout = setTimeout(() => {
-      const { handleDraft: draft, draftPicks: picks, prospects: pool, draftedPlayers: drafted, draftOrder: order } = draftActionsRef.current
+      const { handleDraft: draft, draftPicks: picks, prospects: pool, draftedPlayers: drafted, draftOrder: order, teams: allTeams, getTeamRoster: rosterOf } = draftActionsRef.current
       if (order.length >= picks.length) return
       const currentPick = picks.find(p => p.id === order.length + 1)
       if (!currentPick) return
       if (mockTeamId && currentPick.currentTeamId === mockTeamId) return
-      const player = pickCpuPlayer(pool, drafted)
-      if (player) draft(player.id, currentPick.currentTeamId)
+      const team = allTeams.find(t => t.id === currentPick.currentTeamId)
+      const rosterPlayers = [
+        ...rosterOf(currentPick.currentTeamId),
+        ...pool.filter(p => drafted[p.id] === currentPick.currentTeamId),
+      ]
+      const result = pickCpuPlayerSmart(pool, drafted, team, rosterPlayers)
+      if (result) draft(result.player.id, currentPick.currentTeamId, result.reason)
     }, 1500)
     return () => clearTimeout(timeout)
   }, [isMockDraft, isDraftActive, isPaused, draftOrder.length, mockTeamId])
@@ -378,9 +398,23 @@ function App({ session, onLogout, onRequestLogin }) {
     )
   }
 
+  const togglePlayerSelection = (name) => {
+    setSelectedPlayersFrom(prev =>
+      prev.includes(name) ? prev.filter(n => n !== name) : [...prev, name]
+    )
+  }
+
+  const togglePlayerSelectionTo = (name) => {
+    setSelectedPlayersTo(prev =>
+      prev.includes(name) ? prev.filter(n => n !== name) : [...prev, name]
+    )
+  }
+
   const handleFuturePickTrade = () => {
     if (!futureTradeFrom || !futureTradeTo) return
-    if (selectedFuturePicks.length === 0 && selectedFuturePicksTo.length === 0) return
+    const fromAssets = selectedFuturePicks.length + selectedPlayersFrom.length
+    const toAssets = selectedFuturePicksTo.length + selectedPlayersTo.length
+    if (fromAssets === 0 && toAssets === 0) return
     const fromOwnerName = TEAM_ID_TO_OWNER[futureTradeFrom]
     const toOwnerName = TEAM_ID_TO_OWNER[futureTradeTo]
     if (!fromOwnerName || !toOwnerName) return
@@ -393,16 +427,23 @@ function App({ session, onLogout, onRequestLogin }) {
       return `${parts[0]} ${parts[1].replace(' Rounder', '')}`
     }).join(', ')
 
+    const describeAssets = (pickKeys, playerNames) => {
+      const parts = []
+      if (playerNames.length > 0) parts.push(playerNames.join(', '))
+      if (pickKeys.length > 0) parts.push(describePicks(pickKeys))
+      return parts.join(', ')
+    }
+
     const today = new Date()
     const dateStr = `${today.getMonth() + 1}.${today.getDate()}.${String(today.getFullYear()).slice(2)}`
 
     let noteText = ''
-    if (selectedFuturePicks.length > 0 && selectedFuturePicksTo.length > 0) {
-      noteText = `${fromOwnerName} trades ${describePicks(selectedFuturePicks)} to ${toOwnerName} for ${describePicks(selectedFuturePicksTo)} - ${dateStr}`
-    } else if (selectedFuturePicks.length > 0) {
-      noteText = `${fromOwnerName} trades ${describePicks(selectedFuturePicks)} to ${toOwnerName} - ${dateStr}`
+    if (fromAssets > 0 && toAssets > 0) {
+      noteText = `${fromOwnerName} trades ${describeAssets(selectedFuturePicks, selectedPlayersFrom)} to ${toOwnerName} for ${describeAssets(selectedFuturePicksTo, selectedPlayersTo)} - ${dateStr}`
+    } else if (fromAssets > 0) {
+      noteText = `${fromOwnerName} trades ${describeAssets(selectedFuturePicks, selectedPlayersFrom)} to ${toOwnerName} - ${dateStr}`
     } else {
-      noteText = `${toOwnerName} trades ${describePicks(selectedFuturePicksTo)} to ${fromOwnerName} - ${dateStr}`
+      noteText = `${toOwnerName} trades ${describeAssets(selectedFuturePicksTo, selectedPlayersTo)} to ${fromOwnerName} - ${dateStr}`
     }
     if (futureTradeNote.trim()) {
       noteText = futureTradeNote.trim() + ' - ' + dateStr
@@ -437,10 +478,49 @@ function App({ session, onLogout, onRequestLogin }) {
       return next
     })
 
+    // Move traded players between rosters and clear them from the sender's lineup
+    if (selectedPlayersFrom.length > 0 || selectedPlayersTo.length > 0) {
+      setRosters(prev => {
+        const next = { ...prev }
+        const movePlayers = (names, srcId, dstId) => {
+          if (names.length === 0) return
+          const srcKey = next[srcId] ? srcId : String(srcId)
+          const dstKey = next[dstId] ? dstId : String(dstId)
+          const src = [...(next[srcKey] || [])]
+          const moving = src.filter(p => names.includes(p.name))
+          next[srcKey] = src.filter(p => !names.includes(p.name))
+          next[dstKey] = [...(next[dstKey] || []), ...moving]
+        }
+        movePlayers(selectedPlayersFrom, futureTradeFrom, futureTradeTo)
+        movePlayers(selectedPlayersTo, futureTradeTo, futureTradeFrom)
+        return next
+      })
+      setLineups(prev => {
+        const next = { ...prev }
+        const clearFromLineup = (names, teamId) => {
+          if (names.length === 0 || !next[teamId]) return
+          const starters = { ...next[teamId].starters }
+          for (const slot of Object.keys(starters)) {
+            if (names.includes(starters[slot])) starters[slot] = null
+          }
+          next[teamId] = {
+            ...next[teamId],
+            starters,
+            ir: (next[teamId].ir || []).filter(n => !names.includes(n)),
+          }
+        }
+        clearFromLineup(selectedPlayersFrom, futureTradeFrom)
+        clearFromLineup(selectedPlayersTo, futureTradeTo)
+        return next
+      })
+    }
+
     setFutureTradeFrom(null)
     setFutureTradeTo(null)
     setSelectedFuturePicks([])
     setSelectedFuturePicksTo([])
+    setSelectedPlayersFrom([])
+    setSelectedPlayersTo([])
     setFutureTradeNote('')
   }
 
@@ -494,7 +574,7 @@ function App({ session, onLogout, onRequestLogin }) {
 
   const tabs = [
     { id: 'home', label: 'Paper', icon: Newspaper },
-    { id: 'prospects', label: 'Prospects', icon: Users },
+    { id: 'prospects', label: 'Draft', icon: ListOrdered },
     { id: 'teams', label: 'Rosters', icon: UserCircle },
     { id: 'trades', label: 'Trades', icon: ArrowRightLeft },
     { id: 'futurePicks', label: 'Future Picks', mobileLabel: 'Picks', icon: FileText },
@@ -507,9 +587,7 @@ function App({ session, onLogout, onRequestLogin }) {
       <header className="sticky top-0 z-50 bg-[#faf8f3]/85 backdrop-blur-xl border-b border-gray-200 px-4 md:px-6 py-3 md:py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-             <div className="w-8 h-8 rounded-xl bg-black flex items-center justify-center shadow-md">
-              <Users size={18} className="text-white" />
-            </div>
+            <img src="/logo.svg" alt="Dynasty Madness logo" className="w-8 h-8 rounded-xl shadow-md" />
             <h1 className="text-xl font-semibold tracking-tight">Dynasty<span className="text-gray-400"> Madness</span></h1>
           </div>
           
@@ -677,59 +755,73 @@ function App({ session, onLogout, onRequestLogin }) {
                 </div>
               </div>
               
-              <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide mask-fade-right">
-                {draftPicks.slice(0, 16).map((pick) => {
-                  const team = getTeamById(pick.currentTeamId)
-                  const originalTeam = getTeamById(pick.originalTeamId)
+              <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
+                {draftPicks.map((pick) => {
                   const isCurrentPick = pick.id === getCurrentPickNumber()
                   const isUsed = pick.id < getCurrentPickNumber()
                   const isTraded = pick.currentTeamId !== pick.originalTeamId
-                  
+                  const pickLabel = `${pick.round}.${String(pick.pickInRound).padStart(2, '0')}`
+                  const draftedEntry = isUsed ? draftOrder[pick.id - 1] : null
+                  const draftedName = draftedEntry ? prospects.find(p => p.id === draftedEntry.playerId)?.name : null
+
                   return (
-                    <div
-                      key={pick.id}
-                      className={`flex-shrink-0 w-32 p-4 rounded-2xl flex flex-col items-center gap-3 transition-all duration-300 ${
-                        isCurrentPick 
-                          ? 'bg-blue-600 shadow-xl shadow-blue-500/30 scale-105 ring-2 ring-blue-400 ring-offset-2' 
-                          : isUsed 
-                            ? 'bg-gray-50 opacity-50 grayscale' 
-                            : 'bg-white border border-gray-100 shadow-sm hover:border-blue-200 hover:shadow-md'
-                      }`}
-                    >
-                      <div className="flex flex-col items-center gap-1">
-                        <span className={`text-[10px] font-black tracking-widest uppercase ${isCurrentPick ? 'text-blue-100' : 'text-gray-400'}`}>
-                          Pick {pick.id}
+                    <Fragment key={pick.id}>
+                      {pick.pickInRound === 1 && pick.round > 1 && (
+                        <div className="flex-shrink-0 flex items-center gap-2 px-1 self-stretch">
+                          <div className="w-px h-8 bg-gray-200"></div>
+                        </div>
+                      )}
+                      <div
+                        className={`flex-shrink-0 flex items-center gap-2.5 pl-3 pr-4 py-2 rounded-xl border transition-colors ${
+                          isCurrentPick
+                            ? 'bg-gray-900 border-gray-900 text-white shadow-md'
+                            : isUsed
+                              ? 'bg-gray-50 border-gray-200 text-gray-400'
+                              : 'bg-white border-gray-200 text-gray-900'
+                        }`}
+                      >
+                        <span className={`font-mono text-[11px] font-semibold tabular-nums ${isCurrentPick ? 'text-gray-300' : 'text-gray-400'}`}>
+                          {pickLabel}
                         </span>
-                        <div className={`p-2 rounded-full shadow-inner ${team?.bg} ${team?.color}`}>
-                          <team.icon size={18} />
+                        <div className="flex flex-col leading-tight">
+                          <span className="text-xs font-semibold whitespace-nowrap">
+                            {TEAM_ID_TO_OWNER[pick.currentTeamId]}
+                          </span>
+                          {isUsed && draftedName ? (
+                            <span className="text-[10px] whitespace-nowrap opacity-70">{draftedName}</span>
+                          ) : isTraded ? (
+                            <span className={`text-[10px] whitespace-nowrap ${isCurrentPick ? 'text-amber-300' : 'text-amber-600'}`}>
+                              via {TEAM_ID_TO_OWNER[pick.originalTeamId]}
+                            </span>
+                          ) : null}
                         </div>
                       </div>
-                      
-                      <div className="flex flex-col items-center text-center w-full min-w-0">
-                         <div className="flex flex-col items-center">
-                           <span className={`text-xs font-bold leading-tight line-clamp-1 ${isCurrentPick ? 'text-white' : 'text-gray-900'}`}>
-                            {team?.name}
-                          </span>
-                          <span className={`text-[10px] truncate w-full ${isCurrentPick ? 'text-blue-100' : 'text-gray-500'}`}>
-                            ({team?.owner})
-                          </span>
-                         </div>
-                        {isTraded && (
-                          <div className={`mt-1 flex items-center gap-1.5 px-2 py-1 rounded-lg text-[9px] font-bold uppercase tracking-tight ${
-                            isCurrentPick ? 'bg-blue-500 text-blue-100' : 'bg-amber-50 text-amber-600 border border-amber-100'
-                          }`}>
-                            <ArrowRightLeft size={8} className="flex-shrink-0" />
-                            <div className="flex flex-col items-start leading-tight min-w-0">
-                              <span className="truncate w-full text-left">from {originalTeam?.name}</span>
-                              <span className="opacity-80 font-black text-[8px]">({originalTeam?.owner})</span>
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    </div>
+                    </Fragment>
                   )
                 })}
               </div>
+
+              {isMockDraft && draftOrder.length > 0 && (
+                <div className="mt-4 border-t border-gray-200 pt-3">
+                  <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Pick-by-pick recap</h4>
+                  <div className="space-y-1.5 max-h-48 overflow-y-auto pr-1">
+                    {[...draftOrder].reverse().map(entry => {
+                      const player = prospects.find(x => x.id === entry.playerId)
+                      const entryTeam = getTeamById(entry.teamId)
+                      return (
+                        <div key={entry.pickNumber} className="flex items-start gap-2 text-xs">
+                          <span className="font-mono text-gray-400 w-7 flex-shrink-0">{entry.pickNumber}.</span>
+                          <div>
+                            <span className="font-semibold text-gray-900">{player?.name}</span>
+                            <span className="text-gray-400"> · {entryTeam?.name} ({TEAM_ID_TO_OWNER[entry.teamId]})</span>
+                            {entry.reason && <p className="text-gray-500 mt-0.5">{entry.reason}</p>}
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Filters */}
@@ -987,7 +1079,7 @@ function App({ session, onLogout, onRequestLogin }) {
         {activeTab === 'teams' && (
           <RostersPage
             teams={teams}
-            rosters={VETERAN_ROSTERS}
+            rosters={rosters}
             lineups={lineups}
             setLineups={setLineups}
             userTeamId={userTeam?.id ?? null}
@@ -1008,8 +1100,8 @@ function App({ session, onLogout, onRequestLogin }) {
                   <ArrowRightLeft size={20} className="text-purple-500" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Future Picks Trade Center</h3>
-                  <p className="text-sm text-gray-500">Two-way trades for future draft picks (2026–2028) — synced with the Future Picks tab</p>
+                  <h3 className="font-semibold text-gray-900">Trade Center</h3>
+                  <p className="text-sm text-gray-500">Two-way trades for players and future draft picks (2026–2028) — every trade is logged as a footnote</p>
                 </div>
               </div>
 
@@ -1023,6 +1115,7 @@ function App({ session, onLogout, onRequestLogin }) {
                       onChange={(e) => {
                         setFutureTradeFrom(Number(e.target.value) || null)
                         setSelectedFuturePicks([])
+                        setSelectedPlayersFrom([])
                       }}
                       className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition-shadow"
                     >
@@ -1072,6 +1165,29 @@ function App({ session, onLogout, onRequestLogin }) {
                       {getTeamFuturePicks(futureTradeFrom).length === 0 && (
                         <p className="text-gray-400 text-sm italic py-2">No future picks available.</p>
                       )}
+                      <label className="text-xs font-semibold text-purple-500 uppercase tracking-wider mt-4 mb-2 block">Players to send</label>
+                      <div className="flex flex-wrap gap-1.5 max-h-48 overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-gray-200">
+                        {getTeamRoster(futureTradeFrom).map(player => {
+                          const isSelected = selectedPlayersFrom.includes(player.name)
+                          return (
+                            <button
+                              key={player.name}
+                              onClick={() => togglePlayerSelection(player.name)}
+                              className={`px-2.5 py-1.5 rounded-lg border text-xs font-medium transition-all duration-200 flex items-center gap-1.5 ${
+                                isSelected
+                                  ? 'border-purple-500 bg-purple-100 text-purple-700 shadow-sm ring-1 ring-purple-500/20'
+                                  : 'border-gray-200 bg-white text-gray-600 hover:bg-gray-50 hover:border-gray-300'
+                              }`}
+                            >
+                              <span>{player.name}</span>
+                              <span className={`text-[9px] font-bold ${isSelected ? 'text-purple-500' : 'text-gray-400'}`}>{player.position}</span>
+                            </button>
+                          )
+                        })}
+                        {getTeamRoster(futureTradeFrom).length === 0 && (
+                          <p className="text-gray-400 text-sm italic py-2">No players on roster.</p>
+                        )}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -1085,6 +1201,7 @@ function App({ session, onLogout, onRequestLogin }) {
                       onChange={(e) => {
                         setFutureTradeTo(Number(e.target.value) || null)
                         setSelectedFuturePicksTo([])
+                        setSelectedPlayersTo([])
                       }}
                       className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-shadow"
                     >
@@ -1134,6 +1251,29 @@ function App({ session, onLogout, onRequestLogin }) {
                       {getTeamFuturePicks(futureTradeTo).length === 0 && (
                         <p className="text-gray-400 text-sm italic py-2">No future picks available.</p>
                       )}
+                      <label className="text-xs font-semibold text-blue-500 uppercase tracking-wider mt-4 mb-2 block">Players to send</label>
+                      <div className="flex flex-wrap gap-1.5 max-h-48 overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-gray-200">
+                        {getTeamRoster(futureTradeTo).map(player => {
+                          const isSelected = selectedPlayersTo.includes(player.name)
+                          return (
+                            <button
+                              key={player.name}
+                              onClick={() => togglePlayerSelectionTo(player.name)}
+                              className={`px-2.5 py-1.5 rounded-lg border text-xs font-medium transition-all duration-200 flex items-center gap-1.5 ${
+                                isSelected
+                                  ? 'border-blue-500 bg-blue-100 text-blue-700 shadow-sm ring-1 ring-blue-500/20'
+                                  : 'border-gray-200 bg-white text-gray-600 hover:bg-gray-50 hover:border-gray-300'
+                              }`}
+                            >
+                              <span>{player.name}</span>
+                              <span className={`text-[9px] font-bold ${isSelected ? 'text-blue-500' : 'text-gray-400'}`}>{player.position}</span>
+                            </button>
+                          )
+                        })}
+                        {getTeamRoster(futureTradeTo).length === 0 && (
+                          <p className="text-gray-400 text-sm italic py-2">No players on roster.</p>
+                        )}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -1156,14 +1296,14 @@ function App({ session, onLogout, onRequestLogin }) {
                   <div className="flex items-center justify-between bg-gray-50 rounded-xl p-4">
                     <div className="flex items-center gap-4 text-sm flex-wrap">
                       <span className="text-purple-600 font-semibold">{teams.find(t => t.id === futureTradeFrom)?.name}</span>
-                      <span className="text-gray-400">sends {selectedFuturePicks.length} pick{selectedFuturePicks.length !== 1 ? 's' : ''}</span>
+                      <span className="text-gray-400">sends {selectedFuturePicks.length + selectedPlayersFrom.length} asset{selectedFuturePicks.length + selectedPlayersFrom.length !== 1 ? 's' : ''}</span>
                       <ArrowRightLeft size={16} className="text-gray-300" />
                       <span className="text-blue-600 font-semibold">{teams.find(t => t.id === futureTradeTo)?.name}</span>
-                      <span className="text-gray-400">sends {selectedFuturePicksTo.length} pick{selectedFuturePicksTo.length !== 1 ? 's' : ''}</span>
+                      <span className="text-gray-400">sends {selectedFuturePicksTo.length + selectedPlayersTo.length} asset{selectedFuturePicksTo.length + selectedPlayersTo.length !== 1 ? 's' : ''}</span>
                     </div>
                     <button
                       onClick={isLoggedIn ? handleFuturePickTrade : onRequestLogin}
-                      disabled={selectedFuturePicks.length === 0 && selectedFuturePicksTo.length === 0}
+                      disabled={selectedFuturePicks.length + selectedPlayersFrom.length === 0 && selectedFuturePicksTo.length + selectedPlayersTo.length === 0}
                       className="px-6 py-2.5 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed rounded-xl font-medium text-white text-sm transition-all shadow-sm disabled:shadow-none flex-shrink-0"
                     >
                       {isLoggedIn ? 'Execute Trade' : 'Sign in to Trade'}

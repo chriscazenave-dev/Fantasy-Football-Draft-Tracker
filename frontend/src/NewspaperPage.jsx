@@ -66,11 +66,9 @@ function PageNav({ page, goTo }) {
 
 export default function NewspaperPage({ teams, draftedPlayers }) {
   const [page, setPage] = useState(1)
-  const [direction, setDirection] = useState(null)
 
   const goTo = next => {
     if (next === page || next < 1 || next > PAGES.length) return
-    setDirection(next > page ? 'forward' : 'back')
     setPage(next)
     window.scrollTo(0, 0)
   }
@@ -84,15 +82,10 @@ export default function NewspaperPage({ teams, draftedPlayers }) {
         <PageNav page={page} goTo={goTo} />
       </div>
 
-      <div className="[perspective:2400px]">
-        <div
-          key={page}
-          className={direction === 'forward' ? 'page-turn-forward' : direction === 'back' ? 'page-turn-back' : ''}
-        >
-          {page === 1 && <HomePage />}
-          {page === 2 && <PlayerValuesPage teams={teams} draftedPlayers={draftedPlayers} />}
-          {page === 3 && <TeamWriteupsPage />}
-        </div>
+      <div>
+        {page === 1 && <HomePage />}
+        {page === 2 && <PlayerValuesPage teams={teams} draftedPlayers={draftedPlayers} />}
+        {page === 3 && <TeamWriteupsPage />}
       </div>
 
       <div className="max-w-5xl mx-auto font-serif mt-6">

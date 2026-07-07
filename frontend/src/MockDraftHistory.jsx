@@ -56,7 +56,7 @@ export default function MockDraftHistory({ history, teams, prospects, onClear })
                       const team = getTeam(pick.teamId)
                       const isYours = entry.mockTeamId && pick.teamId === entry.mockTeamId
                       return (
-                        <div key={pick.pickNumber} className={`flex items-center gap-2 text-xs rounded-lg px-2 py-1 ${isYours ? 'bg-purple-50' : ''}`}>
+                        <div key={pick.pickNumber} title={pick.reason || undefined} className={`flex items-center gap-2 text-xs rounded-lg px-2 py-1 ${isYours ? 'bg-purple-50' : ''}`}>
                           <span className="text-gray-400 font-mono w-7 flex-shrink-0">{pick.pickNumber}.</span>
                           <span className="font-medium text-gray-800 truncate">{prospect?.name || 'Unknown'}</span>
                           <span className="text-gray-400 flex-shrink-0">{prospect?.position}</span>
