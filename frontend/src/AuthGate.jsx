@@ -6,13 +6,19 @@ import { getSession, clearToken } from './auth'
 
 export default function AuthGate() {
   const [session, setSession] = useState(() => getSession())
+  const [showLogin, setShowLogin] = useState(false)
 
-  if (!session) {
-    return <Login onSuccess={setSession} />
+  if (session?.mustChangePassword) {
+    return <ChangePassword session={session} onSuccess={setSession} />
   }
 
-  if (session.mustChangePassword) {
-    return <ChangePassword session={session} onSuccess={setSession} />
+  if (!session && showLogin) {
+    return (
+      <Login
+        onSuccess={(s) => { setSession(s); setShowLogin(false) }}
+        onCancel={() => setShowLogin(false)}
+      />
+    )
   }
 
   const handleLogout = () => {
@@ -20,5 +26,11 @@ export default function AuthGate() {
     setSession(null)
   }
 
-  return <App session={session} onLogout={handleLogout} />
+  return (
+    <App
+      session={session}
+      onLogout={session ? handleLogout : null}
+      onRequestLogin={() => setShowLogin(true)}
+    />
+  )
 }

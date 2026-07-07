@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FileText, Plus, X, ChevronDown, ChevronRight, MessageSquare } from 'lucide-react'
 import { OWNERS, ROUNDS, getOwnerColor } from './futurePicksData'
 
-export default function FutureDraftPicks({ pickData, setPickData, footnotes, setFootnotes }) {
+export default function FutureDraftPicks({ pickData, setPickData, footnotes, setFootnotes, canEdit = true }) {
   const [expandedYears, setExpandedYears] = useState(() => {
     const years = Object.keys(pickData).map(Number)
     return new Set(years)
@@ -158,13 +158,15 @@ export default function FutureDraftPicks({ pickData, setPickData, footnotes, set
               <p className="text-xs text-gray-500">{footnotes.length} recorded trades</p>
             </div>
           </div>
-          <button
-            onClick={() => setShowAddNote(!showAddNote)}
-            className="inline-flex items-center gap-1.5 px-4 py-2 bg-black hover:bg-gray-800 text-white text-xs font-medium rounded-lg transition-all shadow-sm"
-          >
-            <Plus size={14} />
-            Add Subnote
-          </button>
+          {canEdit && (
+            <button
+              onClick={() => setShowAddNote(!showAddNote)}
+              className="inline-flex items-center gap-1.5 px-4 py-2 bg-black hover:bg-gray-800 text-white text-xs font-medium rounded-lg transition-all shadow-sm"
+            >
+              <Plus size={14} />
+              Add Subnote
+            </button>
+          )}
         </div>
 
         {showAddNote && (

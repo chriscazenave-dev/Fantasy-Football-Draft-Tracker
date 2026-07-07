@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut, Sparkles } from 'lucide-react'
+import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut, LogIn, Sparkles } from 'lucide-react'
 import FutureDraftPicks from './FutureDraftPicks'
 import DraftHype from './DraftHype'
 import { VETERAN_ROSTERS, ROOKIE_PROSPECTS } from './leagueData'
@@ -83,8 +83,9 @@ function CollegeStatsTooltip({ prospect, style }) {
   )
 }
 
-function App({ session, onLogout }) {
+function App({ session, onLogout, onRequestLogin }) {
   const isAdmin = !!session?.isAdmin
+  const isLoggedIn = !!session
   const [activeTab, setActiveTab] = useState('prospects')
   const [prospects, setProspects] = useState(ROOKIE_PROSPECTS)
   const [hoveredProspect, setHoveredProspect] = useState(null)
@@ -107,6 +108,7 @@ function App({ session, onLogout }) {
   const timerRef = useRef(null)
   const [hypeMode, setHypeMode] = useState(null)
   const [isMockDraft, setIsMockDraft] = useState(false)
+  const [mockTeamId, setMockTeamId] = useState(null)
   const mockSnapshotRef = useRef(null)
   const [futurePickData, setFuturePickData] = useState(INITIAL_PICK_DATA)
   const [footnotes, setFootnotes] = useState(INITIAL_FOOTNOTES)
@@ -138,6 +140,8 @@ function App({ session, onLogout }) {
 
   const getTeamById = (teamId) => teams.find(t => t.id === teamId)
 
+  const userTeam = session?.team ? teams.find(t => t.name === session.team) : null
+
   const getCurrentPickNumber = () => draftOrder.length + 1
   const getCurrentPick = () => draftPicks.find(p => p.id === getCurrentPickNumber())
 
@@ -168,6 +172,7 @@ function App({ session, onLogout }) {
   }
 
   const handleStartMockDraft = () => {
+    setMockTeamId(userTeam?.id ?? null)
     setHypeMode('mock')
   }
 
@@ -189,6 +194,7 @@ function App({ session, onLogout }) {
     const snapshot = mockSnapshotRef.current
     mockSnapshotRef.current = null
     setIsMockDraft(false)
+    setMockTeamId(null)
     setIsDraftActive(false)
     setIsPaused(false)
     setTimeRemaining(120)
@@ -239,6 +245,7 @@ function App({ session, onLogout }) {
     const timeout = setTimeout(() => {
       const currentPick = draftPicks.find(p => p.id === draftOrder.length + 1)
       if (!currentPick) return
+      if (mockTeamId && currentPick.currentTeamId === mockTeamId) return
       const available = prospects.filter(p => !draftedPlayers[p.id])
       if (available.length === 0) return
       const pool = available.slice(0, 5)
@@ -246,7 +253,7 @@ function App({ session, onLogout }) {
       handleDraft(player.id, currentPick.currentTeamId)
     }, 1500)
     return () => clearTimeout(timeout)
-  }, [isMockDraft, isDraftActive, isPaused, draftOrder.length])
+  }, [isMockDraft, isDraftActive, isPaused, draftOrder.length, mockTeamId])
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60)
@@ -487,9 +494,9 @@ function App({ session, onLogout }) {
   ]
 
   return (
-    <div className="min-h-screen pb-16 md:pb-0 bg-white text-[#1d1d1f] font-sans selection:bg-blue-500/20">
+    <div className="min-h-screen pb-16 md:pb-0 bg-[#faf8f3] text-[#211d16] font-sans selection:bg-amber-500/20">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200 px-4 md:px-6 py-3 md:py-4">
+      <header className="sticky top-0 z-50 bg-[#faf8f3]/85 backdrop-blur-xl border-b border-gray-200 px-4 md:px-6 py-3 md:py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
              <div className="w-8 h-8 rounded-xl bg-black flex items-center justify-center shadow-md">
@@ -525,7 +532,7 @@ function App({ session, onLogout }) {
                 )}
               </span>
             )}
-            {onLogout && (
+            {onLogout ? (
               <button
                 onClick={onLogout}
                 title="Log out"
@@ -534,13 +541,22 @@ function App({ session, onLogout }) {
                 <LogOut size={14} />
                 <span className="hidden sm:inline">Log out</span>
               </button>
+            ) : (
+              <button
+                onClick={onRequestLogin}
+                title="Sign in"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-white bg-black rounded-lg hover:bg-gray-800 transition-colors duration-200 shadow-sm"
+              >
+                <LogIn size={14} />
+                <span>Sign in</span>
+              </button>
             )}
           </div>
         </div>
       </header>
 
       {/* Mobile Bottom Tab Bar */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-t border-gray-200">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#faf8f3]/95 backdrop-blur-xl border-t border-gray-200">
         <div className="flex justify-around items-stretch">
           {tabs.map((tab) => (
             <button
@@ -591,7 +607,7 @@ function App({ session, onLogout }) {
                 )}
                 {isMockDraft && (
                   <span className="px-2.5 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-purple-100 text-purple-700 border border-purple-200">
-                    Mock Draft
+                    Mock Draft{mockTeamId ? ` · ${getTeamById(mockTeamId)?.name}` : ''}
                   </span>
                 )}
                 <div className="ml-auto flex items-center gap-2">
@@ -802,12 +818,33 @@ function App({ session, onLogout }) {
                         </td>
                         <td className="px-6 py-4 text-right">
                           {isDrafted ? (
+                            (isMockDraft || isLoggedIn) && (
+                              <button
+                                onClick={() => handleUndraft(prospect.id)}
+                                className="invisible group-hover:visible inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-red-600 hover:text-red-700 hover:bg-red-50 rounded-lg transition-colors"
+                              >
+                                <X size={14} />
+                                Undraft
+                              </button>
+                            )
+                          ) : isMockDraft && mockTeamId ? (
+                            getCurrentPick()?.currentTeamId === mockTeamId ? (
+                              <button
+                                onClick={() => handleDraft(prospect.id, mockTeamId)}
+                                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-purple-600 hover:bg-purple-700 text-white text-xs font-medium rounded-lg transition-all shadow-sm"
+                              >
+                                Draft to {getTeamById(mockTeamId)?.name}
+                              </button>
+                            ) : (
+                              <span className="text-xs text-gray-400 italic pr-2">Waiting…</span>
+                            )
+                          ) : !isLoggedIn ? (
                             <button
-                              onClick={() => handleUndraft(prospect.id)}
-                              className="invisible group-hover:visible inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-red-600 hover:text-red-700 hover:bg-red-50 rounded-lg transition-colors"
+                              onClick={onRequestLogin}
+                              className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gray-100 hover:bg-gray-200 text-gray-600 text-xs font-medium rounded-lg border border-gray-200 transition-all"
                             >
-                              <X size={14} />
-                              Undraft
+                              <LogIn size={12} />
+                              Sign in to draft
                             </button>
                           ) : (
                             <div className="relative inline-block text-left">
@@ -1134,11 +1171,11 @@ function App({ session, onLogout }) {
                       <span className="text-gray-400">sends {selectedFuturePicksTo.length} pick{selectedFuturePicksTo.length !== 1 ? 's' : ''}</span>
                     </div>
                     <button
-                      onClick={handleFuturePickTrade}
+                      onClick={isLoggedIn ? handleFuturePickTrade : onRequestLogin}
                       disabled={selectedFuturePicks.length === 0 && selectedFuturePicksTo.length === 0}
                       className="px-6 py-2.5 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed rounded-xl font-medium text-white text-sm transition-all shadow-sm disabled:shadow-none flex-shrink-0"
                     >
-                      Execute Trade
+                      {isLoggedIn ? 'Execute Trade' : 'Sign in to Trade'}
                     </button>
                   </div>
                 </div>
@@ -1201,7 +1238,7 @@ function App({ session, onLogout }) {
         )}
 
         {activeTab === 'futurePicks' && (
-          <FutureDraftPicks pickData={futurePickData} setPickData={setFuturePickData} footnotes={footnotes} setFootnotes={setFootnotes} />
+          <FutureDraftPicks pickData={futurePickData} setPickData={setFuturePickData} footnotes={footnotes} setFootnotes={setFootnotes} canEdit={isLoggedIn} />
         )}
 
         {activeTab === 'upload' && (
@@ -1270,7 +1307,15 @@ function App({ session, onLogout }) {
         />
       )}
       {hypeMode && (
-        <DraftHype mode={hypeMode} onStart={beginDraft} onCancel={() => setHypeMode(null)} />
+        <DraftHype
+          mode={hypeMode}
+          onStart={beginDraft}
+          onCancel={() => setHypeMode(null)}
+          teams={teams}
+          needsTeamSelect={hypeMode === 'mock' && !userTeam}
+          selectedTeamId={mockTeamId}
+          onSelectTeam={setMockTeamId}
+        />
       )}
     </div>
   )
