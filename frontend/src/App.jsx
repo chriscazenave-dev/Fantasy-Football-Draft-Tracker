@@ -11,6 +11,7 @@ import { INITIAL_LINEUPS } from './lineupData'
 import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, DRAFT_SLOT_ORDER, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER } from './futurePicksData'
 import MockDraftHistory from './MockDraftHistory'
 import DraftPickCelebration from './DraftPickCelebration'
+import DraftCenter from './DraftCenter'
 import CollegeStatsTooltip from './CollegeStatsTooltip'
 import UploadPage from './UploadPage'
 import { generatePicksFromFutureData, formatTime, filterProspects, pickCpuPlayerSmart, loadStored, saveStored, STORAGE_KEYS, computeTradeSideValue, getTradeVerdict } from './draftLogic'
@@ -63,6 +64,7 @@ function App({ session, onLogout, onRequestLogin }) {
   const [timeRemaining, setTimeRemaining] = useState(120)
   const timerRef = useRef(null)
   const [hypeMode, setHypeMode] = useState(null)
+  const [showDraftCenter, setShowDraftCenter] = useState(() => !!storedDraftState?.showDraftCenter)
   const [isMockDraft, setIsMockDraft] = useState(() => !!storedDraftState?.isMockDraft)
   const [mockTeamId, setMockTeamId] = useState(() => storedDraftState?.mockTeamId ?? null)
   const mockSnapshotRef = useRef(storedDraftState?.mockSnapshot ?? null)
@@ -185,8 +187,9 @@ function App({ session, onLogout, onRequestLogin }) {
       isMockDraft,
       mockTeamId,
       mockSnapshot: mockSnapshotRef.current,
+      showDraftCenter,
     })
-  }, [draftedPlayers, draftOrder, isMockDraft, mockTeamId])
+  }, [draftedPlayers, draftOrder, isMockDraft, mockTeamId, showDraftCenter])
 
   useEffect(() => {
     saveStored(STORAGE_KEYS.mockHistory, mockHistory)
@@ -317,9 +320,12 @@ function App({ session, onLogout, onRequestLogin }) {
     setIsDraftActive(true)
     setIsPaused(false)
     setTimeRemaining(120)
+    setShowDraftCenter(true)
+    setActiveTab('prospects')
   }
 
   const handleEndMockDraft = () => {
+    setShowDraftCenter(false)
     if (draftOrder.length > 0) {
       setMockHistory(prev => [
         { id: Date.now(), date: new Date().toISOString(), mockTeamId, picks: draftOrder },
@@ -793,6 +799,13 @@ function App({ session, onLogout, onRequestLogin }) {
                     </>
                   ) : (
                     <>
+                      <button
+                        onClick={() => setShowDraftCenter(true)}
+                        className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-[#2b2418] hover:bg-[#463b28] text-[#f3ecdb] text-xs font-medium rounded-lg transition-all shadow-sm"
+                      >
+                        <Zap size={14} />
+                        Enter Draft Center
+                      </button>
                       {(isAdmin || isMockDraft) && (
                         <button
                           onClick={handlePauseDraft}
@@ -1525,6 +1538,32 @@ function App({ session, onLogout, onRequestLogin }) {
         <CollegeStatsTooltip
           prospect={hoveredProspect}
           style={{ top: tooltipPos.top, left: tooltipPos.left, transform: 'translateY(-100%)' }}
+        />
+      )}
+      {showDraftCenter && isDraftActive && (
+        <DraftCenter
+          mode={isMockDraft ? 'mock' : 'real'}
+          teams={teams}
+          prospects={prospects}
+          draftedPlayers={draftedPlayers}
+          draftOrder={draftOrder}
+          draftPicks={draftPicks}
+          mockTeamId={mockTeamId}
+          timeRemaining={timeRemaining}
+          isPaused={isPaused}
+          isAdmin={isAdmin}
+          isLoggedIn={isLoggedIn}
+          onPauseToggle={handlePauseDraft}
+          onEndMock={handleEndMockDraft}
+          onRestart={() => {
+            setDraftOrder([])
+            setDraftedPlayers({})
+            setTimeRemaining(120)
+          }}
+          onUserMockPick={handleUserMockPick}
+          onAdminDraft={handleUserMockPick}
+          onMinimize={() => setShowDraftCenter(false)}
+          getTeamById={getTeamById}
         />
       )}
       {hypeMode && (

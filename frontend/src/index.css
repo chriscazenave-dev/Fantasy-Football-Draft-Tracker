@@ -86,3 +86,12 @@ body {
   background-color: #faf8f3;
   color: #211d16;
 }
+
+/* Draft Desk overlay */
+@keyframes dc-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.animate-dc-blink {
+  animation: dc-blink 1.2s ease-in-out infinite;
+}
