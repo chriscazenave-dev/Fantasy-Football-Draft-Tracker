@@ -1,8 +1,11 @@
 import { useState, useEffect, useRef } from 'react'
-import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut, LogIn, Sparkles } from 'lucide-react'
+import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut, LogIn, Sparkles, Newspaper } from 'lucide-react'
 import FutureDraftPicks from './FutureDraftPicks'
 import DraftHype from './DraftHype'
+import HomePage from './HomePage'
+import RostersPage from './RostersPage'
 import { VETERAN_ROSTERS, ROOKIE_PROSPECTS } from './leagueData'
+import { INITIAL_LINEUPS } from './lineupData'
 import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER, getOwnerColor } from './futurePicksData'
 
 const INITIAL_TEAMS = [
@@ -86,19 +89,18 @@ function CollegeStatsTooltip({ prospect, style }) {
 function App({ session, onLogout, onRequestLogin }) {
   const isAdmin = !!session?.isAdmin
   const isLoggedIn = !!session
-  const [activeTab, setActiveTab] = useState('prospects')
+  const [activeTab, setActiveTab] = useState('home')
+  const [lineups, setLineups] = useState(INITIAL_LINEUPS)
   const [prospects, setProspects] = useState(ROOKIE_PROSPECTS)
   const [hoveredProspect, setHoveredProspect] = useState(null)
   const [tooltipPos, setTooltipPos] = useState({ top: 0, left: 0 })
-  const [teams, setTeams] = useState(INITIAL_TEAMS)
+  const [teams] = useState(INITIAL_TEAMS)
   const [draftPicks, setDraftPicks] = useState(() => generateInitialPicks(INITIAL_TEAMS, NUM_ROUNDS))
   const [draftedPlayers, setDraftedPlayers] = useState({})
   const [draftOrder, setDraftOrder] = useState([])
   const [openDropdown, setOpenDropdown] = useState(null)
   const [filterPosition, setFilterPosition] = useState('All')
   const [filterStatus, setFilterStatus] = useState('All')
-  const [editingTeamId, setEditingTeamId] = useState(null)
-  const [editingTeamName, setEditingTeamName] = useState('')
   const [tradeFrom, setTradeFrom] = useState(null)
   const [tradeTo, setTradeTo] = useState(null)
   const [selectedPicks, setSelectedPicks] = useState([])
@@ -268,22 +270,6 @@ function App({ session, onLogout, onRequestLogin }) {
       return newState
     })
     setDraftOrder(prev => prev.filter(d => d.playerId !== playerId))
-  }
-
-  const handleTeamNameEdit = (teamId) => {
-    const team = getTeamById(teamId)
-    setEditingTeamId(teamId)
-    setEditingTeamName(team.name)
-  }
-
-  const handleTeamNameSave = () => {
-    if (editingTeamName.trim()) {
-      setTeams(prev => prev.map(t => 
-        t.id === editingTeamId ? { ...t, name: editingTeamName.trim() } : t
-      ))
-    }
-    setEditingTeamId(null)
-    setEditingTeamName('')
   }
 
   const handleTrade = () => {
@@ -469,23 +455,8 @@ function App({ session, onLogout, onRequestLogin }) {
     return posMatch && statusMatch
   })
 
-  const getProspectById = (playerId) => prospects.find(p => p.id === playerId)
-
-  const getTeamRoster = (teamId) => {
-    return Object.entries(draftedPlayers)
-      .filter(([, tId]) => tId === teamId)
-      .map(([playerId]) => {
-        const prospect = getProspectById(Number(playerId))
-        const draftInfo = draftOrder.find(d => d.playerId === Number(playerId))
-        return { ...prospect, pickNumber: draftInfo?.pickNumber }
-      })
-  }
-
-  const getTeamPicks = (teamId) => {
-    return draftPicks.filter(p => p.currentTeamId === teamId)
-  }
-
   const tabs = [
+    { id: 'home', label: 'Home', icon: Newspaper },
     { id: 'prospects', label: 'Prospects', icon: Users },
     { id: 'teams', label: 'Rosters', icon: UserCircle },
     { id: 'trades', label: 'Trades', icon: ArrowRightLeft },
@@ -585,6 +556,8 @@ function App({ session, onLogout, onRequestLogin }) {
 
       {/* Content */}
       <main className="max-w-7xl mx-auto p-4 md:p-6">
+        {activeTab === 'home' && <HomePage />}
+
         {activeTab === 'prospects' && (
           <div className="space-y-6">
             {/* Draft Order Display */}
@@ -908,102 +881,16 @@ function App({ session, onLogout, onRequestLogin }) {
         )}
 
         {activeTab === 'teams' && (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900">Team Rosters</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {teams.map(team => {
-                const roster = getTeamRoster(team.id)
-                const teamPicks = getTeamPicks(team.id)
-                
-                return (
-                  <div key={team.id} className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden flex flex-col h-full hover:border-gray-300 transition-colors">
-                    <div className="p-4 border-b border-gray-100 bg-gray-50/50">
-                      <div className="flex items-center justify-between mb-3">
-                        <div className="flex items-center gap-3">
-                           <div className={`p-1.5 rounded-full ${team.bg} ${team.color}`}>
-                             <team.icon size={16} />
-                           </div>
-                           {editingTeamId === team.id ? (
-                            <input
-                              type="text"
-                              value={editingTeamName}
-                              onChange={(e) => setEditingTeamName(e.target.value)}
-                              onBlur={handleTeamNameSave}
-                              onKeyDown={(e) => e.key === 'Enter' && handleTeamNameSave()}
-                              className="bg-white text-gray-900 px-2 py-0.5 rounded border border-blue-500/50 text-sm w-32 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
-                              autoFocus
-                            />
-                          ) : (
-                            <div className="flex flex-col">
-                              <span className="font-semibold text-gray-900 leading-tight">{team.name}</span>
-                              <span className="text-[11px] text-gray-500 font-medium">({team.owner})</span>
-                            </div>
-                          )}
-                        </div>
-                        {isAdmin && (
-                          <button
-                            onClick={() => editingTeamId === team.id ? handleTeamNameSave() : handleTeamNameEdit(team.id)}
-                            className="text-gray-400 hover:text-gray-600 transition-colors p-1 hover:bg-gray-100 rounded-md"
-                          >
-                            <Edit2 size={14} />
-                          </button>
-                        )}
-                      </div>
-                      <div className="flex items-center justify-between text-xs text-gray-500 font-medium">
-                        <span>{(VETERAN_ROSTERS[team.id]?.length || 0) + roster.length} Players</span>
-                        <span>{teamPicks.filter(p => p.id >= getCurrentPickNumber()).length} Picks Left</span>
-                      </div>
-                    </div>
-                    
-                    <div className="p-4 flex-1 flex flex-col gap-4">
-                      {roster.length > 0 && (
-                        <div>
-                          <p className="text-[10px] font-bold uppercase tracking-wider text-gray-400 mb-2">Draft Picks</p>
-                          <div className="space-y-3">
-                            {roster.sort((a, b) => (a.pickNumber || 0) - (b.pickNumber || 0)).map(player => (
-                              <div
-                                key={player.id}
-                                className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors group"
-                                onMouseEnter={(e) => handleProspectMouseEnter(player, e)}
-                                onMouseLeave={handleProspectMouseLeave}
-                              >
-                                <span className="text-gray-400 text-xs font-mono w-5">#{player.pickNumber}</span>
-                                <div className="flex-1 min-w-0">
-                                  <div className="text-sm font-medium text-gray-900 truncate">{player.name}</div>
-                                  <div className="text-xs text-gray-500">{player.position} • {player.nflTeam || player.college}</div>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                      {(VETERAN_ROSTERS[team.id]?.length || 0) > 0 ? (
-                        <div className="flex-1">
-                          <p className="text-[10px] font-bold uppercase tracking-wider text-gray-400 mb-2">Roster</p>
-                          <div className="space-y-1 max-h-72 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200 pr-1">
-                            {VETERAN_ROSTERS[team.id].map((player, idx) => (
-                              <div key={idx} className="flex items-center gap-2 px-2 py-1 rounded-lg hover:bg-gray-50">
-                                <span className="text-[10px] font-bold text-gray-400 w-8">{player.position}</span>
-                                <span className="text-xs font-medium text-gray-800 truncate flex-1">{player.name}</span>
-                                <span className="text-[10px] text-gray-400">{player.nflTeam}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      ) : (
-                        roster.length === 0 && (
-                          <div className="flex-1 flex flex-col items-center justify-center py-8 text-gray-400 border-2 border-dashed border-gray-100 rounded-xl m-2">
-                             <UserCircle size={24} className="mb-2 opacity-50" />
-                             <p className="text-xs">No players</p>
-                          </div>
-                        )
-                      )}
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
+          <RostersPage
+            teams={teams}
+            rosters={VETERAN_ROSTERS}
+            lineups={lineups}
+            setLineups={setLineups}
+            userTeamId={userTeam?.id ?? null}
+            isAdmin={isAdmin}
+            isLoggedIn={isLoggedIn}
+            onRequestLogin={onRequestLogin}
+          />
         )}
 
         {activeTab === 'trades' && (
