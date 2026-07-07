@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { LogIn, Lock, ArrowRightLeft, X, Plus } from 'lucide-react'
 import { STARTER_SLOTS, SLOT_LABELS, SLOT_ELIGIBILITY, MAX_IR } from './lineupData'
+import { fetchLivePoints } from './leagueState'
 
 function slotAccepts(slot, position) {
   return SLOT_ELIGIBILITY[slot]?.includes(position)
@@ -9,6 +10,42 @@ function slotAccepts(slot, position) {
 export default function RostersPage({ teams, rosters, lineups, setLineups, userTeamId, isAdmin, isLoggedIn, onRequestLogin }) {
   const [selectedTeamId, setSelectedTeamId] = useState(userTeamId || teams[0]?.id)
   const [moving, setMoving] = useState(null) // { name, position, from } — from is a slot key, 'bench', or 'ir'
+  const [livePoints, setLivePoints] = useState(null) // { season, week, scoring, points }
+
+  useEffect(() => {
+    const seen = new Set()
+    const players = []
+    for (const rosterPlayers of Object.values(rosters)) {
+      for (const p of rosterPlayers) {
+        if (!p?.name || seen.has(p.name)) continue
+        seen.add(p.name)
+        players.push({ name: p.name, position: p.position })
+      }
+    }
+    for (const lu of Object.values(lineups)) {
+      const dst = lu?.starters?.['D/ST']
+      if (dst && !seen.has(dst)) {
+        seen.add(dst)
+        players.push({ name: dst, position: 'D/ST' })
+      }
+    }
+    if (players.length === 0) return
+    let cancelled = false
+    fetchLivePoints(players)
+      .then((data) => {
+        if (!cancelled) setLivePoints(data)
+      })
+      .catch(() => {})
+    return () => {
+      cancelled = true
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  const pointsFor = (name) => {
+    const pts = livePoints?.points?.[name]
+    return typeof pts === 'number' ? pts : null
+  }
 
   const team = teams.find(t => t.id === selectedTeamId)
   const roster = rosters[selectedTeamId] || []
@@ -104,12 +141,22 @@ export default function RostersPage({ teams, rosters, lineups, setLineups, userT
     </button>
   )
 
-  const PlayerCell = ({ player }) => (
-    <div className="flex-1 min-w-0">
-      <div className="text-sm font-medium text-gray-900 truncate">{player.name}</div>
-      <div className="text-xs text-gray-500">{player.position} · {player.nflTeam}</div>
-    </div>
-  )
+  const PlayerCell = ({ player }) => {
+    const pts = pointsFor(player.name)
+    return (
+      <div className="flex-1 min-w-0 flex items-center gap-2">
+        <div className="flex-1 min-w-0">
+          <div className="text-sm font-medium text-gray-900 truncate">{player.name}</div>
+          <div className="text-xs text-gray-500">{player.position} · {player.nflTeam}</div>
+        </div>
+        {livePoints && (
+          <span className={`text-xs font-semibold tabular-nums ${pts != null ? 'text-gray-700' : 'text-gray-300'}`}>
+            {pts != null ? pts.toFixed(1) : '—'}
+          </span>
+        )}
+      </div>
+    )
+  }
 
   return (
     <div className="space-y-6">
@@ -188,9 +235,16 @@ export default function RostersPage({ teams, rosters, lineups, setLineups, userT
           <div className="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-100">
             {/* Starters */}
             <div className="p-4">
-              <p className="text-[10px] font-bold uppercase tracking-wider text-gray-400 mb-2">
-                Starters — 1 QB · 2 RB · 2 WR · 1 TE · 2 FLEX · 1 OP (Superflex) · 1 D/ST
-              </p>
+              <div className="flex items-center justify-between mb-2 gap-2">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
+                  Starters — 1 QB · 2 RB · 2 WR · 1 TE · 2 FLEX · 1 OP (Superflex) · 1 D/ST
+                </p>
+                {livePoints && (
+                  <span className="flex-shrink-0 px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                    Wk {livePoints.week} PPR: {Object.values(lineup.starters).filter(Boolean).reduce((sum, name) => sum + (pointsFor(name) ?? 0), 0).toFixed(1)}
+                  </span>
+                )}
+              </div>
               <div className="divide-y divide-gray-50">
                 {STARTER_SLOTS.map(slot => {
                   const name = lineup.starters[slot]
