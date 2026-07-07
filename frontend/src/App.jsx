@@ -801,7 +801,7 @@ function App({ session, onLogout, onRequestLogin }) {
                     <>
                       <button
                         onClick={() => setShowDraftCenter(true)}
-                        className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-cyan-600 hover:bg-cyan-700 text-white text-xs font-medium rounded-lg transition-all shadow-sm"
+                        className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-[#2b2418] hover:bg-[#463b28] text-[#f3ecdb] text-xs font-medium rounded-lg transition-all shadow-sm"
                       >
                         <Zap size={14} />
                         Enter Draft Center

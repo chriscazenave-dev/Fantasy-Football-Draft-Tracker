@@ -87,29 +87,7 @@ body {
   color: #211d16;
 }
 
-/* Draft Command Center — futuristic mission-control visuals */
-.dc-grid {
-  background-image:
-    radial-gradient(ellipse at 50% -20%, rgba(34, 211, 238, 0.12), transparent 60%),
-    linear-gradient(rgba(34, 211, 238, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(34, 211, 238, 0.045) 1px, transparent 1px);
-  background-size: 100% 100%, 44px 44px, 44px 44px;
-}
-
-@keyframes dc-scan {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(100vh); }
-}
-.dc-scanline::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 120px;
-  background: linear-gradient(to bottom, transparent, rgba(34, 211, 238, 0.05), transparent);
-  animation: dc-scan 7s linear infinite;
-}
-
+/* Draft Desk overlay */
 @keyframes dc-blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.35; }
