@@ -17,6 +17,7 @@ import UploadPage from './UploadPage'
 import { generatePicksFromFutureData, formatTime, filterProspects, pickCpuPlayerSmart, loadStored, saveStored, STORAGE_KEYS, computeTradeSideValue, getTradeVerdict } from './draftLogic'
 import { PLAYER_VALUES } from './playerValuesData'
 import { fetchLeagueState, saveLeagueState } from './leagueState'
+import { getToken } from './auth'
 
 const INITIAL_TEAMS = [
   { id: 1, name: 'The Evil Empire', owner: 'jmo morgan', icon: Shield, color: 'text-red-500', bg: 'bg-red-50' },
@@ -156,7 +157,13 @@ function App({ session, onLogout, onRequestLogin }) {
 
   // Realtime sync: refetch when another member saves a change
   useEffect(() => {
-    const ably = new Ably.Realtime({ authUrl: '/api/ably-token' })
+    if (!isLoggedIn) return
+    const token = getToken()
+    if (!token) return
+    const ably = new Ably.Realtime({
+      authUrl: '/api/ably-token',
+      authHeaders: { Authorization: `Bearer ${token}` },
+    })
     const channel = ably.channels.get('league-state')
     const onUpdate = (msg) => {
       const version = Number(msg?.data?.version ?? 0)
@@ -176,7 +183,7 @@ function App({ session, onLogout, onRequestLogin }) {
       channel.unsubscribe('update', onUpdate)
       ably.close()
     }
-  }, [])
+  }, [isLoggedIn])
 
   const tooltipWidth = 256
 
