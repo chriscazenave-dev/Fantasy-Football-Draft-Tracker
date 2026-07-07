@@ -13,7 +13,8 @@ import MockDraftHistory from './MockDraftHistory'
 import DraftPickCelebration from './DraftPickCelebration'
 import CollegeStatsTooltip from './CollegeStatsTooltip'
 import UploadPage from './UploadPage'
-import { generatePicksFromFutureData, formatTime, filterProspects, pickCpuPlayerSmart, loadStored, saveStored, STORAGE_KEYS } from './draftLogic'
+import { generatePicksFromFutureData, formatTime, filterProspects, pickCpuPlayerSmart, loadStored, saveStored, STORAGE_KEYS, computeTradeSideValue, getTradeVerdict } from './draftLogic'
+import { PLAYER_VALUES } from './playerValuesData'
 import { fetchLeagueState, saveLeagueState } from './leagueState'
 
 const INITIAL_TEAMS = [
@@ -28,6 +29,16 @@ const INITIAL_TEAMS = [
 ]
 
 const DRAFT_YEAR = 2026
+
+const PLAYER_VALUE_MAP = new Map(PLAYER_VALUES.map(p => [p.name, p.value]))
+
+const VERDICT_STYLES = {
+  even: 'bg-gray-100 text-gray-700 border-gray-200',
+  fair: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  win: 'bg-blue-50 text-blue-700 border-blue-200',
+  fleece: 'bg-amber-50 text-amber-700 border-amber-200',
+  robbery: 'bg-red-50 text-red-700 border-red-200',
+}
 
 function App({ session, onLogout, onRequestLogin }) {
   const isAdmin = !!session?.isAdmin
@@ -1392,6 +1403,43 @@ function App({ session, onLogout, onRequestLogin }) {
                     />
                     <p className="text-[10px] text-gray-400 mt-1">This will be saved as footnote #{footnotes.length > 0 ? Math.max(...footnotes.map(f => typeof f.id === 'number' ? f.id : 0)) + 1 : 1} in the Future Picks tab</p>
                   </div>
+                  {(() => {
+                    const nameA = teams.find(t => t.id === futureTradeFrom)?.name
+                    const nameB = teams.find(t => t.id === futureTradeTo)?.name
+                    const picksSentA = getTeamFuturePicks(futureTradeFrom).filter(p => selectedFuturePicks.includes(p.key))
+                    const picksSentB = getTeamFuturePicks(futureTradeTo).filter(p => selectedFuturePicksTo.includes(p.key))
+                    const sideA = computeTradeSideValue(selectedPlayersFrom, picksSentA, PLAYER_VALUE_MAP, DRAFT_YEAR)
+                    const sideB = computeTradeSideValue(selectedPlayersTo, picksSentB, PLAYER_VALUE_MAP, DRAFT_YEAR)
+                    const verdict = getTradeVerdict(sideA.total, sideB.total, nameA, nameB)
+                    if (!verdict) return null
+                    const totalBoth = sideA.total + sideB.total
+                    const shareA = totalBoth > 0 ? (sideA.total / totalBoth) * 100 : 50
+                    const unknowns = [...sideA.unknownPlayers, ...sideB.unknownPlayers]
+                    return (
+                      <div className="bg-gray-50 rounded-xl p-4 space-y-3">
+                        <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-gray-400">
+                          <span>Fleece-o-Meter</span>
+                          <span className="normal-case font-normal tracking-normal">KTC value · picks estimated</span>
+                        </div>
+                        <div className="flex items-center justify-between text-sm">
+                          <span className="text-purple-600 font-semibold">{nameA} sends {sideA.total.toLocaleString()}</span>
+                          <span className="text-blue-600 font-semibold">{nameB} sends {sideB.total.toLocaleString()}</span>
+                        </div>
+                        <div className="h-2.5 rounded-full bg-blue-200 overflow-hidden">
+                          <div className="h-full bg-purple-500 rounded-l-full transition-all duration-300" style={{ width: `${shareA}%` }} />
+                        </div>
+                        <div className={`text-sm font-medium rounded-lg border px-3 py-2 ${VERDICT_STYLES[verdict.severity]}`}>
+                          {verdict.label}
+                          {verdict.severity !== 'even' && (
+                            <span className="font-normal"> ({verdict.winner} comes out ahead by {verdict.diff.toLocaleString()} KTC)</span>
+                          )}
+                        </div>
+                        {unknowns.length > 0 && (
+                          <p className="text-[10px] text-gray-400">Not in KTC top 300 (counted as 0): {unknowns.join(', ')}</p>
+                        )}
+                      </div>
+                    )
+                  })()}
                   <div className="flex items-center justify-between bg-gray-50 rounded-xl p-4">
                     <div className="flex items-center gap-4 text-sm flex-wrap">
                       <span className="text-purple-600 font-semibold">{teams.find(t => t.id === futureTradeFrom)?.name}</span>

@@ -1,7 +1,28 @@
-import { useEffect } from 'react'
+import { useEffect, useMemo } from 'react'
 import { X, Sparkles } from 'lucide-react'
 
-const CONFETTI_COLORS = ['#f59e0b', '#8b5cf6', '#10b981', '#ef4444', '#3b82f6', '#eab308']
+const DEFAULT_CONFETTI_COLORS = ['#f59e0b', '#8b5cf6', '#10b981', '#ef4444', '#3b82f6', '#eab308']
+
+// Confetti palettes keyed by each team's Tailwind accent class
+const TEAM_CONFETTI_COLORS = {
+  'text-red-500': ['#ef4444', '#b91c1c', '#fca5a5', '#ffffff'],
+  'text-blue-500': ['#3b82f6', '#1d4ed8', '#93c5fd', '#ffffff'],
+  'text-green-500': ['#22c55e', '#15803d', '#86efac', '#ffffff'],
+  'text-yellow-500': ['#eab308', '#a16207', '#fde047', '#ffffff'],
+  'text-purple-500': ['#a855f7', '#7e22ce', '#d8b4fe', '#ffffff'],
+  'text-pink-500': ['#ec4899', '#be185d', '#f9a8d4', '#ffffff'],
+  'text-orange-500': ['#f97316', '#c2410c', '#fdba74', '#ffffff'],
+  'text-cyan-500': ['#06b6d4', '#0e7490', '#67e8f9', '#ffffff'],
+}
+
+// Celebration treatment scales with draft round: 1st rounders get the
+// front-page blowout, 4th rounders get a golf clap.
+const ROUND_THEMES = {
+  1: { kicker: 'Front-page news · stop the presses', confettiCount: 110 },
+  2: { kicker: 'The pick is in', confettiCount: 60 },
+  3: { kicker: 'The pick is in · solid value', confettiCount: 35 },
+  4: { kicker: 'The crowd politely applauds', confettiCount: 12 },
+}
 
 // Deterministic pseudo-random scatter so the component stays pure
 const rand = (i, salt) => {
@@ -9,17 +30,17 @@ const rand = (i, salt) => {
   return x - Math.floor(x)
 }
 
-const CONFETTI_PIECES = Array.from({ length: 60 }).map((_, i) => ({
-  id: i,
-  left: rand(i, 1) * 100,
-  delay: rand(i, 2) * 0.6,
-  duration: 1.8 + rand(i, 3) * 1.4,
-  color: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
-  size: 6 + rand(i, 4) * 6,
-}))
+const makeConfettiPieces = (colors, count) =>
+  Array.from({ length: count }).map((_, i) => ({
+    id: i,
+    left: rand(i, 1) * 100,
+    delay: rand(i, 2) * 0.6,
+    duration: 1.8 + rand(i, 3) * 1.4,
+    color: colors[i % colors.length],
+    size: 6 + rand(i, 4) * 6,
+  }))
 
-function Confetti() {
-  const pieces = CONFETTI_PIECES
+function Confetti({ pieces }) {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden">
       {pieces.map(p => (
@@ -43,6 +64,13 @@ function Confetti() {
 // Celebratory overlay shown when the user drafts a player in a mock draft.
 // Surfaces a quick scouting snapshot and what the player adds to the roster.
 export default function DraftPickCelebration({ player, detail, team, pickLabel, fit, onClose }) {
+  const round = parseInt(pickLabel, 10)
+  const theme = ROUND_THEMES[round] || ROUND_THEMES[2]
+  const confettiPieces = useMemo(() => {
+    const colors = TEAM_CONFETTI_COLORS[team?.color] || DEFAULT_CONFETTI_COLORS
+    return makeConfettiPieces(colors, theme.confettiCount)
+  }, [team, theme])
+
   useEffect(() => {
     const t = setTimeout(onClose, 6000)
     const onKey = (e) => e.key === 'Escape' && onClose()
@@ -66,7 +94,7 @@ export default function DraftPickCelebration({ player, detail, team, pickLabel, 
       className="fixed inset-0 z-[210] flex items-center justify-center bg-black/60 backdrop-blur-sm px-4"
       onClick={onClose}
     >
-      <Confetti />
+      <Confetti pieces={confettiPieces} />
       <div
         className="animate-celebrate-pop relative w-full max-w-md overflow-hidden rounded-3xl bg-white shadow-2xl"
         onClick={(e) => e.stopPropagation()}
@@ -81,7 +109,7 @@ export default function DraftPickCelebration({ player, detail, team, pickLabel, 
 
         <div className="bg-gradient-to-br from-purple-600 via-purple-700 to-indigo-800 px-6 py-6 text-center text-white">
           <div className="mb-1 flex items-center justify-center gap-2 text-xs font-black uppercase tracking-[0.3em] text-purple-200">
-            <Sparkles size={14} /> The pick is in {pickLabel ? `· ${pickLabel}` : ''}
+            <Sparkles size={14} /> {theme.kicker} {pickLabel ? `· ${pickLabel}` : ''}
           </div>
           <h2 className="text-3xl font-black leading-tight">{detail?.fullName || player?.name}</h2>
           <p className="mt-1 text-sm font-semibold text-purple-100">
