@@ -326,6 +326,11 @@ export const VETERAN_ROSTERS = {
       "nflTeam": "ATL"
     },
     {
+      "name": "Chase Brown",
+      "position": "RB",
+      "nflTeam": "CIN"
+    },
+    {
       "name": "Chris Rodriguez Jr.",
       "position": "RB",
       "nflTeam": "JAX"
@@ -444,11 +449,6 @@ export const VETERAN_ROSTERS = {
       "name": "Broncos D/ST",
       "position": "D/ST",
       "nflTeam": "DEN"
-    },
-    {
-      "name": "Chase Brown",
-      "position": "D/ST",
-      "nflTeam": "SEA"
     },
     {
       "name": "Seahawks D/ST",
