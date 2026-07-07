@@ -29,11 +29,10 @@ const INITIAL_TEAMS = [
 
 const NUM_ROUNDS = 3
 
-const storedDraftState = loadStored(STORAGE_KEYS.draftState, null)
-
 function App({ session, onLogout, onRequestLogin }) {
   const isAdmin = !!session?.isAdmin
   const isLoggedIn = !!session
+  const [storedDraftState] = useState(() => loadStored(STORAGE_KEYS.draftState, null))
   const [activeTab, setActiveTab] = useState('home')
   const [lineups, setLineups] = useState(INITIAL_LINEUPS)
   const [prospects, setProspects] = useState(ROOKIE_PROSPECTS)
