@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import App from './App'
 import Login from './Login'
+import ChangePassword from './ChangePassword'
 import { getSession, clearToken } from './auth'
 
 export default function AuthGate() {
@@ -10,10 +11,14 @@ export default function AuthGate() {
     return <Login onSuccess={setSession} />
   }
 
+  if (session.mustChangePassword) {
+    return <ChangePassword session={session} onSuccess={setSession} />
+  }
+
   const handleLogout = () => {
     clearToken()
     setSession(null)
   }
 
-  return <App username={session.username} onLogout={handleLogout} />
+  return <App session={session} onLogout={handleLogout} />
 }

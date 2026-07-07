@@ -31,19 +31,25 @@ export function getSession() {
     clearToken()
     return null
   }
-  return { username: payload.username }
+  return {
+    username: payload.username,
+    name: payload.name,
+    team: payload.team,
+    isAdmin: !!payload.isAdmin,
+    mustChangePassword: !!payload.mustChangePassword,
+  }
 }
 
-export async function login(username, password) {
+async function postJson(url, body, headers = {}) {
   let res
   try {
-    res = await fetch('/api/login', {
+    res = await fetch(url, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password }),
+      headers: { 'Content-Type': 'application/json', ...headers },
+      body: JSON.stringify(body),
     })
   } catch {
-    throw new Error('Could not reach the login server. Check your connection and try again.')
+    throw new Error('Could not reach the server. Check your connection and try again.')
   }
 
   let data = null
@@ -54,12 +60,21 @@ export async function login(username, password) {
   }
 
   if (!res.ok) {
-    throw new Error(data?.error || 'Incorrect username or password.')
+    throw new Error(data?.error || 'Something went wrong. Please try again.')
   }
   if (!data?.token) {
-    throw new Error('Login failed. Please try again.')
+    throw new Error('Request failed. Please try again.')
   }
 
   setToken(data.token)
   return getSession()
+}
+
+export async function login(username, password) {
+  return postJson('/api/login', { username, password })
+}
+
+export async function changePassword(currentPassword, newPassword) {
+  const token = getToken()
+  return postJson('/api/change-password', { currentPassword, newPassword }, { Authorization: `Bearer ${token}` })
 }
