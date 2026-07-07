@@ -153,6 +153,66 @@ export function pickCpuPlayerSmart(prospects, draftedPlayers, team, rosterPlayer
   return { player, reason }
 }
 
+// --- Trade value verdict (KTC-based) ---
+const FUTURE_PICK_BASE_VALUES = {
+  '1st Rounder': 5500,
+  '2nd Rounder': 2600,
+  '3rd Rounder': 1100,
+  '4th Rounder': 450,
+}
+const FUTURE_YEAR_DISCOUNT = 0.92
+
+export function getFuturePickValue(year, round, currentYear = 2026) {
+  const base = FUTURE_PICK_BASE_VALUES[round] ?? 0
+  const yearsOut = Math.max(0, year - currentYear)
+  return Math.round(base * Math.pow(FUTURE_YEAR_DISCOUNT, yearsOut))
+}
+
+export function computeTradeSideValue(playerNames, picks, playerValueMap, currentYear = 2026) {
+  let total = 0
+  const unknownPlayers = []
+  for (const name of playerNames) {
+    const value = playerValueMap.get(name)
+    if (value == null) {
+      unknownPlayers.push(name)
+    } else {
+      total += value
+    }
+  }
+  for (const pick of picks) {
+    total += getFuturePickValue(pick.year, pick.round, currentYear)
+  }
+  return { total, unknownPlayers }
+}
+
+export function getTradeVerdict(valueSentByA, valueSentByB, nameA, nameB) {
+  if (valueSentByA === 0 && valueSentByB === 0) return null
+  const diff = valueSentByA - valueSentByB
+  // The team that sends less value receives more — they win the trade
+  const winner = diff > 0 ? nameB : nameA
+  const loser = diff > 0 ? nameA : nameB
+  const pct = Math.abs(diff) / Math.max(valueSentByA, valueSentByB, 1)
+  let label
+  let severity
+  if (pct < 0.05) {
+    label = 'Dead even. The accountants are satisfied.'
+    severity = 'even'
+  } else if (pct < 0.12) {
+    label = `Fair trade — slight edge to ${winner}.`
+    severity = 'fair'
+  } else if (pct < 0.25) {
+    label = `${winner} wins this trade.`
+    severity = 'win'
+  } else if (pct < 0.45) {
+    label = `${winner} is fleecing ${loser}. Someone screenshot this.`
+    severity = 'fleece'
+  } else {
+    label = `Grand larceny. ${winner} should be under league investigation.`
+    severity = 'robbery'
+  }
+  return { diff: Math.abs(diff), pct, winner, loser, label, severity }
+}
+
 export function loadStored(key, fallback) {
   try {
     const raw = localStorage.getItem(key)

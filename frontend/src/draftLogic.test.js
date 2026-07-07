@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { generateInitialPicks, formatTime, filterProspects, pickCpuPlayer } from './draftLogic'
+import { generateInitialPicks, formatTime, filterProspects, pickCpuPlayer, getFuturePickValue, computeTradeSideValue, getTradeVerdict } from './draftLogic'
 
 const TEAMS = [
   { id: 1, name: 'A' },
@@ -90,5 +90,43 @@ describe('pickCpuPlayer', () => {
       const player = pickCpuPlayer(PROSPECTS, { 2: {} })
       expect(player.id).not.toBe(2)
     }
+  })
+})
+
+describe('trade verdict', () => {
+  it('values future picks by round with a discount for later years', () => {
+    expect(getFuturePickValue(2026, '1st Rounder')).toBe(5500)
+    expect(getFuturePickValue(2027, '1st Rounder')).toBe(5060)
+    expect(getFuturePickValue(2026, '4th Rounder')).toBe(450)
+    expect(getFuturePickValue(2026, 'Unknown Round')).toBe(0)
+  })
+
+  it('totals players and picks, tracking unknown players', () => {
+    const map = new Map([['Bijan Robinson', 9999]])
+    const side = computeTradeSideValue(
+      ['Bijan Robinson', 'Mystery Man'],
+      [{ year: 2026, round: '2nd Rounder' }],
+      map,
+      2026
+    )
+    expect(side.total).toBe(9999 + 2600)
+    expect(side.unknownPlayers).toEqual(['Mystery Man'])
+  })
+
+  it('returns null when nothing is selected', () => {
+    expect(getTradeVerdict(0, 0, 'A', 'B')).toBeNull()
+  })
+
+  it('declares the team receiving more value the winner', () => {
+    const v = getTradeVerdict(10000, 5000, 'A', 'B')
+    expect(v.winner).toBe('B')
+    expect(v.loser).toBe('A')
+    expect(v.diff).toBe(5000)
+    expect(v.severity).toBe('robbery')
+  })
+
+  it('calls a near-equal trade even', () => {
+    const v = getTradeVerdict(10000, 9800, 'A', 'B')
+    expect(v.severity).toBe('even')
   })
 })
