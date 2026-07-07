@@ -2,6 +2,9 @@ export const OWNERS = ['Dedon', 'Caz', 'Perry P', 'Sam', 'Nick', 'Zack', 'Dylan'
 
 export const ROUNDS = ['1st Rounder', '2nd Rounder', '3rd Rounder', '4th Rounder']
 
+// Standard (non-snake) draft slot order for the live rookie draft
+export const DRAFT_SLOT_ORDER = ['Perry P', 'Caz', 'Zack', 'Dedon', 'Dylan', 'Nick', 'Sam', 'Jared']
+
 // Maps owner short names used in the future picks data to INITIAL_TEAMS ids
 // Dedon=8, Caz=6, Perry P/Perri=7, Sam=2, Nick=3, Zack/Zach=5, Dylan=4, Jared=1
 export const OWNER_TO_TEAM_ID = {
