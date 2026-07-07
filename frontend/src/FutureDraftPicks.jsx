@@ -4,7 +4,8 @@ import { OWNERS, ROUNDS, getOwnerColor } from './futurePicksData'
 
 export default function FutureDraftPicks({ pickData, footnotes, setFootnotes, canEdit = true }) {
   const [expandedYears, setExpandedYears] = useState(() => {
-    const years = Object.keys(pickData).map(Number)
+    const currentYear = new Date().getFullYear()
+    const years = Object.keys(pickData).map(Number).filter(y => y >= currentYear)
     return new Set(years)
   })
   const [hoveredNote, setHoveredNote] = useState(null)
@@ -34,8 +35,19 @@ export default function FutureDraftPicks({ pickData, footnotes, setFootnotes, ca
 
   const handleNoteHover = (noteId, e) => {
     const rect = e.currentTarget.getBoundingClientRect()
-    setTooltipPos({ top: rect.top - 8, left: rect.left + rect.width / 2 })
+    const half = Math.min(192, window.innerWidth / 2 - 12)
+    const left = Math.min(Math.max(rect.left + rect.width / 2, half + 8), window.innerWidth - half - 8)
+    setTooltipPos({ top: rect.top - 8, left })
     setHoveredNote(noteId)
+  }
+
+  const handleNoteTap = (noteId, e) => {
+    e.stopPropagation()
+    if (hoveredNote === noteId) {
+      setHoveredNote(null)
+    } else {
+      handleNoteHover(noteId, e)
+    }
   }
 
   const handleNoteLeave = () => {
@@ -54,7 +66,7 @@ export default function FutureDraftPicks({ pickData, footnotes, setFootnotes, ca
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">Future Draft Picks</h2>
-          <p className="text-sm text-gray-500 mt-1">Track pick ownership across years. Hover footnote badges for trade details.</p>
+          <p className="text-sm text-gray-500 mt-1">Track pick ownership across years. Tap or hover footnote badges for trade details.</p>
         </div>
       </div>
 
@@ -83,11 +95,12 @@ export default function FutureDraftPicks({ pickData, footnotes, setFootnotes, ca
 
               {isExpanded && (
                 <div className="border-t border-gray-100">
+                  <p className="sm:hidden px-4 pt-2 text-[10px] text-gray-400">Swipe sideways to see all teams &rarr;</p>
                   <div className="overflow-x-auto">
                     <table className="w-full min-w-[800px]">
                       <thead>
                         <tr className="bg-gray-50/80">
-                          <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider w-32">Round</th>
+                          <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider w-32 sticky left-0 bg-gray-50 z-10">Round</th>
                           {OWNERS.map(owner => (
                             <th key={owner} className="text-center px-2 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">
                               {owner}
@@ -100,7 +113,7 @@ export default function FutureDraftPicks({ pickData, footnotes, setFootnotes, ca
                           const roundPicks = yearData[round] || []
                           return (
                             <tr key={round} className="hover:bg-gray-50/50 transition-colors">
-                              <td className="px-4 py-3 text-sm font-medium text-gray-700 whitespace-nowrap">{round}</td>
+                              <td className="px-4 py-3 text-sm font-medium text-gray-700 whitespace-nowrap sticky left-0 bg-white z-10">{round}</td>
                               {roundPicks.map((pick, idx) => {
                                 const isTraded = pick.owner !== OWNERS[idx]
                                 return (
@@ -123,6 +136,7 @@ export default function FutureDraftPicks({ pickData, footnotes, setFootnotes, ca
                                               className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-700 text-[9px] font-bold cursor-help border border-amber-200 hover:bg-amber-200 transition-colors"
                                               onMouseEnter={(e) => handleNoteHover(noteId, e)}
                                               onMouseLeave={handleNoteLeave}
+                                              onClick={(e) => handleNoteTap(noteId, e)}
                                             >
                                               {noteId}
                                             </span>
@@ -221,7 +235,7 @@ export default function FutureDraftPicks({ pickData, footnotes, setFootnotes, ca
       {/* Footnote Tooltip */}
       {hoveredNote !== null && (
         <div
-          className="fixed z-[100] max-w-sm bg-gray-900 text-white rounded-xl shadow-2xl px-4 py-3 pointer-events-none"
+          className="fixed z-[100] max-w-[calc(100vw-16px)] sm:max-w-sm bg-gray-900 text-white rounded-xl shadow-2xl px-4 py-3 pointer-events-none"
           style={{
             top: tooltipPos.top,
             left: tooltipPos.left,
