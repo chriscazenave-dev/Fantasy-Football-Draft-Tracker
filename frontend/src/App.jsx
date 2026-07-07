@@ -117,6 +117,11 @@ function App({ session, onLogout, onRequestLogin }) {
       .catch(() => {})
   }
 
+  const refreshFromServerRef = useRef(refreshFromServer)
+  useEffect(() => {
+    refreshFromServerRef.current = refreshFromServer
+  })
+
   // Hydrate shared league state from the server on load
   useEffect(() => {
     let cancelled = false
@@ -145,11 +150,13 @@ function App({ session, onLogout, onRequestLogin }) {
     clearTimeout(saveTimerRef.current)
     const state = { lineups, rosters, prospects, draftedPlayers, draftOrder, futurePickData, footnotes }
     saveTimerRef.current = setTimeout(() => {
-      saveLeagueState(state)
+      saveLeagueState(state, versionRef.current)
         .then(({ version }) => {
           versionRef.current = Math.max(versionRef.current, version)
         })
-        .catch(() => {})
+        .catch((err) => {
+          if (err.status === 409) refreshFromServerRef.current()
+        })
     }, 800)
     return () => clearTimeout(saveTimerRef.current)
   }, [isHydrated, isLoggedIn, isMockDraft, lineups, rosters, prospects, draftedPlayers, draftOrder, futurePickData, footnotes])
