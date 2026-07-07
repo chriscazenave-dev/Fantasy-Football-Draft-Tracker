@@ -1,11 +1,10 @@
 import { Fragment, useState, useEffect, useRef } from 'react'
-import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut, LogIn, Sparkles, Newspaper, BookOpen, ChevronRight } from 'lucide-react'
+import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut, LogIn, Sparkles, Newspaper, ChevronRight } from 'lucide-react'
 import Ably from 'ably'
 import FutureDraftPicks from './FutureDraftPicks'
 import DraftHype from './DraftHype'
-import HomePage from './HomePage'
+import NewspaperPage from './NewspaperPage'
 import RostersPage from './RostersPage'
-import PlayerValuesPage from './PlayerValuesPage'
 import { ROOKIE_DETAILS } from './rookieDetailData'
 import { VETERAN_ROSTERS, ROOKIE_PROSPECTS } from './leagueData'
 import { INITIAL_LINEUPS } from './lineupData'
@@ -494,9 +493,8 @@ function App({ session, onLogout, onRequestLogin }) {
   })
 
   const tabs = [
-    { id: 'home', label: 'Home', icon: Newspaper },
+    { id: 'home', label: 'Paper', icon: Newspaper },
     { id: 'prospects', label: 'Prospects', icon: Users },
-    { id: 'values', label: 'Player Values', mobileLabel: 'Values', icon: BookOpen },
     { id: 'teams', label: 'Rosters', icon: UserCircle },
     { id: 'trades', label: 'Trades', icon: ArrowRightLeft },
     { id: 'futurePicks', label: 'Future Picks', mobileLabel: 'Picks', icon: FileText },
@@ -595,11 +593,7 @@ function App({ session, onLogout, onRequestLogin }) {
 
       {/* Content */}
       <main className="max-w-7xl mx-auto p-4 md:p-6">
-        {activeTab === 'home' && <HomePage />}
-
-        {activeTab === 'values' && (
-          <PlayerValuesPage teams={teams} draftedPlayers={draftedPlayers} />
-        )}
+        {activeTab === 'home' && <NewspaperPage teams={teams} draftedPlayers={draftedPlayers} />}
 
         {activeTab === 'prospects' && (
           <div className="space-y-6">
