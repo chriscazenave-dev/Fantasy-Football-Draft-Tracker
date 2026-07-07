@@ -1,4 +1,4 @@
-import { getDb, readJsonBody, verifyToken } from './_authLib.js'
+import { BodyTooLargeError, getDb, readJsonBody, verifyToken } from './_authLib.js'
 
 const LEAGUE_ID = 'default'
 
@@ -44,7 +44,13 @@ export default async function handler(req, res) {
       return res.status(401).json({ error: 'You must be signed in to save league changes.' })
     }
 
-    const body = await readJsonBody(req)
+    let body
+    try {
+      body = await readJsonBody(req)
+    } catch (err) {
+      if (err instanceof BodyTooLargeError) return res.status(413).json({ error: 'Request body too large.' })
+      throw err
+    }
     if (!body.state || typeof body.state !== 'object') {
       return res.status(400).json({ error: 'Missing state.' })
     }

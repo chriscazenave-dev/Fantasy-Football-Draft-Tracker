@@ -1,4 +1,4 @@
-import { getDb, hashPassword, makeToken, readJsonBody, sessionPayload, verifyPassword, verifyToken } from './_authLib.js'
+import { BodyTooLargeError, getDb, hashPassword, makeToken, readJsonBody, sessionPayload, verifyPassword, verifyToken } from './_authLib.js'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -19,7 +19,13 @@ export default async function handler(req, res) {
     return res.status(401).json({ error: 'You must be signed in to change your password.' })
   }
 
-  const body = await readJsonBody(req)
+  let body
+  try {
+    body = await readJsonBody(req)
+  } catch (err) {
+    if (err instanceof BodyTooLargeError) return res.status(413).json({ error: 'Request body too large.' })
+    throw err
+  }
   const currentPassword = String(body.currentPassword ?? '')
   const newPassword = String(body.newPassword ?? '')
 

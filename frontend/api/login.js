@@ -1,4 +1,4 @@
-import { getDb, makeToken, readJsonBody, sessionPayload, verifyPassword } from './_authLib.js'
+import { BodyTooLargeError, getDb, makeToken, readJsonBody, sessionPayload, verifyPassword } from './_authLib.js'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -12,7 +12,13 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Login is not configured yet. Set AUTH_SECRET and DATABASE_URL.' })
   }
 
-  const body = await readJsonBody(req)
+  let body
+  try {
+    body = await readJsonBody(req)
+  } catch (err) {
+    if (err instanceof BodyTooLargeError) return res.status(413).json({ error: 'Request body too large.' })
+    throw err
+  }
   const username = String(body.username ?? '').trim().toLowerCase()
   const password = String(body.password ?? '')
 

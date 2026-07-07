@@ -1,4 +1,4 @@
-import { readJsonBody } from './_authLib.js'
+import { BodyTooLargeError, readJsonBody } from './_authLib.js'
 
 // Sleeper's public read-only API (no key required): https://docs.sleeper.com
 const SLEEPER = 'https://api.sleeper.app/v1'
@@ -73,7 +73,13 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const body = await readJsonBody(req)
+  let body
+  try {
+    body = await readJsonBody(req)
+  } catch (err) {
+    if (err instanceof BodyTooLargeError) return res.status(413).json({ error: 'Request body too large.' })
+    throw err
+  }
   const players = Array.isArray(body.players) ? body.players : []
   if (players.length === 0) {
     return res.status(400).json({ error: 'Provide a players array of { name, position }.' })
