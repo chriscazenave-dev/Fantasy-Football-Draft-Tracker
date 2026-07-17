@@ -3,15 +3,15 @@ import { Search, Play, Pause, X, RotateCcw, Minimize2, Newspaper, Clock, Trophy,
 import { formatTime } from './draftLogic'
 
 const POSITION_COLORS = {
-  QB: 'text-rose-900 border-rose-900/50 bg-rose-900/5',
-  RB: 'text-emerald-900 border-emerald-900/50 bg-emerald-900/5',
-  WR: 'text-sky-900 border-sky-900/50 bg-sky-900/5',
-  TE: 'text-amber-900 border-amber-900/50 bg-amber-900/5',
+  QB: 'text-rose-300 border-rose-300/50 bg-rose-300/10',
+  RB: 'text-emerald-300 border-emerald-300/50 bg-emerald-300/10',
+  WR: 'text-sky-300 border-sky-300/50 bg-sky-300/10',
+  TE: 'text-amber-300 border-amber-300/50 bg-amber-300/10',
 }
 
 function PosBadge({ position }) {
   return (
-    <span className={`inline-flex items-center px-1.5 py-0.5 border text-[10px] font-bold uppercase tracking-wider ${POSITION_COLORS[position] || 'text-[#2b2418] border-[#5a4a32]/50 bg-[#5a4a32]/5'}`}>
+    <span className={`inline-flex items-center px-1.5 py-0.5 border text-[10px] font-bold uppercase tracking-wider ${POSITION_COLORS[position] || 'text-[#f3ecdb] border-[#8a7a5c]/50 bg-[#8a7a5c]/5'}`}>
       {position}
     </span>
   )
@@ -19,10 +19,10 @@ function PosBadge({ position }) {
 
 function Panel({ title, icon: Icon, children, className = '' }) {
   return (
-    <div className={`border-2 border-[#5a4a32] bg-[#faf8f3] overflow-hidden flex flex-col ${className}`}>
-      <div className="flex items-center gap-2 px-4 py-2 border-b-2 border-[#5a4a32] bg-[#efe6d0]">
-        {Icon && <Icon size={13} className="text-[#5a4a32]" />}
-        <span className="text-[10px] font-black uppercase tracking-[0.25em] text-[#5a4a32]">{title}</span>
+    <div className={`border-2 border-[#8a7a5c] bg-[#111111] overflow-hidden flex flex-col ${className}`}>
+      <div className="flex items-center gap-2 px-4 py-2 border-b-2 border-[#8a7a5c] bg-[#1a1a1a]">
+        {Icon && <Icon size={13} className="text-[#8a7a5c]" />}
+        <span className="text-[10px] font-black uppercase tracking-[0.25em] text-[#8a7a5c]">{title}</span>
       </div>
       {children}
     </div>
@@ -116,19 +116,19 @@ export default function DraftCenter({
   }
 
   return (
-    <div className="fixed inset-0 z-[195] bg-[#f3ecdb] text-[#2b2418] font-serif overflow-y-auto">
+    <div className="fixed inset-0 z-[195] bg-[#000000] text-[#f3ecdb] font-serif overflow-y-auto">
       {/* Masthead */}
-      <div className="sticky top-0 z-20 border-b-4 border-double border-[#5a4a32] bg-[#f3ecdb]/95 backdrop-blur">
+      <div className="sticky top-0 z-20 border-b-4 border-double border-[#8a7a5c] bg-[#000000]/95 backdrop-blur">
         <div className="max-w-[1500px] mx-auto px-4 py-3 flex flex-wrap items-center gap-x-5 gap-y-2">
           <div className="flex items-center gap-3">
-            <div className="flex items-center justify-center w-9 h-9 border-2 border-[#5a4a32] bg-[#efe6d0]">
-              <Newspaper size={18} className="text-[#5a4a32]" />
+            <div className="flex items-center justify-center w-9 h-9 border-2 border-[#8a7a5c] bg-[#1a1a1a]">
+              <Newspaper size={18} className="text-[#8a7a5c]" />
             </div>
             <div className="leading-tight">
               <h1 className="text-lg font-black tracking-tight">The Draft Desk</h1>
               <div className="flex items-center gap-1.5">
-                <span className={`w-1.5 h-1.5 rounded-full animate-dc-blink ${isMock ? 'bg-[#8a7a5c]' : 'bg-[#8b2f2f]'}`} />
-                <span className={`text-[9px] font-bold uppercase tracking-[0.25em] ${isMock ? 'text-[#8a7a5c]' : 'text-[#8b2f2f]'}`}>
+                <span className={`w-1.5 h-1.5 rounded-full animate-dc-blink ${isMock ? 'bg-[#9a9082]' : 'bg-[#d05c5c]'}`} />
+                <span className={`text-[9px] font-bold uppercase tracking-[0.25em] ${isMock ? 'text-[#9a9082]' : 'text-[#d05c5c]'}`}>
                   {isMock ? 'Mock Edition' : 'Live Edition'}{isPaused ? ' · Presses Paused' : ''}
                 </span>
               </div>
@@ -136,14 +136,14 @@ export default function DraftCenter({
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="text-[9px] uppercase tracking-widest text-[#8a7a5c]">Pick</span>
+            <span className="text-[9px] uppercase tracking-widest text-[#9a9082]">Pick</span>
             <span className="text-lg font-black tabular-nums">{String(draftOrder.length + 1).padStart(2, '0')}</span>
-            <span className="text-[#8a7a5c]">of</span>
-            <span className="text-sm text-[#8a7a5c] tabular-nums">{draftPicks.length}</span>
+            <span className="text-[#9a9082]">of</span>
+            <span className="text-sm text-[#9a9082] tabular-nums">{draftPicks.length}</span>
           </div>
 
           <div className={`flex items-center gap-2 px-3 py-1 border-2 tabular-nums ${
-            timerDanger ? 'border-[#8b2f2f] bg-[#8b2f2f]/10 text-[#8b2f2f] animate-dc-blink' : timerWarn ? 'border-amber-700 bg-amber-700/10 text-amber-800' : 'border-[#5a4a32] bg-[#efe6d0] text-[#2b2418]'
+            timerDanger ? 'border-[#d05c5c] bg-[#d05c5c]/10 text-[#d05c5c] animate-dc-blink' : timerWarn ? 'border-amber-400 bg-amber-400/10 text-amber-300' : 'border-[#8a7a5c] bg-[#1a1a1a] text-[#f3ecdb]'
           }`}>
             <Clock size={14} />
             <span className="text-xl font-black">{formatTime(timeRemaining)}</span>
@@ -153,7 +153,7 @@ export default function DraftCenter({
             {(isAdmin || isMock) && (
               <button
                 onClick={onPauseToggle}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 border-2 border-[#5a4a32] bg-[#efe6d0] hover:bg-[#e5d9bd] text-[#2b2418] text-[11px] font-bold uppercase tracking-widest transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 border-2 border-[#8a7a5c] bg-[#1a1a1a] hover:bg-[#2a2a2a] text-[#f3ecdb] text-[11px] font-bold uppercase tracking-widest transition-colors"
               >
                 {isPaused ? <Play size={13} /> : <Pause size={13} />}
                 {isPaused ? 'Resume' : 'Pause'}
@@ -162,7 +162,7 @@ export default function DraftCenter({
             {!isMock && isAdmin && (
               <button
                 onClick={onRestart}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 border-2 border-[#8b2f2f] bg-[#8b2f2f]/10 hover:bg-[#8b2f2f]/20 text-[#8b2f2f] text-[11px] font-bold uppercase tracking-widest transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 border-2 border-[#d05c5c] bg-[#d05c5c]/10 hover:bg-[#d05c5c]/20 text-[#d05c5c] text-[11px] font-bold uppercase tracking-widest transition-colors"
               >
                 <RotateCcw size={13} />
                 Restart
@@ -170,7 +170,7 @@ export default function DraftCenter({
             )}
             <button
               onClick={() => setPhase('recap')}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 border-2 border-[#5a4a32] bg-[#2b2418] hover:bg-[#463b28] text-[#f3ecdb] text-[11px] font-bold uppercase tracking-widest transition-colors"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 border-2 border-[#8a7a5c] bg-[#f3ecdb] hover:bg-[#d8cdb0] text-[#111111] text-[11px] font-bold uppercase tracking-widest transition-colors"
             >
               <Trophy size={13} />
               {isMock ? 'End & Recap' : 'Recap'}
@@ -178,14 +178,14 @@ export default function DraftCenter({
             <button
               onClick={onMinimize}
               title="Return to site (draft keeps running)"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 border-2 border-[#c9bb9c] bg-[#faf8f3] hover:bg-[#efe6d0] text-[#8a7a5c] text-[11px] font-bold uppercase tracking-widest transition-colors"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 border-2 border-[#3a352b] bg-[#111111] hover:bg-[#1a1a1a] text-[#9a9082] text-[11px] font-bold uppercase tracking-widest transition-colors"
             >
               <Minimize2 size={13} />
               Minimize
             </button>
           </div>
         </div>
-        <p className="text-center text-[9px] uppercase tracking-[0.35em] text-[#8a7a5c] pb-1.5">
+        <p className="text-center text-[9px] uppercase tracking-[0.35em] text-[#9a9082] pb-1.5">
           The Dynasty Madness Times · Special Draft Coverage · All the picks fit to print
         </p>
       </div>
@@ -194,29 +194,29 @@ export default function DraftCenter({
         {/* On the clock hero */}
         {clockTeam && (
           <div className={`relative overflow-hidden border-y-4 border-double px-6 py-4 flex flex-wrap items-center gap-5 ${
-            isYourTurn ? 'border-[#8b2f2f] bg-[#8b2f2f]/5' : 'border-[#5a4a32] bg-[#efe6d0]'
+            isYourTurn ? 'border-[#d05c5c] bg-[#d05c5c]/5' : 'border-[#8a7a5c] bg-[#1a1a1a]'
           }`}>
             <div className={`animate-clock-pulse flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-full border-2 ${
-              isYourTurn ? 'border-[#8b2f2f] bg-[#8b2f2f]/10 text-[#8b2f2f]' : 'border-[#5a4a32] bg-[#faf8f3] text-[#5a4a32]'
+              isYourTurn ? 'border-[#d05c5c] bg-[#d05c5c]/10 text-[#d05c5c]' : 'border-[#8a7a5c] bg-[#111111] text-[#8a7a5c]'
             }`}>
               {clockTeam.icon ? <clockTeam.icon size={26} /> : <Clock size={26} />}
             </div>
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-3">
-                <span className={`text-[10px] font-black uppercase tracking-[0.35em] ${isYourTurn ? 'text-[#8b2f2f]' : 'text-[#8a7a5c]'}`}>
+                <span className={`text-[10px] font-black uppercase tracking-[0.35em] ${isYourTurn ? 'text-[#d05c5c]' : 'text-[#9a9082]'}`}>
                   {isYourTurn ? 'Stop the presses — you are on the clock' : 'Now on the clock'}
                 </span>
-                <span className="text-[10px] text-[#8a7a5c]">
+                <span className="text-[10px] text-[#9a9082]">
                   Rd {currentPick.round}.{String(currentPick.pickInRound).padStart(2, '0')}
                 </span>
               </div>
               <p className="text-3xl font-black leading-tight truncate">
-                {clockTeam.name} <span className="text-sm font-medium text-[#8a7a5c] italic">({clockTeam.owner})</span>
+                {clockTeam.name} <span className="text-sm font-medium text-[#9a9082] italic">({clockTeam.owner})</span>
               </p>
             </div>
             {onDeckTeam && (
-              <div className="hidden sm:flex flex-col items-end flex-shrink-0 border-l-2 border-[#c9bb9c] pl-5">
-                <span className="text-[9px] font-bold uppercase tracking-[0.3em] text-[#8a7a5c]">On deck</span>
+              <div className="hidden sm:flex flex-col items-end flex-shrink-0 border-l-2 border-[#3a352b] pl-5">
+                <span className="text-[9px] font-bold uppercase tracking-[0.3em] text-[#9a9082]">On deck</span>
                 <span className="text-sm font-bold truncate max-w-[160px]">{onDeckTeam.name}</span>
               </div>
             )}
@@ -236,10 +236,10 @@ export default function DraftCenter({
                 key={pick.id}
                 className={`flex-shrink-0 flex flex-col px-2.5 py-1.5 border leading-tight min-w-[92px] ${
                   isCurrent
-                    ? 'border-2 border-[#2b2418] bg-[#2b2418] text-[#f3ecdb]'
+                    ? 'border-2 border-[#f3ecdb] bg-[#f3ecdb] text-[#111111]'
                     : isUsed
-                      ? 'border-[#c9bb9c] bg-[#efe6d0] text-[#8a7a5c]'
-                      : 'border-[#c9bb9c] bg-[#faf8f3] text-[#2b2418]'
+                      ? 'border-[#3a352b] bg-[#1a1a1a] text-[#9a9082]'
+                      : 'border-[#3a352b] bg-[#111111] text-[#f3ecdb]'
                 }`}
               >
                 <span className="text-[9px] font-bold tabular-nums opacity-70">{pick.round}.{String(pick.pickInRound).padStart(2, '0')}</span>
@@ -254,15 +254,15 @@ export default function DraftCenter({
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-4 items-start">
           {/* Big board */}
           <Panel title="The Big Board · Available Prospects" icon={Feather}>
-            <div className="flex flex-wrap items-center gap-2 px-4 py-2.5 border-b border-[#c9bb9c]">
-              <div className="flex items-center gap-2 px-3 py-1.5 border border-[#c9bb9c] bg-[#f3ecdb] flex-1 min-w-[180px]">
-                <Search size={13} className="text-[#8a7a5c]" />
+            <div className="flex flex-wrap items-center gap-2 px-4 py-2.5 border-b border-[#3a352b]">
+              <div className="flex items-center gap-2 px-3 py-1.5 border border-[#3a352b] bg-[#000000] flex-1 min-w-[180px]">
+                <Search size={13} className="text-[#9a9082]" />
                 <input
                   type="text"
                   placeholder="Search the wire..."
                   value={searchQuery}
                   onChange={e => setSearchQuery(e.target.value)}
-                  className="bg-transparent border-none focus:outline-none text-sm w-full placeholder-[#8a7a5c]/60"
+                  className="bg-transparent border-none focus:outline-none text-sm w-full placeholder-[#9a9082]/60"
                 />
               </div>
               <div className="flex gap-1">
@@ -272,8 +272,8 @@ export default function DraftCenter({
                     onClick={() => setFilterPosition(pos)}
                     className={`px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider border transition-colors ${
                       filterPosition === pos
-                        ? 'border-[#2b2418] bg-[#2b2418] text-[#f3ecdb]'
-                        : 'border-[#c9bb9c] bg-[#faf8f3] text-[#8a7a5c] hover:text-[#2b2418]'
+                        ? 'border-[#f3ecdb] bg-[#f3ecdb] text-[#111111]'
+                        : 'border-[#3a352b] bg-[#111111] text-[#9a9082] hover:text-[#f3ecdb]'
                     }`}
                   >
                     {pos}
@@ -281,36 +281,36 @@ export default function DraftCenter({
                 ))}
               </div>
             </div>
-            <div className="max-h-[52vh] overflow-y-auto fancy-scroll divide-y divide-[#e0d5bc]">
+            <div className="max-h-[52vh] overflow-y-auto fancy-scroll divide-y divide-[#2a251d]">
               {availableProspects.map(prospect => (
-                <div key={prospect.id} className="flex items-center gap-3 px-4 py-2.5 hover:bg-[#efe6d0] transition-colors group">
-                  <span className="w-8 text-right text-xs text-[#8a7a5c] tabular-nums flex-shrink-0">
+                <div key={prospect.id} className="flex items-center gap-3 px-4 py-2.5 hover:bg-[#1a1a1a] transition-colors group">
+                  <span className="w-8 text-right text-xs text-[#9a9082] tabular-nums flex-shrink-0">
                     {prospect.rank ? `#${prospect.rank}` : '—'}
                   </span>
                   <PosBadge position={prospect.position} />
                   <div className="min-w-0 flex-1 leading-tight">
                     <p className="text-sm font-bold truncate">{prospect.name}</p>
-                    <p className="text-[10px] text-[#8a7a5c] italic truncate">{prospect.nflTeam || prospect.college}</p>
+                    <p className="text-[10px] text-[#9a9082] italic truncate">{prospect.nflTeam || prospect.college}</p>
                   </div>
                   {canPick ? (
                     <button
                       onClick={() => handlePick(prospect.id)}
                       className={`flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 border-2 text-[11px] font-black uppercase tracking-widest transition-colors ${
                         isYourTurn
-                          ? 'border-[#8b2f2f] bg-[#8b2f2f] hover:bg-[#a33939] text-[#f3ecdb]'
-                          : 'border-[#2b2418] bg-[#2b2418] hover:bg-[#463b28] text-[#f3ecdb]'
+                          ? 'border-[#d05c5c] bg-[#d05c5c] hover:bg-[#e07a7a] text-[#111111]'
+                          : 'border-[#f3ecdb] bg-[#f3ecdb] hover:bg-[#d8cdb0] text-[#111111]'
                       }`}
                     >
                       Draft
                       <ChevronRight size={12} />
                     </button>
                   ) : (
-                    <span className="text-[10px] text-[#8a7a5c]/60 italic pr-1">awaiting desk</span>
+                    <span className="text-[10px] text-[#9a9082]/60 italic pr-1">awaiting desk</span>
                   )}
                 </div>
               ))}
               {availableProspects.length === 0 && (
-                <p className="text-center text-[#8a7a5c] text-sm italic py-10">Nothing on the wire</p>
+                <p className="text-center text-[#9a9082] text-sm italic py-10">Nothing on the wire</p>
               )}
             </div>
           </Panel>
@@ -318,24 +318,24 @@ export default function DraftCenter({
           <div className="space-y-4">
             {/* Pick feed */}
             <Panel title="Off the Wire · Latest Picks" icon={Newspaper}>
-              <div ref={feedRef} className="max-h-[30vh] overflow-y-auto fancy-scroll divide-y divide-[#e0d5bc]">
+              <div ref={feedRef} className="max-h-[30vh] overflow-y-auto fancy-scroll divide-y divide-[#2a251d]">
                 {[...draftOrder].reverse().map(entry => {
                   const player = prospects.find(p => p.id === entry.playerId)
                   const team = getTeamById(entry.teamId)
                   return (
                     <div key={entry.pickNumber} className="px-4 py-2.5">
                       <div className="flex items-center gap-2">
-                        <span className="text-[10px] text-[#8a7a5c] tabular-nums w-6">{String(entry.pickNumber).padStart(2, '0')}</span>
+                        <span className="text-[10px] text-[#9a9082] tabular-nums w-6">{String(entry.pickNumber).padStart(2, '0')}</span>
                         {player && <PosBadge position={player.position} />}
                         <span className="text-xs font-bold truncate">{player?.name}</span>
                       </div>
-                      <p className="text-[10px] text-[#8a7a5c] mt-0.5 pl-8 truncate">to {team?.name}</p>
-                      {entry.reason && <p className="text-[10px] text-[#8a7a5c]/80 italic mt-0.5 pl-8 leading-snug">{entry.reason}</p>}
+                      <p className="text-[10px] text-[#9a9082] mt-0.5 pl-8 truncate">to {team?.name}</p>
+                      {entry.reason && <p className="text-[10px] text-[#9a9082]/80 italic mt-0.5 pl-8 leading-snug">{entry.reason}</p>}
                     </div>
                   )
                 })}
                 {draftOrder.length === 0 && (
-                  <p className="text-center text-[#8a7a5c] text-xs italic py-8">The wire is quiet… for now</p>
+                  <p className="text-center text-[#9a9082] text-xs italic py-8">The wire is quiet… for now</p>
                 )}
               </div>
             </Panel>
@@ -343,16 +343,16 @@ export default function DraftCenter({
             {/* War room (mock only) */}
             {isMock && mockTeamId && (
               <Panel title="Your Column · Selections" icon={Sparkles}>
-                <div className="max-h-[22vh] overflow-y-auto fancy-scroll divide-y divide-[#e0d5bc]">
+                <div className="max-h-[22vh] overflow-y-auto fancy-scroll divide-y divide-[#2a251d]">
                   {myPicks.map(entry => (
                     <div key={entry.pickNumber} className="flex items-center gap-2 px-4 py-2">
-                      <span className="text-[10px] text-[#8a7a5c] tabular-nums w-6">{String(entry.pickNumber).padStart(2, '0')}</span>
+                      <span className="text-[10px] text-[#9a9082] tabular-nums w-6">{String(entry.pickNumber).padStart(2, '0')}</span>
                       {entry.player && <PosBadge position={entry.player.position} />}
                       <span className="text-xs font-bold truncate">{entry.player?.name}</span>
                     </div>
                   ))}
                   {myPicks.length === 0 && (
-                    <p className="text-center text-[#8a7a5c] text-xs italic py-6">No selections filed yet</p>
+                    <p className="text-center text-[#9a9082] text-xs italic py-6">No selections filed yet</p>
                   )}
                 </div>
               </Panel>
@@ -388,35 +388,35 @@ function DraftRecap({ isMock, teams, prospects, draftOrder, draftPicks, mockTeam
   const isComplete = draftPicks.length > 0 && draftOrder.length >= draftPicks.length
 
   return (
-    <div className="fixed inset-0 z-[195] bg-[#f3ecdb] text-[#2b2418] font-serif overflow-y-auto">
+    <div className="fixed inset-0 z-[195] bg-[#000000] text-[#f3ecdb] font-serif overflow-y-auto">
       <div className="relative z-10 max-w-5xl mx-auto px-4 py-10 space-y-8">
-        <div className="text-center space-y-3 border-y-4 border-double border-[#5a4a32] py-6 bg-[#efe6d0]">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 border border-[#5a4a32] bg-[#faf8f3]">
-            <Trophy size={14} className="text-[#8b6f2f]" />
-            <span className="text-[10px] font-black uppercase tracking-[0.35em] text-[#5a4a32]">
+        <div className="text-center space-y-3 border-y-4 border-double border-[#8a7a5c] py-6 bg-[#1a1a1a]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 border border-[#8a7a5c] bg-[#111111]">
+            <Trophy size={14} className="text-[#d4b45a]" />
+            <span className="text-[10px] font-black uppercase tracking-[0.35em] text-[#8a7a5c]">
               {isComplete ? 'Final Edition' : 'Draft Debrief'}
             </span>
           </div>
           <h1 className="text-4xl md:text-5xl font-black tracking-tight">
             {isMock ? 'The Mock Draft Recap' : 'The Draft Recap'}
           </h1>
-          <p className="text-sm text-[#8a7a5c] uppercase tracking-[0.25em]">
+          <p className="text-sm text-[#9a9082] uppercase tracking-[0.25em]">
             {draftOrder.length} of {draftPicks.length} selections filed to print
           </p>
         </div>
 
         {steals.length > 0 && (
           <Panel title="Biggest Steals" icon={Sparkles}>
-            <div className="divide-y divide-[#e0d5bc]">
+            <div className="divide-y divide-[#2a251d]">
               {steals.map(e => (
                 <div key={e.pickNumber} className="flex items-center gap-3 px-4 py-3">
-                  <span className="text-xs text-[#8a7a5c] tabular-nums w-10">{String(e.pickNumber).padStart(2, '0')}</span>
+                  <span className="text-xs text-[#9a9082] tabular-nums w-10">{String(e.pickNumber).padStart(2, '0')}</span>
                   {e.player && <PosBadge position={e.player.position} />}
                   <div className="min-w-0 flex-1">
                     <p className="text-sm font-bold truncate">{e.player?.name}</p>
-                    <p className="text-[10px] text-[#8a7a5c] italic truncate">to {e.team?.name}</p>
+                    <p className="text-[10px] text-[#9a9082] italic truncate">to {e.team?.name}</p>
                   </div>
-                  <span className="flex-shrink-0 px-2 py-1 border border-emerald-900/50 bg-emerald-900/5 text-emerald-900 text-[10px] font-black uppercase tracking-wider">
+                  <span className="flex-shrink-0 px-2 py-1 border border-emerald-300/50 bg-emerald-300/10 text-emerald-300 text-[10px] font-black uppercase tracking-wider">
                     +{e.delta} value
                   </span>
                 </div>
@@ -431,15 +431,15 @@ function DraftRecap({ isMock, teams, prospects, draftOrder, draftPicks, mockTeam
               key={team.id}
               title={`${team.name}${isMock && team.id === mockTeamId ? ' · You' : ''}`}
               icon={team.icon}
-              className={isMock && team.id === mockTeamId ? 'ring-2 ring-[#8b2f2f]/50' : ''}
+              className={isMock && team.id === mockTeamId ? 'ring-2 ring-[#d05c5c]/50' : ''}
             >
-              <div className="divide-y divide-[#e0d5bc]">
+              <div className="divide-y divide-[#2a251d]">
                 {picks.map(e => (
                   <div key={e.pickNumber} className="flex items-center gap-2.5 px-4 py-2">
-                    <span className="text-[10px] text-[#8a7a5c] tabular-nums w-6">{String(e.pickNumber).padStart(2, '0')}</span>
+                    <span className="text-[10px] text-[#9a9082] tabular-nums w-6">{String(e.pickNumber).padStart(2, '0')}</span>
                     {e.player && <PosBadge position={e.player.position} />}
                     <span className="text-xs font-bold truncate">{e.player?.name}</span>
-                    {e.player?.rank && <span className="ml-auto text-[10px] text-[#8a7a5c]">#{e.player.rank}</span>}
+                    {e.player?.rank && <span className="ml-auto text-[10px] text-[#9a9082]">#{e.player.rank}</span>}
                   </div>
                 ))}
               </div>
@@ -448,20 +448,20 @@ function DraftRecap({ isMock, teams, prospects, draftOrder, draftPicks, mockTeam
         </div>
 
         <Panel title="Full Pick-by-Pick Log" icon={Feather}>
-          <div className="max-h-[40vh] overflow-y-auto fancy-scroll divide-y divide-[#e0d5bc]">
+          <div className="max-h-[40vh] overflow-y-auto fancy-scroll divide-y divide-[#2a251d]">
             {picksWithMeta.map(e => (
               <div key={e.pickNumber} className="px-4 py-2.5">
                 <div className="flex items-center gap-2.5">
-                  <span className="text-[10px] text-[#8a7a5c] tabular-nums w-6">{String(e.pickNumber).padStart(2, '0')}</span>
+                  <span className="text-[10px] text-[#9a9082] tabular-nums w-6">{String(e.pickNumber).padStart(2, '0')}</span>
                   {e.player && <PosBadge position={e.player.position} />}
                   <span className="text-xs font-bold">{e.player?.name}</span>
-                  <span className="text-[10px] text-[#8a7a5c]">to {e.team?.name}</span>
+                  <span className="text-[10px] text-[#9a9082]">to {e.team?.name}</span>
                 </div>
-                {e.reason && <p className="text-[10px] text-[#8a7a5c]/80 italic mt-0.5 pl-8 leading-snug">{e.reason}</p>}
+                {e.reason && <p className="text-[10px] text-[#9a9082]/80 italic mt-0.5 pl-8 leading-snug">{e.reason}</p>}
               </div>
             ))}
             {picksWithMeta.length === 0 && (
-              <p className="text-center text-[#8a7a5c] text-sm italic py-8">No picks were made</p>
+              <p className="text-center text-[#9a9082] text-sm italic py-8">No picks were made</p>
             )}
           </div>
         </Panel>
@@ -470,7 +470,7 @@ function DraftRecap({ isMock, teams, prospects, draftOrder, draftPicks, mockTeam
           {onBack && (
             <button
               onClick={onBack}
-              className="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#5a4a32] bg-[#efe6d0] hover:bg-[#e5d9bd] text-[#2b2418] text-sm font-black uppercase tracking-widest transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#8a7a5c] bg-[#1a1a1a] hover:bg-[#2a2a2a] text-[#f3ecdb] text-sm font-black uppercase tracking-widest transition-colors"
             >
               <Play size={15} />
               Back to Draft
@@ -478,7 +478,7 @@ function DraftRecap({ isMock, teams, prospects, draftOrder, draftPicks, mockTeam
           )}
           <button
             onClick={onExit}
-            className="inline-flex items-center gap-2 px-8 py-3 border-2 border-[#2b2418] bg-[#2b2418] hover:bg-[#463b28] text-[#f3ecdb] text-sm font-black uppercase tracking-widest transition-colors"
+            className="inline-flex items-center gap-2 px-8 py-3 border-2 border-[#f3ecdb] bg-[#f3ecdb] hover:bg-[#d8cdb0] text-[#111111] text-sm font-black uppercase tracking-widest transition-colors"
           >
             <X size={15} />
             {isMock ? 'Save & Exit Mock' : 'Exit Draft Center'}
