@@ -3,11 +3,13 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import HomePage from './HomePage'
 import PlayerValuesPage from './PlayerValuesPage'
 import TeamWriteupsPage from './TeamWriteupsPage'
+import TrophyCasePage from './TrophyCasePage'
 
 const PAGES = [
   { num: 1, roman: 'I', title: 'Front Page' },
   { num: 2, roman: 'II', title: 'The Value Ledger' },
   { num: 3, roman: 'III', title: 'The Franchise Reports' },
+  { num: 4, roman: 'IV', title: 'The Trophy Case' },
 ]
 
 function PageNav({ page, goTo }) {
@@ -64,7 +66,7 @@ function PageNav({ page, goTo }) {
   )
 }
 
-export default function NewspaperPage({ teams, draftedPlayers }) {
+export default function NewspaperPage({ teams, rosters, draftedPlayers }) {
   const [page, setPage] = useState(1)
 
   const goTo = next => {
@@ -84,8 +86,9 @@ export default function NewspaperPage({ teams, draftedPlayers }) {
 
       <div>
         {page === 1 && <HomePage />}
-        {page === 2 && <PlayerValuesPage teams={teams} draftedPlayers={draftedPlayers} />}
+        {page === 2 && <PlayerValuesPage teams={teams} rosters={rosters} draftedPlayers={draftedPlayers} />}
         {page === 3 && <TeamWriteupsPage />}
+        {page === 4 && <TrophyCasePage teams={teams} />}
       </div>
 
       <div className="max-w-5xl mx-auto font-serif mt-6">
