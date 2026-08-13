@@ -750,7 +750,7 @@ function App({ session, onLogout, onRequestLogin }) {
 
       {/* Content */}
       <main className="max-w-7xl mx-auto p-4 md:p-6">
-        {activeTab === 'home' && <NewspaperPage teams={teams} draftedPlayers={draftedPlayers} />}
+        {activeTab === 'home' && <NewspaperPage teams={teams} rosters={rosters} draftedPlayers={draftedPlayers} />}
 
         {activeTab === 'prospects' && (
           <div className="space-y-6">

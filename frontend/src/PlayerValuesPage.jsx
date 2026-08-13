@@ -18,7 +18,7 @@ function normalizeName(name) {
 
 const POSITIONS = ['All', 'QB', 'RB', 'WR', 'TE']
 
-export default function PlayerValuesPage({ teams, draftedPlayers, dateline }) {
+export default function PlayerValuesPage({ teams, rosters, draftedPlayers, dateline }) {
   const [filterPosition, setFilterPosition] = useState('All')
   const [filterOwner, setFilterOwner] = useState('All')
   const [search, setSearch] = useState('')
@@ -29,7 +29,7 @@ export default function PlayerValuesPage({ teams, draftedPlayers, dateline }) {
 
   const ownerByName = useMemo(() => {
     const map = {}
-    for (const [teamId, roster] of Object.entries(VETERAN_ROSTERS)) {
+    for (const [teamId, roster] of Object.entries(rosters || VETERAN_ROSTERS)) {
       for (const player of roster) {
         map[normalizeName(player.name)] = Number(teamId)
       }
@@ -41,7 +41,7 @@ export default function PlayerValuesPage({ teams, draftedPlayers, dateline }) {
       map[normalizeName(detail?.fullName || prospect.name)] = teamId
     }
     return map
-  }, [draftedPlayers])
+  }, [rosters, draftedPlayers])
 
   const rows = useMemo(
     () =>
