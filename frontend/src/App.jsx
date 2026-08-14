@@ -592,10 +592,8 @@ function App({ session, onLogout, onRequestLogin }) {
             ir: (next[teamId].ir || []).filter(n => !names.includes(n)),
           }
         }
-        // eslint-disable-next-line react-hooks/immutability
-        clearFromLineup(selectedPlayersFrom, futureTradeFrom)
-        // eslint-disable-next-line react-hooks/immutability
-        clearFromLineup(selectedPlayersTo, futureTradeTo)
+        clearFromLineup([...selectedPlayersFrom], futureTradeFrom)
+        clearFromLineup([...selectedPlayersTo], futureTradeTo)
         return next
       })
     }
@@ -613,8 +611,7 @@ function App({ session, onLogout, onRequestLogin }) {
     ].filter(Boolean)
 
     setTradeToast({
-      // eslint-disable-next-line react-hooks/purity
-      id: Date.now(),
+      id: today.getTime(),
       note: noteText,
       footnoteId: nextFootnoteId,
       vacatedTeams,
