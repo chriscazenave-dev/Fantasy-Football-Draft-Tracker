@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { FileText, Plus } from 'lucide-react'
 
+const TOOLTIP_WIDTH = 256
+let closeActiveTooltip = null
+
 function getFootnoteValueSummary(footnote) {
   const snapshot = footnote?.valueSnapshot
   if (!snapshot) return null
@@ -26,10 +29,22 @@ export function FootnoteBadge({ noteId, footnotes, large = false }) {
   const [showTooltip, setShowTooltip] = useState(false)
   const [tooltipPosition, setTooltipPosition] = useState({ top: 0, left: 0 })
   const footnote = footnotes.find(fn => fn.id === noteId || String(fn.id) === String(noteId))
+  const closeTooltip = () => {
+    setShowTooltip(false)
+    if (closeActiveTooltip === closeTooltip) closeActiveTooltip = null
+  }
   const showAt = (event) => {
     const rect = event.currentTarget.getBoundingClientRect()
-    setTooltipPosition({ top: rect.top - 8, left: Math.max(132, Math.min(window.innerWidth - 132, rect.left + rect.width / 2)) })
+    closeActiveTooltip?.()
+    const halfWidth = TOOLTIP_WIDTH / 2
+    setTooltipPosition({ top: rect.top - 8, left: Math.max(halfWidth + 8, Math.min(window.innerWidth - halfWidth - 8, rect.left + rect.width / 2)) })
     setShowTooltip(true)
+    closeActiveTooltip = closeTooltip
+  }
+  const handleTap = (event) => {
+    event.stopPropagation()
+    if (showTooltip) closeTooltip()
+    else showAt(event)
   }
   return (
     <span
@@ -37,8 +52,9 @@ export function FootnoteBadge({ noteId, footnotes, large = false }) {
         large ? 'min-w-[28px] h-7 text-xs' : 'w-4 h-4 text-[8px]'
       }`}
       onMouseEnter={showAt}
-      onMouseLeave={() => setShowTooltip(false)}
-      onClick={e => { e.stopPropagation(); showAt(e) }}
+      onMouseLeave={closeTooltip}
+      onTouchStart={handleTap}
+      onClick={e => e.stopPropagation()}
     >
       {noteId}
       {showTooltip && footnote && <FootnoteTooltip noteId={noteId} footnote={footnote} position={tooltipPosition} />}
