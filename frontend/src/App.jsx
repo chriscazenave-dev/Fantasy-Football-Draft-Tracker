@@ -1,5 +1,5 @@
 import { Fragment, useState, useEffect, useMemo, useRef } from 'react'
-import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, FileText, LogOut, LogIn, Sparkles, Newspaper, ChevronRight } from 'lucide-react'
+import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, LogOut, LogIn, Sparkles, Newspaper, ChevronRight } from 'lucide-react'
 import Ably from 'ably'
 import FutureDraftPicks from './FutureDraftPicks'
 import DraftHype from './DraftHype'
@@ -478,6 +478,15 @@ function App({ session, onLogout, onRequestLogin }) {
     const fromOwnerName = TEAM_ID_TO_OWNER[futureTradeFrom]
     const toOwnerName = TEAM_ID_TO_OWNER[futureTradeTo]
     if (!fromOwnerName || !toOwnerName) return
+    const fromTeamName = teams.find(team => team.id === futureTradeFrom)?.name
+    const toTeamName = teams.find(team => team.id === futureTradeTo)?.name
+    if (!fromTeamName || !toTeamName) return
+
+    const picksSentA = getTeamFuturePicks(futureTradeFrom).filter(p => selectedFuturePicks.includes(p.key))
+    const picksSentB = getTeamFuturePicks(futureTradeTo).filter(p => selectedFuturePicksTo.includes(p.key))
+    const sideA = computeTradeSideValue(selectedPlayersFrom, picksSentA, PLAYER_VALUE_MAP, DRAFT_YEAR)
+    const sideB = computeTradeSideValue(selectedPlayersTo, picksSentB, PLAYER_VALUE_MAP, DRAFT_YEAR)
+    const verdict = getTradeVerdict(sideA.total, sideB.total, fromTeamName, toTeamName)
 
     // Auto-generate footnote for this trade
     const nextFootnoteId = footnotes.length > 0 ? Math.max(...footnotes.map(f => typeof f.id === 'number' ? f.id : 0)) + 1 : 1
@@ -509,7 +518,21 @@ function App({ session, onLogout, onRequestLogin }) {
       noteText = futureTradeNote.trim() + ' - ' + dateStr
     }
 
-    setFootnotes(prev => [...prev, { id: nextFootnoteId, text: noteText }])
+    setFootnotes(prev => [...prev, {
+      id: nextFootnoteId,
+      text: noteText,
+      valueSnapshot: {
+        teamA: fromTeamName,
+        teamB: toTeamName,
+        valueSentByA: sideA.total,
+        valueSentByB: sideB.total,
+        verdict: verdict ? {
+          label: verdict.label,
+          severity: verdict.severity,
+        } : null,
+        date: dateStr,
+      },
+    }])
 
     setFuturePickData(prev => {
       const next = JSON.parse(JSON.stringify(prev))
@@ -569,8 +592,8 @@ function App({ session, onLogout, onRequestLogin }) {
             ir: (next[teamId].ir || []).filter(n => !names.includes(n)),
           }
         }
-        clearFromLineup(selectedPlayersFrom, futureTradeFrom)
-        clearFromLineup(selectedPlayersTo, futureTradeTo)
+        clearFromLineup([...selectedPlayersFrom], futureTradeFrom)
+        clearFromLineup([...selectedPlayersTo], futureTradeTo)
         return next
       })
     }
@@ -588,7 +611,7 @@ function App({ session, onLogout, onRequestLogin }) {
     ].filter(Boolean)
 
     setTradeToast({
-      id: Date.now(),
+      id: today.getTime(),
       note: noteText,
       footnoteId: nextFootnoteId,
       vacatedTeams,
@@ -656,7 +679,6 @@ function App({ session, onLogout, onRequestLogin }) {
     { id: 'prospects', label: 'Draft', icon: ListOrdered },
     { id: 'teams', label: 'Rosters', icon: UserCircle },
     { id: 'trades', label: 'Trades', icon: ArrowRightLeft },
-    { id: 'futurePicks', label: 'Future Picks', mobileLabel: 'Picks', icon: FileText },
     ...(isAdmin ? [{ id: 'upload', label: 'Data', icon: Upload }] : []),
   ]
 
@@ -750,7 +772,7 @@ function App({ session, onLogout, onRequestLogin }) {
 
       {/* Content */}
       <main className="max-w-7xl mx-auto p-4 md:p-6">
-        {activeTab === 'home' && <NewspaperPage teams={teams} draftedPlayers={draftedPlayers} />}
+        {activeTab === 'home' && <NewspaperPage teams={teams} rosters={rosters} draftedPlayers={draftedPlayers} />}
 
         {activeTab === 'prospects' && (
           <div className="space-y-6">
@@ -1414,7 +1436,7 @@ function App({ session, onLogout, onRequestLogin }) {
                       className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500/20 resize-none"
                       rows={2}
                     />
-                    <p className="text-[10px] text-gray-400 mt-1">This will be saved as footnote #{footnotes.length > 0 ? Math.max(...footnotes.map(f => typeof f.id === 'number' ? f.id : 0)) + 1 : 1} in the Future Picks tab</p>
+                    <p className="text-[10px] text-gray-400 mt-1">This will be saved as footnote #{footnotes.length > 0 ? Math.max(...footnotes.map(f => typeof f.id === 'number' ? f.id : 0)) + 1 : 1} in the Trade Footnotes section below</p>
                   </div>
                   {(() => {
                     const nameA = teams.find(t => t.id === futureTradeFrom)?.name
@@ -1473,63 +1495,8 @@ function App({ session, onLogout, onRequestLogin }) {
               )}
             </div>
 
-            {/* Future Picks Per-Team Overview (2026-2028) */}
-            <h3 className="text-lg font-bold tracking-tight text-gray-900 mt-8 mb-4">Future Picks by Team (2026–2028)</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {teams.map(team => {
-                const futurePicks = getTeamFuturePicks(team.id)
-
-                return (
-                  <div key={team.id} className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
-                    <div className="p-4 border-b border-gray-100 flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <div className={`p-1 rounded-full ${team.bg} ${team.color}`}>
-                          <team.icon size={12} />
-                        </div>
-                        <div className="flex flex-col">
-                          <span className="font-semibold text-gray-900 text-xs leading-tight">{team.name}</span>
-                          <span className="text-[9px] text-gray-500 font-medium">({team.owner})</span>
-                        </div>
-                      </div>
-                      <span className="text-xs px-2 py-0.5 bg-purple-100 rounded text-purple-600 font-medium">{futurePicks.length} picks</span>
-                    </div>
-                    <div className="p-2 max-h-72 overflow-y-auto fancy-scroll">
-                      <div className="space-y-1">
-                        {futurePicks.length === 0 ? (
-                          <p className="text-gray-400 text-xs italic p-2">No future picks</p>
-                        ) : (
-                          futurePicks.map(pick => {
-                            const isTraded = pick.currentOwner !== pick.originalOwner
-                            const roundShort = pick.round.replace(' Rounder', '')
-                            return (
-                              <div
-                                key={pick.key}
-                                className="flex items-center justify-between text-xs p-2 rounded-lg hover:bg-gray-50"
-                              >
-                                <div className="flex items-center gap-2">
-                                  <span className="text-gray-400 font-mono w-10">{pick.year}</span>
-                                  <span className="font-medium text-gray-700">{roundShort}</span>
-                                </div>
-                                {isTraded && (
-                                  <span className="text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded text-[10px] border border-amber-100 font-bold whitespace-nowrap">
-                                    via {pick.originalOwner}
-                                  </span>
-                                )}
-                              </div>
-                            )
-                          })
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
+            <FutureDraftPicks pickData={futurePickData} footnotes={footnotes} setFootnotes={setFootnotes} canEdit={isLoggedIn} />
           </div>
-        )}
-
-        {activeTab === 'futurePicks' && (
-          <FutureDraftPicks pickData={futurePickData} footnotes={footnotes} setFootnotes={setFootnotes} canEdit={isLoggedIn} />
         )}
 
         {activeTab === 'upload' && <UploadPage onFileUpload={handleFileUpload} />}
@@ -1598,7 +1565,7 @@ function App({ session, onLogout, onRequestLogin }) {
                 <p className="text-sm font-bold text-gray-900">Trade executed</p>
                 <p className="mt-0.5 text-xs text-gray-600 leading-snug">{tradeToast.note}</p>
                 <p className="mt-1 text-[11px] font-medium text-amber-600">
-                  Logged as footnote #{tradeToast.footnoteId} · view in Future Picks
+                  Logged as footnote #{tradeToast.footnoteId} · view in Trade Footnotes
                 </p>
                 {tradeToast.vacatedTeams.length > 0 && (
                   <button
