@@ -16,13 +16,13 @@ function PageNav({ page, goTo }) {
   const prev = PAGES.find(p => p.num === page - 1)
   const next = PAGES.find(p => p.num === page + 1)
   return (
-    <div className="max-w-5xl mx-auto font-serif text-[#2b2418]">
-      <div className="flex items-stretch justify-between gap-2 border-2 border-[#5a4a32] bg-[#efe6d0]">
+    <div className="max-w-5xl mx-auto font-serif text-[var(--ink)]">
+      <div className="flex items-stretch justify-between gap-2 border-2 border-[var(--rule-strong)] bg-[var(--paper-3)]">
         <button
           onClick={() => prev && goTo(prev.num)}
           disabled={!prev}
-          className={`flex items-center gap-1 px-3 py-2 text-[11px] font-bold uppercase tracking-widest border-r-2 border-[#c9bb9c] ${
-            prev ? 'text-amber-800 hover:bg-[#e5d9bd]' : 'text-[#c9bb9c] cursor-default'
+          className={`flex items-center gap-1 px-3 py-2 text-[11px] font-bold uppercase tracking-widest border-r-2 border-[var(--rule)] ${
+            prev ? 'text-amber-800 hover:bg-[var(--paper-4)]' : 'text-[#c9bb9c] cursor-default'
           }`}
         >
           <ChevronLeft size={14} />
@@ -37,8 +37,8 @@ function PageNav({ page, goTo }) {
               onClick={() => goTo(p.num)}
               className={`text-[10px] uppercase tracking-[0.2em] px-2 py-1 border ${
                 p.num === page
-                  ? 'border-[#5a4a32] bg-[#5a4a32] text-[#f3ecdb] font-black'
-                  : 'border-transparent text-[#8a7a5c] hover:text-amber-800 underline decoration-[#c9bb9c] underline-offset-4'
+                  ? 'border-[var(--rule-strong)] bg-[#5a4a32] text-[#f3ecdb] font-black'
+                  : 'border-transparent text-[var(--ink-muted)] hover:text-amber-800 underline decoration-[var(--rule)] underline-offset-4'
               }`}
             >
               <span className="hidden md:inline">{p.roman} · {p.title}</span>
@@ -50,8 +50,8 @@ function PageNav({ page, goTo }) {
         <button
           onClick={() => next && goTo(next.num)}
           disabled={!next}
-          className={`flex items-center gap-1 px-3 py-2 text-[11px] font-bold uppercase tracking-widest border-l-2 border-[#c9bb9c] ${
-            next ? 'text-amber-800 hover:bg-[#e5d9bd]' : 'text-[#c9bb9c] cursor-default'
+          className={`flex items-center gap-1 px-3 py-2 text-[11px] font-bold uppercase tracking-widest border-l-2 border-[var(--rule)] ${
+            next ? 'text-amber-800 hover:bg-[var(--paper-4)]' : 'text-[#c9bb9c] cursor-default'
           }`}
         >
           <span className="hidden sm:inline">{next ? `Page ${next.roman} · ${next.title}` : 'Back Page'}</span>
@@ -59,7 +59,7 @@ function PageNav({ page, goTo }) {
           <ChevronRight size={14} />
         </button>
       </div>
-      <p className="text-center text-[10px] uppercase tracking-[0.3em] text-[#8a7a5c] mt-1.5">
+      <p className="text-center text-[10px] uppercase tracking-[0.3em] text-[var(--ink-muted)] mt-1.5">
         Page {page} of {PAGES.length}
       </p>
     </div>
@@ -95,14 +95,14 @@ export default function NewspaperPage({ teams, rosters, draftedPlayers }) {
         {next ? (
           <button
             onClick={() => goTo(next.num)}
-            className="group ml-auto flex items-center gap-2 border-2 border-[#5a4a32] bg-[#efe6d0] hover:bg-[#e5d9bd] px-4 py-2.5 text-[#2b2418]"
+            className="group ml-auto flex items-center gap-2 border-2 border-[var(--rule-strong)] bg-[var(--paper-3)] hover:bg-[var(--paper-4)] px-4 py-2.5 text-[var(--ink)]"
           >
-            <span className="text-[10px] uppercase tracking-[0.25em] text-[#8a7a5c]">Continued on</span>
+            <span className="text-[10px] uppercase tracking-[0.25em] text-[var(--ink-muted)]">Continued on</span>
             <span className="text-sm font-black uppercase tracking-widest">Page {next.roman} · {next.title}</span>
             <ChevronRight size={16} className="text-amber-800 transition-transform group-hover:translate-x-1" />
           </button>
         ) : (
-          <p className="text-center text-[10px] uppercase tracking-[0.3em] text-[#8a7a5c]">
+          <p className="text-center text-[10px] uppercase tracking-[0.3em] text-[var(--ink-muted)]">
             — End of this edition · {current.title} —
           </p>
         )}

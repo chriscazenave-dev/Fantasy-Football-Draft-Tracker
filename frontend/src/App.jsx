@@ -1,5 +1,5 @@
 import { Fragment, useState, useEffect, useMemo, useRef } from 'react'
-import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, LogOut, LogIn, Sparkles, Newspaper, ChevronRight } from 'lucide-react'
+import { Upload, Users, ChevronDown, Check, X, UserCircle, ArrowRightLeft, Edit2, ListOrdered, Search, Shield, Zap, Flame, Star, Crown, Anchor, Target, Hexagon, Play, Pause, RotateCcw, Clock, LogOut, LogIn, Sparkles, Newspaper, ChevronRight, Settings, Moon, Sun } from 'lucide-react'
 import Ably from 'ably'
 import FutureDraftPicks from './FutureDraftPicks'
 import DraftHype from './DraftHype'
@@ -14,6 +14,8 @@ import DraftPickCelebration from './DraftPickCelebration'
 import DraftCenter from './DraftCenter'
 import CollegeStatsTooltip from './CollegeStatsTooltip'
 import UploadPage from './UploadPage'
+import SettingsPage from './SettingsPage'
+import { useTheme } from './theme'
 import { generatePicksFromFutureData, formatTime, filterProspects, pickCpuPlayerSmart, loadStored, saveStored, STORAGE_KEYS, computeTradeSideValue, getTradeVerdict } from './draftLogic'
 import { PLAYER_VALUES } from './playerValuesData'
 import { fetchLeagueState, saveLeagueState } from './leagueState'
@@ -45,6 +47,7 @@ function App({ session, onLogout, onRequestLogin }) {
   const isAdmin = !!session?.isAdmin
   const isLoggedIn = !!session
   const [storedDraftState] = useState(() => loadStored(STORAGE_KEYS.draftState, null))
+  const { theme, toggleTheme } = useTheme()
   const [activeTab, setActiveTab] = useState('home')
   const [lineups, setLineups] = useState(INITIAL_LINEUPS)
   const [prospects, setProspects] = useState(ROOKIE_PROSPECTS)
@@ -680,12 +683,13 @@ function App({ session, onLogout, onRequestLogin }) {
     { id: 'teams', label: 'Rosters', icon: UserCircle },
     { id: 'trades', label: 'Trades', icon: ArrowRightLeft },
     ...(isAdmin ? [{ id: 'upload', label: 'Data', icon: Upload }] : []),
+    { id: 'settings', label: 'Settings', icon: Settings },
   ]
 
   return (
-    <div className="min-h-screen pb-16 md:pb-0 bg-[#faf8f3] text-[#211d16] font-sans selection:bg-amber-500/20">
+    <div className="min-h-screen pb-16 md:pb-0 bg-[var(--paper)] text-[var(--ink)] font-sans selection:bg-amber-500/20">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-[#faf8f3]/85 backdrop-blur-xl border-b border-gray-200 px-4 md:px-6 py-3 md:py-4">
+      <header className="sticky top-0 z-50 bg-[var(--paper)]/85 backdrop-blur-xl border-b border-gray-200 px-4 md:px-6 py-3 md:py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src="/logo.svg" alt="Dynasty Madness logo" className="w-8 h-8 rounded-xl shadow-md" />
@@ -709,6 +713,15 @@ function App({ session, onLogout, onRequestLogin }) {
                 </button>
               ))}
             </div>
+
+            <button
+              onClick={toggleTheme}
+              title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+              aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+              className="flex items-center justify-center w-8 h-8 text-gray-600 bg-gray-100 rounded-lg border border-gray-200 hover:text-gray-900 hover:bg-gray-200/70 transition-colors duration-200"
+            >
+              {theme === 'dark' ? <Sun size={14} /> : <Moon size={14} />}
+            </button>
 
             {session && (
               <span className="hidden sm:flex items-center gap-1.5 text-sm text-gray-500">
@@ -743,7 +756,7 @@ function App({ session, onLogout, onRequestLogin }) {
       </header>
 
       {/* Mobile Bottom Tab Bar */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#faf8f3]/95 backdrop-blur-xl border-t border-gray-200">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[var(--paper)]/95 backdrop-blur-xl border-t border-gray-200">
         <div className="flex justify-around items-stretch">
           {tabs.map((tab) => (
             <button
@@ -1500,6 +1513,8 @@ function App({ session, onLogout, onRequestLogin }) {
         )}
 
         {activeTab === 'upload' && <UploadPage onFileUpload={handleFileUpload} />}
+
+        {activeTab === 'settings' && <SettingsPage theme={theme} onToggleTheme={toggleTheme} />}
       </main>
       {hoveredProspect && (
         <CollegeStatsTooltip

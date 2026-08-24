@@ -5,6 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynasty Madness</title>
+    <script>
+      // Apply the stored theme before first paint to avoid a light flash
+      try {
+        var stored = JSON.parse(localStorage.getItem('dm_theme'))
+        var dark = stored === 'dark' || (stored !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        if (dark) {
+          document.documentElement.classList.add('dark')
+          document.documentElement.style.colorScheme = 'dark'
+        }
+      } catch (e) { /* storage unavailable */ }
+    </script>
   </head>
   <body>
     <div id="root"></div>
