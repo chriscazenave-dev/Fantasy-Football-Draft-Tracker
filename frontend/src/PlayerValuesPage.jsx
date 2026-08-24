@@ -84,14 +84,14 @@ export default function PlayerValuesPage({ teams, rosters, draftedPlayers, datel
     )
 
   return (
-    <div className="max-w-6xl mx-auto font-serif text-[#2b2418]">
+    <div className="max-w-6xl mx-auto font-serif text-[var(--ink)]">
       {/* Page header */}
-      <div className="border-y-4 border-double border-[#5a4a32] py-5 text-center bg-[#f3ecdb] px-4">
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#8a7a5c] mb-2">The Dynasty Madness Times · Page Two</p>
+      <div className="border-y-4 border-double border-[var(--rule-strong)] py-5 text-center bg-[var(--paper-2)] px-4">
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[var(--ink-muted)] mb-2">The Dynasty Madness Times · Page Two</p>
         <h1 className="text-3xl md:text-5xl font-black tracking-tight uppercase" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>
           The Value Ledger
         </h1>
-        <div className="mt-3 flex items-center justify-center gap-4 text-[11px] uppercase tracking-widest text-[#8a7a5c] border-t border-[#c9bb9c] pt-2 mx-auto max-w-2xl">
+        <div className="mt-3 flex items-center justify-center gap-4 text-[11px] uppercase tracking-widest text-[var(--ink-muted)] border-t border-[var(--rule)] pt-2 mx-auto max-w-2xl">
           <span>{today}</span>
           <span className="hidden sm:inline">·</span>
           <span className="hidden sm:inline">Top 300 Dynasty Assets · KeepTradeCut Superflex</span>
@@ -100,22 +100,22 @@ export default function PlayerValuesPage({ teams, rosters, draftedPlayers, datel
 
       {/* Franchise value leaderboard */}
       <div className="py-6 px-4">
-        <div className="border-y-2 border-[#5a4a32] py-2 mb-4 text-center">
+        <div className="border-y-2 border-[var(--rule-strong)] py-2 mb-4 text-center">
           <h3 className="text-lg font-black uppercase tracking-[0.2em]">Franchise Valuations</h3>
-          <p className="text-[10px] uppercase tracking-widest text-[#8a7a5c]">Sum of KTC value across all owned top-300 assets</p>
+          <p className="text-[10px] uppercase tracking-widest text-[var(--ink-muted)]">Sum of KTC value across all owned top-300 assets</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {teamTotals.map((entry, idx) => (
-            <div key={entry.team.id} className="border border-[#c9bb9c] bg-[#f3ecdb] p-3">
+            <div key={entry.team.id} className="border border-[var(--rule)] bg-[var(--paper-2)] p-3">
               <div className="flex items-baseline gap-2">
                 <span className="text-2xl font-black text-[#c9bb9c] leading-none">{idx + 1}</span>
                 <div className="min-w-0">
                   <p className="font-bold leading-tight text-sm truncate">{entry.team.name}</p>
-                  <p className="text-[10px] uppercase tracking-wider text-[#8a7a5c] truncate">{entry.team.owner}</p>
+                  <p className="text-[10px] uppercase tracking-wider text-[var(--ink-muted)] truncate">{entry.team.owner}</p>
                 </div>
               </div>
               <p className="mt-2 text-xl font-black">{entry.total.toLocaleString()}</p>
-              <p className="text-[11px] text-[#8a7a5c]">
+              <p className="text-[11px] text-[var(--ink-muted)]">
                 {entry.count} top-300 asset{entry.count === 1 ? '' : 's'}
                 {entry.topPlayer ? ` · Crown jewel: ${entry.topPlayer.name}` : ''}
               </p>
@@ -126,20 +126,20 @@ export default function PlayerValuesPage({ teams, rosters, draftedPlayers, datel
 
       {/* Filters */}
       <div className="px-4 pb-4 flex flex-wrap items-center gap-3">
-        <div className="flex items-center gap-2 border border-[#c9bb9c] bg-[#f3ecdb] px-3 py-1.5">
-          <Search size={13} className="text-[#8a7a5c]" />
+        <div className="flex items-center gap-2 border border-[var(--rule)] bg-[var(--paper-2)] px-3 py-1.5">
+          <Search size={13} className="text-[var(--ink-muted)]" />
           <input
             type="text"
             value={search}
             onChange={e => setSearch(e.target.value)}
             placeholder="Search the ledger..."
-            className="bg-transparent border-none focus:outline-none text-sm w-44 placeholder-[#8a7a5c]"
+            className="bg-transparent border-none focus:outline-none text-sm w-44 placeholder-[var(--ink-muted)]"
           />
         </div>
         <select
           value={filterPosition}
           onChange={e => setFilterPosition(e.target.value)}
-          className="border border-[#c9bb9c] bg-[#f3ecdb] px-3 py-1.5 text-sm cursor-pointer"
+          className="border border-[var(--rule)] bg-[var(--paper-2)] px-3 py-1.5 text-sm cursor-pointer"
         >
           {POSITIONS.map(pos => (
             <option key={pos} value={pos}>{pos === 'All' ? 'All Positions' : pos}</option>
@@ -148,7 +148,7 @@ export default function PlayerValuesPage({ teams, rosters, draftedPlayers, datel
         <select
           value={filterOwner}
           onChange={e => setFilterOwner(e.target.value)}
-          className="border border-[#c9bb9c] bg-[#f3ecdb] px-3 py-1.5 text-sm cursor-pointer"
+          className="border border-[var(--rule)] bg-[var(--paper-2)] px-3 py-1.5 text-sm cursor-pointer"
         >
           <option value="All">All Owners</option>
           {teams.map(team => (
@@ -156,53 +156,53 @@ export default function PlayerValuesPage({ teams, rosters, draftedPlayers, datel
           ))}
           <option value="Free Agent">Free Agent</option>
         </select>
-        <span className="ml-auto text-xs uppercase tracking-widest text-[#8a7a5c]">
+        <span className="ml-auto text-xs uppercase tracking-widest text-[var(--ink-muted)]">
           {filteredRows.length} of {rows.length} listed
         </span>
       </div>
 
       {/* Ledger table */}
       <div className="px-4 pb-10 overflow-x-auto">
-        <table className="w-full border-t-2 border-[#5a4a32]">
+        <table className="w-full border-t-2 border-[var(--rule-strong)]">
           <thead>
-            <tr className="border-b-2 border-[#5a4a32] text-left">
-              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[#5a4a32]">Rk</th>
-              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[#5a4a32]">Player</th>
-              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[#5a4a32]">Pos</th>
-              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[#5a4a32] hidden sm:table-cell">NFL</th>
-              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[#5a4a32] hidden md:table-cell">Age</th>
-              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[#5a4a32] text-right">Value</th>
-              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[#5a4a32] hidden sm:table-cell text-center">Trend</th>
-              <th className="py-2 text-[10px] font-black uppercase tracking-[0.2em] text-[#5a4a32]">Owned By</th>
+            <tr className="border-b-2 border-[var(--rule-strong)] text-left">
+              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[var(--ink-soft)]">Rk</th>
+              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[var(--ink-soft)]">Player</th>
+              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[var(--ink-soft)]">Pos</th>
+              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[var(--ink-soft)] hidden sm:table-cell">NFL</th>
+              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[var(--ink-soft)] hidden md:table-cell">Age</th>
+              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[var(--ink-soft)] text-right">Value</th>
+              <th className="py-2 pr-3 text-[10px] font-black uppercase tracking-[0.2em] text-[var(--ink-soft)] hidden sm:table-cell text-center">Trend</th>
+              <th className="py-2 text-[10px] font-black uppercase tracking-[0.2em] text-[var(--ink-soft)]">Owned By</th>
             </tr>
           </thead>
           <tbody>
             {filteredRows.map(row => (
-              <tr key={row.rank} className="border-b border-[#e0d5bc] hover:bg-[#f3ecdb] transition-colors">
-                <td className="py-1.5 pr-3 text-sm font-black text-[#8a7a5c]">{row.rank}</td>
+              <tr key={row.rank} className="border-b border-[var(--paper-5)] hover:bg-[var(--paper-2)] transition-colors">
+                <td className="py-1.5 pr-3 text-sm font-black text-[var(--ink-muted)]">{row.rank}</td>
                 <td className="py-1.5 pr-3 text-sm font-bold">
                   {row.name}
                   {row.rookie && (
                     <span className="ml-1.5 px-1 py-0.5 text-[9px] font-black uppercase tracking-wider bg-amber-100 text-amber-800 border border-amber-300 align-middle">R</span>
                   )}
                 </td>
-                <td className="py-1.5 pr-3 text-sm">{row.position}<span className="text-[#8a7a5c]">{row.positionalRank}</span></td>
-                <td className="py-1.5 pr-3 text-sm text-[#8a7a5c] hidden sm:table-cell">{row.team || 'FA'}</td>
-                <td className="py-1.5 pr-3 text-sm text-[#8a7a5c] hidden md:table-cell">{row.age ? row.age.toFixed(1) : '—'}</td>
+                <td className="py-1.5 pr-3 text-sm">{row.position}<span className="text-[var(--ink-muted)]">{row.positionalRank}</span></td>
+                <td className="py-1.5 pr-3 text-sm text-[var(--ink-muted)] hidden sm:table-cell">{row.team || 'FA'}</td>
+                <td className="py-1.5 pr-3 text-sm text-[var(--ink-muted)] hidden md:table-cell">{row.age ? row.age.toFixed(1) : '—'}</td>
                 <td className="py-1.5 pr-3 text-sm font-black text-right tabular-nums">{row.value.toLocaleString()}</td>
                 <td className="py-1.5 pr-3 hidden sm:table-cell text-center">{trendIcon(row.trend)}</td>
                 <td className="py-1.5 text-sm">
                   {row.ownerTeam ? (
-                    <span className="font-bold">{row.ownerTeam.name} <span className="font-normal text-[11px] text-[#8a7a5c]">({row.ownerTeam.owner})</span></span>
+                    <span className="font-bold">{row.ownerTeam.name} <span className="font-normal text-[11px] text-[var(--ink-muted)]">({row.ownerTeam.owner})</span></span>
                   ) : (
-                    <span className="italic text-[#8a7a5c]">Free Agent</span>
+                    <span className="italic text-[var(--ink-muted)]">Free Agent</span>
                   )}
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
-        <p className="mt-4 text-[10px] uppercase tracking-widest text-[#8a7a5c] text-center">
+        <p className="mt-4 text-[10px] uppercase tracking-widest text-[var(--ink-muted)] text-center">
           Values via KeepTradeCut dynasty superflex rankings · Ownership per league rosters and draft results
         </p>
       </div>

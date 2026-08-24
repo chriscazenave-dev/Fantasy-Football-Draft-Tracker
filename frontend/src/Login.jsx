@@ -23,7 +23,7 @@ export default function Login({ onSuccess, onCancel }) {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#faf8f3] text-[#211d16] font-sans px-4 selection:bg-amber-500/20">
+    <div className="min-h-screen flex items-center justify-center bg-[var(--paper)] text-[var(--ink)] font-sans px-4 selection:bg-amber-500/20">
       <div className="w-full max-w-sm">
         <div className="flex flex-col items-center mb-8">
           <div className="w-12 h-12 rounded-2xl bg-black flex items-center justify-center shadow-md mb-4">

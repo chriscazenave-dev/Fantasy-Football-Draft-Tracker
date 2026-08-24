@@ -233,4 +233,5 @@ export function saveStored(key, value) {
 export const STORAGE_KEYS = {
   draftState: 'dm_draft_state',
   mockHistory: 'dm_mock_history',
+  theme: 'dm_theme',
 }

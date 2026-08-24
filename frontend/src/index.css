@@ -14,6 +14,92 @@
   --color-gray-900: #1f1c17;
 }
 
+/* Semantic newspaper tokens — redefined under .dark for night reading */
+:root {
+  --paper: #faf8f3;
+  --paper-2: #f3ecdb;
+  --paper-3: #efe6d0;
+  --paper-4: #e5d9bd;
+  --paper-5: #e0d5bc;
+  --rule: #c9bb9c;
+  --rule-soft: #c9bb9c66;
+  --rule-strong: #5a4a32;
+  --ink: #2b2418;
+  --ink-soft: #5a4a32;
+  --ink-muted: #8a7a5c;
+  --accent-red: #8b2f2f;
+  --accent-gold: #b58a2a;
+  --accent-gold-soft: #b58a2a88;
+  --gold-wash: #f5e8b9;
+  --surface: #ffffff;
+  --scroll-thumb: #cfc8b8;
+  --scroll-thumb-hover: #a29b8b;
+}
+
+html.dark {
+  --paper: #14120e;
+  --paper-2: #1d1a14;
+  --paper-3: #24201a;
+  --paper-4: #2b261e;
+  --paper-5: #332d23;
+  --rule: #4a4234;
+  --rule-soft: #4a423466;
+  --rule-strong: #6b5f49;
+  --ink: #f2ece0;
+  --ink-soft: #d8cdb4;
+  --ink-muted: #a3977c;
+  --accent-red: #e08b7f;
+  --accent-gold: #d9b45a;
+  --accent-gold-soft: #d9b45a88;
+  --gold-wash: #3d3116;
+  --surface: #1b1813;
+  --scroll-thumb: #4a4234;
+  --scroll-thumb-hover: #6b5f49;
+
+  /* Flip the neutral ramp so gray-* utilities read correctly on dark paper */
+  --color-gray-50: #1f1c17;
+  --color-gray-100: #262219;
+  --color-gray-200: #332d23;
+  --color-gray-300: #4a4234;
+  --color-gray-400: #8a8072;
+  --color-gray-500: #a3987f;
+  --color-gray-600: #c0b59c;
+  --color-gray-700: #d8cdb4;
+  --color-gray-800: #e8e1d2;
+  --color-gray-900: #f4efe4;
+}
+
+/* Surfaces and inverted chips that hardcode white/black */
+html.dark .bg-white {
+  background-color: var(--surface);
+}
+html.dark .bg-black {
+  background-color: var(--paper-5);
+}
+/* The high end of the ramp stays dark as a *surface* (its text stays white),
+   while text-gray-800/900 still resolve to the flipped light values. */
+html.dark .bg-gray-800 {
+  background-color: #17140f;
+}
+html.dark .bg-gray-900 {
+  background-color: #0d0b08;
+}
+html.dark .border-gray-800 {
+  border-color: #17140f;
+}
+html.dark .border-gray-900 {
+  border-color: #0d0b08;
+}
+html.dark .text-black {
+  color: var(--ink);
+}
+html.dark .bg-black\/5 {
+  background-color: #ffffff14;
+}
+html.dark .ring-black\/5 {
+  --tw-ring-color: #ffffff1f;
+}
+
 @layer utilities {
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
@@ -37,15 +123,15 @@
     background: transparent;
   }
   .fancy-scroll::-webkit-scrollbar-thumb {
-    background-color: #cfc8b8;
+    background-color: var(--scroll-thumb);
     border-radius: 9999px;
   }
   .fancy-scroll:hover::-webkit-scrollbar-thumb {
-    background-color: #a29b8b;
+    background-color: var(--scroll-thumb-hover);
   }
   .fancy-scroll {
     scrollbar-width: thin;
-    scrollbar-color: #cfc8b8 transparent;
+    scrollbar-color: var(--scroll-thumb) transparent;
   }
 }
 
@@ -83,8 +169,8 @@
 }
 
 body {
-  background-color: #faf8f3;
-  color: #211d16;
+  background-color: var(--paper);
+  color: var(--ink);
 }
 
 /* Draft Desk overlay */

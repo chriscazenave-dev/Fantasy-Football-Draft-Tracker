@@ -75,7 +75,7 @@ function TeamWriteup({ team, onBack }) {
         Franchise Report · No. {team.rank} · {team.owner}
       </p>
       <h2 className="text-3xl md:text-4xl font-black leading-tight mb-2">{writeup.headline}</h2>
-      <p className="text-xs italic text-[#8a7a5c] mb-6">{writeup.byline}</p>
+      <p className="text-xs italic text-[var(--ink-muted)] mb-6">{writeup.byline}</p>
       <div className="space-y-4 text-[15px] leading-relaxed text-justify">
         {writeup.body.map((para, i) => (
           <p key={i} className={i === 0 ? 'first-letter:text-5xl first-letter:font-black first-letter:float-left first-letter:mr-2 first-letter:leading-[0.8]' : ''}>
@@ -94,14 +94,14 @@ export default function HomePage({ dateline }) {
     new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
 
   return (
-    <div className="max-w-5xl mx-auto font-serif text-[#2b2418]">
+    <div className="max-w-5xl mx-auto font-serif text-[var(--ink)]">
       {/* Masthead */}
-      <div className="border-y-4 border-double border-[#5a4a32] py-6 text-center bg-[#f3ecdb] px-4">
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#8a7a5c] mb-2">Est. 2025 · All the takes fit to print</p>
+      <div className="border-y-4 border-double border-[var(--rule-strong)] py-6 text-center bg-[var(--paper-2)] px-4">
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[var(--ink-muted)] mb-2">Est. 2025 · All the takes fit to print</p>
         <h1 className="text-4xl md:text-6xl font-black tracking-tight uppercase" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>
           The Dynasty Madness Times
         </h1>
-        <div className="mt-3 flex items-center justify-center gap-4 text-[11px] uppercase tracking-widest text-[#8a7a5c] border-t border-[#c9bb9c] pt-2 mx-auto max-w-2xl">
+        <div className="mt-3 flex items-center justify-center gap-4 text-[11px] uppercase tracking-widest text-[var(--ink-muted)] border-t border-[var(--rule)] pt-2 mx-auto max-w-2xl">
           <span>{today}</span>
           <span className="hidden sm:inline">·</span>
           <span className="hidden sm:inline">Dynasty Madness League</span>
@@ -111,14 +111,14 @@ export default function HomePage({ dateline }) {
       </div>
 
       {/* 2025 finishers banner */}
-      <div className="bg-[#efe6d0] border-b-2 border-[#c9bb9c] px-4 py-3 flex flex-wrap items-center justify-center gap-x-8 gap-y-1 text-sm">
+      <div className="bg-[var(--paper-3)] border-b-2 border-[var(--rule)] px-4 py-3 flex flex-wrap items-center justify-center gap-x-8 gap-y-1 text-sm">
         <span className="flex items-center gap-1.5 font-bold">
           <Trophy size={15} className="text-amber-600" /> 2025 Champion: The Evil Empire
         </span>
-        <span className="flex items-center gap-1.5 text-[#5a4a32]">
+        <span className="flex items-center gap-1.5 text-[var(--ink-soft)]">
           <Medal size={14} className="text-gray-500" /> Runner-up: Whatever who cares
         </span>
-        <span className="flex items-center gap-1.5 text-[#5a4a32]">
+        <span className="flex items-center gap-1.5 text-[var(--ink-soft)]">
           <Medal size={14} className="text-amber-800" /> Third: Suave Shaheed
         </span>
       </div>
@@ -130,10 +130,10 @@ export default function HomePage({ dateline }) {
           {/* Articles column */}
           <div className="lg:col-span-2 space-y-10">
             {ARTICLES.map((article, idx) => (
-              <article key={article.id} className={idx > 0 ? 'border-t-2 border-[#c9bb9c] pt-8' : ''}>
+              <article key={article.id} className={idx > 0 ? 'border-t-2 border-[var(--rule)] pt-8' : ''}>
                 <p className="text-[10px] font-bold tracking-[0.25em] uppercase text-amber-700 mb-2">{article.kicker}</p>
                 <h2 className="text-2xl md:text-3xl font-black leading-tight mb-2">{article.headline}</h2>
-                <p className="text-xs italic text-[#8a7a5c] mb-4">{article.byline}</p>
+                <p className="text-xs italic text-[var(--ink-muted)] mb-4">{article.byline}</p>
                 <div className="space-y-3 text-[15px] leading-relaxed text-justify">
                   {article.body.map((para, i) => (
                     <p key={i} className={i === 0 ? 'first-letter:text-5xl first-letter:font-black first-letter:float-left first-letter:mr-2 first-letter:leading-[0.8]' : ''}>
@@ -146,10 +146,10 @@ export default function HomePage({ dateline }) {
           </div>
 
           {/* Power rankings column */}
-          <aside className="lg:border-l-2 border-[#c9bb9c] lg:pl-8">
-            <div className="border-y-2 border-[#5a4a32] py-2 mb-5 text-center">
+          <aside className="lg:border-l-2 border-[var(--rule)] lg:pl-8">
+            <div className="border-y-2 border-[var(--rule-strong)] py-2 mb-5 text-center">
               <h3 className="text-lg font-black uppercase tracking-[0.2em]">Power Rankings</h3>
-              <p className="text-[10px] uppercase tracking-widest text-[#8a7a5c]">Preseason Edition · The Madness Times Desk</p>
+              <p className="text-[10px] uppercase tracking-widest text-[var(--ink-muted)]">Preseason Edition · The Madness Times Desk</p>
             </div>
             <ol className="space-y-5">
               {POWER_RANKINGS.map(entry => (
@@ -161,18 +161,18 @@ export default function HomePage({ dateline }) {
                         setSelectedTeam(entry)
                         window.scrollTo(0, 0)
                       }}
-                      className="font-bold leading-tight text-left underline decoration-[#c9bb9c] underline-offset-2 hover:text-amber-800 hover:decoration-amber-700"
+                      className="font-bold leading-tight text-left underline decoration-[var(--rule)] underline-offset-2 hover:text-amber-800 hover:decoration-amber-700"
                     >
                       {entry.team}
                     </button>
-                    <p className="text-[10px] uppercase tracking-wider text-[#8a7a5c] mb-1">{entry.owner}</p>
-                    <p className="text-[13px] leading-snug text-[#4a3f2c]">{entry.blurb}</p>
+                    <p className="text-[10px] uppercase tracking-wider text-[var(--ink-muted)] mb-1">{entry.owner}</p>
+                    <p className="text-[13px] leading-snug text-[var(--ink-soft)]">{entry.blurb}</p>
                   </div>
                 </li>
               ))}
             </ol>
-            <div className="mt-8 border-2 border-[#5a4a32] p-4 text-center bg-[#efe6d0]">
-              <p className="text-[10px] uppercase tracking-[0.25em] text-[#8a7a5c] mb-1">Classified Ads</p>
+            <div className="mt-8 border-2 border-[var(--rule-strong)] p-4 text-center bg-[var(--paper-3)]">
+              <p className="text-[10px] uppercase tracking-[0.25em] text-[var(--ink-muted)] mb-1">Classified Ads</p>
               <p className="text-sm italic">WANTED: One (1) starting running back. Contact A. Dedon, Cheznovs Abduction. Will pay in quarterbacks.</p>
             </div>
           </aside>

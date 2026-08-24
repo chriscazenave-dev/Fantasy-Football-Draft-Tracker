@@ -6,14 +6,14 @@ export default function TeamWriteupsPage({ dateline }) {
     new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
 
   return (
-    <div className="max-w-5xl mx-auto font-serif text-[#2b2418]">
+    <div className="max-w-5xl mx-auto font-serif text-[var(--ink)]">
       {/* Page header */}
-      <div className="border-y-4 border-double border-[#5a4a32] py-5 text-center bg-[#f3ecdb] px-4">
-        <p className="text-[10px] tracking-[0.35em] uppercase text-[#8a7a5c] mb-2">The Dynasty Madness Times · Page Three</p>
+      <div className="border-y-4 border-double border-[var(--rule-strong)] py-5 text-center bg-[var(--paper-2)] px-4">
+        <p className="text-[10px] tracking-[0.35em] uppercase text-[var(--ink-muted)] mb-2">The Dynasty Madness Times · Page Three</p>
         <h1 className="text-3xl md:text-5xl font-black tracking-tight uppercase" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>
           The Franchise Reports
         </h1>
-        <div className="mt-3 flex items-center justify-center gap-4 text-[11px] uppercase tracking-widest text-[#8a7a5c] border-t border-[#c9bb9c] pt-2 mx-auto max-w-2xl">
+        <div className="mt-3 flex items-center justify-center gap-4 text-[11px] uppercase tracking-widest text-[var(--ink-muted)] border-t border-[var(--rule)] pt-2 mx-auto max-w-2xl">
           <span>{today}</span>
           <span className="hidden sm:inline">·</span>
           <span className="hidden sm:inline">All Eight Franchises · Full Writeups</span>
@@ -25,12 +25,12 @@ export default function TeamWriteupsPage({ dateline }) {
           const writeup = TEAM_WRITEUPS[entry.team]
           if (!writeup) return null
           return (
-            <article key={entry.rank} className={entry.rank > 1 ? 'border-t-2 border-[#c9bb9c] pt-10' : ''}>
+            <article key={entry.rank} className={entry.rank > 1 ? 'border-t-2 border-[var(--rule)] pt-10' : ''}>
               <p className="text-[10px] font-bold tracking-[0.25em] uppercase text-amber-700 mb-2">
                 Franchise Report · No. {entry.rank} · {entry.owner}
               </p>
               <h2 className="text-2xl md:text-4xl font-black leading-tight mb-2">{writeup.headline}</h2>
-              <p className="text-xs italic text-[#8a7a5c] mb-5">{writeup.byline}</p>
+              <p className="text-xs italic text-[var(--ink-muted)] mb-5">{writeup.byline}</p>
               <div className="space-y-4 text-[15px] leading-relaxed text-justify">
                 {writeup.body.map((para, i) => (
                   <p
@@ -48,8 +48,8 @@ export default function TeamWriteupsPage({ dateline }) {
             </article>
           )
         })}
-        <div className="border-2 border-[#5a4a32] p-4 text-center bg-[#efe6d0]">
-          <p className="text-[10px] uppercase tracking-[0.25em] text-[#8a7a5c] mb-1">From the Editor</p>
+        <div className="border-2 border-[var(--rule-strong)] p-4 text-center bg-[var(--paper-3)]">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-[var(--ink-muted)] mb-1">From the Editor</p>
           <p className="text-sm italic">Complaints about your franchise report may be submitted in writing to the Madness Times desk. Submissions are read aloud at the draft.</p>
         </div>
       </div>
