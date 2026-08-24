@@ -30,6 +30,7 @@
   --accent-red: #8b2f2f;
   --accent-gold: #b58a2a;
   --accent-gold-soft: #b58a2a88;
+  --gold-wash: #f5e8b9;
   --surface: #ffffff;
   --scroll-thumb: #cfc8b8;
   --scroll-thumb-hover: #a29b8b;
@@ -50,6 +51,7 @@ html.dark {
   --accent-red: #e08b7f;
   --accent-gold: #d9b45a;
   --accent-gold-soft: #d9b45a88;
+  --gold-wash: #3d3116;
   --surface: #1b1813;
   --scroll-thumb: #4a4234;
   --scroll-thumb-hover: #6b5f49;
@@ -73,6 +75,20 @@ html.dark .bg-white {
 }
 html.dark .bg-black {
   background-color: var(--paper-5);
+}
+/* The high end of the ramp stays dark as a *surface* (its text stays white),
+   while text-gray-800/900 still resolve to the flipped light values. */
+html.dark .bg-gray-800 {
+  background-color: #17140f;
+}
+html.dark .bg-gray-900 {
+  background-color: #0d0b08;
+}
+html.dark .border-gray-800 {
+  border-color: #17140f;
+}
+html.dark .border-gray-900 {
+  border-color: #0d0b08;
 }
 html.dark .text-black {
   color: var(--ink);

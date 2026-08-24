@@ -118,14 +118,14 @@ export default function TrophyCasePage({ teams = [], dateline }) {
           {LEAGUE_HISTORY.map(season => {
             const active = season.year === selectedYear
             return (
-              <button key={season.year} onClick={() => setSelectedYear(season.year)} className={`group relative border-2 p-3 text-left transition-all duration-300 motion-reduce:transition-none ${active ? 'border-[var(--accent-gold)] bg-[#f5e8b9] -translate-y-1 shadow-[0_6px_0_#b58a2a]' : 'border-[var(--rule)] bg-[var(--paper-2)] hover:-translate-y-1 hover:border-[var(--accent-gold)]'}`}>
+              <button key={season.year} onClick={() => setSelectedYear(season.year)} className={`group relative border-2 p-3 text-left transition-all duration-300 motion-reduce:transition-none ${active ? 'border-[var(--accent-gold)] bg-[var(--gold-wash)] -translate-y-1 shadow-[0_6px_0_#b58a2a]' : 'border-[var(--rule)] bg-[var(--paper-2)] hover:-translate-y-1 hover:border-[var(--accent-gold)]'}`}>
                 <div className="flex justify-center"><TrophyMark size={62} /></div>
                 <div className="mt-1 border-t border-[var(--accent-gold-soft)] pt-2 text-center"><p className="text-xl font-black">{season.year}</p><p className="truncate text-xs font-bold">{season.champion}</p><p className="mt-1 text-[9px] uppercase tracking-widest text-[var(--ink-muted)]">Engraved champion</p></div>
               </button>
             )
           })}
         </div>
-        <div className="mt-5 border-2 border-[var(--accent-gold)] bg-[#f5e8b9] p-4">
+        <div className="mt-5 border-2 border-[var(--accent-gold)] bg-[var(--gold-wash)] p-4">
           <p className="text-[10px] font-black uppercase tracking-[0.25em] text-[#806019]">Podium engraving · {selectedSeason.year}</p>
           <div className="mt-3 grid gap-2 md:grid-cols-3">
             {[selectedSeason.champion, selectedSeason.runnerUp, selectedSeason.third].map((name, index) => (
@@ -145,7 +145,7 @@ export default function TrophyCasePage({ teams = [], dateline }) {
             <thead><tr className="border-b-2 border-[var(--rule-strong)] text-left text-[10px] uppercase tracking-widest"><th className="p-2">Franchise / known names</th><th className="p-2 text-center">Titles</th><th className="p-2 text-center">Seconds</th><th className="p-2 text-center">Thirds</th><th className="p-2">Best record</th><th className="p-2">Worst record</th></tr></thead>
             <tbody>{aggregates.map((entry, index) => {
               const mapped = entry.key.startsWith('franchise-') ? teamById.get(Number(entry.key.split('-')[1])) : null
-              return <tr key={entry.key} className={`border-b border-[var(--paper-5)] ${index === 0 ? 'bg-[#f5e8b9]' : ''}`}><td className="p-2"><p className="font-bold">{mapped?.name || entry.names[0]} {mapped && <span className="font-normal text-xs text-[var(--ink-muted)]">· {mapped.owner}</span>}</p><p className="text-[10px] leading-relaxed text-[var(--ink-muted)]">{entry.names.join(' · ')}</p></td><td className="p-2 text-center font-black">{entry.titles}</td><td className="p-2 text-center">{entry.runnerUps}</td><td className="p-2 text-center">{entry.thirds}</td><td className="p-2 tabular-nums">{recordText(entry.best.record)} <span className="text-[10px] text-[var(--ink-muted)]">({entry.best.season})</span></td><td className="p-2 tabular-nums">{recordText(entry.worst.record)} <span className="text-[10px] text-[var(--ink-muted)]">({entry.worst.season})</span></td></tr>
+              return <tr key={entry.key} className={`border-b border-[var(--paper-5)] ${index === 0 ? 'bg-[var(--gold-wash)]' : ''}`}><td className="p-2"><p className="font-bold">{mapped?.name || entry.names[0]} {mapped && <span className="font-normal text-xs text-[var(--ink-muted)]">· {mapped.owner}</span>}</p><p className="text-[10px] leading-relaxed text-[var(--ink-muted)]">{entry.names.join(' · ')}</p></td><td className="p-2 text-center font-black">{entry.titles}</td><td className="p-2 text-center">{entry.runnerUps}</td><td className="p-2 text-center">{entry.thirds}</td><td className="p-2 tabular-nums">{recordText(entry.best.record)} <span className="text-[10px] text-[var(--ink-muted)]">({entry.best.season})</span></td><td className="p-2 tabular-nums">{recordText(entry.worst.record)} <span className="text-[10px] text-[var(--ink-muted)]">({entry.worst.season})</span></td></tr>
             })}</tbody>
           </table>
         </div>
