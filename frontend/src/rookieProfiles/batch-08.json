@@ -1,0 +1,432 @@
+{
+  "1041": {
+    "id": 1041,
+    "name": "Skyler Bell",
+    "position": "WR",
+    "nflTeam": "BUF",
+    "nflTeamName": "Buffalo Bills",
+    "college": "UConn",
+    "hometown": "The Bronx, New York",
+    "classYear": "Redshirt Senior",
+    "headline": "Bell Rings Back Into Buffalo's Receiver Room Just in Time for Cutdown Day",
+    "subhead": "The consensus All-American from UConn missed two weeks of camp with an injury, and his return Monday reopened a Bills rotation everyone assumed he'd already claimed.",
+    "draftPick": "Round 4, Pick 25 (No. 125 overall), Buffalo Bills",
+    "measurables": {
+      "height": "6'0\"",
+      "weight": "192 lbs",
+      "age": "24.1",
+      "forty": "4.40",
+      "tenSplit": "1.52",
+      "vertical": "41\"",
+      "broad": "11'1\"",
+      "threeCone": "6.65",
+      "shuttle": "4.11",
+      "bench": null,
+      "armLength": "31 1/8\"",
+      "combineNote": "Bell was one of the biggest winners of the 2026 combine: a 4.40 official 40 (12th of 34 WRs), a 41-inch vertical (5th) and an 11'1\" broad jump (3rd), earning a 9.71 Relative Athletic Score that ranks 111th of 3,830 receivers tested since 1987 per CT Insider. The explosion numbers erased the biggest question on a 192-pound frame."
+    },
+    "collegeCareer": [
+      "Bell's road to a fourth-round selection ran through two programs and five years. A three-star out of The Taft School in Connecticut whose senior high school season was canceled, he redshirted at Wisconsin in 2021, then flashed as a freshman in 2022 with 30 catches for 444 yards and five touchdowns — one of only three Big Ten freshmen with multiple receiving scores that year. The 2023 season stalled along with the entire Badgers passing game: 38 catches for just 296 yards (7.8 per catch) and one touchdown, mostly from the slot.",
+      "The transfer to UConn changed everything. In 2024 he led the Huskies with 50 catches for 860 yards (17.2 per catch) and five touchdowns, including a three-touchdown, 153-yard demolition of Buffalo. Then came the 2025 explosion: 101 receptions for 1,278 yards and 13 touchdowns in 13 games, a Biletnikoff Award finalist nod, consensus All-American honors and invitations to both the Senior Bowl and Shrine Bowl. He hung 158 yards on Rice, 149 and three scores on UAB, and posted an 80-yard catch against Central Connecticut — volume, verticality and yards-after-catch all in one season."
+    ],
+    "collegeStats": [
+      {"season": "2021", "team": "Wisconsin", "line": "1 G (redshirt), 1 rec, 15 yds"},
+      {"season": "2022", "team": "Wisconsin", "line": "13 G, 30 rec, 444 yds, 14.8 ypr, 5 TD; 13 car, 160 rush yds"},
+      {"season": "2023", "team": "Wisconsin", "line": "12 G, 38 rec, 296 yds, 7.8 ypr, 1 TD"},
+      {"season": "2024", "team": "UConn", "line": "13 G, 50 rec, 860 yds, 17.2 ypr, 5 TD"},
+      {"season": "2025", "team": "UConn", "line": "13 G, 101 rec, 1,278 yds, 12.7 ypr, 13 TD — consensus All-American, Biletnikoff finalist"}
+    ],
+    "draftDayStory": [
+      "Buffalo took Bell at No. 125 overall in the fourth round — pick 25 of the round, matching his listed draft capital — with a selection acquired from New England in the deal that sent the 28th overall pick to the Patriots. He became just the third UConn wideout ever drafted, joining Geremy Davis (2015) and Marcus Easley (2010, also to Buffalo), and landed in the best possible quarterback situation for a rookie receiver: catching passes from Josh Allen in a retooled Bills receiver room that added D.J. Moore and Joshua Palmer alongside Khalil Shakir and Keon Coleman."
+    ],
+    "whyTheyDraftedHim": [
+      "Elite testing on Day 3 capital — 4.40 speed with a 41-inch vertical is starter athleticism available in the fourth round because of the UConn schedule discount.",
+      "101-catch, 1,278-yard consensus All-American production in 2025 showed a complete route tree: slot quickness from his Wisconsin days plus the vertical juice he showed at UConn.",
+      "Buffalo has cycled through receiver depth for years; Bell profiled as an immediate rotational Z who could grow into more, and many in the building reportedly viewed him as a steal at 125 per Niagara Gazette reporting.",
+      "Return-game utility gives him a special-teams path to gameday actives as a rookie."
+    ],
+    "campNotes": [
+      {"date": "Aug 11", "source": "Bills On SI", "note": "Through the first slate of camp practices Bell was working mostly with the second- and third-string offenses, catching passes from backups Kyle Allen and Shane Buechele rather than Josh Allen, and no longer looked like the odds-on favorite for a top rotational spot behind Keon Coleman and Joshua Palmer."},
+      {"date": "Aug 24", "source": "Nick Sabato, Niagara Gazette", "note": "Bell returned to practice after missing nearly two weeks injured — he hadn't practiced since before the Aug. 8 'Return of the Blue and Red' scrimmage — and caught a touchdown from Josh Allen in his first session back. His role over the final three weeks hinges on kick/punt coverage or return work."},
+      {"date": "Aug 25", "source": "Bills On SI", "note": "SI's 53-man roster projection entering preseason week 3 keeps Bell as WR5 behind D.J. Moore, Khalil Shakir, Keon Coleman and Joshua Palmer, ahead of Mecole Hardman; he was never in danger of being released, but his season role remains unsettled ahead of Thursday's finale vs. Pittsburgh."}
+    ],
+    "beatQuotes": [
+      {"quote": "Obviously it was a little bit of a challenge. You get into a new environment, new team, new system — everything's new. So I think I was adjusting well. Obviously the injury kind of was a bump in the road a little bit, but that's all I look at it as: a bump in the road.", "attribution": "Skyler Bell, via Nick Sabato, Niagara Gazette, Aug 24"},
+      {"quote": "Bell has a chance to reclaim a top role this year that many thought was going to be his.", "attribution": "Bills On SI, Aug 25"}
+    ],
+    "depthChart": "Bell sits fifth on Buffalo's receiver depth chart behind D.J. Moore, Khalil Shakir, Keon Coleman and Joshua Palmer, listed as the rotational Z behind Shakir. He is safely on the 53, but a two-week camp injury cost him the momentum to carve out early snaps, leaving Mecole Hardman and special teams as his nearest competition for gameday roles.",
+    "whyHeCouldSucceed": [
+      "Josh Allen is the great equalizer: any receiver who earns rotational snaps in this offense has weekly spike potential, and Bell scored from Allen the day he returned to practice.",
+      "The athletic profile is legitimate — 4.40 with a 41-inch vertical and 11'1\" broad is top-five-percentile explosion, not small-school smoke.",
+      "He has produced everywhere he got real targets: 860 yards in 2024, 1,278 and 13 scores in 2025, with proven slot and outside alignment versatility.",
+      "Buffalo's WR2-through-WR5 pecking order is soft — Palmer is a journeyman, Hardman dropped passes in week 2 of the preseason — so a strong September could vault him up fast."
+    ],
+    "whyHeCouldFail": [
+      "He's already 24.1 years old with five college seasons behind him — the age-adjusted breakout math is far less impressive than the raw stat line.",
+      "The 2025 production came against UConn's independent schedule; his two Big Ten seasons produced 740 total yards, a legitimate competition-level red flag.",
+      "He lost two full weeks of his first camp to injury and was running with the twos and threes even before that; rookie receivers who start buried in Buffalo rarely dig out mid-season.",
+      "At 192 pounds with 31-inch arms he profiles as a Z/slot only, and Shakir has that role locked down for the foreseeable future."
+    ],
+    "fantasyOutlook": [
+      "For 2026, Bell is a stash, not a starter. He's WR5 on a team whose top four are established, and his likeliest rookie path is special teams plus 15-20 offensive snaps a week until injuries open a door. In half-PPR terms that's low-end bench production with occasional Allen-fueled spikes. The dynasty case is the 2027-28 window: Palmer and Hardman are on short money, Moore turns 30 in 2027, and Bell's testing profile is exactly what Buffalo keeps betting on at the position.",
+      "At KTC 2174 (rookie 36, tier 10) and a FantasyPros consensus rank of 30, he's priced as a late-third-round rookie pick in superflex, and that's about right — maybe a tick cheap given the quarterback attached. Take him in the late third over older, slower Day 3 receivers on worse offenses, but don't pay a premium expecting year-one volume."
+    ],
+    "comp": "Marquez Valdes-Scantling with better hands — a long-speed vertical Z attached to an elite QB whose value lives on efficiency, not targets.",
+    "bottomLine": "Real athlete, real production, ideal quarterback — but a 24-year-old WR5 who just lost his camp runway. Late-third rookie pick in superflex; buy the profile, not a 2026 role.",
+    "sources": [
+      "https://uconnhuskies.com/news/2026/4/25/football-uconns-skyler-bell-drafted-by-the-buffalo-bills",
+      "https://en.wikipedia.org/wiki/Skyler_Bell",
+      "https://www.sports-reference.com/cfb/players/skyler-bell-1.html",
+      "https://www.ctinsider.com/sports/uconn-football/article/skyler-bell-joe-fagnano-nfl-draft-combine-results-21949889.php",
+      "https://www.niagara-gazette.com/sports/training-camp-update-bills-rookie-skyler-bell-returns-to-practice-after-missing-nearly-two-weeks/article_75ef47b8-fc3a-4235-8751-5843a9d43442.html",
+      "https://www.si.com/nfl/bills/onsi/bills-rookie-skyler-bell-being-held-back-wr-battle",
+      "https://www.si.com/nfl/bills/onsi/injuries-bills-finally-receive-positive-news-rookies-skyler-bell-jalon-kilgore",
+      "https://www.si.com/nfl/bills/onsi/buffalo-bills-53-man-roster-prediction-entering-preseason-week-3"
+    ]
+  },
+  "1065": {
+    "id": 1065,
+    "name": "Cade Klubnik",
+    "position": "QB",
+    "nflTeam": "NYJ",
+    "nflTeamName": "New York Jets",
+    "college": "Clemson",
+    "hometown": "Austin, Texas",
+    "classYear": "Senior",
+    "headline": "The Jets Traded Up for Klubnik, and August Says They Knew Something",
+    "subhead": "New York packaged two fourth-rounders to jump 18 spots for the Clemson record-holder, and a surprise preseason start behind Geno Smith has camp buzzing already.",
+    "draftPick": "Round 4, Pick 10 (No. 110 overall), New York Jets — via trade with Cincinnati",
+    "measurables": {
+      "height": "6'2\"",
+      "weight": "207 lbs",
+      "age": "22.9",
+      "forty": "4.70",
+      "tenSplit": "1.58",
+      "vertical": "33 1/2\"",
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "31 1/8\"",
+      "combineNote": "Klubnik measured 6'2\", 207 with 9 1/4\" hands at the combine but did only throwing and position drills — no running or jumping in Indianapolis. At Clemson's March 12 pro day he ran a 4.70 40 with a 1.58 ten-split and posted a 33 1/2-inch vertical, functional dual-threat athleticism rather than elite tools."
+    },
+    "collegeCareer": [
+      "The No. 1 high school quarterback in the 2022 class, Klubnik arrived at Clemson with Trevor Lawrence expectations and left with the school records for completions (916) and attempts (1,432) but without the national title runs that billing implied. He relieved D.J. Uiagalelei to win MVP of the 2022 ACC Championship as a freshman, then endured a bumpy first full season as the starter in 2023 (2,844 yards, 19 TD, 9 INT) as Clemson's offense sputtered.",
+      "2024 was the breakout: career highs of 3,639 passing yards and 36 touchdowns against just 6 interceptions, leading Clemson to an ACC title and a College Football Playoff berth. That put him in first-round conversations entering 2025 — and then the wheels wobbled. Playing through an October ankle injury and a December thumb injury on a 3-5 Clemson team that eventually rallied, he threw for 2,943 yards at a career-best 65.6% completion rate but just 16 touchdowns in 12 games, missing the SMU game entirely and finishing with a flat playoff loss to Penn State.",
+      "The full ledger is substantial: 49 games, a school-record 40 starts, 10,123 passing yards, 73 passing touchdowns against 24 interceptions, plus 878 rushing yards and 17 rushing scores. He's a rhythm passer with real off-script creativity whose 2025 tape came with an injury asterisk scouts had to price."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Clemson", "line": "10 G, 697 pass yds, 2 TD, 3 INT — ACC Championship Game MVP in relief"},
+      {"season": "2023", "team": "Clemson", "line": "13 G, 2,844 pass yds, 19 TD, 9 INT as first-year starter"},
+      {"season": "2024", "team": "Clemson", "line": "14 G, 3,639 pass yds, 36 TD, 6 INT — ACC title, CFP berth"},
+      {"season": "2025", "team": "Clemson", "line": "12 G, 257/392 (65.6%), 2,943 pass yds, 16 TD, 6 INT; 4 rush TD — played through ankle/thumb injuries"},
+      {"season": "Career", "team": "Clemson", "line": "49 G, 40 starts, 916/1,432, 10,123 pass yds, 73 TD, 24 INT; 878 rush yds, 17 rush TD"}
+    ],
+    "draftDayStory": [
+      "GM Darren Mougey wanted this specific quarterback: the Jets packaged fourth-rounders 128 and 140 to move up 18 spots to No. 110 with Cincinnati (also recouping sixth-rounder 199) and took Klubnik well ahead of where most boards had him — Dane Brugler and other analysts projected him later on Day 3, making the trade-up a genuine surprise. Note the board data listing him as Round 4, Pick 10 matches pick 110 overall exactly.",
+      "\"It started last year evaluating all those quarterbacks,\" Mougey explained. \"He got hurt early and was playing hurt much of the year... He had a great combine interview, which sparked us to want to go down to Clemson and work him out. Being there on campus with him in the room, talking ball, it felt very natural.\" Klubnik had a private workout with OC Frank Reich and told him to \"send me the playbook tonight.\" He said he woke up draft morning hoping the Jets would pick him."
+    ],
+    "whyTheyDraftedHim": [
+      "Mougey and Aaron Glenn prioritized the person and the processor: a 40-start resume, a celebrated combine interview and a private Clemson workout with Frank Reich sealed the trade-up.",
+      "Dabo Swinney's endorsement: \"Cade Klubnik is a gym rat. Loves the game, highly competitive, highly skilled... I think his best football is in front of him.\"",
+      "The staff bought the injury discount on the 2025 tape — the 2024 version (36 TD, ACC title) was the evaluation, and dual-threat ability (878 career rush yards, 17 TDs) fits Reich's movement-friendly system.",
+      "Geno Smith is a bridge, not a wall: the Jets needed a developmental QB2 with genuine upside behind a 36-year-old veteran."
+    ],
+    "campNotes": [
+      {"date": "Aug 10", "source": "newyorkjets.com unofficial depth chart", "note": "The Jets' first unofficial depth chart listed Klubnik as Geno Smith's primary backup, ahead of Bailey Zappe and Brady Cook. In the Aug. 8 scrimmage he threw a TD to Jelani Woods, was picked by S Dane Belton, and converted a third-and-21 with a 66-yard strike to Isaiah Williams."},
+      {"date": "Aug 14", "source": "newyorkjets.com / Eric Allen", "note": "With Smith ruled out (sore ankle), Klubnik was a surprise preseason starter vs. Tampa Bay — just the third rookie QB to start a preseason game in Jets history — and led scoring drives on both first-quarter possessions, going 4-of-5 for 51 yards on the opening field-goal march (5-of-7 for 56 overall)."},
+      {"date": "Aug 19", "source": "Phil Sullivan, JetNation", "note": "Klubnik received plenty of work in Florham Park including first-team reps and 'had a very good day' as the offense responded in an extended red-zone period; Smith was on a managed workload, throwing only a handful of team-period passes."},
+      {"date": "Aug 20", "source": "Jets On SI", "note": "SI moved to 'clear the air' on QB-controversy buzz: Smith remains the unquestioned starter, and Klubnik's first-team work reflects Smith's ankle, not performance — but with Smith's status for the Steelers game uncertain, another Klubnik preseason start loomed."}
+    ],
+    "beatQuotes": [
+      {"quote": "I went right to Cade and told him that he was going to start, which he was champing at the bit to be able to do... I thought he did a hell of a job, not getting a lot of reps with the ones. So, I give him a lot of credit for going out there and operating the way that he did.", "attribution": "Aaron Glenn, Jets head coach, via newyorkjets.com, Aug 15"},
+      {"quote": "I'm confident when I step on the field because I'm confident in the work that I've put in, the studying, that I'm just chasing to be the best I can be every day.", "attribution": "Cade Klubnik, via AP News, Aug 12"},
+      {"quote": "Cade Klubnik is a gym rat. Loves the game, highly competitive, highly skilled. I think he has the potential to be a starter in the NFL at some point.", "attribution": "Dabo Swinney, Clemson head coach, via newyorkjets.com, Apr 26"}
+    ],
+    "depthChart": "Klubnik is the locked-in QB2 behind Geno Smith on the Jets' official depth chart, with Bailey Zappe and Brady Cook splitting the third line. Smith's sore ankle handed Klubnik the preseason-opener start and first-team practice reps, but the staff has been explicit that Smith is the 2026 starter.",
+    "whyHeCouldSucceed": [
+      "Draft capital plus organizational intent: teams don't trade up 18 spots for a Day 3 quarterback they view as a clipboard guy — Mougey scouted him across two cycles and Reich personally worked him out.",
+      "Geno Smith is 36 on a bridge deal; the succession timeline is short, and Klubnik has already banked first-team reps and a poised preseason start in year one.",
+      "The 2024 season (3,639 yards, 36/6 TD-INT, ACC title) proves a high ceiling when healthy and well-coached, and Frank Reich has a long record of developing rhythm passers.",
+      "Legitimate rushing production (17 college rushing TDs) gives him the Konami-code floor that makes even mediocre passers startable in superflex."
+    ],
+    "whyHeCouldFail": [
+      "The arm is ordinary and the frame is 207 pounds — he profiles as a system-dependent point guard who needs structure, and Jets pass protection has been a chronic problem.",
+      "2025 was a genuine regression year even with the injury excuse: 16 TDs in 12 games against ACC defenses, plus a no-show in the playoff loss to Penn State.",
+      "Most boards had him rounds later; if the Jets' conviction is wrong, fourth-round QBs get replaced by next April's class without hesitation.",
+      "Any 2026 fantasy value requires a Smith injury or collapse, and Glenn has publicly shut the controversy door — this is a redshirt year until it isn't."
+    ],
+    "fantasyOutlook": [
+      "In superflex, quarterbacks with a plausible path to starting are the scarcest asset in the game, and Klubnik's path is more plausible than his FantasyPros consensus rank of 46 implies — that rank reads like a 1QB number. KTC's crowd has him 37th (2125), and the August reporting (QB2 immediately, preseason start, first-team reps, staff praise) should push him up boards. For 2026 he's a stash: zero standalone value unless Smith goes down, but a Smith injury instantly makes him a streamable superflex QB with rushing equity.",
+      "Price him as an early-fourth rookie pick in superflex half-PPR who could return second-round value by December if he wins the 2027 job. He's the classic 'trade for him the week before the news breaks' player: the Jets have no first-round QB blocking him, Reich is invested, and the 2024 tape is the upside case. Among tier-10 fliers, a QB with this draft-day conviction is the right dart."
+    ],
+    "comp": "Brock Purdy-lite — an accurate, mobile, modest-armed processor whose NFL fate rides on scheme fit and structure rather than raw tools.",
+    "bottomLine": "The most interesting QB stash outside the rookie top-30: locked QB2 for a 36-year-old bridge starter, with a front office that traded up on conviction. In superflex, take him a round before the consensus says you should.",
+    "sources": [
+      "https://www.newyorkjets.com/news/cade-klubnik-nfl-draft-quarterback-clemson",
+      "https://sports.yahoo.com/articles/jets-trade-land-intriguing-clemson-165007614.html",
+      "https://cfbstats.com/2025/player/147/1174174/index.html",
+      "https://www.newyorkjets.com/news/cade-klubnik-preseason-debut-recap-jets-vs-buccaneers-08-14-2026",
+      "https://apnews.com/article/jets-cade-klubnik-qwantez-stiggers-buccaneers-25528ddd5c2b9c544a5dda89349bb30f",
+      "https://www.jetnation.com/2026/08/19/ny-jets-training-camp-report-cade-klubnik-shines-cade-york-perfect-from-60/",
+      "https://www.si.com/nfl/jets/onsi/clearing-air-jets-qb-depth-chart-training-camp-buzz-grows-louder-01m0d48fek2k",
+      "https://www.newyorkjets.com/news/2026-jets-unofficial-depth-chart",
+      "https://en.wikipedia.org/wiki/Cade_Klubnik"
+    ]
+  },
+  "1026": {
+    "id": 1026,
+    "name": "Oscar Delp",
+    "position": "TE",
+    "nflTeam": "NO",
+    "nflTeamName": "New Orleans Saints",
+    "college": "Georgia",
+    "hometown": "Cumming, Georgia",
+    "classYear": "Senior",
+    "headline": "Delp Brings Georgia Polish to New Orleans, but a Hamstring Clouds Cutdown Week",
+    "subhead": "The Saints spent a third-round pick on the traits-over-production Bulldog, who scored in his preseason debut and is now nursing a hamstring with Noah Fant in his rearview.",
+    "draftPick": "Round 3, Pick 9 (No. 73 overall), New Orleans Saints",
+    "measurables": {
+      "height": "6'5\"",
+      "weight": "245 lbs",
+      "age": "23.0",
+      "forty": "4.49",
+      "tenSplit": null,
+      "vertical": "38\"",
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": "23 reps",
+      "armLength": null,
+      "combineNote": "Delp saved his fireworks for Georgia's pro day, where a 4.49 40-yard dash, 38-inch vertical and 23 bench reps at 6'4 7/8\", 245 pounds turned heads and validated the athletic-mismatch projection his modest college stat line never showed."
+    },
+    "collegeCareer": [
+      "Delp arrived in Athens as the nation's No. 1 tight end recruit out of West Forsyth High and spent four years learning the hardest lesson in college football: playing tight end at Georgia means waiting your turn and blocking while you do it. Stuck behind Brock Bowers for two seasons, he still carved out a role, posting career highs of 24 catches for 284 yards as a sophomore in 2023 and a career-best four touchdowns in 2024.",
+      "The 2025 season was supposed to be the breakout; instead it was a masters class in doing everything but catching passes. Delp started all 14 games and caught just 20 balls for 261 yards (13.1 average) and one score in a run-heavy, spread-the-wealth offense — but he blocked at an SEC-championship level, was named a semifinalist for the William V. Campbell Trophy (academics plus football), and finished his career with 55 games played, 34 starts, and 70 receptions for 854 yards and nine touchdowns. Scouts drafted the pro day and the blocking tape, not the box scores."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Georgia", "line": "Reserve TE behind Brock Bowers, limited receiving work — national title team"},
+      {"season": "2023", "team": "Georgia", "line": "14 G, 10 starts, career-high 24 rec, 284 yds"},
+      {"season": "2024", "team": "Georgia", "line": "14 G, 10 starts, career-high 4 rec TD"},
+      {"season": "2025", "team": "Georgia", "line": "14 G, 14 starts, 20 rec, 261 yds, 13.1 ypr, 1 TD — Campbell Trophy semifinalist"},
+      {"season": "Career", "team": "Georgia", "line": "55 G, 34 starts, 70 rec, 854 yds, 12.2 ypr, 9 TD"}
+    ],
+    "draftDayStory": [
+      "New Orleans took Delp at No. 73 overall on Friday night of the draft — the ninth pick of round three, matching his listed capital exactly — right after grabbing Georgia teammate Christen Miller at No. 43. Kellen Moore's staff wanted a three-down tight end who could block on early downs and stress linebackers up the seam, and Delp's 4.49 pro-day speed at 245 pounds made him the traits bet of the round. The team's own scouting summary called him 'a sure-handed receiving threat, an agile ball-carrier after the catch, and a physical blocker' and pointedly noted a role on offense and special teams from day one."
+    ],
+    "whyTheyDraftedHim": [
+      "Third-round capital for a pro-day freak: 4.49 speed and a 38-inch vertical at 6'5\", 245 is starter-level athleticism the college stat line hid behind Brock Bowers and a run-first offense.",
+      "Kellen Moore after rookie minicamp: \"I just think good first exposure. The physicality that he plays with will show up as we progress.\"",
+      "Four years in Georgia's pro-style system means minimal scheme translation — Delp himself noted the Saints offense has \"a lot of juicy routes for the tight ends\" and mirrors what he ran in Athens.",
+      "The Saints' TE room needed a succession plan: Juwan Johnson is the starter but the depth was Noah Fant on a short deal, and Delp was drafted to eventually take the room over."
+    ],
+    "campNotes": [
+      {"date": "Aug 8", "source": "neworleanssaints.com", "note": "Delp gave a featured post-practice interview at Saints camp presented by Rouses Markets, discussing his first training camp and leaning on veteran leadership in the tight end room — a sign of how visible the rookie was in the team's own camp coverage."},
+      {"date": "Aug 15", "source": "neworleanssaints.com game recap", "note": "In the preseason opener vs. Jacksonville, Delp caught a 1-yard touchdown from Zach Wilson — set up by a Jayden Price interception and a 27-yard Bub Means catch — finishing 3 catches for 10 yards and the score in a Saints win."},
+      {"date": "Aug 24", "source": "Katherine Terrell, ESPN (via CBS Sports)", "note": "Delp is nursing a hamstring injury with severity unclear; he was blanked in preseason week 2, leaving him at 3-of-6 targets for 10 yards and a TD across two games. He's competing with Noah Fant for the top reserve TE job behind Juwan Johnson ahead of Friday's finale vs. Dallas."}
+    ],
+    "beatQuotes": [
+      {"quote": "I just think good first exposure. The physicality that he plays with will show up as we progress. From a tight end perspective, it's a deep group now.", "attribution": "Kellen Moore, Saints head coach, via WGNO, May 9"},
+      {"quote": "They brought me here for a reason. They believe in me and I believe in myself. There's a lot of juicy routes for the tight ends... I ran a pro-style offense at Georgia for four years, and it was very similar to this one.", "attribution": "Oscar Delp, via WGNO, May 9"}
+    ],
+    "depthChart": "Delp is battling veteran Noah Fant for the TE2 job behind starter Juwan Johnson, and the fight is genuinely open — Delp out-produced Fant in the preseason opener before the hamstring flared. The injury is the swing variable: if he can't go against Dallas on Friday, Fant likely opens the season as the clear No. 2.",
+    "whyHeCouldSucceed": [
+      "Third-round draft capital at tight end is a real signal — teams don't spend top-75 picks on blocking specialists, and the Saints' own bio leads with his receiving.",
+      "The athletic profile (4.49/38-inch vert at 245) is that of a top-five fantasy TE if the targets ever come; the college production drought was situational, not a skills verdict.",
+      "Juwan Johnson is more placeholder than franchise fixture, and Fant is a one-year veteran — the 2027 runway to the starting job is wide open.",
+      "He already scored an NFL touchdown from Zach Wilson in his first preseason game and drew featured coverage all camp; the team is actively developing him, not stashing him."
+    ],
+    "whyHeCouldFail": [
+      "70 career catches in four college seasons is a genuinely alarming receiving resume — every fantasy-relevant NFL tight end shows more college target-earning than this.",
+      "Rookie tight ends almost never matter in fantasy, and Delp opens behind both Johnson and possibly Fant in a Saints offense with unsettled quarterback play.",
+      "The hamstring injury in cutdown week costs him exactly the reps a raw receiver needs, and soft-tissue issues at 245 pounds have a way of recurring.",
+      "New Orleans' pass-game hierarchy (Chris Olave-led receivers, committee backs) leaves thin target margins for a TE2, capping even his best-case 2026."
+    ],
+    "fantasyOutlook": [
+      "Treat Delp as a classic TE-premium-adjacent stash. In 2026 he should not be rostered for production: even winning the TE2 job leaves him behind Juwan Johnson on a middling passing offense, and the hamstring may hand Fant the early-season snaps. The dynasty bet is 2027-28, when the contracts ahead of him expire and a 6'5\", 245-pound athlete with third-round pedigree inherits a starting job at 24.",
+      "His FantasyPros consensus rank of 29 against a KTC rookie rank of 38 tells you the market split: analysts love the capital-plus-athleticism formula, the crowd sees the 20-catch senior season. In a superflex half-PPR rookie draft, he's correctly priced as a mid-third-round pick — the best pure-upside TE bet in that range, but only for rosters that can wait two years. If your league mates read box scores, you'll get him at the KTC price, and that's the side to be on."
+    ],
+    "comp": "Hunter Henry with a better vertical — a polished, pro-ready Y whose receiving ceiling depends entirely on target opportunity rather than talent.",
+    "bottomLine": "Draft the traits and the capital, not the college stats: a mid-third rookie pick who needs a two-year runway. If the hamstring lingers past Week 1, buy the dip.",
+    "sources": [
+      "https://www.neworleanssaints.com/news/oscar-delp-saints-draft-pick-2026",
+      "https://www.neworleanssaints.com/news/oscar-delp-saints-2026-nfl-draft-five-things",
+      "https://www.neworleanssaints.com/team/players-roster/oscar-delp/",
+      "https://www.neworleanssaints.com/game-day/2026/pre-week1/jaguars-at-saints/recap",
+      "https://www.cbssports.com/fantasy/football/news/saints-oscar-delp-dealing-with-hamstring-injury/",
+      "https://wgno.com/sports/rookie-te-oscar-delp-is-confident-the-saints-can-help-him-reach-his-potential/",
+      "https://crescentcitysports.com/saints-suffer-more-injury-concerns-with-ty-chandler-oscar-delp/"
+    ]
+  },
+  "1039": {
+    "id": 1039,
+    "name": "Kevin Coleman",
+    "position": "WR",
+    "nflTeam": "MIA",
+    "nflTeamName": "Miami Dolphins",
+    "college": "Missouri",
+    "hometown": "St. Louis, Missouri",
+    "classYear": "Senior",
+    "headline": "Four Schools, One Chip: Coleman Is Playing His Way Onto Miami's Roster",
+    "subhead": "The much-traveled slot receiver returned from injury to catch two practice touchdowns and lead the Dolphins in preseason receiving — exactly the underdog script he predicted.",
+    "draftPick": "Round 5, Pick 37 (No. 177 overall), Miami Dolphins",
+    "measurables": {
+      "height": "5'10\"",
+      "weight": "179 lbs",
+      "age": "23.0",
+      "forty": "4.49",
+      "tenSplit": "1.61",
+      "vertical": "38 1/2\"",
+      "broad": "10'6\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "30\"",
+      "combineNote": "Coleman ran an official 4.49 at the combine with a 38 1/2-inch vertical and 10'6\" broad jump, then trimmed the forty to 4.43 at Missouri's March 20 pro day. Good-not-great long speed, but the explosion numbers and his game tape agree: the juice shows up with the ball in his hands."
+    },
+    "collegeCareer": [
+      "Coleman's college career reads like a road atlas. A four-star, top-50 national recruit out of St. Mary's in St. Louis, he spurned Power Five offers to play for Deion Sanders at Jackson State, catching passes from Shedeur Sanders alongside Travis Hunter and winning 2022 SWAC Freshman of the Year with 31 catches for 461 yards, capped by a 137-yard Celebration Bowl. When Coach Prime left for Colorado, Coleman hit the portal — first to Louisville (26-362-2 in 2023), then to Mississippi State, where he broke out in the SEC with 74 catches for 932 yards and six touchdowns on a bad 2024 team.",
+      "The final stop was home: Missouri, his first scholarship offer. In 2025 he led the Tigers with 66 receptions for 732 yards, started all 13 games, and added the splash plays that define him — a 67-yard punt-return touchdown against Arkansas in the regular-season finale and a 12.6-yard punt-return average that ranked 13th nationally. Four schools, three conferences, production at every stop: whatever Coleman lacks in size, the resume screams adaptability."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Jackson State", "line": "31 rec, 461 yds, 2 TD incl. Celebration Bowl — SWAC Freshman of the Year"},
+      {"season": "2023", "team": "Louisville", "line": "14 G, 26 rec, 362 yds, 13.9 ypr, 2 TD"},
+      {"season": "2024", "team": "Mississippi State", "line": "12 G, 74 rec, 932 yds, 12.6 ypr, 6 TD"},
+      {"season": "2025", "team": "Missouri", "line": "13 G, team-high 66 rec, 732 yds, 1 TD; 12.6-yd punt return avg (13th nationally), PR TD vs. Arkansas"}
+    ],
+    "draftDayStory": [
+      "Miami called Coleman's name at No. 177 overall — the 37th pick of the fifth round, matching his listed capital — making him the fifth of a school-record-tying six Missouri players drafted in 2026. Dane Brugler had him ranked 184th overall and WR25 in the class, so the value was fair rather than a reach, and the fit was obvious: a Dolphins team that went 7-10 in 2025 and tore its receiver room down to studs behind the starters needed a slot with return-game chops. Coleman had taken pre-draft visits to Atlanta and Kansas City, but it was Miami that bought the profile."
+    ],
+    "whyTheyDraftedHim": [
+      "Slot-plus-returner utility: his 12.6-yard punt-return average ranked 13th nationally in 2025, and Miami's rebuilt roster had a naked need for both.",
+      "Proven production against SEC corners at two different schools (932 yards at Mississippi State, team-high 66 catches at Missouri) despite constant quarterback churn.",
+      "Self-scouting the staff agreed with: \"I'm electric. Don't let this size fool you — with the ball in my hands, anything can happen,\" Coleman said at the combine.",
+      "Miami drafted three receivers and let them compete; Coleman's YAC-first skill set is the natural fit for the quick-game slot role in the post-Hill offense."
+    ],
+    "campNotes": [
+      {"date": "Aug 18", "source": "Miami Herald", "note": "Sidelined since the second week of camp with an undisclosed injury, Coleman returned to 11-on-11s and immediately produced two 'jaw-dropping' touchdown catches — a 21-yarder from Cam Miller in the corner of the end zone and an 11-yard scramble-drill score from Malik Willis — on a day when third-round pick Caleb Douglas was blanked."},
+      {"date": "Aug 22", "source": "CBS Sports", "note": "Coleman led the Dolphins in targets (5) and receiving yards (32) in the 26-3 preseason loss to the Giants — the only Miami player over 12 receiving yards — though CBS noted he appears to be running behind Caleb Douglas, Malik Washington, Jalen Tolbert and Tutu Atwell in the pecking order."},
+      {"date": "Aug 22", "source": "miamidolphins.com press conference", "note": "Coleman told reporters he refused to 'come back slacking' from the injury and leaned on mental reps while out; he highlighted the chemistry among Miami's three drafted rookie receivers and the roster's youth movement."}
+    ],
+    "beatQuotes": [
+      {"quote": "I feel like just being a part of that one percent, you'll always be the underdog... I've got to go prove myself. I've got to go make the team, earn guys' trust, earn coaches' trust. So of course I've got that underdog mindset.", "attribution": "Kevin Coleman Jr., miamidolphins.com transcript, Apr 28"},
+      {"quote": "Kevin Coleman Jr., who has been sidelined since the second week of camp with an undisclosed injury, returned to Miami's 11-on-11 portion of Tuesday's practice and produced two jaw-dropping touchdown catches.", "attribution": "Miami Herald, Aug 18"}
+    ],
+    "depthChart": "Coleman is fighting for a roster spot and slot snaps in a wide-open Miami receiver room: CBS pegs him behind rookie third-rounder Caleb Douglas, Malik Washington, Jalen Tolbert and Tutu Atwell, with fellow rookie Chris Bell (knee) lurking. His preseason production and punt-return value make the 53 likely, but early-season offensive snaps are no lock.",
+    "whyHeCouldSucceed": [
+      "The opportunity is real: Miami's post-teardown receiver depth behind the starters is rookies and journeymen, and Coleman has out-produced the room when healthy — two practice TDs on return day, team-leading receiving in preseason week 2.",
+      "Punt-return excellence (13th nationally) is his roster insurance and gameday-active ticket, the classic path by which small slots earn offensive packages.",
+      "He has produced immediately at every one of four college stops across three conference levels — the adaptability and route-savvy translate to an NFL room in flux.",
+      "The YAC profile fits Miami's speed-in-space offensive identity better than any of the bigger-bodied receivers he's competing against."
+    ],
+    "whyHeCouldFail": [
+      "At 5'10\", 179 with 30-inch arms, he's a slot-only prospect with a fifth-round pedigree — the NFL's most fungible archetype, always one numbers-crunch from waivers.",
+      "An undisclosed injury already cost him most of camp's second and third weeks, brutal timing for a Day 3 rookie in a five-way depth battle.",
+      "One receiving touchdown in his final college season hints at a low red-zone ceiling; his 2025 usage was volume underneath, not scoring.",
+      "Miami's own draft board says Caleb Douglas (third round) is the preferred young receiver; Coleman may need an injury ahead of him to see offensive snaps at all."
+    ],
+    "fantasyOutlook": [
+      "Coleman is a deep-roster dart, and there's no need to pretend otherwise. His 2026 fantasy line will likely be built on punt returns and 10-15 offensive snaps a week, which is zero in half-PPR terms. But the profile — instant production at four schools, SEC slot competence, YAC electricity, special-teams glue — is exactly the type that surfaces two years later as a 90-target slot when the depth chart clears. Miami's receiver room beyond the starters is entirely unsettled beyond 2026.",
+      "KTC prices him 39th (2028, tier 11) and FantasyPros consensus says 44; in a superflex half-PPR rookie draft that's a late-fourth-round pick, and he's worth exactly that on taxi-squad-eligible rosters. Prefer him over higher-drafted receivers buried behind entrenched veterans — Coleman's path is crowded but every body in front of him is beatable."
+    ],
+    "comp": "Braxton Berrios with better college receiving chops — a return-game roster-maker whose offensive role must be earned inch by inch.",
+    "bottomLine": "Taxi-squad stash with a returner's floor and a slot-starter's someday ceiling. Spend a late fourth in superflex and forget about him until the depth chart breaks his way.",
+    "sources": [
+      "https://247sports.com/college/missouri/article/2026-nfl-draft-mizzou-wr-kevin-coleman-jr-selected-in-fifth-round-by-miami-dolphins-283086757/",
+      "https://mutigers.com/news/2026/04/25/two-more-tigers-selected-on-final-day-of-the-nfl-draft",
+      "https://www.miamidolphins.com/news/transcript-wr-kevin-coleman-jr-nfl-draft-day-3-apr-28",
+      "https://www.miamidolphins.com/news/transcript-wr-kevin-coleman-jr-press-conference-august-22",
+      "https://www.miamiherald.com/sports/article316917888.html",
+      "https://www.cbssports.com/fantasy/football/news/dolphins-kevin-coleman-teams-leading-receiver-in-preseason-loss/",
+      "https://www.si.com/college/missouri/football/breaking-down-kevin-coleman-jr-nfl-draft-projection-pro-potential",
+      "https://www.statmuse.com/cfb/player/kevin-coleman-jr.-71175/career-stats"
+    ]
+  },
+  "1029": {
+    "id": 1029,
+    "name": "Justin Joly",
+    "position": "TE",
+    "nflTeam": "DEN",
+    "nflTeamName": "Denver Broncos",
+    "college": "NC State",
+    "hometown": "Brewster, New York",
+    "classYear": "Senior",
+    "headline": "Denver's Joker Card: Joly Is the Camp Riser Nobody Outside Colorado Noticed",
+    "subhead": "A fifth-round tight end with first-team All-ACC hardware is turning heads at Broncos camp, drawing praise from Evan Engram and earning targets every time he steps on the field.",
+    "draftPick": "Round 5, Pick 12 (No. 152 overall), Denver Broncos",
+    "measurables": {
+      "height": "6'3 3/8\"",
+      "weight": "245 lbs",
+      "age": "22.1",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": "30 1/2\"",
+      "broad": "9'6\"",
+      "threeCone": null,
+      "shuttle": "4.65",
+      "bench": null,
+      "armLength": "32 1/4\"",
+      "combineNote": "Joly measured 6'3 3/8\", 245 with huge 10 1/2-inch hands at the combine but skipped all drills while recovering from a hamstring injury. At NC State's March 24 pro day he managed only a partial workout (30 1/2\" vertical, 9'6\" broad, 4.65 shuttle) and said he couldn't give his best effort without setting back the recovery — so the athletic testing profile is essentially incomplete, and the tape has to speak."
+    },
+    "collegeCareer": [
+      "Recruited as a wide receiver out of Brewster, New York, Joly bulked up 25-plus pounds into a move tight end and produced from day one. Two seasons at UConn yielded 74 catches, including a 56-578-2 sophomore year that made him one of the portal's most coveted tight ends. He chose NC State and immediately became Grayson McCall's — and then CJ Bailey's — security blanket, posting 43 catches for 661 yards (15.4 per catch) and four touchdowns in 2024.",
+      "In 2025 the yardage dipped to 489 on 49 catches as defenses keyed on him, but he found the end zone seven times — the most touchdowns by any Power Four tight end — and earned First Team All-ACC honors. He finished his four-year career with 166 receptions for 1,978 yards and 15 touchdowns across 49 games, almost all of it earned detached from the line or in the slot, where his receiver background shows up in clean releases and scramble-drill instincts. The blocking remains a work in progress; the hands (10 1/2 inches, strong in contested catches) are not."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "UConn", "line": "12 G, 18 rec, 250 yds, 13.9 ypr, 2 TD"},
+      {"season": "2023", "team": "UConn", "line": "12 G, 56 rec, 578 yds, 10.3 ypr, 2 TD"},
+      {"season": "2024", "team": "NC State", "line": "13 G, 43 rec, 661 yds, 15.4 ypr, 4 TD"},
+      {"season": "2025", "team": "NC State", "line": "12 G, 49 rec, 489 yds, 7 TD — First Team All-ACC, most TDs by a Power Four TE"},
+      {"season": "Career", "team": "UConn/NC State", "line": "49 G, 166 rec, 1,978 yds, 11.9 ypr, 15 TD"}
+    ],
+    "draftDayStory": [
+      "Joly's draft-day slide was one of the sharper value stories of Day 3. ESPN ranked him TE5 and No. 92 overall, and Mel Kiper had him TE3 at No. 105 — yet he lasted to No. 152, the 12th pick of the fifth round, as the eleventh tight end selected, likely a casualty of the hamstring that wiped out his testing. Denver, which had been publicly hunting Sean Payton's 'Joker' mismatch weapon for three years, stopped the fall. He was the first NC State player drafted in 2026, extending the school's streak to 11 straight years, and the first Wolfpack tight end drafted since 2009."
+    ],
+    "whyTheyDraftedHim": [
+      "Sean Payton has talked about finding his 'Joker' — a middle-of-the-field mismatch creator — since arriving in Denver, and Broncos scouting singled out exactly that: \"[Joly's] ability is really run after catch, ability to get open in the scramble drill and then win on one-on-one.\"",
+      "Analytics-friendly value: top-105 on both ESPN's and Kiper's boards at pick 152, with the discount attributable to a temporary hamstring rather than the tape.",
+      "The most productive receiving resume in the TE class this side of the top tier: 166-1,978-15, with 2025's seven scores leading all Power Four tight ends.",
+      "'Ginormous' 10 1/2-inch hands and contested-catch strength — the Denver Gazette made his mitts a headline — fit a Bo Nix offense that thrives on layered middle throws."
+    ],
+    "campNotes": [
+      {"date": "Aug 4", "source": "Brandon Stokley via 104.3 The Fan / Denver Sports", "note": "Former Broncos receiver Brandon Stokley left his first camp visit raving about Joly's movement skills, flagging him as the rookie most likely to solve Denver's long-standing tight end problem: fluid in and out of breaks in a way mid-round tight ends usually aren't."},
+      {"date": "Aug 14", "source": "denverbroncos.com game recap", "note": "In the 27-7 preseason-opening win at Atlanta, Joly played 23 offensive snaps alongside fellow rookie TE Dallen Bentley, catching one pass; both rookies were told to expect heavy preseason run as the staff sorts a crowded room."},
+      {"date": "Aug 20", "source": "Mile High Report", "note": "Evan Engram publicly praised Joly's and Bentley's progression since the draft; with all of last year's tight ends returning plus two draft picks, the room battle heading into cutdowns is one of Denver's tightest, with Adam Trautman, Nate Adkins, Lucas Krull and Caleb Lohner (foot) all in the mix."},
+      {"date": "Aug 22", "source": "CBS Sports", "note": "Joly caught both targets for 10 yards on just eight offensive snaps against Green Bay — a 25% target-per-snap rate CBS read as a sign he has 'played his way into a valuable position' in the race for one of three primary TE roster spots."}
+    ],
+    "beatQuotes": [
+      {"quote": "There's another guy that I laid eyes on for the first time... that I was kind of excited. Joly. You could just tell, like he moves well. He moves really well... very intriguing.", "attribution": "Brandon Stokley, 104.3 The Fan (via Denver Sports), Aug 4"},
+      {"quote": "They've been doing great. They've been awesome. They've been learning... rookies have their moments, they take their bumps, but they've handled it really well.", "attribution": "Evan Engram, Broncos TE, via Mile High Report, Aug 20"}
+    ],
+    "depthChart": "Joly sits third or fourth in a crowded Denver tight end room led by 10-year veteran Evan Engram, with Adam Trautman, Nate Adkins and Lucas Krull fighting for the remaining spots and Caleb Lohner sidelined in a walking boot. His preseason usage — few snaps, frequent targets — suggests the staff considers him close to locked onto the 53 as a developmental TE2/3.",
+    "whyHeCouldSucceed": [
+      "The exact archetype Sean Payton has spent three years hunting: a detached, receiver-born mismatch tight end, in an offense with a genuine history (Jimmy Graham) of manufacturing elite TE production.",
+      "Engram is 32 with an injury history and no long-term contract security — the 2027 starting job is unclaimed, and Joly is the only young receiving TE Denver has invested in.",
+      "Youngest player in this batch at 22.1 with an ascending resume: All-ACC first team, most Power Four TE touchdowns in 2025, and camp buzz from credible evaluators like Stokley.",
+      "Bo Nix's play style — quick game, scramble-drill improvisation — maps perfectly onto Joly's best college traits: uncovering late and winning one-on-one in the middle of the field."
+    ],
+    "whyHeCouldFail": [
+      "Fifth-round tight ends who can't block get stuck in 'move TE3' purgatory; his blocking is universally graded as a work in progress and Denver keeps three or four blocking-capable veterans.",
+      "The athletic profile is unverified — he never ran a 40 for scouts, and the pro-day jumps he did post (30 1/2\" vert, 9'6\" broad) were pedestrian even accounting for the hamstring.",
+      "Denver's pass-game hierarchy (Sutton, Waddle, Mims, Engram, plus backs) leaves no 2026 target room; rookie-year fantasy value is essentially impossible.",
+      "The 2025 yardage regression (661 to 489) shows what happens when he's the defense's focus — he won on schemed touches and red-zone size, not consistent separation vs. top coverage."
+    ],
+    "fantasyOutlook": [
+      "Joly is the definition of a two-year tight end stash, and among tier-11 rookies he might be the single best pure upside play. Nothing about 2026 will be usable — Engram, Trautman and the veterans will absorb the snaps while Payton drip-feeds the rookie packages. But the succession math is clean: Engram's age, Denver's repeated attempts to solve the position, Payton's Joker obsession, and a coaching staff already using him as a high-frequency target when he's on the field. If the blocking develops enough for three-down work, the 2027-28 outcome is a top-12 fantasy TE in a Payton offense.",
+      "At KTC 1988 (rookie 40) and FantasyPros consensus 35, he's a late-fourth-round rookie pick in superflex half-PPR — cheaper than Oscar Delp despite comparable upside and a better offensive environment. On TE-premium or taxi-heavy rosters, bump him a half-round. The market is pricing the fifth-round capital; price the camp reporting instead."
+    ],
+    "comp": "A Jordan Reed starter kit — a converted-receiver move TE with elite hands and YAC feel whose path to relevance is scheme love, not in-line dominance.",
+    "bottomLine": "The best sub-2000-KTC stash in this class: Payton's hand-picked Joker apprentice behind an aging Engram. Take him late in the fourth and let the 2027 depth chart do the work.",
+    "sources": [
+      "https://247sports.com/college/north-carolina-state/article/nc-state-te-justin-joly-drafted-by-broncos-at-no-152-overall-in-2026-nfl-draft-283032298/",
+      "https://www.newsobserver.com/sports/college/acc/nc-state/article315469331.html",
+      "https://insidepacksports.com/s/18519/nfl-draft-tracker-joly-selected-by-denver",
+      "https://denversports.com/nfl/denver-broncos/a-rookie-tight-end-is-turning-heads-at-broncos-training-camp",
+      "https://www.milehighreport.com/denver-broncos-news/182470/evan-engram-impressed-with-justin-joly-and-dallen-bentley",
+      "https://www.cbssports.com/fantasy/football/news/broncos-justin-joly-catches-pair-of-targets/",
+      "https://www.denvergazette.com/2026/05/01/known-for-ginormous-hands-rookie-te-justin-joly-looking-to-make-big-impact-with-broncos/",
+      "https://tankathon.com/nfl/players/justin-joly",
+      "https://apps.rotowire.com/football/player/justin-joly-19276"
+    ]
+  }
+}
