@@ -1,0 +1,479 @@
+{
+  "1008": {
+    "id": 1008,
+    "name": "Ty Simpson",
+    "position": "QB",
+    "nflTeam": "LAR",
+    "nflTeamName": "Los Angeles Rams",
+    "college": "Alabama",
+    "hometown": "Martin, Tennessee",
+    "classYear": "Redshirt Junior",
+    "headline": "One Season As A Starter, One First-Round Bet On The Post-Stafford Rams",
+    "subhead": "Alabama's one-year starter was the draft's biggest stunner at No. 13, and a 21-of-25 preseason debut already has Los Angeles rethinking its quarterback pecking order.",
+    "draftPick": "Round 1, Pick 13 (No. 13 overall), Los Angeles Rams",
+    "measurables": {
+      "height": "6'1 1/8\"",
+      "weight": "211 lbs",
+      "age": "23.7",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "30 7/8\"",
+      "combineNote": "Simpson measured in at the combine at 6-1 1/8 and 211 pounds with a 9 3/8-inch hand and a 6-4 1/2 wingspan, but he did not put up testing numbers there. He saved his work for Alabama's pro day, where he threw for more than 40 minutes in front of a heavy scouting crowd and declared afterward that he was 'absolutely' a first-round pick. He was right."
+    },
+    "collegeCareer": [
+      "Simpson was a five-star recruit who enrolled early in January 2022 and then waited three full seasons for the job. He threw five passes as a true freshman while redshirting, then spent 2023 and 2024 as Jalen Milroe's backup, appearing in six games each year and never turning the ball over: 11-for-20 for 179 yards as a redshirt freshman, 14-for-25 for 167 as a redshirt sophomore, with 130 rushing yards and three scores across the two seasons. That is an unusual apprenticeship for a quarterback of his recruiting pedigree, and it shaped the reputation he carried into the league: prepared, coachable, unflappable.",
+      "Kalen DeBoer named him the starter on August 11, 2025, and Simpson immediately looked like the most efficient quarterback Alabama had fielded since Bryce Young. He completed 305 of 473 throws (64.5%) for 3,567 yards with 28 touchdowns and just five interceptions, a 145.2 passer rating and second-team All-SEC honors. The turnover economy was the calling card — 28-to-5 with a receiving corps in transition and an offensive line that had rough weeks.",
+      "The finish was ugly. Alabama went 11-4, reached the College Football Playoff quarterfinals and got dismantled 38-3 by eventual national champion Indiana in the Rose Bowl, the last college game Simpson ever played. He declared for the draft on January 7, 2026, informing DeBoer and offensive coordinator Ryan Grubb rather than returning for a senior year; Mel Kiper Jr. had him as the third-best quarterback in the class behind Fernando Mendoza and Dante Moore. His father, Jason, is the longtime UT Martin head coach, and the family consulted NFL sources — including Rams GM Les Snead, through the College Advisory Committee — before making the call."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Alabama", "line": "4 G, 4/5, 35 pass yds, 0 TD, 0 INT"},
+      {"season": "2023", "team": "Alabama", "line": "6 G, 11/20, 179 pass yds, 0 TD, 0 INT, 14 car, 86 rush yds, 2 TD"},
+      {"season": "2024", "team": "Alabama", "line": "6 G, 14/25, 167 pass yds, 0 TD, 0 INT, 8 car, 44 rush yds, 1 TD"},
+      {"season": "2025", "team": "Alabama", "line": "15 G, 305/473 (64.5%), 3,567 pass yds, 28 TD, 5 INT, 145.2 rating, 90 car, 93 rush yds, 2 TD"}
+    ],
+    "draftDayStory": [
+      "The Rams took Simpson at No. 13 overall on April 23 and the room in Pittsburgh audibly gasped. Los Angeles is a title contender with reigning MVP Matthew Stafford under center, and multiple rival evaluators told ESPN that as late as Wednesday night they expected Simpson to slide into the second round on supply-and-demand grounds. Neither Snead nor Sean McVay had formally met with him during the process — 'I met with some scouts in Alabama and that was really it,' Simpson said that night — a silence that was deliberate. Team sources told ESPN the Rams kept quiet precisely because word that McVay had stamped a quarterback would have pulled other teams up the board ahead of them. Simpson later revealed he had in fact met with McVay for 'hours' before the draft.",
+      "McVay was conspicuously subdued at the podium, pivoting to 'let's make one thing clear, this is Matthew's team,' and team sources said he was protecting Stafford rather than distancing himself from the pick. The KTC draft capital on file (Round 1, Pick 13) matches reporting exactly. Simpson signed a four-year, $25.4 million fully guaranteed rookie deal on July 25."
+    ],
+    "whyTheyDraftedHim": [
+      "Succession, not competition: Jay Glazer reported the pick was made with the post-Stafford era in mind, and Snead framed it as maximizing the Stafford window while building the bridge behind him — the Rams had not drafted a quarterback higher than 128th in McVay's nine years.",
+      "Processing over arm talent: Simpson's quick decision-making and 28-to-5 touchdown-to-interception season fit a McVay offense built on rhythm, timing and getting the ball out on schedule.",
+      "Character and pedigree: the son of a longtime college head coach who sat three years behind Bryce Young and Jalen Milroe without complaint, a profile the Rams weighted heavily.",
+      "The tape was the tiebreaker: 'The appreciation for the tape was the biggest thing,' a team source told ESPN, adding that McVay 'absolutely' was on board with the selection."
+    ],
+    "campNotes": [
+      {"date": "Aug 6", "source": "Los Angeles Rams (therams.com), Rams Training Camp at LMU", "note": "Simpson worked exclusively with the second-team offense during camp at Loyola Marymount. On Stafford's scheduled rest days Stetson Bennett IV led the first unit and Simpson ran the twos; on Stafford's practice days Bennett took most or all of the second-team reps and Simpson's work shrank."},
+      {"date": "Aug 8", "source": "Sean McVay, therams.com", "note": "McVay confirmed Simpson 'definitely will' play in the preseason opener at Kansas City while saying he had not yet decided on Bennett. Team writers noted Simpson flashed potential mixed with rookie mistakes across camp, while Bennett looked more in control of the system."},
+      {"date": "Aug 15", "source": "therams.com / AP game story", "note": "Preseason debut at Arrowhead: 21-of-25 for 190 yards and two touchdowns, both screens to RB Dean Connors, in a 20-12 win. Bennett started and went 4-of-6 for 36-38 yards in one quarter. Most of Simpson's work came against third- and fourth-string Chiefs defenders."},
+      {"date": "Aug 20", "source": "Cameron DaSilva, Rams On SI", "note": "For the first time all summer the Rams split backup reps in Thursday's joint practice — Bennett 13 second-team reps, Simpson 12 — an acknowledgment that the QB2 hierarchy is no longer settled."},
+      {"date": "Aug 22", "source": "Rams-Saints box score / CBS Sports", "note": "In the 34-0 win over New Orleans, Bennett played the first half and into the third quarter (19-of-31, 181 yards, two rushing TDs) while Simpson took over midway through the third and went 8-of-12 for 73 yards, leading one touchdown drive that included a 24-yard strike to TE Dan Villari."}
+    ],
+    "beatQuotes": [
+      {"quote": "I thought Ty had great command all day. He was able to get through good progressions, got a lot of different guys involved. I thought he and (offensive coordinator Nate Scheelhaase) were really in sync. ... I thought he took what the defense gave him. I thought he read the plays out, read with his feet. He did a really good job overall.", "attribution": "Sean McVay, head coach, therams.com, Aug 15"},
+      {"quote": "I'm super excited. It's the first time I get to play a game not only in a Rams uniform, but an NFL uniform, and I'm just really ready to show who I am. I'm not going to do anything that I know I'm not capable of doing. I'm just going to stick to my rules and stick to what I've been doing, throwing with conviction.", "attribution": "Ty Simpson, therams.com, Aug 13"},
+      {"quote": "There were a lot of players that we liked, but when you do look at it, I think the thing you liked about the body of work is ... let's make one thing clear, this is Matthew's team. You get a chance to be able to address the backup quarterback.", "attribution": "Sean McVay, head coach, via ESPN, Apr 23"}
+    ],
+    "depthChart": "Third string, for now. Stafford is entering his 18th season as the unquestioned starter, Bennett went into camp as QB2 on the strength of four years in the system and took the vast majority of backup reps, and Simpson has been developed deliberately behind both. After the Chiefs game the Rams began splitting second-team reps evenly, and Turf Show Times called the QB2 job 'a very tight race' heading into the preseason finale against the Chargers.",
+    "whyHeCouldSucceed": [
+      "First-round draft capital on a contender that has no reason to rush him: Simpson gets a full apprenticeship year behind a Hall of Fame-track quarterback in the league's most quarterback-friendly play-caller's system, the ideal runway for a 2027 or 2028 takeover.",
+      "The traits translate to this offense. Quick processing and on-time throwing are the exact currency of McVay's rhythm passing game, and his preseason command — 21-of-25 with progressions read cleanly — showed the operating speed is already NFL-viable.",
+      "Stafford is 38 and has an injury history plus years of contract brinkmanship with the franchise. A single hamstring, back or thumb issue turns Simpson from stash into a starting fantasy quarterback in a loaded offense.",
+      "Turnover-averse profile: 28 touchdowns to five interceptions in his only college season, and zero turnovers in three years of backup work. Coaching staffs trust that, which shortens the runway to real reps.",
+      "Superflex scarcity does the rest. Any quarterback with a credible path to a McVay offense is a top-15 dynasty asset at the position regardless of when the snaps arrive."
+    ],
+    "whyHeCouldFail": [
+      "He is 23.7 with 15 college starts. Simpson has the smallest sample of any first-round quarterback in this class, and his one starting season ended with a 38-3 Rose Bowl beating in which Alabama's offense never showed up.",
+      "The Rams treated him as a developmental piece all summer, not a challenger: Bennett got the first-team and second-team reps whenever Stafford practiced, and the coaching staff prioritized bringing Simpson along 'at his own pace.'",
+      "His preseason production came almost entirely against third- and fourth-string defenses, and his second outing (8-of-12, 73 yards, no touchdowns) was far more ordinary than the debut.",
+      "Stafford is coming off an MVP season. If he plays two more years at that level, Simpson could be 25 before he starts an NFL game, which is dead weight in a redraft league and a long hold in dynasty.",
+      "The physical tools are good, not special. Simpson is a 211-pound pocket passer with modest rushing production (93 yards on 90 carries in 2025), so his fantasy ceiling is tied entirely to volume and efficiency rather than legs."
+    ],
+    "fantasyOutlook": [
+      "Zero-projection 2026 unless Stafford goes down. Simpson is not even locked in as QB2 yet, and the Rams have every incentive to keep him in a ballcap. Treat any 2026 output as pure contingency: if Stafford misses time, Simpson steps into an offense with Puka Nacua, Davante Adams and a functional line, which would make him a low-end starter immediately. Bake in nothing, hope for everything.",
+      "In dynasty superflex, though, he is exactly the archetype you buy in August: first-round capital, elite play-caller, aging incumbent, no competing young arm on the roster. His KTC value of 3707 (rookie rank 11) reads slightly light relative to how QBs on this path get repriced the moment they take over. A price around the back half of the first round in a superflex .5 PPR rookie draft is fair; if he is still available at the 1.11 or 1.12, take him over any Round 3-4 running back or a fringe receiver, and expect to pay double this price if he wins the QB2 job and Stafford stumbles."
+    ],
+    "comp": "A Jordan Love-style arrangement more than a player comp — a first-round quarterback parked behind an entrenched veteran — with an on-field profile closer to Brock Purdy: efficient, quick-processing, scheme-dependent rather than arm-talent-driven.",
+    "bottomLine": "The best pure lottery ticket in this rookie class: draft him in superflex and stash him for two years, because the day Stafford's clock runs out, Simpson inherits a McVay offense.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ty_Simpson",
+      "https://www.espn.com/nfl/story/_/id/48580958/los-angeles-rams-decision-2026-nfl-draft-qb-ty-simpson-matthew-stafford",
+      "https://www.espn.com/college-football/story/_/id/47539318/alabama-qb-ty-simpson-says-entering-nfl-draft",
+      "https://www.therams.com/news/mcvay-ty-simpson-definitely-will-play-rams-first-preseason-game-chiefs-haven-t-decided-on-stetson-bennett-iv",
+      "https://www.therams.com/news/quarterback-ty-simpson-looking-forward-to-seeing-action-in-rams-preseason-opener-at-chiefs",
+      "https://www.therams.com/news/rookie-quarterback-ty-simpson-rams-at-chiefs-in-command-throughout-nfl-preseason-debut",
+      "https://www.si.com/nfl/rams/onsi/rams-ty-simpson-backup-qb-job-saints",
+      "https://www.neworleanssaints.com/game-day/2026/pre-week2/rams-vs-saints/box-score",
+      "https://www.turfshowtimes.com/los-angeles-rams-analysis/146719/rams-quarterbacks-ty-simpson-stetson-bennett-competition"
+    ]
+  },
+  "1010": {
+    "id": 1010,
+    "name": "Omar Cooper Jr.",
+    "position": "WR",
+    "nflTeam": "NYJ",
+    "nflTeamName": "New York Jets",
+    "college": "Indiana",
+    "hometown": "Indianapolis, Indiana",
+    "classYear": "Redshirt Junior",
+    "headline": "The Jets Traded Up For Him, Then Made Him Wait Behind A Returner",
+    "subhead": "Indiana's national-title-winning No. 1 receiver arrived at No. 30 and spent August losing slot reps to Isaiah Williams before winning them back in preseason Week 2.",
+    "draftPick": "Round 1, Pick 30 (No. 30 overall), New York Jets",
+    "measurables": {
+      "height": "6'0 1/8\"",
+      "weight": "199 lbs",
+      "age": "22.7",
+      "forty": "4.42",
+      "tenSplit": "1.55",
+      "vertical": "37\"",
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "30 1/4\"",
+      "combineNote": "Cooper tested cleanly in Indianapolis, running 4.42 with a 1.55 ten-yard split and a 2.60 twenty, and jumping 37 inches. The times confirmed functional field speed rather than elite separation athleticism; his 9 5/8-inch hands and 6-3 1/4 wingspan back up the contested-catch tape. Note the listing discrepancy: he is measured at 6-0 and 199, not the 6-1, 200 carried on some boards."
+    },
+    "collegeCareer": [
+      "Cooper stayed home in Indianapolis — a Lawrence North three-sport star who averaged 9.3 points and 6.6 rebounds on the basketball floor — and then rode out the worst of Indiana football. He redshirted in 2022, caught 18 passes for 267 yards and two scores in 2023, and was a rotational big-play threat in 2024 with 28 catches for 594 yards (21.2 per catch) and seven touchdowns on a team that went to the Playoff. Curt Cignetti spent that offseason publicly asking for more consistency from him.",
+      "He delivered it in 2025 as the No. 1 receiver on the best team in the country. Cooper caught 69 balls for 937 yards and 13 touchdowns across 16 games, all 16 as a starter, earning second-team All-Big Ten as Indiana won the Big Ten and the program's first national championship with Fernando Mendoza throwing. In Week 3 he tied Indiana's single-game program record with 10 catches for 207 yards and four touchdowns against Indiana State.",
+      "The signature moment came at Beaver Stadium on November 8, when he caught a toe-tap touchdown from Mendoza in the final seconds to complete a comeback and give Indiana its first-ever win at Penn State. The underlying profile is why NFL rooms liked him more than his 13.5 yards per catch suggests: 27 forced missed tackles in 2025, fourth-most among FBS receivers, forcing a missed tackle on 39% of his receptions — the best rate of any receiver in the draft class. He declared on January 26, 2026."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Indiana", "line": "4 G, redshirt, 0 rec"},
+      {"season": "2023", "team": "Indiana", "line": "9 G, 18 rec, 267 yds, 14.8 avg, 2 TD"},
+      {"season": "2024", "team": "Indiana", "line": "13 G, 28 rec, 594 yds, 21.2 avg, 7 TD, 2 car, 23 yds, 1 TD"},
+      {"season": "2025", "team": "Indiana", "line": "16 G, 69 rec, 937 yds, 13.5 avg, 13 TD, 3 car, 74 yds, 1 TD"}
+    ],
+    "draftDayStory": [
+      "New York had already spent two first-rounders — edge David Bailey at No. 2 and tight end Kenyon Sadiq at No. 16 — when Darren Mougey sent picks No. 33 and No. 179 to San Francisco to climb back into Round 1 and take Cooper at No. 30. It was the second time since 2022 the Jets made three first-round selections. The cost was modest (a mid-second and a fifth-and-change), and the motive was straightforward: Aaron Glenn said afterward, 'when you have targets, you identify guys you like, you love, you go get them.' Reporting on file matches KTC's Round 1, Pick 30 exactly.",
+      "The fit was the sell. Cooper joined a revamped passing game under new offensive coordinator Frank Reich with Geno Smith acquired from the Raiders, Garrett Wilson entrenched as the alpha and Adonai Mitchell in his third year. On paper Cooper was the third starter and the offense's designed yards-after-catch element. In practice the Jets have made him earn every rep, which is exactly what they did with Mason Taylor a year earlier."
+    ],
+    "whyTheyDraftedHim": [
+      "Yards after catch as a scheme trait: Cooper's 39% forced-missed-tackle rate on receptions led the class, and Reich's offense wants a receiver who turns 6-yard throws into 15-yard gains.",
+      "Aggressive targeting: the Jets burned picks 33 and 179 to move up nine spots, a bet on a specific player rather than a positional queue — 'If we love the player, let's go get him,' Glenn said of the front office's process.",
+      "Toughness and contested-catch resume from the biggest games available: 13 touchdowns on a national championship team with a No. 1 overall pick throwing him the ball.",
+      "Slot-and-outside flexibility. Rich Cimini praised his route running and physicality in the spring, and the staff has already moved him outside in preseason when Isaiah Williams handles the slot.",
+      "Cultural fit with Glenn's 'nothing is given' program: 'The expectation is for all those guys to have a role, but they have to decide that themselves,' Glenn said in July."
+    ],
+    "campNotes": [
+      {"date": "Jul 30", "source": "New York Jets (newyorkjets.com)", "note": "Cooper described the NFL learning curve — 'holes closing a lot faster' — and said he was still building timing with Geno Smith. Glenn simultaneously warned the rookie class that roles were unearned."},
+      {"date": "Aug 10", "source": "Randy Lange, newyorkjets.com (first unofficial depth chart)", "note": "No rookie was listed with the first team on either side of the ball. Cooper was slotted behind Garrett Wilson on a chart that only accounted for two wideouts, obscuring where he actually stood in 11 personnel."},
+      {"date": "Aug 14", "source": "Rich Cimini, ESPN / SNY reporting", "note": "Cooper was losing first-team slot reps to Isaiah Williams — the Jets' 2025 team MVP and return specialist — and was working primarily with the second-team offense in the final week before the preseason opener."},
+      {"date": "Aug 14", "source": "Jets-Buccaneers preseason opener", "note": "Williams started in the slot in 11 personnel; Cooper did not enter until the backups came in on the second drive and played into the sixth drive. He caught 2 of 3 targets for 31 yards, including a 26-yard catch-and-run that was the longest play by any Jet in the game."},
+      {"date": "Aug 21", "source": "Rotoworld / PFF (Nathan Jahnke), Jets-Steelers", "note": "Reversal: Cooper out-snapped Williams 6-1 on the opening drive and rotated back in on the third, lining up outside while Williams played the slot. He caught his only target for nine yards, and beat writers read it as him reclaiming the WR3 job."},
+      {"date": "Aug 19", "source": "Jets On SI", "note": "Beat consensus on the summer: Cooper 'has not been bad' — he has caught everything thrown to him and is learning the playbook at a respectable rate — but development at the position is not linear and the Jets have not forced him into the starting lineup."}
+    ],
+    "beatQuotes": [
+      {"quote": "First-round wide receiver Omar Cooper Jr. got into the open field for a 26-yard reception while playing with the backups. He was leapfrogged on the depth chart by Isaiah Williams.", "attribution": "Rich Cimini, ESPN, Aug 15"},
+      {"quote": "Everybody is smarter. I feel like a lot of people say speed and size, but I feel like at the end of the day, it's just football. But once you get to this level, you have players like Demario Davis, who's been in it for 15 years, and so he's calling out the plays. ... holes closing a lot faster, so just getting adjusted to that.", "attribution": "Omar Cooper Jr., newyorkjets.com, Jul 30"},
+      {"quote": "Well, the expectation is for all those guys to have a role, but they have to decide that themselves. ... We're out there trying to compete, and no one's given anything.", "attribution": "Aaron Glenn, head coach, newyorkjets.com, Jul 30"},
+      {"quote": "I think it's something that I've talked about before is, when you have targets, you identify guys you like, you love, you go get them.", "attribution": "Aaron Glenn, head coach, newyorkjets.com, Apr 29"}
+    ],
+    "depthChart": "WR3 again, narrowly, after a two-week detour to WR4. Garrett Wilson and Adonai Mitchell are locked in as the top two; Isaiah Williams surged past Cooper for the first-team slot job in early August and started the preseason opener there, but Cooper out-snapped Williams 6-1 on the opening drive against Pittsburgh on Aug 21 while working outside. He is a lock for the roster and figures to open the season in a rotational three-receiver role with Kenyon Sadiq and Mason Taylor also demanding targets.",
+    "whyHeCouldSucceed": [
+      "Real first-round capital plus a trade-up cost: the Jets gave up picks 33 and 179 to get him, and organizations find snaps for players they paid a premium to acquire, particularly once the games count.",
+      "The class's best after-catch profile — 27 forced missed tackles and a 39% forced-missed-tackle rate on receptions in 2025 — is the trait that turns a low-aDOT rotational role into PPR-relevant volume in Frank Reich's offense.",
+      "Target competition is thinner than it looks: behind Garrett Wilson, Adonai Mitchell has never produced a 700-yard season and Isaiah Williams is a career special-teamer, so one injury or one slow month opens the No. 2 job.",
+      "He was the alpha on a national championship offense with 13 touchdowns and a program-record 207-yard game, so the production is proven at the highest level of college football against Playoff defenses.",
+      "The Aug 21 snap reversal shows the staff is actively working him outside as well as in the slot, which broadens the paths to playing time rather than tying him to one job."
+    ],
+    "whyHeCouldFail": [
+      "He lost first-team reps to a return specialist in his first camp. Being leapfrogged by Isaiah Williams in August is a genuine signal about how quickly he is absorbing the playbook and reading NFL coverage.",
+      "Quarterback risk: Geno Smith is on a one-year deal, was managing a sore ankle in August, and the Jets are widely expected to spend 2027 first-round capital on a passer, which means Cooper's target quality could crater next year.",
+      "The room is crowded in the wrong way. Wilson is a true alpha, Mitchell had a dominant offseason, and first-round tight end Kenyon Sadiq plus Mason Taylor mean the Jets may run two-tight-end sets that squeeze the third receiver off the field.",
+      "His athletic profile is good rather than special — 6-0, 199, 4.42 — and he wins with physicality and contact balance, which is the hardest skill set to showcase in practice and therefore the slowest to earn trust.",
+      "Rotoworld noted the last non-quarterback first-round rookie to play as deep into a preseason opener as Cooper did was Treylon Burks in 2022, a comparison nobody wants."
+    ],
+    "fantasyOutlook": [
+      "For 2026, project a rotational WR3 line: roughly 45-60 catches for 550-700 yards and four to six touchdowns if he holds the third job all year, with real upside if Mitchell disappoints or Wilson misses time. He is a bench flier in redraft rather than a startable piece, and his weekly floor is capped by Geno Smith's aging arm and a target tree that runs through Wilson, Sadiq and Taylor before him.",
+      "Dynasty is a different question. FantasyPros has him seventh among rookies while KTC has him 12th at 3348 — that gap is the August depth-chart noise, and it is a buying opportunity rather than a warning. A 22.7-year-old first-round receiver with the best forced-missed-tackle profile in the class is a top-eight asset in this class regardless of who starts Week 1. Pay up to the middle of the first round in a superflex .5 PPR rookie draft; if a leaguemate reads the Isaiah Williams headlines and lets him slip to the back half of Round 1, that is a steal."
+    ],
+    "comp": "A stockier Rashid Shaheed-meets-Rome Odunze hybrid in usage terms, but the truest comp is Jaylen Waddle: a sub-6-foot, sub-200-pound receiver who wins with contact balance and yards after catch rather than size.",
+    "bottomLine": "Ignore the August depth-chart panic — buy the first-round capital and the class-best after-catch profile in the middle of the first round, and be patient through a rotational rookie year.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Omar_Cooper_Jr.",
+      "https://apnews.com/article/indiana-hoosiers-nfl-draft-omar-cooper-432d1c5e1f6c48febdcc52c195e6b6c1",
+      "https://www.newyorkjets.com/news/2026-jets-unofficial-depth-chart",
+      "https://www.newyorkjets.com/news/omar-cooper-jr-jets-stepping-up-to-nfl-challenges-training-camp-07-30-2026",
+      "https://www.newyorkjets.com/news/notebook-jets-darren-mougey-draft-process-04-29-2026",
+      "https://jetsxfactor.com/2026/08/17/should-ny-jets-fans-be-worried-about-omar-cooper-jr/",
+      "https://www.sportingnews.com/us/nfl/new-york-jets/news/omar-cooper-jr-preseason-reveals-concerning-depth-chart/d0a26679fa69ccc545a5ee68",
+      "https://www.nbcsports.com/fantasy/football/player-news/2026-08-21/cooper-plays-early-later-rotates-with-williams",
+      "https://www.si.com/nfl/jets/onsi/what-the-recent-omar-cooper-jr-worries-really-mean-for-his-rookie-season-01m0b80wf86q",
+      "https://www.newyorkjets.com/news/jets-quarterback-picture-geno-smith-aaron-glenn-darren-mougey"
+    ]
+  },
+  "1042": {
+    "id": 1042,
+    "name": "Jonah Coleman",
+    "position": "RB",
+    "nflTeam": "DEN",
+    "nflTeamName": "Denver Broncos",
+    "college": "Washington",
+    "hometown": "Stockton, California",
+    "classYear": "Senior",
+    "headline": "Sean Payton Drafted A J.K. Dobbins Clone, And He Already Blocks Like A Pro",
+    "subhead": "The fourth-round Stockton bruiser was the best pass protector in his class, and three weeks of camp convinced Denver's coach he did not need to see any more.",
+    "draftPick": "Round 4, Pick 8 (No. 108 overall), Denver Broncos",
+    "measurables": {
+      "height": "5'8 1/8\"",
+      "weight": "220 lbs",
+      "age": "23.0",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": "22 reps",
+      "armLength": "28 7/8\"",
+      "combineNote": "Coleman did the interviews and the bench (22 reps) in Indianapolis but declined all on-field testing at the combine, and then skipped the drills at Washington's pro day as well, choosing to finish rehabbing the ankle he hurt against Wisconsin. That means no verified 40, jumps or agility numbers exist; draft analysts flagged the decision as a red flag and pegged his top-end speed as adequate rather than explosive. He also measures shorter and lighter than the 5-9, 228 on some boards: 5-8 1/8 and 220."
+    },
+    "collegeCareer": [
+      "Coleman's story starts in Stockton, where he ran for 3,319 yards and 58 touchdowns at Lincoln High while navigating a childhood his father, a former Bloods member, and his mother, who was jailed for welfare fraud while pregnant with him, have both spoken about publicly. He signed with Arizona and was productive immediately: 372 yards on 75 carries as a true freshman in 2022, then 871 yards at 6.8 per carry with 25 catches for 283 yards in 2023.",
+      "When Jedd Fisch left Arizona for Washington, Coleman followed. He inherited the lead job in Seattle in 2024 and handled it: 193 carries for 1,053 yards and 10 touchdowns plus 23 receptions, earning third-team All-Big Ten. The workload was heavier than the staff wanted because Cam Davis kept getting hurt and Adam Mohammed was a true freshman.",
+      "The 2025 season was the strangest of his career and the most instructive. Through eight games Coleman averaged 80.4 yards on 5.1 per carry with 13 touchdowns and 316 receiving yards — first-team All-Big Ten pace. Then his left knee started bothering him and Washington played him sparingly the rest of the way; he finished with 156 carries for 758 yards and 15 touchdowns plus 31 catches for 354 yards, nearly 1,500 all-purpose yards in 12 games. He came back healthy for the bowl game with 85 yards and a score on 12 carries, which mattered to scouts. His durability, not his talent, was the pre-draft question."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Arizona", "line": "12 G, 75 car, 372 rush yds, 5.0 ypc, 4 TD, 8 rec, 24 rec yds"},
+      {"season": "2023", "team": "Arizona", "line": "13 G, 128 car, 871 rush yds, 6.8 ypc, 5 TD, 25 rec, 283 rec yds, 1 TD"},
+      {"season": "2024", "team": "Washington", "line": "13 G, 193 car, 1,053 rush yds, 5.5 ypc, 10 TD, 23 rec, 177 rec yds"},
+      {"season": "2025", "team": "Washington", "line": "12 G, 156 car, 758 rush yds, 4.9 ypc, 15 TD, 31 rec, 354 rec yds, 2 TD"}
+    ],
+    "draftDayStory": [
+      "Denver took Coleman with the 108th overall pick — the eighth selection of Round 4 — using a pick acquired from New Orleans in the Devaughn Vele trade. Sean Payton said the Broncos had graded Coleman and one other back 'early in the third, end of the second' and had discussed trading up to make sure they got him: 'That's that tough scenario, will they make it to 108? It helped they were both available because we had discussed even climbing back.' The KTC capital on file (Round 4, Pick 8) matches the No. 108 selection exactly.",
+      "The fit was engineered. Denver's rushing offense collapsed after J.K. Dobbins tore up his season in Week 10 of 2025 — from ninth to 23rd in rushing yards per game, from fourth to 31st in yards over expected — and Payton left the AFC Championship loss to New England determined to fix the depth behind him. So the Broncos re-signed Dobbins and then drafted the back whose tape most resembled him. Coleman signed his four-year rookie deal on May 20."
+    ],
+    "whyTheyDraftedHim": [
+      "Pass protection, which is almost unheard of as a rookie strength: Denver's staff concluded Coleman was the most proficient protector in the entire running back class. 'That was a strong suit when you were looking at his tape, different than the rest of the class,' Payton said.",
+      "A direct stylistic match for the incumbent: 'I saw something that compared his running style, and I think the comparison was J.K. [Dobbins], and I think that's a compliment obviously,' Payton said the night of the pick.",
+      "Third-down readiness without projection — 87 career catches, 838 receiving yards and a frame Payton described as built to handle blitz pickups mean he can stay on the field on every down.",
+      "Contact profile over measurables: Payton pointed to 'the four-box production, yards after contact, average 10-yard runs' rather than testing numbers, which is convenient given Coleman never tested.",
+      "Insurance policy after 2025: Dobbins' injury torched Denver's run game, and the front office explicitly wanted a back with the same skill set on the roster."
+    ],
+    "campNotes": [
+      {"date": "Jul 30", "source": "Broncos Wire (USA Today)", "note": "Denver entered camp with Dobbins, Jaleel McLaughlin and Tyler Badie re-signed plus 2025 second-rounder RJ Harvey, projecting Coleman into a crowded room where the third job was the realistic ceiling."},
+      {"date": "Aug 14", "source": "Broncos Wire / team unofficial depth chart", "note": "Coleman was listed last among running backs, but beat writers noted Payton always buries rookies on the paper chart and that 'in reality, Coleman is likely the third-choice RB in 2026.'"},
+      {"date": "Aug 14", "source": "Rotoworld / Broncos On SI, at Falcons", "note": "Preseason debut: four carries for 24 yards (6.0 per carry) with a 13-yard run, entering on the second drive in relief of RJ Harvey with Dobbins inactive. He picked up two first downs through contact and drew a target out of the backfield that a penalty erased. His pass protection still needed refinement."},
+      {"date": "Aug 15", "source": "Sean Payton, via Broncos beat writers", "note": "Payton said he pulled Coleman early from the Falcons game because he 'didn't need additional evidence of what I've been seeing for three weeks' — the clearest signal yet that Coleman has a real role locked up."},
+      {"date": "Aug 17", "source": "Denver Gazette", "note": "Coleman is battling second-year man RJ Harvey for the work behind Dobbins, and Payton — who has historically resisted three-back rotations — may make an exception. 'Good balance, a real good elusive runner for his size,' Payton said."},
+      {"date": "Aug 21", "source": "Rotoworld, at Packers", "note": "Three carries for nine yards in the second preseason game, again entering on Denver's second drive. Analysts highlighted his physicality and a spin move used to shed defenders, calling him a must-stash in 12-team leagues."}
+    ],
+    "beatQuotes": [
+      {"quote": "(Coleman has) good balance, a real good elusive runner for his size. You don't feel a young player just at practice.", "attribution": "Sean Payton, head coach, Denver Gazette, Aug 17"},
+      {"quote": "You saw it in [the] college tape. ... Most of the time when you're drafting or signing a college running back, there's going to be a learning curve with protections. ... That was a strong suit when you were looking at his tape, different than the rest of the class.", "attribution": "Sean Payton, head coach, via ESPN, May 19"},
+      {"quote": "I saw something that compared his running style, and I think the comparison was J.K. [Dobbins], and I think that's a compliment obviously to the way Dobbins runs. He's a physical runner. So we were real familiar with him.", "attribution": "Sean Payton, head coach, via Mile High Report, Apr 25"},
+      {"quote": "He's very physical. He can play on third down. Normally you have to project that. ... his frame is such when you see him, that he does a really good job in blocking pressure looks. He's smart, he's tough. There was a lot to like with him.", "attribution": "Sean Payton, head coach, via Mile High Report, Apr 25"}
+    ],
+    "depthChart": "RB3 on paper, RB2-by-committee in practice. J.K. Dobbins is the clear lead back and RJ Harvey, Denver's 2025 second-rounder, has held the change-of-pace and pass-catching role, but Coleman has entered both preseason games on the second drive ahead of Jaleel McLaughlin, Tyler Badie and Cody Schrader. The Denver Gazette frames it as Coleman vs. Harvey for the work behind Dobbins, with Payton weighing whether to run an unusual three-man rotation.",
+    "whyHeCouldSucceed": [
+      "He is already the best pass protector in the room, which is the single fastest way for a rookie back to steal third-down snaps — Denver's staff said his protection tape was 'different than the rest of the class,' no projection required.",
+      "The lead back is a bet against himself: Dobbins is 27 and lost his 2025 season to injury in Week 10, and Denver's rush offense fell from ninth to 23rd without him. Coleman was drafted specifically as the same-style replacement.",
+      "Payton's actions outrun his words. He pulled Coleman from the preseason opener because he had seen enough in three weeks, then floated the possibility of a three-back rotation he normally avoids — that is a coach protecting a player he intends to use.",
+      "Three-down skill set with real receiving volume in college (87 catches, 838 yards) means PPR-friendly usage even in a split, and 25 rushing touchdowns over two Washington seasons show he gets the goal-line work.",
+      "Denver's offense scores. The Broncos reached the 2025 AFC Championship Game and held the ball more than 36 minutes in the preseason opener while running for 162 yards — a good environment to inherit touches in."
+    ],
+    "whyHeCouldFail": [
+      "Three backs, one ball. Dobbins is the starter, RJ Harvey is a 2025 second-round pick with the pass-catching role, and McLaughlin, Badie and Schrader all took preseason carries — Payton has said publicly it is hard to use three backs with regularity.",
+      "The medical file is the real risk: an ankle injury against Wisconsin that ended his 2025 testing plans, a left knee problem that cut his final college season in half, and foot/knee issues in both Washington years.",
+      "He refused to test. No 40, no jumps, no agility numbers at either the combine or Washington's pro day, and evaluators openly called that 'questionable' while grading his top-end speed and lateral agility as average.",
+      "The athletic ceiling is capped at 5-8 1/8 and 220 pounds without proven long speed — he averaged 4.9 per carry in 2025 and is unlikely to break the 60-yard runs that create fantasy spike weeks.",
+      "Fourth-round capital does not buy patience. If Harvey wins the rotation outright in September, Coleman's rookie-year touch count could sit in the 60-90 range with negligible fantasy impact."
+    ],
+    "fantasyOutlook": [
+      "The realistic 2026 projection is 90-130 carries, 20-30 catches and 500-700 total yards with three to six touchdowns as the third man in a rotation that could shrink to two at any moment. That is a flex-adjacent bench stash in .5 PPR — but the contingency value is enormous: if Dobbins misses time again, Coleman is the back on this roster whose profile Payton explicitly drafted to replicate Dobbins, and he would immediately be a weekly starter in Denver's offense.",
+      "In dynasty superflex, treat him as the best value in the 3200-range of the market. KTC's 3283 (rookie rank 13) prices him as a fourth-round rookie back, but FantasyPros' rank of 12 is closer to the truth given his standing on the depth chart, his blocking floor and his receiving usage. Buy him anywhere in the back half of the first round or early second in a rookie draft; he is the kind of rookie whose value doubles on one veteran injury and rarely goes to zero because pass protection keeps him employed."
+    ],
+    "comp": "J.K. Dobbins, by Sean Payton's own hand — a compact, physical, contact-balance runner who plays on third down — with a floor closer to Rico Dowdle if the speed limits ever get exposed.",
+    "bottomLine": "Denver's coach drafted him as Dobbins insurance and has already stopped needing to evaluate him; take him late in Round 1 of your rookie draft and pray for a Dobbins hamstring.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jonah_Coleman",
+      "https://www.espn.co.uk/nfl/story/_/id/48779301/jonah-coleman-denver-broncos-fourth-round-running-back-pass-protection-impact",
+      "https://www.milehighreport.com/denver-broncos-draft/176736/everything-to-know-denver-broncos-jonah-coleman",
+      "https://www.denverbroncos.com/news/broncos-select-rb-jonah-coleman-with-108th-overall-pick-in-2026-nfl-draft",
+      "https://www.denvergazette.com/2026/08/17/broncos-rookies-jonah-coleman-red-murdock-make-early-preseason-impact/",
+      "https://www.nbcsports.com/fantasy/football/player-news/2026-08-14/jonah-coleman-enters-on-second-drive-plays-well",
+      "https://www.si.com/nfl/broncos/onsi/sean-payton-jonah-coleman-preseason-falcons-performance",
+      "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/08/21/denver-broncos-depth-chart-game-vs-green-bay-packers/91394032007/",
+      "https://247sports.com/college/washington/article/washington-huskies-uw-football-running-back-jonah-coleman-pro-day-interview-quaid-carr-chris-lawson--278266741/",
+      "https://www.uwdawgpound.com/washington-football/74557/2026-nfl-draft-profile-jonah-coleman"
+    ]
+  },
+  "1011": {
+    "id": 1011,
+    "name": "Eli Stowers",
+    "position": "TE",
+    "nflTeam": "PHI",
+    "nflTeamName": "Philadelphia Eagles",
+    "college": "Vanderbilt",
+    "hometown": "Denton, Texas",
+    "classYear": "Redshirt Senior",
+    "headline": "The Mackey Winner Is Having The Worst August Of Anyone In This Class",
+    "subhead": "A converted quarterback who won college football's best-tight-end award is buried behind a blocking specialist in Philadelphia, and now he is hurt.",
+    "draftPick": "Round 2, Pick 22 (No. 54 overall), Philadelphia Eagles",
+    "measurables": {
+      "height": "6'3 3/4\"",
+      "weight": "239 lbs",
+      "age": "23.4",
+      "forty": "4.51",
+      "tenSplit": "1.59",
+      "vertical": "45 1/2\"",
+      "broad": "11'3\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "32 5/8\"",
+      "combineNote": "One of the best athletic testing days any tight end has had: 4.51 in the 40 with a 1.59 ten-yard split, a 45 1/2-inch vertical and an 11-foot-3 broad jump at 6-3 3/4 and 239 pounds, with 32 5/8-inch arms and a 6-7 3/4 wingspan. That workout is why he went 54th despite three years at the position; the concern was never the athlete, it was the blocking and the technique."
+    },
+    "collegeCareer": [
+      "Stowers was a four-star quarterback out of Denton Guyer — 2,969 passing yards and 36 touchdowns plus 1,166 rushing yards as a junior — who signed with Texas A&M and never played. He appeared in five games as a backup across 2021 and 2022 without recording a statistic, then transferred to New Mexico State in 2023, where the staff put him at both quarterback and tight end. That year he caught 35 balls for 366 yards while running for 108 and throwing a touchdown, the first real evidence that the conversion would take.",
+      "Vanderbilt is where it clicked. In 2024 he caught 49 passes for 638 yards and five touchdowns in Clark Lea's offense and made first-team All-SEC. In 2025 he went for 62 catches, 769 yards and four scores in 12 games, was named a unanimous All-American, and won both the John Mackey Award as the nation's best tight end and the William V. Campbell Trophy for academic and athletic excellence. Only three years earlier he had never played the position.",
+      "He skipped Vanderbilt's ReliaQuest Bowl on December 31 to prepare for the draft. Dane Brugler ranked him 63rd overall and summarized the profile precisely: an above-average athlete who wins quickly on slants, digs and seams with reliable hands and fluid adjustment, but who has 'questionable physicality and sustain strength' as a blocker and was never asked to do much of it in Vanderbilt's scheme."
+    ],
+    "collegeStats": [
+      {"season": "2021", "team": "Texas A&M", "line": "3 G, QB, no statistics recorded"},
+      {"season": "2022", "team": "Texas A&M", "line": "2 G, QB, no statistics recorded"},
+      {"season": "2023", "team": "New Mexico State", "line": "15 G, 35 rec, 366 yds, 10.5 avg, 2 TD, 28 car, 108 rush yds, 2 TD, 1 pass TD"},
+      {"season": "2024", "team": "Vanderbilt", "line": "13 G, 49 rec, 638 yds, 13.0 avg, 5 TD"},
+      {"season": "2025", "team": "Vanderbilt", "line": "12 G, 62 rec, 769 yds, 12.4 avg, 4 TD — Mackey Award, unanimous All-American"}
+    ],
+    "draftDayStory": [
+      "Philadelphia doubled down on skill on Day 2, taking Stowers at No. 54 the night after drafting USC receiver Makai Lemon at No. 21. He was the second tight end off the board, behind only Oregon's Kenyon Sadiq at No. 16, and just the fifth tight end Howie Roseman has ever drafted — the third he has taken in the second round, after Zach Ertz (2013) and Dallas Goedert (2018), both hits. It is also the third-highest the Eagles have selected a tight end since Keith Jackson in 1988.",
+      "The pick was explicitly a bet on development rather than 2026 production. Roseman leaned on 'unique skill sets' and organizational confidence in developing high-IQ, high-character players, and Nick Sirianni made the mismatch case: 'Athletically, he does some things that nobody else can do.' The KTC capital on file (Round 2, Pick 22) matches No. 54 overall exactly. Goedert remains the starter, which was always going to make Stowers a slow-burn asset."
+    ],
+    "whyTheyDraftedHim": [
+      "Mismatch creation on third down: 'Just to be able to create mismatches with him on third downs and first and second down situations, he is a tough cover,' Sirianni said. '[He] catches everything, good after the catch, [has] speed, quickness.'",
+      "The Roseman archetype — 'when you find guys that have unique skill sets, and we have a lot of confidence in our coaches and our staff to develop players, especially when they have high football IQ and high character.'",
+      "Quarterback brain in a tight end's body: Sirianni pointed to a former QB's feel for zone coverage — 'a really good feel for the zone of where to sit in zones and how to get open versus different types of zone coverage.'",
+      "Explicit upside play on a short position résumé: 'I think it's exciting that he's only played the position for a short time,' Sirianni said. 'He has a lot of room to improve as well.'",
+      "Succession planning behind Dallas Goedert, whose contract situation makes the tight end room a medium-term need rather than an immediate one."
+    ],
+    "campNotes": [
+      {"date": "Aug 3", "source": "Nick Sirianni, via The Philadelphia Inquirer", "note": "Sirianni defended the rookie's quiet start by praising his zone feel and third-down quickness, notably without mentioning his blocking."},
+      {"date": "Aug 5", "source": "The Philadelphia Inquirer", "note": "Six days into camp Stowers had not stood out in any media-open practice and acknowledged the 'mental challenge' of NFL scheme complexity — a troubling early sign for a player some had cast as Goedert's heir."},
+      {"date": "Aug 14", "source": "Eagles Wire (USA Today)", "note": "Stowers was listed third on the first unofficial depth chart behind Dallas Goedert and blocking specialist Johnny Mundt, with the preseason opener framed as his chance to prove he can engage NFL edge defenders and sustain blocks."},
+      {"date": "Aug 20", "source": "Yahoo Sports, Eagles-Patriots joint practices", "note": "Stowers caught his first reported touchdown of camp in Thursday's joint practice against New England, then stayed on the field afterward for extra JUGS work alongside Makai Lemon and additional blocking work."},
+      {"date": "Aug 21", "source": "NJ Advance Media (nj.com), Foxborough", "note": "Clips of Stowers losing one-on-one reps to Patriots safeties went viral; he was redirected off his route by DB Mike Brown on an end-zone incompletion, and public criticism turned harsh — 'a DISASTER for the Philadelphia Eagles' was one widely shared post."},
+      {"date": "Aug 22", "source": "Eagles-Patriots preseason", "note": "No catches on two targets against New England."},
+      {"date": "Aug 24", "source": "lehighvalleylive.com", "note": "Stowers did not practice Monday with a hamstring injury per the Eagles' availability report, capping a camp the outlet described as going 'from bad to worse.' He has not worked extensively with the first-team offense."}
+    ],
+    "beatQuotes": [
+      {"quote": "Biggest adjustment, I'd say, is probably the mental challenge. I think that the offense and the way that the defenses do their schemes at this level, it's a little more complex than it was in college. And so I think it's a mental challenge, but that's just about putting the time in and learning it and trying to get better with it.", "attribution": "Eli Stowers, via The Philadelphia Inquirer, Aug 5"},
+      {"quote": "I think Eli has a really good feel for the zone of where to sit in zones and how to get open versus different types of zone coverage. We know that his athletic ability will [help him] shake free on third down when it is man coverage because he's quick, he's fast, he's explosive.", "attribution": "Nick Sirianni, head coach, via The Philadelphia Inquirer, Aug 3"},
+      {"quote": "At the end of the day, this is a game where there's gonna be ups and downs. And you just have to learn how to bounce back from adversity. No one who has ever played this game has ever been perfect.", "attribution": "Eli Stowers, via NBC10 Philadelphia, Aug 5"},
+      {"quote": "The guy is super talented. Athletically, he does some things that nobody else can do. ... He is a tough cover. [He] catches everything, good after the catch, [has] speed, quickness.", "attribution": "Nick Sirianni, head coach, PhiladelphiaEagles.com, Apr 24"}
+    ],
+    "depthChart": "TE3 and trending the wrong way. Dallas Goedert is the starter and veteran blocking specialist Johnny Mundt has held the TE2 job all summer; lehighvalleylive.com's late-August read was blunt — 'right now, Stowers is looking like a non-factor for the 2026 season.' He is still separating himself from Grant Calcaterra, Cameron Latu, E.J. Jenkins and Stone Smartt rather than pushing Mundt, and the Aug 24 hamstring injury costs him practice time he badly needs.",
+    "whyHeCouldSucceed": [
+      "The athletic profile is genuinely rare: 4.51 with a 45 1/2-inch vertical and an 11-3 broad at 239 pounds. Sirianni's 'does some things nobody else can do' is not coach-speak, and that separation ability eventually forces its way onto third downs.",
+      "Second-round capital from the one executive whose tight end hit rate demands respect — Roseman's previous second-round tight ends were Zach Ertz and Dallas Goedert, both long-term starters.",
+      "The role is coming: Goedert is on the back end of his Eagles tenure, and once he moves on the pass-catching tight end job in one of the NFL's best offenses belongs to whoever the staff has developed.",
+      "Production at the position is proven even if the experience is short — 111 catches, 1,407 yards and nine touchdowns across two SEC seasons, capped by a Mackey Award and unanimous All-American honors.",
+      "He is putting in the invisible work beat writers notice: extra JUGS reps and dedicated post-practice blocking sessions after the joint practices, which is how converted athletes close technique gaps."
+    ],
+    "whyHeCouldFail": [
+      "He cannot block yet, and that is the specific thing keeping him off the field. Brugler flagged 'questionable physicality and sustain strength' pre-draft, and Philadelphia's staff wants him dependable in the run game before it plays him on early downs.",
+      "The camp evidence is uniformly bad: no highlight plays in open practices, losses in one-on-ones against Patriots safeties, zero catches on two targets in the second preseason game, and almost no first-team work.",
+      "A hamstring injury on Aug 24 costs him the reps he needed most in the final week before roster cutdowns, and soft-tissue injuries in a first camp often linger into September.",
+      "Blocked by a role player, which is worse than being blocked by a star: Johnny Mundt is a blocking specialist, and the Eagles clearly prefer a functional TE2 to a talented one right now.",
+      "He turns 23.4 in a class of younger receivers, has played tight end for only three seasons, and Philadelphia's target hierarchy — A.J. Brown, DeVonta Smith, Makai Lemon, Saquon Barkley, Goedert — leaves nothing for a fourth or fifth option even if he does develop."
+    ],
+    "fantasyOutlook": [
+      "For 2026 project close to nothing: 10-20 catches for 120-220 yards and a touchdown or two as the third tight end in a run-heavy offense with three better pass-catchers ahead of him. He is not a redraft asset in any format, and the hamstring makes even a September special-teams-and-12-personnel role uncertain.",
+      "Dynasty is where he stays interesting, but the price should have moved. KTC has him 14th at 3226 and FantasyPros 11th, both of which look like May prices for a player who has had a publicly disastrous August. The bull case is real — freak athlete, Mackey winner, Roseman second-round tight end, Goedert's job opening within a year or two — but the timeline is now 2027 at the earliest. If a manager in your league is still paying an early-second-round rookie pick for him, sell. If he slides into the late second because of the camp noise, that is a defensible upside swing at a position where breakouts routinely come in year three."
+    ],
+    "comp": "A poor man's Evan Engram — a converted skill athlete used as a matchup weapon rather than an in-line tight end — with the Mackey-winning college résumé of Brock Bowers and none of the immediate NFL readiness.",
+    "bottomLine": "Do not pay first-round rookie value for a tight end who cannot block, cannot get on the field and is now hurt; he is a 2027 project you buy at a discount, not a 2026 contributor.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Eli_Stowers",
+      "https://www.philadelphiaeagles.com/news/eagles-eli-stowers-vanderbilt-nfl-draft-2026",
+      "https://www.nbcphiladelphia.com/news/sports/nfl/philadelphia-eagles/eagles-draft-vanderbilt-te-eli-stowers-in-2nd-round/4391644/",
+      "https://www.inquirer.com/eagles/2026-training-camp-eli-stowers-early-struggles-20260805.html",
+      "https://www.nbcphiladelphia.com/news/sports/nfl/philadelphia-eagles/eli-stowers-rookie-training-camp-struggles/4444112/",
+      "https://theeagleswire.usatoday.com/story/sports/nfl/eagles/2026/08/14/eagles-eli-stowers-ravens-preseason-opener-blocking-development/91228224007/",
+      "https://sports.yahoo.com/articles/eli-stowers-putting-extra-become-222721911.html",
+      "https://www.nj.com/eagles/2026/08/an-eagles-rookie-is-being-called-a-disaster-and-getting-roasted-is-it-time-to-worry.html",
+      "https://www.lehighvalleylive.com/philadelphia-eagles/2026/08/struggling-eagles-second-round-rookie-suffers-injury-setback.html",
+      "https://www.bleedinggreennation.com/philadelphia-eagles-draft/174620/howie-roseman-comments-jonathan-greenard-trade-eagles-day-2-picks"
+    ]
+  },
+  "1018": {
+    "id": 1018,
+    "name": "Ja'Kobi Lane",
+    "position": "WR",
+    "nflTeam": "BAL",
+    "nflTeamName": "Baltimore Ravens",
+    "college": "USC",
+    "hometown": "Mesa, Arizona",
+    "classYear": "Junior",
+    "headline": "The Steal Of Round Three Has Been The Best Story In Baltimore's Camp",
+    "subhead": "A 6-foot-4 one-handed-catch machine who got squeezed out of the first round by his own teammate is now beating the NFL's best secondary daily.",
+    "draftPick": "Round 3, Pick 16 (No. 80 overall), Baltimore Ravens",
+    "measurables": {
+      "height": "6'4 3/8\"",
+      "weight": "200 lbs",
+      "age": "22.0",
+      "forty": "4.47",
+      "tenSplit": "1.58",
+      "vertical": "40\"",
+      "broad": "10'9\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": "11 reps",
+      "armLength": "32 5/8\"",
+      "combineNote": "Lane tested like a first-rounder: 4.47 in the 40 at 6-4 3/8 and 200 pounds, a 1.58 ten-yard split, a 40-inch vertical and a 10-9 broad. The differentiator is the catch apparatus — 32 5/8-inch arms, a 6-8 3/4 wingspan and 10 1/2-inch hands, the biggest in the draft class per The Athletic's Zach Berman. Only 11 bench reps, and the play strength is still developing."
+    },
+    "collegeCareer": [
+      "Lane was the wide receiver MVP at the 2022 Elite 11 out of Red Mountain High in Mesa, where he was mentored by Todd Heap — a Ravens Ring of Honor member, which makes his landing spot the tidiest coincidence of the draft. He was raised by his mother, Megan, who ran a foster home in the Phoenix area. He played sparingly as a true freshman at USC in 2023: seven catches for 93 yards, with both of his touchdowns coming in the Holiday Bowl.",
+      "The 2024 breakout was loud. Lane caught 43 passes for 525 yards and 12 touchdowns — a touchdown rate that made him a red-zone problem nobody could solve — including a 10-catch, 105-yard, two-touchdown coming-out party against Wisconsin. At that point he was being discussed as USC's next great receiver and a potential first-round pick in 2026.",
+      "Then 2025 got complicated. Lane's efficiency improved (49 catches, 745 yards, 15.2 per catch across 11 games, third-team All-Big Ten) but his touchdowns collapsed from 12 to four, and teammate Makai Lemon exploded, won the Biletnikoff Award and vaulted into the first round. Lane was, in effect, market-corrected by his own roster. He declared on December 18, 2025 and fell to Day 2."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "USC", "line": "6 G, 7 rec, 93 yds, 13.3 avg, 2 TD"},
+      {"season": "2024", "team": "USC", "line": "13 G, 43 rec, 525 yds, 12.2 avg, 12 TD"},
+      {"season": "2025", "team": "USC", "line": "11 G, 49 rec, 745 yds, 15.2 avg, 4 TD"}
+    ],
+    "draftDayStory": [
+      "Baltimore took Lane 80th overall — the 16th pick of Round 3, exactly matching the draft capital on file — after he had been projected as a first-rounder entering the 2025 season. Eric DeCosta described him as 'a ball of clay with a lot of upside,' which is both a compliment on the traits and an admission that the technique needs work. Philadelphia had taken his USC teammate Makai Lemon at No. 21; when the two teams met in the preseason opener, Lemon watched from the sideline with a hamstring injury while Lane caught a touchdown.",
+      "The context matters as much as the pick. Baltimore lost tight ends Isaiah Likely and Charlie Kolar in free agency, has a first-time head coach in Jesse Minter who is also calling the defense, and handed the offense to 30-year-old coordinator Declan Doyle, who has never called a regular-season play and is expected to use 11 personnel far more than the Ravens ever have in the Lamar Jackson era. That is a lot of new snaps for a third receiver — and Lane walked into camp and took them."
+    ],
+    "whyTheyDraftedHim": [
+      "Traits over polish: DeCosta called him 'a ball of clay with a lot of upside,' a 22-year-old with a 6-8 3/4 wingspan, the class's biggest hands and 4.47 speed at 6-4.",
+      "Red-zone and contested-catch value — 12 touchdowns as a sophomore, plus the catch radius Baltimore has lacked outside of Zay Flowers' quickness and Rashod Bateman's route running.",
+      "Scheme need: Doyle's offense is projected to run far more three-receiver sets than Baltimore has historically, creating a real WR3 job rather than a theoretical one.",
+      "Character and vouching. Ravens staff cited an unusual number of former players who spoke up for him, and Todd Heap's mentorship in Mesa gave Baltimore a direct pipeline of information.",
+      "Value on the board: a player projected as a first-rounder a year earlier, available at No. 80 because his teammate Makai Lemon absorbed the touchdowns and the Biletnikoff Award."
+    ],
+    "campNotes": [
+      {"date": "Jul 29", "source": "BaltimoreRavens.com", "note": "Lane made a leaping catch down the middle from Lamar Jackson on Day 2 of camp and began a run of near-daily highlights, including multiple one-handed sideline grabs in subsequent practices."},
+      {"date": "Aug 14", "source": "Ravens On SI (first unofficial depth chart)", "note": "Lane and third-year pro Devontez Walker were both listed as second-stringers behind Zay Flowers and Rashod Bateman, but only Lane had been running regularly with the first-team offense from the start of camp — the paper chart understated him."},
+      {"date": "Aug 15", "source": "BaltimoreRavens.com game preview", "note": "The team's own preview called Lane 'the toast of training camp' and set the bar for his preseason debut: get open, make plays, avoid mistakes, prove he belongs in the receiver rotation as a rookie."},
+      {"date": "Aug 15", "source": "CBS Sports / Heavy, vs. Eagles", "note": "Preseason debut: three catches on three targets for 38 yards and a 16-yard touchdown from Joe Fagnano in the second quarter of a 24-7 win. ESPN's Jamison Hensley noted how he drove immediately for the end zone after the catch."},
+      {"date": "Aug 18", "source": "Ravens On SI (snap-count study)", "note": "A route-by-route breakdown of his debut had Lane outside for 17 snaps and in the slot for nine — deployment that pointed to a full-time perimeter role with inside flexibility from Week 1."},
+      {"date": "Aug 22", "source": "CBS Sports, at Vikings", "note": "One catch on two targets for nine yards in a 13-3 win, starting alongside Devontez Walker and LaJohntay Wester with Tyler Huntley at quarterback; Huntley missed him on a deep ball late in the first quarter."}
+    ],
+    "beatQuotes": [
+      {"quote": "He's made these plays in high school [and] in college. He's really just being himself. He's working hard [and] he's taking advantage of opportunities that come his way. He's a talented receiver, and he has some really good hands. I'm excited about how he's performing.", "attribution": "Keary Colbert, Ravens wide receivers coach, via Ravens On SI, Aug 14"},
+      {"quote": "A familiar sight of the summer for the Ravens — Ja'Kobi Lane in the end zone. What stands out here is how Lane immediately drives to the end zone after making the catch. It's a 16-yard TD for the impressive rookie third-round pick ... the star of training camp shines in the preseason opener.", "attribution": "Jamison Hensley, ESPN, Aug 15"},
+      {"quote": "Baltimore's Ja'Kobi Lane was the 'other' USC WR in the draft — the Eagles took Makai Lemon — but you could see intriguing traits: 6-foot-4, 200 pounds with a 40-inch vertical and biggest hands in draft. Caught 12 TDs as a sophomore. Has had a great camp with the Ravens.", "attribution": "Zach Berman, The Athletic, Aug 15"},
+      {"quote": "Special, man. It's a special player. His ceiling is so [high], that he is just going to continue to improve each and every day. And it's a lot of fun.", "attribution": "Joe Fagnano, Ravens quarterback, via Ravens On SI, Aug 2026"},
+      {"quote": "A ball of clay with a lot of upside.", "attribution": "Eric DeCosta, Ravens general manager, BaltimoreRavens.com, Apr 24"}
+    ],
+    "depthChart": "Functionally the WR3 already, with a path to more. Zay Flowers and Rashod Bateman are the listed starters and Lane opened camp as a second-stringer on paper, but he has taken first-team reps throughout and beaten a secondary many consider the league's best on a near-daily basis. CBS Sports notes he could climb to WR2 behind Flowers, in part because Bateman is facing charges stemming from a June domestic incident. His debut deployment — 17 snaps outside, nine in the slot — reads like a Week 1 starter's usage.",
+    "whyHeCouldSucceed": [
+      "He is the outright winner of a real competition: the Ravens' own site called him 'the toast of training camp,' and he has been running with the first team since the first week while a third-year veteran sat behind him on paper.",
+      "The traits are the kind that scale to the NFL immediately — 6-4 3/8 with a 6-8 3/4 wingspan, the class's biggest hands, a 40-inch vertical and 4.47 speed, which makes him a red-zone and contested-catch problem for defensive backs who can't reach the ball.",
+      "The offense is opening up: new coordinator Declan Doyle is expected to use 11 personnel at a much higher rate than the Ravens ever have with Lamar Jackson, and Baltimore lost Isaiah Likely and Charlie Kolar from the tight end room, vacating targets.",
+      "Situation upside above him. Rashod Bateman is facing charges from a June domestic incident, which puts the WR2 role — and possibly more — one ruling away from Lane.",
+      "He is the youngest player in this batch at 22.0, catching passes from a former MVP quarterback, and he has already produced a 12-touchdown college season that shows the scoring upside is not theoretical."
+    ],
+    "whyHeCouldFail": [
+      "Third-round capital and a 200-pound frame with only 11 bench reps: DeCosta's 'ball of clay' framing is an acknowledgment that his release package and play strength against NFL press coverage are unfinished.",
+      "Baltimore's offense funnels through Lamar Jackson's legs, Derrick Henry-style volume and Zay Flowers, and it has historically been one of the lowest-volume passing attacks for a WR3 in the league — even a starting role may not mean 100 targets.",
+      "His college trajectory went the wrong way. Touchdowns fell from 12 to four in 2025 and he was passed on his own roster by Makai Lemon, which is why he lasted until No. 80.",
+      "Camp hype cuts both ways: Ravens On SI itself framed his preseason opener as the first proof he is 'not just a Training Camp Hero,' and his second outing was one catch for nine yards on two targets.",
+      "An unproven offensive staff — a first-time head coach calling the defense and a 30-year-old coordinator who has never called a regular-season play — adds real variance to any Baltimore skill player's projection."
+    ],
+    "fantasyOutlook": [
+      "This is the batch's best bet for immediate 2026 production. If Lane opens as the WR3 in a Doyle offense that leans on 11 personnel, 50-65 catches for 700-850 yards with six to eight touchdowns is a reasonable band, and his red-zone frame makes the touchdown share stickier than the yardage. Any resolution of Bateman's legal situation that costs him time bumps that projection into WR2 territory. He should be drafted in redraft leagues, not stashed.",
+      "In dynasty superflex, KTC's 3187 (rookie rank 15) and FantasyPros' rank of 19 are both stale — they price the draft capital, not the August reality of a 22-year-old with elite catch-radius traits who has beaten the best secondary in football all month and started his second preseason game. Pay early-second-round rookie value at minimum and do not hesitate to reach into the back of Round 1 for him in a superflex .5 PPR league. He is the one player in this tier whose price will be materially higher in October."
+    ],
+    "comp": "A younger, faster Mike Williams — a 6-4 boundary receiver who wins on contested throws and in the red zone — with the one-handed-catch flair and body control of a raw Tee Higgins.",
+    "bottomLine": "The camp winner of this class: take him at the top of Round 2 in your rookie draft, and grab him ahead of the board if he somehow slides — he is the likeliest of these five to produce in 2026.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ja%27Kobi_Lane",
+      "https://www.baltimoreravens.com/news/jakobi-lane-ravens-draft-wide-receiver-2026-usc",
+      "https://www.si.com/nfl/ravens/onsi/baltimore-ravens-release-first-unofficial-depth-chart-analyzing-the-clues-01kxf14zt5zf",
+      "https://www.baltimoreravens.com/news/ravens-eagles-game-preview-jesse-minter-jakobi-lane-preseason-opener-2026",
+      "https://www.si.com/nfl/ravens/onsi/ravens-usage-of-ja-kobi-lane-in-preseason-debut-offers-huge-clues-about-his-future-01m08mm9bj00",
+      "https://heavy.com/sports/nfl/baltimore-ravens/wide-receiver-jakobi-lane-nfl-debut/",
+      "https://www.cbssports.com/fantasy/football/news/ravens-jakobi-lane-logs-one-catch-vs-minnesota/",
+      "https://www.baltimoreravens.com/news/ravens-defeat-vikings-defense-win-preseason-2026-sacks-interceptions",
+      "https://www.vikings.com/game-day/2026/pre/ravens-at-vikings/box-score"
+    ]
+  }
+}
