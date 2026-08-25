@@ -1,0 +1,470 @@
+{
+  "1038": {
+    "id": 1038,
+    "name": "Sam Roush",
+    "position": "TE",
+    "nflTeam": "CHI",
+    "nflTeamName": "Chicago Bears",
+    "college": "Stanford",
+    "hometown": "Nashville, Tennessee",
+    "classYear": "Senior",
+    "headline": "Ben Johnson Wanted A Third Tight End. Stanford Sent Him A Blocker Who Catches",
+    "subhead": "The Bears spent the 69th pick on a 267-pound Stanford captain to complete the NFL's deepest tight end room, and he is already the No. 3 in a 12-personnel offense.",
+    "draftPick": "Round 3, Pick 5 (No. 69 overall), Chicago Bears",
+    "measurables": {
+      "height": "6'5 1/2\"",
+      "weight": "267 lbs",
+      "age": "23.0",
+      "forty": "4.70",
+      "tenSplit": "1.61",
+      "vertical": "38 1/2\"",
+      "broad": "10'6\"",
+      "threeCone": "7.08",
+      "shuttle": "4.37",
+      "bench": "25 reps",
+      "armLength": "30 5/8\"",
+      "combineNote": "Roush tested as a big-bodied, explosive in-line tight end rather than a mover: a 4.70 forty at 267 pounds with a 1.61 ten-yard split, 25 bench reps, a 38 1/2-inch vertical and a 10'6\" broad jump — jumps that landed in the top 5 percent of combine tight ends. The one number that scared teams is length: his 30 5/8-inch arms are near the bottom of the position's historical range, which is why scouting reports pair 'best in-line blocker in the class' with 'marginal length.' He improved his three-cone (7.02) and shuttle (4.27) at Stanford's March 18 pro day."
+    },
+    "collegeCareer": [
+      "Roush arrived at Stanford in 2022 as a Tennessee high school defensive player of the year and spent his first fall as a rotational body, catching two passes for 34 yards while the Cardinal bottomed out. Nothing about the usage suggested a top-100 pick, but he was already the sort of tight end Stanford has stockpiled for two decades: a big, willing blocker who could be trusted at Y, at H and even at fullback. His path was slow, physical and unglamorous, which is exactly how his NFL evaluation eventually got built.",
+      "The breakout came incrementally. He caught 28 passes for 288 yards in 2023 and 40 for 334 in 2024, adding his first two touchdowns while starting almost every week for an offense with no vertical passing game to speak of. Those are ugly per-catch numbers on paper — 8.4 yards a grab as a junior — and they mostly reflect his role as a checkdown valve and a chip-and-release blocker in an offense that lost a lot of games. What the tape showed was a tight end who never came off the field.",
+      "As a 2025 senior and team captain he was Stanford's most reliable target: 49 receptions for 545 yards and two touchdowns with a 69-yard long, earning second-team All-ACC. He also won the Al Masters Award, Stanford's highest athletic honor, and the Tommy Vardell Award for athletics and academics. He finished with 119 catches for 1,201 yards and four touchdowns across 48 games and 34 starts — production that is thin on scores and heavy on availability, which is the profile of a starting NFL Y.",
+      "The background is worth knowing at a draft table: born in Atlanta, he moved seven times growing up — Pleasanton, Chapel Hill, Kuala Lumpur, Jakarta, San Jose, Nashville — and played rugby for the Jakarta Komodo Rugby Club before winning a Tennessee state title at Lipscomb Academy. The adaptability is not a cute story; it maps directly onto a player NFL evaluators describe as high-effort, intelligent and coachable at three alignments."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Stanford", "line": "10 G, 2 rec, 34 rec yds, 17.0 ypr, 0 TD"},
+      {"season": "2023", "team": "Stanford", "line": "12 G, 28 rec, 288 rec yds, 10.3 ypr, 0 TD"},
+      {"season": "2024", "team": "Stanford", "line": "12 G, 40 rec, 334 rec yds, 8.4 ypr, 2 TD"},
+      {"season": "2025", "team": "Stanford", "line": "12 G, 49 rec, 545 rec yds, 11.1 ypr, 2 TD, long 69"}
+    ],
+    "draftDayStory": [
+      "Chicago took Roush at No. 69 overall, the fifth pick of the third round, one year after spending the No. 10 pick on Colston Loveland and two years after handing Cole Kmet a $50 million extension. That is an extraordinary amount of capital at one position, and the Bears were explicit that it was deliberate: Ryan Poles called Roush \"really a good addition at the tight end spot for a team that runs a lot of 12 and 13 personnel,\" and said Chicago ranked \"top five in both of those personnel groups.\" One Bears press release described the pick as a second-rounder; the pick was No. 69, the third round.",
+      "The fit is the story. In Ben Johnson's first year, third tight end Durham Smythe played 293 snaps — 25 percent of the offense's total — even with Kmet and Loveland each playing 16 of 17 games. Chicago did not draft Roush to replace anybody. It drafted a true in-line Y so Johnson could put three legitimate tight ends on the field and, in his words, make the same things look different. Roush signed on July 10 and reported with the rookies."
+    ],
+    "whyTheyDraftedHim": [
+      "Scheme need, not value board: Chicago is one of the NFL's heaviest 12- and 13-personnel offenses and lacked a true attached Y behind Kmet and Loveland, both of whom are better off the line than as isolated edge-setters.",
+      "Poles on the pick: \"really a good addition at the tight end spot for a team that runs a lot of 12 (one running back/two tight ends) and 13 (one running back/three tight ends) personnel... I think we're top five in both of those personnel groups.\"",
+      "Versatility across alignments — director of player personnel Trey Koziol singled out that Roush \"has the versatility to play both in-line and off the ball,\" giving Johnson three interchangeable tight ends.",
+      "Blocking floor: scouting reports rank him among the best in-line blocking tight ends in the class, coming off the ball with a flat back and knee bend and sustaining leverage on the edge.",
+      "Intangibles the staff trusts: a Stanford captain, the Al Masters Award winner, and a natural fit with tight ends coach Jim Dray, a Stanford alum who has become his primary developer."
+    ],
+    "campNotes": [
+      {"date": "Jul 17", "source": "ChicagoBears.com position preview", "note": "Chicago entered camp calling its tight end room one of the NFL's deepest, with Loveland coming off a 58-catch, 713-yard rookie year, Kmet the franchise's No. 2 all-time tight end, and Roush the third-round rookie added specifically as the room's 'Y.'"},
+      {"date": "Aug 4", "source": "Chicago Sun-Times", "note": "Beat coverage from Halas Hall had Johnson working Kmet, Loveland and Roush together in the same packages, with only seven tight ends on the 90-man roster — a sign the three-tight-end look is a real part of the plan, not a preseason experiment."},
+      {"date": "Aug 15", "source": "Bears at Browns box score (preseason Week 1)", "note": "Roush made his NFL debut in the 34-10 win over Cleveland with two catches for 15 yards while most starters sat."},
+      {"date": "Aug 18", "source": "Sam Roush, Bears training camp diary (as told to Gabby Hajduk)", "note": "Roush graded himself honestly after the team scrimmage: he was unhappy with the performance, said his blocking consistency is the top priority, and described daily film work with coach Dray on sustaining blocks after good initial contact."},
+      {"date": "Aug 22", "source": "CBS Sports / Bears at Bengals box score", "note": "Roush entered after Loveland in Chicago's 27-9 loss at Cincinnati and caught two of three targets for 30 yards, including a 26-yard first-down grab from Case Keenum late in the first quarter — the team's second-most receiving yards on the night."}
+    ],
+    "beatQuotes": [
+      {"quote": "I think if you ask coach, the more the merrier in that tight end room. The nice thing with Sam is that he's got the versatility to play both in-line and off the ball. So now all of a sudden you've got three versatile tight ends who can each do a little bit of everything.", "attribution": "Trey Koziol, Bears director of player personnel, ChicagoBears.com, Jul 17"},
+      {"quote": "Right now, the biggest thing I need to improve on is consistency in blocking. It's got to look the same every time. A lot of the time, my initial contact is good, but then it's about sustaining the block long enough to seal your guy off.", "attribution": "Sam Roush, ChicagoBears.com training camp diary, Aug 18"},
+      {"quote": "really a good addition at the tight end spot for a team that runs a lot of 12 and 13 personnel", "attribution": "Ryan Poles, Bears general manager, ChicagoBears.com, Jul 17"}
+    ],
+    "depthChart": "Roush is the clear No. 3 tight end behind Colston Loveland and Cole Kmet, and he has been used that way all preseason — entering games directly after Loveland. The role he is competing for is the 250-to-300-snap third-tight-end job Durham Smythe held last year, not a starting spot, and nothing in camp has threatened his roster security.",
+    "whyHeCouldSucceed": [
+      "The offense is built for him: Chicago was a top-five 12- and 13-personnel team last season and gave its third tight end 293 snaps, so the No. 3 job in this specific scheme comes with real, schemed-up snaps rather than mop-up work.",
+      "Third-round capital plus an explicit organizational statement that he was drafted as the room's true in-line Y means the staff has a defined role for him from Week 1 instead of asking him to win one.",
+      "He can actually catch: 119 career receptions and 49 as a senior in a bad passing offense is a legitimate volume profile for a 267-pound blocker, and he has produced in both preseason games (4-45).",
+      "Age and readiness at 23 with 34 college starts and a captaincy — he is being coached hard on technique by a Stanford-lineage tight ends coach in Jim Dray, and the blocking floor keeps him on the field while the route tree grows.",
+      "Kmet is 27 with a large contract on a team that just invested premium picks at the position two years running; if Chicago moves on from him after 2026, Roush is the obvious in-house replacement as the No. 2."
+    ],
+    "whyHeCouldFail": [
+      "The target math is brutal. Loveland is a former No. 10 overall pick coming off 58 catches, Kmet has 288 career receptions, and Caleb Williams also has Rome Odunze and a full receiver room — the third tight end here is a blocker first.",
+      "He is not a mismatch athlete. A 4.70 forty and 30 5/8-inch arms cap him as a possession target; his 8.4 yards per catch as a junior reflects a player who lives underneath, not one who wins vertically.",
+      "Only four touchdowns in 48 college games. Red-zone target share is where fantasy-relevant tight ends are made, and there is no evidence yet that he wins those reps over Loveland or Kmet.",
+      "His own self-scouting flags the risk: he has said blocking consistency is his biggest need, and a rookie who is inconsistent sustaining blocks in a three-tight-end scheme gets fewer snaps, not more.",
+      "Career penalties are a noted concern in scouting reports, and holding flags from an inline tight end are the fastest route to losing a rotational role in a room this crowded."
+    ],
+    "fantasyOutlook": [
+      "For 2026, treat Roush as a zero-projection tight end who is worth owning anyway. Behind Loveland and Kmet in a run-and-12-personnel offense, his realistic season is something like 15-25 catches for 200 yards and a couple of scores — nothing you start in a one-tight-end league. The value is structural: he is a 23-year-old third-round tight end on a good offense whose blocking guarantees he stays employed and on the field, and tight end is the one position where the third-year breakout is a real, repeatable pattern rather than a hope.",
+      "In a superflex .5 PPR dynasty rookie draft, that makes him a late-third-round pick — roughly the 55-65 range of a rookie board, and a fine target at the back of the third if your tight end room is empty. Do not reach into the second round for him: the Kmet contract and Loveland's ceiling mean the path clears in 2027 at the earliest, and the 4.70 forty caps the upside at 'useful TE2' rather than difference-maker. Price him as a cheap option on a scheme that has already told you it wants three tight ends on the field."
+    ],
+    "comp": "Durham Smythe with real receiving chops — the blocking Y who plays 300 snaps a year, except Roush caught 49 balls as a senior and has third-round capital behind him.",
+    "bottomLine": "A safe, boring, useful dynasty asset: draft him late in the third round of your rookie draft as a bet that Chicago's three-tight-end offense and Kmet's eventual exit turn him into a starter in 2027, not a contributor in 2026.",
+    "sources": [
+      "https://www.chicagobears.com/news/bears-2026-training-camp-position-preview-tight-end",
+      "https://www.chicagobears.com/team/players-roster/sam-roush/",
+      "https://www.chicagobears.com/news/bears-training-camp-diaries-with-sam-roush-neville-gallimore-week-3",
+      "https://www.cbssports.com/fantasy/football/news/bears-sam-roush-pair-of-grabs-in-preseason-loss/",
+      "https://www.chicagobears.com/game-day/2026/pre-week1/browns-at-bears/box-score",
+      "https://nflcombineresults.com/playerpage.php?i=32071",
+      "https://gostanford.com/sports/football/roster/player/sam-roush",
+      "https://www.ourlads.com/nfldepthcharts/player/55021/",
+      "https://chicago.suntimes.com/bears/2026/08/04/bears-coach-ben-johnson-now-has-3-premium-talents-at-tight-end-and-his-offense-is-about-to-get-wild"
+    ]
+  },
+  "1045": {
+    "id": 1045,
+    "name": "Jack Endries",
+    "position": "TE",
+    "nflTeam": "CIN",
+    "nflTeamName": "Cincinnati Bengals",
+    "college": "Texas",
+    "hometown": "Danville, California",
+    "classYear": "Redshirt Junior",
+    "headline": "The Cal Walk-On Who Fell To Round 7 Is Catching Touchdowns From Joe Flacco",
+    "subhead": "Jack Endries was a projected mid-round tight end who lasted until pick 221, and he has spent August making Cincinnati's fourth tight end spot impossible to give to somebody else.",
+    "draftPick": "Round 7 (No. 221 overall), Cincinnati Bengals",
+    "measurables": {
+      "height": "6'4 5/8\"",
+      "weight": "245 lbs",
+      "age": "22.4",
+      "forty": "4.62",
+      "tenSplit": "1.59",
+      "vertical": "36\"",
+      "broad": "9'11\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "31 1/8\"",
+      "combineNote": "Endries tested fine and measured badly. The 4.62 forty and 1.59 ten-split are roughly 90th-percentile numbers for a tight end and the 36-inch vertical is above average, but he weighed 245 pounds with 31 1/8-inch arms — bottom-five-percent length — and skipped the bench and agility drills. Cincinnati's own reporting frames the 4.62 as the reason he fell to the seventh round, with veteran teammate Erik Swoope arguing his game speed and hands are the traits that actually matter."
+    },
+    "collegeCareer": [
+      "Endries walked on at California in 2022 because COVID-era roster math left the Golden Bears without a single scholarship for a freshman tight end. He redshirted, then started immediately — 35 catches for 407 yards and two scores in 2023 as a redshirt freshman, throwing to and rooming with a quarterback named Fernando Mendoza who would become the No. 1 pick of the 2026 draft. He had committed to Harvard before the Cal path opened; Mendoza, then Yale-bound, had been the random recruit texting him to flip.",
+      "The 2024 season made him a prospect. Endries led Cal in receptions (65 per the school's count, 56 receiving in the box scores) and receiving yards as Mendoza's primary target, finishing with 56 catches for 623 yards and two touchdowns and earning honorable mention All-ACC. That is a genuine No. 1-option workload for a tight end, and it is the season that put him on Mackey and Biletnikoff watch lists the following August.",
+      "He transferred to Texas in the 2025 spring portal and the production went backwards — 33 catches for 346 yards and three touchdowns in 13 starts — because Texas asked him to be a complete tight end in a run-heavy, 10-3 SEC offense rather than a slot-flexed volume target. He finished strong: two touchdown catches against San Jose State in September, a season-high 93 yards against Texas A&M, and five grabs with a score against Michigan in the Citrus Bowl. Across three playing seasons he started all 39 games he appeared in, with 124 receptions for 1,376 yards and seven touchdowns.",
+      "Steve Sarkisian's exit review is the honest scouting summary: reliable, intelligent, did the dirty work, real skill set as a pass-catching tight end. The pre-draft consensus agreed — CBS had him as the No. 12 tight end, ESPN and PFF as the No. 7 — which is why the seventh round was a genuine surprise."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "California", "line": "13 G, 35 rec, 407 rec yds, 11.6 ypr, 2 TD"},
+      {"season": "2024", "team": "California", "line": "13 G, 56 rec, 623 rec yds, 11.1 ypr, 2 TD, honorable mention All-ACC"},
+      {"season": "2025", "team": "Texas", "line": "13 G, 33 rec, 346 rec yds, 10.5 ypr, 3 TD"}
+    ],
+    "draftDayStory": [
+      "Cincinnati took Endries with the 221st pick on April 25, the selection it had acquired from Dallas in the 2025 Logan Wilson trade. He was the first Longhorn drafted by the Bengals since Joseph Ossai in 2021 and the first Texas tight end the franchise has ever taken. He signed a four-year, $4.55 million rookie deal on May 8. Note the discrepancy with pre-draft valuations: several outlets had him as a top-eight tight end and a likely Day 2-3 pick, and Cincinnati's own coverage attributes the slide to a 4.62 forty rather than any tape concern.",
+      "The landing spot is awkward and opportune at once. Cincinnati already had Mike Gesicki, Drew Sample, Erick All and Tanner Hudson, so Endries arrived as the fifth tight end in a four-tight-end room — but with an injury-prone starter above him and a general expectation that if the Bengals tried to stash him on the practice squad, another team would claim him immediately."
+    ],
+    "whyTheyDraftedHim": [
+      "Value on the board: pre-draft rankings pegged him as the seventh-to-twelfth tight end in the class (ESPN No. 117 overall, PFF No. 131), and Cincinnati got him at No. 221 with a pick acquired in a linebacker trade.",
+      "Pass-catching profile behind Mike Gesicki — his projected role is the big-slot receiving tight end, the same job description Gesicki holds, with hands scouts and teammates single out as elite.",
+      "Sarkisian on the pick: \"He was such a reliable guy and made a lot of big plays for us and did all the dirty work that's required of a tight end, too... he's a very intelligent player, has a good feel for getting open, and he's got great ball skills.\"",
+      "Insurance against Erick All's injury history in a room where the Bengals may end up carrying five tight ends on the initial 53.",
+      "Recall and processing: Erik Swoope, his mentor since high school, points to \"your recall and your understanding of the offense\" as the trait that separates Endries from other late-round tight ends."
+    ],
+    "campNotes": [
+      {"date": "Jul 4", "source": "Cincy Jungle", "note": "Pre-camp analysis framed Endries as a surprising Day 3 faller who would compete with Tanner Hudson for the fourth tight end spot, arguing he was too talented to expose to the practice squad without another team plucking him."},
+      {"date": "Aug 13", "source": "Bengals.com postgame recap (preseason Week 1 vs. Detroit)", "note": "Endries caught the Bengals' first touchdown of 2026 — a four-yard score from Joe Flacco early in the second quarter — and finished with three catches for 25 yards, tying Dohnte Meyers for the team lead in receptions."},
+      {"date": "Aug 21", "source": "Geoff Hobson, Bengals.com", "note": "Hobson reported Endries had 'passed with flying colors so far' through camp and the preseason opener, with mentor Erik Swoope saying the coaching staff had been surprised by his willingness and ability as a blocker."},
+      {"date": "Aug 22", "source": "Bengals vs. Bears box score / Cincy Jungle rookie roundup", "note": "Quieter night in the 27-9 win over Chicago: one catch for seven yards on three targets, with one target underthrown and intercepted, though he posted respectable 67.6 pass-blocking and 61.1 run-blocking grades."},
+      {"date": "Aug 25", "source": "Cincy Jungle", "note": "With cutdowns approaching, the fourth tight end spot is still framed as Endries vs. Tanner Hudson — Hudson caught a touchdown against the Bears — and a big preseason finale on Thursday would settle it."}
+    ],
+    "beatQuotes": [
+      {"quote": "I felt like his game speed was something that gets a little bit overlooked. His hands are to me what got him the opportunity to be a Cincinnati Bengal, or make it at Texas or Cal. He's exactly what a tight end's supposed to be, which is consistent with your hands.", "attribution": "Erik Swoope, Bengals tight end, via Geoff Hobson, Bengals.com, Aug 21"},
+      {"quote": "That was an awesome person to catch a touchdown from as my first touchdown. That guy is a legend. Yeah, I play catch with him every day, so we got a little connection there.", "attribution": "Jack Endries on his first NFL touchdown from Joe Flacco, Bengals.com, Aug 13"},
+      {"quote": "I'm really excited to see what Jack does at the NFL level... Jack has a real skill set as a pass receiving tight end. He's a very intelligent player, has a good feel for getting open, and he's got great ball skills.", "attribution": "Steve Sarkisian, Texas head coach, TexasLonghorns.com, Apr 25"}
+    ],
+    "depthChart": "Endries is fighting for the fourth or fifth tight end spot behind Mike Gesicki, Drew Sample and Erick All, with veteran Tanner Hudson the direct competition for the final job. Local projections have him making the 53 on talent — the Bengals believe he would be claimed if exposed — but he would open the season as a backup big slot, not a rotational starter."
+    ,
+    "whyHeCouldSucceed": [
+      "Legitimate receiving pedigree: 124 catches and 1,376 yards across three seasons with a 56-catch year as a Power Four offense's No. 1 target, which is far more receiving résumé than most seventh-round tight ends carry.",
+      "The role above him is fragile. Erick All has a significant injury history, Gesicki is a pure receiving tight end on the wrong side of 30, and Drew Sample is a blocker — a Gesicki injury puts Endries directly into big-slot work.",
+      "He has already produced in games, not just practices: the Bengals' first touchdown of the preseason plus a team-leading three catches in the opener, and blocking grades in the 60s that answered the one question about his game.",
+      "He lands in a passing offense with Joe Burrow, Ja'Marr Chase and Tee Higgins, where the tight end's job is winning underneath against safeties who cannot help — a schematic best case for a hands-and-savvy player with a 4.62 forty.",
+      "Cost of acquisition is nothing. At 22.4 years old, he is younger than most of this rookie class's fringe players, and a seventh-round tight end who makes the initial 53 has three cheap years to develop."
+    ],
+    "whyHeCouldFail": [
+      "He may not make the roster. The battle with Tanner Hudson is live as of Aug 25, and losing it means practice squad or a waiver claim somewhere with even less opportunity.",
+      "31 1/8-inch arms and a 245-pound frame put him at the bottom of the league's length distribution, which limits him as an in-line blocker and caps how much a run-heavy staff will trust him on early downs.",
+      "Cincinnati's target tree is Chase, Higgins and whatever is left. Mike Gesicki has been a real part of that passing game, and the Bengals have shown no appetite for a fourth mouth to feed.",
+      "His last college season was a step back — 33 catches for 346 yards at Texas — which is exactly what draft rooms feared when he tested at 4.62: a volume producer against ACC defenses who became a complementary piece against SEC ones.",
+      "Seventh-round tight ends who spend a rookie year inactive rarely re-enter the picture; if Cincinnati keeps five tight ends and he plays 60 snaps, his dynasty window closes quietly."
+    ],
+    "fantasyOutlook": [
+      "The 2026 projection is essentially zero: fourth on the depth chart behind two receiving tight ends and a blocker, on a roster where the Bengals may not even keep five. Anything he does this year happens because Erick All or Mike Gesicki gets hurt, and even then he is competing with Sample and Hudson for the vacated snaps. Do not roster him in a league with fewer than 25 bench spots expecting production; roster him because the underlying profile — 22-year-old tight end, 124 college catches, plus hands, functioning in a Burrow offense — is the kind that hits in year three if the room ever clears.",
+      "In a superflex .5 PPR dynasty rookie draft he should be a fourth-round pick or a post-draft free-agent add — roughly the 60-70 range on a rookie board, exactly where his KTC value (999, rookie 62) and FantasyPros consensus (58) already put him. He is a legitimate 'better than the last pick of your rookie draft' asset, and if he wins the roster spot Thursday he becomes the most interesting free tight end in your league. That is the whole thesis: free, young, and one Gesicki injury from relevance."
+    ],
+    "comp": "A poor-man's Mike Gesicki — a big-slot receiving tight end with plus hands and no length, which is both his ceiling and the reason he is stuck behind the actual Mike Gesicki.",
+    "bottomLine": "Take him in the fourth round or grab him for nothing after your rookie draft; he is a hands-first big slot who could inherit real snaps in 2027, but he has to win a fourth-tight-end job this week before any of that matters.",
+    "sources": [
+      "https://www.bengals.com/news/jack-endries-erik-swoope-jimmy-graham-tight-end-brotherhood",
+      "https://www.bengals.com/news/bengals-lions-recap-postgame-preseason-week-1-2026-notes-quotes-stats",
+      "https://www.bengals.com/team/players-roster/jack-endries/",
+      "https://www.cincyjungle.com/cincinnati-bengals-preseason/196909/offensive-rookie-roundup-vs-chicago-bears",
+      "https://www.cincyjungle.com/cincinnati-bengals-analysis/193525/jack-endries-preview-2026-season-texas-longhorns",
+      "https://texaslonghorns.com/news/2026/4/25/football-jack-endries-selected-in-seventh-round-of-nfl-draft-by-cincinnati-bengals",
+      "https://nflcombineresults.com/playerpage.php?i=32058",
+      "https://www.statesman.com/sports/college/longhorns/football/article/jack-endries-scouting-report-nfl-22216369.php",
+      "https://en.wikipedia.org/wiki/Jack_Endries"
+    ]
+  },
+  "1115": {
+    "id": 1115,
+    "name": "Le'Veon Moss",
+    "position": "RB",
+    "nflTeam": "MIA",
+    "nflTeamName": "Miami Dolphins",
+    "college": "Texas A&M",
+    "hometown": "Baton Rouge, Louisiana",
+    "classYear": "Senior",
+    "headline": "Do Not Draft Le'Veon Moss: The Dolphins' UDFA Back Retired In May",
+    "subhead": "Four days after signing with Miami as an undrafted free agent, the former All-SEC runner walked away from football, and he has not been on an NFL field since.",
+    "draftPick": "Undrafted free agent, signed by the Miami Dolphins on May 8, 2026; placed on the reserve/retired list on May 12, 2026",
+    "measurables": {
+      "height": "5'11\"",
+      "weight": "210 lbs",
+      "age": "23.8",
+      "forty": "4.59",
+      "tenSplit": "1.56",
+      "vertical": "31 1/2\"",
+      "broad": "9'11\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": "16 reps",
+      "armLength": "31\"",
+      "combineNote": "Moss was invited to the 2026 combine but did not work out, telling reporters he was only 85-90 percent healthy after the leg and ankle injuries that ended his senior season. He tested at Texas A&M's March 25 pro day instead — 4.59 in the 40 with a 1.56 ten-yard split, 31 1/2-inch vertical, 9'11\" broad and 16 bench reps — in front of dozens of teams including Texans GM Nick Caserio. Serviceable numbers; not the explosion required to overcome a three-year injury file."
+    },
+    "collegeCareer": [
+      "Moss was the only running back in Texas A&M's No. 1-ranked 2022 recruiting class, a four-star, top-100 recruit out of Istrouma in Baton Rouge who flipped from Alabama. He played seven games as a true freshman (27 carries, 114 yards) and won the team's Top Offensive Newcomer award, then took over a bigger share as a sophomore in 2023 with 96 carries for 484 yards and five scores before injury interrupted him. The talent was never the question.",
+      "The 2024 season was the peak and the warning at once. Through nine games he was arguably the most productive back in the SEC — 121 carries for 765 yards (6.3 per carry) and 10 touchdowns, including 138 yards and three scores against Missouri and 117 against Arkansas — before a knee injury against South Carolina in Week 9 ended his year. A&M's offense visibly declined without him. He earned second-team All-SEC honors anyway.",
+      "His 2025 senior year followed the same script with worse timing. He was the Aggies' clear lead back and had 70 carries for 389 yards and six touchdowns through six games when he hurt his ankle against Florida; Mike Elko called the absence 'a significant amount of time.' Moss returned for the first round of the College Football Playoff against Miami and re-aggravated it in the fourth quarter, finishing the season with seven games, 77 carries, 404 yards (5.2 per carry) and six touchdowns.",
+      "He finished with 321 carries for 1,767 yards and 22 touchdowns plus 24 receptions in 32 games across four seasons — a 5.5-yards-per-carry career on a body that missed 12 games in three years. He went undrafted on April 25 despite a fifth-round grade from The Ringer's Todd McShay (No. 190 overall, 11th running back), signed with Miami on May 8, and retired on May 12."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Texas A&M", "line": "7 G, 27 car, 114 rush yds, 4.2 ypc, 1 TD, 1 rec, 8 rec yds"},
+      {"season": "2023", "team": "Texas A&M", "line": "9 G, 96 car, 484 rush yds, 5.0 ypc, 5 TD, 11 rec, 84 rec yds"},
+      {"season": "2024", "team": "Texas A&M", "line": "9 G, 121 car, 765 rush yds, 6.3 ypc, 10 TD, 10 rec, 141 rec yds, second-team All-SEC"},
+      {"season": "2025", "team": "Texas A&M", "line": "7 G, 77 car, 404 rush yds, 5.2 ypc, 6 TD, 2 rec, 3 rec yds"}
+    ],
+    "draftDayStory": [
+      "Moss went undrafted across all seven rounds on April 25 — a genuine surprise given he had been projected as a Day 3 pick and ranked 190th overall by The Ringer — and signed with Miami as an undrafted free agent, reuniting with fellow former Aggie De'Von Achane. Jeremy Fowler reported the signing the night of the draft. The injuries did it: three consecutive seasons ended or interrupted, no combine workout, and a pro day that produced acceptable rather than exceptional numbers.",
+      "The important correction to any pre-draft board: he is not on Miami's roster. The Dolphins placed Moss on the reserve/retired list on May 12, four days after signing him, and he announced his retirement from professional football at 23. Miami retains his rights should he return. In July he was arrested in Baton Rouge on a charge of cruelty to a juvenile after his two-year-old son accidentally shot himself with Moss' firearm, per WBRZ; in August, On3 listed him among 2022 recruits who could theoretically return to college football under the recent eligibility injunction. Jaylen Wright and Ollie Gordon II absorbed the depth-back snaps he would have competed for."
+    ],
+    "whyTheyDraftedHim": [
+      "Miami signed him as an undrafted free agent, not a draft pick — a low-cost camp body to compete for the third or fourth running back spot behind De'Von Achane.",
+      "Aggie familiarity: Achane is a former Texas A&M back and Moss had SEC lead-back production on his résumé at 6.3 yards per carry in 2024.",
+      "Contact balance and short-area burst on tape were the traits scouts liked; The Ringer's Todd McShay graded him as the 11th running back in the class, a late fifth-round value.",
+      "It never became a football evaluation. He retired four days after signing, and the Dolphins never got him on a practice field."
+    ],
+    "campNotes": [
+      {"date": "May 12", "source": "ProFootballTalk / Miami Dolphins transaction", "note": "Miami placed Moss on the reserve/retired list, four days after signing him, with no corresponding move announced. He never took a training camp snap for the Dolphins."},
+      {"date": "Jul 2026", "source": "WBRZ News, Baton Rouge, via Sports Illustrated", "note": "Moss was arrested in Baton Rouge on a charge of cruelty to a juvenile after his two-year-old son accidentally shot himself with Moss' firearm — a legal situation that further clouds any football return."},
+      {"date": "Aug 16", "source": "Sports Illustrated / On3's Pete Nakos", "note": "Moss was listed among 2022 recruits who could return for a fifth college season under the NCAA eligibility injunction, with a Texas A&M reunion floated as logical if his legal situation resolves. Nothing has been reported connecting him to an NFL return."},
+      {"date": "Aug 2026", "source": "The Madness Times desk", "note": "There is no 2026 NFL training camp or preseason reporting on Moss because he is not in the league. He does not appear on Miami's depth chart, participated in no camp practices, and played in no preseason games."}
+    ],
+    "beatQuotes": [
+      {"quote": "I feel blessed, because at one point, I didn't know if I was gonna be able to be here. I'm grateful to have gotten the invite to the combine, and to be able to showcase what I can do at the pro day.", "attribution": "Le'Veon Moss, Texas A&M pro day, Houston Chronicle, Mar 25"},
+      {"quote": "He's going to have to go get it looked at, and we'll kind of figure out where it's at. It certainly will not end his season, but it's going to be a significant amount of time.", "attribution": "Mike Elko, Texas A&M head coach, on Moss' 2025 ankle injury, via Draft Scout"}
+    ],
+    "depthChart": "Moss is on the reserve/retired list and is not on the Miami Dolphins' 90-man roster or depth chart. The Dolphins' backfield is De'Von Achane with Jaylen Wright and Ollie Gordon II behind him; Miami retains Moss' rights only in the event he chooses to return to football.",
+    "whyHeCouldSucceed": [
+      "The 2024 tape is real: 6.3 yards per carry, 10 touchdowns in nine games, and second-team All-SEC honors as the engine of a top-five Texas A&M offense before a knee injury ended the season.",
+      "He is only 23, and Miami retains his rights on the reserve/retired list — a player who changes his mind has a landing spot without needing to clear waivers or win a tryout.",
+      "The eligibility injunction gives him a theoretical alternate path back through college football in 2026, which would put him back on NFL radars in 2027 with fresh tape.",
+      "Pro-day testing (4.59 forty, 1.56 ten-split) at 85-90 percent health suggests the athletic tools never actually disappeared."
+    ],
+    "whyHeCouldFail": [
+      "He is retired. That is not a projection or a risk — it is his current status, and no reporting since May suggests an NFL comeback is being discussed.",
+      "A July arrest in Baton Rouge on a charge of cruelty to a juvenile complicates any return to either the NFL or college football, independent of his physical readiness.",
+      "The injury file is the reason he went undrafted: significant injuries in three consecutive seasons that cost him 12 games, including a knee in 2024 and an ankle in 2025 that he re-aggravated in the playoff.",
+      "Even in the best case, the job he was signed for — third back behind De'Von Achane — is now occupied by Jaylen Wright and Ollie Gordon II, and he has missed an entire offseason program.",
+      "He is 23.8 years old with no professional snaps, no combine workout and a year off the field; running backs do not come back from that profile."
+    ],
+    "fantasyOutlook": [
+      "There is no 2026 fantasy outlook. Moss is on the reserve/retired list, has not practiced with an NFL team, and any dynasty share of him is a lottery ticket on a personal decision rather than a football projection. His KTC superflex value of 877 (rookie 63) is a residue of pre-draft rankings and stale roster data; the market has simply not repriced a player who retired in May, and any manager still holding him in a startup should treat that number as fiction.",
+      "In a superflex .5 PPR dynasty rookie draft, do not spend a pick on him at all. If your league requires that every roster spot be filled, he is the last name off the board — behind every practice-squad receiver and every UDFA who is actually in a camp. The only scenario worth watching is a 2027 comeback attempt after his legal situation resolves, and that is a waiver-wire story, not a draft-capital decision."
+    ],
+    "comp": "A healthier version of him was Kenneth Gainwell's kind of downhill contact runner; the version that exists now is closer to Trey Sermon's post-hype ghost — except Moss chose to stop playing.",
+    "bottomLine": "Do not draft him. He retired from the NFL on May 12 and has not been on a football field since; if your rookie board still lists him in the sixties, that is a market error, not an opportunity.",
+    "sources": [
+      "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dolphins-put-rb-leveon-moss-on-reserve-retired-list",
+      "https://www.statesman.com/sports/college/aggies/article/leveon-moss-retire-nfl-miami-dolphins-texas-am-22256418.php",
+      "https://www.si.com/college/tamu/football/why-did-former-texas-a-m-running-back-leveon-moss-retire-at-23",
+      "https://www.si.com/college/tamu/football/former-texas-am-rb-has-chance-to-return-to-college-football",
+      "https://www.houstonchronicle.com/sports/texans/article/tamu-football-pro-day-leveon-moss-22095745.php",
+      "https://aggieswire.usatoday.com/story/sports/college/aggies/football/2026/04/25/texas-aggies-football-miami-dolphins-sign-leveon-moss-udfa/89802010007/",
+      "https://en.wikipedia.org/wiki/Le%27Veon_Moss",
+      "https://cfbstats.com/2024/player/697/1180378/index.html",
+      "https://draftscout.com/dsprofile.php?DraftYear=2026&PlayerId=1056885"
+    ]
+  },
+  "1043": {
+    "id": 1043,
+    "name": "Reggie Virgil",
+    "position": "WR",
+    "nflTeam": "ARI",
+    "nflTeamName": "Arizona Cardinals",
+    "college": "Texas Tech",
+    "hometown": "Apopka, Florida",
+    "classYear": "Senior",
+    "headline": "Arizona's Fifth-Rounder Made The Catch Of The Summer, Twice",
+    "subhead": "Reggie Virgil ran a pedestrian 4.57 and fell to pick 143, then spent August catching everything in the desert and turning a crowded Cardinals receiver room into a real problem.",
+    "draftPick": "Round 5 (No. 143 overall), Arizona Cardinals",
+    "measurables": {
+      "height": "6'2 5/8\"",
+      "weight": "187 lbs",
+      "age": "22.3",
+      "forty": "4.57",
+      "tenSplit": "1.58",
+      "vertical": "36\"",
+      "broad": "10'7\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "31 1/4\"",
+      "combineNote": "Virgil's testing is the reason he was a Day 3 pick rather than a Day 2 one. He ran 4.57 at the combine at 187 pounds, then went 4.61 and 4.65 at Texas Tech's March 26 pro day — slow for a receiver whose calling card is vertical routes, and Lubbock's own beat wrote plainly that he 'didn't help himself with the way he ran.' The 36-inch vertical and 10'7\" broad are fine, the frame is long and thin, and scouts noted he was clocked as the second-fastest receiver at the Senior Bowl, which is the number his supporters point to."
+    },
+    "collegeCareer": [
+      "Virgil spent three years at Miami (OH) as an afterthought on offense — one catch in 2022, one in 2023 — and made his name as a special teams defender while the receiving snaps went elsewhere. He was a three-star athlete recruit out of Mount Dora Christian Academy who needed time to become a receiver, and the RedHawks gave it to him without giving him targets.",
+      "The 2024 breakout was total: 41 catches for 816 yards and nine touchdowns, an eye-popping 19.9 yards per reception that led Miami, and a second-team All-MAC selection as the RedHawks reached the MAC Championship. He hung 113 yards and two scores on Eastern Michigan in Week 7. His team named him its most improved offensive player. He then entered the portal as ESPN's No. 47 overall transfer and chose Texas Tech over Michigan, Penn State, Oklahoma, Miami (FL) and a dozen others.",
+      "At Texas Tech in 2025 he was the No. 2 option behind Caleb Douglas and produced steady rather than explosive numbers: 57 receptions for 705 yards and six touchdowns, with eight catches for 86 yards against No. 11 BYU in the Big 12 title game and his 100th career reception in the Orange Bowl against Oregon. Fifty games, 100 catches, 1,583 yards and 16 touchdowns is the full career line — a late bloomer with only two productive seasons.",
+      "Scouting reports describe a fluid, physical vertical receiver: sudden out of breaks, credible tracking the deep ball, an established special teams contributor, with real questions about route diversity, pad level on in-breakers and yards after catch. He scored twice on the only two carries of his career. The Senior Bowl is where NFL receivers coaches actually noticed him."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Miami (OH)", "line": "11 G, 1 rec, 28 rec yds, 0 TD"},
+      {"season": "2023", "team": "Miami (OH)", "line": "12 G, 1 rec, 34 rec yds, 1 TD"},
+      {"season": "2024", "team": "Miami (OH)", "line": "13 G, 41 rec, 816 rec yds, 19.9 ypr, 9 TD, second-team All-MAC"},
+      {"season": "2025", "team": "Texas Tech", "line": "14 G, 57 rec, 705 rec yds, 12.4 ypr, 6 TD"}
+    ],
+    "draftDayStory": [
+      "Arizona took Virgil at No. 143 overall — the first Red Raider off the board on Day 3 — after bringing him to Tempe on a top-30 visit during the pre-draft process. He joined a Cardinals draft class headlined by Jeremiyah Love, Chase Bisontis, Carson Beck and Kalem Proctor and signed his four-year rookie deal on May 7, the same day as sixth-rounder Karson Sharar and seventh-rounder Jayden Williams. Note the pick label: this profile's board listed him as Round 5, Pick 3; the verified selection is the fifth round, No. 143 overall.",
+      "The fit was crowded on arrival. Arizona already had Marvin Harrison Jr., a breakout 2025 from Michael Wilson, free-agent signing Kendrick Bourne and return specialist Devin Duvernay, plus camp bodies in Simi Fehoko, Jalen Brooks, Ihmir Smith-Marsette and Xavier Weaver. What Arizona bought at 143 was a big-framed vertical option and a proven special teams defender — and Virgil said immediately that receivers coach Tony Sorrentino wanted him heavier than the 187 pounds he weighed at the combine."
+    ],
+    "whyTheyDraftedHim": [
+      "Size and length the room lacked: at 6'2 5/8\" with a 6'3 7/8\" wingspan, he gives Arizona a true X-body outside of Harrison rather than another sub-6-foot slot.",
+      "Senior Bowl performance — The Ringer reported his week in Mobile 'grabbed the attention of some NFL WR coaches and offensive coordinators,' and he was clocked as the second-fastest receiver there despite mediocre combine times.",
+      "Vertical ball tracking and contested-catch hands: scouting reports credit steady eyes downfield and body positioning that make him a credible deep threat.",
+      "Special teams value. He made his name at Miami (OH) as a special teams defender, which is how fifth-round receivers survive cutdown day.",
+      "Development runway at 22.3 years old with only two seasons of real receiving usage — Arizona explicitly asked him to add weight, treating him as a projection rather than a finished product."
+    ],
+    "campNotes": [
+      {"date": "May 7", "source": "Arizona Sports", "note": "After signing, Virgil said he needed to add weight to his 187-pound frame and that receivers coach Tony Sorrentino wanted him bigger; he had already been in contact with Michael Wilson and Kendrick Bourne about the NFL grind."},
+      {"date": "Aug 3", "source": "Arizona Sports training camp takeaways", "note": "Virgil 'popped off throughout most of practice' at State Farm Stadium, hitting multiple touchdowns with rookie QB Carson Beck including a 40-yard strike, plus a near-one-handed grab in the two-minute drill — with one end-zone drop mixed in. The report noted his separation had been there all camp; consistency was the question."},
+      {"date": "Aug 6", "source": "CBS Sports", "note": "In the Hall of Fame Game against Carolina, Virgil caught five of six targets for 66 yards, leading the Cardinals in both receptions and targets in the 33-30 loss."},
+      {"date": "Aug 13", "source": "AZCardinals.com / USA Today", "note": "Against the Raiders he caught two passes for 43 yards, including a one-handed, over-the-shoulder 24-yard reception from Kedon Slovis midway through the third quarter that became the Cardinals' highlight of the preseason."},
+      {"date": "Aug 24", "source": "ESPN and Cards Wire 53-man roster projections", "note": "Both projections keep Virgil on the initial 53 in a seven-receiver room; ESPN noted that if Arizona keeps only six, Smith-Marsette and either Virgil or Jalen Brooks would be the odd men out."}
+    ],
+    "beatQuotes": [
+      {"quote": "I know I gotta get bigger, though. That's a no brainer. We haven't really talked much about that, but (wide receivers coach Tony Sorrentino) definitely wants me to get bigger a little bit.", "attribution": "Reggie Virgil, Arizona Sports, May 7"},
+      {"quote": "Virgil is going to be fun to watch this preseason as a player looking to separate himself in a crowded room... The biggest things have been consistency catching the rock and confidence, because his separation has been there all camp.", "attribution": "Arizona Sports camp takeaways, Aug 3"},
+      {"quote": "It's hard to imagine anyone from this list not making the roster — Duvernay is their best returner, Virgil is a valued fifth-round rookie and Brooks has been a camp star.", "attribution": "azcentral roster projection, Aug 14"}
+    ],
+    "depthChart": "Virgil is a projected No. 5 receiver, listed in preseason roster projections behind Marvin Harrison Jr., Michael Wilson and Kendrick Bourne, with Devin Duvernay ahead of him on returns and Jalen Brooks, Simi Fehoko and Ihmir Smith-Marsette all fighting for the same back-end spots. He played as the third-string receiver in the preseason, and Arizona must decide by Aug 30 whether it keeps six or seven wideouts.",
+    "whyHeCouldSucceed": [
+      "He has been one of the most productive Cardinals of the preseason — five catches for 66 yards on six targets in the HOF Game, then 43 yards on two grabs including the one-handed play of the summer — which is how fifth-rounders turn camp buzz into September snaps.",
+      "The body type is the one Arizona's room lacks: 6'2 5/8\" with a nearly 6'4\" wingspan and a 19.9-yards-per-catch season on his résumé, giving him a defined role as the vertical complement to Harrison and Wilson.",
+      "Kendrick Bourne is 31 and Devin Duvernay is a returner first, so the No. 3-to-4 receiver spot behind Harrison and Wilson is genuinely available inside two seasons rather than blocked by young talent.",
+      "He is 22.3 with only two seasons of real receiving usage, and the staff has already given him a concrete development plan — add weight, sharpen intermediate routes — which is the profile of a player whose year-two jump is larger than his rookie one.",
+      "Special teams defense is his second job. That keeps him on the 53 through cutdowns and buys the offensive development time most Day 3 receivers never get."
+    ],
+    "whyHeCouldFail": [
+      "The room is the problem: Harrison, Wilson and Bourne are locked in, Duvernay returns kicks, and Jalen Brooks and Ihmir Smith-Marsette have both been camp standouts fighting for the same one or two spots.",
+      "He ran 4.57 at the combine and 4.61-4.65 at his pro day. A vertical-only receiver who does not test as a burner has to win with tracking and size, which is a narrow margin in the NFL.",
+      "187 pounds on a 6'3 frame is genuinely light — his own coaches want him heavier — and press-heavy corners are the fastest way to erase a thin outside receiver's route tree.",
+      "Route diversity and YAC are the two scouting knocks: reports flag rounded stems that telegraph intent, poor timing on in-breakers, and limited agility after the catch.",
+      "Arizona's quarterback situation is unsettled between Jacoby Brissett, Gardner Minshew and rookie Carson Beck, who already missed a preseason game with a rib injury — not the environment where a No. 5 receiver accumulates targets."
+    ],
+    "fantasyOutlook": [
+      "For 2026, project Virgil as a No. 5 receiver with special teams value: something like 10-20 catches for 200 yards if he holds the roster spot, and zero weekly relevance barring injuries to two of Harrison, Wilson and Bourne. The preseason production is real and worth respecting — leading the team in targets in one game and making the catch of the Cardinals' summer in another — but the depth chart and the quarterback uncertainty cap this year's outcome regardless of how he plays.",
+      "In a superflex .5 PPR dynasty rookie draft, he is a legitimate late-third or fourth-round pick, in line with his KTC value (804, rookie 64) and slightly better than his FantasyPros consensus rank of 56 suggests. The bet is specific: a 22-year-old outside receiver with fifth-round capital, a defined vertical role, and a No. 3 job that opens when Bourne's contract does. That is exactly the kind of cheap swing you want at the end of a rookie draft, and you should be happy to take him over any running back on the board at that price."
+    ],
+    "comp": "A leaner Josh Reynolds — long-framed outside receiver who wins on vertical tracking and contested balls rather than separation speed, with special teams work keeping him employed while the route tree fills in.",
+    "bottomLine": "Take him late in the third or in the fourth round of your rookie draft: the camp tape and preseason targets are real, but Harrison, Wilson and Bourne mean nothing about 2026 changes unless someone gets hurt.",
+    "sources": [
+      "https://arizonasports.com/nfl/arizona-cardinals/training-camp-takeaways-reggie-virgil-makes-his-case-for-best-catch-of-cardinals-camp",
+      "https://arizonasports.com/nfl/arizona-cardinals/reggie-virgil-cardinals",
+      "https://www.cbssports.com/fantasy/football/news/cardinals-reggie-virgil-team-high-catch-total-in-defeat/",
+      "https://www.usatoday.com/story/sports/nfl/cardinals/2026/08/13/cardinals-one-handed-catch-preseason-reggie-virgil/91298131007/",
+      "https://www.espn.com/nfl/story/_/id/49662115/2026-nfl-season-arizona-cardinals-final-roster-projection-depth-chart",
+      "https://cardswire.usatoday.com/story/sports/nfl/cardinals/2026/08/24/arizona-cardinals-53-man-roster-projections-after-3-preseason-games/91438756007/",
+      "https://nflcombineresults.com/playerpage.php?i=32117",
+      "https://texastech.com/sports/football/roster/reggie-virgil/13784",
+      "https://www.ourlads.com/nfldepthcharts/player/55095/",
+      "https://www.lubbockonline.com/story/sports/college/red-raiders/2026/04/25/reggie-virgil-cardinals-nfl-draft-reaction-texas-tech-football/89660346007/"
+    ]
+  },
+  "1116": {
+    "id": 1116,
+    "name": "Cole Payton",
+    "position": "QB",
+    "nflTeam": "PHI",
+    "nflTeamName": "Philadelphia Eagles",
+    "college": "North Dakota State",
+    "hometown": "Omaha, Nebraska",
+    "classYear": "Redshirt Senior",
+    "headline": "The Left-Handed Bison Who Ran A 4.56 Is The Most Fun Eagle In August",
+    "subhead": "Cole Payton threw five interceptions in camp and still scored Philadelphia's only preseason-opener touchdown, and the Eagles have to decide whether a fourth quarterback is worth a roster spot.",
+    "draftPick": "Round 5, Pick 38 (No. 178 overall), Philadelphia Eagles",
+    "measurables": {
+      "height": "6'2 5/8\"",
+      "weight": "232 lbs",
+      "age": "23.8",
+      "forty": "4.56",
+      "tenSplit": "1.57",
+      "vertical": "40\"",
+      "broad": "10'10\"",
+      "threeCone": "7.12",
+      "shuttle": "4.36",
+      "bench": null,
+      "armLength": "31 5/8\"",
+      "combineNote": "Payton's combine was one of the best athletic showings by a quarterback in years: a 4.56 forty at 232 pounds (third among QBs), a 40-inch vertical (second), a 10'10\" broad (second), plus a 7.12 three-cone and 4.36 shuttle. Analysts charted him in the 99th percentile of quarterback athletic composites with a 100th-percentile burst score. He is a genuine NFL-caliber athlete; the arm and the mechanics, not the traits, are what kept him in the fifth round."
+    },
+    "collegeCareer": [
+      "Payton was the Nebraska Gatorade Player of the Year at Omaha Westside (1,704 passing yards, 22 TDs, 1,029 rushing yards, 17 TDs) and kept his North Dakota State commitment through late pushes from Nebraska and Iowa State. He redshirted in 2021 while the Bison won a national title, then spent years as a package player rather than a starter — a left-handed short-yardage and red-zone weapon on a program that kept winning without needing him to throw.",
+      "That package role produced real numbers: 615 rushing yards and 13 touchdowns in one season while completing 18 of 27 passes, which is a specialist's line, not a quarterback's. A season-ending injury cut short his next year after 10-of-16 passing and 164 rushing yards. Through four seasons he had 14 career starts in 52 games, two FCS national championships (2021, 2024) and no evidence he could carry an offense.",
+      "The 2025 senior season answered that emphatically. Payton completed 161 of 224 passes (71.9 percent) for 2,719 yards with 16 touchdowns and four interceptions, added 777 yards and 13 scores on 136 carries, and set NDSU single-season program records in total offense per game (268.9), pass efficiency (193.8) and yards per play (9.7). He was a Walter Payton Award finalist and a first-team FCS All-American as the Bison went 12-1 and earned the top seed in the FCS playoffs. His career totals: 198-of-282 for 3,188 yards and 21 touchdowns, plus 287 carries for 1,918 yards and 31 rushing touchdowns.",
+      "The scouting profile is a dual-threat with real size, good touch, questionable mechanics and a modest arm — a short-yardage hammer with build-up speed who was the fifth quarterback drafted in 2026, ahead of names like Garrett Nussmeier and Diego Pavia. He was also a three-time conference honor-roll selection and an MVFC Scholar-Athlete, which matters for a developmental quarterback learning a new NFL system."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "North Dakota State", "line": "Package role: 18-27 pass, 289 pass yds, 3 TD; 615 rush yds, 13 rush TD"},
+      {"season": "2024", "team": "North Dakota State", "line": "10-16 pass, 123 pass yds, 2 TD, 1 INT; 164 rush yds, 1 TD (season-ending injury); FCS national champion"},
+      {"season": "2025", "team": "North Dakota State", "line": "161-224 (71.9%), 2,719 pass yds, 16 TD, 4 INT; 136 car, 777 rush yds, 5.7 ypc, 13 TD; Walter Payton Award finalist"},
+      {"season": "Career", "team": "North Dakota State", "line": "52 G, 14 starts, 198-282 (70.0%), 3,188 pass yds, 21 TD; 287 car, 1,918 rush yds, 6.7 ypc, 31 TD"}
+    ],
+    "draftDayStory": [
+      "Philadelphia took Payton at No. 178 overall, the 38th pick of the fifth round, as the fifth quarterback off the board — a notable stack of the FCS athlete over higher-profile FBS names like Garrett Nussmeier and Diego Pavia. The Eagles' own draft-central write-up called him \"a dual-threat, single-season FCS starter with good size\" who \"excels when short yardage is needed and has build-up speed for explosive runs once he gets rolling.\" He landed behind Jalen Hurts, Tanner McKee and Andy Dalton, and the immediate question was whether Philadelphia would ever carry four quarterbacks.",
+      "The reason to stack him is obvious once you look at the roster: Hurts' offense is built on quarterback power and designed runs, new offensive coordinator Sean Mannion is reportedly featuring more designed QB runs, and Payton's combine profile (4.56, 40-inch vertical) makes him the closest thing on the roster to a Hurts stand-in. The Taysom Hill comparisons started on draft night and have not stopped, though the Eagles have kept him at quarterback rather than experimenting elsewhere."
+    ],
+    "whyTheyDraftedHim": [
+      "Systemic fit behind Jalen Hurts: Philadelphia's offense is one of the NFL's most quarterback-run dependent, and Payton's short-yardage and designed-run ability makes him the only backup who can run it as designed.",
+      "Elite athletic testing — 4.56 forty, 40-inch vertical, 10'10\" broad at 232 pounds — a 99th-percentile quarterback athlete profile that translates to off-schedule playmaking.",
+      "The Eagles' own scouting language: \"a dual-threat, single-season FCS starter with good size. Excels when short yardage is needed and has build-up speed for explosive runs once he gets rolling.\"",
+      "Efficiency on limited tape: 71.9 percent completions with 16 touchdowns and four interceptions and program records in pass efficiency and yards per play, suggesting the accuracy is real even if the arm is average.",
+      "Developmental ceiling as the long-term QB2. Mannion and quarterbacks coach Parks Frazier have run him hard in camp, and Philadelphia has a history of protecting young talent it believes in."
+    ],
+    "campNotes": [
+      {"date": "Jul 30", "source": "Eagles Wire / ESPN camp notes", "note": "Payton emerged as an early camp storyline: ESPN's Day 1 notes described \"really nice touch on deep throws, including one that he shot over defenders and into the arms of receiver Britain Covey down the right seam,\" with the caveat that he projected as the No. 4 quarterback."},
+      {"date": "Aug 10", "source": "PennLive", "note": "Through eight camp practices Payton had thrown five interceptions — three on Day 2, one into quadruple coverage — while also making the most aggressive throws in camp. The Eagles kept giving him reps because the flashes were worth the picks."},
+      {"date": "Aug 15", "source": "PhiladelphiaEagles.com", "note": "In his preseason debut at Baltimore, Payton led the Eagles' only scoring drive of a 24-7 loss: 4-of-9 for 37 yards, three carries for 45 yards, a 17-yard fourth-and-3 scramble away from a sack, and a 6-yard scramble-drill touchdown to Erik Ezukanma. He outrushed every Eagles running back on three carries."},
+      {"date": "Aug 17", "source": "Eagles Wire", "note": "With neither Andy Dalton (3-of-6, 20 yards) nor Tanner McKee separating in the QB2 race, beat coverage projected Payton would earn a longer look in the joint practices and preseason game against New England — while noting he is not suddenly the favorite for the No. 2 job."},
+      {"date": "Aug 22", "source": "Eagles at Patriots box score / Patriots game notes", "note": "Payton played sparingly behind McKee (16-of-22, 173 yards, 2 TD) and Dalton, finishing 1-of-1 for 10 yards, and was sacked and stripped by Patriots seventh-rounder Quintayvious Hutchins with 36 seconds left in a 24-21 loss."}
+    ],
+    "beatQuotes": [
+      {"quote": "He's done a really nice job. Obviously, there's been a couple days where he's got to protect the football a little bit better. But I'm very, very happy with where Cole's at in his development.", "attribution": "Sean Mannion, Eagles offensive coordinator, PennLive, Aug 10"},
+      {"quote": "In the NFL, the windows are a lot tighter, so I have to take care of the football. I've thrown a few picks, but there's a balance between knowing when to strike and knowing when to take a checkdown.", "attribution": "Cole Payton, via Athlon Sports, Aug 16"},
+      {"quote": "That's just my game, using my legs and making stuff happen, whether it's running or throwing it when it becomes off-schedule.", "attribution": "Cole Payton on his fourth-down scramble at Baltimore, PhiladelphiaEagles.com, Aug 15"}
+    ],
+    "depthChart": "Payton is the No. 4 quarterback behind Jalen Hurts, Tanner McKee and Andy Dalton, and McKee's 16-of-22, two-touchdown night against New England on Aug 22 reinforced the order ahead of him. The real question is roster construction, not competition: whether Philadelphia carries four quarterbacks on the initial 53 or risks exposing him to waivers, with beat reporting suggesting his camp has made him hard to cut.",
+    "whyHeCouldSucceed": [
+      "He is the only quarterback on the roster who can actually run Philadelphia's offense as designed — a 4.56/40-inch-vertical athlete on a team whose identity is quarterback power and, under Sean Mannion, reportedly more designed QB runs.",
+      "The production is already there in games, not just practices: he led the Eagles' only touchdown drive of the preseason opener with 37 passing yards, 45 rushing yards and a 17-yard fourth-down conversion after escaping a sack.",
+      "Jalen Hurts' rushing workload is a standing injury risk, and a mobile backup who fits the scheme is one hamstring away from meaningful superflex snaps in an offense with elite personnel around him.",
+      "The staff is invested. Mannion has publicly praised his development, the Eagles gave him more reps than a typical Day 3 rookie while installing a new offense, and the organization has a track record of protecting young talent it likes.",
+      "Efficiency floor: 71.9 percent completions with a 4:1 touchdown-to-interception ratio and program records in pass efficiency say the accuracy is real, and 31 career rushing touchdowns say the short-yardage value is too."
+    ],
+    "whyHeCouldFail": [
+      "He is the fourth quarterback on a Super Bowl contender. Jalen Hurts is 28 and entrenched, Tanner McKee has developed into a real backup, and Andy Dalton is one of the league's most experienced No. 2s — the path to snaps is an injury, not a competition.",
+      "Ball security is a live problem: five interceptions in eight camp practices, including one into quadruple coverage, plus a sack-fumble in the Patriots game. Aggression without discipline is how developmental quarterbacks get cut.",
+      "One year as a college starter, at the FCS level, with 14 career starts. The processing and mechanics were flagged pre-draft, and there is no body of work suggesting he can handle NFL speed as a passer yet.",
+      "His arm strength is average by scouting consensus, which caps the ceiling at 'mobile game-manager' rather than starter — and dual-threat backups without arm talent get typecast into gadget roles.",
+      "At 23.8 he is old for a developmental prospect, and if Philadelphia keeps only three quarterbacks he could be waived and lost to a team with even less opportunity."
+    ],
+    "fantasyOutlook": [
+      "Payton is a pure superflex speculation, not a 2026 asset. Behind Hurts, McKee and Dalton he should throw zero meaningful regular-season passes this year, and the only realistic path to fantasy relevance is a Hurts injury combined with the Eagles preferring the rookie's rushing profile to McKee's arm — a low-probability parlay. What he does have is the shape of a valuable superflex lottery ticket: a mobile quarterback with 31 college rushing touchdowns in an offense that scores at the goal line with its quarterback's legs, which is exactly how QB streamers get made.",
+      "In a superflex .5 PPR dynasty rookie draft, that makes him a fair third-to-fourth-round pick — roughly where his KTC value (774, rookie 65) sits, and slightly cheaper than his FantasyPros consensus rank of 49. In one-quarterback leagues, ignore him entirely. In superflex, he is worth the last pick of your draft on the theory that mobile backup quarterbacks on good offenses occasionally turn into starters, and that the Eagles took him over Nussmeier and Pavia for a reason."
+    ],
+    "comp": "A poor-man's Taysom Hill by way of Trey Lance's arm questions — a 232-pound left-handed athlete whose value is short yardage, designed runs and off-schedule playmaking rather than pocket passing.",
+    "bottomLine": "Superflex-only flier at the end of your rookie draft: the athletic testing and preseason flashes are real, but he is the fourth quarterback on a contender and will not throw a meaningful pass in 2026 unless Jalen Hurts goes down.",
+    "sources": [
+      "https://theeagleswire.usatoday.com/story/sports/nfl/eagles/2026/08/17/eagles-cole-payton-bigger-opportunity-patriots-preseason/91335275007/",
+      "https://www.philadelphiaeagles.com/news/cole-payton-throws-a-touchdown-pass-in-nfl-preseason-debut-eagles-ravens",
+      "https://www.pennlive.com/philadelphiaeagles/2026/08/this-eagles-rookie-qb-has-thrown-5-ints-in-camp-but-hes-letting-it-rip.html",
+      "https://athlonsports.com/nfl/philadelphia-eagles/eagles-qb2-battle-cole-payton-preseason-ravens",
+      "https://www.philadelphiaeagles.com/team/players-roster/cole-payton/",
+      "https://www.philadelphiaeagles.com/draftcentral/2026/picks/cole-payton",
+      "https://www.si.com/college/fcs/mvfc/2026-nfl-scouting-combine-results-north-dakota-state-qb-cole-payton",
+      "https://www.philadelphiaeagles.com/game-day/2026/pre/eagles-at-patriots/box-score",
+      "https://theeagleswire.usatoday.com/story/sports/nfl/eagles/2026/07/30/eagles-rookie-qb-cole-payton-is-quietly-turning-heads-at-camp/91104311007/",
+      "https://en.wikipedia.org/wiki/Cole_Payton"
+    ]
+  }
+}
