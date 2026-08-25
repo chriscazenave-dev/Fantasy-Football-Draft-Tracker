@@ -1,0 +1,431 @@
+{
+  "1004": {
+    "id": 1004,
+    "name": "Makai Lemon",
+    "position": "WR",
+    "nflTeam": "PHI",
+    "nflTeamName": "Philadelphia Eagles",
+    "college": "USC",
+    "hometown": "Los Alamitos, California",
+    "classYear": "Junior",
+    "headline": "Biletnikoff Winner Lands in Philadelphia as the Heir to A.J. Brown's Throne",
+    "subhead": "The Eagles traded up to snatch USC's polished route technician away from Pittsburgh, then shipped A.J. Brown out of town to clear his runway.",
+    "draftPick": "Round 1, Pick 20 (No. 20 overall), Philadelphia Eagles",
+    "measurables": {
+      "height": "5'11\"",
+      "weight": "192 lbs",
+      "age": "22.2",
+      "forty": "4.46 (pro day)",
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Lemon skipped all athletic testing at the 2026 combine, running only receiver drills and the gauntlet — CBS Sports' JP Acosta graded the workout an A-. He saved the 40 for USC's March 12 pro day, where the school announced a 4.46 (scouts clocked 4.47-4.53). Speed isn't how he wins, and the pro day time was more than enough to quiet the question."
+    },
+    "collegeCareer": [
+      "Lemon arrived at USC from Los Alamitos High as a five-star athlete and spent his 2023 freshman season buried on a veteran depth chart, catching just 6 passes for 88 yards while moonlighting at cornerback late in the year when injuries thinned the Trojans' secondary. The two-way cameo told you everything about his football character; the wait told you nothing about his talent. He also flashed immediately as a kickoff returner, a role he kept throughout his career.",
+      "The 2024 season was the breakout: 52 catches for 764 yards and 3 touchdowns at 14.7 yards a pop, working as Lincoln Riley's most reliable separator in an offense in transition. Then came 2025, when Lemon simply became the best receiver in college football — 79 receptions for 1,156 yards (14.6 average) and 11 touchdowns in 12 games, ranking eighth nationally in receiving yards while adding 2 rushing scores and even a 24-yard touchdown pass.",
+      "The hardware followed: the 2025 Fred Biletnikoff Award as the nation's top receiver, unanimous All-American honors, and Polynesian College Football Player of the Year. His game is built on route craft, throttle control, and run-after-catch toughness rather than raw size or burner speed — the Amon-Ra St. Brown comparison followed him all spring for a reason."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "USC", "line": "9 G, 6 rec, 88 yds, 14.7 avg, 0 TD (plus KR duty and late-season snaps at CB)"},
+      {"season": "2024", "team": "USC", "line": "12 G, 52 rec, 764 yds, 14.7 avg, 3 TD"},
+      {"season": "2025", "team": "USC", "line": "12 G, 79 rec, 1,156 yds, 14.6 avg, 11 TD; 9 car, 2 rush TD; 1-of-1 passing, 24 yds, TD"}
+    ],
+    "draftDayStory": [
+      "Lemon's draft night in Pittsburgh was pure theater. His first phone call came from the hometown-hosting Steelers, prepping him to be the No. 21 pick alongside DK Metcalf and Michael Pittman. Then his phone kept ringing — it was the Eagles, who had traded up from No. 23 with the rival Cowboys to No. 20 to swoop in front of Pittsburgh. 'I was definitely shocked,' Lemon said. 'I couldn't be more happy that they did.'",
+      "The pick was the clearest signal yet that Philadelphia had soured on A.J. Brown — Ian Rapoport reported that night the Eagles expected to trade Brown after June 1, and he was ultimately dealt to New England. Howie Roseman paid a modest premium to jump three spots and hand Jalen Hurts the Biletnikoff winner as Brown's long-term replacement alongside DeVonta Smith."
+    ],
+    "whyTheyDraftedHim": [
+      "Howie Roseman traded up three spots with Dallas specifically to beat the Steelers to Lemon at No. 20 — you don't jump a division of teams for a rotational piece.",
+      "The pick was drafted as the succession plan for A.J. Brown, who was traded to the Patriots after June 1, leaving a massive target vacancy in a Super Bowl-caliber offense.",
+      "Route polish and separation quickness that drew Amon-Ra St. Brown comparisons all spring — a plug-and-play slot/Z fit in new OC Sean Mannion's offense.",
+      "Elite production pedigree: Biletnikoff Award, unanimous All-American, eighth in the FBS in receiving yards in 2025 despite shaky USC quarterback play."
+    ],
+    "campNotes": [
+      {"date": "Aug 3", "source": "Philadelphia Eagles / The Inquirer", "note": "Lemon strained his hamstring just four days into training camp — the same hamstring that cost him time in the spring — and Aug 3 was his last full practice for three weeks. He said he felt 'a little tweak' bursting upfield and admitted he hadn't warmed up sufficiently."},
+      {"date": "Aug 12-18", "source": "Bleeding Green Nation / Eagles Wire", "note": "Despite missing most of camp, the Eagles listed Lemon as a starting wide receiver alongside DeVonta Smith and Dontayvion Wicks on both preseason depth charts, though Bleeding Green Nation noted Darius Cooper and Elijah Moore had stronger summers and the Week 1 role isn't guaranteed."},
+      {"date": "Aug 20-21", "source": "Philadelphia Inquirer", "note": "Returned as a limited participant in joint practices against the Patriots in New England — his first practice work in any capacity since Aug 3."},
+      {"date": "Aug 24", "source": "Tim McManus, ESPN / The Inquirer", "note": "Upgraded to full participant, taking team reps in 7-on-7 and 11-on-11 and catching out routes from Jalen Hurts. He was noncommittal on playing in Friday's preseason finale against the Bengals but expects to be in top form for the Sept. 13 opener vs. Washington."}
+    ],
+    "beatQuotes": [
+      {"quote": "I'm real competitive. I never want to be away from this game. So, me knowing that it's a hamstring again, just making sure I take the right precautions. I'm learning from it, so it don't happen again.", "attribution": "Makai Lemon, Philadelphia Inquirer, Aug 24"},
+      {"quote": "Mentally he's been super engaged. The unfortunate nature of football is sometimes you might miss some time, but he's done everything in his power, despite not having those physical reps, to be ready for us to make an impact.", "attribution": "Sean Mannion, Eagles offensive coordinator, philadelphiaeagles.com, Aug 24"}
+    ],
+    "depthChart": "Listed as a starter with DeVonta Smith and Dontayvion Wicks on the Eagles' official depth chart, with Hollywood Brown, Elijah Moore and standout UDFA Darius Cooper behind them. Smith is the clear No. 1; Lemon's three missed weeks mean Cooper and Moore could eat into his early-season snaps before the rookie inevitably takes over the No. 2 role.",
+    "whyHeCouldSucceed": [
+      "A.J. Brown's departure vacates a decade-high target share in a top-five offense — Philadelphia traded up for Lemon precisely to inherit those looks alongside DeVonta Smith.",
+      "Jalen Hurts is the best quarterback any rookie receiver in this class gets to play with, in an offense that just won a Super Bowl two seasons ago.",
+      "The Biletnikoff resume is real: 79-1,156-11 against Big Ten defenses with route detail, contested toughness and YAC — the exact profile (see Amon-Ra St. Brown) that outperforms testing numbers.",
+      "First-round draft capital plus a trade-up means the front office is invested; the team listed him as a starter even after he missed three weeks of camp."
+    ],
+    "whyHeCouldFail": [
+      "Two hamstring injuries to the same leg in one offseason is a soft-tissue pattern, and he lost nearly all of camp — rookie receivers who miss August often start slow in September.",
+      "The Eagles remain a run-first, low-volume passing offense with Saquon Barkley and Hurts' tush-push scoring gravity capping receiver ceilings; even A.J. Brown had weeks of famine here.",
+      "DeVonta Smith commands the No. 1 role, and Wicks, Hollywood Brown, Moore and Cooper make this a deeper rotation than Philadelphia has carried in years.",
+      "At 5'11\" 192 with 4.46 pro-day speed, he wins with nuance, not dominance — there's little margin if the route timing takes a year to sync with Hurts."
+    ],
+    "fantasyOutlook": [
+      "For 2026, temper expectations: he missed three weeks of camp in a run-heavy offense with an established alpha in DeVonta Smith. Something like 55-750-5 is the realistic rookie-year band, with the usual Eagles weekly variance. But the dynasty case is about 2027 and beyond — Lemon was drafted, via trade-up, to be the No. 1 receiver in one of the NFL's best offensive infrastructures, and the A.J. Brown trade removed the ceiling-capper before he played a snap.",
+      "In a superflex .5 PPR rookie draft, he's a top-half-of-the-first-round pick and the WR1 or WR2 of the class depending on your Concepcion stance. At the board's No. 6 slot (KTC 4886, rookie rank 6), he's fairly priced; if a league-mate fades him over the hamstring noise, pounce. Profile, capital, quarterback and vacated targets almost never line up this cleanly."
+    ],
+    "comp": "Amon-Ra St. Brown — the same sub-4.5 USC slot technician archetype whose route precision and toughness made testing numbers irrelevant.",
+    "bottomLine": "The safest long-term WR bet in this class range: first-round capital, a trade-up, an elite offense and a vacated alpha role. Draft him top-6 with confidence and be patient through a quiet September.",
+    "sources": [
+      "https://apnews.com/article/nfl-draft-eagles-50ecfc8d01ec4ff8e782a26c1855330c",
+      "https://www.nfl.com/news/howie-roseman-makai-lemon-detail-how-eagles-swooped-in-front-of-steelers",
+      "https://www.inquirer.com/eagles/2026-training-camp-wide-receiver-makai-lemon-return-injury-20260824.html",
+      "https://www.philadelphiaeagles.com/news/eagles-makai-lemon-returns-to-full-participation-at-practice",
+      "https://www.profootballnetwork.com/makai-lemon-combine-results-2026/",
+      "https://www.espn.in/college-football/player/stats/_/id/4870795/makai-lemon",
+      "https://theeagleswire.usatoday.com/story/sports/nfl/eagles/2026/08/18/eagles-depth-chart-preseason-week-2-patriots/91356629007/"
+    ]
+  },
+  "1007": {
+    "id": 1007,
+    "name": "KC Concepcion",
+    "position": "WR",
+    "nflTeam": "CLE",
+    "nflTeamName": "Cleveland Browns",
+    "college": "Texas A&M",
+    "hometown": "Charlotte, North Carolina",
+    "classYear": "Junior",
+    "headline": "Cleveland's Human Joystick Is Already the Most Electric Player in Berea",
+    "subhead": "The Paul Hornung Award winner scored on an end-around and ripped off a 31-yard punt return in his first NFL game — Todd Monken wants the ball in his hands 'as often as we can.'",
+    "draftPick": "Round 1, Pick 24 (No. 24 overall), Cleveland Browns",
+    "measurables": {
+      "height": "5'11\"",
+      "weight": "191 lbs",
+      "age": "21.9",
+      "forty": "4.45",
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "30 5/8\"",
+      "combineNote": "Measured 5'11 1/2\", 191 pounds in Indianapolis and ran a 4.45 forty. The testing confirmed what the tape screams: he's not a pure burner, but the change-of-direction, throttle control and contact balance are what make him special, not the stopwatch."
+    },
+    "collegeCareer": [
+      "Concepcion announced himself as a true freshman at NC State in 2023, catching 71 passes for 839 yards and 10 touchdowns while adding 320 rushing yards at 7.8 per carry — over 25% of the Wolfpack's total yardage — and winning ACC Rookie of the Year. Analytics evaluators fell in love immediately: a freshman target-share breakout of that magnitude is one of the most predictive signals in receiver scouting.",
+      "His 2024 season was the wobble: 53 catches for just 460 yards (8.7 average) and 6 scores as NC State's quarterback play cratered and defenses sat on his underneath work. Rather than let the efficiency slide define him, he transferred to Texas A&M for 2025 and reclaimed his standing entirely — 61 receptions for 919 yards (15.1 average) and an SEC-leading 9 receiving touchdowns, plus scores as a rusher and punt returner.",
+      "He won the 2025 Paul Hornung Award as college football's most versatile player, the first Aggie ever to do so, and earned first-team All-American honors as an all-purpose player. The scouting book: a slot-based joystick with sudden lateral burst, elite deceleration and tackle-breaking balance, whose main flaw is a career-long bout with focus drops."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "NC State", "line": "13 G, 71 rec, 839 yds, 11.8 avg, 10 TD; 41 car, 320 rush yds, 7.8 ypc"},
+      {"season": "2024", "team": "NC State", "line": "12 G, 53 rec, 460 yds, 8.7 avg, 6 TD; 19 car, 36 rush yds, 2 TD"},
+      {"season": "2025", "team": "Texas A&M", "line": "13 G, 61 rec, 919 yds, 15.1 avg, 9 TD (led SEC); 10 car, 75 rush yds, 1 TD"}
+    ],
+    "draftDayStory": [
+      "The Browns made Concepcion the fourth receiver off the board at No. 24 overall, using the extra first-rounder acquired in their 2025 trade with Jacksonville. It capped a dream first round for Cleveland, which had already landed Utah tackle Spencer Fano at No. 9 after trading down three spots with Kansas City. GM Andrew Berry got his tackle and his weapon in one night without giving up future capital.",
+      "Concepcion joined a receiver room headlined by Jerry Jeudy and Cedric Tillman, with young pieces like Isaiah Bond behind them — and Cleveland wasn't done, doubling down on the position with Washington's Denzel Boston at No. 39 the next night. The message was unmistakable: whoever wins the Browns' quarterback derby will have a completely rebuilt set of targets."
+    ],
+    "whyTheyDraftedHim": [
+      "Todd Monken's offense is built on creating space for YAC weapons, and Concepcion is the most sudden space player in the class — a slot chess piece who scores as a receiver, rusher and returner.",
+      "'From what we saw when we drafted him and then getting him here, I hope we're trying to get him the ball as often as we can. That dude is explosive,' Monken said in camp — the staff has been explicit about manufacturing touches.",
+      "The Hornung Award versatility gives Cleveland an immediate special-teams jolt: he won the punt-return job the moment he arrived.",
+      "Monken framed the two rookie receivers as deliberate complements: Concepcion the quick-twitch separator, Boston the big-bodied red-zone matchup the room lacked."
+    ],
+    "campNotes": [
+      {"date": "Aug 15", "source": "Scott Petrak, BrownsZone", "note": "In the preseason opener at Chicago he returned a punt 31 yards on the game's first series, caught 3 passes for 27 yards and scored a 14-yard touchdown on an end-around. He was arguably the Browns' best player on the field."},
+      {"date": "Aug 11", "source": "clevelandbrowns.com Training Camp Observations", "note": "Running with the first-team offense alongside Jerry Jeudy and fellow rookie Denzel Boston as the QB rotation between Deshaun Watson and Shedeur Sanders continued."},
+      {"date": "Aug 17", "source": "Scott Petrak, BrownsZone", "note": "Petrak reported Concepcion has made a series of spectacular catches throughout camp — jumping high, going low, reaching behind — showing there's more to his game than making people miss."},
+      {"date": "Aug 20", "source": "clevelandbrowns.com", "note": "Starred in the joint practice against the Bills: a contested deep catch over multiple defenders from Watson, a screen-pass touchdown from Sanders in the red zone, and several other chunk gains in 11-on-11 and 7-on-7."}
+    ],
+    "beatQuotes": [
+      {"quote": "From what we saw when we drafted him and then getting him here, I hope we're trying to get him the ball as often as we can. That dude is explosive. He's tough. He's got great contact balance. He understands situational football. We've got to find a number of ways to get him the ball. He's going to be a real weapon for us.", "attribution": "Todd Monken, Browns head coach, BrownsZone, Aug 17"},
+      {"quote": "If you take Denzel (Boston) after KC (Concepcion), I think he compliments KC. He's a different body type than what we have. We were looking at someone we thought could be a size matchup and especially in the red zone, which we did not have.", "attribution": "Todd Monken, Browns head coach, post-draft press conference, Apr 24"}
+    ],
+    "depthChart": "Locked in as a first-team receiver alongside Jerry Jeudy and rookie Denzel Boston, with Cedric Tillman, Isaiah Bond and Tylan Wallace in the rotation behind them. He has also seized the punt-return job. The bigger variable is under center, where Deshaun Watson and Shedeur Sanders were still splitting first-team reps into late August.",
+    "whyHeCouldSucceed": [
+      "The coaching staff is openly scheming him touches — Monken said on the record the Browns must 'find a number of ways to get him the ball,' which in half-PPR terms means screens, jet sweeps, returns and a high floor.",
+      "First-round capital on a rebuilt depth chart: Jeudy is the only established target-earner, and Cleveland's offense has a massive vacuum of air yards and YAC opportunity.",
+      "Elite YAC and contact-balance profile is quarterback-proof — his 14-yard end-around TD and 31-yard punt return came before any QB chemistry existed.",
+      "A true freshman 25% yardage-share breakout at NC State is one of the strongest statistical predictors of NFL success in receiver modeling."
+    ],
+    "whyHeCouldFail": [
+      "The quarterback situation is a genuine hazard: a Deshaun Watson/Shedeur Sanders timeshare was unresolved in late August, and slot-based YAC receivers need accurate, on-time passing to eat.",
+      "Career-long focus drops (scouts flag his hand technique under pressure) could erode quarterback trust in a low-margin offense.",
+      "At 5'11\" 191 without a final gear, his contested-catch radius is small — if the manufactured-touch package stalls, he lacks the vertical profile to win outside.",
+      "Cleveland spent two premium picks on receivers, and Boston's red-zone role could siphon the touchdowns that would turn Concepcion's volume into ceiling."
+    ],
+    "fantasyOutlook": [
+      "Concepcion is the rare rookie receiver whose Week 1 role is already visible: first-team slot snaps, designed touches and punt returns. In half-PPR that's a 60-catch floor with rushing garnish even if the Browns' quarterback play is mediocre — think 65-800-5 with weekly big-play spikes. The touchdown-per-touch efficiency he showed in August (a score and a 31-yard return in one half against the Bears) is exactly what Monken's offense produced for playmakers in his previous stops.",
+      "In a superflex .5 PPR dynasty rookie draft, he's a mid-first-rounder and worth every bit of the board's No. 7 slot (KTC 4668). The gap between him and Lemon is thinner than the QB situations suggest — if you believe in Sanders' development, Concepcion could outproduce every receiver in this class by 2027. Buy the profile, tolerate the drops."
+    ],
+    "comp": "A sturdier Wan'Dale Robinson with real punt-return juice — a manufactured-touch slot ace whose YAC ability forces coordinators to build packages around him.",
+    "bottomLine": "The most NFL-ready playmaker in this rookie class has a role, a scheme and a coach publicly demanding his touches. Take him in the back half of the first round without hesitation.",
+    "sources": [
+      "https://www.clevelandbrowns.com/news/browns-select-wr-kc-concepcion-with-the-no-24-pick-in-the-2026-nfl-draft",
+      "https://apnews.com/article/nfl-draft-browns-863e2f5a0161f8e437d2e8153c692e71",
+      "https://www.brownszone.com/2026/08/17/kc-concepcion-giving-todd-monken-plenty-of-reasons-to-get-him-the-ball-as-often-as-we-can/",
+      "https://www.clevelandbrowns.com/news/kc-concepcion-and-spencer-fano-shine-in-browns-joint-practice-with-the-bills-training-camp-observations",
+      "https://www.tankathon.com/nfl/players/kc-concepcion",
+      "https://www.ourlads.com/nfldepthcharts/player/54976/",
+      "https://browns.1rmg.com/transcripts/head-coach-todd-monken/"
+    ]
+  },
+  "1016": {
+    "id": 1016,
+    "name": "De'Zhaun Stribling",
+    "position": "WR",
+    "nflTeam": "SF",
+    "nflTeamName": "San Francisco 49ers",
+    "college": "Ole Miss",
+    "hometown": "Kapolei, Hawaii",
+    "classYear": "Fifth-year Senior",
+    "headline": "The 'Reach' Nobody Is Laughing About: Stribling Owns the 49ers' Preseason",
+    "subhead": "Mocked as a Day 2 overdraft in April, the 4.36 Hawaiian has become a Brock Purdy favorite and a projected Week 1 contributor in a decimated 49ers receiver room.",
+    "draftPick": "Round 2, Pick 1 (No. 33 overall), San Francisco 49ers",
+    "measurables": {
+      "height": "6'2\"",
+      "weight": "207 lbs",
+      "age": "23.7",
+      "forty": "4.36",
+      "tenSplit": "1.53",
+      "vertical": "36\"",
+      "broad": "10'7\"",
+      "threeCone": "6.99",
+      "shuttle": "4.36",
+      "bench": null,
+      "armLength": "31 5/8\"",
+      "combineNote": "One of the combine's biggest winners: an official 4.36 forty at 6'2\" 207 — eighth-fastest among all receivers — with a 36\" vertical and 10'7\" broad jump, good for a 9.88 RAS (47th of 3,844 receivers since 1987). A big-slot body moving like a burner rewrote his draft stock in one afternoon."
+    },
+    "collegeCareer": [
+      "Stribling's road to the NFL ran through three programs and five seasons. The Kapolei, Hawaii product started immediately at Washington State, catching 44 balls for 471 yards and 5 touchdowns as a true freshman in 2021 and following with 51-602-5 in 2022 — steady, unspectacular possession work in the Air Raid.",
+      "He transferred to Oklahoma State and lost most of 2023 to injury (4 games, 14-198-1), then broke out in 2024 with 52 catches for 882 yards and 6 touchdowns, a gaudy 17.0 yards per catch that hinted at the vertical juice his early-career usage had hidden. Career highs of 174 yards at Tulsa and a 77-yarder at Kansas State put him on scouts' radar.",
+      "The final move was to Ole Miss for 2025, where he was a 15-game starter on a College Football Playoff team, catching 55 passes for 811 yards (14.7 average) and 6 touchdowns in Lane Kiffin's offense — including a two-score Egg Bowl and a 76-yard day against Florida. Five years, 216 catches, 2,974 yards, 23 touchdowns: a long apprenticeship that made him one of the most experienced receivers in the class."
+    ],
+    "collegeStats": [
+      {"season": "2021", "team": "Washington State", "line": "13 G, 44 rec, 471 yds, 10.7 avg, 5 TD"},
+      {"season": "2022", "team": "Washington State", "line": "12 G, 51 rec, 602 yds, 11.8 avg, 5 TD"},
+      {"season": "2023", "team": "Oklahoma State", "line": "4 G, 14 rec, 198 yds, 14.1 avg, 1 TD (injury-shortened)"},
+      {"season": "2024", "team": "Oklahoma State", "line": "12 G, 52 rec, 882 yds, 17.0 avg, 6 TD"},
+      {"season": "2025", "team": "Ole Miss", "line": "15 G, 55 rec, 811 yds, 14.7 avg, 6 TD"}
+    ],
+    "draftDayStory": [
+      "The 49ers entered draft night at No. 27, traded back twice — deals with the Dolphins and the Jets that moved them from 27 to 30 to 33 while adding a third- and a fifth-rounder — and opened Round 2 by taking Stribling with their first pick of the entire draft. Albert Breer reported San Francisco had him as one of only 16 'gold helmet' players on their board and refused to risk a third trade-down: 'The Niners had gotten themselves to a point where they didn't want to lose Stribling at 33.'",
+      "Draft pundits called it a reach — consensus boards had him in the 50s, and the San Francisco Chronicle noted the 49ers passed on the more decorated Denzel Boston (drafted six picks later by Cleveland) because Boston 'lacks Stribling's wheels.' Kyle Shanahan reportedly had a crystal-clear short- and long-term vision for him in an overhauled receiver room that had lost Deebo Samuel, Brandon Aiyuk and Jauan Jennings inside 13 months. Note: his college is listed as Mississippi (Ole Miss) — his final stop after Washington State and Oklahoma State."
+    ],
+    "whyTheyDraftedHim": [
+      "One of 16 'gold helmet' prospects on the 49ers' board — players who check every athletic, football and character box — per Albert Breer's reporting.",
+      "Shanahan's system demands receivers who can learn all three spots (X, F, Z), and Stribling's five years of college experience across three schemes made him the rare rookie the staff trusts with the full route tree immediately.",
+      "Size-speed outlier: among all Shanahan/Lynch-era receiver picks, only a handful were taller or heavier, and only Danny Gray (4.33) ran faster.",
+      "A receiver room in crisis created urgent need: Aiyuk gone amid a standoff, Jennings lost in free agency, and Ricky Pearsall to season-ending knee surgery in camp."
+    ],
+    "campNotes": [
+      {"date": "Aug 13", "source": "NBC Bay Area / ESPN Research", "note": "Led the 49ers with 7 catches (on 8 targets) for 62-63 yards in the preseason opener against Tennessee, including a 32-yard grab — the first rookie in a decade with 7+ receptions in the first half of his team's preseason opener."},
+      {"date": "Aug 15", "source": "Nick Wagoner, ESPN", "note": "ESPN reported Stribling has gone from intriguing Day 2 pick to necessity in a depleted room, overcoming a brief three-day bout of hamstring tightness while earning deep-shot trust from Brock Purdy in 11 camp practices."},
+      {"date": "Aug 17", "source": "SI / 49ers Webzone", "note": "The 49ers' official depth chart lists him on the second line with Christian Kirk, behind starters Mike Evans, Deebo Samuel (signed after Pearsall's injury) and Demarcus Robinson — with Kirk not practicing and losing ground."},
+      {"date": "Aug 22", "source": "Matt Barrows and Vic Tafur, The Athletic", "note": "The Athletic projected Stribling for a 'major role' in Week 1 — a break from Kyle Shanahan's usual slow-play of rookie receivers — after three more catches from Purdy in the preseason win over the Chargers."}
+    ],
+    "beatQuotes": [
+      {"quote": "He's a guy that's consistent, smart, and shows that he's a guy that you can trust. That first drive, to go out there and be able to connect with him, felt really good; him making some tough catches with guys on him and things like that. So for me, that's huge. I know he's going to continue to get better.", "attribution": "Brock Purdy, via NBC Sports Bay Area, Aug 21"},
+      {"quote": "He's got the right mindset off the rip. Zero ego.", "attribution": "George Kittle, NFL Radio interview, week of Aug 17"},
+      {"quote": "He's a really smart dude. He gets the game of football... Strib has been a guy that has come in and has shown he understands it. It is preseason and everything, so we'll see once we get to the season, but right now I have a lot of trust in him.", "attribution": "Brock Purdy, ESPN, Aug 15"}
+    ],
+    "depthChart": "Second-team on the official depth chart behind Mike Evans, Deebo Samuel and Demarcus Robinson, but trending up fast: Ricky Pearsall is on IR, Christian Kirk hasn't practiced and is fighting for a roster spot, and The Athletic projects Stribling for a major Week 1 role. Jordan Watkins and Jacob Cowing round out the rotation.",
+    "whyHeCouldSucceed": [
+      "The opportunity is historic for a Shanahan rookie: Aiyuk, Jennings and Pearsall are all gone or on IR, and the veterans ahead of him (Evans at 33, Deebo signed mid-camp, Robinson) are stopgaps, not roadblocks.",
+      "Brock Purdy has publicly and repeatedly vouched for him — quarterback trust is the currency that gets rookie receivers targets, and he already leads all 49ers in preseason receptions.",
+      "A 4.36 forty at 6'2\" 207 gives Shanahan a YAC-and-vertical hybrid he hasn't had since peak Aiyuk; the scheme manufactures production for exactly this athletic profile.",
+      "Five college seasons across three schemes made him unusually pro-ready; coaches rave about his install retention, and it's showing up as first-drive chemistry with the starters."
+    ],
+    "whyHeCouldFail": [
+      "He turns 24 as a rookie with only two college seasons over 811 yards — the age-adjusted production profile is that of a solid pro, not a star, and consensus boards had him 20+ spots below where San Francisco took him.",
+      "Shanahan's offense funnels targets to Christian McCaffrey and George Kittle; even in a thin room, the WR target pie in San Francisco has historically been modest.",
+      "Mike Evans and Deebo Samuel will command the boundary and manufactured-touch roles this year, and Pearsall returns in 2027 to re-crowd the depth chart.",
+      "Already flashed hamstring tightness in camp, and his college resume includes a lost 2023 season — durability at his play style (contested work over the middle) is unproven against NFL physicality."
+    ],
+    "fantasyOutlook": [
+      "The August helium is real but so is the veteran traffic: expect a meaningful rotational role from Week 1 with spike weeks whenever Evans or Samuel miss time — a 45-650-4 rookie line is the median, with genuine WR3 upside if Purdy keeps force-feeding him. The 2027 picture is what dynasty managers are buying: Evans, Samuel and Robinson are all short-term contracts, and Stribling is the only receiver on the roster with both premium athletic traits and the front office's 'gold helmet' stamp.",
+      "In superflex .5 PPR rookie drafts he's an early second-rounder, and the board's No. 8 slot (KTC 3867, tier 3) is right — notably ahead of his FantasyPros consensus rank of 13, a gap his preseason has justified. He's the classic 'buy before the market corrects' rookie: the profile, the quarterback endorsement and the 2027 depth-chart void all point the same direction."
+    ],
+    "comp": "A leaner Kenny Stills with Jauan Jennings' between-the-numbers toughness — big-slot speed that stresses safeties vertically while doing the dirty work Shanahan demands.",
+    "bottomLine": "Don't let the April 'reach' label fool you — he's the 49ers' receiver of the future and their preseason MVP. Take him early in round two of your rookie draft, ahead of his consensus rank.",
+    "sources": [
+      "https://www.espn.in/nfl/story/_/id/49609924/san-francisco-49ers-wide-receiver-dezhaun-stribling-preseason-debut",
+      "https://www.sfchronicle.com/sports/49ers/article/49ers-take-de-zhaun-stribling-second-round-top-22224484.php",
+      "https://www.49erswebzone.com/articles/200625-49ers-before-drafting-dezhaun-stribling/",
+      "https://www.ninersnation.com/san-francisco-49ers-preseason/161564/49ers-stribling-purdy-kittle-preseason-2026-chargers",
+      "https://nflcombineresults.com/playerpage.php?i=32111",
+      "https://www.sports-reference.com/cfb/players/dezhaun-stribling-1.html",
+      "https://www.footballdb.com/players/dezhaun-stribling-stribde01",
+      "https://www.si.com/nfl/49ers/onsi/49ers-wide-receiver-depth-chart-completely-changed-last-week"
+    ]
+  },
+  "1009": {
+    "id": 1009,
+    "name": "Kenyon Sadiq",
+    "position": "TE",
+    "nflTeam": "NYJ",
+    "nflTeamName": "New York Jets",
+    "college": "Oregon",
+    "hometown": "Idaho Falls, Idaho",
+    "classYear": "Junior",
+    "headline": "The Fastest Tight End in Combine History Is Racing the Calendar to Week 1",
+    "subhead": "The Jets spent the No. 16 pick on Oregon's 4.39 unicorn, but a hernia-surgery setback has kept the Idaho phenom sidelined for most of his first NFL summer.",
+    "draftPick": "Round 1, Pick 16 (No. 16 overall), New York Jets",
+    "measurables": {
+      "height": "6'3\"",
+      "weight": "241 lbs",
+      "age": "21.5",
+      "forty": "4.39",
+      "tenSplit": "1.54",
+      "vertical": "43.5\"",
+      "broad": "11'1\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Historic. His 4.39 forty is the fastest ever recorded by a tight end at the combine (tied with or edging Vernon Davis' 2006 run), his 43.5\" vertical tied for third-highest among all TEs since 1987, and his 11'1\" broad jump tied for fourth. At 6'3\" 241, every number sits in the 99th percentile for the position."
+    },
+    "collegeCareer": [
+      "Sadiq's story starts in Idaho Falls, where he was raised by a single mother, shaped by his sheriff grandfather, and became the No. 1 recruit in Idaho out of Skyline High. He chose Oregon and spent his 2023 freshman season as a special-teamer and gadget piece (5 catches, 24 yards, 1 TD) on a Fiesta Bowl winner, then grew into a rotational role in 2024 with 24 catches for 308 yards and 2 scores as the Ducks won the Big Ten in their first year in the league.",
+      "The 2025 season was the leap: 51 receptions for 560 yards and 8 touchdowns — an Oregon single-season record for catches by a tight end — earning Big Ten Tight End of the Year and second-team All-American honors while Oregon won two College Football Playoff games. His usage was distinctly modern: flexed wide, in the slot, on jet motion, and as a devastating run-after-catch weapon whose contact balance and open-field speed made him a YAC outlier at the position.",
+      "The knock is the profile every athletic-marvel tight end carries: modest raw yardage (never a 600-yard season), a still-developing inline blocking game at 241 pounds, and production that came in a loaded offense. But 42 games, a 38-5 team record and three postseason runs mean he's been a winning player in big environments since he was 18."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "Oregon", "line": "14 G, 5 rec, 24 yds, 4.8 avg, 1 TD"},
+      {"season": "2024", "team": "Oregon", "line": "14 G, 24 rec, 308 yds, 12.8 avg, 2 TD"},
+      {"season": "2025", "team": "Oregon", "line": "14 G, 51 rec, 560 yds, 11.0 avg, 8 TD (school TE record for receptions)"}
+    ],
+    "draftDayStory": [
+      "The Jets turned draft night into a haul, ending up with three first-round picks — edge David Bailey, Sadiq at No. 16 (acquired via a trade with the Indianapolis Colts), and receiver Omar Cooper Jr. Sadiq was the first tight end off the board, a premium investment in a position the Jets had already begun rebuilding with 2025 second-rounder Mason Taylor.",
+      "For Aaron Glenn's staff and offensive coordinator Frank Reich, the vision was two-tight-end mismatch football: Taylor as the traditional Y, Sadiq as the movable 12-personnel weapon whose combine-record speed forces safeties into impossible choices. Sadiq called the Jets' tight end room one where 'the possibilities are endless.'"
+    ],
+    "whyTheyDraftedHim": [
+      "Positional-record athleticism: the fastest combine 40 ever by a tight end (4.39) with 99th-percentile explosion numbers — the kind of outlier trait profile teams draft in the top 20 on principle.",
+      "Frank Reich's offense wants to expand its 12-personnel usage, and pairing Sadiq with Mason Taylor gives the Jets a two-TE package defenses can't match personnel against.",
+      "Glenn's front office prioritized culture fits, and Sadiq's background — hardship, humility, a state-title and CFP-winning resume — checked every character box.",
+      "At 21.5 he was one of the youngest first-rounders in the class, with obvious untapped ceiling given only one season of full-time usage at Oregon."
+    ],
+    "campNotes": [
+      {"date": "Aug 1", "source": "newyorkjets.com", "note": "Had a strong Saturday practice early in camp, hauling in multiple passes from Geno Smith including a chunk gainer in red-zone work, after missing all of OTAs following hernia surgery that was performed after rookie minicamp."},
+      {"date": "Aug 4", "source": "Aaron Glenn via AP / newyorkjets.com", "note": "Held out for a second straight day with what Glenn called a setback in the hernia recovery: 'He had a little setback as we watched his exams, so he'll be out a little bit.' Glenn said he was 'very confident' Sadiq would be ready for the Sept. 13 opener at Tennessee."},
+      {"date": "Aug 10", "source": "newyorkjets.com unofficial depth chart", "note": "Listed as the backup to Mason Taylor on a first-team depth chart that carries two tight ends; he has not practiced since the setback."},
+      {"date": "Aug 24", "source": "JetNation", "note": "Seen running and cutting on the side field with a coach alongside Breece Hall and D'Angelo Ponds, all looking good; Glenn said the Jets are still targeting Week 1 for that group while remaining conservative with the rookie."}
+    ],
+    "beatQuotes": [
+      {"quote": "He had a little setback as we watched his exams, so he'll be out a little bit. I can't tell you exactly how long right now, but I will let you know that at some point but just expect him to be out for a little bit. He's working his way back.", "attribution": "Aaron Glenn, Jets head coach, Aug 4"},
+      {"quote": "I feel great. It's really just getting that football movement back that I've missed the past couple of months. But no, there's definitely still another level to get to.", "attribution": "Kenyon Sadiq, newyorkjets.com, early August"}
+    ],
+    "depthChart": "Listed behind 2025 second-rounder Mason Taylor, the incumbent target-earner, on a Jets depth chart that carries two first-team tight ends, with Jeremy Ruckert the blocking specialist behind them. He hasn't practiced since Aug 3 but was running and cutting on the side field Aug 24, with the team targeting the Sept. 13 opener.",
+    "whyHeCouldSucceed": [
+      "Generational athletic profile for the position — combine-record speed and 99th-percentile explosion at 6'3\" 241 is the trait cocktail that produced Vernon Davis and prime Kyle Pitts hype, with better hands than either coming out.",
+      "Frank Reich plans to build up 12-personnel around him and Mason Taylor, and Reich's offenses have historically fed athletic tight ends (Eric Ebron's 13-TD 2018 season in Indy).",
+      "Eight touchdowns on 51 catches in 2025 shows elite per-touch scoring value — he doesn't need volume to matter in half-PPR.",
+      "At 21.5, he's the youngest premium asset in this rookie class at a position where value compounds late; his dynasty window outlasts everyone drafted around him."
+    ],
+    "whyHeCouldFail": [
+      "Rookie tight ends almost never produce, and Sadiq missed all of OTAs and virtually all of training camp with hernia surgery and a setback — the worst possible development path for the position's steep learning curve.",
+      "Mason Taylor is entrenched as the Jets' TE1 and led the team's young pass-catchers in 2025; Sadiq may be the 1B in snaps and the 2 in targets all season.",
+      "Career-high of 560 receiving yards means the production resume is thin — he's a traits bet, and traits-first tight ends (Pitts, Ruckert himself) have burned dynasty managers repeatedly.",
+      "Geno Smith-to-whoever quarterback uncertainty and a run-leaning Jets offense cap the near-term target ceiling for the second tight end."
+    ],
+    "fantasyOutlook": [
+      "Write off 2026 as a redshirt-plus: he lost the entire install runway, Taylor owns the position, and even healthy rookie tight ends rarely crack 500 yards. Expect 25-300-3 territory with spike weeks driven by red-zone athleticism. The bet is 2027-2029, when a 22-23 year old with the fastest tight end 40 ever recorded becomes the centerpiece mismatch of a Reich offense — that's a top-3 dynasty TE outcome if the target share ever consolidates.",
+      "In superflex .5 PPR rookie drafts, he's a late-first/early-second flier, and the board's No. 9 slot (KTC 3806, tier 3) prices him fairly against his FantasyPros consensus of 10. In tight-end-premium formats, bump him a full round. He's the classic 'draft him where patience is cheapest' pick: worthless in September, potentially untouchable by his second season."
+    ],
+    "comp": "Vernon Davis — the literal combine comp (both ran 4.39 at the position's record pace), with the same freshman-NFL-year risk and the same franchise-altering ceiling.",
+    "bottomLine": "The best pure traits bet in the draft, wrapped in a lost rookie summer. Take him top-10 in rookie drafts only if you can afford to wait a year for the payoff.",
+    "sources": [
+      "https://www.newyorkjets.com/news/kenyon-sadiq-has-setback-following-surgery-jets-training-camp-08-04-2026",
+      "https://apnews.com/article/jets-kenyon-sadiq-braelon-allen-4a3a1bf631bbf83bd8a784b6f96ef380",
+      "https://www.ncaa.com/news/football/article/2026-04-23/kenyon-sadiq-college-football-career-stats-highlights-records",
+      "https://www.newyorkjets.com/news/5-things-to-know-kenyon-sadiq-jets-draft",
+      "https://www.jetnation.com/2026/08/24/jets-traiing-camp-kicking-competition-stumbles/",
+      "https://www.newyorkjets.com/news/2026-jets-unofficial-depth-chart",
+      "https://en.wikipedia.org/wiki/Kenyon_Sadiq"
+    ]
+  },
+  "1013": {
+    "id": 1013,
+    "name": "Denzel Boston",
+    "position": "WR",
+    "nflTeam": "CLE",
+    "nflTeamName": "Cleveland Browns",
+    "college": "Washington",
+    "hometown": "Puyallup, Washington",
+    "classYear": "Redshirt Junior",
+    "headline": "Cleveland's 6-Foot-4 Contested-Catch Machine Is Already Running With the Ones",
+    "subhead": "Drafted seven picks into Round 2 as the red-zone body the Browns lacked, Boston spent August winning 50/50 balls and first-team reps opposite KC Concepcion.",
+    "draftPick": "Round 2, Pick 7 (No. 39 overall), Cleveland Browns",
+    "measurables": {
+      "height": "6'4\"",
+      "weight": "212 lbs",
+      "age": "22.7",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": "37 1/2\" (pro day; 35\" combine)",
+      "broad": null,
+      "threeCone": "6.80 (pro day)",
+      "shuttle": "4.28 (combine)",
+      "bench": null,
+      "armLength": "32\"",
+      "combineNote": "Measured 6'3 1/2\", 212 pounds with 32\" arms but declined to run the 40 at both the combine and Washington's March 16 pro day — a decision that fed the long-speed questions. His agility numbers (4.28 shuttle, 6.80 three-cone) and an improved 37.5\" pro-day vertical showed the movement skills are better than the burner-or-bust framing."
+    },
+    "collegeCareer": [
+      "Boston's Washington career was a study in patience. A three-star from Emerald Ridge High in Puyallup, he arrived in 2022 behind a future-NFL trio of Rome Odunze, Jalen McMillan and Ja'Lynn Polk and totaled seven catches across his first two seasons — including the Huskies' 2023 national-runner-up run — while refusing to enter the transfer portal.",
+      "When the room finally cleared in 2024, he delivered: 63 catches for 834 yards and 9 touchdowns with honorable-mention All-Big Ten honors, then built on it in 2025 with 62 receptions for 881 yards (14.2 average) and 11 touchdowns — tied for ninth in the FBS and tied for sixth in Washington single-season history. His 20 career receiving scores rank eighth all-time at the school, and he was named the Huskies' Offensive Skill Player of the Year in back-to-back seasons.",
+      "He also handled punt returns (a 104-yard TD season line in 2025) and closed his career with a 6-126-1 L.A. Bowl masterpiece against Boise State that included a 78-yard touchdown. The scouting book: a smooth, huge-framed X receiver who wins at the catch point and in the red zone, with lingering questions about deep speed he declined to answer with a stopwatch."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Washington", "line": "4 G (redshirt), 2 rec, 15 yds, 7.5 avg; 1 car, 2 yds"},
+      {"season": "2023", "team": "Washington", "line": "14 G, 5 rec, 51 yds, 10.2 avg (national runner-up season)"},
+      {"season": "2024", "team": "Washington", "line": "13 G, 63 rec, 834 yds, 13.2 avg, 9 TD; 12 PR, 80 yds"},
+      {"season": "2025", "team": "Washington", "line": "12 G, 62 rec, 881 yds, 14.2 avg, 11 TD; 8 PR, 104 yds, TD"}
+    ],
+    "draftDayStory": [
+      "The Browns took Boston at No. 39 overall — seven picks into Round 2 — making him the second receiver Cleveland drafted in two nights after KC Concepcion at No. 24. Todd Monken said the team had offers to trade back from the spot but 'really thought at that pick take Denzel,' and revealed he'd personally called Washington coach Jedd Fisch, who 'raved about Denzel — loves to practice, competitive, a lot of fight in him.'",
+      "There's a wrinkle dynasty managers should know: the 49ers, picking at No. 33, chose De'Zhaun Stribling over Boston even though Boston was widely regarded by draft analysts as the better prospect, largely because Boston skipped the 40. Cleveland happily caught the faller, pairing the class's best contested-catch receiver with its best YAC receiver in one draft."
+    ],
+    "whyTheyDraftedHim": [
+      "'He's a different body type than what we have. We were looking at someone we thought could be a size matchup and especially in the red zone, which we did not have,' Monken said the night of the pick.",
+      "Deliberate pairing with Concepcion: Monken called the complementary skill sets 'probably more important than usual' given the small-bodied makeup of Cleveland's existing receiver room.",
+      "A glowing character reference from Jedd Fisch, whom Monken called personally before the pick — practice habits and competitiveness sealed it.",
+      "20 college touchdowns on 132 catches: elite catch-point conversion the Browns' offense had lacked for years."
+    ],
+    "campNotes": [
+      {"date": "Aug 3", "source": "clevelandbrowns.com", "note": "Through five days of camp Boston repeatedly won 50/50 balls and deep shots — a deep catch from Deshaun Watson in third-and-extra-long work, another from Shedeur Sanders in 7-on-7, and a contested grab plus drawn pass interference against CB Tyson Campbell in the two-minute drill."},
+      {"date": "Aug 11", "source": "Brian D'Aguanno, clevelandbrowns.com", "note": "Posted a standout Day 12 of camp while taking most of his reps with the first-team offense alongside KC Concepcion and Jerry Jeudy — six-plus catches across 11-on-11 and 7-on-7 periods from both Watson and Sanders, including several sideline and over-the-middle grabs."},
+      {"date": "Aug 15", "source": "Scott Petrak, BrownsZone", "note": "Played throughout the first half of the preseason opener at Chicago with fellow rookies Concepcion and Spencer Fano, catching a 15-yard pass from Watson that converted a third down on the opening field-goal drive."}
+    ],
+    "beatQuotes": [
+      {"quote": "I think it really comes from just knowing my job, knowing what I'm doing, having good communication with the quarterback. When you're able to do that, you kind of can just play fluid, play free, and just go out there and have fun.", "attribution": "Denzel Boston, clevelandbrowns.com, Aug 3"},
+      {"quote": "Spoke with Jedd Fisch, his head coach at Washington, who I've got a ton of respect for... raved about Denzel, loves to practice, competitive, a lot of fight in him. He's come a long way as a player and is only going to continue to get better.", "attribution": "Todd Monken, Browns head coach, post-draft press conference, Apr 24"}
+    ],
+    "depthChart": "Running with the first-team offense alongside Jerry Jeudy and KC Concepcion since mid-August, effectively leapfrogging Cedric Tillman and Isaiah Bond for the X receiver role. The three-headed rookie-veteran trio looks set for Week 1; the real variable is whether Deshaun Watson or Shedeur Sanders is throwing to him.",
+    "whyHeCouldSucceed": [
+      "He's already a first-team fixture in August — camp observers had him dominating 50/50 drills daily, and coaches gave him most of the No. 1 X reps by Day 12 of camp.",
+      "The Browns built their draft around him: Monken explicitly targeted his 6'4\" red-zone profile as the missing piece, which means designed end-zone targets from Week 1.",
+      "20 touchdowns over his last two college seasons prove the catch-point dominance translates to scoring — half-PPR gold if he inherits Cleveland's red-zone role.",
+      "Jerry Jeudy and Concepcion will pull coverage underneath and to the slot, leaving Boston single-covered on the boundary far more than most rookie X receivers see."
+    ],
+    "whyHeCouldFail": [
+      "He never answered the speed question — no 40 at the combine or pro day — and NFL boundary receivers without verified long speed live and die on contested throws, a volatile weekly proposition.",
+      "The Watson/Sanders quarterback carousel is the scariest landing-spot variable in the class; contested-catch receivers need aggressive, accurate downfield passing to eat.",
+      "Cleveland's crowded room (Jeudy, Concepcion, Tillman, Bond, Wallace) means target competition from every alignment, and Concepcion's manufactured touches shrink the pie further.",
+      "One-and-a-half years of real college production behind three NFL receivers — the late-breakout, age-22.7 profile carries meaningful bust risk in receiver modeling."
+    ],
+    "fantasyOutlook": [
+      "Boston's rookie season sets up as touchdown-dependent WR4 value with a genuine path to more: he's a Week 1 starter at X, the designated red-zone target on a team that drafted him specifically for that job, and camp reporting says he's earning both quarterbacks' trust. Something like 50-700-7 is live if the quarterback play stabilizes; the weekly floor will be bumpy either way. His half-PPR scoring skews toward touchdowns, which suits this format better than full PPR.",
+      "Dynasty-wise, the board has him No. 10 (KTC 3736) while FantasyPros consensus says 8 — that gap is your buying window. An early second-round rookie pick in superflex .5 PPR is the right price, and he's arguably a better bet than Stribling despite the 49ers' pick order: better college production, better draft-slot context, and a role his coach has publicly defined. If Sanders wins the job and develops, Boston's 2027 ceiling is a 1,000-yard, double-digit-TD X receiver."
+    ],
+    "comp": "Michael Pittman Jr. with a scoring bent — a huge, smooth possession X who wins above the rim and converts red-zone volume rather than running away from anyone.",
+    "bottomLine": "The most pro-ready contested-catch receiver in the class walked into a starting job and a defined red-zone role. He's a strong early-second-round rookie pick — take him ahead of his KTC slot.",
+    "sources": [
+      "https://www.clevelandbrowns.com/news/denzel-boston-strives-to-play-fluid-and-free-during-browns-training-camp",
+      "https://www.clevelandbrowns.com/news/denzel-boston-posts-standout-performance-on-day-12-training-camp-observations",
+      "https://www.nfldraftbuzz.com/player/Denzel-Boston-WR-Washington",
+      "https://browns.1rmg.com/transcripts/head-coach-todd-monken/",
+      "https://www.brownszone.com/2026/08/15/deshaun-watson-looks-more-comfortable-than-rusty-in-return-and-other-takeaways-from-preseason-opener/",
+      "https://www.sfchronicle.com/sports/49ers/article/49ers-take-de-zhaun-stribling-second-round-top-22224484.php",
+      "https://draftscout.com/dsprofile.php?DraftYear=2026&PlayerId=1094935"
+    ]
+  }
+}
