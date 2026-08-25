@@ -1,0 +1,463 @@
+{
+  "1037": {
+    "id": 1037,
+    "name": "Nate Boerkircher",
+    "position": "TE",
+    "nflTeam": "JAC",
+    "nflTeamName": "Jacksonville Jaguars",
+    "college": "Texas A&M",
+    "hometown": "Aurora, Nebraska",
+    "classYear": "Redshirt Senior",
+    "headline": "The Zero-Star Walk-On Who Became A Second-Round Tight End",
+    "subhead": "Jacksonville spent pick No. 56 on the best inline blocker in the class, and a Nebraska walk-on turned Aggie is already Trevor Lawrence's No. 2 tight end.",
+    "draftPick": "Round 2, No. 56 overall, Jacksonville Jaguars",
+    "measurables": {
+      "height": "6'5 1/2\"",
+      "weight": "245 lbs",
+      "age": "24.9",
+      "forty": "4.79",
+      "tenSplit": "1.58",
+      "vertical": "32\"",
+      "broad": null,
+      "threeCone": "7.03",
+      "shuttle": "4.32",
+      "bench": null,
+      "armLength": "32 5/8\"",
+      "combineNote": "Boerkircher's headline numbers come from a split of combine measurements and pro-day testing: 4.79 in the 40 with a 1.58 ten-yard split, a 7.03 three-cone and a 4.32 shuttle at 6-foot-5 1/2 and 245 pounds. The 40 is pedestrian, but the splits and change-of-direction work are what pushed his Relative Athletic Score to 8.89, top 11 percent of all tight ends tested since 1987. Enormous 10 1/2-inch hands are the 91st percentile at the position."
+    },
+    "collegeCareer": [
+      "Boerkircher is the rarest kind of second-round pick: a zero-star recruit with a single Division II offer who walked on at Nebraska in 2020 out of Aurora High School, where a lingering knee issue suppressed his recruiting entirely. He did not play as a true freshman, redshirted in 2021, and clawed his way into the rotation as the Huskers' third tight end in 2022, logging 224 snaps almost exclusively as a run blocker in one- and two-tight-end sets. Nebraska put him on scholarship in 2023 on the strength of work ethic and special-teams volume rather than production.",
+      "The 2024 season was his high-water mark in Lincoln: 12 games, six starts, a career-high 363 snaps and six catches for 102 yards, playing the blocking half of a two-tight-end split with pass-catcher Thomas Fidone. Across four seasons at Nebraska he appeared in 39 games and totaled 19 receptions for 219 yards and a touchdown. He entered the portal that December with a starter's job likely waiting for him and left anyway, choosing Texas A&M.",
+      "College Station tripled his receiving output and reframed his profile. Boerkircher started eight games for the Aggies, caught 19 of 22 targets for 198 yards and three touchdowns with exactly one drop, and added a rushing score. Sixty-one percent of his snaps were run plays, and he graded as the 13th-best run-blocking tight end in the country per PFF. The signature moment was the game-winning touchdown catch in South Bend against a top-10 Notre Dame team, a result that plausibly decided Texas A&M's playoff bid. He then went to Mobile and turned the Senior Bowl into a receiving audition, which is where his stock genuinely broke."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Nebraska", "line": "6 rec, 224 snaps, primary blocking TE"},
+      {"season": "2024", "team": "Nebraska", "line": "12 G, 6 starts, 6 rec, 102 yds, 0 TD, 363 snaps"},
+      {"season": "2025", "team": "Texas A&M", "line": "8 starts, 19 rec on 22 tgt, 198 yds, 10.4 ypr, 3 TD, 1 rush TD, 1 drop"},
+      {"season": "Career", "team": "Nebraska/Texas A&M", "line": "38 rec, 417 yds, 4 TD (19-219-1 in 39 games at Nebraska)"}
+    ],
+    "draftDayStory": [
+      "Jacksonville had no first-round pick in use on offense at the position and opened its draft by taking Boerkircher at No. 56, making a blocking tight end with 38 career catches the headline of the class. The pick was immediately and widely panned as a reach; USA TODAY's read was blunt, that he would spend far more time blocking than catching balls from Trevor Lawrence. General manager James Gladstone and the Liam Coen staff were unbothered, and they doubled down on the room by adding Tanner Koziol in the fifth round.",
+      "The board rank of No. 71 in this league's rookie pool is roughly a round light relative to reality: Boerkircher was the 56th player off the board, not a Day 3 flier, and Jacksonville's investment is the single most important fact in his fantasy profile. Note also the persistent listing confusion — Nebraska-era sources say 6-4/220, the Jaguars list 6-5 1/2 and 245, and USA TODAY wrote him up at 6-6, 245."
+    ],
+    "whyTheyDraftedHim": [
+      "Coen's offense leans on 12 and 13 personnel, and Jacksonville wanted a true Y who can dig out defensive ends so the run game and Lawrence's play-action menu function without substituting.",
+      "Offensive coordinator Grant Udinski said the evaluation was essentially settled by the first tape he watched: the effort, strain, physicality, toughness and speed jumped off the screen.",
+      "PFF's 13th-ranked run-blocking grade among FBS tight ends, with 61 percent of his Texas A&M snaps coming on run plays — exactly the profile the staff had targeted.",
+      "One drop on 22 targets and a habit of finishing catches through contact told the staff the hands are real even if the volume was not.",
+      "Senior Bowl week, where he ran routes and separated well enough to convince teams he is more than a one-dimensional blocker."
+    ],
+    "campNotes": [
+      {"date": "May 27", "source": "John Shipley, Jaguars On SI", "note": "In his first OTA practice Boerkircher showed real pop in his hands during blocking drills and caught a pass over the middle in 7-on-7 with impressive acceleration for his size. He looked comfortable behind Brenton Strange from day one."},
+      {"date": "Aug 11", "source": "John Shipley, Jaguars On SI / Jaguars Wire", "note": "On Day 10 of camp Boerkircher was one of the standouts, with Shipley writing that he 'pitched a shutout' against a Jaguars front that has dominated since the pads came on."},
+      {"date": "Aug 13", "source": "Jaguars On SI training-camp review", "note": "The one thing Jacksonville has learned about Boerkircher is that he is as advertised as a run blocker; players and staff have repeatedly remarked on how he handles NFL defensive ends in the run game."},
+      {"date": "Aug 15", "source": "Jaguars On SI game grades", "note": "In the 24-20 preseason win at New Orleans the tight ends combined for one catch, but Boerkircher was singled out as impressive as a run blocker and looked at home in the scheme."},
+      {"date": "Aug 20", "source": "Jaguars Wire", "note": "Boerkircher and Koziol have acclimated quickly to Coen's offense, including in Wednesday's joint practice with Carolina. Coen highlighted Boerkircher's physicality, and he has flashed as a red-zone target."},
+      {"date": "Aug 22", "source": "CBS Sports / Jaguars Wire", "note": "He was held out of the 34-17 preseason loss to Carolina alongside Strange, which reads as a starter's rest rather than a demotion; he enters the season as the clear No. 2 tight end."}
+    ],
+    "beatQuotes": [
+      {"quote": "So, when you ask how quickly it was, it was probably pretty quick into the first game you put on that you see the way he plays, the effort, the strain, the physicality, the toughness, the speed, all of those things.", "attribution": "Grant Udinski, Jaguars offensive coordinator, May 27"},
+      {"quote": "Nate Boerkircher pitched a shutout by my count. He looks like the real deal as a blocker so far.", "attribution": "John Shipley, Jaguars On SI, Aug 11"},
+      {"quote": "I've got a lot to learn, and that's something I've leaned on Brenton in that aspect a lot because if you watch him, he's pretty elite in that aspect, and I've learned a lot from him.", "attribution": "Nate Boerkircher, via Jaguars Wire, Aug 11"}
+    ],
+    "depthChart": "Unambiguous TE2 behind Brenton Strange, who the staff believes can be one of the league's best tight ends. Fifth-rounder Tanner Koziol is the third body and the more natural receiver, while veterans Quintin Morris and Hunter Long have been pushed toward the bottom of the room.",
+    "whyHeCouldSucceed": [
+      "Second-round capital on a tight end is a commitment, not a flier; Jacksonville spent its first pick of the entire draft on him and has played him as the No. 2 all summer.",
+      "Coen's offense uses heavy tight-end personnel, and a blocking Y who never leaves the field accumulates snaps — the prerequisite for any tight end fantasy outcome.",
+      "He has already been the best blocker on the field in camp, which is the fastest route to a rookie tight end being trusted in the red zone and on early downs.",
+      "Elite hands (10 1/2 inches, 91st percentile) and one drop on 22 college targets mean the receiving floor is competence, not chaos, when targets do come.",
+      "If Brenton Strange misses time, Boerkircher inherits every-snap tight end duty in an offense with Trevor Lawrence and real red-zone volume."
+    ],
+    "whyHeCouldFail": [
+      "Strange is 25, healthy and ascending; barring injury there is no path to the target share that makes a tight end fantasy-relevant.",
+      "Thirty-eight career catches in six college seasons is a genuinely tiny receiving sample, and half of them came in one year.",
+      "He turns 25 in September, so there is no age-based projection curve here — he is what he is, and that is a blocker who catches some.",
+      "Koziol, the fifth-round pick, is the better natural pass catcher and may absorb the passing-game snaps in 12 personnel that Boerkircher would need.",
+      "A 4.79 40 caps the seam and vertical work that produces tight end scoring weeks; his routes will be play-action and red-zone specific."
+    ],
+    "fantasyOutlook": [
+      "Project roughly 15-25 catches for 150-250 yards and two or three touchdowns in 2026 — a real NFL role with almost no fantasy utility in a normal week. The path to more is entirely Strange-dependent. What Boerkircher does have is the one thing most rookie tight ends do not: a guaranteed job, second-round capital, and a coaching staff that structurally wants two tight ends on the field. Those are the ingredients that make a Year 2 or Year 3 breakout possible if the pass-catching development that camp has hinted at in the red zone continues.",
+      "In superflex .5 PPR dynasty, he is a late third-round rookie pick and nothing more aggressive than that. Do not pay a second for a 25-year-old blocking tight end behind a good starter, and do not reach on the second-round draft capital as if it were a receiving profile. If he is on the board in the fourth and your tight end room is empty, he is a defensible stash whose value spikes the day Strange gets hurt or leaves in free agency."
+    ],
+    "comp": "A cheaper Luke Musgrave in role terms crossed with early-career Brenton Strange — a big-bodied blocking Y whose fantasy case is inheritance, not talent displacement.",
+    "bottomLine": "Real NFL player, marginal fantasy asset: take him in the third or fourth round of a rookie draft as a bet on Jacksonville's tight end room changing hands, not on 2026 production.",
+    "sources": [
+      "https://247sports.com/college/texas-am/article/texas-am-tight-end-nate-boerkircher-selected-in-the-second-round-of-the-2026-nfl-draft-by-jacksonville-283060269/",
+      "https://en.wikipedia.org/wiki/Nate_Boerkircher",
+      "https://www.bigcatcountry.com/jacksonville-jaguars-draft/85105/jaguars-draft-class-five-things-to-know-about-nate-boerkircher",
+      "https://sports.yahoo.com/articles/early-jaguars-camp-returns-encouraging-183255796.html",
+      "https://www.si.com/nfl/jaguars/onsi/jacksonville-1-thing-we-have-learned-from-each-position-group-at-training-camp",
+      "https://sports.yahoo.com/articles/jaguars-offseason-vision-offense-coming-122218073.html",
+      "https://www.si.com/nfl/jaguars/onsi/jacksonville-grading-the-who-stood-out-in-24-20-win-over-saints",
+      "https://www.cbssports.com/fantasy/football/news/jaguars-nate-boerkircher-sidelined-for-fridays-preseason-loss/",
+      "https://www.ourlads.com/nfldepthcharts/player/55008/"
+    ]
+  },
+  "1044": {
+    "id": 1044,
+    "name": "Dallen Bentley",
+    "position": "TE",
+    "nflTeam": "DEN",
+    "nflTeamName": "Denver Broncos",
+    "college": "Utah",
+    "hometown": "Taylorsville, Utah",
+    "classYear": "Senior",
+    "headline": "Snow College Walk-On To Broncos Seventh-Rounder, With One Season Of Proof",
+    "subhead": "Bentley went from three career catches to a Mackey semifinalist in a single year, then landed at pick No. 256 in Denver's most crowded position room.",
+    "draftPick": "Round 7, No. 256 overall, Denver Broncos",
+    "measurables": {
+      "height": "6'4 1/8\"",
+      "weight": "253 lbs",
+      "age": "25.7",
+      "forty": "4.62",
+      "tenSplit": "1.62",
+      "vertical": "35\"",
+      "broad": "9'10\"",
+      "threeCone": "7.00",
+      "shuttle": "4.42",
+      "bench": "24 reps",
+      "armLength": "33 1/8\"",
+      "combineNote": "Bentley tested well for a seventh-rounder: an official 4.62 forty at 253 pounds ranked eighth among tight ends at the 2026 combine and lands in the 91st percentile at the position, backed by 24 bench reps (82nd percentile), a 35-inch vertical and a 118-inch broad. He improved on nearly everything at Utah's pro day, where he clocked 4.61 with a 1.59 split, a 4.18 shuttle and a 7.00 three-cone. The one soft spot is 9 1/4-inch hands, near the bottom of the position."
+    },
+    "collegeCareer": [
+      "Bentley's path is the least linear in this batch. He suffered a season-ending injury as a senior at Taylorsville High, walked on at Snow College, and spent 2022 in Ephraim, Utah, catching eight passes for 114 yards and two touchdowns in eight games while earning NJCAA second-team All-America honors. He transferred to Utah in 2023 and immediately disappeared into the blocking-tight-end pool, playing six games on special teams and as a reserve and catching one pass, a five-yarder in the Las Vegas Bowl against Northwestern.",
+      "The 2024 season was more of the same on the box score and more important than it looks: he played all 12 games and started seven, but was targeted almost exclusively as an inline blocker and finished with two catches for 15 yards. That is a functional profile for a Utah tight end and a dead end for a draft prospect — and he was already 24 years old.",
+      "Then 2025 happened. Bentley started 12 of 13 games and caught 48 passes for 620 yards and six touchdowns, seventh nationally among tight ends in receiving yards and 10th in receptions, with four-plus catches in six different games. He did not drop a pass all season. He scored his first career touchdown at UCLA, added scores against Cal Poly, at West Virginia, at Baylor and on Senior Day against Kansas State, and closed with six catches for 106 yards and a touchdown in the Las Vegas Bowl. Third-team All-Big 12 and a John Mackey Award semifinalist nod followed."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Snow College", "line": "8 G, 8 rec, 114 yds, 2 TD, NJCAA second-team All-America"},
+      {"season": "2023", "team": "Utah", "line": "6 G, 1 rec, 5 yds, 0 TD (special teams and reserve TE)"},
+      {"season": "2024", "team": "Utah", "line": "12 G, 7 starts, 2 rec, 15 yds, 0 TD"},
+      {"season": "2025", "team": "Utah", "line": "13 G, 12 starts, 48 rec, 620 yds, 12.9 ypr, 6 TD, 0 drops"}
+    ],
+    "draftDayStory": [
+      "Denver took Bentley with the 256th pick, the penultimate selection of the 2026 draft, after already spending a fifth-rounder on NC State's Justin Joly earlier on Day 3. Utah tight ends to Denver is nearly an annual rite: Caleb Lohner went 241st overall in 2025. Bentley was the third Ute picked in 2026 behind tackles Spencer Fano (No. 9, Cleveland) and Caleb Lomu (No. 28, New England), and the 10th Utah tight end ever drafted.",
+      "Sean Payton framed the pick as an inline addition with more juice than the label implies, and multiple outlets called it good seventh-round value given projections that had him in the fourth-to-fifth range. His No. 72 board rank in this league's pool is close to fair, though it understates how well he tested and overstates his path to snaps."
+    ],
+    "whyTheyDraftedHim": [
+      "Payton wanted a true inline Y who lines up wide of the tackle and can block at the point of attack, a specific role Denver's room lacked behind Adam Trautman.",
+      "Payton after Day 3: 'With Bentley, there's a more in-line wide, bigger. He does a great job down the field' — the staff sees vertical receiving ability, not just blocking.",
+      "One season of proof that the hands work: 48 catches, zero drops, and a Mackey semifinalist nod against Big 12 defenses.",
+      "Testing that fits a Payton tight end — 4.62 at 253 pounds with 24 bench reps and a 7.00 three-cone — plus the special-teams background of a career walk-on."
+    ],
+    "campNotes": [
+      {"date": "Jul 27", "source": "Denver Sports", "note": "With Trautman, Evan Engram, Nate Adkins and Lucas Krull all back and Joly a near-lock as a fifth-rounder, the question framed all summer was whether Denver would carry two rookie tight ends. Bentley was cast as the blocker fighting Lohner and Adkins for the last spot."},
+      {"date": "Aug 13", "source": "Kano Project (Broncos beat)", "note": "Ahead of the preseason opener at Atlanta, Bentley and Joly had been quiet in camp but were slated for heavy preseason run, with Lohner out in a walking boot and Adkins missing practices."},
+      {"date": "Aug 15", "source": "Mile High Report", "note": "Bentley played 23 offensive snaps in the preseason opener against the Falcons. The rookie tight end duo drew just one target between them, with Joly catching it for no gain — Bentley finished without a target."},
+      {"date": "Aug 20", "source": "Mile High Report", "note": "Evan Engram spoke favorably about both rookies, with the beat's read being that Joly profiles as an eventual move-tight-end heir while Bentley's size and blocking give him a shot as a future inline starter."},
+      {"date": "Aug 24", "source": "Predominantly Orange", "note": "Bentley was named among Broncos rookies who have not done enough to make the 53, with the practice squad the likeliest landing spot; his name has essentially not come up in camp and he has drawn no passing-game work in the preseason."}
+    ],
+    "beatQuotes": [
+      {"quote": "With Bentley, there's a more in-line wide, bigger. He does a great job down the field.", "attribution": "Sean Payton, Broncos head coach, post-draft, April 25"},
+      {"quote": "Rookies Justin Joly and Dallen Bentley have been quiet so far but will get a bunch of preseason run.", "attribution": "Kano Project, Broncos beat, Aug 13"},
+      {"quote": "We really haven't seen Bentley get any opportunities in the passing game during the preseason. We also haven't heard his name pop up at all during training camp.", "attribution": "Predominantly Orange, Aug 24"}
+    ],
+    "depthChart": "Fifth or sixth in a seven-deep room. Evan Engram and Adam Trautman are locked in, fifth-round pick Justin Joly is safe on draft capital, and Nate Adkins remains the incumbent blocking specialist. Bentley is competing with Adkins, Lucas Krull and the injured Caleb Lohner for the last tight end spot, and as of late August the beat consensus has him practice-squad bound.",
+    "whyHeCouldSucceed": [
+      "The 2025 tape is legitimate: 48 catches, 620 yards, six touchdowns and zero drops is starter-quality college production, not a blocker's fluke season.",
+      "He tested in the 90th percentile in the 40 at 253 pounds with 24 bench reps, so the athletic profile supports a real inline role rather than a camp body's.",
+      "Denver's veterans are not permanent — Engram is 32 and on the second year of his deal, Trautman is a rotational blocker, and the room turns over fast under Payton.",
+      "Payton specifically praised his downfield receiving, which is the trait that separates roster-filler blockers from tight ends who eventually see targets."
+    ],
+    "whyHeCouldFail": [
+      "He is the 256th pick in a room with two established veterans and a fifth-round rookie ahead of him, and the beat expects him to start the year on the practice squad.",
+      "He will be 26 during his rookie season, which erases any developmental runway a dynasty manager would normally be buying.",
+      "One year of receiving production against three years of two-catch seasons is a thin sample; the blocking label followed him for a reason.",
+      "Zero preseason targets through the opener and no camp buzz at all is the profile of a player the staff views strictly as a run-game specialist.",
+      "Bo Nix's tight end usage runs through Engram and the move-tight-end role, which is Joly's job, not Bentley's."
+    ],
+    "fantasyOutlook": [
+      "The realistic 2026 outcome is zero fantasy production: practice squad or a No. 4 tight end blocking role with a handful of catches. Denver's target tree at the position belongs to Engram in the slot and, eventually, Joly. Bentley would need two injuries and a scheme shift toward heavy sets to sniff relevance this season, and even then the ceiling is Trautman-esque volume — five to fifteen catches with a red-zone score.",
+      "In superflex .5 PPR dynasty he should not be drafted at all in a standard four-round rookie draft. He is a post-draft waiver add in deep leagues that roster 30-plus players, and a name to file for 2027 if Engram is not re-signed and Bentley wins camp reps next August. Paying anything above a fifth-round pick for a 25-year-old seventh-rounder buried behind three tight ends is how you turn a roster spot into nothing."
+    ],
+    "comp": "A slightly more athletic Adam Trautman — a big inline Y with real hands whose NFL value will be blocking snaps first and occasional seam targets second.",
+    "bottomLine": "Let him go undrafted; the production spike was real but the room, the draft slot and a 26th birthday leave almost no path to fantasy relevance.",
+    "sources": [
+      "https://www.denverbroncos.com/news/broncos-select-te-dallen-bentley-with-256th-overall-pick-in-2026-nfl-draft",
+      "https://www.deseret.com/sports/2026/04/25/dallen-bentley-2026-nfl-draft-utah-football-snow-college/",
+      "https://utahutes.com/sports/football/roster/dallen-bentley/16553",
+      "https://nflcombineresults.com/playerpage.php?i=32310",
+      "https://en.wikipedia.org/wiki/Dallen_Bentley",
+      "https://www.milehighreport.com/denver-broncos-roster/177227/denver-broncos-roster-review-te-dallen-bentley",
+      "https://denversports.com/nfl/denver-broncos/broncos-rookie-tes",
+      "https://www.milehighreport.com/denver-broncos-news/182470/evan-engram-impressed-with-justin-joly-and-dallen-bentley",
+      "https://predominantlyorange.com/3-broncos-rookies-who-haven-t-done-nearly-enough-to-make-the-final-roster-01m0t7nbq23b"
+    ]
+  },
+  "1049": {
+    "id": 1049,
+    "name": "Joe Royer",
+    "position": "TE",
+    "nflTeam": "CLE",
+    "nflTeamName": "Cleveland Browns",
+    "college": "Cincinnati",
+    "hometown": "Cincinnati, Ohio",
+    "classYear": "Redshirt Senior",
+    "headline": "He Broke Travis Kelce's Record, Then Missed The Entire Summer",
+    "subhead": "Royer arrived in Cleveland with the best hands in the Browns' tight end room and has not practiced once in training camp while attending to a personal matter.",
+    "draftPick": "Round 5, No. 170 overall, Cleveland Browns",
+    "measurables": {
+      "height": "6'5\"",
+      "weight": "247 lbs",
+      "age": null,
+      "forty": "4.65",
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "31 1/2\"",
+      "combineNote": "Royer ran the 40 in 4.65 and took part in position drills at the combine but did not complete the athletic testing battery — no vertical, broad, bench, shuttle or three-cone on record. A March hamstring issue then wiped out his pro-day workout, so his athletic profile is essentially unmeasured. What is on file: 6-foot-5, 247 pounds, 10 3/4-inch hands and short 31 1/2-inch arms for the position."
+    },
+    "collegeCareer": [
+      "Royer is a west-side Cincinnati kid who went to Elder High School as the No. 9 recruit in Ohio and signed with Ohio State, where the football never materialized. He redshirted in 2020, played five games as a reserve in 2021, then lost most of 2022 to the death of his mother, Michelle, finishing with two catches. Another redshirt year in 2023 produced four appearances and one reception. Three-plus seasons in Columbus yielded four catches for 24 yards, and after graduating he transferred home to Cincinnati for his final two years of eligibility.",
+      "The move rewrote his career. He started all 12 games for the Bearcats in 2024 and caught 50 passes for 521 yards and three touchdowns, breaking Travis Kelce's school single-season record for receptions by a tight end (45, set in 2012) and earning first-team All-Big 12 honors. It was a volume-and-reliability season built on winning third-level windows against zone, the sort of production that suggests a decade of untapped snaps behind it.",
+      "The 2025 follow-up was quieter in the box score and better in the details: 29 catches for 416 yards, 14.3 per reception and four touchdowns while starting all 13 games, with a fifth-place finish among FBS tight ends in yards after the catch per reception. Third-team All-Big 12. He started all 25 games he played at Cincinnati and finished his Bearcats career with 79 receptions for 937 yards and seven touchdowns, plus the ability to line up as a traditional Y or detach as an F."
+    ],
+    "collegeStats": [
+      {"season": "2021", "team": "Ohio State", "line": "5 G, 1 rec, 9 yds, 0 TD"},
+      {"season": "2022", "team": "Ohio State", "line": "6 G, 2 rec, 10 yds, 0 TD (missed time following the death of his mother)"},
+      {"season": "2023", "team": "Ohio State", "line": "4 G, 1 rec, 5 yds, 0 TD (redshirt)"},
+      {"season": "2024", "team": "Cincinnati", "line": "12 G, 12 starts, 50 rec, 521 yds, 10.4 ypr, 3 TD, first-team All-Big 12"},
+      {"season": "2025", "team": "Cincinnati", "line": "13 G, 13 starts, 29 rec, 416 yds, 14.3 ypr, 4 TD, third-team All-Big 12"}
+    ],
+    "draftDayStory": [
+      "Cleveland took Royer at No. 170 in the fifth round, a slide relative to industry projections that had him in the 75-110 range, with the fall attributed to an unmeasured athletic profile and inconsistent blocking. Andrew Berry described the pick as value plus positional flexibility: a tight end who can handle the inline Y job and the detached F role in the same offense. Cleveland had already spent the offseason patching the room, signing Jack Stoll, re-signing Blake Whiteheart and tendering Brenden Bates, then added seventh-rounder Carsen Ryan after Royer.",
+      "The board rank of No. 73 here is defensible on talent and generous on situation. Royer joins a room headlined by Harold Fannin Jr., who caught 72 passes as a rookie in 2025, and the No. 2 pass-catching job that looked available in May has been contested all summer without him."
+    ],
+    "whyTheyDraftedHim": [
+      "Berry: 'Joe has size, really good hands. He is a player that can produce both in the Y, which is kind of your traditional inline role, and the F role, which is a little bit more of a receiving role.'",
+      "Two-position flexibility mattered to Cleveland specifically because Fannin plays a detached, move-tight-end role and the team wanted a second body who could do either job.",
+      "Zone-window feel and hands: he broke Kelce's Cincinnati reception record and ranked fifth among FBS tight ends in YAC per catch in 2025.",
+      "Value on the board after a draft-day slide, with Todd Monken's pass-heavy offense a logical developmental landing spot for a receiving tight end."
+    ],
+    "campNotes": [
+      {"date": "Jul 30", "source": "Andrew Berry, Browns GM, via Cleveland.com", "note": "Berry confirmed Royer was away from the team for a personal matter, declined to detail it out of respect for his privacy, and said there was no definite timeline but that the Browns would ramp him up quickly when he returned."},
+      {"date": "Aug 10", "source": "Browns Nation / Camp Greetham report", "note": "Royer was again absent from practice alongside Carson Schwesinger, Justin Jefferson and Mike Hall. He has not taken part in a single full-team camp workout."},
+      {"date": "Aug 11", "source": "Dawg Pound Daily", "note": "Cleveland's first unofficial depth chart listed Royer dead last among a long list of tight ends after he missed the first 12 days of camp — a dark-horse TE2 candidate now well behind."},
+      {"date": "Aug 16", "source": "Heavy.com / Mary Kay Cabot, Cleveland.com", "note": "Royer missed the preseason opener, a 34-10 loss to Chicago, with no indication of a return date. Cabot reported Whiteheart, Brenden Bates and seventh-rounder Carsen Ryan were splitting the No. 2 pass-catching reps behind Fannin in his absence."},
+      {"date": "Aug 19", "source": "Daniel Oyefusi, ESPN, via Heavy.com", "note": "The position group has been hit hard: Ryan hurt a foot, Bates was waived after a preseason injury, only four tight ends practiced, and Cleveland worked out Drew Biber and J.J. Galbreath while Royer remained away."},
+      {"date": "Aug 24", "source": "Browns official unofficial depth chart", "note": "For the third preseason game against New England, Royer is listed last at tight end and in parentheses — behind Fannin, Whiteheart, Ryan, Jermaine Terry II and Biber — signaling he still is not available."}
+    ],
+    "beatQuotes": [
+      {"quote": "Out of respect to him and his privacy, I'm not going to go into the details other than to say that he has our full support. We're really happy that he's focused on kind of resolving this matter. I don't have a definite timeline in terms of when he's going to be back.", "attribution": "Andrew Berry, Browns GM, July 30"},
+      {"quote": "I don't know that. I'm hopeful that we get Joe back soon, but I can't speak to that.", "attribution": "Todd Monken, Browns head coach, mid-August"},
+      {"quote": "There's been no indication yet on when fifth-round tight end Joe Royer, who's been absent for a personal reason, might return to the team.", "attribution": "Mary Kay Cabot, Cleveland.com, Aug 16"}
+    ],
+    "depthChart": "Last in a rebuilt room and not on the field. Harold Fannin Jr. is the unquestioned starter after a 72-catch rookie year; Blake Whiteheart is the No. 2 as a blocker and special-teamer, with Carsen Ryan, Jermaine Terry II and waiver claim Drew Biber all ahead of Royer on the Aug 24 chart. Cleveland has thinned the room through injury and cuts, which is the only reason his roster odds are not worse.",
+    "whyHeCouldSucceed": [
+      "The room in front of him is thin on receiving ability: Whiteheart has eight career catches, Stoll has 28 in 78 games, and nobody behind Fannin has proven pass-catching production.",
+      "Monken's offense throws to tight ends, and Cleveland moved on from David Njoku betting on this young group, so opportunity exists the moment Royer is available.",
+      "He broke Travis Kelce's Cincinnati single-season reception record and ranked fifth nationally in YAC per catch among FBS tight ends in 2025 — the receiving skills are real.",
+      "Berry publicly committed to reintegrating him quickly and ramping him up whenever he returns, which is not the language teams use about players they plan to cut."
+    ],
+    "whyHeCouldFail": [
+      "He has missed the entire training camp and preseason for an undisclosed personal matter with no timetable, meaning he may enter the season having never practiced with the team.",
+      "Fannin caught 72 passes as a rookie and owns the receiving tight end role in Cleveland outright; the ceiling behind him is TE2 snaps.",
+      "His athletic profile is effectively unmeasured — no combine testing beyond a 4.65 forty, and a hamstring injury killed his pro day.",
+      "Blocking consistency was the knock that dropped him to No. 170, and a fifth-rounder who cannot block and has not practiced is a practice-squad candidate.",
+      "Cleveland has churned the position all month — waiver claims, workouts, a cut — which is how teams behave right before a roster crunch claims a fifth-round rookie."
+    ],
+    "fantasyOutlook": [
+      "There is no 2026 projection worth writing until he is on a practice field. If he returns in early September and sticks on the 53, the realistic range is a handful of catches as the No. 3 tight end; if the absence extends, he is a practice-squad or IR outcome. Nothing about the situation implies a redshirt year is fatal to his career — this is a 6-foot-5 tight end with 79 catches in two Big 12 seasons and a coach who runs tight-end-friendly concepts — but 2026 fantasy value is functionally zero.",
+      "In superflex .5 PPR dynasty, he is the definition of a late-round tight-end stash: fourth-round rookie pick, taken after every running back and receiver with a path to touches. The buy case is entirely 2027 and later, when a full offseason with Monken's staff could make him the second receiving tight end in a passing offense. If your league drafts three rounds, let him hit waivers and monitor whether he returns before Week 1."
+    ],
+    "comp": "A poor man's Hunter Henry — a big-bodied, sure-handed zone-beater whose value depends on volume rather than separation, minus the athletic testing to promise more.",
+    "bottomLine": "Do not spend real rookie-draft capital until he practices; the talent justifies a final-round flier, but a player who has missed all of camp for undisclosed reasons is a roster-spot risk, not a target.",
+    "sources": [
+      "https://www.clevelandbrowns.com/news/browns-select-te-joe-royer-with-the-no-170-pick-in-the-2026-nfl-draft",
+      "https://www.clevelandbrowns.com/team/players-roster/joe-royer/",
+      "https://www.clevelandbrowns.com/news/5-things-to-know-about-te-joe-royer-browns-no-170-pick-in-the-2026-nfl-draft",
+      "https://tightendzone.com/joe-royer-scouting-report-2026/",
+      "https://heavy.com/sports/nfl/cleveland-browns/bad-news-rookie-joe-royer-preseason-opener/",
+      "https://heavy.com/sports/nfl/cleveland-browns/tight-end-injury-hit-hard/",
+      "https://dawgpounddaily.com/2-big-takeaways-and-2-overreactions-from-the-browns-first-unofficial-depth-chart",
+      "https://www.clevelandbrowns.com/news/browns-announce-unofficial-depth-chart-for-3rd-preseason-game-vs-the-patriots",
+      "https://sports.yahoo.com/articles/browns-todd-monken-speaks-clevelands-140819140.html"
+    ]
+  },
+  "1053": {
+    "id": 1053,
+    "name": "Josh Cameron",
+    "position": "WR",
+    "nflTeam": "JAC",
+    "nflTeamName": "Jacksonville Jaguars",
+    "college": "Baylor",
+    "hometown": "Cedar Park, Texas",
+    "classYear": "Redshirt Senior",
+    "headline": "Jacksonville Traded Up For A Walk-On Who Refuses To Drop The Football",
+    "subhead": "Cameron won contested catches all camp, made the play of the night against Carolina, and has quietly become the Jaguars' most trusted rookie receiver.",
+    "draftPick": "Round 6, No. 191 overall, Jacksonville Jaguars (traded up from No. 196)",
+    "measurables": {
+      "height": "6'1\"",
+      "weight": "224 lbs",
+      "age": null,
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "33 1/8\"",
+      "combineNote": "Cameron went through the Senior Bowl, the combine in Indianapolis and Baylor's pro day, but no verified testing numbers from any of the three have been published in the reporting available — pre-draft scouting reports list his forty, splits, jumps and agility drills as unavailable. What is on record is the frame: 6-foot-1 3/8, 220-224 pounds with 10 1/4-inch hands and 33 1/8-inch arms, unusually long for the height. Evaluators consistently graded his acceleration off the line as marginal, so the missing numbers likely were not going to help him."
+    },
+    "collegeCareer": [
+      "Cameron walked on at Baylor in 2021 and left as one of the most productive receivers in program history, which is the whole story in one sentence. He built his early role on special teams and toughness, and by 2023 he had carved out playing time without much receiving production, making his first real noise as a punt returner. The touchdowns were nonexistent early; the physicality that would define him was still under construction.",
+      "The 2024 season was the breakout: 52 catches for 754 yards and 10 touchdowns, plus a 20.7-yard punt-return average that earned him first-team All-Big 12 as a return specialist and second-team All-America honors as a punt returner from CBS Sports and the FWAA. He was a Burlsworth Trophy nominee as the nation's best former walk-on.",
+      "He was even better as a senior in 2025, leading Baylor in catches (69), yards (872) and touchdowns (nine) while starting all 12 games and ranking third in the Big 12 in receptions. Two of his games went over 150 yards, including nine catches for 151 yards and two scores at No. 17 SMU. He closed with touchdowns in each of his final five games and a 29-game reception streak, and dropped just one pass all season. Career: 53 games, 36 starts, 170 receptions, 2,236 yards, 19 touchdowns, plus 45 punt returns for 632 yards at 14.0 per return — eighth in Baylor history in receptions and touchdowns, 11th in yards."
+    ],
+    "collegeStats": [
+      {"season": "2024", "team": "Baylor", "line": "13 G, 52 rec, 754 yds, 14.5 ypr, 10 TD, 20.7 yds/punt return, first-team All-Big 12 (returner)"},
+      {"season": "2025", "team": "Baylor", "line": "12 G, 12 starts, 69 rec, 872 yds, 12.6 ypr, 9 TD, 18 PR for 141 yds, 1 drop"},
+      {"season": "Career", "team": "Baylor", "line": "53 G, 36 starts, 170 rec, 2,236 yds, 13.2 ypr, 19 TD, 45 PR for 632 yds (14.0 avg)"}
+    ],
+    "draftDayStory": [
+      "Jacksonville wanted Cameron enough to move for him, sending Nos. 196 and 245 to New England to take him at 191 — one of only two trade-ups the Jaguars made in the entire draft, the other for fourth-round defensive end Wesley Williams. They then drafted a second receiver in the sixth round, Stanford's C.J. Williams. Cameron introduced himself as a 'unicorn' and a utility player: 'From me, you're going to get a physical tough receiver — someone who likes to do the dirty work, someone who likes to do it all.'",
+      "The fit is deliberate. Liam Coen's Jaguars have consistently valued receivers who block in the run game, and Jacksonville needed a bigger body willing to do it. Cameron also gives special teams coordinator Heath Farwell a proven returner behind Parker Washington. His No. 74 board rank in this league is roughly correct on capital and probably light given how the summer has gone."
+    ],
+    "whyTheyDraftedHim": [
+      "Coen's offense asks receivers to block, and Cameron is a 224-pound physical receiver who did the dirty work at Baylor — a stated need for the Jaguars' identity.",
+      "Reliability at the catch point: seven drops on 261 career targets, one drop in 2025, and a habit of winning throws outside his frame.",
+      "Return value — 45 punt returns for 632 yards at 14.0 per return gives Farwell a legitimate option behind Parker Washington and an answer at kick returner.",
+      "Jacksonville traded up to get him, packaging Nos. 196 and 245 for 191, which signals conviction rather than a Day 3 dart throw.",
+      "Cameron's own pitch, which the staff has echoed all summer: a physical, tough utility receiver who does a bit of everything."
+    ],
+    "campNotes": [
+      {"date": "Aug 2", "source": "Jaguars Wire", "note": "Cameron and fellow sixth-rounder C.J. Williams were among the standouts in the first week of camp, drawing consistent quarterback attention in team periods."},
+      {"date": "Aug 6", "source": "John Shipley, Jaguars On SI", "note": "Through seven camp practices Cameron has shown a real ability to win contested catches downfield, including the play of the day over top cornerback Montaric Brown. Shipley noted he had not yet seen Cameron fail to come up with a close catch, and expects him to factor at kick returner behind Washington on punts."},
+      {"date": "Aug 15", "source": "CBS Sports", "note": "In the 24-20 preseason win at New Orleans, Cameron caught one of three targets for 17 yards from Nick Mullens on an early first-quarter connection, and added one punt return for 10 yards and one kick return for 25."},
+      {"date": "Aug 21", "source": "Jaguars On SI", "note": "Against Carolina, Cameron and Williams went a combined 6-for-6 on targets, with Cameron's deep catch from Mullens the best offensive play of the night. Both were flagged as potentially needed early if Jakobi Meyers misses time with a hand injury."},
+      {"date": "Aug 23", "source": "News4Jax", "note": "Cameron sat for a full training-camp interview as a rotation-level rookie, still working behind the veteran group but firmly in the Jaguars' plans on offense and special teams."}
+    ],
+    "beatQuotes": [
+      {"quote": "It's good to see Josh make a one-on-one op that we've seen in practice a number of times. Nick gave him a good opportunity. CJ continuing to be steady. Those guys are earning trust for sure and they're going to continue to earn more.", "attribution": "Liam Coen, Jaguars head coach, Aug 21"},
+      {"quote": "From me, you're going to get a physical tough receiver – someone who likes to do the dirty work, someone who likes to do it all.", "attribution": "Josh Cameron, via Jaguars.com, April 29"},
+      {"quote": "I am not sure I have seen him fail to come up with a close catch yet.", "attribution": "John Shipley, Jaguars On SI, Aug 6"}
+    ],
+    "depthChart": "Fifth or sixth receiver on a crowded depth chart behind Brian Thomas Jr., Travis Hunter, Jakobi Meyers and Parker Washington, with fellow rookie C.J. Williams competing for the same snaps. Meyers' hand injury is the near-term variable; Cameron's roster spot looks safe because of his return ability and blocking, and he is the leading candidate to handle kickoffs with Washington on punts.",
+    "whyHeCouldSucceed": [
+      "He has been the most consistently productive rookie in camp, winning contested catches against the starters and going a combined 6-for-6 on targets with Williams in the Carolina game.",
+      "Jacksonville traded up for him and Coen is publicly crediting his professionalism and trust level, which is how Day 3 receivers become 40-snap contributors by midseason.",
+      "The return job is a realistic path to touches and roster security: 14.0 yards per punt return in college and immediate preseason return work on both units.",
+      "Jakobi Meyers is 30 and already dealing with a hand injury; the No. 3 receiver role in a Coen offense with Trevor Lawrence has fantasy pulse if it opens up.",
+      "Seven drops on 261 career targets and one drop in 2025 means he can be trusted on third down the moment the staff needs a body who catches the ball."
+    ],
+    "whyHeCouldFail": [
+      "The room ahead of him is stacked and young: Brian Thomas Jr. and Travis Hunter are the future, with Meyers and Washington also ahead — that is four receivers before his name comes up.",
+      "Scouting reports flag marginal acceleration off the line and a marginal hand-use package, so NFL corners can smother his release and keep him off intermediate routes.",
+      "No verified testing numbers exist; the profile is a possession receiver without the speed to threaten deep, which caps his target quality to contested and short work.",
+      "As a sixth-rounder his snaps will be conditional on blocking and special teams, roles that produce zero fantasy points even when he plays well.",
+      "C.J. Williams was drafted in the same round and has been just as impressive in camp, particularly in the red zone, splitting whatever opportunity emerges."
+    ],
+    "fantasyOutlook": [
+      "Project 15-30 catches for 200-350 yards and a touchdown or two in 2026 as the fourth or fifth receiver, with the number leaning toward the high end if Meyers' hand injury lingers. The realistic best case this season is a stretch of three or four flex-viable weeks if injuries hit, plus return-game upside that does not score in most formats. What matters is that he is earning trust from a head coach who controls the target distribution and that Jacksonville paid a trade-up premium to get him.",
+      "In superflex .5 PPR dynasty he is a fourth-round rookie pick with genuine late-round appeal — the kind of physical, sure-handed Day 3 receiver who becomes a team's No. 3 by Year 2 and occasionally more. Do not draft him ahead of a starting-caliber running back or a receiver with a clear path, but if you are picking in the 40s and want a body with real camp buzz and a coach's endorsement, he is the best available bet in that tier."
+    ],
+    "comp": "A Big 12 version of Cedrick Wilson Jr. — a big, sure-handed, physically tough possession receiver who earns snaps through reliability and special teams rather than separation.",
+    "bottomLine": "Best fantasy value in this batch: take him in the fourth round of a rookie draft, because a trade-up sixth-rounder who wins contested catches and returns kicks in Liam Coen's offense is a cheap lottery ticket with a real floor.",
+    "sources": [
+      "https://baylorbears.com/news/2026/4/25/football-josh-cameron-goes-to-jaguars-in-nfl-draft",
+      "https://www.jaguars.com/news/how-wr-josh-cameron-fits-the-jaguars-physical-identity",
+      "https://steelersdepot.com/2026/02/2026-nfl-draft-scouting-report-baylor-wr-josh-cameron/",
+      "https://baylorbears.com/sports/football/roster/josh-cameron/14058",
+      "https://www.si.com/nfl/jaguars/onsi/jacksonville-rookie-progress-report-checking-in-on-josh-cameron-2026-class-after-day-7",
+      "https://www.si.com/nfl/jaguars/onsi/jacksonville-11-winners-5-losers-from-loss-to-panthers-josh-cameron-steps-up",
+      "https://www.cbssports.com/fantasy/football/news/jaguars-josh-cameron-logs-one-reception-in-first-preseason-game/",
+      "https://jaguarswire.usatoday.com/story/sports/nfl/jaguars/2026/08/02/jaguars-josh-cameron-cj-williams-making-plays-training-camp/91141720007/",
+      "https://www.si.com/nfl/giants/onsi/draft/new-york-giants-draft-prospect-profile-wr-josh-cameron-baylor"
+    ]
+  },
+  "1055": {
+    "id": 1055,
+    "name": "Emmanuel Henderson Jr.",
+    "position": "WR",
+    "nflTeam": "SEA",
+    "nflTeamName": "Seattle Seahawks",
+    "college": "Kansas",
+    "hometown": "Hartford, Alabama",
+    "classYear": "Senior",
+    "headline": "Mike Macdonald Told His Sixth-Rounder To Aim For All-Pro, Not The Roster",
+    "subhead": "A top-100 recruit who never played at Alabama turned one Kansas season into 17 yards per catch, a 94-yard return touchdown, and Seattle's most interesting bubble battle.",
+    "draftPick": "Round 6, No. 199 overall, Seattle Seahawks (via trade with Cincinnati)",
+    "measurables": {
+      "height": "6'1\"",
+      "weight": "185 lbs",
+      "age": "23.4",
+      "forty": "4.44",
+      "tenSplit": "1.56",
+      "vertical": "35\"",
+      "broad": "10'0\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "31\"",
+      "combineNote": "Henderson tested like the four-star recruit he once was: an official 4.44 forty (90th percentile among receivers) with a 1.56 ten-yard split, a 35-inch vertical and a 120-inch broad at the 2026 combine. He did not run the agility drills. The concerns are physical, not athletic — 185 pounds is the 4th percentile at the position and his 8 3/8-inch hands are the 2nd percentile, which is why the profile screams speed-and-returns rather than contested-catch X receiver."
+    },
+    "collegeCareer": [
+      "Henderson arrived at Alabama in 2022 as the No. 59 overall recruit in the country, a four-star running back and the No. 3 prospect in the state, picking the Tide over Georgia, Michigan, Notre Dame, Texas A&M and USC. Then almost nothing happened. He converted to receiver, never cracked the rotation, and across three seasons in Tuscaloosa totaled five catches for 96 yards and six kickoff returns at 19.2 per attempt. His most productive Alabama year, 2024, amounted to 146 offensive snaps — about 12 per game — four catches for 82 yards, and the fourth-most snaps among Tide receivers.",
+      "One year at Kansas rebuilt the entire evaluation. Henderson led the Jayhawks with 45 receptions for 766 yards and five touchdowns at 17.0 yards per catch, added 1,237 all-purpose yards, and returned 18 kickoffs for 455 yards and a touchdown while leading the Big 12 at 25.3 yards per return. The coaches made him first-team All-Big 12 as a returner and third-team as a receiver, plus an honorable-mention Offensive Newcomer of the Year — he was seventh in the conference in receiving yards and fourth in yards per catch.",
+      "The season was defined by explosion plays rather than volume. He had six catches for 130 yards and two scores against Wagner, took the opening kickoff of the second half 94 yards for a touchdown against West Virginia, and then went for five catches and a career-high 214 yards with two touchdowns against Cincinnati, including a 93-yard reception on the first offensive play and a 75-yard score in the third quarter. The 93-yarder was the fourth-longest pass play in Kansas history, and he became the first Jayhawk of the Big 12 era with two receiving touchdowns of 75-plus yards."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "Alabama", "line": "0 rec, 0 yds, 0 TD"},
+      {"season": "2024", "team": "Alabama", "line": "4 rec, 82 yds, 20.5 ypr, 0 TD, 146 offensive snaps"},
+      {"season": "2025", "team": "Kansas", "line": "13 G, 45 rec, 766 yds, 17.0 ypr, 5 TD, 4 car, 16 yds, 18 KR for 455 yds (25.3 avg), 1 KR TD, 1,237 all-purpose yds"}
+    ],
+    "draftDayStory": [
+      "Seattle traded with Cincinnati to move to No. 199 and take Henderson, the first Kansas receiver drafted since Dezmon Briscoe. He joins former Jayhawks Bryce Cabeldue and Logan Brown, both of whom were part of Seattle's Super Bowl run in 2025. The pick was transparently about the return game — Henderson led the Big 12 in kickoff average and scored on a 94-yarder — with the receiving upside a bonus on a roster whose top of the depth chart is expensive and settled.",
+      "The board rank of No. 75 in this league's pool matches his real capital. What has changed since April is the tone: Mike Macdonald has spent August pushing him past special-teams framing, and he is now the sixth-round pick most likely on this list to hold a 53-man spot in Week 1."
+    ],
+    "whyTheyDraftedHim": [
+      "The return tape: Macdonald said the kickoff work is 'the stuff that really popped' on his college film, and Seattle wanted a legitimate returner behind Rashid Shaheed.",
+      "4.44 speed with a 1.56 ten-yard split gives Seattle a vertical field-stretcher on a roster whose receivers win mostly on separation and volume.",
+      "Explosive-play production at Kansas — 17.0 yards per catch, two 75-plus-yard touchdowns and a 93-yard reception — in an offense the Seahawks' staff considers scheme-similar to their own.",
+      "Special-teams versatility beyond returns: he has worked as a punt gunner and made two solo tackles in the Titans preseason game.",
+      "Macdonald, asked whether special teams was the reason Henderson is in Seattle: 'It's one of the reasons, for sure, but why stop there?'"
+    ],
+    "campNotes": [
+      {"date": "Aug 5", "source": "Seahawks On SI", "note": "Henderson entered camp squarely on the roster bubble as the likely sixth receiver behind Jaxon Smith-Njigba, Rashid Shaheed, Cooper Kupp, Tory Horton and Jake Bobo, but has been proving himself on special teams, the phase that will decide his fate. Shaheed and fellow rookie Jadarian Price challenge him for return work."},
+      {"date": "Aug 16", "source": "Seahawks On SI / Clutch Points", "note": "Seattle lost the preseason opener 17-7 to Dallas at Lumen Field; Henderson did not produce a notable line, leaving his roster case dependent on the following two games."},
+      {"date": "Aug 23", "source": "CBS Sports / RotoWire", "note": "In the 19-16 preseason loss at Tennessee, Henderson caught one of two targets for seven yards, returned two kickoffs for 47 yards and recorded two solo tackles on special teams while working as a punt gunner."},
+      {"date": "Aug 24", "source": "Michael David Smith, Pro Football Talk", "note": "Macdonald publicly raised the bar after the Titans game, saying Henderson should be aiming to be an All-Pro returner and a good NFL receiver rather than simply making the roster — unusual framing for a sixth-rounder on the bubble."}
+    ],
+    "beatQuotes": [
+      {"quote": "That's the stuff that really popped, and gets you excited from his college tape, the return game. He should be trying to be an All-Pro returner, too. He should be thinking of being a great receiver in our league as well.", "attribution": "Mike Macdonald, Seahawks head coach, Aug 24"},
+      {"quote": "It's one of the reasons, for sure, but why stop there?", "attribution": "Mike Macdonald, on whether special teams is why Henderson is in Seattle, Aug 24"},
+      {"quote": "His special-teams ability has Henderson in good position to make the 53-man roster, but he isn't expected to contribute much on offense early on.", "attribution": "RotoWire, via CBS Sports, Aug 24"}
+    ],
+    "depthChart": "Sixth receiver and roster-bubble body behind Jaxon Smith-Njigba, Rashid Shaheed, Cooper Kupp, Tory Horton and the Bobo/Montorie Foster Jr. depth tier. Some teams do not carry six receivers, so his spot depends on kick-return and coverage value, where the preseason work — two returns for 47 yards and two special-teams tackles against Tennessee — has helped.",
+    "whyHeCouldSucceed": [
+      "The head coach is publicly framing him as a potential All-Pro returner and a real NFL receiver, which is the strongest endorsement any player in this batch has received.",
+      "4.44 speed with 17.0 yards per catch and two 75-plus-yard touchdowns at Kansas is a genuine vertical profile, exactly what Seattle's underneath-heavy receiver group lacks.",
+      "Cooper Kupp is 33 and Jake Bobo is replaceable; the No. 4 and No. 5 receiver jobs in Seattle could turn over within a season.",
+      "Return-man snaps keep him employed while he develops, and kickoff-return touchdowns under the current rules have real standalone value in some formats.",
+      "He is only 23 with one season of real playing time, so unlike the older players in this tier there is legitimate developmental runway left."
+    ],
+    "whyHeCouldFail": [
+      "He may not make the 53: Seattle's top five receivers are set, Shaheed and Jadarian Price can return kicks, and not every roster carries six wideouts.",
+      "At 185 pounds with 8 3/8-inch hands — 4th and 2nd percentile respectively — he is unlikely to win contested catches or survive heavy slot usage.",
+      "The résumé is one season deep: three years at Alabama produced five catches, so the Kansas breakout has not been replicated anywhere.",
+      "Jaxon Smith-Njigba led the league in receiving yards and Shaheed just signed a three-year, $51 million deal; the target hierarchy in Seattle is expensive and immovable.",
+      "Beat consensus is that he will not contribute much on offense in 2026, which means the fantasy asset is a special-teams player for at least a year."
+    ],
+    "fantasyOutlook": [
+      "Expect close to nothing on offense in 2026 — five to fifteen catches if he holds the 53 — with his value concentrated in return work that most dynasty formats do not score. The bet is on 2027 and later: a 23-year-old with 4.44 speed, big-play college production and a head coach openly projecting him as a starting-caliber receiver is exactly the sort of Day 3 flier that turns into a No. 3 receiver when the roster in front of him churns. The first thing to watch is Week 1 roster construction, because a practice-squad outcome would delay everything by a year.",
+      "In superflex .5 PPR dynasty he is a late fourth-round rookie pick, best deployed in leagues with deep benches or return-yardage scoring. Do not pay more; the frame limits his ceiling and Seattle's depth chart limits his 2026 opportunity. If he sticks on the roster and gets the kickoff job, he becomes a reasonable buy-low target in November when someone else's roster crunch pushes him to waivers."
+    ],
+    "comp": "A slighter Rashid Shaheed — a sub-4.45 vertical threat and dangerous returner whose route tree and target share have to be built from the special-teams job up.",
+    "bottomLine": "Take him at the very end of a rookie draft as a speed-and-returns dart: real athletic traits and a coach hyping him publicly, but no 2026 offensive role and a genuine chance he starts the year on the practice squad.",
+    "sources": [
+      "https://www.seahawks.com/team/players-roster/emmanuel-henderson-jr/",
+      "https://247sports.com/college/kansas/article/emmanuel-henderson-jr-nfl-draft-283160609/",
+      "https://kuathletics.com/sports/football/roster/emmanuel-henderson-jr-/16265",
+      "https://www.mockdraftable.com/player/emmanuel-henderson-jr?position=ATH",
+      "https://www.al.com/sports/2026/04/seahawks-draft-former-alabama-prep-star-crimson-tide-receiver.html",
+      "https://www.si.com/nfl/seahawks/onsi/seattle-seahawks-rookie-making-strong-impression-training-camp",
+      "https://www.cbssports.com/fantasy/football/news/seahawks-emmanuel-henderson-strong-on-special-teams-in-preseason-loss/",
+      "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/mike-macdonald-wants-emmanuel-henderson-thinking-of-being-a-great-wr-and-all-pro-returner",
+      "https://www.footballdb.com/players/emmanuel-henderson-hendeem01/gamelogs"
+    ]
+  }
+}
