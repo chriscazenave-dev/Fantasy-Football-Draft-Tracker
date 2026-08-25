@@ -1,0 +1,478 @@
+{
+  "1032": {
+    "id": 1032,
+    "name": "Kaelon Black",
+    "position": "RB",
+    "nflTeam": "SF",
+    "nflTeamName": "San Francisco 49ers",
+    "college": "Indiana",
+    "hometown": "Virginia Beach, Virginia",
+    "classYear": "Redshirt Senior (sixth-year transfer from James Madison)",
+    "headline": "The Back Nobody Invited To Indy Is Now Kyle Shanahan's Second-Rated Runner",
+    "subhead": "Kaelon Black never got a combine invite, went 90th overall anyway, and is now in an open fight for the most valuable backup job in football.",
+    "draftPick": "Round 3, Pick 26 (No. 90 overall), San Francisco 49ers",
+    "measurables": {
+      "height": "5'10\"",
+      "weight": "208 lbs",
+      "age": "24.8",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Black was not among the 319 players invited to the 2026 NFL Scouting Combine and no verified pro-day testing numbers surfaced publicly, so his file is tape-only. San Francisco said flatly it did not matter: Kyle Shanahan called him the second-rated back on the 49ers' board. There is no timed speed to defend or attack here — the evaluation is vision, contact balance and pass protection."
+    },
+    "collegeCareer": [
+      "Black is a six-year college player, and the first four of those years were spent as a rotational piece at James Madison. He debuted in 2020 with 25 carries for 170 yards, was limited to three games in 2021, then settled into a complementary role during JMU's move to FBS — 69 carries for 328 yards and 17 catches in 2022, then a starter's workload in 2023 with 142 carries for 637 yards and 25 receptions. He earned Paul Hornung Award Honor Roll recognition at JMU. That early pass-game usage matters: the receiving profile that scouts questioned in 2026 actually exists on tape from 2022-23.",
+      "The transfer to Indiana in 2024 was, at first, a demotion in volume. Black touched the ball just 50 times all season behind a crowded room, and if he had left after that year he would not have been drafted. Instead he stayed for a sixth season and became the physical half of the best backfield in the country. In 2025 he ran 186 times for 1,040 yards (5.6 per carry) and 10 touchdowns — the 21st 1,000-yard season in Indiana history — and paired with Roman Hemby to give the Hoosiers just their second set of dual 1,000-yard rushers ever.",
+      "The finish is what got him drafted. Black produced double-digit carries in 13 of 16 games and cleared 60 rushing yards 11 times, including 110 at Maryland. In the College Football Playoff he led Indiana in rushing against Ohio State, Alabama, Oregon and Miami, totaling 241 yards and three touchdowns across the run, and in the 27-21 national championship win over Miami he ran for 79 yards with a 20-yard conversion on third-and-7 that kept a touchdown drive alive. He is the highest-drafted Indiana running back since Tevin Coleman in 2015."
+    ],
+    "collegeStats": [
+      {"season": "2020", "team": "James Madison", "line": "2 G, 25 car, 170 rush yds, 6.8 ypc, 1 TD"},
+      {"season": "2021", "team": "James Madison", "line": "3 G, 27 car, 165 rush yds, 6.1 ypc, 0 TD"},
+      {"season": "2022", "team": "James Madison", "line": "9 G, 69 car, 328 rush yds, 4.8 ypc, 3 TD, 17 rec, 177 rec yds, 2 TD"},
+      {"season": "2023", "team": "James Madison", "line": "13 G, 142 car, 637 rush yds, 4.5 ypc, 1 TD, 25 rec, 238 rec yds, 4 TD"},
+      {"season": "2024", "team": "Indiana", "line": "13 G, 46 car, 251 rush yds, 5.5 ypc, 2 TD, 4 rec, 6 rec yds"},
+      {"season": "2025", "team": "Indiana", "line": "16 G, 186 car, 1,040 rush yds, 5.6 ypc, 10 TD, 4 rec, 36 rec yds"}
+    ],
+    "draftDayStory": [
+      "San Francisco took Black at No. 90 overall, the 26th pick of the third round, which matches the pre-draft board exactly. It was a genuine surprise around the league — he had no combine invite and most public boards had him as a Day 3 flier — and Shanahan volunteered the reason on The Rich Eisen Show: \"We had him as the 2nd-rated RB on our board.\" John Lynch leaned on the interview process, saying the staff simply fell for him. Black was the fourth Hoosier off the board in a draft that also produced Fernando Mendoza at 1.1, and Indiana's fourth pick inside the top 90.",
+      "The fit is the tell. Running backs coach Bobby Turner has spent decades in this scheme demanding one-cut decisiveness and situational detail, and Lynch relayed that Black's answer when asked about Turner was immediate affection. Greg Cosell's read — \"I thought he was tough, physical, a grinder, powerful, no-holds-barred runner\" — is the profile Shanahan pairs with Christian McCaffrey rather than duplicates."
+    ],
+    "whyTheyDraftedHim": [
+      "Shanahan graded him as the second-best back in the class on San Francisco's internal board, a full tier above his public consensus, and the 49ers valued physicality, vision and consistent extra yardage over testing numbers he never posted.",
+      "Bobby Turner archetype: Lynch said Kaelon 'is his type of guy — a hardworking dude, a hard running dude,' and Turner's stated priorities have always been toughness and coachability rather than measured speed.",
+      "Pass protection. Black's blitz pickup was one of the few pro-ready traits in his file, and he credited Indiana's system for teaching him to scan safety shells and read linebacker tells — the exact requirement for staying on the field next to Brock Purdy.",
+      "Insurance on McCaffrey's workload. San Francisco rode McCaffrey for roughly 450 touches including the playoffs in 2025 and has openly wanted to cut that number, and none of Jordan James, Isaac Guerendo or Patrick Taylor Jr. had claimed the job.",
+      "Short-yardage identity: at 5'10\" and 208 pounds with a churning, second-effort running style, he gives Shanahan a body type the room lacked behind a pass-catching No. 1."
+    ],
+    "campNotes": [
+      {"date": "Aug 3", "source": "49ers Webzone", "note": "Black suffered an adductor injury a few practices into camp and missed roughly two weeks, stalling a competition for the No. 2 job that Jordan James had already lost time in with a rib fracture."},
+      {"date": "Aug 18", "source": "49ers Webzone (joint practice with the Chargers)", "note": "In his first practice back, Black took a heavy workload with McCaffrey, James and Guerendo all out, opening 11-on-11 with a 7-yard catch from Brock Purdy and then breaking a handoff through the left side into the secondary."},
+      {"date": "Aug 20", "source": "NBC Sports Bay Area", "note": "Preseason debut against the Chargers: eight carries for 33 yards with no targets, plus a blitz pickup that circulated widely. Two of his runs only gained yardage because his legs kept churning through contact."},
+      {"date": "Aug 22", "source": "Niners Wire / Nick Wagoner, ESPN", "note": "With James back on the practice field, both backs looked fresh and each had a would-be red-zone touchdown; Wagoner specifically noted Black flashing sure hands in the pass game, the biggest question in his draft profile."},
+      {"date": "Aug 24", "source": "Niners Wire (OC Klay Kubiak)", "note": "Kubiak declined to name a backup and said San Francisco will open the season with a rotation behind McCaffrey, calling Black's development as a receiver 'a big part of his development for sure.'"}
+    ],
+    "beatQuotes": [
+      {"quote": "We had him as the 2nd-rated RB on our board.", "attribution": "Kyle Shanahan, 49ers head coach, on The Rich Eisen Show, Apr 24"},
+      {"quote": "I thought he looked good with hitting the hole and running hard. You could tell there's a different level of intensity when he touches the ball.", "attribution": "Brock Purdy, 49ers QB, via 49ers Webzone, Aug 18"},
+      {"quote": "I have a very detailed coach in Bobby Turner. He's very hard on me and making sure that I'm doing what I'm supposed to be doing on the field. He has very high expectations for me, and I'm up for the challenge.", "attribution": "Kaelon Black, via NBC Sports Bay Area, Aug 22"},
+      {"quote": "We'll go into the game saying, 'Hey, this guy's the next guy up after Christian.' We'll have a rotation going... those guys are going to keep competing all the way up until the first week.", "attribution": "Klay Kubiak, 49ers offensive coordinator, via Niners Wire, Aug 24"}
+    ],
+    "depthChart": "Christian McCaffrey is the unquestioned starter. Black and 2025 fifth-rounder Jordan James are in a live, publicly unsettled race for the No. 2 job, with Kubiak saying it may not be resolved until Week 1; Isaac Guerendo is still out with a shoulder injury and Patrick Taylor Jr. is the third-string body. Black took the lead-back reps for most of the week the room was decimated.",
+    "whyHeCouldSucceed": [
+      "He is the direct backup to a running back who took roughly 450 touches in 2025 on a team that has publicly said it wants to reduce that number — the single most valuable contingency job at the position in the NFL.",
+      "Shanahan's scheme has turned mid-round bodies into fantasy-relevant starters repeatedly, and Black's downhill, one-cut style with genuine short-yardage weight is exactly the archetype Bobby Turner develops.",
+      "Pass protection is already NFL-grade. Backs who can stay on the field on third down in this offense get touches, and his blitz pickup drew attention in his very first preseason game.",
+      "Third-round capital plus an internal grade as the class's No. 2 back means the staff is invested; teams do not spend No. 90 on a runner they intend to leave on the bench in a contract year for the depth ahead of him.",
+      "He has already answered the receiving question in camp, flashing sure hands in team periods after JMU tape showed 42 catches across 2022-23."
+    ],
+    "whyHeCouldFail": [
+      "He turns 25 this season with 496 college carries on his body — there is no developmental runway, and any year he does not break through is a year closer to being replaced by a cheaper rookie.",
+      "Jordan James is back healthy and was the offseason frontrunner; Kubiak's rotation language means Black may split a backup role rather than own it, which is fantasy poison.",
+      "McCaffrey is still McCaffrey. When healthy he eats the pass-game work and the goal-line work, leaving the backup with low-value early-down carries in an offense that scores through the air.",
+      "He tested nowhere. No combine invite, no verified pro-day marks, and a 5'10\" 208-pound frame without proven long speed limits the explosive-run upside that makes cheap backs matter in dynasty.",
+      "The adductor injury cost him two weeks of the exact reps he needed to win the job outright, and Guerendo returning healthy adds a fourth body to a room that will only feed one."
+    ],
+    "fantasyOutlook": [
+      "For 2026, project Black as a rotational backup with weekly relevance only when McCaffrey misses time — call it 90-130 carries with a handful of receptions if the split holds, plus genuine RB2 upside for any stretch McCaffrey is out. That contingency is the whole investment. A Shanahan lead back is a top-15 fantasy asset almost by default, and Black is one of two men standing behind a 30-year-old with a heavy injury history and a monstrous 2025 workload.",
+      "In a superflex .5 PPR dynasty league he is a defensible late-third-round rookie pick and should not cost more than that. His KTC superflex value of 2422 (rookie 31) and his No. 31 spot on the board are honest; the age (24.8) caps the ceiling and the standing-room-only depth chart caps the floor. Draft him as a lottery ticket on McCaffrey's health, not as a piece you expect to start, and do not trade a future second to move up for him."
+    ],
+    "comp": "A cheaper Elijah Mitchell — same Shanahan-scheme downhill decisiveness and short-area power, same dependence on the man in front of him getting hurt.",
+    "bottomLine": "Take him late in the third round of your rookie draft as the highest-leverage McCaffrey insurance policy on the board, but understand you are buying a 25-year-old backup, not a starter.",
+    "sources": [
+      "https://www.49ers.com/news/49ers-select-rb-kaelon-black-with-the-no-90-pick-in-the-2026-nfl-draft",
+      "https://www.49ers.com/news/5-things-to-know-running-back-kaelon-black",
+      "https://iuhoosiers.com/news/2026/4/24/black-headed-to-bay-area",
+      "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/kaelon-black-preseason-bobby-turner/1958125/",
+      "https://www.49erswebzone.com/news/202452-rookie-running-kaelon-practice-chargers/",
+      "https://www.49erswebzone.com/articles/202500-rookie-kaelon-chance-against-chargers/",
+      "https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/08/24/49ers-rb-depth-chart-jordan-james-kaelon-black-battle/91438626007/",
+      "https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/08/22/49ers-roster-kaelon-black-jordan-james-battle/91427223007/",
+      "https://www.ourlads.com/ncaa-football-depth-charts/player-stats/kaelon-black/167859"
+    ]
+  },
+  "1027": {
+    "id": 1027,
+    "name": "Eli Raridon",
+    "position": "TE",
+    "nflTeam": "NE",
+    "nflTeamName": "New England Patriots",
+    "college": "Notre Dame",
+    "hometown": "West Des Moines, Iowa",
+    "classYear": "Senior",
+    "headline": "Two Torn ACLs, One Season Of Production, And New England's Most Interesting Rookie",
+    "subhead": "Eli Raridon started 12 games in his life and is already the Patriots' No. 2 tight end, with Hunter Henry in a contract year and Josh McDaniels calling the plays.",
+    "draftPick": "Round 3, Pick 31 (No. 95 overall), New England Patriots",
+    "measurables": {
+      "height": "6'7\"",
+      "weight": "252 lbs",
+      "age": "22.5",
+      "forty": "4.62",
+      "tenSplit": null,
+      "vertical": "36\"",
+      "broad": "10'3\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Raridon's pre-draft testing was the loudest part of his file: a 4.62 forty (81st percentile among tight ends), a 36-inch vertical (81st), a 10-foot-3 broad jump (88th) and 10.75-inch hands (95th). For a player listed anywhere from 6'6\" 245 to 6'7\" 252, that combination is what teams mean by a matchup problem — Notre Dame's staff said defenses had to put a safety on him because linebackers could not stay with him."
+    },
+    "collegeCareer": [
+      "Raridon arrived in South Bend as a basketball-and-football prodigy from Valley High School in West Des Moines — a second-team all-state power forward as a junior — and immediately lost two years to his right knee. He tore the ACL as a high school senior, was back on the practice field within 10 months, then tore it again, wiping out essentially his first two seasons with the Irish. He played two games in 2023 and caught five passes. Notre Dame never stopped projecting him as the next in a long line of drafted Irish tight ends; his body simply would not let him play.",
+      "The 2024 season was a healthy rotational year rather than a breakout. He appeared in all 16 games during Notre Dame's run to the title game, started three, and finished with 11 catches for 90 yards and two touchdowns while splitting a crowded room. The value of that season was structural, not statistical: it was the first time he had strung together a full year of football since high school, and the blocking reps he banked are the reason he was drafted as a two-phase piece rather than a pure slot-flex project.",
+      "As a senior in 2025 he finally hit. Raridon started all 12 games, caught 32 passes for 482 yards and finished third on the team in both categories while averaging 15.1 yards per catch. He opened the year with five catches for 97 yards at Miami, including a 65-yard shot in the fourth quarter, added four for 85 against Texas A&M, then posted career highs of seven catches and 109 yards against NC State. He caught eight passes traveling more than 20 air yards, the most among draft-eligible tight ends — a seam, wheel and crosser specialist with almost no career touchdown production to show for it (three in 40 games)."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Notre Dame", "line": "Did not play (knee)"},
+      {"season": "2023", "team": "Notre Dame", "line": "5 rec, 51 rec yds, 10.2 ypr, 1 TD"},
+      {"season": "2024", "team": "Notre Dame", "line": "16 G, 11 rec, 90 rec yds, 8.2 ypr, 2 TD"},
+      {"season": "2025", "team": "Notre Dame", "line": "12 G, 12 starts, 32 rec, 482 rec yds, 15.1 ypr, 0 TD"},
+      {"season": "Career", "team": "Notre Dame", "line": "40 G, 18 starts, 48 rec, 623 rec yds, 3 TD"}
+    ],
+    "draftDayStory": [
+      "New England took Raridon with the 95th pick, the 31st selection of the third round, matching the pre-draft board. He continued a remarkable Notre Dame streak — every primary Irish tight end since Anthony Fasano in 2004 has been drafted, and Raridon is the sixth in eight years — and became the first Notre Dame player New England had drafted since Mike Richardson in 2007.",
+      "The stated plan was succession, not immediate production: Raridon was to develop behind captain Hunter Henry, who is entering the final year of his contract, after Austin Hooper left for Atlanta in free agency. Then a spring practice injury ended free-agent addition Julian Hill's season and blew the plan up. Notre Dame offensive coordinator and tight ends coach Mike Denbrock's scouting line — \"The only thing that held Eli back was the injuries\" — is now New England's bet, and Josh McDaniels has a long history of using two-tight-end chess pieces."
+    ],
+    "whyTheyDraftedHim": [
+      "Vertical tight end play: Raridon led all draft-eligible tight ends with eight receptions on throws of 20-plus air yards and averaged 15.1 yards per catch, exactly the seam threat New England's offense lacked next to a possession-oriented Hunter Henry.",
+      "Succession planning at a position of need — Henry is 31 and in the final year of his deal, Hooper left in free agency, and the room behind them was undrafted bodies.",
+      "Testing plus size. An 81st-percentile forty and 95th-percentile hands on a 6'6\"-plus frame gives McDaniels a legitimate 12-personnel mismatch, and the Patriots played two-plus tight ends on only 29.6% of snaps in 2025, below league average.",
+      "Willingness as a blocker. Notre Dame tape flashed it, and Mike Vrabel has repeatedly praised the effort side rather than the finished product: 'We want to move him as far as we can possibly move him.'",
+      "Denbrock's endorsement that defenses had to dedicate a safety to him because linebackers could not cover him — matchup value the Patriots have not had at the position since Rob Gronkowski."
+    ],
+    "campNotes": [
+      {"date": "Jul 15", "source": "Patriots.com position snapshot", "note": "New England entered camp with Henry, Raridon, Jack Westover, C.J. Dippre and undrafted Tanner Arkin at tight end, with Julian Hill on IR. The team framed Raridon as a developmental successor who 'might need to play a larger role than anticipated in year one.'"},
+      {"date": "Jul 25", "source": "Pats Pulpit camp preview", "note": "Listed Raridon as a starter alongside Henry on the projected depth chart, with Dippre or Arkin fighting for the blocking-tight-end job, and flagged that the room lacks an established blocker after Hill's injury."},
+      {"date": "Aug 8", "source": "PatriotsReport", "note": "Raridon caught three passes in the camp scrimmage, including back-to-back Drake Maye completions to open a two-minute drill and a block-and-release seam catch on play-action that moved the chains."},
+      {"date": "Aug 13", "source": "NBC Boston / Patriots gamebook", "note": "Preseason opener vs. Indianapolis: one catch for 8 yards on four targets, with a 24-yard catch-and-run wiped out by an offensive line penalty and two clean blocks on a 15-yard Jam Miller run that set up a touchdown."},
+      {"date": "Aug 17", "source": "Mike Vrabel press conference transcript", "note": "Vrabel said Raridon 'rarely makes the same mistake twice' while cautioning he still has 'a long ways to go,' and noted the rookie has earned first-team reps as a pass-catcher."},
+      {"date": "Aug 22", "source": "Patriots.com box score", "note": "Raridon did not register a catch in the 24-21 preseason win over Philadelphia, a game in which backup quarterbacks Tommy DeVito and Behren Morton threw for a combined 280 yards."}
+    ],
+    "beatQuotes": [
+      {"quote": "The only thing that held Eli back was the injuries. You could see the athleticism and his ability to cause matchup issues within the framework of our offense. Defenses knew they were going to have to use a safety to cover him because linebackers weren't going to be able to stay with him.", "attribution": "Mike Denbrock, Notre Dame offensive coordinator, via Patriots.com, May 13"},
+      {"quote": "He rarely makes the same mistake twice.", "attribution": "Mike Vrabel, Patriots head coach, Aug 17"},
+      {"quote": "We want to move him as far as we can possibly move him. I thought it was OK. I think he continues to improve blocking and he's willing, and so that's the one thing that I really think I've been pleasantly surprised with, just his willingness to do that.", "attribution": "Mike Vrabel, Patriots head coach, Aug 15"},
+      {"quote": "A lot of that is due to the comfortability I'm having in the offense. So, every day is getting easier because the offense is starting to seep into my brain a little bit.", "attribution": "Eli Raridon, via PatriotsReport, Aug 8"}
+    ],
+    "depthChart": "Hunter Henry is TE1 and a team captain in a contract year. Raridon is the clear No. 2 and has taken first-team reps as a receiver, with Julian Hill lost for the season on IR. Behind them, Jack Westover, C.J. Dippre and undrafted rookie Tanner Arkin are fighting for the blocking role, which means Raridon's snaps are unlikely to be schemed away by a veteran.",
+    "whyHeCouldSucceed": [
+      "The path is genuinely open: Hooper is gone, Hill is on IR, and the only body between Raridon and a starting job is a 31-year-old Hunter Henry in the last year of his contract.",
+      "He is a real vertical weapon, not a checkdown tight end — most 20-plus-air-yard receptions among draft-eligible tight ends and 15.1 yards per catch, in an offense run by a coordinator who loves 12-personnel chess pieces.",
+      "New England's two-tight-end usage was below league average in 2025 at 29.6% of snaps, and the stated goal was to raise it; that increase lands directly on the rookie's snap count.",
+      "Athletic testing (81st-percentile speed, 88th-percentile broad, 95th-percentile hands) on a near-6'7\" frame is the profile that produces red-zone and seam touchdowns once the volume arrives.",
+      "Vrabel and the staff have publicly praised his processing and blocking willingness — the two things that get rookie tight ends benched are exactly where he's earning credit."
+    ],
+    "whyHeCouldFail": [
+      "Two ACL tears on the same knee, with essentially two lost college seasons; a third knee event would end the dynasty case entirely.",
+      "He has 48 career college catches and three touchdowns in 40 games. There is no track record of producing volume, and rookie tight ends are the least productive fantasy class in football.",
+      "Henry is a captain and one of Drake Maye's trusted targets. Nothing about camp suggests New England is taking targets from Henry to feed a developmental rookie in 2026.",
+      "His frame still needs mass — Notre Dame's staff said as much — and if he cannot hold up as an in-line blocker he becomes a situational player rather than a three-down starter.",
+      "The Patriots' recent tight end drafting history (Dalton Keene and Devin Asiasi, both third-rounders in 2020) is a cautionary tale about assuming development."
+    ],
+    "fantasyOutlook": [
+      "For 2026, treat Raridon as a stash rather than a contributor. A realistic line is 25-40 catches for 300-450 yards and two to four touchdowns as the clear No. 2 tight end in a rising 12-personnel offense — startable only in the deepest tight-end-premium formats, and only if Henry misses games. The relevant date is not September; it is next March, when Henry's contract expires and Raridon inherits the room in an offense whose young quarterback he has already built two-minute-drill chemistry with.",
+      "In superflex .5 PPR dynasty, his price should be a mid-to-late third-round rookie pick, and he is the kind of asset worth reaching a few slots for if your roster has no tight end future. His KTC superflex value of 2421 (rookie 32) undersells the situation and oversells the production; the honest framing is a one-year wait for a potential top-12 tight end. Buy him at cost, do not pay a second, and be prepared to hold him through a quiet rookie year."
+    ],
+    "comp": "A taller, less-proven Dalton Kincaid — an athletic seam-and-crosser tight end whose value hinges on volume he has never actually been given.",
+    "bottomLine": "The best tight end bet available this late: draft him in the third, park him on your bench, and let Hunter Henry's contract do the work.",
+    "sources": [
+      "https://www.patriots.com/team/players-roster/eli-raridon/career",
+      "https://www.patriots.com/news/eli-s-coming-to-foxborough",
+      "https://fightingirish.com/eli-raridon-selected-95th-overall-in-2026-nfl-draft-by-new-england/",
+      "https://fightingirish.com/sports/football/roster/player/eli-raridon",
+      "https://www.espn.com/college-football/player/_/id/4831959/eli-raridon",
+      "https://www.patriots.com/news/patriots-position-snapshot-tight-ends-fullbacks",
+      "https://www.patspulpit.com/new-england-patriots-training-camp/130599/tight-end-preview-2026-eli-raridon-free-agency",
+      "https://patriotsreport.com/eli-raridon-catching-on-fast-patriots-camp-preseason-debut/",
+      "https://heavy.com/sports/nfl/new-england-patriots/patriots-eli-raridon-mike-vrabel-rookie-praise/",
+      "https://www.patriots.com/game-day/2026/pre/eagles-at-patriots/box-score"
+    ]
+  },
+  "1062": {
+    "id": 1062,
+    "name": "Demond Claiborne",
+    "position": "RB",
+    "nflTeam": "MIN",
+    "nflTeamName": "Minnesota Vikings",
+    "college": "Wake Forest",
+    "hometown": "Aylett, Virginia",
+    "classYear": "Senior",
+    "headline": "The Fastest Man In The Vikings' Backfield Is A Sixth-Round Pick From Aylett, Virginia",
+    "subhead": "Demond Claiborne hit 23.71 mph at the combine and posted the quickest 20-yard split Next Gen Stats had measured from a running back in four years; the touches are another matter.",
+    "draftPick": "Round 6, Pick 17 (No. 198 overall), Minnesota Vikings",
+    "measurables": {
+      "height": "5'10\"",
+      "weight": "188 lbs",
+      "age": "22.9",
+      "forty": "4.37",
+      "tenSplit": "1.59",
+      "vertical": null,
+      "broad": "10'2\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "30 1/8\"",
+      "combineNote": "Claiborne ran 4.37 in Indianapolis and did not complete the full workout by choice — no vertical, bench or agility drills. The speed data is what mattered: he hit 23.71 mph on the run, and his 21.79 mph at the 20-yard mark was the fastest NFL Next Gen Stats had recorded for a running back in four years. He was a Virginia Class 2 state champion in the 100 meters, winning by nearly three-tenths of a second."
+    },
+    "collegeCareer": [
+      "Claiborne came to Wake Forest as a four-star recruit from King William High in rural Aylett, Virginia, where he scored 37 touchdowns as a senior, led the school to a state title and then won a state sprint championship in his only year of track. He barely played as a true freshman in 2022 — one carry — before taking over the backfield in 2023 with 137 carries for 586 yards while the program transitioned out of the Dave Clawson era.",
+      "The 2024 season made him a genuine ACC back. Claiborne appeared in every game with 11 starts, ran 228 times for 1,049 yards and 11 touchdowns, added 23 catches for 254 yards and two scores, and returned kicks — enough all-purpose value to earn All-ACC third team as both a running back and an all-purpose player. He also took a kickoff back for a touchdown, one of two career return scores.",
+      "As a senior in 2025 he was more efficient on lighter volume: 179 carries for 907 yards (5.1 per carry) and 10 touchdowns, the second straight year with double-digit scores, plus 28 catches for 140 yards. He finished top four in the ACC in both rushing yards and rushing touchdowns, earned second-team All-ACC — the first offensive player of the Jake Dickert era to make an All-ACC team — and left as Wake Forest's No. 4 all-time rusher with 2,599 yards and 3,602 all-purpose yards. His best days came against Western Carolina (career-high 193 yards, three touchdowns) and Oregon State (144 and a score), both ACC running back of the week honors."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Wake Forest", "line": "14 G, 1 car, -5 rush yds, 1 rec"},
+      {"season": "2023", "team": "Wake Forest", "line": "137 car, 586 rush yds, 4.3 ypc, 5 TD"},
+      {"season": "2024", "team": "Wake Forest", "line": "12 G, 11 starts, 228 car, 1,049 rush yds, 4.6 ypc, 11 TD, 23 rec, 254 rec yds, 2 TD"},
+      {"season": "2025", "team": "Wake Forest", "line": "12 G, 179 car, 907 rush yds, 5.1 ypc, 10 TD, 28 rec, 140 rec yds, 0 TD"},
+      {"season": "Career", "team": "Wake Forest", "line": "558 car, 2,599 rush yds, 26 TD, 55 rec, 424 rec yds, 2 TD, 22 KR at 26.3 avg, 2 KR TD"}
+    ],
+    "draftDayStory": [
+      "Minnesota traded up for a sixth-round running back, which tells you how much the staff wanted him: the Vikings sent No. 234 and a 2027 sixth-round pick to New England to move to No. 198, a slot they had already owned twice before during the draft. The pick matches the pre-draft board exactly — Round 6, Pick 17.",
+      "The fit is speed in space rather than volume. Minnesota returns Aaron Jones Sr. and bruising Jordan Mason, so Claiborne was drafted as a change-of-pace and return option with long-term upside as the Jones succession plan. There is a Wake Forest thread too: Claiborne and Vikings center Michael Jurgens were teammates in Winston-Salem, and Claiborne's first reaction to the pick was wanting to 'give him a big old hug.'"
+    ],
+    "whyTheyDraftedHim": [
+      "Elite, verified speed: 4.37 in the forty with the fastest 20-yard-mark velocity Next Gen Stats had measured from a running back in four years — a trait the Minnesota backfield, built on Jones' savvy and Mason's power, did not have.",
+      "Return value. Claiborne averaged 26.3 yards on 22 college kickoffs with two touchdowns, and Minnesota has him lined up as the backup kick returner behind Myles Price.",
+      "Succession behind a 31-year-old lead back. Beat projections openly describe him as the replacement for Aaron Jones in 2027, which is why the Vikings paid a future pick to move up for him.",
+      "Production and durability: three straight years leading Wake Forest in rushing, 558 career carries, double-digit touchdowns in each of his last two seasons, and the school's No. 4 all-time rushing total.",
+      "Pass protection has been better than expected for a 188-pound rookie, which local analysts have flagged as the specific reason he is likely to see real snaps rather than be a game-day scratch."
+    ],
+    "campNotes": [
+      {"date": "Aug 9", "source": "Star Tribune", "note": "A feature on Claiborne's speed noted it had been 'impossible to ignore' early in camp, with Aaron Jones Sr. praising his acceleration in and out of cuts and taking on a mentor role in the room."},
+      {"date": "Aug 15", "source": "Vikings.com box score / SI Inside the Vikings", "note": "Preseason debut at the Giants: he led the backfield with 12 carries for 34 yards (long of 9) in a 13-10 win, an extended look earned by his camp work."},
+      {"date": "Aug 21", "source": "SI Inside the Vikings", "note": "The Vikings' preseason running back report card put Claiborne in a direct battle with returning back Zavier Scott for the third spot behind Jones and Mason, with Jermar Jefferson chasing a practice-squad slot."},
+      {"date": "Aug 22", "source": "CBS Sports / ESPN play-by-play", "note": "Listed as the starter with Jones and Mason resting, Claiborne managed eight carries for 18 yards and one catch for seven yards in a 13-3 loss to Baltimore, plus a 21-yard kickoff return. Through two games: 20 carries, 52 yards (2.6 per carry), 71 return yards on three kickoffs."},
+      {"date": "Aug 23", "source": "Daily Norseman 53-man projection", "note": "Projected Claiborne as the RB3 who makes the roster ahead of Zavier Scott (practice squad), credited his pass protection, floated 'up to a couple hundred snaps' this season and named him the backup kick returner."}
+    ],
+    "beatQuotes": [
+      {"quote": "You can see it. Right away, just getting in and out of the cuts. He's a special back in this league. I get to mentor him up and show him the way. I told him I want him to be successful, I want to see him go on and get paid and those kinds of things.", "attribution": "Aaron Jones Sr., Vikings RB, Star Tribune, Aug 9"},
+      {"quote": "Now, if I let a punt drop out of the sky, that's a big no-no. But in high school, I kind of had a habit of letting it drop in front of me, picking it up and maneuvering. I let it bounce twice and I took it 90 yards to the crib.", "attribution": "Demond Claiborne, Star Tribune, Aug 9"}
+    ],
+    "depthChart": "Aaron Jones Sr. and Jordan Mason are locked in as the top two, with local projections suggesting Mason may out-snap Jones by season's end. Claiborne has effectively won the RB3 job over Zavier Scott and is the backup kick returner behind Myles Price. His two preseason starts came only because the veterans sat.",
+    "whyHeCouldSucceed": [
+      "He is the only back on the roster with true breakaway speed, and Kevin O'Connell's offense manufactures space with motion and outside-zone concepts that reward exactly that trait.",
+      "Aaron Jones turns 32 this season and Minnesota paid a 2027 pick to move up for Claiborne; beat writers openly describe him as next year's replacement, which is the real dynasty case.",
+      "Return duties give him a path to a helmet every week, and his college returns produced 26.3 yards per attempt with two touchdowns — the kind of role that keeps a Day 3 back employed long enough to get a backfield opening.",
+      "Pass protection has drawn praise, which is the specific skill that separates a change-of-pace rookie who plays from one who is a game-day scratch.",
+      "Three-year college workhorse with 558 carries, 26 touchdowns and back-to-back 1,000-plus all-purpose-yard seasons — he has handled volume before, even if the pro frame argues against it."
+    ],
+    "whyHeCouldFail": [
+      "At 5'10\" and 188 pounds he is not built to survive interior volume, and evaluators flagged his lack of mass as the reason he does not project as a three-down back.",
+      "The preseason evidence was mediocre: 20 carries for 52 yards (2.6 per carry) across two games in which he was the featured back against backup defenses.",
+      "Sixth-round capital and a room with two established veterans plus Zavier Scott means no guaranteed touches; most of his 2026 snaps may come on kickoffs.",
+      "Minnesota re-signed nothing at the position by accident — Mason is the power complement and Jones is the pass-game back, leaving Claiborne without an obvious carved-out role.",
+      "If Jones is retained or the Vikings add a runner in the 2027 draft, the succession theory that justifies his dynasty price evaporates immediately."
+    ],
+    "fantasyOutlook": [
+      "For 2026, Claiborne is a bench stash with almost no standalone weekly value: expect 40-80 carries, a small handful of receptions, and kick returns, with true relevance only if both Jones and Mason miss time simultaneously. Making the 53 as the RB3 and backup returner is genuine progress for a sixth-rounder, and beat projections floating a couple hundred snaps means the coaching staff trusts him more than his draft slot implies.",
+      "In superflex .5 PPR dynasty, his correct price is a late-third-round rookie pick — roughly where his KTC value of 2358 (rookie 33) and No. 33 board slot put him, and that price is fair rather than a bargain. You are buying one specific bet: that Aaron Jones is gone after 2026 and a genuinely fast, pass-protection-capable back inherits a Kevin O'Connell rotation. That is a real path to flex value in 2027, but it requires patience and a roster spot you can afford to leave idle."
+    ],
+    "comp": "A poor man's Jaylen Warren — undersized, fast, better in pass protection than his frame suggests, and dependent on the depth chart clearing out.",
+    "bottomLine": "Fine value at the end of the third round of your rookie draft as a 2027 speculation, but he should never cost a pick you actually care about.",
+    "sources": [
+      "https://www.vikings.com/draft/2026/picks/demond-claiborne",
+      "https://www.vikings.com/news/demond-claiborne-2026-nfl-draft-running-back",
+      "https://godeacs.com/sports/football/roster/demond-claiborne/8566",
+      "https://cfbstats.com/2025/player/749/1175632/index.html",
+      "https://www.startribune.com/minnesota-vikings-training-camp-demond-claiborne-speed-kevin-o-connell-offense-scheme-aaron-jones/601874679",
+      "https://www.cbssports.com/fantasy/football/news/vikings-demond-claiborne-bottled-up-in-preseason-loss/",
+      "https://www.vikings.com/game-day/2026/pre/vikings-at-giants/box-score",
+      "https://www.si.com/nfl/vikings/onsi/demond-claiborne-s-outlook-skyrocket-after-role-vikings-win-vs-giants-01m03gagmmzs",
+      "https://www.dailynorseman.com/minnesota-vikings-roster/98231/vikings-post-ravens-53-man-roster-projection"
+    ]
+  },
+  "1023": {
+    "id": 1023,
+    "name": "Chris Brazzell II",
+    "position": "WR",
+    "nflTeam": "CAR",
+    "nflTeamName": "Carolina Panthers",
+    "college": "Tennessee",
+    "hometown": "Fort Worth, Texas",
+    "classYear": "Redshirt Junior",
+    "headline": "A 4.37 At Six-Four, One Spectacular Camp Catch, Then A Season Gone In A Seven-On-Seven Drill",
+    "subhead": "Chris Brazzell II tore the LCL in his left knee on July 29 without contact and will miss his entire rookie year, freezing the most explosive receiver profile in this range.",
+    "draftPick": "Round 3, Pick 19 (No. 83 overall), Carolina Panthers",
+    "measurables": {
+      "height": "6'4\"",
+      "weight": "198 lbs",
+      "age": "22.8",
+      "forty": "4.37",
+      "tenSplit": "1.52",
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "32 3/8\"",
+      "combineNote": "Brazzell ran the forty in Indianapolis and did nothing else — no jumps, no agility work, no position drills. It was enough. His 4.37 tied for fourth-fastest among receivers at 6'4\" and 198 pounds, with a 1.52 ten-yard split; Mel Kiper had predicted a 4.47 would push him into first-round conversation. He measured with 9-inch hands, 32 3/8-inch arms and an 80 1/8-inch wingspan."
+    },
+    "collegeCareer": [
+      "Brazzell grew up in Fort Worth, played at Midland Legacy in west Texas, and began his career at Tulane, where he was a two-game bit player as a true freshman in 2022 with a single catch against Alcorn State. The breakout came as a redshirt freshman in 2023: he led the Green Wave in receptions and receiving yards with 44 for 711 (16.2 per catch) and five touchdowns, earning third-team All-AAC and Freshman All-America honorable mention.",
+      "When Willie Fritz left Tulane for Houston, Brazzell entered the portal and chose Tennessee over Colorado, Washington, Utah and Fritz's new program, specifically because he wanted Josh Heupel's vertical offense. Year one in Knoxville was a dud by design and by fit: 29 catches for 333 yards and two touchdowns in 13 games as a complementary piece, and he looked like another Tennessee transfer who would never translate.",
+      "Then 2025 happened. Brazzell posted 62 catches for 1,017 yards and nine touchdowns in 12 games, led all SEC wide receivers in receiving yards per game (84.8) and receiving touchdowns, and was the only receiver in the conference to clear 1,000 yards with at least seven scores. He was named first-team All-SEC — the fourth Heupel-era Tennessee receiver drafted in five years — and his signature game was a six-catch, 177-yard, three-touchdown demolition of Georgia. He finished college with 136 catches for 2,072 yards (15.2 per catch) and 16 touchdowns."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Tulane", "line": "2 G, 1 rec, 11 rec yds, 0 TD"},
+      {"season": "2023", "team": "Tulane", "line": "13 G, 44 rec, 711 rec yds, 16.2 ypr, 5 TD"},
+      {"season": "2024", "team": "Tennessee", "line": "13 G, 29 rec, 333 rec yds, 11.5 ypr, 2 TD"},
+      {"season": "2025", "team": "Tennessee", "line": "12 G, 62 rec, 1,017 rec yds, 16.4 ypr, 9 TD"},
+      {"season": "Career", "team": "Tulane / Tennessee", "line": "40 G, 136 rec, 2,072 rec yds, 15.2 ypr, 16 TD"}
+    ],
+    "draftDayStory": [
+      "Carolina took Brazzell at No. 83 overall, the 19th pick of the third round, matching the pre-draft board. Dan Morgan's front office was buying length and verified speed for an offense built around reigning Offensive Rookie of the Year Tetairoa McMillan, and Dave Canales spoke almost immediately about using Brazzell as the outside 'X' who stretches coverage so McMillan can work inside.",
+      "It was also a homecoming of sorts: Brazzell revealed after the pick that Carolina had been his favorite team since third grade, and he could not resist reminding everyone that he attended the Tennessee team that beat Bryce Young's Alabama in 2022 — the same Bryce Young now throwing him the ball."
+    ],
+    "whyTheyDraftedHim": [
+      "Verified vertical speed at size: 4.37 at 6'4\" gives Carolina an outside receiver who can win over the top, a trait the room lacked around McMillan, Jalen Coker and Xavier Legette.",
+      "Canales' stated design was to use Brazzell as the explosive perimeter threat so McMillan could operate from the slot — a specific, articulated role rather than a depth pick.",
+      "Big-play production against elite competition. He led all SEC receivers in receiving yards per game and touchdowns in 2025, capped by six catches for 177 yards and three scores against Georgia.",
+      "Contested-catch ability. Kiper cited his size, sure hands and toughness at the catch point, and his very first camp practice produced a leaping, over-the-head near-touchdown on a Bryce Young deep ball.",
+      "Age and runway: a redshirt junior who broke out at 21 with two years of Power Four production and only 40 career games of tread."
+    ],
+    "campNotes": [
+      {"date": "Jul 23", "source": "Panthers.com", "note": "Day one of camp produced the play of the day: Bryce Young lofted a deep ball and Brazzell went up for a leaning, over-the-head near-catch that was only broken up when Mike Jackson carried him out of bounds. Canales called it a brilliant play by both men."},
+      {"date": "Jul 26-28", "source": "Yahoo Sports / Dave Canales", "note": "Brazzell missed multiple practices with what Canales described as knee soreness in the same left knee, and beat writers treated it as precautionary given his clean injury history — 25 straight games played at Tennessee."},
+      {"date": "Jul 29", "source": "Charlotte Observer / AP", "note": "Brazzell went down without contact in a seven-on-seven drill, grabbing his left knee, and was carted off. The initial diagnosis was a moderate LCL tear with an eight-week timeline."},
+      {"date": "Jul 30", "source": "Panthers.com / AP", "note": "After a second medical opinion, Brazzell elected season-ending surgery on the lateral collateral ligament of his left knee. A league source told the Observer that sitting out 2026 was the best course for player and team, with a full recovery expected in 2027."},
+      {"date": "Jul 31", "source": "Panthers.com", "note": "Carolina officially placed Brazzell on injured reserve to make room for a tight end signing before Fan Fest, ending his rookie season before it began."},
+      {"date": "Aug 2026", "source": "The Madness Times desk", "note": "No further camp or preseason reporting exists on Brazzell; he has been on injured reserve all month while the Panthers' receiver room — McMillan, Coker, Legette, John Metchie, Brycen Tremayne, Jimmy Horn Jr. — competes without him."}
+    ],
+    "beatQuotes": [
+      {"quote": "He had made a great play today, got up in the air. Mike Jack on the sideline carried him out of bounds, and so beautiful play on both guys. The high point, 6-4 guy running down the field like we thought he could... But, I love that he brings that element to our offense.", "attribution": "Dave Canales, Panthers head coach, Panthers.com, Jul 23"},
+      {"quote": "Just trust. Obviously just a one-on-one shot, just want to put it up there, where my guy can make a play on it. And for him to go up and get it like that, that speaks to the player he is, the competitor he is.", "attribution": "Bryce Young, Panthers QB, Panthers.com, Jul 23"},
+      {"quote": "I had it too.", "attribution": "Chris Brazzell II, on the near-catch, Panthers.com, Jul 23"}
+    ],
+    "depthChart": "Brazzell is on injured reserve and will not play in 2026. Carolina's perimeter belongs to Tetairoa McMillan, newly extended Jalen Coker, Xavier Legette, John Metchie, Brycen Tremayne and Jimmy Horn Jr.; the Panthers have kept seven receivers on the initial 53 in each of Canales' first two seasons. Brazzell re-enters that competition in 2027 with a healthy knee and no accrued NFL snaps.",
+    "whyHeCouldSucceed": [
+      "The athletic profile is the best in this range of the board: 4.37 at 6'4\" with a 1.52 ten-yard split and a 91st-percentile composite athleticism score, on a receiver with a genuine 1,000-yard All-SEC season.",
+      "The role was already defined before the injury — Canales publicly wanted him as the explosive outside receiver who clears space for McMillan, which is a target-earning job rather than a rotational one.",
+      "An LCL tear is a cleaner long-term injury than an ACL or Achilles, and a league source told the Charlotte Observer that full recovery is expected in 2027; he loses a season, not a career.",
+      "Third-round capital plus a full redshirt year means Carolina has him under contract through 2029 with essentially no snaps used — the team has every incentive to give him the 2027 opportunity.",
+      "Bryce Young is entrenched, coming off an NFC South title, and already showed a willingness to throw him one-on-one deep balls on the first day of camp."
+    ],
+    "whyHeCouldFail": [
+      "He loses his entire rookie season, the year when route detail and NFL-speed timing are normally built, and rookie-year redshirts historically depress third-round receiver outcomes.",
+      "Knee soreness in the same left knee preceded the tear by a week, which raises the possibility of a lingering issue rather than a one-off non-contact accident.",
+      "Carolina's room does not wait. McMillan is a young alpha, Coker just signed an extension, and the Panthers will likely add receivers in the 2027 draft before Brazzell has taken an NFL snap.",
+      "He is 22.8 already and will be nearly 24 before playing a regular-season game, so the age-adjusted production curve dynasty managers price by works against him.",
+      "The 2024 Tennessee season (29 catches, 333 yards) is a real data point: he needed a perfect scheme fit and a year of acclimation to produce, and he will have to acclimate all over again."
+    ],
+    "fantasyOutlook": [
+      "There is no 2026 projection: Brazzell is on injured reserve and will not play a snap. That makes him a pure dynasty asset and, for contending teams, a dead roster spot for four months. The realistic first meaningful season is 2027, when he arrives as a 24-year-old second-year rookie competing for the perimeter job opposite Tetairoa McMillan with a defined role already sketched out by his head coach and a full offseason of healthy work.",
+      "In a superflex .5 PPR dynasty league his price should be discounted to the late third round of the rookie draft, which is roughly where the board (No. 34) and his KTC value of 2261 sit — but the market and the board disagree about direction here, with FantasyPros' consensus down at 38. Rebuilding rosters should be the buyers: you get a 4.37 receiver at 6'4\" with third-round capital and no injury discount left to apply, and if his knee checks out in the spring he will be substantially more expensive next August than he is at this draft table."
+    ],
+    "comp": "A poor man's Tee Higgins on tape — long, fast, wins at the catch point on the boundary — with a lost season stapled to the front of the profile.",
+    "bottomLine": "If you are rebuilding, he is the best value on this section of the board; if you are contending, do not spend a roster spot on a receiver who cannot play until 2027.",
+    "sources": [
+      "https://www.panthers.com/news/5-things-to-know-about-chris-brazzell-ii",
+      "https://247sports.com/college/tennessee/article/chris-brazzell-drafted-carolina-panthers-third-round-2026-nfl-draft-282975634/",
+      "https://www.on3.com/teams/tennessee-volunteers/news/chris-brazzell-40-time-nfl-combine-mel-kiper-first-round-pick-tennessee-vols-football/",
+      "https://steelersdepot.com/2026/02/2026-nfl-draft-scouting-report-chris-brazzell-ii/",
+      "https://www.panthers.com/news/play-of-the-day-chris-brazzell-made-a-play-mike-jackson-did-too-training-camp",
+      "https://www.panthers.com/news/rookie-wide-receiver-chris-brazzell-to-miss-the-entire-2026-season",
+      "https://www.panthers.com/news/panthers-place-chris-brazzell-on-injured-reserve-sign-a-tight-end",
+      "https://apnews.com/article/panthers-brazzell-seasonending-surgery-1edd3e067ead73a35a46a1c311cfc660",
+      "https://www.charlotteobserver.com/sports/nfl/carolina-panthers/article316714886.html"
+    ]
+  },
+  "1020": {
+    "id": 1020,
+    "name": "Max Klare",
+    "position": "TE",
+    "nflTeam": "LAR",
+    "nflTeamName": "Los Angeles Rams",
+    "college": "Ohio State",
+    "hometown": "Guilford, Indiana",
+    "classYear": "Redshirt Junior",
+    "headline": "Seven Catches In His First Preseason Game, And Four Tight Ends Still Ahead Of Him",
+    "subhead": "The Rams spent the 61st pick on Max Klare and then kept every tight end they already had; the talent is obvious, the 2026 opportunity is not.",
+    "draftPick": "Round 2, Pick 29 (No. 61 overall), Los Angeles Rams",
+    "measurables": {
+      "height": "6'5\"",
+      "weight": "246 lbs",
+      "age": "23.1",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "32 1/8\"",
+      "combineNote": "Klare attended the combine and did no athletic testing — no forty, bench, jumps or agility drills — limiting himself to measurements (32 1/8-inch arms) and positional work, and he did not post verified numbers at Ohio State's pro day either. Evaluators had to grade the tape, where his explosiveness looked more obvious in his final Purdue season than in Columbus: his yards after catch per reception fell from 6.6 to 5.2."
+    },
+    "collegeCareer": [
+      "Klare was a three-star tight end out of St. Xavier in Cincinnati who arrived at Purdue as a two-sport recruit — he was a left-handed-hitting outfielder good enough to hit .410 in high school — and gave up baseball within a month. He played one game as a freshman in 2022, then broke through as a redshirt freshman in 2023 with 22 catches for 196 yards in five games before an injury ended his season, including an eight-catch game at Virginia Tech.",
+      "The 2024 season was his statistical peak and the reason he was a second-round pick. In a bad Purdue offense he led the team with 51 catches for 685 yards and four touchdowns, finished second in the Big Ten and eighth in the FBS in receiving yards by a tight end, and earned third-team All-Big Ten from the coaches. He was PFF's sixth-highest-graded tight end at 78.9 offensive, with a 133-yard game at Illinois that included a 62-yard catch and touchdown games against Penn State and Michigan State.",
+      "Then he transferred to Ohio State for 2025 and traded volume for validation. Sharing a loaded pass-catching room, Klare caught 43 balls for 448 yards and two touchdowns on 56 targets in 14 games with 12 starts, and was named first-team All-Big Ten anyway. The real development was as a blocker: his PFF run-block grade jumped from 53.8 to 71.6 as the Buckeyes leaned on heavier 12-personnel packages. He was the sixth Buckeye drafted in 2026 and the first Ohio State tight end taken in the first two rounds in 30 years."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Purdue", "line": "1 G, 1 rec, 20 rec yds, 0 TD"},
+      {"season": "2023", "team": "Purdue", "line": "5 G, 4 starts, 22 rec, 196 rec yds, 8.9 ypr, 0 TD"},
+      {"season": "2024", "team": "Purdue", "line": "12 G, 12 starts, 51 rec, 685 rec yds, 13.4 ypr, 4 TD"},
+      {"season": "2025", "team": "Ohio State", "line": "14 G, 12 starts, 43 rec, 448 rec yds, 10.4 ypr, 2 TD on 56 targets"},
+      {"season": "Career", "team": "Purdue / Ohio State", "line": "116 rec, 1,329 rec yds, 11.5 ypr, 6 TD"}
+    ],
+    "draftDayStory": [
+      "Los Angeles took Klare at No. 61 overall, the 29th pick of the second round, matching the pre-draft board. He was the sixth Ohio State player drafted in 2026 and the first Buckeye tight end selected in the first two rounds since 1996 — Will Kacmarek went 26 picks later to Miami, the first time Ohio State had two tight ends drafted in the same year.",
+      "The pick confirmed a philosophy rather than filled a hole. The Rams re-signed Tyler Higbee, already had Colby Parkinson, 2025 pick Terrance Ferguson and Davis Allen, and ran 331 plays in 13 personnel last season — more than twice as many as any other team, per ESPN Research. Rather than spend on receivers behind Puka Nacua, Les Snead and Sean McVay doubled down on multiple-tight-end football and drafted the best receiving tight end left on the board."
+    ],
+    "whyTheyDraftedHim": [
+      "Scheme conviction: Los Angeles ran 331 snaps of 13 personnel in 2025, more than double any other team, so a fourth or fifth capable tight end is a real offensive weapon rather than a luxury.",
+      "Route running and efficiency. McVay's staff valued his acumen as a route runner and his yards-after-catch profile, and CBS' evaluation called him a high-floor tight end with the tools to start early.",
+      "Proven pass-game volume in the Big Ten: a 51-catch, 685-yard season at Purdue in 2024 that ranked eighth in the FBS among tight ends, followed by first-team All-Big Ten recognition at Ohio State.",
+      "Real blocking improvement — his PFF run-block grade climbed from 53.8 at Purdue to 71.6 at Ohio State in a heavier 12-personnel scheme, which is what makes him playable on early downs.",
+      "Succession behind an aging room. Higbee is at the end of his run and Parkinson is on a veteran deal; Klare and Ferguson are the two young pieces the Rams intend to build the position around."
+    ],
+    "campNotes": [
+      {"date": "Jul 23", "source": "Turf Show Times", "note": "Camp preview framed the Klare selection as the Rams going all-in on multiple-tight-end offense, noting they left the receiver room essentially untouched and drafted a second receiving tight end in two years."},
+      {"date": "Aug 15", "source": "CBS Sports / Rams.com", "note": "Preseason debut at Kansas City: Klare started with Parkinson, Higbee and Ferguson all held out, and caught seven passes on a team-high eight targets for 37 yards in a 20-12 win, three of them on one drive late in the first half. He also took a holding penalty in the third quarter."},
+      {"date": "Aug 18", "source": "Rams.com (Sean McVay press conference)", "note": "McVay praised Klare's hands and his hand placement in the run game and said the rookie 'has really benefited the most from reps that he wouldn't have gotten otherwise' with Davis Allen out most of camp with a quad injury."},
+      {"date": "Aug 22", "source": "Saints.com box score / ESPN play-by-play", "note": "Second preseason game vs. New Orleans: four catches for 12 yards in a 34-0 Rams win, working with both Stetson Bennett and Ty Simpson, with a couple of incompletions targeted his way underneath."},
+      {"date": "Aug 23-25", "source": "Turf Show Times / ESPN / ClutchPoints roster projections", "note": "Every major 53-man projection carries five tight ends — Parkinson, Higbee, Ferguson, Allen and Klare — with Allen back at practice from his quad injury and analysts noting Klare's draft status makes him waiver-proof rather than a bubble player."}
+    ],
+    "beatQuotes": [
+      {"quote": "I thought he did well. He made the catches with the targets that were there. I thought he did a nice job getting his hands inside in the run game... I thought he took a really good step in the right direction, and he's been the guy that has really benefited the most from reps that he wouldn't have gotten otherwise in Davis' absence.", "attribution": "Sean McVay, Rams head coach, Rams.com, Aug 18"},
+      {"quote": "It's an extremely special group. First of all, a lot of really talented players, and it's fun to sit in there and watch what they do well and pick things up from each guy. Obviously Colby and Higbee have been doing it for a long time, so getting to learn from those guys is all you can ask for as a rookie.", "attribution": "Max Klare, Rams.com, Aug 21"},
+      {"quote": "Just being consistent is the main thing. You just want to consistently stack good days. That's what we're asked to do, and that's what we want to go do every day.", "attribution": "Max Klare, Rams.com, Aug 21"}
+    ],
+    "depthChart": "Klare is the fifth tight end in a five-tight-end room. Colby Parkinson and Tyler Higbee handle the veteran snaps, 2025 pick Terrance Ferguson has drawn heavy praise from McVay, and Davis Allen is back from a quad injury that gave Klare most of his camp reps. Every credible roster projection keeps all five, which tells you both that Klare is safe and that his 2026 target share is the last one distributed.",
+    "whyHeCouldSucceed": [
+      "Second-round capital in an offense that ran more 13 personnel than any team in football means his snaps are schemed rather than earned by attrition; McVay wanted this specific skill set.",
+      "He has already shown up in games: seven catches on eight targets in his first preseason action and 11 receptions across two exhibitions, on a route tree McVay tailors to tight ends.",
+      "The room ages out fast. Higbee is at the end of the line and Parkinson is on a veteran contract, leaving Klare and Ferguson as the two pieces Los Angeles has invested draft capital in.",
+      "Production pedigree: a 51-catch, 685-yard tight end season in the Big Ten plus first-team All-Big Ten in a loaded Ohio State passing attack — he has been the guy and the complementary piece, and produced in both roles.",
+      "Blocking is no longer a disqualifier. The jump from a 53.8 to a 71.6 PFF run-block grade, plus McVay's praise for his hand placement, means he can stay on the field on early downs."
+    ],
+    "whyHeCouldFail": [
+      "Four tight ends are ahead of him on a team that just kept all of them, and target volume in a five-tight-end room is a rounding error for the fifth man.",
+      "He never tested — no forty, jumps or agility work at the combine or pro day — so the athletic ceiling is unproven, and his yards after catch per reception fell from 6.6 to 5.2 in his final year.",
+      "The Rams' passing game runs through Puka Nacua and Davante Adams-tier target hogs; even a breakout tight end year here may cap at 50-55 catches.",
+      "Evaluators consistently flagged play strength as a run blocker, and if the technique gains do not hold up against NFL edge defenders he becomes a passing-down specialist.",
+      "Sharing a room with Ferguson — a 2025 draft pick McVay is openly high on — means Los Angeles may simply prefer the other young tight end when Higbee and Parkinson move on."
+    ],
+    "fantasyOutlook": [
+      "For 2026, project Klare as a low-volume rotational tight end: something like 20-30 catches for 200-300 yards in a room that splits snaps four and five ways. He is not startable in one-tight-end leagues, and his preseason line (11 catches, 49 yards) is a fair sketch of the underneath, low-aDOT role he will occupy while Parkinson and Higbee absorb the meaningful targets. The 2027 offseason is the inflection point, when Higbee's era ends and the Rams choose between Klare and Terrance Ferguson.",
+      "In a superflex .5 PPR dynasty league he should cost a late-third-round rookie pick — his KTC value of 2206 (rookie 35) is the lowest of this group despite the best draft capital, which is the market correctly pricing the depth chart rather than the player. Buy him if you already have a starting tight end and can wait; his second-round capital, McVay's tight-end-centric scheme and an aging room in front of him give him the highest realistic ceiling of any player on this section of the board."
+    ],
+    "comp": "A less athletic Sam LaPorta — a technician-style receiving tight end whose fantasy value depends entirely on the room clearing out in front of him.",
+    "bottomLine": "The best long-term bet at the back of the third round if you can stomach a year of nothing; do not draft him if you need production in 2026.",
+    "sources": [
+      "https://www.therams.com/news/max-klare-nfl-draft-tight-end-ohio-state",
+      "https://www.therams.com/news/get-to-know-max-klare-ohio-state-round-2-pick-61-2026-nfl-draft",
+      "https://www.elevenwarriors.com/ohio-state-football/2026/04/162355/max-klare-selected-by-los-angeles-rams-no-61-overall-pick-in-2026-nfl-draft",
+      "https://www.espn.com/college-football/player/stats/_/id/4833029/max-klare",
+      "https://purduesports.com/sports/football/roster/season/2024/player/max-klare",
+      "https://theringer.com/nfl-draft/2026/big-board/max-klare",
+      "https://www.therams.com/news/always-fun-to-contribute-max-klare-makes-most-of-preseason-debut-raising-floor-of-already-deep-te-group",
+      "https://www.cbssports.com/fantasy/football/news/rams-max-klare-logs-seven-catches-in-rams-debut/",
+      "https://www.turfshowtimes.com/los-angeles-rams-depth-chart/146653/rams-53-man-roster-projection-update",
+      "https://www.espn.ph/nfl/story/_/id/49658470/2026-nfl-season-los-angeles-rams-final-roster-projection"
+    ]
+  }
+}
