@@ -1,0 +1,471 @@
+{
+  "1052": {
+    "id": 1052,
+    "name": "Cyrus Allen",
+    "position": "WR",
+    "nflTeam": "KC",
+    "nflTeamName": "Kansas City Chiefs",
+    "college": "Cincinnati",
+    "hometown": "New Orleans, Louisiana",
+    "classYear": "Redshirt Senior",
+    "headline": "The Fifth-Rounder Who Made Patrick Mahomes Look Twice In St. Joseph",
+    "subhead": "Three schools, one record-tying touchdown season and the loudest first week of any Chiefs rookie made Cyrus Allen the summer's most-hyped Day 3 receiver.",
+    "draftPick": "Round 5, Pick 36 (No. 176 overall), Kansas City Chiefs",
+    "measurables": {
+      "height": "5'11\"",
+      "weight": "183 lbs",
+      "age": "23.5",
+      "forty": "4.49",
+      "tenSplit": "1.56",
+      "vertical": "36\"",
+      "broad": "11'0\"",
+      "threeCone": "6.90",
+      "shuttle": "4.17",
+      "bench": "14 reps",
+      "armLength": "30 7/8\"",
+      "combineNote": "Allen tested as a good-not-great athlete: a 4.49 40 is the number most widely cited from his pre-draft work, with timing sheets also carrying a 4.51 from his official Indianapolis run and a 4.49 pro-day mark. The rest of the profile is short-area quickness rather than explosion — 6.90 three-cone and 4.17 shuttle against a modest 36-inch vertical and 30 7/8-inch arms. He also helped himself at the Senior Bowl, which mattered more to evaluators than any single stopwatch figure."
+    },
+    "collegeCareer": [
+      "Allen is a New Orleans product who took the long road. After redshirting at Louisiana Tech in 2021, he broke out as a true freshman in 2022 with 22 catches for 500 yards and four touchdowns while averaging 22.7 yards a grab — second nationally — and leading all FBS freshmen with 10 scrimmage plays of 30-plus yards. He followed that with 46 catches for 778 yards in 2023, ranking fifth in Conference USA at 70.7 receiving yards per game, and left Ruston with 1,278 yards and eight scores in two seasons as a pure field-stretcher.",
+      "The Texas A&M year was a detour. Allen started five games in 2024 and was the Aggies' third-leading receiver with 18 catches for 269 yards and a touchdown before a season-ending arm injury cut the year short. He entered the portal afterward, committed to Tulane, then flipped to Cincinnati — a decision that saved his draft stock.",
+      "The 2025 season at Cincinnati was the payoff. Allen led the Bearcats with 51 catches for 674 yards and tied the school's single-season receiving touchdown record with 13, matching Marcus Barnett's 2007 mark in the Liberty Bowl and completing Cincinnati's first receiving triple crown since Tyler Scott in 2022. His 88-yard score at Utah was the third-longest pass play in program history; he had a career-high 11 catches for 128 yards and two scores in the win at Kansas, three touchdowns on four catches at Oklahoma State, and touchdowns in each of the final three games. He was a second-team All-Big 12 pick and finished his college career with 137 receptions for 2,221 yards and 22 touchdowns across 44 games."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Louisiana Tech", "line": "10 G, 22 rec, 500 rec yds, 22.7 ypr, 4 TD"},
+      {"season": "2023", "team": "Louisiana Tech", "line": "11 G, 46 rec, 778 rec yds, 16.9 ypr, 4 TD"},
+      {"season": "2024", "team": "Texas A&M", "line": "10 G, 18 rec, 269 rec yds, 14.9 ypr, 1 TD (season ended by arm injury)"},
+      {"season": "2025", "team": "Cincinnati", "line": "13 G, 51 rec, 674 rec yds, 13.2 ypr, 13 TD (school record-tying), 7 car, 20 rush yds"}
+    ],
+    "draftDayStory": [
+      "Kansas City took Allen in the fifth round at No. 176 overall, which matches the board exactly — Round 5, Pick 36. He was the Chiefs' developmental swing at receiver after a class that led with cornerback Mansoor Delane, and Brett Veach's front office sold him as a reliable-hands separator for the short and intermediate game with return value attached. Allen, who had played at Arrowhead with Cincinnati against Nebraska, leaned into the special-teams path immediately: 'Man, I feel like that's a great spot,' he said on his draft call, framing his route to the roster as teams work plus learning behind Patrick Mahomes and Andy Reid."
+    ],
+    "whyTheyDraftedHim": [
+      "Kansas City wanted a fifth receiver who could win early on timing and body control rather than raw speed — the traits Cincinnati leaned on when he tied the school's single-season touchdown record.",
+      "Four-phase special-teams value: the Chiefs put him at gunner and returner from the first week of camp. 'Everyone is on special teams until they aren't. Everyone starts as a four-phase guy, especially rookies,' special teams coordinator Dave Toub said.",
+      "Senior Bowl week and a 4.49 40 in a 5-11, 183-pound frame gave Veach's staff enough athletic floor to project him outside and in the slot.",
+      "Multi-transfer production against Big 12 and SEC defenses answered the level-of-competition question that his Louisiana Tech tape raised."
+    ],
+    "campNotes": [
+      {"date": "Aug 1", "source": "Nate Taylor, ESPN", "note": "Three days into camp Allen was the story of St. Joseph — his snaps with Mahomes and the first team increased daily. He led all receivers with five catches in the projected starters' 11-on-11 work Friday, including a leaping one-handed grab between three defenders and a contested back-shoulder fade against Nohl Williams, the Chiefs' best camp cornerback."},
+      {"date": "Aug 1", "source": "Adam Schefter, ESPN", "note": "Allen was carted off after colliding with cornerback Kaiir Elam while both worked as gunners on a punt drill. Tests revealed a shin bruise with nothing torn or broken — described by ESPN as a best-case outcome."},
+      {"date": "Aug 7", "source": "Kansas City Star", "note": "Allen returned to practice in pads for the first time since the injury, stretching with teammates instead of heading to the injury tent, though he stayed out of contact drills."},
+      {"date": "Aug 11", "source": "Kansas City Star, Day 12 camp report", "note": "Back to a full role: Mahomes looked his way with the first two passes of the opening team-blitz period, Allen beat Nohl Williams to the flat, and he was featured on a jet sweep. He drew two targets from Mahomes in 7-on-7 and two more in 11-on-11."},
+      {"date": "Aug 11", "source": "Chiefs Wire / Kansas City Star", "note": "Kansas City's first unofficial depth chart listed Allen as a second-team receiver behind Xavier Worthy, one of six rookies to earn second-team roles. Ourlads has him third at both punt and kick returner behind Nikko Remigio and Brashard Smith."},
+      {"date": "Aug 15", "source": "CBS Sports / AtoZ Sports", "note": "Preseason debut: two catches on five targets for 20 yards against the Rams, opening as a starter alongside Jalen Royals and Tyquan Thornton with Rashee Rice and Worthy (shoulder) out. A screen that turned into a big gain was wiped out by a Royals hold; he converted a leaping 13-yarder on third-and-8."},
+      {"date": "Aug 22", "source": "NBC Sports / TruMedia", "note": "Three catches on five targets for seven yards at Tampa Bay, all in the short areas (-1.7 average depth of target). His 29 snaps were third-most among Chiefs receivers and his 23 routes second-most, all with backup quarterbacks Justin Fields and Garrett Nussmeier."}
+    ],
+    "beatQuotes": [
+      {"quote": "He's really doing well on offense, and he's doing well for me too. He's at gunner and returner, and he's doing a real good job, putting himself in a good position to be a guy that's going to help us this year.", "attribution": "Dave Toub, Chiefs special teams coordinator, Aug 1"},
+      {"quote": "He's been doing well at camp before he got hurt. And then when he's come back here for the couple of days he was back, it looked like he picked right up from there. I thought he did a nice job for the most part there on catching the football and route running.", "attribution": "Andy Reid, Chiefs head coach, via Charles Goldman, AtoZ Sports, Aug 15"},
+      {"quote": "This ain't college, this is big boy ball. So everything's pretty much timing.", "attribution": "Cyrus Allen, via KCTV5, Aug 1"},
+      {"quote": "I get he's a rookie WR and they typically play teams, but when the guy looks like a stud, maybe have Royals or Remigio take those reps.", "attribution": "Matt Verderame, Sports Illustrated/KCSN, Aug 1"}
+    ],
+    "depthChart": "Fourth or fifth in a crowded room: Rashee Rice, Xavier Worthy and Tyquan Thornton are the top three, and Allen is listed as the second-team receiver behind Worthy while competing with Jalen Royals, Nikko Remigio, Andrew Armstrong, Jason Brownlee and Jimmy Holiday for the last spots. He is on the roster bubble only in the technical sense — camp buzz plus gunner and return work make him a near-lock to dress — but the offensive snaps are not his yet.",
+    "whyHeCouldSucceed": [
+      "He is already the receiver Mahomes hunts in camp. That connection is the single most valuable currency in Kansas City, and it opened the first two team-period passes of a padded practice on Aug 11.",
+      "The room is fragile. Worthy has already had a shoulder scare, Rice's availability has never been a given, and Thornton is a career journeyman — one injury pushes Allen into three-receiver sets with the league's best quarterback.",
+      "He tied Cincinnati's single-season touchdown record with 13 scores on only 51 catches, evidence of red-zone and contested-catch feel that outstrips his 183-pound frame.",
+      "Four-phase special-teams value as gunner and returner keeps him active every week, which is how Day 3 receivers survive long enough to get a second-year offensive role."
+    ],
+    "whyHeCouldFail": [
+      "Fifth-round capital and a 5-11, 183-pound frame mean nothing is promised; the Chiefs have cycled through Royals, Remigio, Brownlee and Armstrong for the same snaps.",
+      "The preseason usage was a caution flag: 10 targets for 27 yards across two games, all with backups, and a -1.7 average depth of target against Tampa Bay is a screen-and-flat profile, not a downfield role.",
+      "He turns 24 in February and has one strong Power Four season on the resume, with a 2024 Texas A&M year that produced 269 yards before an arm injury.",
+      "Playing deep into first preseason games while starters watch is usually a signal the coaching staff is still evaluating, not committing.",
+      "The shin bruise cost him a week of padded practices at the exact moment the competition was decided by physicality."
+    ],
+    "fantasyOutlook": [
+      "For 2026, project a special-teams contributor with situational offensive snaps — call it 20 to 30 targets if the room stays healthy, with real spike weeks if Worthy or Rice misses time. The dynasty case is entirely about the quarterback: fifth-round receivers who catch Mahomes' eye in July occasionally turn into 60-catch third-year players, and the acquisition cost here is nothing like the price of that outcome.",
+      "In a superflex .5 PPR dynasty league, Allen belongs in the late second or early third round of a rookie draft — around the 2.09 to 3.03 range — which is roughly where his KTC value of 2875 and rookie rank of 21 place him. His FantasyPros consensus rank of 37 is the market telling you the sober version. Buy him as your last swing after you have taken your running backs and premium receivers; do not spend a second-round pick you would rather use on a starter."
+    ],
+    "comp": "A slighter Rashee Rice in usage terms — a timing-and-body-control winner in the short-to-intermediate game whose value is manufactured by scheme and quarterback rather than separation speed.",
+    "bottomLine": "The best late-round lottery ticket in this class because of who is throwing him the ball, but pay a third-round price, not a second-round one.",
+    "sources": [
+      "https://www.espn.com.sg/nfl/story/_/id/49500558/2026-kansas-city-chiefs-training-camp-cyrus-allen-patrick-mahomes",
+      "https://www.espn.ph/nfl/story/_/id/49505881/chiefs-rookie-standout-cyrus-allen-helped-leg-injury",
+      "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article316844322.html",
+      "https://gobearcats.com/sports/football/roster/player/cyrus-allen",
+      "https://www.nbcsports.com/fantasy/football/player-news/2026-08-23/cyrus-allen-totals-seven-yards-on-three-catches",
+      "https://www.yardbarker.com/nfl/articles/kansas_city_chiefs_first_unofficial_depth_chart_ahead_of_preseason_week_1_vs_los_angeles_rams_includes_a_few_surprises/s1_17313_44162921",
+      "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/04/26/kansas-city-chiefs-er-cyrus-allen-reflects-on-his-experience-playing-at-arrowhead-stadium/89803890007/",
+      "https://apps.rotowire.com/football/player/cyrus-allen-19631"
+    ]
+  },
+  "1012": {
+    "id": 1012,
+    "name": "Antonio Williams",
+    "position": "WR",
+    "nflTeam": "WAS",
+    "nflTeamName": "Washington Commanders",
+    "college": "Clemson",
+    "hometown": "Irmo, South Carolina",
+    "classYear": "Senior",
+    "headline": "Clemson's Most Polished Route Runner Lands In Washington With A Ceiling Nobody Wants To Cap",
+    "subhead": "Antonio Williams left Clemson fourth all-time in receptions and has spent August proving he is already the third-best receiver on a playoff roster.",
+    "draftPick": "Round 3, Pick 7 (No. 71 overall), Washington Commanders",
+    "measurables": {
+      "height": "5'11\"",
+      "weight": "195 lbs",
+      "age": "22.1",
+      "forty": "4.41",
+      "tenSplit": null,
+      "vertical": "39 1/2\"",
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Williams tested better than his tape suggested. A 4.41 40 at 5-11 was the number that moved him from slot-only projections into potential perimeter work, and a 39.5-inch vertical backed up the contested-catch reel. He ran his shuttle at Clemson's pro day rather than in Indianapolis. The athletic testing was never the question with him; the question was whether volume production at 11.2 yards per catch translates to NFL separation, and the combine answered part of it."
+    },
+    "collegeCareer": [
+      "Williams was a four-star recruit out of Dutch Fork High in the Columbia suburbs who lost once in his entire prep career, and he contributed at Clemson immediately: 56 catches for 604 yards and four scores as a true freshman in 2022, leading the Tigers in both receptions and yards and earning Freshman All-America honors. He caught a pass in each of his first 33 career games, the seventh-longest streak in school history.",
+      "The 2023 season was nearly lost. Nagging injuries limited him to four regular-season games and a medical redshirt, though he returned for the Gator Bowl and converted a 16-yard catch on third-and-18 during the game-winning drive against Kentucky. Healthy again in 2024, he broke out with 75 catches for 904 yards and 11 touchdowns while adding a rushing score, a passing touchdown and a 9.65-yard punt return average — the best by a Clemson returner with 15-plus attempts since Ray-Ray McCloud in 2017.",
+      "His 2025 finale produced 55 catches for 604 yards and four touchdowns before he declared. He left Clemson fourth all-time in receptions (208), tied with Mike Williams for fourth in touchdown catches (21), the 17th Tiger to reach 2,000 receiving yards, and a two-time All-ACC pick. He also went 4-for-4 as a passer for 143 yards and two touchdowns and returned 39 punts, the kind of gadget résumé that tells you a staff trusted him with the ball in any alignment."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Clemson", "line": "14 G, 56 rec, 604 rec yds, 10.8 ypr, 4 TD, 15 punt ret, 129 yds"},
+      {"season": "2023", "team": "Clemson", "line": "5 G, 21 rec, 208 rec yds, 9.9 ypr, 2 TD (injury-shortened, medical redshirt)"},
+      {"season": "2024", "team": "Clemson", "line": "14 G, 75 rec, 904 rec yds, 12.1 ypr, 11 TD, 7 car, 101 rush yds, 1 TD, 17 punt ret, 164 yds"},
+      {"season": "2025", "team": "Clemson", "line": "10 G, 55 rec, 604 rec yds, 11.0 ypr, 4 TD, 13 car, 78 rush yds, 1 TD"}
+    ],
+    "draftDayStory": [
+      "Williams was in Charlotte in front of a table of 32 hats when Adam Peters called with the No. 71 pick. Washington had spent the second round on defense and, presented with a run of available receivers on Day 2, decided Williams was the best of the group. His selection made Clemson the first program to have five players taken in the first three rounds of a single draft in school history, and he became the first Clemson receiver drafted since Amari Rodgers and Cornell Powell in 2021. The pick matches the board exactly: Round 3, Pick 7, No. 71 overall.",
+      "The context has shifted since April. Washington signed Stefon Diggs to a one-year deal worth up to $12 million on Aug 7 after watching the receiver room in camp, which pushed Williams from presumptive WR2 into a WR3/WR4 competition with Treylon Burks and Luke McCaffrey."
+    ],
+    "whyTheyDraftedHim": [
+      "Route-running nuance. Peters said Williams' detail is the kind players normally do not learn until they reach the NFL, and Washington valued it over size when they had bigger receivers on the board.",
+      "Man-coverage production: he caught 70.4% of his targets against man in his final season with zero drops, and ranked in the 88th percentile against single man coverage entering 2025.",
+      "Positional flexibility for a new scheme — he can play the Z and the F, which Albert Breer identified in August as the specific reason he fits Washington's offense.",
+      "Scoring versatility. He tied Mike Williams for fourth in Clemson history in touchdown catches, added two rushing scores and threw two touchdown passes.",
+      "Punt return experience gives him a fourth-phase path to the field behind an established top two."
+    ],
+    "campNotes": [
+      {"date": "Aug 4", "source": "Denton Day, via RotoBaller", "note": "Williams took a handful of first-team 11-on-11 reps, continuing a pattern from early camp. Dan Quinn said the same day that Williams is further along than Luke McCaffrey was at the same point as a rookie, noting McCaffrey had only recently converted from quarterback."},
+      {"date": "Aug 7", "source": "Adam Schefter, ESPN", "note": "Washington signed Stefon Diggs to a one-year deal worth up to $12 million, immediately installing him as the No. 2 receiver ahead of Williams and reshaping the rookie's target projection."},
+      {"date": "Aug 10", "source": "Commanders.com unofficial depth chart", "note": "Williams was listed third at his spot behind Diggs and Treylon Burks — technically six receivers ahead of him — and fourth on punt returns. CBS Sports' Jordan Dajani flagged the placement as the team's most notable depth-chart oddity."},
+      {"date": "Aug 12", "source": "Zach Selby, Commanders.com", "note": "In joint practices with Miami, Washington's receivers won at the line repeatedly and Williams stood out: a move on Ethan Robinson created roughly five yards of separation."},
+      {"date": "Aug 14", "source": "NFL.com", "note": "NFL debut in the preseason opener against the Dolphins: one catch on three targets for 16 yards, a sideline grab from Athan Kaliakmanis."},
+      {"date": "Aug 20", "source": "Albert Breer, Sports Illustrated", "note": "After visiting camp, Breer wrote that Williams is one to watch and already capable of playing both the Z and the F, calling him a really good fit for the new system."},
+      {"date": "Aug 22", "source": "CBS Sports / Riggo's Rag", "note": "Three catches on three targets for 41 yards at Detroit, tying for the team lead in receptions, including a 21-yard contested grab. Beat writers noted the crispness of his routes and that Washington seems content to keep him hidden through the preseason finale."}
+    ],
+    "beatQuotes": [
+      {"quote": "Rookie Antonio Williams is one to watch, already capable of playing both the Z (split end) and F (slot) positions, which have made him a really good fit for the new system.", "attribution": "Albert Breer, Sports Illustrated, Aug 19"},
+      {"quote": "It's been good. He's super eager to learn. He's like a little brother. He's still a rookie at the end of the day, so we give him a tough time.", "attribution": "Jayden Daniels, Commanders quarterback, Aug 12"},
+      {"quote": "It's only one ball to go around, and everyone wants that one ball. But, you gotta earn it. You gotta work for it. I mean, you gotta be happy for your teammate when he gets to it.", "attribution": "Antonio Williams, via Grant Paulsen, 106.7 The Fan, Aug 23"},
+      {"quote": "Antonio Williams was particularly good at this with a move on Ethan Robinson that created about five yards of separation.", "attribution": "Zach Selby, Commanders.com, Aug 12"}
+    ],
+    "depthChart": "WR3/WR4 in a settled room. Terry McLaurin and Stefon Diggs are the starters, and Williams is in an open competition with Luke McCaffrey and Treylon Burks for the third role; the club's own unofficial chart buried him behind both, while camp reporting and preseason usage put him ahead of Burks. He is also fourth on the punt-return list, which is depth insurance rather than a role.",
+    "whyHeCouldSucceed": [
+      "Jayden Daniels is the best quarterback situation any receiver in this batch landed in, and Washington's new scheme has been described as a specific fit for Williams' Z-and-F versatility.",
+      "Diggs is on a one-year deal at 33 and McLaurin is on the back nine of his prime; the 2027 depth chart could open completely with no additional investment required.",
+      "Route detail is the trait that gets rookies on the field fastest. Peters singled it out, and Williams' preseason tape has already produced target-per-route efficiency, not just volume.",
+      "Third-round capital plus 208 career Clemson receptions means his floor is a real NFL role player, not a camp body — the profile ages well as a possession WR3."
+    ],
+    "whyHeCouldFail": [
+      "Volume over explosiveness: he averaged between 10.2 and 12.1 yards per reception in every college season, and a slot-heavy NFL role could produce even less.",
+      "The Diggs signing cost him hundreds of routes in year one, and Washington's depth chart also lists McCaffrey and Burks ahead of him at his position.",
+      "He played more than three-quarters of his college snaps in the slot, and 5-11, 195 with no elite length caps the outside-the-numbers projection.",
+      "The 2023 injury year is a real data point — nagging soft-tissue issues limited him to four regular-season games and a medical redshirt.",
+      "Washington's offense funnels through McLaurin and the run game; a rookie fourth in the pecking order can be schemed out of relevance entirely."
+    ],
+    "fantasyOutlook": [
+      "For 2026, the realistic outcome is 40 to 55 targets with WR4/WR5 flex value in deep leagues and immediate upside the week Diggs or McLaurin misses time. He is the kind of rookie who logs 25 to 30 snaps a game by October and gets a real route share by December, which is enough to make him a bench hold in every dynasty format and a starter in nobody's 12-team lineup on opening weekend.",
+      "In superflex .5 PPR dynasty, Williams should cost a mid-to-late second-round rookie pick — 2.05 to 2.10 territory. His KTC value of 2861 and rookie rank 22 lag his FantasyPros consensus rank of 14, and the consensus is closer to right here: draft capital, quarterback, route detail and a vacating veteran room in front of him is exactly the profile that gets repriced upward next offseason. If the market lets him slide past the middle of the second, take him over any running back available."
+    ],
+    "comp": "A right-sized Jaylen Waddle in role rather than athleticism — a Z/slot hybrid whose separation comes from route detail, with the volume ceiling gated by who is ahead of him.",
+    "bottomLine": "The safest floor in this tier and the best quarterback attached to it; buy him at his KTC price before the Diggs contract expires and the room clears out.",
+    "sources": [
+      "https://www.commanders.com/news/5-things-to-know-about-wr-antonio-williams",
+      "https://www.theclemsoninsider.com/2026/04/26/washington-gets-difference-maker-in-williams/",
+      "https://commanderswire.usatoday.com/story/sports/nfl/commanders/2026/08/23/washington-commanders-antonio-williams-wide-receiver-competition/91410946007/",
+      "https://heavy.com/sports/nfl/washington-commanders/antonio-williams-nfl-rookies-news-predictions/",
+      "https://www.commanders.com/news/commanders-release-2026-unofficial-depth-chart",
+      "https://www.cbssports.com/fantasy/football/news/commanders-antonio-williams-three-catches-saturday/",
+      "https://clemsontigers.com/sports/football/roster/player/antonio-williams",
+      "https://apps.rotowire.com/football/player/antonio-williams-19237"
+    ]
+  },
+  "1058": {
+    "id": 1058,
+    "name": "Malachi Fields",
+    "position": "WR",
+    "nflTeam": "NYG",
+    "nflTeamName": "New York Giants",
+    "college": "Notre Dame",
+    "hometown": "Charlottesville, Virginia",
+    "classYear": "Graduate Senior",
+    "headline": "The Power Forward: Giants Paid Three Picks For A 6-4 Rookie Who Already Looks Like Their No. 2",
+    "subhead": "Malachi Fields levitated through a New York camp on contested catches and forced his way into Jaxson Dart's trust before he had played a real NFL snap.",
+    "draftPick": "Round 3, Pick 10 (No. 74 overall), New York Giants",
+    "measurables": {
+      "height": "6'4\"",
+      "weight": "222 lbs",
+      "age": "23.0",
+      "forty": "4.61",
+      "tenSplit": null,
+      "vertical": "38\"",
+      "broad": null,
+      "threeCone": "6.98",
+      "shuttle": "4.26",
+      "bench": null,
+      "armLength": "32\"",
+      "combineNote": "The 4.61 40 in Indianapolis is the number that pushed Fields out of the second round, and it is a genuine limitation for a boundary receiver. Everything else tested well relative to his size: 38-inch vertical, a 6.98 three-cone that is unusual for a 6-4, 218-pound frame, a 79-inch wingspan, and a 4.26 short shuttle at Notre Dame's pro day. He is a long-strider who bends better than his build suggests, not a burner."
+    },
+    "collegeCareer": [
+      "Fields arrived at Virginia as a three-star quarterback recruit and moved to receiver, then lost most of two seasons — 11 catches as a freshman in 2021 and a single game in 2022 after surgery on a broken foot. The breakout came as a junior in 2023: 58 catches for 811 yards and five touchdowns, honorable-mention All-ACC, on a Cavaliers team with little else to lean on.",
+      "He backed it up in 2024 with 55 receptions for 808 yards and five scores and third-team All-ACC honors, again as the clear focal point of Virginia's passing game. That two-year run — 113 catches, 1,619 yards — is the production baseline evaluators built his profile on.",
+      "The Notre Dame transfer year was about proving level rather than volume. Fields started 12 games for a team that reached the College Football Playoff National Championship and posted 36 catches for 630 yards and five touchdowns, with his efficiency jumping to 17.5 yards per reception in a run-first offense that simply did not throw enough to feed him. He played the Senior Bowl and finished his career with 165 receptions for 2,479 yards and 16 touchdowns at 15.0 yards a catch."
+    ],
+    "collegeStats": [
+      {"season": "2021", "team": "Virginia", "line": "11 G, 11 rec, 172 rec yds, 15.6 ypr, 0 TD"},
+      {"season": "2022", "team": "Virginia", "line": "1 G, 5 rec, 58 rec yds, 11.6 ypr, 1 TD (missed season after broken-foot surgery)"},
+      {"season": "2023", "team": "Virginia", "line": "12 G, 58 rec, 811 rec yds, 14.0 ypr, 5 TD"},
+      {"season": "2024", "team": "Virginia", "line": "12 G, 55 rec, 808 rec yds, 14.7 ypr, 5 TD"},
+      {"season": "2025", "team": "Notre Dame", "line": "12 G (12 starts), 36 rec, 630 rec yds, 17.5 ypr, 5 TD"}
+    ],
+    "draftDayStory": [
+      "New York did not wait for Fields to fall. After taking cornerback Colton Hood earlier on Day 2, Joe Schoen traded the Nos. 105 and 145 picks plus a 2027 fourth-rounder to Cleveland to move up for No. 74 — a price that left the Giants with no selections until three sixth-rounders. Schoen admitted the team coveted him and called him a power forward in the post-pick press conference; John Harbaugh signed off on paying a premium for a size profile the roster did not have. The board's Round 3, Pick 10 matches the No. 74 slot exactly.",
+      "The subtext is Jaxson Dart. New York lost Wan'Dale Robinson in free agency, Malik Nabers was coming back from a knee injury, and the rest of the room — Darius Slayton, Darnell Mooney, Calvin Austin, Jalin Hyatt — is a collection of sub-6-foot speed. Fields was the answer to a specific structural hole, and local writers immediately framed the trade against the Hyatt trade-up of 2023 as the cautionary precedent."
+    ],
+    "whyTheyDraftedHim": [
+      "Size and catch radius the roster lacked: 6-4.5 with a 79-inch wingspan on a depth chart otherwise built from slot-sized speed players.",
+      "Contested-catch tape. 'That was a big thing that I love about Malachi's tape coming out — was his ability to make contested catches,' Dart said after their preseason touchdown connection.",
+      "Schoen's stated vision of a power forward: jump balls, red-zone targets and perimeter blocking for the run game, a job description Harbaugh's offense actually needs filled.",
+      "Mental processing. Receivers coach Chad Hall says the playbook comes easy to him, which let the staff coach technique instead of assignments from the first week.",
+      "He answered the level-of-competition question by starting 12 games for a national-title-game team."
+    ],
+    "campNotes": [
+      {"date": "late July", "source": "Jeremy Fowler, ESPN", "note": "Fowler reported the Giants were highly impressed with Fields, and went as far as saying there are shades of Plaxico Burress in his style — hyperbole, but a signal of how the building was talking about him before pads went on."},
+      {"date": "Aug 12", "source": "Giants Wire / Big Blue View", "note": "The first unofficial depth chart listed Fields with the third team behind Malik Nabers and Calvin Austin, even though he had been taking a heavy share of first-team reps in practice."},
+      {"date": "Aug 13", "source": "Yahoo Sports / Giants Wire", "note": "Fields was responsible for several 40-yard catches in camp and showed a fuller route tree than pure go-balls. Safety Jason Pinnock, recalling a spring dig route: 'It was like he was just levitating. I was kind of just waiting for him to come down.'"},
+      {"date": "Aug 13", "source": "Dan Duggan, The Athletic", "note": "Duggan reported Fields was making strides toward opening the season as the Giants' No. 2 receiver, with none of the veterans locking down the job."},
+      {"date": "Aug 15", "source": "NBC Sports / Sports Illustrated", "note": "Preseason debut against Minnesota: three catches on three targets for 34 yards and a 15-yard touchdown, high-pointing a Dart lob in the back corner of the end zone over linebacker Ivan Pace. He added an 8-yard third-down conversion, two first-half blocks in the secondary and a hustle play on punt coverage."},
+      {"date": "Aug 20", "source": "Big Blue View", "note": "After a run of roster moves, the updated unofficial chart still had Fields on the third line at Nabers' spot alongside Isaiah Hodgins, with Slayton, Mooney, Hyatt and Odell Beckham Jr. stacked on the other side."},
+      {"date": "Aug 21", "source": "Giants.com All Access", "note": "Fields sat down with Brandon London to recap his debut and touchdown, one of the featured camp interviews alongside John Harbaugh and Tremaine Edmunds — a fair proxy for how central he has become to the team's own storytelling."}
+    ],
+    "beatQuotes": [
+      {"quote": "It was like he was just levitating. I was kind of just waiting for him to come down. He's a freak athlete. If I had to say one glaring thing, it's his ball skills.", "attribution": "Jason Pinnock, Giants safety, via Giants Wire, Aug 13"},
+      {"quote": "The playbook comes easy to him so we can really focus on what happens after the snap rather than before. He's a big guy who can bend well. We're just trying to get him to bend more, play lower.", "attribution": "Chad Hall, Giants receivers coach, Aug 13"},
+      {"quote": "That was a big thing that I love about Malachi's tape coming out [of Notre Dame] — was his ability to make contested catches.", "attribution": "Jaxson Dart, Giants quarterback, Aug 15"},
+      {"quote": "He has made an early claim for the No. 2 receiver spot.", "attribution": "Dan Duggan, The Athletic, Aug 13"}
+    ],
+    "depthChart": "Officially a third-teamer, functionally the No. 2 in waiting. Malik Nabers is the unquestioned target hog once healthy, and Darius Slayton, Darnell Mooney and Calvin Austin hold veteran claims, but Fields has been taking a heavy share of first-team reps and The Athletic has him pushing to open the season as the No. 2. He is not on the bubble in any sense — the Giants gave up three picks for him.",
+    "whyHeCouldSucceed": [
+      "The Giants paid three picks to move up for him and their general manager publicly defined a role — red-zone power forward and perimeter blocker — which is the clearest opportunity statement any receiver in this tier received.",
+      "The room in front of him is small and fungible: Slayton, Mooney, Austin, Hyatt and Beckham are all sub-6-foot complementary types with no exclusive claim on the No. 2 job.",
+      "He converted 3-of-3 targets for 34 yards and a contested end-zone touchdown in his first preseason action, exactly the skill the staff drafted him to provide.",
+      "A 6-4.5 frame with a 79-inch wingspan and 38-inch vertical is a repeatable red-zone weapon, and touchdown equity is the cheapest path to fantasy relevance for a rookie."
+    ],
+    "whyHeCouldFail": [
+      "A 4.61 40 is a real ceiling constraint; NFL corners will squeeze his vertical separation in ways ACC defenses did not.",
+      "Malik Nabers is a target vacuum. Once healthy, he plus the run-first Harbaugh identity leaves a thin target pool for the second and third receivers.",
+      "His Notre Dame production dipped to 36 catches, and the two big seasons came against ACC defenses as the only option on a bad Virginia offense.",
+      "He turns 24 this season with an injury history that includes a broken foot requiring surgery — limited athletic upside and no development runway.",
+      "Being drafted to block and win jump balls can mean 25 snaps a game and four targets, a role that produces highlights without fantasy value."
+    ],
+    "fantasyOutlook": [
+      "The 2026 projection is 55 to 70 targets with red-zone spikes: a big-slot-free X receiver on a run-heavy team, likely finishing as a WR5 in points per game with two or three usable spike weeks. If Nabers' knee limits him at any point, Fields becomes an immediate weekly starter given the target concentration a Giants offense produces when Nabers sits — New York tied for fifth in 40-yard receptions last season even with him hurt.",
+      "In superflex .5 PPR dynasty, Fields is worth an early-to-mid second-round rookie pick, roughly 2.02 to 2.06, which lines up with his KTC value of 2859 and consensus rank of 23. He is the archetype the market systematically underprices in August and overprices next spring after one 60-yard, one-touchdown Sunday. Buy him now if you are contending in 2027 rather than 2026; he is not the pick if you need immediate snaps."
+    ],
+    "comp": "A slower Mike Williams — a boundary X whose value is contested catches, back-shoulder throws and red-zone leverage rather than separation or yards after the catch.",
+    "bottomLine": "The Giants told you the role and then he scored the first touchdown of their preseason playing it; take him in the early second and let the touchdowns come.",
+    "sources": [
+      "https://www.giants.com/news/giants-trade-with-browns-into-third-round-select-notre-dame-wr-malachi-fields-details",
+      "https://www.si.com/nfl/giants/onsi/giants-malachi-fields-preseason-touchdown-vikings-01m052g25w9n",
+      "https://giantswire.usatoday.com/story/sports/nfl/giants/2026/08/13/new-york-giants-malachi-fields-winning-over-teammates-freak-athlete/91280717007/",
+      "https://www.nbcsports.com/fantasy/football/player-news/2026-08-16/fields-catches-three-balls-td-in-preseason-debut",
+      "https://www.bigblueview.com/new-york-giants-roster/168211/depth-chart-roster-moves-najee-harris-daniel-faalele-josh-ezeudu",
+      "https://www.playerprofiler.com/nfl/malachi-fields/bio/",
+      "https://www.sports-reference.com/cfb/players/malachi-fields-1.html",
+      "https://www.si.com/nfl/giants/onsi/ny-giants-malachi-fields-trade-analysis-nfl-draft-2026-01kq18ya7zb7"
+    ]
+  },
+  "1017": {
+    "id": 1017,
+    "name": "Zachariah Branch",
+    "position": "WR",
+    "nflTeam": "ATL",
+    "nflTeamName": "Atlanta Falcons",
+    "college": "Georgia",
+    "hometown": "Las Vegas, Nevada",
+    "classYear": "Junior",
+    "headline": "Atlanta's Summer Sensation Runs 4.35 And Still Has To Beat Olamide Zaccheaus For Snaps",
+    "subhead": "Zachariah Branch was the most-targeted rookie in Falcons camp and the starting punt returner, but two preseason games told a quieter story about his 2026 role.",
+    "draftPick": "Round 3, Pick 15 (No. 79 overall), Atlanta Falcons",
+    "measurables": {
+      "height": "5'10\"",
+      "weight": "180 lbs",
+      "age": "22.4",
+      "forty": "4.35",
+      "tenSplit": null,
+      "vertical": "38\"",
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Branch tested and worked out fully in Indianapolis, ran 4.35 and jumped 38 inches, and earned a spot on NFL.com's all-combine team. He was mildly annoyed at himself afterward — he had targeted 4.35 or better and 40 inches — but the on-field route work was the real win: he ran the full tree in front of scouts, which is what a 5-10, 180-pound gadget-labeled prospect needed to do."
+    },
+    "collegeCareer": [
+      "Branch was one of the most hyped recruits of the 2023 class — No. 6 nationally by ESPN, the class's top receiver, out of Bishop Gorman in Las Vegas — and he delivered instant theater at USC. He put up 232 all-purpose yards in his college debut, including a 96-yard kickoff return, and the Los Angeles Times wrote that his feats had opponents in awe. He won the Jet Award as the nation's best return specialist that season and made first-team All-America as a returner, with 16 punt returns for 332 yards and a score plus 24 kick returns for 442 yards and a touchdown.",
+      "The receiving production never matched the athletic legend at USC. He caught 31 balls for 320 yards as a freshman and 47 for 503 as a sophomore, with a target profile built almost entirely near the line of scrimmage — 10.3 and 10.7 yards per catch. He transferred to Georgia for 2025 seeking a bigger role.",
+      "Kirby Smart gave him volume. Branch played 14 games with 10 starts and caught 81 passes for 811 yards and six touchdowns on 102 targets — a 24.5% target share and a 79.4% catch rate — while returning 10 kicks for 205 yards and 13 punts for 157. He was second-team All-SEC. He finished his career with 159 receptions for 1,634 yards, 3,066 all-purpose yards and 12 total touchdowns across 38 games, still averaging just 10.3 yards a catch."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "USC", "line": "13 G, 31 rec, 320 rec yds, 10.3 ypr, 47 tgt; 16 punt ret, 332 yds, 1 TD; 24 kick ret, 442 yds, 1 TD (Jet Award)"},
+      {"season": "2024", "team": "USC", "line": "12 G, 47 rec, 503 rec yds, 10.7 ypr, 78 tgt"},
+      {"season": "2025", "team": "Georgia", "line": "14 G (10 starts), 81 rec, 811 rec yds, 10.0 ypr, 6 TD, 102 tgt; 13 punt ret, 157 yds; 10 kick ret, 205 yds"}
+    ],
+    "draftDayStory": [
+      "Atlanta took Branch at No. 79 overall, the exact Round 3, Pick 15 slot on the board, after he had been a second-round player on consensus big boards and inside Daniel Jeremiah's top 50 before the combine. He was the second Georgia player the Falcons had taken on Day 1 or 2 in as many years, after edge rusher Jalon Walker, and he was on a plane to Flowery Branch within hours. Drake London and Bijan Robinson FaceTimed him the night he was picked.",
+      "The pick is inseparable from the regime change. Kevin Stefanski, offensive coordinator Wes Cunningham's staff and president of football operations Matt Ryan rebuilt a receiver room that failed badly in 2025, and they needed a return specialist after finishing 27th in punt return average and 32nd in yards per kick return."
+    ],
+    "whyTheyDraftedHim": [
+      "Scheme and character fit. 'We've spent a lot of time with him, the coaches have, and he really has a great schematic fit, also a great personal fit for what we believe in and how hard he works,' Stefanski said. 'But just a player that you can really line up all over the field.'",
+      "Immediate return value on a unit that ranked 27th in punt return average and 32nd in kick return average — Stefanski called that value 'no small thing.'",
+      "Alignment flexibility: Atlanta planned from the start to line him up at all three receiver spots, with the slot as his quickest path to snaps.",
+      "Elite speed and short-area quickness — a 4.35 40 and a career of manufactured touches — to complement Drake London's contested-catch profile and Kyle Pitts' mismatch role.",
+      "Makeup. 'Zachariah is wired the right way,' Stefanski said in August. 'You watch him at practice, and he goes and he goes and he goes.'"
+    ],
+    "campNotes": [
+      {"date": "Jul 31", "source": "The Falcoholic", "note": "Branch's emergence was the headline of Day 3, the team's most energetic practice of camp to that point."},
+      {"date": "Aug 7", "source": "Josh Kendall, The Athletic", "note": "Kendall reported the Falcons plan to line Branch up at all three receiver spots, but that his quickest path is the F, where Olamide Zaccheaus was still taking most first-team snaps: 'Branch is looming, though, and everyone in Atlanta can see it.'"},
+      {"date": "Aug 12", "source": "Atlanta Journal-Constitution", "note": "Through 11 camp practices Branch had been targeted 24 times, second-most on the team, with 14 catches (fourth) and had been the hardest cover on the roster in one-on-ones. He worked primarily with the second-team offense."},
+      {"date": "Aug 13", "source": "Falcons Wire", "note": "The unofficial depth chart listed Branch as the backup slot receiver behind Zaccheaus and, more meaningfully, as the starting punt returner."},
+      {"date": "Aug 14", "source": "CBS Sports / RotoBaller", "note": "NFL debut against Denver: two catches on four targets for six yards, a three-yard carry and a six-yard punt return. He played just one of the eight first-team snaps with Tua Tagovailoa, behind Jahan Dotson (8), Zaccheaus (6), Chris Blair (5) and London (2)."},
+      {"date": "Aug 19", "source": "Falcons.com", "note": "Branch was mic'd up for the joint practice with the Colts in Indianapolis, one of the players Atlanta showcased during the two-day session."},
+      {"date": "Aug 22", "source": "RotoBaller / CBS Sports", "note": "In the 34-6 win over Indianapolis with the starters resting, Branch caught two of three targets for 15 yards and added a five-yard punt return, playing eight of 11 snaps with Cooper Rush — fewer than Dylan Drummond (11) and Chris Blair (10)."}
+    ],
+    "beatQuotes": [
+      {"quote": "In this case with Zachariah, it's what routes do we feel like he can run really well, and then what personnel groupings do we want to get him in there? He's earning that because he practices very hard, is showing up in these drills. When you go to team drills and it's 11-on-11, he continues to show up.", "attribution": "Kevin Stefanski, Falcons head coach, Aug 10"},
+      {"quote": "We've spent a lot of time with him, the coaches have, and he really has a great schematic fit, also a great personal fit for what we believe in and how hard he works. But just a player that you can really line up all over the field.", "attribution": "Kevin Stefanski, via ESPN, May 5"},
+      {"quote": "I'm different. I'm one of one. You won't find me anywhere else. I can play inside or outside. I can run every route you want me to run, and when I get the ball, I'm going to make something happen every single time.", "attribution": "Zachariah Branch, NFL combine, via Las Vegas Review-Journal, Mar 5"},
+      {"quote": "I'm all about winning. Whatever position they want me to be in to be able to help our team win is what I'm going to do. Whether it's special teams, receiver, I'm with it all.", "attribution": "Zachariah Branch, via Falcons.com, Apr 27"}
+    ],
+    "depthChart": "Fourth receiver and starting punt returner. Drake London, Jahan Dotson and Olamide Zaccheaus are ahead of him, with Zaccheaus specifically holding the slot job Branch needs. Two preseason games confirmed the hierarchy: one first-team snap in Week 1 and fewer snaps than Dylan Drummond and Chris Blair in Week 2. His roster spot is secure; his offensive role is not.",
+    "whyHeCouldSucceed": [
+      "The staff plans to move him around all three receiver spots and manufacture touches, and Stefanski's offenses have historically found ways to feed movement players in space.",
+      "Olamide Zaccheaus is the only body between him and the slot job — a career journeyman, not a long-term obstacle, and Jahan Dotson has already been passed on by two franchises.",
+      "The punt-return job puts him on the field from Week 1 and is a genuine standalone path to value in leagues that count return yardage.",
+      "He is the only receiver in this batch with 4.35 speed and an 81-catch Power Four season, and he did that at 24.5% target share against SEC defenses.",
+      "Twenty-four targets in 11 camp practices, second-most on the roster, is the kind of trust that usually precedes an in-season role expansion."
+    ],
+    "whyHeCouldFail": [
+      "The gadget label is earned: 10.3 yards per career reception across three seasons and most of his Georgia work came at or behind the line of scrimmage.",
+      "Preseason usage was a cold shower — one of eight first-team snaps in Denver and eighth-fiddle snap counts behind backups against the Colts.",
+      "At 5-10 and 180 pounds he offers nothing in the red zone, where Atlanta already funnels everything to London and Kyle Pitts.",
+      "Target competition is not just current: London is a target monopolist, Bijan Robinson absorbs receiving work out of the backfield, and Pitts is still on the roster.",
+      "Quarterback uncertainty. Tua Tagovailoa is the starter with Michael Penix Jr. injured, and neither history suggests a deep-target funnel for a fourth receiver."
+    ],
+    "fantasyOutlook": [
+      "For 2026, treat Branch as a returner with 30 to 40 offensive targets, mostly manufactured — screens, jet sweeps, quick outs. RotoBaller has him around WR82, which is fair for a player who saw one first-team snap in his preseason debut. The path to relevance is Zaccheaus losing the slot job by October, which is plausible but not something to draft around.",
+      "In superflex .5 PPR dynasty, his KTC value of 2753 and rookie rank 25 slightly lag his FantasyPros consensus of 26, and both feel about right: a mid-to-late second-round rookie pick, 2.07 to 2.12. He is a fine bet in the third round of a rookie draft and a bad one in the second, because the profile that has to be true for him to hit — undersized speed receiver who becomes a volume slot in a run-heavy offense — is the least reliable archetype in dynasty. If he is being drafted on camp hype in the early second, sell into it."
+    ],
+    "comp": "Ray-Ray McCloud with better draft capital, or the optimistic version, a Rondale Moore whose return value buys him enough seasons to develop a real route role.",
+    "bottomLine": "Elite speed, real draft capital and the punt-return job, but he is fourth in line for targets in a run-first offense — take him in the third round, not the second.",
+    "sources": [
+      "https://www.ajc.com/sports/2026/08/falcons-rookie-zachariah-branch-continues-to-show-up-in-promising-summer/",
+      "https://thefalconswire.usatoday.com/story/sports/nfl/falcons/2026/08/13/atlanta-falcons-list-zachariah-branch-as-starting-punt-returner/91280943007/",
+      "https://thefalconswire.usatoday.com/story/sports/nfl/falcons/2026/08/07/atlanta-falcons-rookie-wr-zachariah-branch-role/91212077007/",
+      "https://global.espn.com/nfl/story/_/id/48677316/atlanta-falcons-rookie-zachariah-branch-2026-outlook",
+      "https://www.rotoballer.com/player-news/zachariah-branch-appears-headed-for-reserve-role-in-2026/1914204",
+      "https://www.reviewjournal.com/sports/raiders/ex-bishop-gorman-star-zachariah-branch-dazzles-at-nfl-combine-3715246/",
+      "https://www.atlantafalcons.com/team/players-roster/zachariah-branch/",
+      "https://www.atlantafalcons.com/news/falcons-depth-chart-preseason-game-vs-denver-broncos"
+    ]
+  },
+  "1024": {
+    "id": 1024,
+    "name": "Caleb Douglas",
+    "position": "WR",
+    "nflTeam": "MIA",
+    "nflTeamName": "Miami Dolphins",
+    "college": "Texas Tech",
+    "hometown": "Missouri City, Texas",
+    "classYear": "Senior",
+    "headline": "Miami's Most Criticized Pick Is Now First On Its Depth Chart And Malik Willis's Favorite Target",
+    "subhead": "Caleb Douglas was called a multi-round reach in April; by mid-August he was the Dolphins' listed starting receiver and the one player their new quarterback keeps looking for.",
+    "draftPick": "Round 3, Pick 11 (No. 75 overall), Miami Dolphins",
+    "measurables": {
+      "height": "6'4\"",
+      "weight": "206 lbs",
+      "age": "23.0",
+      "forty": "4.39",
+      "tenSplit": "1.55",
+      "vertical": "31 1/2\"",
+      "broad": "10'6\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "32 1/2\"",
+      "combineNote": "Douglas was one of the winners of the 2026 combine: 4.39 in the 40 at 6-3.5 and 206 pounds with a 1.55 ten-yard split, 32.5-inch arms and a 6-8 3/8 wingspan. That size-speed combination, plus a strong Senior Bowl week, is the entire reason a projected Day 3 receiver went 75th. The jumps were ordinary — 31.5-inch vertical, 10-6 broad — which fits the scouting knock that he does not always play as explosive as he times."
+    },
+    "collegeCareer": [
+      "Douglas was a three-star recruit out of Hightower High in Missouri City who spent two mostly anonymous seasons at Florida: 10 catches for 175 yards and two scores as a freshman in 2022, then 11 for 133 in an injury-shortened 2023. He was a backup on a bad offense and transferred to Texas Tech for 2024.",
+      "Lubbock made him a starter and he took the job seriously. He posted 60 catches for 877 yards and six touchdowns in 13 games in 2024 as a junior, immediately becoming one of the Big 12's more productive vertical threats at 14.6 yards a catch.",
+      "The 2025 season was better and more visible: 54 catches for 846 yards and seven touchdowns at 15.7 yards a reception for a Texas Tech team that won the Big 12 championship, earning him second-team All-Big 12 honors. He finished with 135 receptions for 2,031 yards and 16 touchdowns across four seasons — modest career totals that made his eventual draft slot a genuine surprise, and the reason the drop rate and contested-catch questions followed him into the league."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Florida", "line": "8 G, 10 rec, 175 rec yds, 17.5 ypr, 2 TD"},
+      {"season": "2023", "team": "Florida", "line": "5 G, 11 rec, 133 rec yds, 12.1 ypr, 1 TD"},
+      {"season": "2024", "team": "Texas Tech", "line": "13 G, 60 rec, 877 rec yds, 14.6 ypr, 6 TD"},
+      {"season": "2025", "team": "Texas Tech", "line": "54 rec, 846 rec yds, 15.7 ypr, 7 TD (second-team All-Big 12, Big 12 champions)"}
+    ],
+    "draftDayStory": [
+      "Miami took Douglas 75th overall — Round 3, Pick 11, matching the board — making him the 11th receiver off the board, just ahead of fellow camp standouts Zachariah Branch and Ja'Kobi Lane. It was widely graded as a multi-round reach: mock drafts had him between the fifth and seventh rounds, ESPN called it a stretch given 2,031 career yards, drop issues and inconsistency on contested balls, and he was the fifth Red Raider taken inside the top 75. The Dolphins, who had traded Jaylen Waddle to Denver, were desperate enough at the position to pay up for traits.",
+      "New general manager Jon-Eric Sullivan has been unusually candid about the profile he bought, praising Douglas's length, flexibility and ball-adjustment while saying plainly that he has to get stronger to beat press and win contested catches. Douglas kept his own reaction simple on the Zoom call: 'Great opportunity. Even if there wasn't an opportunity, I would go out there and compete regardless.'"
+    ],
+    "whyTheyDraftedHim": [
+      "Size-speed rarity: 6-4 with a 4.39 40, in a room that had just traded Jaylen Waddle and had nobody who could threaten a defense vertically.",
+      "Sullivan's evaluation of his frame and movement: 'He's got a long, rangy body... for a tall, long-limbed receiver, long legs, long arms, he can really drop his weight. He's got great flexibility. He's got good athleticism and ball skills to adjust the ball in the air.'",
+      "A strong Senior Bowl week that reportedly cemented his standing with Miami's staff after 10-plus pre-draft team meetings.",
+      "Red-zone and contested-catch projection against smaller corners — Mel Kiper Jr. singled out his size, catch radius and body control while noting the drops.",
+      "Competition-first roster philosophy. 'We're going to play the best players,' Sullivan said at rookie minicamp. 'It doesn't matter if you're a second-round pick or you're an undrafted free agent.'"
+    ],
+    "campNotes": [
+      {"date": "Aug 11", "source": "Local 10 / NBC Sports", "note": "Miami's first unofficial depth chart listed Douglas as a starting receiver alongside Malik Washington, ahead of veterans Tutu Atwell, Terrace Marshall Jr. and Theo Wease Jr., despite a handful of camp drops."},
+      {"date": "Aug 12", "source": "Joe Schad, Palm Beach Post", "note": "In an otherwise flat joint practice against Washington in Ashburn, Douglas was the Dolphins' standout — speed, separation and range — and had become Malik Willis's most trusted target. Told about his depth-chart placement, he said: 'Honestly, I didn't even see that. It's not in stone yet. You've got to make sure it's in stone.'"},
+      {"date": "Aug 13", "source": "Miami Herald", "note": "The Herald compared his camp to Preston Williams's 2019 emergence, reporting he had outshined free-agent additions Jalen Tolbert, Tutu Atwell and Terrace Marshall and calling him the best camp performer on Miami's roster."},
+      {"date": "Aug 14", "source": "ESPN, Marcel Louis-Jacques", "note": "Douglas was named a starter for the preseason opener without having played an NFL snap, a sign the third-round pick had exceeded expectations. Jeff Hafley cited his day-to-day consistency as the reason."},
+      {"date": "Aug 14", "source": "CBS Sports / NBC Sports", "note": "Preseason debut against Washington: one catch on two targets for 28 yards, opening the game with the starting offense. He was targeted deep on Willis's third attempt, then converted a third-down vertical from the slot with a one-handed grab over cornerback Antonio Hamilton Sr. while absorbing contact. His first target ended with him securing the ball out of bounds."},
+      {"date": "Aug 22", "source": "UPI / Giants.com", "note": "Miami rested Willis, De'Von Achane and much of the starting offensive line in a 26-3 home loss to the Giants; Douglas did not register a reception in the box score of a game the Giants controlled from the first drive."}
+    ],
+    "beatQuotes": [
+      {"quote": "It's been (his) consistency over time -- he's been really consistent. He's made some flash plays and then he's made some plays where he needs to catch the ball, but he's probably been one of our most consistent guys. He showed up every day. So that's where he deserves to be at this point.", "attribution": "Jeff Hafley, Dolphins head coach, Aug 12"},
+      {"quote": "He surprised me. When he went up with one hand, I was like, 'Oh, oh?' That was nice.", "attribution": "Malik Willis, Dolphins quarterback, Aug 14"},
+      {"quote": "Stud. He's making plays left and right. It's awesome. He's showing up all over the field, so we're stoked to have him for sure.", "attribution": "Greg Dulcich, Dolphins tight end, Aug 12"},
+      {"quote": "He's got to get stronger, be able to get off press and some of the contested balls.", "attribution": "Jon-Eric Sullivan, Dolphins general manager, May 7"}
+    ],
+    "depthChart": "Listed as a starting outside receiver opposite Malik Washington, ahead of Jalen Tolbert, Tutu Atwell, Terrace Marshall Jr. and Theo Wease Jr. Chris Bell, Miami's other third-round receiver, is recovering from a late-season ACL tear and may not practice this summer, which clears the most talented competitor out of Douglas's way. This is the single best opportunity of any receiver in this batch.",
+    "whyHeCouldSucceed": [
+      "He is a listed starter in the league's thinnest receiver room, with Jaylen Waddle traded to Denver and no established target-earner on the roster ahead of him.",
+      "Malik Willis has already made him a go-to: beat reporters describe Willis looking his way whenever a play breaks down, and the connection has held through joint practices and the preseason opener.",
+      "The physical profile is genuinely rare — 6-4 and 206 with a 4.39 40 and a 6-8 wingspan — which gives him vertical and red-zone roles simultaneously.",
+      "Third-round capital plus a starting job in August is the exact combination that produces surprise rookie WR3 fantasy seasons, and his acquisition cost in dynasty is a fraction of that outcome.",
+      "Chris Bell's ACL rehab removes the one drafted receiver who could have taken his snaps this season."
+    ],
+    "whyHeCouldFail": [
+      "The pick was a multi-round reach on consensus boards, and the reasons — drops, inconsistent contested-catch conversion, a 43rd-percentile college dominator rating — have not been solved by one camp.",
+      "Quarterback play. Malik Willis has never sustained NFL starting-caliber passing volume, and Miami is built around De'Von Achane and Willis's legs, a run-first structure that caps target totals.",
+      "He turns 23 in September with only two productive college seasons, both at Texas Tech, and modest career totals of 2,031 yards.",
+      "Sullivan publicly named the flaw: he must get stronger to beat press coverage, which is exactly what NFL boundary corners will test every week.",
+      "Being the best receiver on a bad receiving corps often means high target share and terrible efficiency — the Preston Williams comparison in the Herald cuts both ways."
+    ],
+    "fantasyOutlook": [
+      "Douglas has the clearest 2026 opportunity in this tier: a starting job, a quarterback who trusts him and no competition worth the name. Project 75 to 95 targets with WR4 upside in .5 PPR and streamable weeks from the opener, understanding that the offense's run-heavy identity and Willis's limitations cap the ceiling. If Miami throws more than expected, he is the type who finishes as a top-40 receiver as a rookie; if Willis stalls, he is a 45-catch, 600-yard afterthought.",
+      "In superflex .5 PPR dynasty, his KTC value of 2753 and rookie rank 25 undersell the situation badly, and even his FantasyPros consensus of 36 does. He should cost a mid-second-round rookie pick — 2.05 to 2.09 — and I would take him over Branch and over any running back left on the board at that point. Opportunity is the scarcest input in rookie valuation, and Douglas is the only player in this batch who already has it."
+    ],
+    "comp": "A poor man's Tee Higgins in build and role — a long-levered vertical X who wins on size and stride length, with the drops and press-release questions that keep him from the tier above.",
+    "bottomLine": "The best opportunity-to-price ratio in this batch: a starting NFL receiver going in the middle of the second round of rookie drafts. Take him early and let the market catch up.",
+    "sources": [
+      "https://www.espn.co.uk/nfl/story/_/id/49601790/dolphins-wr-caleb-douglas-depth-chart-starting-preseason-games",
+      "https://www.palmbeachpost.com/story/sports/nfl/dolphins/2026/08/12/miami-dolphins-caleb-douglas-washington-commanders-practice-news-roster-depth-chart/91274366007/",
+      "https://www.miamiherald.com/sports/article316866876.html",
+      "https://www.nbcsports.com/fantasy/football/player-news/2026-08-14/douglas-nabs-highlight-reel-catch-one-misstep",
+      "https://www.local10.com/sports/local/2026/08/11/dolphins-1st-depth-chart-revealed-ahead-of-preseason-game-vs-commanders/",
+      "https://www.naplesnews.com/story/sports/nfl/dolphins/2026/05/07/miami-dolphins-rookie-minicamp-draft-picks/89970378007/",
+      "https://en.wikipedia.org/wiki/Caleb_Douglas",
+      "https://www.rotowire.com/football/player/caleb-douglas-19343"
+    ]
+  }
+}
