@@ -6,6 +6,7 @@ import DraftHype from './DraftHype'
 import NewspaperPage from './NewspaperPage'
 import RostersPage from './RostersPage'
 import { ROOKIE_DETAILS } from './rookieDetailData'
+import { ROOKIE_PROFILES } from './rookieProfileData'
 import { VETERAN_ROSTERS, ROOKIE_PROSPECTS } from './leagueData'
 import { INITIAL_LINEUPS } from './lineupData'
 import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, DRAFT_SLOT_ORDER, OWNER_TO_TEAM_ID, TEAM_ID_TO_OWNER } from './futurePicksData'
@@ -50,6 +51,7 @@ function App({ session, onLogout, onRequestLogin }) {
   const [prospects, setProspects] = useState(ROOKIE_PROSPECTS)
   const [hoveredProspect, setHoveredProspect] = useState(null)
   const [expandedProspectId, setExpandedProspectId] = useState(null)
+  const [paperRookieId, setPaperRookieId] = useState(null)
   const [tooltipPos, setTooltipPos] = useState({ top: 0, left: 0 })
   const [teams] = useState(INITIAL_TEAMS)
   const [rosters, setRosters] = useState(VETERAN_ROSTERS)
@@ -322,6 +324,12 @@ function App({ session, onLogout, onRequestLogin }) {
     setTimeRemaining(120)
     setShowDraftCenter(true)
     setActiveTab('prospects')
+  }
+
+  const openRookieDossier = prospectId => {
+    setPaperRookieId(prospectId)
+    setActiveTab('home')
+    window.scrollTo(0, 0)
   }
 
   const handleEndMockDraft = () => {
@@ -772,7 +780,16 @@ function App({ session, onLogout, onRequestLogin }) {
 
       {/* Content */}
       <main className="max-w-7xl mx-auto p-4 md:p-6">
-        {activeTab === 'home' && <NewspaperPage teams={teams} rosters={rosters} draftedPlayers={draftedPlayers} />}
+        {activeTab === 'home' && (
+          <NewspaperPage
+            key={paperRookieId ?? 'paper'}
+            teams={teams}
+            rosters={rosters}
+            draftedPlayers={draftedPlayers}
+            initialRookieId={paperRookieId}
+            onRookieViewed={() => setPaperRookieId(null)}
+          />
+        )}
 
         {activeTab === 'prospects' && (
           <div className="space-y-6">
@@ -1030,6 +1047,7 @@ function App({ session, onLogout, onRequestLogin }) {
                     const draftedTeam = getTeamById(draftedPlayers[prospect.id])
                     const isDrafted = !!draftedTeam
                     const detail = ROOKIE_DETAILS[prospect.id]
+                    const profile = ROOKIE_PROFILES[prospect.id]
                     const isExpanded = expandedProspectId === prospect.id
 
                     return (
@@ -1158,6 +1176,25 @@ function App({ session, onLogout, onRequestLogin }) {
                       {isExpanded && detail && (
                         <tr className="bg-blue-50/40">
                           <td colSpan={7} className="px-6 py-5">
+                            {profile && (
+                              <div className="flex flex-wrap items-start justify-between gap-4 mb-5 pb-4 border-b border-blue-200/70">
+                                <div className="min-w-0">
+                                  {profile.headline && (
+                                    <h4 className="text-base font-semibold text-gray-900 leading-snug">{profile.headline}</h4>
+                                  )}
+                                  {profile.subhead && (
+                                    <p className="text-sm text-gray-600 mt-0.5 leading-snug">{profile.subhead}</p>
+                                  )}
+                                </div>
+                                <button
+                                  onClick={() => openRookieDossier(prospect.id)}
+                                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white hover:bg-gray-50 text-gray-800 text-xs font-medium rounded-lg border border-gray-300 shadow-sm whitespace-nowrap"
+                                >
+                                  <Newspaper size={13} />
+                                  Read the full draft-day dossier
+                                </button>
+                              </div>
+                            )}
                             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                               <div className="space-y-2">
                                 <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400">Profile</h4>
@@ -1175,6 +1212,9 @@ function App({ session, onLogout, onRequestLogin }) {
                                   {detail.ktcValue != null && (<><span className="text-gray-500">KTC Value</span><span className="font-semibold text-gray-900">{detail.ktcValue.toLocaleString()}</span></>)}
                                   {detail.ktcRookieRank != null && (<><span className="text-gray-500">KTC Rookie Rank</span><span className="font-medium text-gray-900">#{detail.ktcRookieRank}</span></>)}
                                   {detail.ktcOverallRank != null && (<><span className="text-gray-500">KTC Overall Rank</span><span className="font-medium text-gray-900">#{detail.ktcOverallRank}</span></>)}
+                                  {detail.ktcTier != null && (<><span className="text-gray-500">KTC Tier</span><span className="font-medium text-gray-900">{detail.ktcTier}</span></>)}
+                                  {detail.ktcRookieTrend30 != null && detail.ktcRookieTrend30 !== 0 && (<><span className="text-gray-500">30-Day Trend</span><span className={`font-semibold ${detail.ktcRookieTrend30 > 0 ? 'text-green-600' : 'text-red-600'}`}>{detail.ktcRookieTrend30 > 0 ? `+${detail.ktcRookieTrend30}` : detail.ktcRookieTrend30} spots</span></>)}
+                                  {detail.fpEcrRank != null && (<><span className="text-gray-500">FantasyPros ECR</span><span className="font-medium text-gray-900">#{detail.fpEcrRank}</span></>)}
                                   {detail.dsRank != null && (<><span className="text-gray-500">DraftSharks Rank</span><span className="font-medium text-gray-900">#{detail.dsRank} (Tier {detail.dsTier})</span></>)}
                                   {detail.dsRookieAdp && (<><span className="text-gray-500">Rookie ADP</span><span className="font-medium text-gray-900">{detail.dsRookieAdp}</span></>)}
                                   {detail.projPtsYear1 != null && (<><span className="text-gray-500">Proj Pts (Yr 1)</span><span className="font-medium text-gray-900">{detail.projPtsYear1}</span></>)}
@@ -1189,8 +1229,60 @@ function App({ session, onLogout, onRequestLogin }) {
                                 ) : (
                                   <p className="text-sm text-gray-400 italic">No scouting report available.</p>
                                 )}
+                                {profile?.depthChart && (
+                                  <p className="text-sm text-gray-600 leading-relaxed pt-1">
+                                    <span className="font-semibold text-gray-700">Depth chart: </span>
+                                    {profile.depthChart}
+                                  </p>
+                                )}
                               </div>
                             </div>
+
+                            {profile && (
+                              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 pt-5 border-t border-blue-200/70">
+                                {profile.campNotes?.length > 0 && (
+                                  <div className="space-y-2">
+                                    <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400">Camp Notes</h4>
+                                    <ul className="space-y-2">
+                                      {profile.campNotes.slice(0, 3).map((note, i) => (
+                                        <li key={i} className="text-sm text-gray-700 leading-snug">
+                                          <span className="text-[11px] font-semibold uppercase tracking-wider text-gray-400 block">
+                                            {note.date}{note.source ? ` · ${note.source}` : ''}
+                                          </span>
+                                          {note.note}
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                )}
+                                {profile.whyHeCouldSucceed?.length > 0 && (
+                                  <div className="space-y-2">
+                                    <h4 className="text-xs font-bold uppercase tracking-wider text-green-600">Why He Hits</h4>
+                                    <ul className="space-y-1.5">
+                                      {profile.whyHeCouldSucceed.slice(0, 3).map((item, i) => (
+                                        <li key={i} className="text-sm text-gray-700 leading-snug flex gap-1.5">
+                                          <span className="text-green-600 font-semibold">+</span>
+                                          <span>{item}</span>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                )}
+                                {profile.whyHeCouldFail?.length > 0 && (
+                                  <div className="space-y-2">
+                                    <h4 className="text-xs font-bold uppercase tracking-wider text-red-600">Why He Busts</h4>
+                                    <ul className="space-y-1.5">
+                                      {profile.whyHeCouldFail.slice(0, 3).map((item, i) => (
+                                        <li key={i} className="text-sm text-gray-700 leading-snug flex gap-1.5">
+                                          <span className="text-red-600 font-semibold">−</span>
+                                          <span>{item}</span>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                )}
+                              </div>
+                            )}
                           </td>
                         </tr>
                       )}

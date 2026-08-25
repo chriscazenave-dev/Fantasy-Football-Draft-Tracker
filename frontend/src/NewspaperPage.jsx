@@ -66,7 +66,7 @@ function PageNav({ page, goTo }) {
   )
 }
 
-export default function NewspaperPage({ teams, rosters, draftedPlayers }) {
+export default function NewspaperPage({ teams, rosters, draftedPlayers, initialRookieId, onRookieViewed }) {
   const [page, setPage] = useState(1)
 
   const goTo = next => {
@@ -85,7 +85,7 @@ export default function NewspaperPage({ teams, rosters, draftedPlayers }) {
       </div>
 
       <div>
-        {page === 1 && <HomePage />}
+        {page === 1 && <HomePage initialRookieId={initialRookieId} onRookieViewed={onRookieViewed} />}
         {page === 2 && <PlayerValuesPage teams={teams} rosters={rosters} draftedPlayers={draftedPlayers} />}
         {page === 3 && <TeamWriteupsPage />}
         {page === 4 && <TrophyCasePage teams={teams} />}
