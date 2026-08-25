@@ -1,0 +1,456 @@
+{
+  "1068": {
+    "id": 1068,
+    "name": "Seth McGowan",
+    "position": "RB",
+    "nflTeam": "IND",
+    "nflTeamName": "Indianapolis Colts",
+    "college": "Kentucky",
+    "hometown": "Mesquite, Texas",
+    "classYear": "Senior",
+    "headline": "Five Years, Four Schools, One Felony: Seth McGowan Bowls Into The Colts' No. 2 Job",
+    "subhead": "Dismissed from Oklahoma in 2021 and rebuilt through junior college, the seventh-round bruiser has spent August running through Colts defenders and into the backup role behind Jonathan Taylor.",
+    "draftPick": "Round 7, No. 237 overall, Indianapolis Colts",
+    "measurables": {
+      "height": "6'0\"",
+      "weight": "223 lbs",
+      "age": "24.8",
+      "forty": "4.49",
+      "tenSplit": "1.60",
+      "vertical": "42 1/2\"",
+      "broad": "10'11\"",
+      "threeCone": null,
+      "shuttle": "4.40",
+      "bench": null,
+      "armLength": "31 3/8\"",
+      "combineNote": "McGowan was one of the athletic winners of the 2026 combine: a 4.49 forty at 223 pounds with a 42 1/2-inch vertical, reported as the second-best vertical ever recorded by a running back in Indianapolis, plus a 10-foot-11 broad jump. He skipped the bench and the three-cone, and the short shuttle was the only mark that graded poorly."
+    },
+    "collegeCareer": [
+      "McGowan arrived at Oklahoma as a highly regarded 2020 signee and immediately looked like a future starter, averaging 6.4 yards on 58 carries with 370 rushing yards and three touchdowns while adding 13 catches for 201 yards as a true freshman. In April 2021 he was arrested for entering a Norman apartment with two teammates, one of whom was armed, and stealing marijuana, jewelry and drugs. Originally charged with felony robbery, conspiracy and assault and battery with a dangerous weapon, McGowan pleaded guilty to felony larceny of a person at nighttime and was dismissed from the program. His FBS career appeared finished at 19.",
+      "The rebuild ran through junior college. McGowan spent 2022 and 2023 out of the FBS spotlight at Butler Community College in Kansas, then landed at New Mexico State in 2024 when Aggies running backs coach David Cobb gave him a chance others would not. He answered with 152 carries for 823 yards (5.4 per rush) and three scores plus 23 catches for 277 yards and three more touchdowns, earning second-team all-Conference USA honors. Notably, he briefly entered the transfer portal that December and withdrew after a single day out of loyalty to the New Mexico State staff, before ultimately transferring to Kentucky.",
+      "The Kentucky season was a volume audition behind a bad offense. McGowan carried 165 times for 725 yards and 12 touchdowns in 11 games for a team that lost to Georgia, Vanderbilt and Louisville by wide margins, and his 4.4 yards per carry says as much about the blocking as the back: he had 104 yards on 18 carries against Eastern Michigan and 112 on 17 at South Carolina, then 27 yards on 10 carries at Vanderbilt when the front broke down. He also served as a checkdown option with 19 catches, then followed the season with a Senior Bowl invitation and a combine workout that pushed him firmly onto Day 3 boards."
+    ],
+    "collegeStats": [
+      {"season": "2020", "team": "Oklahoma", "line": "8 G, 58 car, 370 rush yds, 6.4 ypc, 3 TD, 13 rec, 201 rec yds, 1 TD"},
+      {"season": "2024", "team": "New Mexico State", "line": "12 G, 152 car, 823 rush yds, 5.4 ypc, 3 TD, 23 rec, 277 rec yds, 3 TD"},
+      {"season": "2025", "team": "Kentucky", "line": "11 G, 165 car, 725 rush yds, 4.4 ypc, 12 TD, 19 rec, 126 rec yds, 0 TD"}
+    ],
+    "draftDayStory": [
+      "Indianapolis took McGowan with the No. 237 overall pick in the seventh round, the second Kentucky player the Colts drafted on Saturday. The board fell that way for one reason: the felony. Colts general manager Chris Ballard did not dance around it, saying flatly, \"I mean look, I'm a second-chance guy. Like, how long are you going to keep punishing him for it?\" Colts running backs coach DeAndre Smith had recruited McGowan while at Texas Tech and vouched for him, and Midwest area scout Tyler Hughes spent significant time on the background work before the pick.",
+      "One bookkeeping note: the assignment sheet listed McGowan's draft capital as Round 7, Pick 21, and his listed size as 6'1\", 215. Reporting from the Colts and the NFL is No. 237 overall in the seventh round at 6-foot, 223 pounds, and this profile uses the team's numbers."
+    ],
+    "whyTheyDraftedHim": [
+      "Ballard's roster has lacked a true power complement to Jonathan Taylor since Zack Moss left for Cincinnati, and McGowan's one-cut, downhill style is exactly the short-yardage archetype Shane Steichen has asked for.",
+      "Steichen on the tape: \"When I watch his tape at Kentucky, the physicality he ran with — when he gets hit at the line of scrimmage, he usually falls forward for a couple extra yards, which is huge in short-yardage situations.\"",
+      "Elite testing at size — 4.49 at 223 pounds with a 42 1/2-inch vertical — gave the staff confidence the power came with real juice rather than just mass.",
+      "Relationship-driven conviction: running backs coach DeAndre Smith's history recruiting McGowan, plus area scout Tyler Hughes' background work, let Indianapolis get comfortable with the 2021 felony plea.",
+      "Assistant GM Ed Dodds grouped him with safety A.J. Haulcy as the draft's toughest additions: \"They're both really tough. They're really physical, and they can both run. They're fast.\""
+    ],
+    "campNotes": [
+      {"date": "Aug 13", "source": "Joel A. Erickson, Indianapolis Star", "note": "A hamstring injury to 2025 fifth-rounder DJ Giddens opened the door and McGowan took it, running through defensive-back contact once the pads came on and breaking a roughly 30-yard touchdown run in a two-minute drill on Sunday. He had not dropped a pass in a camp practice to that point."},
+      {"date": "Aug 20", "source": "Coltswire (Joseph Duffy, Fox 59)", "note": "After a joint practice with Atlanta, McGowan said he \"couldn't have gotten a better vet\" than Jonathan Taylor and has tried to mirror Taylor's habits and routine. He had another productive session and had clearly moved to the front of the No. 2 running back race."},
+      {"date": "Aug 24", "source": "Joel A. Erickson, Indianapolis Star", "note": "Through two preseason games McGowan has 13 carries for 44 yards, and the league acknowledged he should have been credited with a touchdown on the play in New England ruled a fumble when he reached for the goal line. The staff coached the reach rather than excusing it; McGowan called it \"a teaching lesson.\" He has also exceeded expectations in pass protection and as a receiver."},
+      {"date": "Aug 24", "source": "ESPN roster projection", "note": "ESPN's final 53-man projection keeps three running backs — Taylor, McGowan and Ulysses Bentley IV — with Giddens, slowed by injury, as the odd man out, calling McGowan a candidate to take real work off Taylor's plate."}
+    ],
+    "beatQuotes": [
+      {"quote": "Everybody thinks he's just a big power back, but Seth has some moves. If you look at his feet, he reminds me of a David Montgomery. When David was in Chicago, real ballers knew: He's not just a power back, he has great vision. Seth has great feet.", "attribution": "Jonathan Taylor, Colts RB, via Indianapolis Star, Aug 13"},
+      {"quote": "He's running hard, he's seeing it good. And I've said it before, but the physicality that he runs with, we want that and he brings that to our roster.", "attribution": "Shane Steichen, Colts head coach, via Indianapolis Star, Aug 24"},
+      {"quote": "I mean look, I'm a second-chance guy. Like, how long are you going to keep punishing him for it?", "attribution": "Chris Ballard, Colts GM, via Indianapolis Star, Apr 26"}
+    ],
+    "depthChart": "McGowan is the No. 2 back behind Jonathan Taylor, who just signed an extension and will keep a heavy workload. DJ Giddens, the 2025 fifth-rounder who backed Taylor up last year, has missed much of camp with a hamstring injury and is now a roster-bubble player; Ulysses Bentley IV (ankle) is the other name competing for the third spot.",
+    "whyHeCouldSucceed": [
+      "He has already won the job that matters: RB2 behind a 27-year-old workhorse whose last two seasons carried enormous volume. Any Taylor absence hands McGowan the lead role in a run-first Steichen offense with a good line.",
+      "The skill set is broader than advertised. He has been excellent in pass protection and reliable catching the ball in camp, which is what usually separates a change-of-pace back from a two-down thumper who gets scratched in December.",
+      "Short-yardage and goal-line work is the most touchdown-dense role available on a bad-weather, run-heavy roster, and Steichen has explicitly said he wants McGowan's physicality for exactly those snaps.",
+      "The testing profile (4.49 at 223 with a 42 1/2-inch vertical) means the ceiling is not a plodder; his 30-yard camp touchdown run showed the second gear coaches said they were waiting to see."
+    ],
+    "whyHeCouldFail": [
+      "Jonathan Taylor is a top-five fantasy back on a fresh extension. Absent injury, McGowan's touch share in a healthy week is likely single digits, and Indianapolis has shown no appetite for splitting work.",
+      "He turns 25 in October. A seventh-round back who is already older than most third-year pros has very little runway to convert a backup role into a lasting one.",
+      "His Kentucky efficiency was poor — 4.4 yards per carry and long runs capped at 20 yards — and the volume that produced 12 touchdowns came with a lot of two-yard gains.",
+      "The reach-for-the-goal-line fumble against New England is exactly the kind of decision that gets a rookie's role frozen; ball security in tight quarters is the tightest leash Indianapolis puts on backs.",
+      "The 2021 felony plea means any off-field misstep carries an outsized consequence for a player kept only for depth."
+    ],
+    "fantasyOutlook": [
+      "Project McGowan as an eight-to-12-touch back in games where Taylor is healthy, with real short-yardage and goal-line value that could nudge him toward three to five touchdowns and a low-end flex line in a full season. The path to relevance is binary: he is the direct handcuff to one of the league's highest-volume runners on a team with no other established option, which in a 2026 redraft sense makes him a stash and in dynasty makes him a lottery ticket with an unusually short fuse.",
+      "In a superflex .5 PPR dynasty rookie draft, he belongs in the fourth round — call it the 40-46 range, right where the market has him. Do not reach into the third for a 24.8-year-old seventh-rounder even with the job in hand; the age curve gives you two or three usable seasons at best. He is a strong target for a contender that already rosters Taylor, and a fine last-pick swing for anyone else."
+    ],
+    "comp": "Zack Moss with better jumps — a decisive one-cut thumper whose value lives entirely in short-yardage work and injury insurance for a star ahead of him.",
+    "bottomLine": "The best available handcuff in the class: he has already won Indianapolis' No. 2 job, but at 24.8 with Jonathan Taylor extended, pay a fourth-round price and no more.",
+    "sources": [
+      "https://www.indystar.com/story/sports/nfl/colts/2026/08/24/how-seth-mcgowan-played-his-way-into-colts-backup-running-back-battle/91433513007/",
+      "https://www.indystar.com/story/sports/nfl/colts/2026/08/13/colts-rookie-rb-seth-mcgowan-reminds-jonathan-taylor-of-david-montgomery/91250838007/",
+      "https://www.indystar.com/story/sports/nfl/colts/2026/04/26/colts-took-a-chance-in-2026-nfl-draft-on-kentucky-rb-seth-mcgowan-despite-felony-arrest/89805047007/",
+      "https://www.colts.com/news/seth-mcgowan-kentucky-running-back-seventh-round-2026-nfl-draft",
+      "https://www.on3.com/teams/kentucky-wildcats/news/nfl-draft-profile-seth-mcgowan-preview-kentucky-football/",
+      "https://coltswire.usatoday.com/story/sports/nfl/colts/2026/08/20/seth-mcgowan-jonathan-taylor-joint-practice/91380694007/",
+      "https://www.espn.com/college-football/player/gamelog/_/id/4686468/seth-mcgowan"
+    ]
+  },
+  "1048": {
+    "id": 1048,
+    "name": "Malik Benson",
+    "position": "WR",
+    "nflTeam": "LVR",
+    "nflTeamName": "Las Vegas Raiders",
+    "college": "Oregon",
+    "hometown": "Lansing, Kansas",
+    "classYear": "Senior",
+    "headline": "Four Schools, One 4.37: Malik Benson Ran Himself Into The Raiders' Receiver Plans",
+    "subhead": "A JUCO transfer who failed to stick at Alabama and Florida State finally broke through at Oregon, and his August in Henderson has been the loudest of any sixth-round receiver in football.",
+    "draftPick": "Round 6, No. 195 overall, Las Vegas Raiders",
+    "measurables": {
+      "height": "6'1\"",
+      "weight": "195 lbs",
+      "age": "23.8",
+      "forty": "4.37",
+      "tenSplit": null,
+      "vertical": "32 1/2\"",
+      "broad": "10'2\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Benson's 4.37 forty tied for ninth among receivers in Indianapolis and confirmed the deep speed that produced five 40-plus-yard touchdowns in 2025. The jumps were the other side of the coin: a 32 1/2-inch vertical and 10-foot-2 broad both graded near the bottom of his testing group, and he did not post shuttle or bench numbers."
+    },
+    "collegeCareer": [
+      "Benson's route to the NFL took four stops. He started at Hutchinson Community College in Kansas in 2021-22, where the speed made him one of the most coveted JUCO receivers in the country, then signed with Alabama for 2023. In Tuscaloosa he was a rotational deep threat rather than a featured piece: 21 catches for 299 yards and a touchdown, with a 64-yard strike that hinted at more than the target share suggested.",
+      "A transfer to Florida State in 2024 did not fix the volume problem — 22 receptions, 420 yards and five touchdowns on a team that collapsed — but it did establish the archetype. Benson averaged 19.1 yards a catch, living almost entirely on vertical routes and play-action shots, and left with a reputation as a straight-line burner whose hands and route detail were unfinished.",
+      "Oregon in 2025 was the breakthrough. Benson led the Ducks with 719 receiving yards on 43 catches (16.7 per grab) with six touchdowns across 15 games on a College Football Playoff semifinalist, finishing second on the team in receptions and receiving scores behind tight end Kenyon Sadiq. He closed hard, which is what moved his stock: 102 yards and a touchdown at Washington in the regular-season finale, then 119 yards and two touchdowns against James Madison in the CFP first round. He also averaged nearly 18 yards per punt return, a return profile that travels."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "Alabama", "line": "21 rec, 299 rec yds, 14.2 ypr, 1 TD"},
+      {"season": "2024", "team": "Florida State", "line": "22 rec, 420 rec yds, 19.1 ypr, 5 TD"},
+      {"season": "2025", "team": "Oregon", "line": "15 G, 43 rec, 719 rec yds, 16.7 ypr, 6 TD, ~18 yds per punt return"}
+    ],
+    "draftDayStory": [
+      "Las Vegas took Benson with the No. 195 overall pick in the sixth round, one of the more defensible speed swings on Day 3 for a team whose receiver room produced almost nothing outside Brock Bowers a year ago. The Raiders signed him within the week and immediately talked about him as a slot and return option rather than a pure field-stretcher. Receivers coach Zach Azzanni later called the pick \"a steal\" outright, and framed the acquisition as buying traits and teaching everything else: \"It doesn't always have to show up in college. Sometimes you just run real fast, which is what he can do. And all the nuances in the game, that's our job to teach him.\"",
+      "The assignment sheet listed Benson at Round 6, Pick 14 with no college on file, at 6'0\" and 189 pounds. Raiders and NFL reporting has him at No. 195 overall out of Oregon, listed 6-1 and 195 pounds; those are the numbers used here."
+    ],
+    "whyTheyDraftedHim": [
+      "Pure vertical speed at a position of need — a 4.37 forty for an offense that had no receiver capable of forcing safeties off the hash behind Tre Tucker.",
+      "Special-teams value baked in: he averaged nearly 18 yards per punt return at Oregon and has taken kick and punt return reps from day one in Henderson.",
+      "Azzanni called the No. 195 pick \"a steal\" and made clear the staff bought traits over production: \"He's got a long way to go, but I'm pleased with where he's at because I knew he had the skillset to do it.\"",
+      "Late-season Oregon tape (102 yards at Washington, 119 and two touchdowns versus James Madison in the CFP) showed he was ascending, not plateauing, at 23.",
+      "Positional flexibility for Klint Kubiak's scheme: he has worked the slot in camp while also playing outside on the Z, which is where the Raiders list him."
+    ],
+    "campNotes": [
+      {"date": "Aug 4", "source": "Raiders.com Training Camp Notebook", "note": "Benson took slot reps plus kick and punt return work at the sixth camp practice, and the staff flagged his release and route running as more refined than expected for a sixth-round rookie. He became a comfortable middle-of-the-field target for both Kirk Cousins and rookie Fernando Mendoza."},
+      {"date": "Aug 11", "source": "Athlon Sports", "note": "On the Raiders' first depth chart of the season Benson was listed as the backup to Jack Bech, with the beat expecting that order to flip: Benson had impressed with the second team and was already earning receiving snaps with the first-team offense."},
+      {"date": "Aug 13", "source": "RotoWire / Levi Edwards, Raiders.com", "note": "Benson played 20 offensive snaps in the preseason opener against Arizona, catching two of four targets for 26 yards and returning a kickoff 21 yards. Klint Kubiak on his rising rep count: \"He's earned those reps but he's got to stay humble and stay hungry.\""},
+      {"date": "Aug 20", "source": "CBS Sports / NBC Sports", "note": "A dud in game two: one catch on five targets for 18 yards against Houston, including an ugly third-down drop that forced a punt. He started the game and struggled to sync with Mendoza after a summer of camp buzz."},
+      {"date": "Aug 25", "source": "ClutchPoints / ABC7 roster projections", "note": "Both projections have Benson comfortably on the 53 as one of six receivers, with several outlets treating his camp as the reason the WR3 job behind Tre Tucker and Jalen Nailor is genuinely open."}
+    ],
+    "beatQuotes": [
+      {"quote": "It doesn't always have to show up in college. Sometimes you just run real fast which is what he can do. And all the nuances in the game, that's our job to teach him. He's worked at it. He's got a long way to go, but I'm pleased with where he's at because I knew he had the skillset to do it. Now he's just got to be more consistent in doing it.", "attribution": "Zach Azzanni, Raiders WR coach, Raiders.com, Aug 4"},
+      {"quote": "[Benson's] earned those reps but he's got to stay humble and stay hungry.", "attribution": "Klint Kubiak, Raiders head coach, via RotoWire, Aug 16"},
+      {"quote": "Just for my confidence, I feel like it has been really good for me. Just to show myself that I can do it. I'm really glad that the coaches and my teammates are giving me (the) opportunity. They're trusting me, and I'm able to show that I can be trusted.", "attribution": "Malik Benson, via AP, Aug 11"}
+    ],
+    "depthChart": "Benson is the Raiders' No. 4 receiver on paper and the leading candidate for the WR3 role: Tre Tucker and Jalen Nailor are the starters, and Benson is listed behind Nailor at Z while pushing Jack Bech and Dont'e Thornton Jr. for playing time. He also has the inside track on kick and punt return work, and every public roster projection has him making the 53.",
+    "whyHeCouldSucceed": [
+      "Target competition is thin. Behind Brock Bowers and Ashton Jeanty, the Raiders' receiver room produced almost nothing last year — Bech caught 20 passes as a second-round rookie — so the WR3 job and its 60-plus targets are genuinely available.",
+      "He has already earned first-team reps and built rapport with both quarterbacks, including rookie Fernando Mendoza, whose long-term timeline overlaps with Benson's rather than Kirk Cousins'.",
+      "4.37 speed plus a proven return profile means he can stay on the roster for special teams while the offensive role develops, which is how sixth-round receivers survive year one.",
+      "Kubiak's offense uses motion and play-action verticals, and Benson's five 40-plus-yard scores in 2025 fit the exact shot plays this staff builds into scripted drives."
+    ],
+    "whyHeCouldFail": [
+      "The Houston game is the cautionary tape: one catch on five targets with a drop on third down. Contested-catch reliability and hands consistency were the knocks in college and they have already resurfaced.",
+      "The jumps (32 1/2-inch vertical, 10-foot-2 broad) point to a receiver who wins with speed and separation, not at the catch point, which caps his red-zone value.",
+      "He never cleared 720 yards in a college season at three Power Four schools; the production profile is thin enough that a bad September could send him back to WR5 in a hurry.",
+      "Quarterback risk is real — Kirk Cousins at this stage plus a rookie in Mendoza is a volatile passing environment for a fourth receiver.",
+      "At 23.8 with one year of starter-caliber college production, he has no developmental grace period if the staff sours on him."
+    ],
+    "fantasyOutlook": [
+      "The realistic 2026 range is 35-50 targets with a handful of long touchdowns — think 25 catches, 400 yards, three scores, with weekly relevance only if injuries hit ahead of him. But the arrow is genuinely up: he is the one Raiders skill player outside Bowers and Jeanty whom the beat has consistently praised, and he sits one Nailor injury away from a starting role in an offense that must throw to somebody. That is a real path to a 90-target season in 2027.",
+      "In a superflex .5 PPR dynasty rookie draft, Benson is worth a late-third or early-fourth-round pick, roughly the 42-50 range — a modest premium over his board rank because rookie receivers with 4.37 speed, ascending camp buzz and a vacated depth chart are how you find WR3s for free. Do not pay a second-round pick for August practice reports; he needs to catch the ball in traffic before that price is justified."
+    ],
+    "comp": "A poor man's Marquez Valdes-Scantling with return value — a long-strider who wins vertically and on special teams while the hands and route tree catch up.",
+    "bottomLine": "The best pure-speed lottery ticket on the back half of this board: buy him as a late-third or fourth-round flier, but know the drops that showed up in Houston are the reason he lasted until 195.",
+    "sources": [
+      "https://www.raiders.com/news/training-camp-notebook-8-4-malik-benson-rookie-receivers-progressing",
+      "https://www.reviewjournal.com/sports/raiders/malik-benson-keeps-getting-open-for-the-raiders-will-it-continue-in-the-preseason-3863273/",
+      "https://apnews.com/article/mendoza-cousins-raiders-kubiak-quarterbacks-cbdc85befcb3be7134ba031e913370cd",
+      "https://www.cbssports.com/fantasy/football/news/raiders-malik-benson-poor-showing-in-second-preseason-game/",
+      "https://athlonsports.com/nfl/las-vegas-raiders/raiders-depth-chart-risers-benson-masses-mccoy-rogers",
+      "https://www.raiders.com/news/raiders-sign-sixth-round-pick-malik-benson-wide-receiver-oregon-ducks-nfl-2026-draft",
+      "https://www.espn.com/college-football/player/gamelog/_/id/5150247/malik-benson"
+    ]
+  },
+  "1076": {
+    "id": 1076,
+    "name": "Eli Heidenreich",
+    "position": "RB",
+    "nflTeam": "PIT",
+    "nflTeamName": "Pittsburgh Steelers",
+    "college": "Navy",
+    "hometown": "Pittsburgh (Mt. Lebanon), Pennsylvania",
+    "classYear": "Senior",
+    "headline": "The Swiss Navy Knife: Mt. Lebanon's Own Is Fighting For The Last Roster Spot At Home",
+    "subhead": "Navy's all-time receiving leader was drafted by his hometown team with the final pick of Pittsburgh's ten-man class, and an August injury has left his 53-man case resting on special teams.",
+    "draftPick": "Round 7, No. 230 overall, Pittsburgh Steelers",
+    "measurables": {
+      "height": "6'0\"",
+      "weight": "198 lbs",
+      "age": "23.2",
+      "forty": "4.44",
+      "tenSplit": "1.53",
+      "vertical": "35 1/2\"",
+      "broad": "10'0\"",
+      "threeCone": "6.55",
+      "shuttle": "4.22",
+      "bench": "16 reps",
+      "armLength": "29 1/4\"",
+      "combineNote": "Heidenreich tested well for a slot-sized hybrid: 4.44 in the forty with a 1.53 ten-yard split, a 35 1/2-inch vertical and 16 bench reps in Indianapolis, then added a 4.22 short shuttle and 6.55 three-cone at his March 5 pro day. The red flag is length — his 29 1/4-inch arms are among the shortest measured at the position."
+    },
+    "collegeCareer": [
+      "Heidenreich was a slotback in Navy's option offense, which is a polite way of saying his usage looked nothing like an NFL role. As a sophomore in 2023 he averaged 20.1 yards a catch on 19 receptions for 382 yards and four touchdowns while adding 27 carries for 214 yards, functioning as the explosive constraint on an offense built to run between the tackles.",
+      "The 2024 season made him Navy's featured playmaker: 39 catches for 671 yards and six touchdowns plus 65 carries for 444 yards (6.8 per rush) and three scores on a team that won 10 games. He was equally dangerous on jet sweeps and on the vertical throws that punish safeties who crowd the option, with a 74-yard reception among his big plays.",
+      "As a senior in 2025 he put up 51 catches for 941 yards (18.5 per catch) and six touchdowns with 77 carries for 499 yards and three more scores across 13 games, earning second-team All-AAC honors and finishing as Navy's all-time leader in receiving yards (1,994) and receiving touchdowns (16). The complication for pro projection: Pro Football Focus charted him as a pass blocker on just five of his 747 offensive snaps, and he logged 247 special-teams snaps, mostly on punt. The NFL listed him as a running back for the draft despite the receiver production, and he has said he models his game on Christian McCaffrey."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "Navy", "line": "19 rec, 382 rec yds, 20.1 ypr, 4 TD, 27 car, 214 rush yds, 7.9 ypc, 1 TD"},
+      {"season": "2024", "team": "Navy", "line": "39 rec, 671 rec yds, 17.2 ypr, 6 TD, 65 car, 444 rush yds, 6.8 ypc, 3 TD"},
+      {"season": "2025", "team": "Navy", "line": "13 G, 51 rec, 941 rec yds, 18.5 ypr, 6 TD, 77 car, 499 rush yds, 6.5 ypc, 3 TD"}
+    ],
+    "draftDayStory": [
+      "With the 2026 draft staged in Pittsburgh, Heidenreich sat in the green room in his Navy uniform and heard his hometown team call his name with the No. 230 overall pick — the last of the Steelers' ten selections. General manager Omar Khan called it an \"awesome\" way to punctuate the draft, and team president Art Rooney II later went considerably further, calling him \"probably the greatest seventh-round pick we've ever made.\" Running backs coach Ramon Chinyoung nicknamed him the \"Swiss Navy Knife.\" He signed a four-year deal and was assigned No. 29.",
+      "Note the discrepancy: the assignment sheet listed him at Round 7, Pick 14. Steelers.com and TribLive both confirm No. 230 overall, the 10th and final Pittsburgh pick of the draft."
+    ],
+    "whyTheyDraftedHim": [
+      "Positional versatility on a cheap contract: Pittsburgh drafted him as an RB/WR hybrid who can align in the slot, take jet sweeps and catch out of the backfield.",
+      "Special-teams résumé — 247 special-teams snaps at Navy across all four phases, including punt team — which is the specific value the staff needs under new coordinator Danny Crossman.",
+      "Elite intangibles from a service academy: Khan and Rooney both publicly praised the makeup, and the staff installed him as the second-team personal protector on punt during camp, a job that demands processing speed.",
+      "Local roots and a proven pedigree of undrafted or late-round Steelers backs making it — Jaylen Warren, Rico Dowdle and, historically, Willie Parker.",
+      "Production the Steelers could not ignore: Navy's all-time receiving yardage and touchdown leader with 4.44 speed at 198 pounds."
+    ],
+    "campNotes": [
+      {"date": "Jul 31", "source": "Alex Kozora, Steelers Depot", "note": "Heidenreich spent his first three camp days as a reserve running back and acknowledged that special teams is his best path to the 53: \"Special teams is something I take pride in, I enjoy doing.\" He was working as Pittsburgh's second-team personal protector on the punt unit."},
+      {"date": "Aug 2", "source": "Chris Harlan, TribLive", "note": "Ahead of the first padded practice, the focus was pass protection — Pro Football Focus charted him as a pass blocker on just five of 747 offensive snaps at Navy. He had lined up as a slot receiver from an empty backfield on Friday and caught two short touchdowns, from Mason Rudolph and Will Howard."},
+      {"date": "Aug 11", "source": "Steelers Now / TribLive", "note": "Heidenreich returned to practice mostly in full on Tuesday after missing time with an undisclosed injury, clearing him for his preseason debut Thursday against Green Bay. The injury cost him early-camp reps he could not afford."},
+      {"date": "Aug 13", "source": "Steelers Now", "note": "In the 28-9 preseason win over Green Bay he carried nine times for 21 yards in his Acrisure Stadium debut, wearing No. 29 in front of the fan base he grew up in."},
+      {"date": "Aug 22", "source": "Steelers Wire snap counts", "note": "Against the Jets he played 16 offensive snaps (23 percent), behind Kaleb Johnson's 24 in the same game — a modest workload for a rookie needing tape."},
+      {"date": "Aug 24", "source": "Steelers Depot / ESPN roster projections", "note": "Both Steelers Depot writers and ESPN now project Pittsburgh to keep only three running backs — Warren, Dowdle and special-teamer Travis Homer — leaving Heidenreich off the 53. Depot's Ross Carney wrote that an early camp injury \"put him behind the 8-ball and he hasn't done enough the preseason to earn a spot.\""}
+    ],
+    "beatQuotes": [
+      {"quote": "Special teams is not something new to me. I had the chance to play all four phases at Navy throughout my three years starting there.", "attribution": "Eli Heidenreich, via TribLive, Aug 11"},
+      {"quote": "We talk about it, all the other local guys. Steelers football and the fans and what it means to the city of Pittsburgh, it's different than other places. You can't take that lightly when you kinda get a chance to go out and represent them in a way.", "attribution": "Eli Heidenreich, Steelers Now, Aug 15"},
+      {"quote": "Throughout the offseason I really felt strongly that rookie seventh-round pick Eli Heidenreich was going to grab a roster spot. An injury early in training camp put him behind the 8-ball and he hasn't done enough the preseason to earn a spot.", "attribution": "Ross Carney, Steelers Depot, Aug 24"},
+      {"quote": "It's exciting, and honestly, it felt natural. I did a lot of that at Navy.", "attribution": "Eli Heidenreich on catching passes from the slot, TribLive, Aug 2"}
+    ],
+    "depthChart": "Heidenreich is fourth or fifth in a crowded backfield: Jaylen Warren and Rico Dowdle are the top two, 2025 third-rounder Kaleb Johnson and special-teams veteran Travis Homer are ahead of him for the depth spots, and UDFA Lew Nichols has also drawn camp praise. As of Aug 24-25, both Steelers Depot and ESPN project him as a practice-squad body rather than a 53-man roster player.",
+    "whyHeCouldSucceed": [
+      "The hybrid usage is real: Navy's all-time receiving leader who has taken slot snaps in Pittsburgh and caught two touchdowns from an empty backfield in camp. If the Steelers want a gadget piece, no one else in the room does that.",
+      "4.44 speed with a 4.22 shuttle and 6.55 three-cone at 198 pounds is a legitimately explosive movement profile for a receiving back, and he tested with a 9.25 Relative Athletic Score.",
+      "Special teams is a genuine path — 247 college special-teams snaps across all four phases, already trusted as the second-team punt personal protector, on a team whose new coordinator needs core players.",
+      "Precedent is on his side in this specific building: Jaylen Warren and Rico Dowdle both arrived undrafted and made their names on special teams first.",
+      "He is only 23.2 and the cheapest kind of upside — if he lands on the practice squad, he stays in the organization all year."
+    ],
+    "whyHeCouldFail": [
+      "He may not make the team. The two most-cited local projections and ESPN all leave him off the 53 as of Aug 24-25 in favor of Travis Homer's special-teams profile.",
+      "Pass protection is a genuine hole: five pass-blocking snaps in 747 at Navy, and he was learning the position's rules from scratch this spring.",
+      "The option-offense usage does not translate cleanly. Jet sweeps and vertical shots off run-heavy play-action are not NFL running back reps, and he is listed at running back anyway.",
+      "An undisclosed early-camp injury cost him the reps that a seventh-rounder cannot get back, and his two preseason games produced 21 rushing yards and a 23 percent snap share.",
+      "Short arms (29 1/4 inches) and a 198-pound frame limit him as a between-the-tackles runner and a blocker, capping the role to a specialty piece."
+    ],
+    "fantasyOutlook": [
+      "The honest 2026 projection is close to zero fantasy production: he is fighting for a roster spot and, if he sticks, will be a special-teams contributor and emergency third back behind Warren and Dowdle. Nothing in his August suggests offensive touches are coming this season, and the Steelers' backfield leader is not even settled between the two veterans ahead of him.",
+      "In a superflex .5 PPR dynasty league he is a taxi-squad name, not a rookie-draft asset in the top 50. Let him go undrafted or spend a fifth-round pick if your league has deep rosters and you like the McCaffrey-style receiving profile as a dart throw. The realistic best case is a Warren-style ascent from special teams to a passing-down role by 2027; the more likely outcome is a practice-squad year and a decision next August."
+    ],
+    "comp": "A slower-burning Jaylen Warren type — an undersized, high-makeup pass-catcher who has to earn his snaps on the punt team before anyone hands him a backfield role.",
+    "bottomLine": "A wonderful story and a real athlete, but he may be cut before Week 1: don't spend anything above a fifth-round rookie pick on a receiving back who is fifth in his own room.",
+    "sources": [
+      "https://steelersdepot.com/2026/07/eli-heidenreich-identifies-his-path-to-making-steelers-roster/",
+      "https://steelersnow.com/eli-heidenreich-waxes-poetic-about-emotions-of-steelers-debut-different-than-other-places/",
+      "https://steelersdepot.com/2026/08/carney-pittsburgh-steelers-final-53-man-roster-prediction/",
+      "https://triblive.com/sports/mt-lebanon-native-eli-heidenreich-drafted-by-hometown-steelers-in-7th-round/",
+      "https://www.steelers.com/news/steelers-select-heidenreich-in-seventh-round",
+      "https://steelerswire.usatoday.com/story/sports/nfl/steelers/2026/08/23/steelers-jets-offense-snap-counts-preseason-week-2/91422795007/",
+      "https://nflcombineresults.com/playerpage.php?i=32098",
+      "https://global.espn.com/college-football/player/_/id/5081508/eli-heidenreich"
+    ]
+  },
+  "1095": {
+    "id": 1095,
+    "name": "Garrett Nussmeier",
+    "position": "QB",
+    "nflTeam": "KC",
+    "nflTeamName": "Kansas City Chiefs",
+    "college": "LSU",
+    "hometown": "Lake Charles, Louisiana",
+    "classYear": "Senior",
+    "headline": "From Heisman Favorite To Pick 249: The Cyst That Cost Garrett Nussmeier A Draft",
+    "subhead": "A year ago he was a preseason Heisman co-favorite at LSU; in April a spinal cyst pushed him to the final pick of the draft, and Kansas City may have found Patrick Mahomes' long-term understudy.",
+    "draftPick": "Round 7, No. 249 overall, Kansas City Chiefs (acquired via trade with Pittsburgh)",
+    "measurables": {
+      "height": "6'2\"",
+      "weight": "203 lbs",
+      "age": "24.5",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Nussmeier did not test athletically anywhere in the process. He opted out of the workout portion at the Senior Bowl, the combine and LSU's pro day while throwing at all three and doing the full interview circuit. The consequential part of his combine was medical: testing in Indianapolis revealed a cyst on his spine pressing a nerve, which NFL Network's Tom Pelissero reported was the source of the oblique pain that wrecked his 2025 season."
+    },
+    "collegeCareer": [
+      "Nussmeier, the son of Saints offensive coordinator Doug Nussmeier, waited three years behind Myles Brennan, Max Johnson and Jayden Daniels. His snaps came in relief and in bowl games: 800 yards and five touchdowns on 84 attempts in 2022, including a Texas Bowl start, then 591 yards, four touchdowns and one interception on 78 attempts in 2023 as Daniels won the Heisman. The arm talent was never the question; the reps were.",
+      "The 2024 season was the showcase. Nussmeier threw for 4,052 yards with 29 touchdowns and 12 interceptions on 525 attempts (64.2 percent), quarterbacking LSU to nine wins and a Texas Bowl victory over Baylor. He was volume-heavy and occasionally reckless — 51 attempts against Ole Miss, three interceptions at Texas A&M — but he also produced six 300-yard games and closed with three touchdowns apiece against Oklahoma and Baylor. He entered 2025 as a preseason Heisman co-favorite on a top-10 team.",
+      "Then it fell apart. Nussmeier played nine games in 2025 and never looked like himself, completing 67.4 percent for only 1,927 yards (6.7 per attempt) with 12 touchdowns and five interceptions as LSU cratered; his 121-yard, 21-attempt outing at Alabama was the low point of a season played through what he believed was an oblique injury. The combine revealed the actual cause — a cyst on his spine pinching a nerve — and by then the draft narrative was set."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "LSU", "line": "52-84, 800 pass yds, 9.5 ypa, 5 TD, 4 INT"},
+      {"season": "2023", "team": "LSU", "line": "48-78, 591 pass yds, 7.6 ypa, 4 TD, 1 INT"},
+      {"season": "2024", "team": "LSU", "line": "337-525, 4,052 pass yds, 64.2 pct, 7.7 ypa, 29 TD, 12 INT"},
+      {"season": "2025", "team": "LSU", "line": "9 G, 194-288, 1,927 pass yds, 67.4 pct, 6.7 ypa, 12 TD, 5 INT"}
+    ],
+    "draftDayStory": [
+      "Kansas City ended the slide with the No. 249 pick, the last selection the Chiefs made, using a pick acquired in a trade with Pittsburgh. Nussmeier was the 10th quarterback off the board in a draft where he had once been projected in the top half of the first round; the medical file, not the tape, is the accepted explanation. Pelissero reported the cyst is not expected to be a short- or long-term risk and that Nussmeier has been asymptomatic since the Senior Bowl, though a recurrence would require a minimally invasive procedure costing him two to three weeks.",
+      "The fit was tidy for both sides. Patrick Mahomes was working back from a December knee injury, Kansas City had signed Justin Fields as the veteran backup on a one-year deal, and Andy Reid's staff had room for a developmental arm with no urgency attached. Nussmeier, whose father played five games for the Saints in 1996-97, hugged him first in New Orleans when the pick came in. On the KTC sheet this is listed as Round 7, Pick 33 — consistent with No. 249 overall."
+    ],
+    "whyTheyDraftedHim": [
+      "Arm talent at a seventh-round price: ESPN reported the Chiefs were specifically intrigued by his arm strength as a candidate to become Mahomes' backup of the future.",
+      "Contract timing — Justin Fields is signed only for 2026, which makes 2027 a natural year for an internal replacement at QB2.",
+      "Pedigree and processing: the son of an NFL offensive coordinator who ran a pro-style operation at LSU and interviewed well through the entire draft cycle.",
+      "The medical discount. Kansas City was willing to accept a cyst that Pelissero reported as asymptomatic and non-threatening in exchange for a first-round-caliber pre-2025 evaluation.",
+      "Reid's track record of developing quarterbacks made Kansas City the destination Nussmeier himself flagged as ideal minutes after the pick."
+    ],
+    "campNotes": [
+      {"date": "Aug 7-8", "source": "Kansas City Star / Arrowhead Pride", "note": "At camp in St. Joseph, Nussmeier described Mahomes as a \"library of knowledge\" and said of his preseason opportunity, \"I'm super grateful for the opportunity, and whenever I get to play, I'll be ready.\" Andy Reid effectively confirmed Mahomes would not play the preseason opener as he recovered from his December knee injury, clearing the way for extended rookie reps."},
+      {"date": "Aug 15", "source": "RotoWire / KMBC", "note": "Preseason debut against the Rams: 13-of-19 for 98 yards, following Fields into the game and leading two long second-quarter scoring drives that ended in Harrison Butker field goals. \"I think I've become a lot better player over the last four months,\" he said afterward."},
+      {"date": "Aug 19", "source": "Charles Goldman, A to Z Sports (via Mahoning Matters)", "note": "Assistant general manager Mike Bradway suggested Kansas City could carry three quarterbacks on the 53, explicitly because Fields and Nussmeier had both earned it — not because of concern over Mahomes' knee."},
+      {"date": "Aug 22", "source": "CBS Sports / Chiefs.com", "note": "In the 16-15 loss to Tampa Bay he led the team with 74 passing yards on 9-of-17, averaging 4.4 yards an attempt while keeping throws near the line of scrimmage, but engineered a 13-play field-goal drive. He is expected to see heavy work and possibly start the preseason finale against Seattle."},
+      {"date": "Aug 25", "source": "ClutchPoints roster projection", "note": "Projected as the third quarterback on the 53 behind Mahomes and Fields: \"Nussmeier has done enough to justify keeping him as the developmental third quarterback.\""}
+    ],
+    "beatQuotes": [
+      {"quote": "I'm super grateful for the opportunity, and whenever I get to play, I'll be ready.", "attribution": "Garrett Nussmeier, via Arrowhead Pride, Aug 8"},
+      {"quote": "I think I've become a lot better player over the last four months.", "attribution": "Garrett Nussmeier after his preseason debut, KMBC, Aug 15"},
+      {"quote": "I want to prove that I belong in the NFL. I believe I belong in this league and so I'm looking for any opportunity. Whatever opportunity that may be, whether it's a backup role right away or an on-field role right away, I just wanna prove that I am who I say I am and I belong in this league.", "attribution": "Garrett Nussmeier at the NFL Combine, via 247Sports, Apr 25"}
+    ],
+    "depthChart": "Nussmeier is QB3 and has effectively locked the job: Patrick Mahomes is QB1 and has been held out of preseason games while finishing his knee rehab, Justin Fields is the veteran backup on a contract that expires after 2026, and Nussmeier has beaten out Chris Oladokun for the developmental spot. He has taken the bulk of the preseason snaps behind Fields and may start the finale against Seattle.",
+    "whyHeCouldSucceed": [
+      "The 2024 tape is a legitimate NFL starter's audition: 4,052 yards and 29 touchdowns with real arm talent, and the 2025 collapse now has a documented physical explanation rather than a developmental one.",
+      "He is in the single best development environment in football — Andy Reid's system, with Mahomes in the same quarterback room — and the Chiefs are willing to spend a roster spot on a project.",
+      "Justin Fields' contract runs out after 2026, giving Nussmeier a clean, near-term path to QB2 and to the emergency-starter role in the league's best offense.",
+      "Two efficient, mistake-free preseason games (22-of-36, no interceptions, two scoring drives) plus a public vote of confidence from the assistant GM show the staff already trusts his operation.",
+      "In superflex formats, any quarterback with a real path to a Kansas City starting job — however remote — carries option value that a seventh-rounder's price does not reflect."
+    ],
+    "whyHeCouldFail": [
+      "Mahomes. Barring catastrophe, there is no snap path here for years, and the Chiefs would sign a veteran before handing Nussmeier a start that mattered.",
+      "The spinal cyst is asymptomatic, not resolved. A recurrence means a procedure and two to three weeks out, and it is the reason 31 teams passed for six rounds.",
+      "The 2025 season was genuinely poor — 6.7 yards per attempt and 15 sacks in nine games — and it is his most recent full-season sample.",
+      "He turns 25 in February and did not test athletically anywhere; there is no mobility component to fall back on if the pocket play does not hold up.",
+      "His preseason throws have been short and safe (4.4 yards per attempt against Tampa Bay), which is exactly the profile of a career backup rather than a starter-in-waiting."
+    ],
+    "fantasyOutlook": [
+      "Expect zero 2026 fantasy production: he is the third quarterback on a team whose starter is a former MVP, and the only scenario that puts him on a field is an injury cascade. This is a pure hold, and the value is entirely in the 2027-2028 window when Fields' deal is gone and Nussmeier is the in-house backup to a quarterback who has already missed most of a season with a knee injury.",
+      "In a superflex .5 PPR dynasty rookie draft he is worth a late-fourth or fifth-round pick — roughly the 45-55 range, which lines up with his board rank and the FantasyPros consensus of 53. In deep superflex leagues where quarterbacks hold standalone value, he is the kind of name you stash on your last bench spot: a former Heisman favorite with a real medical explanation for his fall, sitting in the best quarterback classroom in football. If someone in your league drafts him in the third, let them."
+    ],
+    "comp": "A pocket-bound Jake Browning type — accurate, tough, well-coached and dangerous only if the depth chart in front of him collapses.",
+    "bottomLine": "The best pure arm available this late, but he's third on the Chiefs' depth chart behind Patrick Mahomes: a fifth-round superflex stash, not a starter you're drafting to play.",
+    "sources": [
+      "https://www.nfl.com/news/garrett-nussmeier-chiefs-pick-249-2026-nfl-draft",
+      "https://www.espn.com/nfl/story/_/id/48594456/chiefs-take-qb-garrett-nussmeier-seventh-round-nfl-draft",
+      "https://www.arrowheadpride.com/kansas-city-chiefs-news/207160/chiefs-rookie-qb-garrett-nussmeier-playing-preseason-ready",
+      "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article316796827.html",
+      "https://www.cbssports.com/fantasy/football/news/chiefs-garrett-nussmeier-serviceable-in-second-preseason-game/",
+      "https://247sports.com/college/lsu/article/lsu-qb-garrett-nussmeier-drafted-by-kansas-city-chiefs-283043194/",
+      "https://www.chiefs.com/team/players-roster/garrett-nussmeier/splits/2026/pre/",
+      "https://cfbstats.com/2024/player/365/1122032/passing/gamelog.html"
+    ]
+  },
+  "1079": {
+    "id": 1079,
+    "name": "Taylen Green",
+    "position": "QB",
+    "nflTeam": "CLE",
+    "nflTeamName": "Cleveland Browns",
+    "college": "Arkansas",
+    "hometown": "Lewisville, Texas",
+    "classYear": "Senior",
+    "headline": "Six-Foot-Six And 4.36: Taylen Green Is The Fourth Quarterback In Cleveland's Traffic Jam",
+    "subhead": "The most extraordinary athlete at the position in this class landed in the league's most crowded quarterback room, and he has yet to take a preseason snap.",
+    "draftPick": "Round 6, Pick 1 (No. 182 overall), Cleveland Browns",
+    "measurables": {
+      "height": "6'6\"",
+      "weight": "230 lbs",
+      "age": "23.8",
+      "forty": "4.36",
+      "tenSplit": null,
+      "vertical": "43 1/2\"",
+      "broad": "11'2\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Green's combine was the athletic event of the quarterback group: a 4.36 forty at 6-6 and roughly 227-230 pounds, with a 43 1/2-inch vertical and an 11-foot-2 broad jump. There is no comparable size-speed data point at the position in recent memory, and it is the entire reason a five-year college starter with 20 interceptions over his last two seasons went in the sixth round rather than undrafted."
+    },
+    "collegeCareer": [
+      "Green started as a true freshman at Boise State in 2022, throwing for 2,042 yards with 14 touchdowns and six interceptions across 13 games while establishing himself as a designed-run threat in the Mountain West. His 2023 season regressed — 57.1 percent, 1,752 yards, 11 touchdowns and nine interceptions — as the Broncos' passing offense stalled, and he transferred to Arkansas for 2024.",
+      "Under Bobby Petrino's offense in Fayetteville, Green produced the most complete season of his career: 3,154 passing yards with 15 touchdowns and nine interceptions on 60.4 percent, plus 156 carries for 602 yards and eight rushing scores while starting all 13 games. The frame and the arm made him a matchup problem, but the interception rate and 12 fumbles across his two Arkansas seasons told scouts the processing had not caught up to the physical tools.",
+      "As a senior in 2025 he threw for 2,714 yards with 19 touchdowns and 11 interceptions in 12 games (11 starts) and ranked ninth in the FBS at 13.7 yards per completion, while running 139 times for 777 yards (5.6 per carry) and eight more touchdowns. Arkansas lost its last three games and Green threw no touchdowns with three interceptions in that stretch. Across five college seasons he passed for 8,662 yards and 59 touchdowns over his last four and rushed for 2,405 yards and 35 scores."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Boise State", "line": "13 G, 166-272, 2,042 pass yds, 61.0 pct, 14 TD, 6 INT"},
+      {"season": "2023", "team": "Boise State", "line": "13 G, 121-212, 1,752 pass yds, 57.1 pct, 11 TD, 9 INT"},
+      {"season": "2024", "team": "Arkansas", "line": "13 G, 230-381, 3,154 pass yds, 60.4 pct, 15 TD, 9 INT, 156 car, 602 rush yds, 8 TD"},
+      {"season": "2025", "team": "Arkansas", "line": "12 G, 198-326, 2,714 pass yds, 60.7 pct, 19 TD, 11 INT, 139 car, 777 rush yds, 5.6 ypc, 8 TD"}
+    ],
+    "draftDayStory": [
+      "Cleveland opened the sixth round with Green at No. 182 overall — the first pick of the round, which matches the KTC draft-capital line on the assignment sheet exactly, though the overall number is 182 rather than anything implied by the board. Taking a fourth quarterback made little conventional sense for a team already carrying Deshaun Watson, Shedeur Sanders and Dillon Gabriel, and the immediate assumption around the league was that Green was drafted as a gadget or eventual position-change piece. Terrelle Pryor was the comp most often cited.",
+      "General manager Andrew Berry shut that down on draft weekend, saying the Browns will keep Green at quarterback: \"With Taylen specifically — very mature young man, really strong makeup, and he has rare physical gifts. He has size, he has elite speed, he has a big arm. He's going to need some polish with this game.\" New head coach Todd Monken separately rejected the hybrid idea after the draft, which has left the beat asking what exactly the plan is for a roster with four quarterbacks."
+    ],
+    "whyTheyDraftedHim": [
+      "Unprecedented physical profile: 6-6, 230 pounds, 4.36 in the forty, 43 1/2-inch vertical. Berry called them \"rare physical gifts\" and refused to entertain a position change.",
+      "Five years of starting experience and 8,662 passing yards over his last four seasons — this is a developmental project with real snaps behind him, not a raw converted athlete.",
+      "Monken's history of quarterback development, and his stated view that Green has visibly improved from Boise State to Arkansas with \"a next jump that he can make.\"",
+      "Short-yardage and situational upside: Monken conceded that a player with that athleticism could eventually be used in short-yardage packages if the rest of his game progresses.",
+      "Cheap optionality on a roster where Watson's future is unsettled and no quarterback ahead of him has established a long-term hold on the job."
+    ],
+    "campNotes": [
+      {"date": "May 8-9", "source": "Scott Petrak, BrownsZone / News-Herald", "note": "Green dominated attention at rookie minicamp as the only real quarterback on the field, and said of his own comps: \"I really don't think there's anybody like me. Not on no like cocky or anything, just some confidence. There's nobody that moves like me that's as tall as me.\" With veterans away, he was the No. 1 arm; once camp opened he would drop to fourth."},
+      {"date": "Aug 15", "source": "Heavy.com", "note": "Green did not play in Cleveland's preseason opener against Chicago and has worked behind Watson, Sanders and Gabriel throughout training camp."},
+      {"date": "Aug 20", "source": "Heavy.com", "note": "He was the story of the joint practice with Buffalo, flashing dual-threat ability and drawing a wave of local reaction; the piece noted the practice highlights would not change the depth chart immediately, and that carrying four quarterbacks on the 53 would force Cleveland to sacrifice depth elsewhere."},
+      {"date": "Aug 22", "source": "Roundtable / Heavy.com", "note": "Zero snaps for a second straight preseason game as Sanders started and played the first half against Buffalo, Watson took the third quarter and Gabriel the fourth — leaving the rookie without a single live rep through two exhibitions."},
+      {"date": "Aug 24", "source": "Mary Kay Cabot, cleveland.com / Browns.com", "note": "Monken said he does not anticipate playing any starters in Thursday's finale against New England: Gabriel would start and Green will play significant time. The official unofficial depth chart for that game lists Green fourth at quarterback behind Watson, Sanders and Gabriel."}
+    ],
+    "beatQuotes": [
+      {"quote": "I would say, of course, Lamar (Jackson), but he ain't 6-6. Josh Allen is close, but I'm 230, he's like 260. My dad says Randall Cunningham-ish. I really don't think there's anybody like me.", "attribution": "Taylen Green, via BrownsZone, May 9"},
+      {"quote": "You can see from when he was at Boise to then getting with Bobby Petrino and the guys at Arkansas, he's come a long way. You can see that already and there's still a next jump that he can make.", "attribution": "Todd Monken, Browns head coach, via BrownsZone, May 9"},
+      {"quote": "With Taylen specifically — very mature young man, really strong makeup, and he has rare physical gifts. He has size, he has elite speed, he has a big arm. He's going to need some polish with this game.", "attribution": "Andrew Berry, Browns GM, via clevelandbrowns.com, Apr 25"}
+    ],
+    "depthChart": "Green is QB4 on Cleveland's unofficial depth chart for the preseason finale, behind Deshaun Watson, Shedeur Sanders and Dillon Gabriel. He has not played a live snap in two preseason games and will get extended work against New England on Aug 27 with the starters resting — a game that will effectively decide whether the Browns keep four quarterbacks on the 53 or expose him to waivers and the practice squad.",
+    "whyHeCouldSucceed": [
+      "The athletic profile has no precedent at the position: 6-6 and 230 pounds with a 4.36 forty and a 43 1/2-inch vertical. That combination alone will keep him employed and gives him a rushing floor no other quarterback in this class has.",
+      "He rushed for 2,405 yards and 35 touchdowns in college. In fantasy terms, a mobile quarterback who ever wins a starting job carries a top-12 ceiling regardless of passing efficiency.",
+      "The room ahead of him is unstable: Watson's contract and health are a running saga, Sanders has already lost the job battle once, and Gabriel is a third-year backup. None of them is a long-term answer.",
+      "Monken and Berry have both publicly invested in him as a quarterback, and the staff has confirmed he plays in the finale — the exact showcase a fourth-stringer needs.",
+      "At 23.8 with five years of starting experience, he is further along mechanically than the typical developmental athlete, and Monken has said the next jump is available."
+    ],
+    "whyHeCouldFail": [
+      "He is fourth of four on a roster that may not carry four quarterbacks; a practice-squad assignment or a waiver claim are both live outcomes in the next week.",
+      "The accuracy and decision-making are the sixth-round reason: 20 interceptions and 12 fumbles across two Arkansas seasons, and a 60.7 completion percentage as a senior.",
+      "His throwing motion is long and shoulder-level, which scouts flagged as an unorthodox delivery that costs him velocity and touch under pressure.",
+      "Two preseason games, zero snaps. That is not a staff building a package for him — it is a staff prioritizing three other quarterbacks.",
+      "The Terrelle Pryor comparison exists for a reason. If the passing never comes, the likeliest outcome is a positional conversion or a gadget role with no fantasy value."
+    ],
+    "fantasyOutlook": [
+      "Green will not produce in 2026. He is the fourth quarterback on a team that has not given him a preseason snap, and the best realistic case for this season is a roster spot plus a handful of short-yardage designed runs. The finale against New England is the only meaningful data point left on his rookie-year calendar, and a bad night could push him to the practice squad.",
+      "In a superflex .5 PPR dynasty rookie draft, take him in the fifth round or later — around the 50-58 range, in line with his board rank and the FantasyPros consensus of 55. The bet is narrow but the payoff is asymmetric: a 6-6, 4.36 quarterback who ever starts 10 games is a weekly top-12 fantasy option because of the rushing floor, and the Browns' quarterback room could look completely different by 2027. Draft him as your last superflex stash, not as a piece of your build."
+    ],
+    "comp": "Terrelle Pryor's athletic outline with Josh Allen's frame — an unmatched physical specimen whose fantasy future rests entirely on whether the passing ever becomes NFL-viable.",
+    "bottomLine": "The most extreme athletic bet in the class stuck at QB4 in Cleveland: a fifth-round superflex stash whose Thursday night audition against New England may decide whether he's even on a 53.",
+    "sources": [
+      "https://www.nfl.com/news/2026-nfl-draft-browns-select-arkansas-qb-taylen-green-at-no-182-overall",
+      "https://www.brownszone.com/2026/05/09/qb-taylen-green-stands-out-on-field-among-qbs-i-really-dont-think-theres-anybody-like-me/",
+      "https://heavy.com/sports/nfl/cleveland-browns/taylen-green-turns-heads-joint-practice/",
+      "https://www.clevelandbrowns.com/news/browns-announce-unofficial-depth-chart-for-3rd-preseason-game-vs-the-patriots",
+      "https://www.meadvilletribune.com/sports/todd-monken-excited-to-see-browns-rookie-qb-taylen-green-face-the-patriots-thursday-night/article_1419f35f-e1c0-4a71-95ef-f37e2a0da73b.html",
+      "https://www.news-herald.com/2026/05/08/browns-rookie-6-foot-6-speedy-quarterback-taylen-green-is-one-of-a-kind/",
+      "https://www.clevelandbrowns.com/team/players-roster/taylen-green/splits/",
+      "https://cfbstats.com/2025/player/31/1121472/passing/split.html"
+    ]
+  }
+}
