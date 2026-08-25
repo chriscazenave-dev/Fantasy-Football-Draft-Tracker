@@ -1,0 +1,441 @@
+{
+  "1036": {
+    "id": 1036,
+    "name": "Mike Washington Jr.",
+    "position": "RB",
+    "nflTeam": "LVR",
+    "nflTeamName": "Las Vegas Raiders",
+    "college": "Arkansas",
+    "hometown": "Utica, New York",
+    "classYear": "Senior",
+    "headline": "Fourth And Final Stop: Washington Ran Himself Into Las Vegas' Backfield Plan",
+    "subhead": "A three-school journeyman who ran 4.33 and broke a 53-yard run in his NFL debut has already made himself Ashton Jeanty's clear backup.",
+    "draftPick": "Round 4, Pick 22 (No. 122 overall), Las Vegas Raiders",
+    "measurables": {
+      "height": "6'1\"",
+      "weight": "223 lbs",
+      "age": "23.1",
+      "forty": "4.33",
+      "tenSplit": "1.51",
+      "vertical": "39\"",
+      "broad": "10'8\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Washington was one of the athletic winners of the 2026 Combine, running 4.33 with a 1.51 ten-yard split at 6-1, 223 and adding a 39-inch vertical and a 10-8 broad jump. He did not run the change-of-direction drills, so the agility testing is a blank, but the linear speed and explosion numbers are unusual for a back that size and were exactly what Las Vegas cited when it traded up for him."
+    },
+    "collegeCareer": [
+      "Washington took the long road. He spent three seasons at Buffalo (2021-23), where he was a rotational back who never cleared 400 yards in a season and finished with 1,119 rushing yards and 10 touchdowns across 27 games. There was nothing in that profile to suggest an NFL draft pick was coming. He entered the portal after 2023, landed at New Mexico State, and got the first real workload of his career: 157 carries for 725 yards and eight touchdowns in a 12-game season on a bad team, plus nine catches and a kick-return role.",
+      "The Arkansas transfer changed everything. Handed the SEC lead-back job in 2025, Washington rushed for 1,070 yards on 167 carries — 6.4 a pop — with eight touchdowns and 28 receptions, becoming the 16th 1,000-yard rusher in Arkansas history and earning second-team All-SEC. The tape matched the numbers: a long-legged, downhill runner who bounces off arm tackles, presses the front side before cutting, and finishes runs falling forward. He was one of the more efficient high-volume backs in the conference despite playing behind an offensive line that rarely created clean lanes.",
+      "The résumé still carries caveats. He turned 23 in July of his rookie year, he only has one season of Power Four production, and he has never been a true pass-protection specialist. But four years of college football produced 587 career carries for 2,914 yards and 26 touchdowns with 73 receptions, which is exactly the profile of a back who arrives fresh in the body but seasoned in the head."
+    ],
+    "collegeStats": [
+      {"season": "2025", "team": "Arkansas", "line": "12 G, 167 car, 1,070 rush yds, 6.4 ypc, 8 TD, 28 rec, 226 rec yds, 1 TD"},
+      {"season": "2024", "team": "New Mexico State", "line": "12 G, 157 car, 725 rush yds, 4.6 ypc, 8 TD, 9 rec, 74 rec yds, 1 TD"},
+      {"season": "2023", "team": "Buffalo", "line": "11 G, 90 car, 362 rush yds, 4.0 ypc, 2 TD, 13 rec, 35 rec yds"},
+      {"season": "2021-23", "team": "Buffalo (career)", "line": "27 G, 263 car, 1,119 rush yds, 10 TD"}
+    ],
+    "draftDayStory": [
+      "The Raiders did not sit and wait on him. Las Vegas sent picks 134 (fourth round) and 208 (sixth round) to Atlanta to move up to No. 122 and take Washington, a modest but telling amount of capital to spend on a complementary back behind Ashton Jeanty. The team's own announcement led with the 4.33 forty and the 1,070-yard Arkansas season, which tells you what the room valued: a big body with real speed to pair with, and spell, its franchise runner.",
+      "The assignment's stated capital — Round 4, Pick 22 — matches the official result exactly, since the 22nd pick of the fourth round is No. 122 overall. He was the second running back drafted in that range and signed with the rest of Las Vegas' 10-man 2026 class in May."
+    ],
+    "whyTheyDraftedHim": [
+      "Klint Kubiak's outside-zone, wide-shouldered running game wants backs who press the front side and can bend a run to the boundary; Washington's 1.51 ten-yard split and long stride fit that geometry.",
+      "The Raiders needed a physical change-of-pace complement to Ashton Jeanty rather than a clone; at 6-1 and 223, Washington is the between-the-tackles hammer in the room.",
+      "The trade up itself is the statement of intent — Las Vegas gave up a sixth-rounder to guarantee it got him rather than gamble 12 picks later.",
+      "Team messaging emphasized the SEC production and the Combine speed score together: a back who ran 6.4 a carry in the SEC and 4.33 in Indianapolis is a rare combination in the fourth round."
+    ],
+    "campNotes": [
+      {"date": "Aug 13", "source": "Adam Hill, Las Vegas Review-Journal", "note": "Washington's preseason debut against Arizona included a tackle-breaking 53-yard run in the second quarter that set up Fernando Mendoza's first preseason touchdown pass. He finished with 63 yards on six carries in the 27-14 loss, with most of the yardage coming after contact, and PFF put him on its preseason Week 1 rookie team of the week."},
+      {"date": "Aug 14", "source": "Klint Kubiak, Raiders press conference (via team YouTube)", "note": "Asked about the rookie the morning after the debut, Kubiak said Washington was the same player in the game he has been in practice and signaled he wants to expand the workload across the final two preseason games."},
+      {"date": "Aug 20", "source": "Las Vegas Review-Journal", "note": "Washington carried nine times for 56 yards in the preseason win over Houston, pushing him to 119 rushing yards on 15 carries through two games and cementing his standing as the No. 2 back with Kirk Cousins sitting and Mendoza starting."},
+      {"date": "Aug 24", "source": "Las Vegas Review-Journal practice report", "note": "With Ashton Jeanty absent, Washington manned the first-team running back post for the full practice, with Dylan Laube getting only occasional reps. Cousins hit him in the flat for a score during the goal-line period. Two practices remain before the Raiders cut to 53."}
+    ],
+    "beatQuotes": [
+      {"quote": "He ended up catching up to me, but I was just thinking about scoring. But really, I've just been grateful because soaking in this moment, not everybody can say that they've put on cleats, put on an NFL jersey, NFL helmet, and ran into an NFL stadium and played.", "attribution": "Mike Washington Jr. to Adam Hill, Las Vegas Review-Journal, Aug 15"},
+      {"quote": "Pleased with what Mike did. Mike did some good things. Just like he practice, I think he was the same player that we've seen in practice. Had a big run, and just got to keep giving him more ops as this preseason goes.", "attribution": "Klint Kubiak, Raiders head coach, via team YouTube, Aug 14"},
+      {"quote": "Very few guys just rise to the occasion and become gamers.", "attribution": "Klint Kubiak, Raiders head coach, after a joint practice, Aug 18"}
+    ],
+    "depthChart": "Washington is the clear No. 2 back in Las Vegas behind Ashton Jeanty, with Dylan Laube third as the receiving specialist and Dare Ogunbowale and Roman Hemby working behind them. Jeanty's late-camp absence pushed Washington into first-team reps in the final week before cuts, and he is a lock for the 53.",
+    "whyHeCouldSucceed": [
+      "He is the only back in the room built to take Jeanty's between-the-tackles work; at 6-1, 223 with 4.33 speed, any Jeanty absence funnels a genuine early-down, goal-line workload straight to him rather than to a 190-pound specialist.",
+      "Kubiak's zone-based scheme has historically produced efficient rushing lines and manufactured touches for the second back, and Washington has already earned first- and second-team reps in camp rather than being buried on the third unit.",
+      "The Raiders spent a trade-up to get him, which is real organizational investment for a Day 3 back and makes him unlikely to be cut or squeezed out by a veteran signing.",
+      "His preseason production was not empty: 119 yards on 15 carries with most of it after contact, plus receiving work in the goal-line period, is exactly the tape that earns a coach's trust for third-down and short-yardage packages."
+    ],
+    "whyHeCouldFail": [
+      "Jeanty is a 2025 top-10 pick and the offense's centerpiece; if he stays healthy, Washington's ceiling is roughly 60-90 touches of low-value work and a handful of standalone spike weeks.",
+      "He turns 24 next July with only one Power Four season on his ledger, so there is no developmental runway; whatever he is now is close to what he will be.",
+      "Pass protection and route-running were never his calling cards, and Dylan Laube already owns the third-down and screen role in this offense.",
+      "The Raiders' offensive line and quarterback situation — Cousins at 38 with Mendoza developing behind him — cap the volume of high-leverage red-zone snaps the backfield will see."
+    ],
+    "fantasyOutlook": [
+      "Project 70-110 touches in 2026 with a handful of usable weeks and one or two genuine flex starts if Jeanty misses time. That is not a startable asset in a 12-team superflex league most weeks, but the contingent value is real and concentrated: an injury to Jeanty makes Washington a top-24 back overnight in a run-first offense. That is the entire investment thesis — you are buying the handcuff on a first-round talent, not a standalone starter.",
+      "In a superflex half-PPR rookie draft, Washington belongs in the back half of the second round; roughly the 15-20 range overall. Paying a pick inside the top 12 for a 23-year-old backup with one Power Four season is how dynasty managers talk themselves into dead roster spots. If he slides to the third round, take him without hesitation, because the athletic profile plus real draft-day investment plus a clean path to the No. 2 job is a lot of upside for that price."
+    ],
+    "comp": "A poor man's Rhamondre Stevenson — big-framed, one-cut, physical through contact, but without the receiving chops to force his way onto the field when the starter is healthy.",
+    "bottomLine": "The best pure Jeanty handcuff on the board and a fine late-second rookie pick; do not talk yourself into him inside the top 12.",
+    "sources": [
+      "https://www.raiders.com/news/raiders-trade-up-to-no-122-select-rb-mike-washington-jr-nfl-2026-draft-arkansas",
+      "https://www.reviewjournal.com/sports/raiders/raiders-rookie-running-back-makes-1st-nfl-game-memorable-3864617/",
+      "https://www.reviewjournal.com/sports/raiders/rookie-handles-running-back-reps-with-ashton-jeanty-out-of-raiders-practice-3868867/",
+      "https://arkansasrazorbacks.com/roster/mike-washington-jr/",
+      "https://heavy.com/sports/nfl/las-vegas-raiders/klint-kubiak-hint-about-mike-washington-jr-raiders-role/",
+      "https://raiderramble.com/2026/08/18/kubiak-rookie-rb-mike-washington-jr-has-done-it-in-practice-and-games/",
+      "https://en.wikipedia.org/wiki/Mike_Washington_Jr."
+    ]
+  },
+  "1019": {
+    "id": 1019,
+    "name": "Chris Bell",
+    "position": "WR",
+    "nflTeam": "MIA",
+    "nflTeamName": "Miami Dolphins",
+    "college": "Louisville",
+    "hometown": "Yazoo City, Mississippi",
+    "classYear": "Senior",
+    "headline": "The Knee Cost Him A First Round; Miami Is Betting It Did Not Cost Him A Career",
+    "subhead": "A 6-2 first-team All-ACC receiver tore his ACL and MCL in November, slid to the third round, and finally shed the red jersey this week.",
+    "draftPick": "Round 3, Pick 30 (No. 94 overall), Miami Dolphins",
+    "measurables": {
+      "height": "6'2\"",
+      "weight": "222 lbs",
+      "age": "22.2",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Bell did not test. He tore the ACL and MCL in his left knee in late November 2025 and had surgery in December, so he attended the Combine for meetings and medicals only and never held a pro day workout. Every athletic number in his file is a projection off tape, which is precisely why a receiver once mocked in the late first round was still available at No. 94."
+    },
+    "collegeCareer": [
+      "Bell arrived at Louisville from tiny Yazoo City, Mississippi, and needed three years to become a featured target. He caught seven balls as a freshman in 2022, 29 for 407 yards in 2023, then broke through in 2024 with 43 receptions for 737 yards and four scores at a hefty 17.1 yards a catch — a vertical, boundary-oriented role in which he was more of a big-play winner than a volume machine. Even then, he was the No. 2 in the pecking order and never topped five catches in a game.",
+      "The 2025 season was the leap. Bell was Louisville's clear alpha, piling up 72 catches for 917 yards and six touchdowns in only 11 games while adding a series of contested-catch highlights that got him named first-team All-ACC and a Biletnikoff Award semifinalist. He won on the outside with size and strength, ran through arm tackles after the catch, and produced a huge game at Hard Rock Stadium — the venue that would become his NFL home — before his season ended against SMU with a torn ACL and MCL.",
+      "The projection is straightforward and appealing: a 6-2, 222-pound X receiver with natural hands, real physicality at the catch point, and enough juice after the catch that he cites Deebo Samuel and DK Metcalf as models. The knock coming out was route-running polish, which Bell himself pushed back on during draft weekend. The knee is the only thing standing between the tape and a real NFL role."
+    ],
+    "collegeStats": [
+      {"season": "2025", "team": "Louisville", "line": "11 G, 72 rec, 917 yds, 12.7 avg, 6 TD (first-team All-ACC, Biletnikoff semifinalist)"},
+      {"season": "2024", "team": "Louisville", "line": "13 G, 43 rec, 737 yds, 17.1 avg, 4 TD, 2 car, 43 rush yds"},
+      {"season": "2023", "team": "Louisville", "line": "14 G, 29 rec, 407 yds, 14.0 avg, 2 TD"},
+      {"season": "2022", "team": "Louisville", "line": "9 G, 7 rec, 105 yds, 15.0 avg"}
+    ],
+    "draftDayStory": [
+      "Bell was a projected late-first-round pick before the injury and instead sat through two full days of the draft, going 94th overall to Miami on Friday night — a fall he admitted stung. GM Jon-Eric Sullivan made the call, and the fit was almost poetic: Bell's biggest college game came at Hard Rock Stadium, and he had been telling anyone who would listen during the pre-draft process that he wanted Miami. The Dolphins were explicit that they would be patient with him rather than rush a receiver whose knee was five months post-surgery on draft weekend.",
+      "The assignment's capital — Round 3, Pick 30 — matches the official result, as the 30th pick of the third round is No. 94 overall. Miami placed him on the active/non-football injury list to open training camp."
+    ],
+    "whyTheyDraftedHim": [
+      "Miami's receiver room is young and undersized; Bell is the only true big-bodied X on the roster and gives Malik Willis a contested-catch and back-shoulder target on the boundary.",
+      "The value calculus was medical, not football — the Dolphins took a first-round grade at a third-round price and accepted a delayed timeline in exchange.",
+      "Jeff Hafley's staff has repeatedly praised his rehab work ethic: \"He worked really hard at it,\" Hafley said in August, crediting Bell and the training staff for the pace of his return.",
+      "He fits the blocking demands the staff puts on the position group — Hafley's blunt \"No block, no rock\" line about his receivers describes exactly the kind of physical perimeter player Bell was at Louisville."
+    ],
+    "campNotes": [
+      {"date": "Aug 11", "source": "Local 10 (WPLG), Dolphins first depth chart", "note": "Miami's initial depth chart ahead of the preseason opener listed Malik Washington and Caleb Douglas as starting receivers with Bell absent from the operational chart while on the active/non-football injury list."},
+      {"date": "Aug 17", "source": "ESPN", "note": "The Dolphins activated Bell from the active/NFI list on Monday, and he practiced for the first time as a pro that afternoon in a red non-contact jersey, taking part in stretching and individual drills but sitting out 11-on-11 work."},
+      {"date": "Aug 18", "source": "Jeff Hafley, Dolphins head coach, and Chris Bell", "note": "Hafley said Bell would not participate in Thursday's joint practice with the Giants or play in Saturday's preseason game, framing the return as step-by-step. Bell said his first practice back left him nervous but that he was getting his feet wet."},
+      {"date": "Aug 24", "source": "South Florida Sun Sentinel", "note": "Bell participated fully in Monday's practice for the first time without the red non-contact jersey, a significant marker in a return from a November ACL and MCL injury."},
+      {"date": "Aug 25", "source": "SB Nation (via Yahoo Sports)", "note": "Reporting on the final week of camp indicated the Dolphins plan to play Bell in the preseason finale, which would be his first football since the injury and keeps a Week 1 appearance against Las Vegas in play."}
+    ],
+    "beatQuotes": [
+      {"quote": "It feels great. I haven't played football in a little minute. So my first practice, I was a little nervous. But I'm just out there getting my feet wet and getting back to the swing of things.", "attribution": "Chris Bell, via Associated Press, Aug 18"},
+      {"quote": "He worked really hard at it, but there's still a lot of steps to go, so let's just see how he progresses. I mean, with any injury, could there be setbacks? Sure. Could it go smoothly? I hope. I think everyone's really excited that he's back. He's got to get in football shape. He's got to get in some timing and rhythm with the quarterbacks, but it's good to have him out there.", "attribution": "Jeff Hafley, Dolphins head coach, via Associated Press, Aug 18"},
+      {"quote": "Man, it was so many emotions. Just seeing me drop down the board, it hurt. But I know I play better with a chip on my shoulder, so God did that for a reason.", "attribution": "Chris Bell, MiamiDolphins.com draft transcript, Apr 25"}
+    ],
+    "depthChart": "Bell is behind Malik Washington and Caleb Douglas on the operational depth chart after missing all of the spring and the first three weeks of camp, with Jalen Tolbert, Tutu Atwell, Terrace Marshall Jr. and Theo Wease Jr. also in the mix for snaps. He has practiced without a red jersey since Aug 24 and is expected to appear in the preseason finale, which puts him in position to work into the perimeter rotation early in the season rather than open it as a starter.",
+    "whyHeCouldSucceed": [
+      "The room he walked into is thin and unproven: Malik Washington and Caleb Douglas as the listed starters is not a barricade, and Bell is the only receiver on the roster with a genuine 6-2, 222-pound X-receiver profile.",
+      "He was a first-round evaluation before the knee. First-team All-ACC and a Biletnikoff semifinal nod at 72-917-6 in 11 games is starter-caliber production, and it was earned as the defense's primary focus.",
+      "The rehab timeline has beaten expectations — off NFI on Aug 17, out of the red jersey by Aug 24, and in line to play in the preseason finale — which suggests a real chance at meaningful September snaps rather than a redshirt year.",
+      "Miami invested third-round capital and public patience in him, so the organization has every incentive to feed him targets once he is cleared rather than bury him behind veterans on short deals."
+    ],
+    "whyHeCouldFail": [
+      "Torn ACL and MCL in the same knee nine months ago. Multi-ligament knees frequently cost receivers their explosion for a full season, and Bell has zero athletic testing on file to reassure anyone about what he has left.",
+      "He missed the entire offseason program, all of spring, and three weeks of camp, so his timing with Malik Willis is nonexistent while his competition has been building rapport since May.",
+      "Miami's quarterback situation is unsettled, which caps the ceiling of any Dolphins receiver's target quality in 2026.",
+      "Route-running polish was the pre-draft knock, and refining it is exactly the kind of work that gets deferred when a player is still managing a knee and chasing football conditioning."
+    ],
+    "fantasyOutlook": [
+      "The 2026 projection should be modest: a slow-build role that starts on the perimeter in two-receiver sets and grows through October, landing somewhere around 35-55 catches for 450-650 yards if the knee holds. He is a stash-and-wait asset for this season, not a contributor you can plan around in September, and any manager rostering him needs a real Week 1-6 alternative at the position.",
+      "In a superflex half-PPR rookie draft, Bell is a mid-to-late second-round pick — roughly 14-20 overall — and one of the better risk-adjusted swings on the board there. You are paying a discounted price for a receiver who carried a first-round grade before the injury, in a room with no entrenched alpha, with organizational patience baked in. If he is available in the third round, that is a clear buy; if a rebuilding manager pushes him into the first, let them."
+    ],
+    "comp": "A slightly less explosive Rashee Rice — a strong, physical catch-point winner with tackle-breaking ability after the catch whose value hinges entirely on how the knee responds.",
+    "bottomLine": "Buy the discount, not the timeline: he is a fine second-round rookie pick for a contender with a bench spot or a rebuilder with patience, but he is unlikely to help you in September.",
+    "sources": [
+      "https://www.miamidolphins.com/news/transcript-wr-chris-bell-nfl-draft-day-2-apr-25",
+      "https://sports.yahoo.com/articles/chris-bell-returns-practice-potentially-181614430.html",
+      "https://africa.espn.com/nfl/story/_/id/49638440/dolphins-activate-chris-bell-paving-way-practice-debut",
+      "https://sports.yahoo.com/articles/dolphins-plan-rookie-receiver-chris-130401258.html",
+      "https://www.local10.com/sports/local/2026/08/11/dolphins-1st-depth-chart-revealed-ahead-of-preseason-game-vs-commanders/",
+      "https://cardinalsportszone.com/2025/11/17/chris-bell-is-named-biletnikoff-award-semi-finalist/"
+    ]
+  },
+  "1030": {
+    "id": 1030,
+    "name": "Nicholas Singleton",
+    "position": "RB",
+    "nflTeam": "TEN",
+    "nflTeamName": "Tennessee Titans",
+    "college": "Penn State",
+    "hometown": "Shillington, Pennsylvania",
+    "classYear": "Senior",
+    "headline": "Penn State's All-Time Scorer Fell To The Fifth Round On A Broken Foot",
+    "subhead": "Nick Singleton left State College with 55 touchdowns and a program record for all-purpose yards, then a Senior Bowl Jones fracture handed Tennessee a bargain.",
+    "draftPick": "Round 5, Pick 25 (No. 165 overall), Tennessee Titans",
+    "measurables": {
+      "height": "6'0\"",
+      "weight": "219 lbs",
+      "age": "22.6",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": "25 reps",
+      "armLength": null,
+      "combineNote": "Singleton attended the Combine but did not run or jump. He fractured the fifth metatarsal in his right foot during Senior Bowl practice in January and had surgery, wiping out his entire testing window; the only number on file is a reported 25 bench reps. Penn State's staff had clocked him in the 4.3s as an underclassman, and his tape shows long-strider top-end speed, but there is no verified 2026 forty time to point to."
+    },
+    "collegeCareer": [
+      "Singleton was a five-star recruit out of Governor Mifflin who hit the ground running: 1,061 yards at 6.8 a carry with 12 rushing touchdowns as a true freshman in 2022, plus a kick-return touchdown among 349 return yards. He was the explosive half of Penn State's long-running two-man backfield with Kaytron Allen, and the split defined his career. His 2023 dipped to 752 yards on 171 carries as the offense sputtered, though he compensated by catching 36 balls, the first sign that his receiving value was real.",
+      "The 2024 season was his best: 1,099 rushing yards at 6.4 a carry with 12 touchdowns, 41 receptions for 375 yards and five more scores, and a starring role in a Penn State team that reached the College Football Playoff semifinals. He ran with a genuinely rare gear for a 219-pound back, hitting home-run angles once he cleared the second level, and he became a legitimate receiving threat out of the backfield rather than a check-down option.",
+      "His senior year was a strange coda. Penn State's offense collapsed, and Singleton's rushing total fell to 549 yards on 123 carries — the lowest of his career — even as he scored a career-high 13 rushing touchdowns. He still left as the program's all-time leading scorer with 55 touchdowns, holding the Penn State record of 5,586 all-purpose yards, with 3,461 rushing yards, 987 receiving yards and 1,138 kick-return yards. Then the Senior Bowl foot fracture cost him a testing spring and, ultimately, three rounds of draft capital."
+    ],
+    "collegeStats": [
+      {"season": "2025", "team": "Penn State", "line": "12 G, 123 car, 549 rush yds, 4.5 ypc, 13 TD, 24 rec, 219 rec yds, 1 TD"},
+      {"season": "2024", "team": "Penn State", "line": "15 G, 172 car, 1,099 rush yds, 6.4 ypc, 12 TD, 41 rec, 375 rec yds, 5 TD"},
+      {"season": "2023", "team": "Penn State", "line": "13 G, 171 car, 752 rush yds, 4.4 ypc, 8 TD, 36 rec, 308 rec yds, 2 TD"},
+      {"season": "2022", "team": "Penn State", "line": "13 G, 156 car, 1,061 rush yds, 6.8 ypc, 12 TD, 11 rec, 85 rec yds, 1 TD, 14 KR, 349 yds, 1 TD"}
+    ],
+    "draftDayStory": [
+      "Singleton was a projected Day 2 pick before the January foot injury and instead waited until the 165th selection, when Tennessee took him in the fifth round. He had brought draft caps for all 32 teams to his watch party. Tennessee's front office got a four-year Big Ten producer with a program touchdown record at a price normally reserved for special-teams projects, and the value was obvious enough that Titans coach Robert Saleh's staff talked about him as a rotation candidate rather than a developmental body.",
+      "One correction worth noting: the assignment lists his capital as Round 5, Pick 25, which is exactly No. 165 overall — the official pick. Some fantasy databases show the round-relative number without the overall, so read that as the 25th pick of the fifth round rather than a discrepancy."
+    ],
+    "whyTheyDraftedHim": [
+      "Tony Pollard and Tyjae Spears are both entering contract years, so Tennessee needed a young back with starter traits on a cheap four-year deal rather than another camp body.",
+      "Running backs coach Randy Jordan singled out the vision and the burst: \"he has the ability to find green grass. He's a patient runner, and it's almost like he has a rocket on his back when he hits it.\"",
+      "Jordan also praised his professionalism unprompted, comparing his seriousness to Adrian Peterson's — the kind of endorsement that gets a fifth-rounder real reps.",
+      "He offers four years of Big Ten pass-catching production (112 career receptions) plus a kick-return background, which gives him two paths onto the field while he waits behind the veterans."
+    ],
+    "campNotes": [
+      {"date": "Aug 12", "source": "Jim Wyatt, TennesseeTitans.com", "note": "Singleton broke through the hole and raced toward the end zone in back-to-back Nashville practices before the team traveled to Santa Clara for joint work with the 49ers, with officials whistling him down because no tackling is allowed."},
+      {"date": "Aug 13", "source": "CBS Sports / Titans box score", "note": "Singleton took a team-high eight carries for 31 yards in the preseason opener against San Francisco, the first football he had played since the Senior Bowl injury."},
+      {"date": "Aug 17", "source": "FantasyPros / Titans practice report", "note": "Singleton was not seen practicing Monday, the start of a stretch of missed work tied to the same right foot and ankle area that cost him his testing spring."},
+      {"date": "Aug 23", "source": "Titans box score, Seahawks at Titans", "note": "Singleton did not appear in the preseason game against Seattle, leaving him with just eight carries of preseason work heading into the final week of roster decisions."},
+      {"date": "Aug 24", "source": "Robert Saleh, Titans head coach, Zoom call", "note": "Saleh said he was hopeful Singleton would be back at practice on Tuesday, the first concrete timeline the team offered on his return."}
+    ],
+    "beatQuotes": [
+      {"quote": "In terms of what I've seen athletically, he has the ability to find green grass. He's a patient runner, and it's almost like he has a rocket on his back when he hits it. Downhill, physical presence. I am excited to see what he can do when you actually have to tackle him.", "attribution": "Randy Jordan, Titans running backs coach, TennesseeTitans.com, Aug 12"},
+      {"quote": "He's probably one of the most serious guys I've coached, beside Adrian Peterson. He's all about going to work. … I think he has the potential to be good, and he's putting in the work to be good.", "attribution": "Randy Jordan, Titans running backs coach, TennesseeTitans.com, Aug 12"},
+      {"quote": "I feel like I am a really physical back, a speed back, too.", "attribution": "Nick Singleton, TennesseeTitans.com draft Zoom call, Apr 25"}
+    ],
+    "depthChart": "Singleton is third on Tennessee's running back depth chart behind Tony Pollard and Tyjae Spears, and the missed practices in the third week of August plus his absence from the Aug 23 preseason game slowed a push that had been going well. He is not a roster-bubble player — the fifth-round capital and the coaching-staff praise secure his spot — but he needs Pollard or Spears to miss time to matter in 2026.",
+    "whyHeCouldSucceed": [
+      "Both backs ahead of him are in contract years and neither is a bell-cow; Pollard has never sustained a 300-touch season and Spears' availability has been an annual issue, so a mid-season opening is more likely than not.",
+      "The talent is genuinely better than the draft slot: an all-time Penn State scorer with 55 touchdowns and two 1,000-yard seasons at better than 6.4 a carry does not usually go 165th.",
+      "He carries three-down tools — 112 career receptions and a kick-return background — so he does not need a specific down-and-distance package carved out for him to see the field.",
+      "His own coaching staff is publicly comparing his work habits to Adrian Peterson's, and that kind of internal reputation is how a fifth-rounder converts an injury to the man ahead of him into a permanent role."
+    ],
+    "whyHeCouldFail": [
+      "The foot is the story. A Jones fracture cost him his testing spring, and the mid-August practice absences and missed preseason game suggest the area is still not fully behind him.",
+      "His senior tape is the worst of his career: 4.5 a carry on 123 attempts behind a broken offense, which is why evaluators questioned whether the freshman-year explosion was still there.",
+      "He shared a backfield for four straight years and has never carried a lead-back workload, so the projection to 200-plus touches is unproven in either college or the pros.",
+      "Tennessee's offense is still being rebuilt around a young quarterback, and a third-string back in a run game without an established identity is a long way from usable fantasy volume."
+    ],
+    "fantasyOutlook": [
+      "The realistic 2026 range is 50-90 touches in a rotational role, with the caveat that a Pollard or Spears absence could vault him into a 15-touch-per-game workload for a stretch. He is not a weekly asset in September, and the practice absences make a slow start likely, but he is exactly the type of back who ends the season on fantasy rosters as a flex play after a mid-season injury upstream.",
+      "In a superflex half-PPR rookie draft he is a solid second-round selection, roughly 16-22 overall, and among the better value plays in that tier because you are buying an early-Day-2 talent at a Day 3 price. The 2027 outlook is where the real value lives: with both veterans potentially gone, Singleton could enter next summer as the favorite for the lead job. Draft him as a 2027 asset who might pay a 2026 dividend, not the reverse."
+    ],
+    "comp": "A slightly bigger Tyjae Spears with better long speed — a patient, one-cut runner with home-run gears and legitimate receiving chops whose body is the open question.",
+    "bottomLine": "Best-value back on this board: take him in the second round and stash him for a 2027 backfield that could easily be his.",
+    "sources": [
+      "https://www.tennesseetitans.com/news/titans-select-penn-state-rb-nick-singleton-in-the-fifth-round-of-saturday-s-nfl-draft",
+      "https://www.tennesseetitans.com/news/titans-rb-nick-singleton-showing-the-ability-to-find-green-grass",
+      "https://www.tennesseetitans.com/news/hot-topics-from-titans-hc-robert-saleh-s-zoom-call-on-monday",
+      "https://gopsusports.com/sports/football/roster/season/2025/player/nicholas-singleton",
+      "https://www.cbssports.com/fantasy/football/news/titans-nicholas-singleton-team-high-carry-total-thursday/",
+      "https://www.fantasypros.com/nfl/news/602834/nicholas-singleton-not-seen-practicing-monday.php",
+      "https://247sports.com/college/penn-state/article/penn-state-running-back-nick-singleton-updates-injury-recovery-nfl-draft-278178470/"
+    ]
+  },
+  "1059": {
+    "id": 1059,
+    "name": "Carson Beck",
+    "position": "QB",
+    "nflTeam": "ARI",
+    "nflTeamName": "Arizona Cardinals",
+    "college": "Miami",
+    "hometown": "Jacksonville, Florida",
+    "classYear": "Sixth-Year Senior",
+    "headline": "Forty-Three Starts, Five Playoff Games And One Last Interception: Arizona Bought The Experience",
+    "subhead": "The Cardinals opened the third round on a 24-year-old quarterback who took Miami to a national title game, then watched a rib injury cost him most of his first August.",
+    "draftPick": "Round 3, Pick 1 (No. 65 overall), Arizona Cardinals",
+    "measurables": {
+      "height": "6'4 3/4\"",
+      "weight": "233 lbs",
+      "age": "24.8",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "30 5/8\"",
+      "combineNote": "Beck measured in at 6-4 3/4 and 233 pounds with 10-inch hands, 30 5/8-inch arms and a 75-inch wingspan, then stuck to throwing drills rather than athletic testing at both the Combine and his Miami pro day. There is no forty, jump or agility number on file — a non-issue for a pocket quarterback whose evaluation was always about arm strength, pocket toughness and processing."
+    },
+    "collegeCareer": [
+      "Beck waited three years behind Stetson Bennett and Brock Vandagriff at Georgia before finally getting the job in 2023, and he was excellent immediately: 302-of-417 for 3,941 yards with 24 touchdowns and six interceptions across 14 games at 9.5 yards an attempt, the most efficient season of his career. He was a big, still-footed thrower who lived in rhythm out of Georgia's play-action game and rarely put the ball in danger.",
+      "The 2024 season went sideways. Beck threw 28 touchdowns and 3,485 yards but also 12 interceptions on 448 attempts, his ball placement wobbled under pressure, and the year ended when he tore the UCL in his right elbow late in the SEC championship game, costing him the Playoff. He transferred to Miami and the start there was rocky — publicly documented enough that Cardinals coach Mike LaFleur brought it up unprompted on draft weekend as evidence of how Beck handled adversity.",
+      "He rebuilt the résumé in 2025. Beck completed 338 of 468 passes for 3,813 yards with 30 touchdowns and 12 interceptions, quarterbacked Miami through four Playoff games, and led the Hurricanes to the national championship game against Indiana, where he went 19-of-32 for 232 yards with a touchdown and the interception that ended a 13-3 season. He finished with 43 career starts, six years of college football, five Playoff appearances and 20 games against AP Top 25 opponents — winning 16 of them."
+    ],
+    "collegeStats": [
+      {"season": "2025", "team": "Miami", "line": "12 G, 338-468, 3,813 pass yds, 30 TD, 12 INT; 62 car, 43 rush yds, 2 TD"},
+      {"season": "2024", "team": "Georgia", "line": "13 G, 290-448, 3,485 pass yds, 28 TD, 12 INT (season ended by right elbow UCL injury)"},
+      {"season": "2023", "team": "Georgia", "line": "14 G, 302-417, 3,941 pass yds, 9.5 ypa, 24 TD, 6 INT"},
+      {"season": "2026 CFP title game", "team": "Miami", "line": "19-32, 232 yds, 1 TD, 1 INT in a 27-21 loss to Indiana"}
+    ],
+    "draftDayStory": [
+      "Arizona opened the third round with Beck at No. 65 — the first pick of Day 3's opening round of business — after GM Monti Ossenfort said adding a quarterback was not a stated priority but that the Cardinals were not willing to let him slide further. He joined a room with Jacoby Brissett and Gardner Minshew II, which is to say he joined a developmental holding pattern rather than a competition. Ossenfort's case was physical and situational: \"He's big, he's tough, he's strong. He stands strong in the pocket, not afraid to take a hit in the pocket. He's got good arm strength, and he can drive the ball down the field.\"",
+      "The assignment's stated capital — Round 3, Pick 1 — is exactly right: No. 65 overall is the first selection of the third round. LaFleur, in his first year as Arizona's head coach, said the staff liked that Beck \"looks the part\" but was careful to add that it was not the end-all of the evaluation."
+    ],
+    "whyTheyDraftedHim": [
+      "Experience was the explicit thesis. Ossenfort repeatedly cited the 43 starts, six college seasons and five Playoff games as evidence Beck would not be a \"deer in the headlights\" in hostile NFL environments.",
+      "The frame and pocket toughness fit a LaFleur offense that asks a quarterback to hang in and drive the ball down the field rather than escape the rush.",
+      "LaFleur singled out how Beck responded to adversity — the 2024 elbow injury and a rocky start at Miami — as a determining factor in the evaluation.",
+      "Value: a starter-caliber college résumé available at the top of the third round with two veterans already in the room meant Arizona could develop him with no obligation to play him."
+    ],
+    "campNotes": [
+      {"date": "Aug 6", "source": "AZCardinals.com, Hall of Fame Game", "note": "Beck started the Hall of Fame Game against Carolina and was the story of a 33-30 loss: 15-of-19 for 188 yards with a touchdown and a 125.4 rating, including two deep completions to Jalen Brooks and an end-zone fade to Simi Fehoko. He also suffered a rib injury on a third-down scramble on the opening drive."},
+      {"date": "Aug 15", "source": "Heavy.com / Cardinals injury reporting", "note": "The rib injury from Canton kept Beck out of Arizona's second preseason game, ending a stretch in which he had been the most discussed player in camp."},
+      {"date": "Aug 22", "source": "Cardinals preseason reporting", "note": "Beck sat out a second consecutive preseason game against Dallas, leaving him with only the Hall of Fame Game's 19 attempts of NFL work all August."},
+      {"date": "Aug 24", "source": "Mike LaFleur, Cardinals head coach", "note": "LaFleur said Beck had a good throwing session but that his return to full participation was still to be determined, adding that missing practice and game time makes it harder for a rookie quarterback to develop."}
+    ],
+    "beatQuotes": [
+      {"quote": "He's big, he's tough, he's strong. He stands strong in the pocket, not afraid to take a hit in the pocket. He's got good arm strength, and he can drive the ball down the field.", "attribution": "Monti Ossenfort, Cardinals GM, AZCardinals.com, Apr 24"},
+      {"quote": "I think when you see a player who has had big-game experience, when you make this transition to the NFL, there's more hope that it's not going to be too big for them, right? So, it's not going to be a deer in the headlights.", "attribution": "Monti Ossenfort, Cardinals GM, ESPN, Apr 28"},
+      {"quote": "I mean, he looks the part, right? That doesn't mean that that's the end-all be-all by any means.", "attribution": "Mike LaFleur, Cardinals head coach, ESPN, Apr 28"},
+      {"quote": "Experience matters and obviously having a ton of experience in college and having played a ton of games, you see how experience continues to teach you and continues to better you.", "attribution": "Carson Beck, AZCardinals.com, Apr 24"}
+    ],
+    "depthChart": "Beck is the third quarterback in Arizona behind Jacoby Brissett and Gardner Minshew II, and the August rib injury cost him the two preseason games that were his best chance to close that gap. He will make the roster and is the only quarterback in the building with a long-term claim on the job, but barring injuries he is unlikely to take a meaningful snap in 2026.",
+    "whyHeCouldSucceed": [
+      "Neither man ahead of him is a franchise answer. Brissett and Minshew are career bridge quarterbacks on short-term deals, so the 2027 job is Beck's to lose rather than someone else's to keep.",
+      "The experience profile is real: 43 starts, six seasons, five Playoff games and a 16-4 record against ranked opponents mean he has seen more high-leverage football than most rookie quarterbacks ever will.",
+      "The Hall of Fame Game showed the traits translating — 15-of-19 for 188 yards and a 125.4 rating with two deep completions in his first professional action.",
+      "Arizona's own front office framed the pick around toughness and pocket poise, which are the traits that survive a scheme change; he will not need to be schemed open to function."
+    ],
+    "whyHeCouldFail": [
+      "He turns 25 this season. There is no age-curve upside here — if he does not win a job in 2027, he never will, and dynasty managers will have paid two years of roster cost for nothing.",
+      "The interception rate is the scouting knock: 24 picks over his last two seasons, including the one that ended Miami's title game, and it is not a small-sample fluke.",
+      "The rib injury cost him the entire preseason after Canton, and LaFleur said plainly that missing practice and games makes development harder.",
+      "He is not a runner — 43 rushing yards on 62 attempts as a senior — so he offers none of the rushing floor that keeps modern superflex quarterbacks fantasy-viable in bad situations."
+    ],
+    "fantasyOutlook": [
+      "Beck is a zero for 2026. He is QB3 in Arizona and would need two injuries to start a game, so plan on him occupying a bench spot all season and providing nothing. The value is entirely a 2027 bet: if he wins the job next summer in an offense with a first-year head coach who already publicly likes him, a low-end superflex QB2 with spike weeks is a reasonable outcome, and quarterbacks who start in superflex leagues carry meaningful trade value regardless of efficiency.",
+      "In a superflex half-PPR rookie draft that makes him a late-second to early-third-round pick, roughly 20-28 overall. In one-quarterback leagues he is undraftable outside the very late rounds. The honest read: he is the fourth or fifth quarterback most managers should want in this class, and he only makes sense for a rebuilding team with roster space to sit on him for a year and see whether Arizona hands him the keys."
+    ],
+    "comp": "A taller Kirk Cousins — big-bodied, accurate in rhythm, unbothered by pressure in the pocket, and prone to the one bad decision that decides a game.",
+    "bottomLine": "A pure 2027 lottery ticket in a room he will eventually inherit; fine at the end of the second round in superflex, a waste of a pick anywhere earlier.",
+    "sources": [
+      "https://www.azcardinals.com/news/carson-beck-selected-by-cardinals-in-third-round",
+      "https://www.espn.com/nfl/story/_/id/48611192/arizona-cardinals-carson-beck-2026-outlook",
+      "https://www.azcardinals.com/news/for-starters-carson-beck-impressive-in-nfl-preseason-debut",
+      "https://miamihurricanes.com/news/2026/01/19/canes-fall-to-indiana-in-cfp-national-championship-game/",
+      "https://cfbstats.com/2023/player/257/1111386/index.html",
+      "https://bleacherreport.com/articles/25401776-carson-beck-2026-nfl-combine-measurements-highlights-and-reaction",
+      "https://heavy.com/sports/nfl/arizona-cardinals/carson-beck-rib-injury-update-cowboys/"
+    ]
+  },
+  "1014": {
+    "id": 1014,
+    "name": "Germie Bernard",
+    "position": "WR",
+    "nflTeam": "PIT",
+    "nflTeamName": "Pittsburgh Steelers",
+    "college": "Alabama",
+    "hometown": "Las Vegas, Nevada",
+    "classYear": "Senior",
+    "headline": "A Practice Player And A Game Player: Bernard Woke Up Under The Lights",
+    "subhead": "The Steelers traded up in the second round for a polished Alabama receiver whose quiet camp gave way to a 51-yard preseason debut — and a Rodgers-sized learning curve.",
+    "draftPick": "Round 2, Pick 15 (No. 47 overall), Pittsburgh Steelers",
+    "measurables": {
+      "height": "6'1\"",
+      "weight": "206 lbs",
+      "age": "22.7",
+      "forty": "4.48",
+      "tenSplit": "1.52",
+      "vertical": "32 1/2\"",
+      "broad": "10'5\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Bernard tested as a good-not-great athlete at the 2026 Combine: 4.48 in the forty with a 1.52 ten-yard split at 6-1, 206, plus a 32 1/2-inch vertical and a 125-inch broad jump. He skipped the agility drills. Nothing in the workout suggests a separator on pure speed, which is why the evaluation always came back to his hands, his short-area suddenness and how quickly he understands the job."
+    },
+    "collegeCareer": [
+      "Bernard's path ran through three programs. A Gatorade Player of the Year in Nevada out of Liberty High School in Henderson, he caught seven passes as a Michigan State freshman in 2022, transferred to Washington and became a useful third option on the 2023 national-runner-up team with 34 catches for 419 yards, then followed Kalen DeBoer to Alabama. Along the way he was used as a jet-sweep and hand-off threat, taking 13 carries in 2023 and doing enough with the ball in his hands to hint at what Pittsburgh eventually paid for.",
+      "His first Alabama season was solid but unspectacular: 50 receptions for 794 yards and two touchdowns in 2024, with the touchdown production lagging the yardage. The 2025 breakout put him on draft boards. Bernard caught 64 balls for 862 yards and seven touchdowns, tied for fifth in the SEC in receiving scores, added 18 carries for 101 yards and two more touchdowns, and was named a Biletnikoff Award semifinalist as Alabama's clear No. 1 target.",
+      "The scouting profile is a technician rather than an athlete. He gets his feet in the ground quickly, he is genuinely sudden in short areas, he has natural hands, and he understands leverage and route detail at a level unusual for a rookie. What he does not have is a gear that scares NFL corners deep, which is why he was a second-round pick rather than a first."
+    ],
+    "collegeStats": [
+      {"season": "2025", "team": "Alabama", "line": "64 rec, 862 yds, 13.5 avg, 7 TD; 18 car, 101 rush yds, 2 TD (Biletnikoff semifinalist)"},
+      {"season": "2024", "team": "Alabama", "line": "50 rec, 794 yds, 15.9 avg, 2 TD; 4 car, 37 rush yds, 1 TD"},
+      {"season": "2023", "team": "Washington", "line": "34 rec, 419 yds, 12.3 avg, 2 TD; 13 car, 43 rush yds, 2 TD"},
+      {"season": "2022", "team": "Michigan State", "line": "7 rec, 128 yds, 18.3 avg, 2 TD; 1 car, 3 rush yds"}
+    ],
+    "draftDayStory": [
+      "Pittsburgh traded up in the second round to take Bernard at No. 47, a move Steelers Depot read as much a signal of the team's need at receiver as of its appetite for the player — though the staff clearly wanted this specific one. He walked into a room fronted by DK Metcalf and newly added Michael Pittman Jr. with third-year Roman Wilson holding the slot, an unusual amount of established competition for a Day 2 receiver.",
+      "The assignment's capital — Round 2, Pick 15 — lines up with the official result, since the 15th pick of the second round is No. 47 overall. He is the highest-drafted player in this batch and, along with the trade-up cost, carries the most organizational investment."
+    ],
+    "whyTheyDraftedHim": [
+      "The Steelers needed a receiver who could contribute immediately in a Mike McCarthy offense with Aaron Rodgers, and Bernard's route detail and understanding of the job made him the most plug-and-play option in his range.",
+      "Rodgers himself identified the traits that got him drafted: \"he has a lot of great physical traits. He can get his feet in the ground quickly. He's very sudden. He's got natural hands.\"",
+      "Rodgers also praised his approach directly — \"his practice habits are phenomenal\" — which matters enormously in an offense built on pre-snap communication and hand signals.",
+      "He offers positional flexibility, having played inside and out and taken jet-sweep carries at both Washington and Alabama, giving Pittsburgh a way to manufacture touches while he develops."
+    ],
+    "campNotes": [
+      {"date": "Aug 5", "source": "Steelers.com, initial 2026 depth chart", "note": "Pittsburgh's first depth chart of the year listed DK Metcalf and Michael Pittman Jr. as the outside starters with Roman Wilson in the slot, placing Bernard behind Pittman rather than in a starting role."},
+      {"date": "Aug 11", "source": "Josh Carney, Steelers Depot", "note": "With Metcalf and Pittman managing ailments, Bernard got an extended run of first-team reps with Rodgers for the first time in camp, after spending the early weeks primarily with the second unit."},
+      {"date": "Aug 13", "source": "Steelers Depot film room", "note": "Bernard's preseason debut against Green Bay produced four catches on five targets for 51 yards in 28 snaps, highlighted by a 25-yard catch-and-run down the right sideline in which he evaded multiple tacklers."},
+      {"date": "Aug 15", "source": "Matthew Marczi, Steelers Depot / Mark Kaboly on 93.7 The Fan", "note": "Kaboly noted the contrast between Bernard's muted training camp and his preseason debut, framing the WR3 competition with Roman Wilson as one practice player against one game player."},
+      {"date": "Aug 22", "source": "Steelers preseason reporting", "note": "Bernard played 29 snaps in the second preseason game but drew only one target and did not record a catch even with Metcalf and Pittman out, and subsequent depth-chart reporting listed him fourth behind Metcalf, Pittman and Wilson."}
+    ],
+    "beatQuotes": [
+      {"quote": "Germie just needs to learn the offense inside and out. When he does that, he has a lot of great physical traits. He can get his feet in the ground quickly. He's very sudden. He's got natural hands. He's a great kid. I think he's got a really bright future because his attitude, his approach. His practice habits are phenomenal. We've just got to get him where he feels super confident in the playbook and plays as fast as he can.", "attribution": "Aaron Rodgers, Steelers quarterback, via TribLive, Aug 13"},
+      {"quote": "Yes he did [look the part], and that's not what he looked like in camp. It's ironic that the two battling for the position are like that. One's a practice player and one's a game player. But he did look good.", "attribution": "Mark Kaboly, 93.7 The Fan, via Steelers Depot, Aug 15"},
+      {"quote": "It's a great opportunity to get in there with A-Rod, learn everything about him, learn his signals and everything. He's teaching me a lot. I'm still asking questions to DK and Pitt.", "attribution": "Germie Bernard, via Steelers Depot, Aug 11"}
+    ],
+    "depthChart": "Bernard is the fourth receiver in Pittsburgh, behind DK Metcalf, Michael Pittman Jr. and Roman Wilson, after a quiet camp and a zero-catch second preseason game on 29 snaps. He is playing real snaps and the second-round capital guarantees the roster spot, but Wilson currently holds the WR3 job and Bernard's path in 2026 runs through injuries or a mid-season role change.",
+    "whyHeCouldSucceed": [
+      "He has the best draft capital in this batch, and Pittsburgh traded up to get him — organizations do not spend a trade-up on a second-rounder and then leave him on the bench for two years.",
+      "The preseason opener showed the exact skill Pittsburgh paid for: four catches on five targets for 51 yards in 28 snaps, including a 25-yard catch-and-run that broke multiple tackles.",
+      "Metcalf is 29 and Pittman is on the wrong side of his prime; the No. 2 job in this offense is plausibly Bernard's in 2027 with no additional competition needed.",
+      "Rodgers is publicly invested in his development and singled out his practice habits, which is the single best predictor of a rookie receiver earning pre-snap trust in this specific offense."
+    ],
+    "whyHeCouldFail": [
+      "The room is genuinely crowded. Metcalf and Pittman will absorb the target share, and Roman Wilson has beaten him out in camp practice by practice, leaving Bernard fighting for the leftovers of a run-leaning offense.",
+      "Rodgers' pre-snap demands have historically buried young receivers — Wilson himself was a healthy scratch to end last season — and Bernard's own coach and quarterback have flagged the playbook as the gating factor.",
+      "The 4.48 forty and 32 1/2-inch vertical are ordinary; without a speed threat to lean on, he has to win with detail, and rookie detail is inconsistent.",
+      "The Aug 22 game is the warning sign: 29 snaps, one target, no catches with both starters out is not the usage profile of a receiver about to break through."
+    ],
+    "fantasyOutlook": [
+      "For 2026, project 40-55 catches for 500-650 yards and three to five touchdowns as the fourth option in a Rodgers offense, with the ceiling gated by Wilson's hold on the WR3 role. He is a weekly WR5 in half-PPR terms and a bye-week flex at best, but he is one Metcalf or Pittman absence away from a run of legitimate WR3 weeks, and the target quality with Rodgers throwing is better than most rookie receivers get.",
+      "In a superflex half-PPR rookie draft, Bernard should go in the middle of the second round, roughly 13-18 overall, and he is arguably the most defensible pick in this tier because he pairs the best draft capital with a clean 2027 path to the No. 2 job. FantasyPros' consensus already ranks him 15th in this class, ahead of where KTC values him, and that gap is the buying opportunity. Do not expect much this year; do expect him to be worth more next August."
+    ],
+    "comp": "A more physical Jayden Reed — a sudden, natural-hands technician with jet-sweep utility who wins on detail rather than speed and needs a Rodgers-style quarterback to trust him.",
+    "bottomLine": "The safest asset in this batch: middle-of-the-second-round price, best draft capital, and a plausible 2027 WR2 role behind an aging pair of veterans.",
+    "sources": [
+      "https://www.steelers.com/draft/2026-draft-pick-02",
+      "https://www.steelers.com/news/steelers-release-initial-2026-depth-chart",
+      "https://steelersdepot.com/2026/08/not-what-he-looked-like-in-camp-germie-bernard-a-different-player-under-the-lights-kaboly-says/",
+      "https://steelersdepot.com/2026/08/hes-teaching-me-a-lot-germie-bernard-learning-plenty-from-aaron-rodgers/",
+      "https://steelersdepot.com/2026/08/film-room-germie-bernard-shows-well-rounded-game-in-preseason-debut/",
+      "https://triblive.com/sports/steelers-qb-aaron-rodgers-advice-to-rookie-wr-germie-bernard-learn-the-offense-inside-and-out/",
+      "https://rolltide.com/sports/football/roster/germie-bernard/13766",
+      "https://en.wikipedia.org/wiki/Germie_Bernard"
+    ]
+  }
+}
