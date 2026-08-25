@@ -1,0 +1,434 @@
+{
+  "1028": {
+    "id": 1028,
+    "name": "Zavion Thomas",
+    "position": "WR",
+    "nflTeam": "CHI",
+    "nflTeamName": "Chicago Bears",
+    "college": "LSU",
+    "hometown": "Marrero, Louisiana",
+    "classYear": "Senior",
+    "headline": "Bears Bought The Fastest Man In The Draft And A Return Game",
+    "subhead": "Chicago spent a third-round pick on a 4.28 gadget receiver and kick returner who has to prove he is more than a spark.",
+    "draftPick": "Round 3, Pick 25 (No. 89 overall), Chicago Bears",
+    "measurables": {
+      "height": "5'10\"",
+      "weight": "190 lbs",
+      "age": "22.5",
+      "forty": "4.28",
+      "tenSplit": "1.52",
+      "vertical": "36\"",
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": "16 reps",
+      "armLength": "30 1/2\"",
+      "combineNote": "Thomas ran 4.28 at the 2026 combine, one of the fastest times in the class, and backed it with a 1.52 ten-yard split. He skipped the jumps and agility drills in Indianapolis outside of the vertical, so his change-of-direction testing is largely unrecorded."
+    },
+    "collegeCareer": [
+      "Thomas arrived at Mississippi State as a track-fast slot who was used more as a returner than a receiver. He barely registered on offense as a freshman in 2022, then broke through in 2023 with 40 catches for 503 yards while doubling as the Bulldogs' primary kick and punt returner. The pattern that would follow him to the NFL was already set: short, manufactured touches, screens, reverses, and a return job that produced more yardage than his receiving line.",
+      "He transferred to LSU for 2024 and spent his first season in Baton Rouge as a complementary piece behind a deep veteran receiver room, catching 23 balls while leading the SEC in kick return yardage. His speed showed up in flashes on gadget looks, but LSU rarely asked him to win a contested rep on the perimeter, and drops in traffic became a talking point among evaluators.",
+      "The 2025 season was his best and most conventional. Thomas started roughly half of LSU's games, caught 41 passes for 488 yards and four touchdowns, and stayed in the return rotation. He finished his four-year career with more return yardage (1,536) than receiving yardage (1,213), an unusual split for a third-round pick and the central question in his evaluation: is he a receiver who returns kicks, or a returner who plays receiver?"
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Mississippi State", "line": "11 G, 2 rec, 4 rec yds, 0 TD, primary kick/punt returner"},
+      {"season": "2023", "team": "Mississippi State", "line": "11 G, 40 rec, 503 rec yds, 12.6 ypc, 1 TD, plus return duties"},
+      {"season": "2024", "team": "LSU", "line": "13 G, 23 rec, 218 rec yds, 2 TD, led SEC in kick return yards (633)"},
+      {"season": "2025", "team": "LSU", "line": "13 G, 41 rec, 488 rec yds, 11.9 ypc, 4 TD, plus kick/punt returns"}
+    ],
+    "draftDayStory": [
+      "Chicago took Thomas at No. 89 overall, the 25th pick of the third round, matching the draft capital on file. The pick landed in a receiver room that lost D.J. Moore to Buffalo and Olamide Zaccheaus to Atlanta this offseason, leaving Rome Odunze and Luther Burden III as the established pieces and free-agent signing Kalif Raymond plus 2025 UDFA Jahdae Walker as the fallback options for the No. 3 job.",
+      "The honest read on the price is that a chunk of it was paid for special teams. Thomas was the class's premier return threat and one of its two or three fastest players, and Chicago's return game had been an afterthought. The Bears did not draft him to be their third receiver on day one; they drafted him to own the return job immediately and to force his way into gadget touches while the offensive role develops."
+    ],
+    "whyTheyDraftedHim": [
+      "Elite verified speed. A 4.28 forty with a 1.52 ten-yard split is a real weapon in an offense that wants to threaten the deep third and manufacture explosive plays.",
+      "An immediate special-teams answer. Thomas was the best returner in the class by volume and production, with 1,536 career return yards across Mississippi State and LSU.",
+      "Positional flexibility. He played mostly on the perimeter at LSU despite his size, and Chicago's staff has talked about getting him easy touches on jet sweeps, screens, and reverses rather than asking him to be a route technician right away.",
+      "Vacated volume. With D.J. Moore in Buffalo and Zaccheaus in Atlanta, the Bears needed bodies behind Odunze and Burden and had no settled No. 3.",
+      "SEC pedigree against NFL corners. Four seasons at Mississippi State and LSU meant the staff had a large sample of him against pro-caliber coverage."
+    ],
+    "campNotes": [
+      {"date": "Jul 23", "source": "Courtney Cronin, ESPN.com (via RotoWire)", "note": "Cronin reported Thomas could emerge as a valuable gadget player as a rookie. The read then was that he would not have an immediate route-running role behind Odunze, Burden, and Raymond, but that Chicago planned to get him easy touches to use his speed and would line him up as the returner."},
+      {"date": "Aug 10", "source": "ESPN", "note": "Thomas was dealing with soreness in a knee he injured during 7-on-7 work on Sunday, Aug. 9. A source told ESPN it was not considered serious and he was not expected to miss much time. The same report confirmed Luther Burden III was expected to miss the entire preseason, which opened up first-team reps."},
+      {"date": "Aug 18", "source": "Brad Biggs, Chicago Tribune (via RotoWire)", "note": "Thomas was a full participant in Tuesday's practice after roughly a week away with knee soreness. He returned to a competition with Kalif Raymond and Jahdae Walker for first-team receiver work, with the Aug. 22 preseason game against Cincinnati framed as his next audition."},
+      {"date": "Aug 22", "source": "The Madness Times desk", "note": "Thomas played in the Bears' preseason game at Cincinnati after his return from the knee issue, but no detailed individual snap or target accounting from that game has surfaced in the reporting available here. Treat his preseason receiving production as unconfirmed rather than assuming a breakout."}
+    ],
+    "beatQuotes": [
+      {"quote": "Thomas could emerge as a valuable gadget player on offense for the Bears during his rookie season.", "attribution": "Courtney Cronin, ESPN.com, Jul 23"},
+      {"quote": "Thomas (knee) was a full participant in Tuesday's practice.", "attribution": "Brad Biggs, Chicago Tribune, Aug 18"},
+      {"quote": "Receiver Zavion Thomas is dealing with soreness in one of his knees that he injured during 7-on-7 drills on Sunday, but it's not considered serious and he isn't expected to miss much time.", "attribution": "ESPN report, Aug 10"}
+    ],
+    "depthChart": "Fourth or fifth in the room behind Rome Odunze, Luther Burden III, and veteran Kalif Raymond, with 2025 UDFA Jahdae Walker pushing him for the same snaps. Burden's preseason absence gave him extra first-team looks, and he is the clear favorite to open the year as Chicago's kick and punt returner.",
+    "whyHeCouldSucceed": [
+      "The No. 3 receiver job behind Odunze and Burden is genuinely unsettled. Kalif Raymond is a 30-something depth signing and Jahdae Walker was an undrafted free agent, so a rookie third-rounder can win real snaps by October.",
+      "Third-round capital plus a locked-in return role means he will be on the field and on the roster regardless of route-running progress. Volume of exposure is how gadget players become real receivers in year two.",
+      "His 4.28 speed is a scheme weapon, not just a testing number. Jet sweeps, deep overs, and play-action shots to a receiver who runs that fast create the kind of explosive plays offensive staffs chase.",
+      "Burden's preseason absence handed him extra first-team reps in the most important stretch of camp, and Chicago's staff has publicly planned touches for him rather than treating him as a project."
+    ],
+    "whyHeCouldFail": [
+      "The production profile is a warning. Across four seasons at two SEC schools he had more return yardage (1,536) than receiving yardage (1,213), and never cleared 510 receiving yards in a season.",
+      "His college role was built on short, manufactured targets. He rarely won downfield despite playing the perimeter, which is exactly the skill an NFL No. 3 receiver has to have.",
+      "At 5-foot-10, 190 pounds with no recorded broad jump, three-cone, or shuttle, there is no testing evidence he has the change-of-direction or contested-catch profile to separate against pro corners.",
+      "Target competition is brutal. Odunze and Burden are the future of the room, Raymond is a trusted veteran, and Chicago has a run-first identity that limits the third receiver's share.",
+      "The knee soreness that cost him a week of August practices, while minor, cut into the reps he needed most as a rookie learning a new route tree."
+    ],
+    "fantasyOutlook": [
+      "For 2026, project Thomas as a low-volume gadget receiver and full-time returner. In a superflex .5 PPR league he is likely a 25-40 target player with a couple of long-touchdown weeks and a lot of empty ones. The floor is a bench stash you never start; the ceiling, if Burden's health wobbles or Raymond fades, is a stretch of WR4/5 relevance late in the year. Do not draft him expecting a rookie-year contributor.",
+      "The dynasty case is entirely about the year-two leap. Third-round capital, verified elite speed, and a team that has already committed to giving him touches make him a defensible mid-to-late second-round rookie pick in a superflex .5 PPR league. Anywhere in the early second is an overpay for a player whose college receiving production never justified it. If you can get him at the 2.09 or later, the return-game floor plus the speed lottery ticket is fair value."
+    ],
+    "comp": "A slightly bigger Marquise Goodwin, in that the speed is real and the offense will scheme touches for it, but the route tree and target share stay narrow.",
+    "bottomLine": "Take him in the mid-to-late second round of your rookie draft as a speed-and-returner lottery ticket, and do not pay for the third-round capital as if it were receiving production.",
+    "sources": [
+      "https://www.rotowire.com/football/player/zavion-thomas-19259",
+      "https://www.rotowire.com/football/headlines/zavion-thomas-news-back-in-action-634092",
+      "https://www.espn.com/nfl/story/_/id/49574301/sources-bears-luther-burden-iii-expected-miss-preseason",
+      "https://sportsfly.cbsistatic.com/nfl/players/28909795/zavion-thomas/"
+    ]
+  },
+  "1047": {
+    "id": 1047,
+    "name": "Adam Randall",
+    "position": "RB",
+    "nflTeam": "BAL",
+    "nflTeamName": "Baltimore Ravens",
+    "college": "Clemson",
+    "hometown": "Little River, South Carolina",
+    "classYear": "Senior",
+    "headline": "The Receiver Turned Battering Ram The Ravens Owner Wanted Himself",
+    "subhead": "A 6-foot-3, 232-pound converted wideout with one year of running back tape lands in the NFL's most demanding run scheme.",
+    "draftPick": "Round 5, Pick 34 (No. 174 overall), Baltimore Ravens",
+    "measurables": {
+      "height": "6'3\"",
+      "weight": "232 lbs",
+      "age": "22.1",
+      "forty": "4.50",
+      "tenSplit": "1.60",
+      "vertical": "37\"",
+      "broad": "10'4\"",
+      "threeCone": null,
+      "shuttle": "4.31",
+      "bench": "26 reps",
+      "armLength": "32 3/8\"",
+      "combineNote": "Randall tested like a big athlete rather than a pure back: 4.50 at 232 pounds with a 37-inch vertical, a 10-foot-4 broad, a 4.31 short shuttle, and 26 bench reps. The strength number and the size are the selling points; he did not post a three-cone."
+    },
+    "collegeCareer": [
+      "Randall's Clemson career started with a setback. He enrolled early in 2022, drew rave reviews in spring practice as a big-bodied receiver, then tore an ACL. He was back on the field 169 days later, debuting in Week 3 against Louisiana Tech and eventually starting the Orange Bowl, where he caught three passes for 44 yards. The recovery became the defining story of his early years in Death Valley.",
+      "For three seasons he was a solid, unspectacular receiver: 10 catches in 2022, 22 in 2023, 16 in 2024. The turn came in the 2024 ACC championship game, when Clemson moved him into the backfield and he ripped a 41-yard kickoff return to set up the game-winning field goal. That offseason, the staff announced the switch to running back was permanent.",
+      "The 2025 season justified it. Randall carried 168 times for 814 yards and 10 touchdowns while adding 36 catches for 254 yards and three scores, a genuine dual-threat workload in his first year at the position. He finished his college career with 84 receptions for 787 yards and 172 carries for 858 yards, one of the more unusual statistical profiles in the class and a reminder that his running back tape is exactly one season deep."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Clemson", "line": "12 G, 10 rec, 128 rec yds, 12.8 avg, 0 TD"},
+      {"season": "2023", "team": "Clemson", "line": "13 G, 22 rec, 250 rec yds, 11.4 avg, 0 TD"},
+      {"season": "2024", "team": "Clemson", "line": "12 G, 16 rec, 115 rec yds, 2 TD, 4 car, 44 rush yds"},
+      {"season": "2025", "team": "Clemson", "line": "13 G, 168 car, 814 rush yds, 4.8 ypc, 10 TD, 36 rec, 254 rec yds, 3 TD"}
+    ],
+    "draftDayStory": [
+      "Baltimore took Randall at No. 174 overall in the fifth round, which lines up exactly with the Round 5, Pick 34 capital on file. Following the draft, reporting emerged that owner Steve Bisciotti had taken an unusual personal interest in the selection, an unusual footnote for a Day 3 running back and the kind of detail that tends to buy a rookie a longer look in camp.",
+      "The fit is obvious on paper. Baltimore runs the league's most committed and creative rushing attack, and Randall's size, contact balance, and 26-rep bench strength make him a natural short-yardage and goal-line complement rather than a threat to the top of the depth chart. The Ravens were not drafting a starter here; they were adding a big, cheap body who can run behind their offensive line and contribute on special teams."
+    ],
+    "whyTheyDraftedHim": [
+      "Scheme fit above all. Baltimore's downhill, gap-heavy running game rewards size and contact balance, and Randall at 6-foot-3, 232 pounds is built to finish runs.",
+      "Short-yardage and goal-line value. His 10 rushing touchdowns on 168 carries in his only year at the position came largely from being difficult to stop at the line of scrimmage.",
+      "Receiving background. Four seasons as a wide receiver, including 84 career catches, give him route and hands ability most Day 3 backs do not have.",
+      "Cheap depth behind an aging lead back. Baltimore needed bodies behind Derrick Henry and Justice Hill, and a fifth-round pick is the right price for that.",
+      "Reported ownership-level interest in the player, which in practice means the staff will give him every chance to stick."
+    ],
+    "campNotes": [
+      {"date": "Aug 9", "source": "Ravens Wire", "note": "Randall drew praise from the coaching staff once the pads came on, with the theme being that his size and physicality showed up more in full-contact work than in the spring. He was competing with Rasheen Ali for the third running back job behind Derrick Henry and Justice Hill."},
+      {"date": "Aug 15", "source": "The Madness Times desk", "note": "Randall made his preseason debut against Philadelphia and got a real workload, roughly a dozen carries plus receiving work, including a short touchdown. It was the clearest evidence of the season that Baltimore wanted to see what he looked like with volume."},
+      {"date": "Aug 22", "source": "CBS Sports / RotoWire", "note": "Randall did not play in Baltimore's second preseason game while working through something physically. Missing that audition matters for a Day 3 back on the roster bubble, because it left his Aug. 15 outing as effectively his whole preseason resume."},
+      {"date": "Aug 24", "source": "ESPN roster projection", "note": "Late-August 53-man projections had the Ravens' backfield settled at the top with Henry and Hill and treated the third spot as a genuine competition, leaving Randall as a bubble-to-back-end roster player rather than a lock."}
+    ],
+    "beatQuotes": [
+      {"quote": "Randall did not play in Baltimore's preseason game while working through some things physically.", "attribution": "CBS Sports report, Aug 22"},
+      {"quote": "Adam Randall needed just 169 days between ACL tear and first catch.", "attribution": "Jon Blau, The Post and Courier, Sep 19 2022"},
+      {"quote": "Clemson early enrollee Adam Randall 'different breed' of wide receiver.", "attribution": "The Greenville News, on his arrival at Clemson"}
+    ],
+    "depthChart": "Third or fourth in the room behind Derrick Henry and Justice Hill, in a live competition with Rasheen Ali for the RB3 job. His missed second preseason game hurt, and late-August roster projections treated him as a bubble player rather than a lock.",
+    "whyHeCouldSucceed": [
+      "Baltimore's offense is the best possible landing spot for a big back. Volume, elite line play, and a scheme that generates short-yardage and goal-line carries can turn a fifth-rounder into a touchdown source quickly.",
+      "Derrick Henry's age is the entire dynasty thesis. Any injury or drop-off in front of him puts a 232-pound rookie with a receiving background in position for real touches.",
+      "His four years as a wide receiver, including 84 career catches, give him pass-game utility that most Day 3 backs simply do not offer in a .5 PPR format.",
+      "Reported ownership interest in the pick plus early camp praise once pads came on means the staff is invested in finding out what he is."
+    ],
+    "whyHeCouldFail": [
+      "He has exactly one season of running back tape. Vision, pass protection, and pace-of-play reads are all still developing, and NFL defenses punish that fast.",
+      "Fifth-round capital and a roster-bubble profile in late August is not a foundation. If he lands on the practice squad, his dynasty value goes to almost nothing.",
+      "Missing his second preseason game with a physical issue cost him the audition he needed most, leaving the Aug. 15 Philadelphia outing as nearly his entire evaluation sample.",
+      "Rasheen Ali is a real competitor for the same job, and Justice Hill has the pass-game role that would otherwise be Randall's easiest path to snaps.",
+      "The ACL tear in 2022 is old, but a 6-foot-3 back who runs upright and seeks contact carries more injury variance than a compact one."
+    ],
+    "fantasyOutlook": [
+      "For 2026, expect very little. If he makes the roster he opens as the third back behind Derrick Henry and Justice Hill, which in Baltimore means a handful of touches a month and occasional goal-line work. His realistic 2026 line is 40-70 carries with two or three touchdowns, and there is a real path to the practice squad instead. Treat him as a stash, not a contributor.",
+      "The dynasty case is a bet on Henry's age curve and Baltimore's rushing volume rather than on Randall's tape, which is thin. In a superflex .5 PPR dynasty league he belongs in the third round of a rookie draft, roughly the 3.01-3.08 range. His FantasyPros consensus rookie rank of 39 is more aggressive than the profile deserves; the KTC value of 1957 is closer to fair. If he wins the RB3 job outright, revisit him upward in-season."
+    ],
+    "comp": "A poor man's Cordarrelle Patterson in build and conversion story, though the realistic outcome is closer to a big short-yardage complement than a versatile weapon.",
+    "bottomLine": "A third-round rookie-draft stash whose value lives entirely on Derrick Henry's odometer; do not spend a second-rounder on a fifth-round back who was on the bubble in late August.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Adam_Randall_(American_football)",
+      "https://www.fantasypros.com/nfl/stats/combine/forty-yard-dash.php",
+      "https://www.espn.ph/nfl/story/_/id/49670342/2026-nfl-season-new-orleans-saints-final-roster-projection-depth-chart"
+    ]
+  },
+  "1025": {
+    "id": 1025,
+    "name": "Bryce Lance",
+    "position": "WR",
+    "nflTeam": "NO",
+    "nflTeamName": "New Orleans Saints",
+    "college": "North Dakota State",
+    "hometown": "Marshall, Minnesota",
+    "classYear": "Redshirt Senior",
+    "headline": "The Other Lance Ran 4.34 And Talked His Way Into The Saints Rotation",
+    "subhead": "A 6-foot-3 FCS All-American with rare long speed, Trey Lance's younger brother has quietly become New Orleans' best rookie receiver story not named Tyson.",
+    "draftPick": "Round 4, Pick 36 (No. 136 overall), New Orleans Saints",
+    "measurables": {
+      "height": "6'3\"",
+      "weight": "204 lbs",
+      "age": "24.0",
+      "forty": "4.34",
+      "tenSplit": "1.49",
+      "vertical": "41 1/2\"",
+      "broad": "11'1\"",
+      "threeCone": "7.00",
+      "shuttle": "4.15",
+      "bench": null,
+      "armLength": "32 1/8\"",
+      "combineNote": "Lance was one of the most impressive testers in the class: 4.34 at 6-foot-3 with a 1.49 ten-yard split, a 41-and-a-half-inch vertical, and an 11-foot-1 broad jump. He did not bench press. For an FCS receiver, that workout was the single most important thing he did all spring."
+    },
+    "collegeCareer": [
+      "Lance's college career was a slow burn. He redshirted in 2021 while North Dakota State won an FCS national title, played 13 games as a special-teams body in 2022 without recording a catch, and had exactly one reception in 15 games in 2023. Four years into his time in Fargo he had one career catch for seven yards, a remarkable prelude to what came next.",
+      "The 2024 breakout was total. Starting all 16 games, Lance caught 75 passes for 1,053 yards and 17 touchdowns as the Bison won another FCS national championship, earning first-team All-MVFC honors. The touchdown total was the tell: at 6-foot-3 with real vertical explosion, he was a red-zone and deep-ball problem for FCS defensive backs.",
+      "He followed it with a more efficient 2025: 51 catches for 1,079 yards, a staggering 21.2 yards per catch, and eight touchdowns in 13 games, plus first-team FCS All-America recognition and another first-team All-MVFC nod. He finished with 127 career receptions for 2,139 yards and 25 touchdowns, all of it compressed into two seasons, and then confirmed the speed in Indianapolis."
+    ],
+    "collegeStats": [
+      {"season": "2021", "team": "North Dakota State", "line": "Redshirt (FCS national champions)"},
+      {"season": "2022", "team": "North Dakota State", "line": "13 G, 0 rec, 0 yds, 0 TD"},
+      {"season": "2023", "team": "North Dakota State", "line": "15 G, 1 rec, 7 rec yds, 0 TD"},
+      {"season": "2024", "team": "North Dakota State", "line": "16 G, 16 GS, 75 rec, 1,053 rec yds, 14.0 avg, 17 TD, 5 car, 29 rush yds, 1 TD"},
+      {"season": "2025", "team": "North Dakota State", "line": "13 G, 13 GS, 51 rec, 1,079 rec yds, 21.2 avg, 8 TD, 4 car, 92 rush yds, 1 TD"}
+    ],
+    "draftDayStory": [
+      "New Orleans took Lance at No. 136 overall in the fourth round, matching the Round 4, Pick 36 capital on file. He was the second of three receivers the Saints drafted in 2026, behind Arizona State's Jordyn Tyson at No. 8 overall and ahead of LSU's Barion Brown at No. 190, a deliberate remaking of a room that general manager Mickey Loomis described as a relay team.",
+      "The FCS discount was real and it was steep. Very few FCS players were drafted at all in 2026, and Lance's two-year production window plus his age made him easy for teams to talk themselves out of. What made him draftable in the fourth was the combination the Saints could not find elsewhere: 6-foot-3 with 4.34 speed and a 41-and-a-half-inch vertical, plus the North Dakota State program pedigree that has produced a steady trickle of NFL contributors."
+    ],
+    "whyTheyDraftedHim": [
+      "Size-speed rarity. There were very few 6-foot-3 receivers in the class who ran 4.34, and none available in the fourth round.",
+      "Vertical explosion that translates to the red zone. A 41-and-a-half-inch vertical and 17 touchdowns in 2024 point at a contested-catch and back-shoulder specialist.",
+      "Kellen Moore's stated preference for speed in the room. New Orleans drafted three receivers who all run, and Loomis called the group a relay team.",
+      "NDSU development pedigree. The program's track record of producing pro-ready players gave the staff confidence in the FCS-to-NFL translation.",
+      "A clear opening. Behind Chris Olave and Devaughn Vele, the Saints had no settled third receiver, and Jordyn Tyson's August injury opened the door even wider."
+    ],
+    "campNotes": [
+      {"date": "Aug 3", "source": "Saints Wire", "note": "Lance led all Saints receivers in targets through the first several practices of training camp, roughly 14 through four sessions, a signal that the coaching staff was actively feeding a fourth-round FCS rookie in team periods rather than burying him behind veterans."},
+      {"date": "Aug 19", "source": "Nick Underhill / Saints camp reporting", "note": "After a short absence, Lance returned and took first-team reps opposite Chris Olave during the joint practice week with Dallas. With Devaughn Vele resting, Lance worked as the effective WR2 in the joint session, the highest-leverage reps he had seen."},
+      {"date": "Aug 20", "source": "Audacy / Saints camp reporting", "note": "In the joint practice against the Rams, Lance had one of the standout performances of camp, converting nearly every red-zone and one-on-one opportunity he was given. Reporting framed it as the practice that pushed him ahead of fellow rookie Barion Brown in the pecking order."},
+      {"date": "Aug 24", "source": "nola.com 53-man roster projection", "note": "With Jordyn Tyson expected to miss around two months and headed for injured reserve, nola.com's final-week projection listed the wide receiver group as Chris Olave, Devaughn Vele, Bryce Lance, Barion Brown, and Kevin Austin. ESPN's projection the same day had Lance in the same five-man group."}
+    ],
+    "beatQuotes": [
+      {"quote": "Speed, juice, these guys got some really good engines, so to speak, and so, really good work by those guys. Good to see those guys out here moving around, and that'll be part of this process: Just get them as much exposure as they can. Excited to get those guys in with the veterans, and it'll be a really good group for us I think.", "attribution": "Kellen Moore, via WGNO, May 8"},
+      {"quote": "I think it's a really exciting group. Obviously, we got a really fast group as well, but I think we've got a lot of guys that are ready to learn, and ready to compete every day, and just get in there and make an impact right away so it's gonna be really fun.", "attribution": "Bryce Lance, via WGNO, May 8"},
+      {"quote": "Brown has had a monster camp, but it does feel like Bryce Lance, who has had a particularly strong camp lately, is still ahead of him. With Vele resting on Tuesday, Lance was WR2 in joint practices against the Cowboys.", "attribution": "Who Dat Dish, Aug 23"}
+    ],
+    "depthChart": "Effectively the No. 3 receiver right now behind Chris Olave and Devaughn Vele, with Jordyn Tyson expected to open the season on injured reserve for roughly two months. Both nola.com and ESPN's late-August projections have Lance making the 53, and he took WR2 reps in the Dallas joint practice when Vele rested.",
+    "whyHeCouldSucceed": [
+      "Jordyn Tyson's two-month absence hands him the first month-plus of the season as the Saints' third receiver, with real first-team reps already banked in joint practices against Dallas and the Rams.",
+      "The physical profile is genuinely rare. A 6-foot-3 receiver who runs 4.34 with a 41-and-a-half-inch vertical has the tools to win outside, in the red zone, and on deep overs at the NFL level.",
+      "Kellen Moore's offense is built to feed speed, and Lance has been the most-targeted receiver in camp at points, which is the clearest evidence available that the staff trusts him in the route tree.",
+      "His two-year college breakout was extreme, not gradual: 126 catches, 2,132 yards, and 25 touchdowns across 2024-25 with 21.2 yards per catch as a senior."
+    ],
+    "whyHeCouldFail": [
+      "He turns the corner on 24 with only two productive college seasons, both against FCS competition. Age plus level of play is the classic profile that flames out in year two.",
+      "Jordyn Tyson is the No. 8 overall pick and the long-term No. 2. When he returns in October, Lance's snaps and targets get squeezed hard.",
+      "New Orleans' quarterback situation is unsettled, which caps the ceiling for every receiver in the room regardless of talent.",
+      "His camp absence in mid-August, though short, is a reminder that he had to fight for the reps he got, and his preseason game production was modest.",
+      "The route-running refinement question is real. FCS corners did not challenge his separation the way NFL press coverage will."
+    ],
+    "fantasyOutlook": [
+      "For 2026, Lance is the most startable player in this batch. Opening as the Saints' No. 3 receiver with Jordyn Tyson on injured reserve, he should see a genuine target share for the first five or six weeks, and his size-speed combination means his catches come in chunks. A realistic season is 45-60 catches for 650-800 yards with five or six touchdowns if he holds a role after Tyson returns, and considerably less if he does not.",
+      "In dynasty terms he is the rare fourth-round pick worth paying up for, because the opportunity is immediate and the athletic profile is elite rather than merely good. In a superflex .5 PPR league he is fair value at the back half of the second round, roughly the 2.06-2.10 range, which sits close to his FantasyPros consensus rank of 34. The age is the discount: at 24 he does not have the long development runway that a 21-year-old fourth-rounder would, so buy him as a two-to-three-year producer, not a decade-long asset."
+    ],
+    "comp": "A slightly older Darius Slayton with better testing numbers, a big-bodied field-stretcher whose value spikes whenever the receivers ahead of him are hurt.",
+    "bottomLine": "The best real-2026 bet in this tier: take him late in the second round of your rookie draft and start him while Jordyn Tyson is on injured reserve.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bryce_Lance",
+      "https://www.nola.com/sports/saints/saints-latest-53-man-roster-projection/article_74ed123f-f5a6-49b1-b1b8-1a216e03107c.html",
+      "https://www.espn.ph/nfl/story/_/id/49670342/2026-nfl-season-new-orleans-saints-final-roster-projection-depth-chart",
+      "https://wgno.com/sports/saints-speedy-receivers-on-full-display-to-open-rookie-minicamp/",
+      "https://whodatdish.com/kellen-moore-just-made-his-stance-on-barion-brown-crystal-clear-01m0pk9kag28"
+    ]
+  },
+  "1021": {
+    "id": 1021,
+    "name": "Brenen Thompson",
+    "position": "WR",
+    "nflTeam": "LAC",
+    "nflTeamName": "Los Angeles Chargers",
+    "college": "Mississippi State",
+    "hometown": "Spearman, Texas",
+    "classYear": "Senior",
+    "headline": "The Fastest Man In Indianapolis Is Now Justin Herbert's Deep Threat",
+    "subhead": "Brenen Thompson ran 4.26, broke out at 23 after two transfers, and spent August turning heads on Chargers practice fields.",
+    "draftPick": "Round 4, Pick 5 (No. 105 overall), Los Angeles Chargers",
+    "measurables": {
+      "height": "5'9\"",
+      "weight": "164 lbs",
+      "age": "23.1",
+      "forty": "4.26",
+      "tenSplit": "1.54",
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "29 3/8\"",
+      "combineNote": "Thompson ran the fastest forty at the 2026 combine at 4.26, with a 1.54 ten-yard split and a 2.53 twenty. He did not post jumps, agility, or bench numbers in Indianapolis, so the entire athletic case rests on straight-line speed, and at 164 pounds his frame is the thinnest of any receiver drafted in the top 110."
+    },
+    "collegeCareer": [
+      "Thompson's college career was a four-year search for a role. He signed with Texas out of Spearman as a track sprinter turned receiver and barely played, catching one pass in 2022. He transferred to Oklahoma, where he was a rotational field-stretcher for two seasons, going for 241 yards on seven catches in 2023 and 230 yards on 19 catches in 2024. The speed was never in question; the volume was.",
+      "The Mississippi State transfer in 2025 changed everything. Given a featured role for the first time, Thompson caught 57 passes for 1,054 yards and six touchdowns, leading the SEC in receiving yardage and averaging better than 18 yards a catch. He was the first Mississippi State receiver drafted since Eric Moulds in 1996, a line that says as much about the program's recent history as it does about him.",
+      "The tape matches the testing. Thompson is a vertical weapon who wins with pure acceleration off the line and top-end speed that no SEC corner could match, and his 24-plus mph tracked speeds became a recruiting pitch for NFL scouts. What he did not do in college was play through contact or win at the catch point, which is the natural consequence of playing at 164 pounds."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Texas", "line": "1 rec, 32 rec yds, 0 TD"},
+      {"season": "2023", "team": "Oklahoma", "line": "7 rec, 241 rec yds, 34.4 avg, 2 TD"},
+      {"season": "2024", "team": "Oklahoma", "line": "19 rec, 230 rec yds, 12.1 avg, 2 TD"},
+      {"season": "2025", "team": "Mississippi State", "line": "57 rec, 1,054 rec yds, 18.5 avg, 6 TD, led SEC in receiving yards"}
+    ],
+    "draftDayStory": [
+      "The Chargers took Thompson at No. 105 overall, the fifth pick of the fourth round, matching the capital on file. Los Angeles has spent the last two drafts and free-agency cycles collecting pass-catchers around Justin Herbert, and Thompson was the specific piece they lacked: a true burner who forces safeties to play deeper and opens the intermediate space where Ladd McConkey lives.",
+      "He was the first Mississippi State receiver drafted in three decades, and the pick had a clean logic to it. Quentin Johnston and Tre Harris are big-bodied contested-catch types, McConkey is the separator, and Thompson is the field-tilter. The 164-pound frame is why he lasted until the fourth; the 4.26 is why he did not last any longer."
+    ],
+    "whyTheyDraftedHim": [
+      "Verified elite speed. The fastest forty at the 2026 combine, plus tracked in-game top speeds above 24 mph, is a genuinely scarce trait.",
+      "Scheme need. Los Angeles had contested-catch receivers and a separator in Ladd McConkey but no player who threatens the deep third every snap.",
+      "Herbert's arm. A quarterback with elite deep velocity plus a 4.26 receiver is the most direct explosive-play formula in football.",
+      "A real breakout season, not just a workout. Leading the SEC in receiving yardage in 2025 answered the question of whether he could handle volume.",
+      "Special-teams and gadget upside as a returner and jet-sweep threat while the route tree develops."
+    ],
+    "campNotes": [
+      {"date": "Aug 3", "source": "Chargers camp reporting", "note": "Thompson was one of the standouts of the first week of camp, repeatedly connecting with Justin Herbert on deep shots in team periods. His speed forced the defense to adjust its safety depth in practice, which was noted as the most visible early effect of his arrival."},
+      {"date": "Aug 13", "source": "The Madness Times desk", "note": "Thompson saw a healthy target load in the Chargers' preseason opener against Houston, roughly a half-dozen looks, as the staff worked to get him live-game reps rather than protecting him."},
+      {"date": "Aug 20", "source": "Chargers preseason reporting", "note": "Thompson played with the starters in the preseason game against San Francisco and caught one pass for nine yards on two targets before exiting the game. Being on the field with the first unit that late in August was the clearest signal available about his standing."},
+      {"date": "Aug 23", "source": "The Madness Times desk", "note": "After missing a practice, Thompson was back on the field in a non-contact jersey in the final week before roster cuts, a minor issue but one that limited his reps in the last stretch of camp."}
+    ],
+    "beatQuotes": [
+      {"quote": "Brenen Thompson turned in the fastest 40-yard dash at the 2026 combine, flashing elite straight-line speed that immediately grabbed scouts' attention.", "attribution": "Yahoo Sports, Mar 4"},
+      {"quote": "With that kind of speed, teams will view him as a dangerous weapon who can instantly pressure defensive backs.", "attribution": "Yahoo Sports, Mar 4"},
+      {"quote": "Performances like Brenen Thompson's blazing 4.26 and Lorenzo Styles Jr.'s impressive 4.27 highlight just how explosive the newest generation of prospects has become.", "attribution": "Yahoo Sports, Mar 4"}
+    ],
+    "depthChart": "Fourth or fifth in a crowded room behind Ladd McConkey, Quentin Johnston, and Tre Harris, competing with Luther Burden-type depth pieces for the last rotational spot. He played with the starters in the Aug. 20 preseason game, which suggests a defined situational deep-threat role rather than a full-time job.",
+    "whyHeCouldSucceed": [
+      "A 4.26 receiver paired with Justin Herbert's arm is the highest-leverage deep-ball combination in the league. Even a small snap share produces splash plays and touchdowns.",
+      "He was on the field with the first unit in the third week of preseason, which for a fourth-round rookie in a deep room is a real endorsement of his standing.",
+      "The 2025 breakout was substantial, not a fluke of one big game: 57 catches, 1,054 yards, and the SEC receiving yardage title on 18.5 yards a catch.",
+      "The Chargers' room lacks a vertical specialist. McConkey works the middle, Johnston and Harris are contested-catch types, and no one else stretches the field."
+    ],
+    "whyHeCouldFail": [
+      "At 164 pounds he is one of the lightest receivers to be drafted this high in years. Press coverage, contested catches, and NFL durability are all open questions.",
+      "The room is genuinely crowded. McConkey, Johnston, and Harris are all ahead of him, which caps his target share even in a good year.",
+      "He posted no jumps, agility, or bench numbers, so there is no evidence beyond straight-line speed that he can separate on breaking routes.",
+      "His college production was concentrated in one season at age 23, after two years of minimal usage at Texas and Oklahoma. The late breakout profile has a poor hit rate.",
+      "The missed practice and non-contact jersey in the final week of camp is a small flag on a small frame, and durability is the specific risk here."
+    ],
+    "fantasyOutlook": [
+      "For 2026, Thompson projects as a boom-or-bust deep specialist. Behind McConkey, Johnston, and Harris he is unlikely to clear 55 targets, but with Herbert throwing him the ball those targets will come with an extreme yards-per-catch profile. A realistic line is 30-40 catches for 500-600 yards with four or five touchdowns, delivered in two or three huge weeks and a lot of quiet ones. He is a bye-week flier, not a weekly starter.",
+      "Dynasty value is a straight bet on the trait plus the quarterback. In a superflex .5 PPR league he is a fair mid-second-round rookie pick, around the 2.05-2.09 range, close to his FantasyPros consensus rank of 43. The frame is the reason not to pay more: 164-pound receivers rarely earn 100-target seasons regardless of speed. If the Chargers' room thins out through injury or free agency, his ceiling rises fast, and that optionality is what you are buying."
+    ],
+    "comp": "A lighter Marquez Valdes-Scantling with better hands, a field-tilting deep specialist whose fantasy weeks are feast or famine.",
+    "bottomLine": "Draft him in the middle of the second round as a Herbert-powered deep-shot lottery ticket, and understand you are buying big weeks, not a weekly starter.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Brenen_Thompson",
+      "https://sports.yahoo.com/articles/top-40-yard-dash-times-121500559.html",
+      "https://www.fantasypros.com/nfl/stats/combine/forty-yard-dash.php",
+      "https://www.nflsavant.com/combine"
+    ]
+  },
+  "1051": {
+    "id": 1051,
+    "name": "Barion Brown",
+    "position": "WR",
+    "nflTeam": "NO",
+    "nflTeamName": "New Orleans Saints",
+    "college": "LSU",
+    "hometown": "Nashville, Tennessee",
+    "classYear": "Senior",
+    "headline": "A Sixth-Round Returner Became The Loudest Story Of Saints Camp",
+    "subhead": "Barion Brown arrived as a special-teams flier and worked his way into first-team reps, a roster lock, and a real offensive role.",
+    "draftPick": "Round 6, Pick 9 (No. 190 overall), New Orleans Saints",
+    "measurables": {
+      "height": "5'11\"",
+      "weight": "185 lbs",
+      "age": "22.7",
+      "forty": "4.40",
+      "tenSplit": "1.58",
+      "vertical": "32\"",
+      "broad": "9'10\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "31 1/2\"",
+      "combineNote": "Brown ran an official 4.40 at the 2026 combine, faster on some hand-held stopwatches, but his jumps were pedestrian for a player whose reputation was built on explosiveness. He did not complete the agility drills or the bench press, which is part of why he lasted until the sixth round."
+    },
+    "collegeCareer": [
+      "Brown spent three seasons at Kentucky as a big-play receiver and one of the best return men in college football, then transferred to LSU for 2025. The Kentucky years produced volume in a run-heavy, quarterback-unstable offense: he was the guy defenses had to account for, and he consistently ranked among the SEC's leaders in return yardage while working as a downfield and screen-game threat.",
+      "The LSU season was supposed to be his showcase and instead was a mixed bag. He remained a dangerous returner and produced flashes as a receiver, but he did not command the target share that would have pushed him up boards, and he entered the draft process viewed primarily as a return specialist with receiver upside rather than the reverse.",
+      "The style is consistent across both stops: a slippery, run-after-catch player who is at his best with the ball in space and a clean runway, and who has never been a reliable contested-catch or possession option. That profile, plus mediocre jump testing, is what put him in the sixth round despite four years of SEC production."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Kentucky", "line": "Freshman contributor as receiver and primary kick returner"},
+      {"season": "2023", "team": "Kentucky", "line": "Full-time starter at receiver, continued as primary return man"},
+      {"season": "2024", "team": "Kentucky", "line": "Starter at receiver in a run-heavy offense, top SEC return production"},
+      {"season": "2025", "team": "LSU", "line": "Transfer season as a rotational receiver and primary returner"}
+    ],
+    "draftDayStory": [
+      "New Orleans took Brown at No. 190 overall in the sixth round, the ninth pick of the round, matching the capital on file. He was the third receiver the Saints drafted in 2026, after Jordyn Tyson at No. 8 and Bryce Lance at No. 136, in a class general manager Mickey Loomis described as a relay team for its collective speed.",
+      "The pick was a return-game investment first. Brown's four years of SEC return production made him the safest special-teams bet available on Day 3, and the receiver upside was framed as a bonus. What has happened since is the interesting part: he has forced his way past that label in a way sixth-rounders almost never do."
+    ],
+    "whyTheyDraftedHim": [
+      "Elite college return production across four SEC seasons at Kentucky and LSU, filling a specific need on a Saints roster short on proven return men.",
+      "Speed in a room built around it. Loomis called the 2026 receiver class a relay team, and Brown at 4.40 fit the profile the staff wanted.",
+      "Run-after-catch ability. Brown's value as a receiver is what happens once he has the ball in space, which suits Kellen Moore's screen and manufactured-touch concepts.",
+      "Cheap optionality. A sixth-round pick on a player with a defined special-teams floor is the lowest-risk way to add a potential offensive contributor."
+    ],
+    "campNotes": [
+      {"date": "Aug 3", "source": "Saints Wire", "note": "Brown was one of the standouts of the fifth practice of camp, making plays down the field rather than just in the return game. It was the first indication that his camp would be about more than special teams."},
+      {"date": "Aug 6", "source": "Saints camp reporting", "note": "Brown caught a touchdown from Spencer Rattler in a two-minute period and drew public praise from Kellen Moore. By this point he had worked his way into first-team looks, a rapid climb for a sixth-round pick."},
+      {"date": "Aug 15", "source": "The Madness Times desk", "note": "Brown had a productive preseason debut, roughly four catches for a little over 50 yards including a long connection from Zach Wilson, backing up his practice performance with game production."},
+      {"date": "Aug 23", "source": "Who Dat Dish", "note": "Moore rested Brown for the preseason finale against Dallas, the same treatment given to starter-adjacent players like Danny Stutsman and Noah Fant. Moore said he was resting him based on his workload that week, which effectively confirmed Brown as a roster lock with an offensive role."},
+      {"date": "Aug 24", "source": "nola.com and ESPN 53-man projections", "note": "Both outlets' final-week projections included Brown in a five-man Saints receiver group alongside Chris Olave, Devaughn Vele, and Bryce Lance, with Jordyn Tyson headed for injured reserve."}
+    ],
+    "beatQuotes": [
+      {"quote": "we're just resting him based off of the workload this week", "attribution": "Kellen Moore, via Who Dat Dish, Aug 23"},
+      {"quote": "Barion Brown has been one of the biggest surprises of New Orleans Saints training camp. He made some plays down the field and just didn't stop, eventually working his way into the first team.", "attribution": "Who Dat Dish, Aug 23"},
+      {"quote": "Speed, juice, these guys got some really good engines, so to speak, and so, really good work by those guys.", "attribution": "Kellen Moore on the Saints' rookie receivers, via WGNO, May 8"}
+    ],
+    "depthChart": "Fourth in the Saints' receiver room behind Chris Olave, Devaughn Vele, and fellow rookie Bryce Lance, with Jordyn Tyson expected to miss roughly the first two months on injured reserve. He is a confirmed roster lock, the presumptive kick and punt returner, and in line for real offensive snaps as the run-after-catch option.",
+    "whyHeCouldSucceed": [
+      "He has already beaten his draft slot. Working into first-team reps and then being rested with the starters in the preseason finale is not normal treatment for a sixth-round pick.",
+      "Jordyn Tyson's injury opens up the first month-plus of the season, and Brown is the fourth receiver in a room where the top two are the only entrenched players.",
+      "The return job gives him a floor no other player in this batch has except Zavion Thomas, and returners who are also trusted on offense stay on rosters for years.",
+      "Kellen Moore's offense manufactures touches for run-after-catch players, which is precisely what Brown does well."
+    ],
+    "whyHeCouldFail": [
+      "Sixth-round capital and a body of college work that never produced a genuine breakout receiving season. Camp buzz is not the same as an NFL target share.",
+      "He is fourth in the room today, and when Jordyn Tyson returns from injured reserve in October he becomes fifth in the pecking order for targets.",
+      "His combine testing outside the forty was ordinary, with a 32-inch vertical and a 9-foot-10 broad, which undercuts the explosive-athlete framing.",
+      "New Orleans' quarterback situation is unsettled, and the fourth receiver on a team with quarterback problems is the first player to lose volume.",
+      "The return-specialist label is sticky. Plenty of players in his mold spend five years as a special-teamer who occasionally catches a screen."
+    ],
+    "fantasyOutlook": [
+      "For 2026, Brown is a deep-league name rather than a fantasy asset. As the Saints' fourth receiver and primary returner he might see 30-45 targets, concentrated in screens and manufactured touches, with occasional relevance while Jordyn Tyson is on injured reserve. A realistic line is 25-35 catches for 300-400 yards and a couple of touchdowns. In a superflex .5 PPR league he should not be in your starting lineup outside of desperation weeks.",
+      "The dynasty case is that camp performance this loud from a sixth-round pick is worth a late pick to find out. He belongs in the third round of a rookie draft, roughly the 3.04 or later, and his KTC value of 1742 is a fair reflection of that. Buy him as the cheapest way to own a Saints receiver room that will look completely different in two years, and be willing to cut him if the offensive role never materializes past the return game."
+    ],
+    "comp": "A Ray-Ray McCloud type with more college pedigree, a returner first who earns a small package of manufactured touches on offense.",
+    "bottomLine": "Worth a third-round rookie pick purely on the strength of the camp he just had, but price him as a returner with upside rather than a future starter.",
+    "sources": [
+      "https://whodatdish.com/kellen-moore-just-made-his-stance-on-barion-brown-crystal-clear-01m0pk9kag28",
+      "https://www.nola.com/sports/saints/saints-latest-53-man-roster-projection/article_74ed123f-f5a6-49b1-b1b8-1a216e03107c.html",
+      "https://www.espn.ph/nfl/story/_/id/49670342/2026-nfl-season-new-orleans-saints-final-roster-projection-depth-chart",
+      "https://www.fox8live.com/2026/08/18/fazende-saints-updated-roster-projection/",
+      "https://wgno.com/sports/geaux-black-and-gold/saints-head-coach-kellen-moore-recaps-first-day-of-2026-rookie-minicamp/"
+    ]
+  }
+}
