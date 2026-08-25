@@ -1,0 +1,425 @@
+{
+  "1001": {
+    "id": 1001,
+    "name": "Jeremiyah Love",
+    "position": "RB",
+    "nflTeam": "ARI",
+    "nflTeamName": "Arizona Cardinals",
+    "college": "Notre Dame",
+    "hometown": "St. Louis, Missouri",
+    "classYear": "Junior",
+    "headline": "Generational Back, Sprained Ankle: Love Is Still the Crown Jewel of This Class",
+    "subhead": "The highest-drafted running back since Saquon Barkley owns Arizona's backfield future, even as a preseason high-ankle sprain clouds his Week 1 availability.",
+    "draftPick": "Round 1, Pick 3 (No. 3 overall), Arizona Cardinals",
+    "measurables": {
+      "height": "6'0\"",
+      "weight": "212 lbs",
+      "age": "21.2",
+      "forty": "4.36",
+      "tenSplit": "1.53",
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Love ran an official 4.36 forty at the 2026 combine in Indianapolis — second among running backs and a match for Jahmyr Gibbs' 2023 time — with a 1.53 ten-yard split. He skipped the jumps and told NFL Network he was 'a little bit disappointed' he didn't hit the 4.2s, then closed his workout with a backflip. He did not work out at Notre Dame's pro day."
+    },
+    "collegeCareer": [
+      "Love arrived in South Bend from St. Louis and never missed a game in three seasons, playing all 41 as Notre Dame went a combined 34-7. He eased in as a freshman in 2023 (71 carries, 385 yards), then detonated as a sophomore in 2024: 1,125 rushing yards at 6.9 per carry and 17 touchdowns while carrying the Irish through a 16-game College Football Playoff run to the national title game, including a CFP-record 98-yard touchdown run.",
+      "As a junior in 2025 he became the sport's most electric player: 1,372 rushing yards on just 199 carries (6.9 ypc), 18 rushing scores, zero fumbles, and school records for single-season touchdowns (21) and rushing touchdowns (18). He won the Doak Walker Award and finished third in Heisman voting while adding 27 catches for 280 yards. The style is hurdles, jump cuts and home-run speed — a true three-down profile with 63 career receptions and real pass-protection chops."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "Notre Dame", "line": "13 G, 71 car, 385 rush yds, 5.4 ypc, 1 TD, 8 rec, 77 rec yds, 1 TD"},
+      {"season": "2024", "team": "Notre Dame", "line": "16 G, 163 car, 1,125 rush yds, 6.9 ypc, 17 TD, 28 rec, 237 rec yds, 2 TD"},
+      {"season": "2025", "team": "Notre Dame", "line": "12 G, 199 car, 1,372 rush yds, 6.9 ypc, 18 TD, 27 rec, 280 rec yds, 3 TD"}
+    ],
+    "draftDayStory": [
+      "Arizona made Love the No. 3 overall pick, the first top-five running back since Saquon Barkley in 2018. GM Monti Ossenfort said the Cardinals decided earlier in draft week that Love was the pick if he reached No. 3, and that trade-down talks 'never came close' to moving him off it. The night's only drama was clerical: Arizona was given a wrong phone number and burned most of the eight-minute clock before reaching Love, who had sensed Arizona was the destination once the Jets took David Bailey at No. 2.",
+      "Love then signed a fully guaranteed four-year, $53 million rookie deal — historic money for the position — and joined a rebuilding 3-14 roster under first-year head coach Mike LaFleur, slotting next to Trey McBride and Marvin Harrison Jr. as the offense's new centerpiece."
+    ],
+    "whyTheyDraftedHim": [
+      "Ossenfort wanted an 'impact player' at No. 3 and told reporters the board was settled on Love days before the draft",
+      "Head coach Mike LaFleur, a Shanahan-tree play-caller, was reportedly sold in part by Love's pass protection and receiving versatility, not just the runs",
+      "Elite production profile: 6.7 career ypc, 42 total touchdowns, zero fumbles in his final season and no missed games in college",
+      "Teammate buy-in was immediate — All-Pro TE Trey McBride called him a 'stud' the Cardinals need to keep pace in the NFC West"
+    ],
+    "campNotes": [
+      {"date": "Jul 28", "source": "azcardinals.com", "note": "First padded practice: Love ripped a run off left tackle on his first snap with the starters and made a red-zone cut in traffic the team site called one 'only a few guys could ever pull off,' though Tyler Allgeier still took the first RB reps."},
+      {"date": "Aug 9", "source": "Theo Mackie, Arizona Republic", "note": "Roles flipped after the Hall of Fame game: Love took the first snaps on each of the first three drives, his most significant usage of camp, and drew four targets to Allgeier's one — including a go route as Arizona expands his receiving menu."},
+      {"date": "Aug 13", "source": "preseason vs. Raiders", "note": "Love debuted with the starters and piled up 14 touches in less than a half, but suffered a high-ankle sprain that ended his night and his preseason."},
+      {"date": "Aug 24", "source": "Pro Football Talk, NBC Sports", "note": "Head coach Mike LaFleur confirmed Love will not practice during the week of joint work in Green Bay; Arizona is reportedly hopeful he returns for Week 1."}
+    ],
+    "beatQuotes": [
+      {"quote": "I look at my role right now, training camp, getting my feet on the ground, get a feel for this offense, teammates, coaches. Also, I want to prove myself, that I'm a good addition to this team.", "attribution": "Jeremiyah Love, azcardinals.com, Jul 31"},
+      {"quote": "Shoot, he's a rookie. It's not college anymore, it's the league, so I've been able to take him under my wing … He's done an awesome job, just being a sponge.", "attribution": "Tyler Allgeier, azcardinals.com, Jul 31"},
+      {"quote": "He will not be on the field doing any sort of practice or anything like that right now.", "attribution": "Mike LaFleur, via Pro Football Talk, Aug 24"}
+    ],
+    "depthChart": "Love opened camp behind Tyler Allgeier but had overtaken him for first-team snaps by early August, with James Conner easing back from injury and Trey Benson fourth. The high-ankle sprain has him sidelined through the final preseason week, but Arizona expects him back as the featured back by or shortly after Week 1.",
+    "whyHeCouldSucceed": [
+      "Historic draft capital — the first top-five running back in eight years, with $53M fully guaranteed — means Arizona is contractually and organizationally committed to feeding him",
+      "Camp usage showed a Gibbs-style role: motions, complex routes and four-target practice days, the exact usage that turns great backs into fantasy WR1-adjacent scorers",
+      "Rare efficiency and durability profile: 6.7 career ypc, 42 college touchdowns, zero fumbles in 2025 and zero missed games across three seasons",
+      "A rebuilding offense with McBride and Harrison drawing coverage has every incentive to build its identity around his touches immediately"
+    ],
+    "whyHeCouldFail": [
+      "He enters the NFL off a high-ankle sprain — an injury that notoriously lingers for cut-based runners — and has already been ruled out through the preseason finale",
+      "The room is genuinely crowded early: Conner, Allgeier and Benson could cap his first-half-of-season workload the way Hackett's 'he's a rookie' comments hinted",
+      "Arizona went 3-14 in 2025; negative game scripts and a first-year head coach could depress carries and goal-line chances in year one",
+      "He weighed 212 at the combine and has never carried more than 199 times in a season, so a 300-touch bell-cow load is a projection, not a track record"
+    ],
+    "fantasyOutlook": [
+      "Even with the ankle scare, Love is the 1.01 in superflex .5 PPR rookie drafts and it is not close — KTC has him at 7393, an entire tier above the field, and dynasty startups treat him as a top-five overall asset. For 2026, expect a committee tilt that shifts toward Love by October: something like 220-240 touches with genuine receiving work is realistic if the ankle cooperates, which puts a top-12 RB finish in range even on a bad team.",
+      "The dynasty case is simpler: he is the best running back prospect since Bijan Robinson by draft capital, testing and production, entering an offense with nothing blocking him beyond veterans on expiring value. Pay the full 1.01 price and do not overthink an August ankle sprain."
+    ],
+    "comp": "Jahmyr Gibbs with 10 extra pounds — same 4.36 speed and receiving juice, but drafted to be the entire offense rather than half of one.",
+    "bottomLine": "Take him first overall in every format. The ankle is a September problem; the player is a decade problem for everyone else.",
+    "sources": [
+      "https://www.espn.com/nfl/story/_/id/48574729/cardinals-select-jeremiyah-love-no-3-pick-nfl-draft",
+      "https://www.azcentral.com/story/sports/nfl/cardinals/2026/08/09/cardinals-camp-observations-jeremiyah-love-role-expands/91237774007/",
+      "https://www.azcardinals.com/news/no-rookie-mistake-jeremiyah-love-knows-what-he-s-in-camp-to-do",
+      "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jeremiyah-love-will-remain-out-of-practice-this-week",
+      "https://www.nfl.com/news/2026-nfl-combine-jeremiyah-love-runs-4-36-second-40-yard-dash",
+      "https://www.ncaa.com/news/football/article/2026-04-23/jeremiyah-love-college-football-career-stats-highlights-records",
+      "https://en.wikipedia.org/wiki/Jeremiyah_Love"
+    ]
+  },
+  "1005": {
+    "id": 1005,
+    "name": "Carnell Tate",
+    "position": "WR",
+    "nflTeam": "TEN",
+    "nflTeamName": "Tennessee Titans",
+    "college": "Ohio State",
+    "hometown": "Chicago, Illinois",
+    "classYear": "Junior",
+    "headline": "Zero Drops, Zero Preseason Catches: Tate Is Tennessee's Beautiful Contradiction",
+    "subhead": "The No. 4 overall pick has dominated Titans practices all summer while going catchless in two preseason games — and the coaching staff isn't blinking.",
+    "draftPick": "Round 1, Pick 4 (No. 4 overall), Tennessee Titans",
+    "measurables": {
+      "height": "6'2\"",
+      "weight": "192 lbs",
+      "age": "21.6",
+      "forty": "4.53",
+      "tenSplit": "1.61",
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "31 3/4\"",
+      "combineNote": "Tate measured 6'2¼\" and 192 pounds with 10¼-inch hands and a 78-inch wingspan in Indianapolis, then ran a modest 4.53 forty with a 1.61 split. Scouts shrugged at the stopwatch — ESPN reported his draft slot 'won't be decided by a stopwatch' — because his game is route craft, body control and contested catches, not raw burn."
+    },
+    "collegeCareer": [
+      "Tate waited his turn at Wide Receiver U. A five-star from Chicago via IMG Academy, he caught 18 balls as a freshman in 2023 behind Marvin Harrison Jr. and Emeka Egbuka, then posted 52-733-4 in all 15 games of Ohio State's 2024 national-championship run while sharing targets with Egbuka and Jeremiah Smith. His homecoming at Wrigley Field in November 2024 — two touchdowns two days before his late mother Ashley's birthday — became one of the season's defining human stories.",
+      "In 2025 he reinvented himself from vertical threat to full route technician: 51 catches for 875 yards (17.2 per catch) and nine touchdowns in just 11 games, with four 100-yard days topped by 9-183 against Minnesota. Per PFF he did not drop a single pass on 66 targets and led the Big Ten with six touchdowns on contested targets. He earned first-team All-Big Ten, second-team All-America honors from four outlets, and first-team Academic All-America with a 3.50 GPA — the fifth straight year Ohio State produced a first-round receiver."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "Ohio State", "line": "13 G, 18 rec, 264 yds, 14.7 ypr, 1 TD"},
+      {"season": "2024", "team": "Ohio State", "line": "15 G, 52 rec, 733 yds, 14.1 ypr, 4 TD (national champions)"},
+      {"season": "2025", "team": "Ohio State", "line": "11 G, 51 rec, 875 yds, 17.2 ypr, 9 TD"}
+    ],
+    "draftDayStory": [
+      "Tennessee took Tate at No. 4 overall — one of the highest wide receiver selections of the modern era — to give 2025 No. 1 pick Cam Ward a true alpha target after Titans passing offenses ranked 30th in the league. Assistant GM Dave Ziegler said the club was 'unequivocal' that Tate was the best fit for where the franchise is headed, and GM Mike Borgonzi doubled down on the receiver investment by trading back into the first round for Auburn edge Keldric Faulk the same night.",
+      "Tate walked the stage with his mother's name inscribed inside his suit jacket, having worn a necklace bearing her name through combine drills — the emotional throughline of a prospect evaluators kept praising for maturity beyond his 21 years."
+    ],
+    "whyTheyDraftedHim": [
+      "Front office called him the best contested-catch receiver in the class, with PFF charting zero drops on 66 targets in 2025",
+      "Robert Saleh on the fit: 'His catch radius is pretty impressive' — size and body control the Titans' receiver room completely lacked",
+      "Pairing a true X receiver with Cam Ward was the offseason's organizing principle after Titans rookies led the AFC in receptions out of necessity in 2025",
+      "Ohio State pedigree: fifth consecutive draft with a Buckeye receiver in Round 1, following Olave, Wilson, Smith-Njigba, Harrison and Egbuka"
+    ],
+    "campNotes": [
+      {"date": "Aug 4", "source": "Teresa M. Walker, AP", "note": "Tate spent camp glued to Calvin Ridley between reps, and showed out in the Nissan Stadium scrimmage with a one-handed grab from Ward plus two touchdowns in Sunday's session, spiking the ball after beating Cor'Dale Flott in the corner of the end zone."},
+      {"date": "Aug 9", "source": "Gentry Estes, USA Today Network", "note": "Tate caught three touchdown passes from Cam Ward in one practice, including a jump ball over Marcus Harris; Estes declared 'OK, Carnell Tate is that dude' as the secondary had answers for everyone but him."},
+      {"date": "Aug 24", "source": "Nick Suss, The Tennessean", "note": "The flip side: zero catches in three series in each of two preseason games, a quiet joint practice against the 49ers and a missed stretch with 'minor stiffness.' Saleh blamed Daboll's vanilla preseason scheme and Seattle's coverage shell rather than the player."}
+    ],
+    "beatQuotes": [
+      {"quote": "I get that the preseason games haven't lit the world on fire, but what we've been seeing in practice is a pretty damn good football player.", "attribution": "Robert Saleh, via The Tennessean, Aug 24"},
+      {"quote": "Oh, I try to pick Rid's brain every chance I get, and I used to grow up watching Rid (in his) Alabama days. Rid is an elite receiver, his moves elite.", "attribution": "Carnell Tate, AP, Aug 9"},
+      {"quote": "He has great hands, he has a great feel for space.", "attribution": "Cam Ward, AP, Aug 9"}
+    ],
+    "depthChart": "Tate is a Week 1 starter on the outside opposite Calvin Ridley, with Wan'Dale Robinson working the slot and Tyler Lockett-style depth behind them. He has been Ward's most-targeted receiver in practice settings all summer; the preseason goose egg has not moved his standing with the staff.",
+    "whyHeCouldSucceed": [
+      "Massive draft capital at No. 4 overall ties him to Cam Ward's ascension — the Titans built their entire offseason around this pairing working",
+      "The hands profile is elite and bankable: five drops on 161 career targets, none in 2025, and the Big Ten lead in contested touchdowns",
+      "Brian Daboll's offense made rookie-year stars of Odell Beckham-caliber X receivers before; Tate's route sink and stem IQ fit the timing game",
+      "Calvin Ridley is 31, restructured his deal to stay, and is openly mentoring his replacement — the target funnel bends toward Tate by midseason"
+    ],
+    "whyHeCouldFail": [
+      "Two preseason games without a catch and a quiet 49ers joint practice are a real, if explainable, yellow flag about early NFL separation",
+      "4.53 speed at 192 pounds means he wins with craft, not burst — rookies who can't out-athlete NFL corners often need a year to ramp",
+      "Cam Ward threw for just 3,169 yards with 15 touchdowns as a rookie; if the passing volume stays 30th-ranked, there aren't enough targets to feed everyone",
+      "Ridley, Robinson and Tennessee's run-first identity under Saleh could cap him below 110 targets in year one"
+    ],
+    "fantasyOutlook": [
+      "Tate is the consensus rookie WR1 and the 1.02 in superflex .5 PPR drafts — KTC values him at 5727, clearly ahead of Tyson. The 2026 projection needs patience: 60-75 catches for 850-1,000 yards feels like the realistic band if Ward takes a step, with a WR3 floor even in a modest passing game. The August catchless streak is preseason noise; the practice tape and the staff's public confidence are the signal.",
+      "In dynasty he's a top-15 asset at the position on arrival: a 21-year-old X receiver with top-five capital tied to a young franchise QB. If a Mendoza-hungry manager offers a QB premium to move up to 1.02, listen — otherwise take Tate and enjoy holding the safest wideout profile in the class."
+    ],
+    "comp": "George Pickens with better hands and a cleaner attitude file — same sideline ballet and contested-catch dominance, minus the drops.",
+    "bottomLine": "Draft him 1.02 with confidence. The preseason box scores are lying; the zero-drop hands and No. 4 capital are not.",
+    "sources": [
+      "https://www.tennessean.com/story/sports/nfl/titans/2026/08/24/carnell-tate-nfl-draft-tennessee-titans-preseason/91435019007/",
+      "https://apnews.com/article/titans-carnell-tate-calvin-ridley-e0bdfdd6c7173150ce5408b299682b47",
+      "https://www.usatoday.com/story/sports/columnists/gentry-estes/2026/08/09/carnell-tate-tennessee-titans-training-camp-depth-chart-observations/91117236007/",
+      "https://www.nfl.com/news/2026-nfl-draft-titans-select-ohio-state-wr-carnell-tate-with-no-4-overall-pick",
+      "https://www.cbssports.com/college-football/news/carnell-tate-scouting-report-nfl-draft-2026/",
+      "https://www.tennesseetitans.com/team/players-roster/carnell-tate/",
+      "https://global.espn.com/nfl/draft2026/story/_/id/48483888/2026-nfl-draft-wide-receiver-carnell-tate-ohio-state-first-round-pick"
+    ]
+  },
+  "1002": {
+    "id": 1002,
+    "name": "Fernando Mendoza",
+    "position": "QB",
+    "nflTeam": "LVR",
+    "nflTeamName": "Las Vegas Raiders",
+    "college": "Indiana",
+    "hometown": "Miami, Florida",
+    "classYear": "Redshirt Junior",
+    "headline": "The Heisman Winner Waits: Mendoza Apprentices Behind Cousins in Vegas",
+    "subhead": "The No. 1 overall pick who delivered Indiana a national championship is running the second team behind Kirk Cousins — for now.",
+    "draftPick": "Round 1, Pick 1 (No. 1 overall), Las Vegas Raiders",
+    "measurables": {
+      "height": "6'4\u00be\"",
+      "weight": "236 lbs",
+      "age": "22.9",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "31 7/8\"",
+      "combineNote": "Mendoza measured but did not throw or run in Indianapolis, saving his arm for Indiana's pro day. At 6'4¾\" and 236 pounds with 9½-inch hands, Daniel Jeremiah noted his measurements were nearly identical to Matt Ryan's, with Carson Palmer the other frequent size comp."
+    },
+    "collegeCareer": [
+      "Mendoza's path is the sport's best development story: a two-star recruit ranked the No. 140 quarterback in his class, he signed with Cal over Yale and FIU, redshirted, and threw 14 touchdowns against 10 picks as a redshirt freshman in 2023. A workmanlike 3,004-yard sophomore year followed, then he hit the portal and committed to Curt Cignetti's Indiana within two weeks.",
+      "The 2025 season was instant history: Mendoza went 13-0 in the regular season, won the Big Ten title over Ohio State, and became Indiana's first Heisman Trophy winner — sweeping all six regions with 84.66% of possible points, seventh-highest ever. He finished the full campaign 273 of 379 (72%) for 3,535 yards, 41 touchdowns and six interceptions, adding seven rushing scores, then steered the top-seeded Hoosiers past Alabama, Oregon and finally a 27-21 title-game win for the program's first national championship."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "California", "line": "1,708 pass yds, 14 TD, 10 INT (first career start Oct 7)"},
+      {"season": "2024", "team": "California", "line": "3,004 pass yds, 16 TD, 6 INT, 87 car, 105 rush yds, 2 TD"},
+      {"season": "2025", "team": "Indiana", "line": "273/379 (72.0%), 3,535 pass yds, 41 TD, 6 INT, 90 car, 276 rush yds, 7 TD — Heisman, national title"}
+    ],
+    "draftDayStory": [
+      "The Raiders held the No. 1 pick, needed a franchise quarterback to finish an offense already featuring Ashton Jeanty and Brock Bowers, and never seriously considered anything else: Mendoza went first overall to Las Vegas, where new coach Klint Kubiak had been the subject of Mendoza's own film study for a year. Mendoza called his combine interview with the Raiders 'fantastic' — he had been watching Kubiak's Seattle offense on Sundays during his Heisman season.",
+      "Vegas then signed 15-year veteran Kirk Cousins with one explicit promise: the best quarterback starts. That structure — Cousins as the bridge, Mendoza as the future on a redshirt plan — has defined his entire rookie summer."
+    ],
+    "whyTheyDraftedHim": [
+      "Kubiak's staff prized his processing: QB coach Mike Sullivan revealed Mendoza hand-wrote every pass play with progressions, footwork and self-critiques during OTAs",
+      "Prototype size (6'4¾\", 236) with Matt Ryan/Carson Palmer measurables and the anticipatory pocket passing Kubiak's play-action system demands",
+      "The production case was overwhelming: a 41:6 TD-to-INT ratio, a Heisman sweep and a national title in his only season at Indiana",
+      "Kubiak after the preseason opener: Mendoza is an 'ascending player' who 'will improve through reps'"
+    ],
+    "campNotes": [
+      {"date": "Aug 8", "source": "AP", "note": "With Cousins and Maxx Crosby suspended from team drills after a practice fight, Mendoza got his first crack at the starting offense and threw touchdowns to Brock Bowers, Michael Mayer and Tre Tucker."},
+      {"date": "Aug 13", "source": "Las Vegas Review-Journal", "note": "Preseason debut vs. Arizona: 10 of 16 for 96 yards and a touchdown to Jack Bech after a shaky 1-for-3 opening drive — 'mixed reviews' but real flashes in a 27-14 loss."},
+      {"date": "Aug 20", "source": "Las Vegas Review-Journal", "note": "Heavy workload in Houston went sideways: two pick-sixes in a seesaw outing against the Texans, days after running the first team in joint practice."},
+      {"date": "Aug 23", "source": "Andrew Janocko via Review-Journal", "note": "OC praised his response to the Texans game as the Raiders prep for the preseason finale vs. San Francisco; Cousins remains the clear Week 1 starter for the Sept. 13 opener against Miami."}
+    ],
+    "beatQuotes": [
+      {"quote": "He's been phenomenal coming to work. Good play. Bad play. Good series. Bad series. Just a guy that's coming in. Coming to work and getting better.", "attribution": "Andrew Janocko, Las Vegas Review-Journal, Aug 24"},
+      {"quote": "There were plays that I loved and plays that I wish I had back. But in reality, that's a lie. I wish I didn't have it back because it's a growing experience.", "attribution": "Fernando Mendoza, Las Vegas Review-Journal, Aug 19"}
+    ],
+    "depthChart": "Mendoza is the clear QB2 behind Kirk Cousins, who has run the first team nearly all camp and, per the Las Vegas Sun, has 'clearly outplayed' the rookie. The Raiders promised Cousins the job goes to the best quarterback, but the franchise's succession plan — and local columnists — are already agitating for Mendoza's takeover sometime in 2026.",
+    "whyHeCouldSucceed": [
+      "No. 1 overall capital on a team that just committed its whole offseason to him means the job arrives soon — likely mid-2026, at latest 2027",
+      "The supporting cast is the envy of rookie QBs: Ashton Jeanty in the backfield, Brock Bowers at tight end, and a Kubiak scheme he studied voluntarily in college",
+      "His preparation habits — notebooking every play with progressions and self-critiques — are exactly the trait that separates NFL hits from misses at the position",
+      "A 41:6 TD-to-INT season against Big Ten and playoff competition shows the decision-making translates against elite defenses"
+    ],
+    "whyHeCouldFail": [
+      "Cousins has outplayed him all camp, and two pick-sixes in Houston showed the anticipation throws that made him great can become NFL turnovers",
+      "A redshirt year behind a healthy veteran kills his 2026 fantasy value entirely — he may not start a game before November, if at all",
+      "One elite college season: before Indiana he was a middling Cal starter, and evaluators who doubted the supporting-cast-inflated Hoosiers offense will feel vindicated by any slow start",
+      "Modest rushing production (under 300 yards in his best season) means no Konami-code floor when the passing struggles"
+    ],
+    "fantasyOutlook": [
+      "In superflex, Mendoza is a top-three rookie pick on positional scarcity alone — KTC slots him third at 5405, while FantasyPros' single-QB-skewed consensus has him ninth. The 2026 outlook is bleak by design: Cousins starts Week 1 vs. Miami, and Mendoza's redshirt could last most of the season. Whenever he plays, expect efficient, low-rushing QB2 numbers in year one.",
+      "The dynasty bet is on 2027 and beyond: a No. 1 overall pick with Bowers, Jeanty and a play-action architect in Kubiak is a future top-10 superflex asset. In a superflex rookie draft he's worth the 1.03 — QB-needy rosters should even consider him over Tate. He is the classic 'buy the boring apprenticeship, sell the 2027 hype' asset."
+    ],
+    "comp": "Young Carson Palmer — a huge, poised pocket anticipator whose gunslinger streak produces both the 41-touchdown seasons and the pick-sixes.",
+    "bottomLine": "In superflex, take him top-three and accept a redshirt year; the throne in Vegas is his, just not by Week 1.",
+    "sources": [
+      "https://www.reviewjournal.com/sports/raiders/raiders-fernando-mendoza-shows-right-response-after-seesaw-showing-in-preseason-3868499/",
+      "https://www.reviewjournal.com/sports/raiders/fernando-mendoza-embracing-mistakes-as-raiders-play-the-texans-3866292/",
+      "https://apnews.com/article/mendoza-cousins-raiders-kubiak-quarterbacks-cbdc85befcb3be7134ba031e913370cd",
+      "https://apnews.com/article/raiders-cousins-crosby-suspend-practice-kubiak-0d9e213d0185c92dd667f5d0d5ad3fac",
+      "https://www.heisman.com/heisman-winners/fernando-mendoza/",
+      "https://lasvegassun.com/news/2026/aug/20/why-raiders-should-start-fernando-mendoza/",
+      "https://bleacherreport.com/articles/25401713-fernando-mendozas-2026-nfl-combine-measurements-ahead-indiana-qbs-pro-day"
+    ]
+  },
+  "1006": {
+    "id": 1006,
+    "name": "Jadarian Price",
+    "position": "RB",
+    "nflTeam": "SEA",
+    "nflTeamName": "Seattle Seahawks",
+    "college": "Notre Dame",
+    "hometown": "Denison, Texas",
+    "classYear": "Junior",
+    "headline": "From Love's Shadow to a Champion's Backfield: Price Inherits Walker's Job in Seattle",
+    "subhead": "The other Notre Dame back went 32nd overall to the defending Super Bowl champions, who handed him the keys the moment Kenneth Walker left for Kansas City.",
+    "draftPick": "Round 1, Pick 32 (No. 32 overall), Seattle Seahawks",
+    "measurables": {
+      "height": "5'11\"",
+      "weight": "209 lbs",
+      "age": "22.9",
+      "forty": "4.49",
+      "tenSplit": "1.61",
+      "vertical": "35\"",
+      "broad": "10'4\"",
+      "threeCone": null,
+      "shuttle": "4.28",
+      "bench": "21 reps",
+      "armLength": "30 7/8\"",
+      "combineNote": "Price tested well across the board in Indianapolis: a 4.49 forty (officially clocked 4.50 on the Seahawks' broadcast cut), a 4.28 short shuttle, 35-inch vertical, 10'4\" broad and 21 bench reps at 5'10⅝\" and 203 pounds — a complete, explosive profile for a back who also brought elite kick-return tape."
+    },
+    "collegeCareer": [
+      "Price's career began with catastrophe: a ruptured Achilles in summer 2022 wiped out his entire true freshman season before he ever played a down. He returned in 2023 as a rotational piece (272 yards, 5.8 ypc), then settled into the 1B role behind Jeremiyah Love — 746 yards at 6.2 per carry and seven touchdowns across all 16 games of Notre Dame's 2024 title-game run, including his first 100-yard game at USC.",
+      "In 2025 he never carried more than 15 times in a game and still scored 15 total touchdowns in 12 contests: 674 rushing yards, 11 rushing scores, two receiving touchdowns and two 100-plus-yard kick-return touchdowns, making him the first Irish player ever with multiple 100-yard return scores in a season. He was a Paul Hornung and Jet Award finalist, finished with a career 6.0 ypc, and told combine interviewers he stayed loyal to Notre Dame despite portal offers to be a feature back elsewhere."
+    ],
+    "collegeStats": [
+      {"season": "2023", "team": "Notre Dame", "line": "13 G, 47 car, 272 rush yds, 5.8 ypc, 3 TD, 5 rec, 65 yds, 1 TD"},
+      {"season": "2024", "team": "Notre Dame", "line": "16 G, 120 car, 746 rush yds, 6.2 ypc, 7 TD, 4 rec, 10 yds"},
+      {"season": "2025", "team": "Notre Dame", "line": "12 G, 113 car, 674 rush yds, 6.0 ypc, 11 TD, 6 rec, 87 yds, 2 TD, plus 12 KR, 450 yds, 2 TD"}
+    ],
+    "draftDayStory": [
+      "The defending Super Bowl champions used the final pick of the first round on Price, a mild surprise after pre-draft projections from Kiper (No. 28, Houston) and Jeremiah (No. 30, Denver) had him in the same range. Seattle's logic was straightforward: Super Bowl MVP Kenneth Walker III walked to Kansas City in free agency, Zach Charbonnet opened camp on PUP, and John Schneider wanted a three-phase back with first-round traits whose college odometer reads just 280 carries.",
+      "Note for the ledger: he went 32nd overall exactly as billed, the last pick of Round 1 — first-round capital by a technicality, franchise-back expectations by design."
+    ],
+    "whyTheyDraftedHim": [
+      "Seattle needed a Walker replacement and prized Price's fresh legs — never more than 15 carries in a college game behind Jeremiyah Love",
+      "Three-phase value: coaches cited his pass-pro awareness, receiving upside and elite kick-return production as floor-raisers",
+      "GMs at the combine told him they respected his loyalty in staying at Notre Dame rather than portaling for volume",
+      "Mike Macdonald's staff immediately built camp around drilling the passing-game reps he never got in college"
+    ],
+    "campNotes": [
+      {"date": "Jul 27", "source": "Gregg Bell, Tacoma News Tribune", "note": "Price sent Super Bowl-champion LB Ernest Jones flying with a route move in 7-on-7 — his third NFL practice — as Bell wrote it would be 'a shock' if Price isn't the Week 1 starter."},
+      {"date": "Jul 30", "source": "Gregg Bell, Tacoma News Tribune", "note": "First full-pads scrimmage: Price took the first handoff with the starting offense and continued a daily regimen of catching passes from Darnold, Lock and Milroe — the exact skill Seattle is force-feeding him."},
+      {"date": "Aug 12-19", "source": "NBC Sports / News Tribune", "note": "Missed five of six practices with upper-leg soreness (variously reported as lower-body, leg and upper-body), sitting out the preseason opener vs. Dallas before returning to padded practice Aug 17-18 and the joint practice with Tennessee."},
+      {"date": "Aug 23", "source": "Mike Macdonald via NBC Sports", "note": "Macdonald ruled Price out of the final two preseason games as a precaution; he returned to full practice participation Aug 24, and Bell projects him as the Week 1 lead back against New England."}
+    ],
+    "beatQuotes": [
+      {"quote": "Half asked, 'Why didn't you go somewhere else and (get) to be a feature back?' I just tell them Notre Dame was a place for me, and they ultimately, at the end, they're like, 'We do respect that.'", "attribution": "Jadarian Price, 247Sports, Feb 27"},
+      {"quote": "He's a really special player.", "attribution": "Sam Darnold, via Sportsnaut, Aug 22"},
+      {"quote": "(Price) isn't fully unleashed for unlimited work... his practice participation will ramp up some.", "attribution": "Mike Macdonald, via NBC Sports, Aug 23"}
+    ],
+    "depthChart": "Price is the presumptive RB1 for the defending champs, ahead of George Holani and free-agent addition Emanuel Wilson, with Zach Charbonnet on PUP and expected back sometime during the season. He has taken the most reps with the No. 1 offense whenever healthy, and Seattle is protecting him — not demoting him — by holding him out of the last two preseason games.",
+    "whyHeCouldSucceed": [
+      "The opportunity is enormous: lead back for the defending Super Bowl champions, replacing a departed Super Bowl MVP with only Holani and Wilson behind him",
+      "Fresh legs are a feature — 280 college carries total means none of the tread-wear that dooms most 23-year-old rookie backs",
+      "Complete athletic profile (4.49/35\"/10'4\"/21 reps) plus proven contact balance and one-cut vision fit Seattle's zone scheme cleanly",
+      "Sam Darnold and the veteran defense have publicly embraced him, and the staff is investing daily coaching in his passing-game growth"
+    ],
+    "whyHeCouldFail": [
+      "The medical file is real: a ruptured Achilles in 2022 and a month of August leg soreness vague enough to be reported four different ways",
+      "He has never been a volume back — zero college games over 15 carries — so a 250-touch NFL workload is pure projection",
+      "Charbonnet's midseason return and Holani's steadiness could turn this into a champion's committee that caps his ceiling",
+      "At 22.9 he's an old rookie by RB standards, and his receiving résumé (15 career catches) must be built from scratch at the NFL level"
+    ],
+    "fantasyOutlook": [
+      "Price is the classic capital-plus-vacuum bet: 32nd overall to a Super Bowl champion that lost its MVP back. If he's healthy Week 1 — and Gregg Bell believes he will be — he opens as the lead runner in a winning offense, with 1,000 total yards and double-digit touchdowns in range. The August soreness and his thin receiving track record are the discount; the depth chart is the argument. He profiles as a mid-RB2 in 2026 with weekly RB1 spike potential in a Seattle offense that finished last season hoisting the trophy.",
+      "In superflex .5 PPR rookie drafts he belongs in the 1.04-1.06 range — KTC has him fourth at 5039, one slot ahead of Tyson. Taking him fourth overall on this board is fair value, not a reach."
+    ],
+    "comp": "Kenneth Walker III with better hands projection and less wear — a fitting comp, since it's literally Walker's job he's inheriting.",
+    "bottomLine": "The cleanest opportunity in the class after Love: buy at 1.04 and trust the champs' actions — they're resting him like a starter, not auditioning him.",
+    "sources": [
+      "https://apnews.com/article/seahawks-price-holani-training-camp-1f35c0689e7d8fb797c42ff9998ab02f",
+      "https://www.thenewstribune.com/sports/nfl/seattle-seahawks/article316679093.html",
+      "https://www.thenewstribune.com/sports/nfl/seattle-seahawks/article316717070.html",
+      "https://www.nbcsports.com/fantasy/football/player-news/2026-08-23/jadarian-price-wont-play-again-until-week-1",
+      "https://www.seahawks.com/team/players-roster/jadarian-price/",
+      "https://en.wikipedia.org/wiki/Jadarian_Price",
+      "https://fightingirish.com/roster/jadarian-price/"
+    ]
+  },
+  "1003": {
+    "id": 1003,
+    "name": "Jordyn Tyson",
+    "position": "WR",
+    "nflTeam": "NO",
+    "nflTeamName": "New Orleans Saints",
+    "college": "Arizona State",
+    "hometown": "Allen, Texas",
+    "classYear": "Senior",
+    "headline": "The Talent Was Never the Question: Tyson's Hamstring Answers the Other One",
+    "subhead": "New Orleans' No. 8 pick dazzled all camp with gloveless hands and surgical routes — then a two-month hamstring injury confirmed the exact fear that defined his draft profile.",
+    "draftPick": "Round 1, Pick 8 (No. 8 overall), New Orleans Saints",
+    "measurables": {
+      "height": "6'2\"",
+      "weight": "203 lbs",
+      "age": "22.0",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Tyson did not post workout numbers during the pre-draft cycle — the hamstring injury that ended his 2025 college season derailed the majority of his pre-draft process, so teams drafted him off tape and medicals rather than testing. He measured 6'2\" and 203 pounds."
+    },
+    "collegeCareer": [
+      "Tyson's college arc is brilliance interrupted. He broke out as a Colorado freshman in 2022 (22 catches, 470 yards, 21.4 per catch), then tore his ACL, MCL and PCL against Oregon — days after torching Arizona State for 115 yards and two scores. Kenny Dillingham, who had recruited him hard, brought him to Tempe anyway and let him rehab through a lost 2023.",
+      "Healthy in 2024, he was Big 12 Offensive Newcomer of the Year: 75 catches, 1,101 yards and 10 touchdowns in 12 games, powering ASU's College Football Playoff run before a collarbone injury ended his November. In 2025 he scored in each of ASU's first seven games and finished 61-711-8 in nine starts around the hamstring injury, earning back-to-back AP third-team All-America and first-team All-Big 12 honors. His 1,812 receiving yards over 2024-25 ranked fourth among all Power 4 players — accomplished, remarkably, in only 21 games."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Colorado", "line": "9 G, 22 rec, 470 yds, 21.4 ypr, 4 TD"},
+      {"season": "2023", "team": "Arizona State", "line": "3 G, 0 rec (recovering from torn ACL/MCL/PCL)"},
+      {"season": "2024", "team": "Arizona State", "line": "12 G, 75 rec, 1,101 yds, 14.7 ypr, 10 TD"},
+      {"season": "2025", "team": "Arizona State", "line": "9 G, 61 rec, 711 yds, 11.7 ypr, 8 rec TD + 1 rush TD"}
+    ],
+    "draftDayStory": [
+      "The Saints stayed at No. 8 and took Tyson — the second receiver off the board, four picks after Carnell Tate, and the highest-drafted Saints wideout since Wes Chandler went third in 1978. Many boards had Tyson as the most purely talented receiver in the class; the medical file was the entire discount. He became the first Arizona State player drafted in the top 10 since Terrell Suggs in 2003.",
+      "Head coach Kellen Moore gushed on draft night about 'the way he attacks the football, the way he catches the football, the way he can separate at the line of scrimmage, at the catch point,' pairing Tyson with Chris Olave as the target duo for second-year QB Tyler Shough."
+    ],
+    "whyTheyDraftedHim": [
+      "Kellen Moore, draft night: 'a really exciting player for us... a lot of pluses' — separation at the line, ball skills, catch-point dominance",
+      "New Orleans needed a second pillar: Olave was the only Saints receiver with 500+ yards and 5+ TDs in 2025",
+      "The front office accepted the medical risk explicitly, betting the top-five talent at pick eight outweighed the durability file",
+      "His route precision and hands fit Moore's timing-and-spacing offense as an immediate starter opposite Olave"
+    ],
+    "campNotes": [
+      {"date": "Aug 8", "source": "Arizona Sports / WDSU", "note": "Tyson broke CB Quincy Riley's ankles on a sideline route and later took a Tyler Shough completion to the house in team drills — the practice-field flashes that made him a top-10 pick were fully on display."},
+      {"date": "Aug 12", "source": "NewOrleans.Football", "note": "A camp feature noted Tyson practices without gloves and 'keeps catching everything'; Tyson said he could feel himself becoming a better player through camp. He had practiced fully every day, held out only of one-on-ones as a precaution."},
+      {"date": "Aug 14", "source": "nola.com", "note": "In Thursday's joint practice with Jacksonville, Tyson caught a crossing route and his foot slipped as he was shoved from behind — a right hamstring injury Kellen Moore said would have hurt 'most players.'"},
+      {"date": "Aug 17", "source": "ESPN / NFL Network (Rapoport & Garofolo)", "note": "Sources said Tyson could miss two months. An IR stint would cost him at least four games; nola.com mapped potential debuts anywhere from Oct. 11 (Vikings) to Nov. 8 (Browns) depending on how cautious the Saints play it."}
+    ],
+    "beatQuotes": [
+      {"quote": "Jordyn's had a great camp. He's played really good football. Inevitably, this is the unfortunate part of what preseason and training camp football is.", "attribution": "Kellen Moore, ESPN, Aug 17"},
+      {"quote": "(He's) a really exciting player for us... the way he attacks the football, the way he catches the football, the way he can separate at the line of scrimmage, at the catch point -- a lot of pluses.", "attribution": "Kellen Moore, NFL.com, Apr 23"}
+    ],
+    "depthChart": "Tyson was locked in as the starting outside receiver opposite Chris Olave before the injury; now he's likely to open the season on injured reserve, with Kevin Austin, Bub Means and the post-Ja'Lynn Polk-retirement depth filling in. When healthy — realistically October or November — he steps straight back into a starting role in Kellen Moore's offense.",
+    "whyHeCouldSucceed": [
+      "Top-10 capital plus a genuine talent consensus — many evaluators called him the most gifted receiver in the class, ahead of Tate",
+      "The Saints target tree is wide open: beyond Olave, nobody on the roster commands volume, and Moore's scheme feeds precise separators",
+      "His 2024 tape (75-1,101-10 as the focal point of a 32% target share offense) shows true alpha capacity, not complementary production",
+      "The hamstring is a soft-tissue setback, not another structural knee injury — Moore insists it's unrelated to his college issues and that 'he'll be good to go'"
+    ],
+    "whyHeCouldFail": [
+      "He has now lost time to injury in four of five football seasons — knee (ACL/MCL/PCL), collarbone, hamstring twice — before playing an NFL snap",
+      "Missing camp chemistry with Tyler Shough and potentially half his rookie season stunts exactly the development window top-10 receivers need",
+      "Shough himself is unproven; if the second-year QB stalls, Tyson returns to a low-volume passing offense in November",
+      "CBS charted him as a limited after-catch player (one 10-plus-YAC catch in 2025), so his fantasy scoring depends on volume he may not see this year"
+    ],
+    "fantasyOutlook": [
+      "Redraft managers should treat Tyson as a stash: two months out means an October-November debut, a handful of integration weeks, and maybe eight meaningful games. In dynasty, this is precisely when you buy talent — his KTC value (4978, rookie five) already absorbed the injury discount, and FantasyPros' consensus still ranks him the No. 3 rookie on talent. A 2027 outcome where he's the Saints' 110-target No. 1B alongside Olave is entirely live.",
+      "At the rookie-draft table in superflex .5 PPR, he's correctly priced at 1.05 on this board: behind Tate (health), behind Love and Price (opportunity), but ahead of every other wideout on pure ability. If a win-now manager fades him over the IR designation, he is this class's best value slide."
+    ],
+    "comp": "A leaner Tee Higgins with Jaxon Smith-Njigba's route suddenness — catch-point royalty whose only true adversary has been his own soft tissue.",
+    "bottomLine": "Draft the talent, budget for the redshirt: Tyson at 1.05 is a discounted future WR1 for any roster that can wait until October.",
+    "sources": [
+      "https://www.espn.com/nfl/story/_/id/49642899/saints-rookie-wr-jordyn-tyson-miss-two-months",
+      "https://www.nola.com/sports/saints/saints-jordyn-tyson-hamstring-injury-analysis/article_fc15dbe4-259e-4723-ae2f-be4f866e6f08.html",
+      "https://www.nola.com/sports/saints/saints-rookie-wr-jordyn-tyson-injured-his-hamstring/article_d22b2d44-d08b-4e64-a336-24ae50136281.html",
+      "https://www.nfl.com/news/2026-nfl-draft-saints-pick-arizona-state-wr-jordyn-tyson-with-no-8-overall-selection",
+      "https://www.cbssports.com/nfl/draft/news/jordyn-tyson-nfl-draft-profile/",
+      "https://www.neworleanssaints.com/news/jordyn-tyson-saints-2026-nfl-draft-five-things",
+      "https://arizonasports.com/ncaa/arizona-state/arizona-state-football/jordyn-tyson-saints-camp"
+    ]
+  }
+}
