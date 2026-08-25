@@ -1,0 +1,423 @@
+{
+  "1117": {
+    "id": 1117,
+    "name": "Luke Altmyer",
+    "position": "QB",
+    "nflTeam": "DET",
+    "nflTeamName": "Detroit Lions",
+    "college": "Illinois",
+    "hometown": "Starkville, Mississippi",
+    "classYear": "Redshirt Senior",
+    "headline": "Bridgewater Walked Away and Handed Luke Altmyer the Keys to Detroit's QB2 Job",
+    "subhead": "The undrafted Illinois captain has turned a $10,000 signing bonus into a genuine backup-quarterback battle with Josh Dobbs in Dan Campbell's building.",
+    "draftPick": "Undrafted free agent, signed with the Detroit Lions after the 2026 NFL Draft",
+    "measurables": {
+      "height": "6'1\"",
+      "weight": "213 lbs",
+      "age": "23.8",
+      "forty": "4.72",
+      "tenSplit": "1.64",
+      "vertical": "32\"",
+      "broad": "9'6\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "29 7/8\"",
+      "combineNote": "Altmyer tested at the 2026 combine and ran an official 4.72 forty with a 32-inch vertical and 9'6\" broad jump — solid mobility numbers for a quarterback, though his 29 7/8-inch arms and 9-inch hands are below NFL thresholds and helped push him out of the draft entirely."
+    },
+    "collegeCareer": [
+      "Altmyer began his career at Ole Miss in 2021 as a touted Starkville product, but two seasons behind Matt Corral and Jaxson Dart yielded just nine games of mop-up work. He transferred to Illinois in 2023 and immediately took over Bret Bielema's offense, starting 35 games over three seasons in Champaign. His first year was rocky — 1,883 yards, 13 touchdowns and 10 interceptions across 10 games — but the trajectory from there was unmistakably upward.",
+      "In 2024 he threw for 2,717 yards with 22 touchdowns against just six picks and led Illinois to a 10-win season. Then in 2025 he put together his best tape yet: 246-of-365 (67.4%), 3,007 yards, 8.2 yards per attempt, 22 touchdowns and only five interceptions, adding 242 rushing yards and five scores on the ground. He finished his career with 60 passing touchdowns against 24 interceptions and completed better than 60 percent of his passes in all three Illinois seasons — a steady, low-mistake operator who won a lot of Big Ten games without elite arm talent."
+    ],
+    "collegeStats": [
+      {"season": "2021", "team": "Ole Miss", "line": "5 G, 20-of-37 (54.1%), 192 pass yds, 1 TD, 2 INT"},
+      {"season": "2022", "team": "Ole Miss", "line": "4 G, 8-of-17 (47.1%), 125 pass yds, 2 TD, 1 INT"},
+      {"season": "2023", "team": "Illinois", "line": "10 G, 175-of-270 (64.8%), 1,883 pass yds, 13 TD, 10 INT; 282 rush yds, 3 TD"},
+      {"season": "2024", "team": "Illinois", "line": "13 G, 211-of-347 (60.8%), 2,717 pass yds, 22 TD, 6 INT; 217 rush yds, 4 TD"},
+      {"season": "2025", "team": "Illinois", "line": "13 G, 246-of-365 (67.4%), 3,007 pass yds, 8.2 Y/A, 22 TD, 5 INT; 242 rush yds, 5 TD"}
+    ],
+    "draftDayStory": [
+      "Altmyer sat through all seven rounds of the 2026 draft without hearing his name — the KTC listing of him as an undrafted free agent checks out. Short arms, small hands and a good-not-great arm outweighed 35 college starts on draft weekend. Detroit moved quickly after the final pick, signing him for a $10,000 bonus and a $257,500 base-salary guarantee (the 2026 practice-squad rate), per the Detroit Free Press — real money for a UDFA quarterback and a signal the Lions viewed him as more than a camp arm.",
+      "The landing spot has turned out to be remarkable. Teddy Bridgewater left the team in early August to contemplate retirement and was placed on the reserve/retired list on August 9, instantly elevating Altmyer to the No. 2 quarterback in practice. Detroit signed veteran Josh Dobbs the same day, but Altmyer has taken the bulk of the preseason snaps behind Jared Goff."
+    ],
+    "whyTheyDraftedHim": [
+      "Detroit prioritized him in the UDFA market with a practice-squad-level guarantee, betting on 35 starts of Big Ten experience and a 60:24 career TD:INT ratio",
+      "Dan Campbell has praised his poise: the staff intentionally threw him into tough situations in camp so he could 'fail and grow' — and liked how he handled it",
+      "His 4.72 speed and scramble ability fit an offense that values quarterbacks who can extend plays off schedule",
+      "With Goff entrenched and Bridgewater aging, Detroit needed a developmental QB3 with starter-level college pedigree"
+    ],
+    "campNotes": [
+      {"date": "Aug 9", "source": "detroitlions.com camp notes", "note": "With Bridgewater placed on the reserve/retired list, Altmyer took all the backup reps for two practices and was tabbed to play the bulk of the preseason opener in Cincinnati. Campbell said he 'did some really good things' despite a delay of game and a couple of misreads."},
+      {"date": "Aug 10", "source": "Dave Birkett, Detroit Free Press", "note": "Altmyer stayed 10 minutes after practice barking cadences with the offensive line after multiple game-management slip-ups, including a delay of game backed up near his own goal line. He will take the majority of snaps in the preseason opener vs. the Bengals."},
+      {"date": "Aug 22", "source": "AP News", "note": "In the preseason win over Washington at Ford Field, Altmyer went 9-of-13 for 86 yards as the third quarterback behind Dobbs, moving the offense but taking four sacks, including three on his first drive. He converted a clutch fourth-down throw late to seal the 17-13 win."}
+    ],
+    "beatQuotes": [
+      {"quote": "He was put in some really tough positions for a young player that you absolutely have to be put in... And we thought he handled it really well. He had a delay of game, there were a couple of misreads. But man, that's part of growth... it doesn't feel too big to him right now. And that's a great sign at that position.", "attribution": "Dan Campbell, Lions head coach, via detroitlions.com, Aug 9"},
+      {"quote": "We know Luke can see the field. We just need to help him play faster, but that will come.", "attribution": "Dan Campbell, via AP News, Aug 22"},
+      {"quote": "Reps, reps, reps is kind of my thing, man. The more reps I get, the more comfortable I get.", "attribution": "Luke Altmyer, via Detroit Free Press, Aug 23"}
+    ],
+    "depthChart": "Altmyer is Detroit's QB3 behind Jared Goff and Josh Dobbs, but he has genuinely pushed Dobbs for the backup job through two preseason games. Worst case, he appears headed for the practice squad at the rate his contract already guarantees; best case, he steals QB2.",
+    "whyHeCouldSucceed": [
+      "The Bridgewater retirement handed him a real runway: he has taken heavy backup reps all camp and played extensive preseason snaps, exactly the development path UDFA quarterbacks rarely get",
+      "Three years of legitimate Big Ten starting experience with a 67.4% completion rate and a 22:5 TD:INT line in 2025 — he processes and protects the ball like a pro backup already",
+      "Dan Campbell has publicly and repeatedly praised his poise; coaching staffs keep quarterbacks they trust, and Detroit's staff clearly trusts him",
+      "Functional 4.72 mobility lets him extend plays — his fourth-down scramble-and-throw sealed the Commanders preseason win"
+    ],
+    "whyHeCouldFail": [
+      "He went undrafted for real reasons: sub-30-inch arms, 9-inch hands and modest arm strength are the classic profile of a career backup, not a future starter",
+      "Jared Goff is signed long-term in Detroit — there is no path to meaningful starts here short of injury, capping his fantasy value at nearly zero for 2026",
+      "He took four sacks against Washington and admitted game speed is still catching up to him; pocket timing remains a work in progress",
+      "Josh Dobbs' veteran presence means Altmyer likely opens the season as a QB3 or practice-squad stash rather than one injury from the field"
+    ],
+    "fantasyOutlook": [
+      "Altmyer is a name to know, not a name to roster in most leagues. He will not see a regular-season snap in 2026 barring catastrophe ahead of him, and even in superflex formats a UDFA QB3 is a watch-list player. His KTC superflex value of 466 (rookie rank 66, tier 16) prices him honestly: a lottery ticket on coaching-staff affection. That said, quarterbacks who win over Dan Campbell and take real preseason reps have a way of sticking around, and Altmyer's low-mistake profile is exactly what NFL teams keep as a backup for a decade.",
+      "At the draft table in a superflex .5 PPR dynasty league, he is a late-fourth-round rookie pick at most — board rank #66 is about right. If your league rosters taxi squads deep, he is a defensible final-pick dart in superflex simply because quarterbacks with a path to a clipboard job outlive fifth running backs. Do not spend an asset to get him; take him if he is free."
+    ],
+    "comp": "A cheaper Gardner Minshew — an undersized, undrafted-profile pocket manager who wins backup jobs with accuracy, moxie and just enough scramble juice.",
+    "bottomLine": "Real NFL backup potential, near-zero 2026 fantasy utility. In superflex he is a justifiable last-pick flier; in single-QB leagues, leave him on the board.",
+    "sources": [
+      "https://www.detroitlions.com/news/camp-notes-altmyer-looking-forward-to-preseason-debut",
+      "https://www.freep.com/story/sports/nfl/lions/2026/08/10/nfl-preseason-lions-bengals-starting-quarterback-luke-altmyer/91239526007/",
+      "https://apnews.com/article/commanders-lions-score-0d7db2b298411ac12a73c820ec3116ed",
+      "https://www.freep.com/story/sports/columnists/carlos-monarrez/2026/08/23/josh-dobbs-luke-altmyer-get-footloose-in-detroit-lions-qb-battle/91422092007/",
+      "https://www.statmuse.com/cfb/player/luke-altmyer-64656/career-stats",
+      "https://nflcombineresults.com/playerpage.php?i=32021",
+      "https://bleacherreport.com/articles/25418903-luke-altmyer-2026-nfl-draft-scouting-report-detroit-lions-qb"
+    ]
+  },
+  "1099": {
+    "id": 1099,
+    "name": "Roman Hemby",
+    "position": "RB",
+    "nflTeam": "LVR",
+    "nflTeamName": "Las Vegas Raiders",
+    "college": "Indiana",
+    "hometown": "Baltimore area, Maryland",
+    "classYear": "Redshirt Senior",
+    "headline": "National Champion Roman Hemby Is Muscling His Way Into a Crowded Raiders Backfield",
+    "subhead": "The Maryland transfer who led Indiana's title team in carries went undrafted, but his size, pass-pro chops and physical style have him fighting for a Las Vegas roster spot.",
+    "draftPick": "Undrafted free agent, signed with the Las Vegas Raiders after the 2026 NFL Draft",
+    "measurables": {
+      "height": "6'0\"",
+      "weight": "210 lbs",
+      "age": "24.0",
+      "forty": "4.54",
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "31\"",
+      "combineNote": "Hemby did not post a full combine workout; RotoWire lists a 4.54 pro-day forty at 6'0\", 210 pounds with 9 1/2-inch hands and 31-inch arms. Adequate size-speed for a between-the-tackles committee back, nothing that jumps off a stopwatch."
+    },
+    "collegeCareer": [
+      "Hemby spent four seasons at Maryland, where he was the Terrapins' lead back for three of them. His 2022 breakout — 989 yards and 11 touchdowns on 5.3 per carry, plus 33 catches — made him look like a future draft pick, but his efficiency and volume plateaued over the next two years (663 yards in 2023, 607 in 2024) even as he stayed heavily involved in the passing game, catching 110 balls across three seasons in College Park.",
+      "The leap of faith came in 2025: Hemby transferred to Indiana and started all 16 games of the Hoosiers' national-championship run, leading the team with 230 carries for 1,120 yards and seven touchdowns while splitting work with Kaelon Black. He earned third-team All-Big Ten from the media, was named Paul Hornung Award National Player of the Week after a two-touchdown game against UCLA, and ripped an 82-yard touchdown at Purdue — the longest run in the 101-year history of the Old Oaken Bucket game. He finished his career with 3,467 rushing yards, 29 rushing touchdowns and 129 receptions for 1,086 yards."
+    ],
+    "collegeStats": [
+      {"season": "2021", "team": "Maryland", "line": "3 G, 17 car, 71 rush yds, 4.2 ypc, 2 TD"},
+      {"season": "2022", "team": "Maryland", "line": "13 G, 188 car, 989 rush yds, 5.3 ypc, 11 TD, 33 rec, 298 rec yds"},
+      {"season": "2023", "team": "Maryland", "line": "12 G, 135 car, 663 rush yds, 4.9 ypc, 7 TD, 37 rec, 288 rec yds"},
+      {"season": "2024", "team": "Maryland", "line": "12 G, 134 car, 607 rush yds, 4.5 ypc, 7 TD, 40 rec, 273 rec yds"},
+      {"season": "2025", "team": "Indiana", "line": "16 G (16 GS), 230 car, 1,120 rush yds, 4.9 ypc, 7 TD, 17 rec, 165 rec yds"}
+    ],
+    "draftDayStory": [
+      "Despite leading the national champion in carries, Hemby went undrafted in 2026 — analysts had projected him as a fifth-to-seventh-round pick, but a modest athletic profile, a 24th birthday before his rookie season and a poor 2025 pass-protection grade (PFF ranked him 129th of 161 qualifiers) pushed him off boards entirely. The Raiders signed him immediately after the draft, reuniting him with a franchise that also drafted his Indiana teammate Fernando Mendoza's backfield — Las Vegas took Arkansas RB Mike Washington Jr. in the fourth round the same weekend.",
+      "The fit is logical: head coach Klint Kubiak is installing a wide/outside-zone scheme, and Hemby logged nearly 400 zone runs at the college level while offering the pass-catching résumé (129 career receptions) Las Vegas wants behind Ashton Jeanty."
+    ],
+    "whyTheyDraftedHim": [
+      "Kubiak's wide-zone install values decisive one-cut runners; Hemby ran both gap and zone at Maryland and Indiana and is regarded as a natural fit for the scheme",
+      "At 6'0\", 210 he brings a physical, between-the-tackles element the back end of the Raiders' RB room (Laube, Collier) lacks",
+      "129 career receptions for over 1,000 yards gives him legitimate third-down utility for a team building around a rookie-contract backfield",
+      "Championship pedigree: he was a 16-game starter on Indiana's national title team, and the Raiders loaded up on Hoosiers (Mendoza, E.J. Williams Jr., Hemby) this offseason"
+    ],
+    "campNotes": [
+      {"date": "Jul 25", "source": "Silver And Black Pride", "note": "Previewed as the most intriguing of the Raiders' back-end RB battle with Dylan Laube and Chris Collier for the RB3 job, with his size and physicality cited as differentiators. The preliminary pecking order listed him fifth: Jeanty, Washington Jr., Laube, Collier, Hemby."},
+      {"date": "Aug 13", "source": "footballdb.com / The Daily Hoosier", "note": "Preseason debut vs. Arizona: 3 carries for 7 yards in a 27-14 loss, playing behind Jeanty, Washington and Laube."},
+      {"date": "Aug 20", "source": "footballdb.com", "note": "Best outing of the summer at Houston: 6 carries for 27 yards (4.5 ypc) with two first downs plus a catch in a 22-20 win, with the Raiders resting most starters."},
+      {"date": "Aug 24", "source": "raiders.com training camp notebook", "note": "Still stacking late-camp reps with the roster deadline looming; the team's notebook highlighted rookies, Hemby among them, accelerating their climb in the final week before cuts."}
+    ],
+    "beatQuotes": [
+      {"quote": "Hemby is another rookie back the Raiders added this offseason who has seen action this preseason. Hemby gives the Raiders a strong runner who can get tough yards.", "attribution": "Sports Illustrated Raiders OnSI, Aug 25"},
+      {"quote": "It was a little over a year ago when I took a leap of faith and landed here. Everyone welcomed me with open arms... To reflect on the things we were able to do is amazing.", "attribution": "Roman Hemby, via iuhoosiers.com, Apr 22"}
+    ],
+    "depthChart": "Hemby sits fifth or sixth in the Raiders' backfield behind Ashton Jeanty, fourth-rounder Mike Washington Jr., Dylan Laube, Chris Collier and veteran Dare Ogunbowale, fighting for an RB3/RB4 spot or a practice-squad landing. With Jeanty banged up ahead of the preseason finale, Hemby is getting extra late-August run.",
+    "whyHeCouldSucceed": [
+      "Klint Kubiak's outside-zone scheme is the best possible stylistic fit for his decisive, one-cut running — scheme fit is how UDFA backs survive cut day",
+      "His 129 career catches and pass-protection experience give him a three-down skill set the other bubble backs in Las Vegas can't match at his size",
+      "Jeanty's late-August absence and a thin veteran room mean real preseason-finale reps and a genuine roster or practice-squad path",
+      "He has produced everywhere he has played: 1,000-yard seasons at two schools and a 16-start campaign for a national champion under real Big Ten defensive fronts"
+    ],
+    "whyHeCouldFail": [
+      "He turned 24 on August 16 — old for a rookie back with no draft capital, the demographic dynasty leagues rightly discount hardest",
+      "Ashton Jeanty is a top-6-pick franchise back; even a perfect outcome makes Hemby a handcuff to a player who never leaves the field",
+      "PFF graded his 2025 pass protection 129th of 161 qualified backs — the exact skill that usually decides UDFA roster battles",
+      "His preseason production has been modest (9 carries, 34 yards) and he began camp listed behind four other backs"
+    ],
+    "fantasyOutlook": [
+      "Hemby is a deep-roster dynasty stash whose value is almost entirely theoretical in 2026. If he makes the 53, he opens as an inactive-most-weeks RB4; the likelier outcome is the practice squad. His FantasyPros consensus rookie rank of 51 reflects the market's soft spot for national-champion production, but board rank #67 is the honest price. In a superflex .5 PPR rookie draft he is a fifth-round pick or an undrafted watch-list add — the profile (age 24, no capital, elite ambiguity behind a superstar) is the one that busts most often.",
+      "The counterargument: pass-catching backs in zone schemes have a habit of materializing when injuries hit, and Hemby is one Jeanty ankle sprain from standalone flex appeal in an offense that would funnel him work. He is a free square worth burning a taxi spot on in 14-plus-team leagues, and nothing more."
+    ],
+    "comp": "A less-explosive Ty Chandler — a productive, older college back with receiving chops who has to win an NFL job on third downs and special teams.",
+    "bottomLine": "Roster him only in deep leagues with taxi squads. If he clears your rookie draft's fifth round, he's a fine free-agent watch; don't spend a real pick.",
+    "sources": [
+      "https://www.silverandblackpride.com/las-vegas-raiders-depth-chart/134770/raiders-2026-roman-hemby-running-back",
+      "https://iuhoosiers.com/news/2026/4/22/football-creating-an-edge-hemby-seeks-longevity-with-nfl-opportunity-PETE",
+      "https://www.footballdb.com/players/roman-hemby-hembyro01/gamelogs",
+      "https://www.si.com/nfl/raiders/onsi/las-vegas-how-will-handle-absence-ashton-jeanty",
+      "https://www.playerprofiler.com/nfl/roman-hemby/",
+      "https://steelersdepot.com/2026/02/2026-nfl-draft-scouting-report-indiana-rb-roman-hemby/",
+      "https://www.raiders.com/news/training-camp-notebook-8-24-rookies-stack-late-camp-reps-as-their-climb-accelerates"
+    ]
+  },
+  "1090": {
+    "id": 1090,
+    "name": "Robert Henry Jr.",
+    "position": "RB",
+    "nflTeam": "WAS",
+    "nflTeamName": "Washington Commanders",
+    "college": "UTSA",
+    "hometown": "Lumberton, Mississippi",
+    "classYear": "Senior",
+    "headline": "From JUCO Anonymity to a 22-Yard House Call: Robert Henry Jr. Is Crashing Washington's Backfield",
+    "subhead": "The two-time Mississippi 1A Mr. Football went unrated, undrafted and unnoticed — then ran for 75 yards and a touchdown in his NFL debut.",
+    "draftPick": "Undrafted free agent, signed with the Washington Commanders after the 2026 NFL Draft",
+    "measurables": {
+      "height": "5'9\"",
+      "weight": "196 lbs",
+      "age": "24.6",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Henry was not invited to the 2026 combine and no verified testing numbers circulated from UTSA's pro day — his athletic profile is essentially all tape, which is a big part of why he went undrafted despite a 1,000-yard season."
+    },
+    "collegeCareer": [
+      "Henry's path is the longest in this class. He put up over 7,000 rushing yards and 99 touchdowns at Lumberton High School and won back-to-back Mississippi Class 1A Mr. Football awards — and still went unrated as a recruit. He landed at Jones College in the JUCO ranks, where his 2022 season (1,302 yards, 18 touchdowns, 5.5 per carry) won him the inaugural Walter Jones Trophy as the top junior-college player in America.",
+      "At UTSA he climbed from committee piece to lead back over three seasons. He punched in 11 touchdowns on just 127 carries in 2023, added 706 yards in 2024, then broke out as a senior: 1,045 yards on 6.9 per carry with nine rushing scores in 11 games, becoming just the third 1,000-yard rusher in UTSA history despite missing two games. PFF credited him with 33 forced missed tackles and 4.3 yards after contact per attempt in 2025, and his signature performance was 177 yards and two touchdowns on 16 carries against Texas A&M. Career: 408 carries, 2,339 yards (5.7 ypc), 27 rushing TDs, plus 58 catches."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Jones College (JUCO)", "line": "1,302 rush yds, 5.5 ypc, 18 TD, 19 rec, 128 rec yds — Walter Jones Trophy winner"},
+      {"season": "2023", "team": "UTSA", "line": "127 car, 588 rush yds, 4.6 ypc, 11 TD, 19 rec, 115 rec yds"},
+      {"season": "2024", "team": "UTSA", "line": "130 car, 706 rush yds, 5.4 ypc, 7 TD, 21 rec, 199 rec yds, 1 TD"},
+      {"season": "2025", "team": "UTSA", "line": "11 G, 151 car, 1,045 rush yds, 6.9 ypc, 9 TD, 18 rec, 114 rec yds, 2 TD"}
+    ],
+    "draftDayStory": [
+      "Henry went undrafted in 2026 — no combine invite, an older profile (he turns 25 in December) and a Group of Five résumé kept him off boards even after a 6.9-yards-per-carry senior year. Washington signed him as a UDFA into arguably the most crowded backfield in football: the Commanders had just spent a sixth-round pick on Penn State's all-time leading rusher Kaytron Allen, traded for Rachaad White, and returned Jacory Croskey-Merritt, Jeremy McNichols and Jerome Ford.",
+      "NFL.com's Lance Zierlein had flagged the traits in his pre-draft evaluation, calling Henry 'a slasher with a wiggly lower half, allowing him to make sudden cuts and elude tacklers in tight quarters' — exactly what showed up on his first NFL touchdown."
+    ],
+    "whyTheyDraftedHim": [
+      "Lance Zierlein's pre-draft note — 'a slasher with a wiggly lower half' — captured the sudden-cut, tackle-eluding style Washington's zone runs reward",
+      "Elite efficiency signals: 6.9 yards per carry and 4.3 yards after contact per attempt in 2025, with 33 forced missed tackles on 152 carries",
+      "Special-teams willingness — a UDFA back's actual job description — and he flashed there in his preseason debut",
+      "Dan Quinn's staff wanted competition and depth behind an injury-prone veteran group, and Henry cost nothing"
+    ],
+    "campNotes": [
+      {"date": "Aug 17", "source": "Zach Selby, commanders.com", "note": "In his preseason debut vs. Miami, Henry ran 12 times for 75 yards including a 22-yard touchdown behind pulling blockers, taking advantage of Croskey-Merritt, White and McNichols all sitting out. The team site wrote he 'added his name to an already packed Commanders RB discussion.'"},
+      {"date": "Aug 20", "source": "Yahoo Sports roster bubble watch", "note": "With Jeremy McNichols sidelined by a quad strain, Henry seized extra reps and 'opened a legitimate window' to crack the 53-man roster, with his special-teams flashes noted as paramount to his case."},
+      {"date": "Aug 24", "source": "commanders.com training camp notebook", "note": "In the final week before cuts, Henry and Kaytron Allen got most of the backfield work with Croskey-Merritt and White out, and 'both players had some positive runs.'"}
+    ],
+    "beatQuotes": [
+      {"quote": "I feel like I'm twitchy. I got speed.", "attribution": "Robert Henry Jr., via commanders.com, Aug 17"},
+      {"quote": "As far as Robert goes, he and Kaytron both, I thought, had a nice night. Also, Jerome Ford went out. We had three backs for the game, and so when Jerome was out, there was really no flinch from these guys.", "attribution": "Dan Quinn, Commanders head coach, via Yahoo Sports, Aug 20"}
+    ],
+    "depthChart": "Henry is sixth or seventh on a stacked Washington depth chart behind Croskey-Merritt, Rachaad White, Kaytron Allen, McNichols and Ford, but injuries above him (McNichols' quad) and his Miami tape have him squarely in the 53-man conversation — practice squad is the floor.",
+    "whyHeCouldSucceed": [
+      "The debut wasn't a fluke of competition level — 75 yards on 12 carries with a patient, blocked-up touchdown showed real vision, burst and the wiggle Zierlein scouted",
+      "His yards-after-contact profile (4.3 per attempt) and 33 forced missed tackles in 2025 suggest the elusiveness translates against NFL bodies",
+      "Washington's veteran depth is fragile: McNichols is already hurt, Ford is a journeyman, and White has been trade bait — attrition creates a lane",
+      "He has beaten longer odds at every level: unrated recruit, JUCO national player of the year, third 1,000-yard rusher in UTSA history"
+    ],
+    "whyHeCouldFail": [
+      "Six backs stand between him and touches; even a perfect camp likely buys him a practice-squad year, not carries",
+      "He turns 25 in December of his rookie season — the age curve says his ceiling year is now, and dynasty assets that can't play now decay fast",
+      "No combine invite and no public testing numbers: teams that trust their stopwatches never trusted his",
+      "At 5'9\", 196 with a modest receiving résumé (58 career catches), he lacks an obvious third-down or goal-line specialty to force a role"
+    ],
+    "fantasyOutlook": [
+      "Henry is the classic preseason-darling UDFA: one electric August game, a crowded depth chart, and a market rank (FantasyPros consensus 52) that has drifted up on highlight juice. In redraft he is nothing. In dynasty he is a watch-list player whose window opens only if Washington's veteran room keeps breaking — which, to be fair, it already has begun to do. If he sticks on the 53 as a special-teamer, he becomes a name to remember in-season; if he lands on the practice squad, set a reminder for the first Commanders backfield injury.",
+      "In a superflex .5 PPR rookie draft, board rank #68 is fair: a very late fifth-rounder or undrafted. Prioritize him over similar UDFA backs only if you believe in the tape over the profile — the twitch is real, but the age and the traffic are, too."
+    ],
+    "comp": "A shorter Jacory Croskey-Merritt — the exact archetype Washington fell for a year earlier: an older, overlooked slasher who forces his way up the depth chart in August.",
+    "bottomLine": "Don't draft him ahead of players with capital, but he's a top-tier UDFA watch-list add — one more injury in Washington and he's a legitimate stash.",
+    "sources": [
+      "https://www.commanders.com/news/robert-henry-commanders-preseason-dolphins-running-back",
+      "https://sports.yahoo.com/articles/washington-commanders-roster-bubble-watch-100035845.html",
+      "https://www.commanders.com/news/washington-commanders-final-week-practice-roster-cuts-quotes-highlights",
+      "https://www.espn.com.au/college-football/player/stats/_/id/5151317/robert-henry-jr",
+      "https://cfbstats.com/2025/player/706/1202829/index.html",
+      "https://www.pff.com/ncaa/players/robert-henry/174094"
+    ]
+  },
+  "1093": {
+    "id": 1093,
+    "name": "Jaydn Ott",
+    "position": "RB",
+    "nflTeam": "KC",
+    "nflTeamName": "Kansas City Chiefs",
+    "college": "Oklahoma (transferred from California)",
+    "hometown": "Chino, California",
+    "classYear": "Senior",
+    "headline": "Jaydn Ott Followed DeMarco Murray to Kansas City Chasing the Star He Was at Cal",
+    "subhead": "Two years ago he led the Pac-12 in rushing; after a lost season at Oklahoma, the undrafted Ott is flashing receiving juice in a Chiefs backfield with jobs open.",
+    "draftPick": "Undrafted free agent, signed with the Kansas City Chiefs after the 2026 NFL Draft",
+    "measurables": {
+      "height": "5'11\"",
+      "weight": "198 lbs",
+      "age": "23.7",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Ott was not a 2026 combine invitee and no verified testing numbers circulated pre-draft — after two straight lost seasons, teams were evaluating the 2023 tape, not a stopwatch."
+    },
+    "collegeCareer": [
+      "For one season, Ott was one of the best backs in college football. As a true freshman at Cal in 2022 he ran for 897 yards and 8 touchdowns and caught 46 passes; as a sophomore in 2023 he led the Pac-12 with 1,315 rushing yards and scored 15 total touchdowns, earning first-team All-Pac-12 and finishing as a Doak Walker candidate. His blend of home-run speed and receiving polish made him a fixture on way-too-early first-round mock drafts.",
+      "Then it unraveled. An ankle injury suffered early in 2024 wrecked his junior year — 385 yards on a grim 3.3 per carry across 10 games — and his April 2025 transfer to Oklahoma never took. He fell down the Sooners' depth chart, never started after Week 2, and finished with 21 carries for 68 yards and zero touchdowns in seven appearances. He left college with 2,665 rushing yards, 24 rushing TDs and 97 catches for 722 yards — nearly all of it earned before his 21st birthday."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "California", "line": "12 G, 170 car, 897 rush yds, 5.3 ypc, 8 TD, 46 rec, 321 rec yds, 3 TD"},
+      {"season": "2023", "team": "California", "line": "12 G, 246 car, 1,315 rush yds, 5.3 ypc, 12 TD, 25 rec, 169 rec yds, 2 TD — 1st-team All-Pac-12"},
+      {"season": "2024", "team": "California", "line": "10 G, 116 car, 385 rush yds, 3.3 ypc, 4 TD, 24 rec, 222 rec yds, 1 TD"},
+      {"season": "2025", "team": "Oklahoma", "line": "7 G (1 GS), 21 car, 68 rush yds, 3.2 ypc, 0 TD, 2 rec, 10 rec yds"}
+    ],
+    "draftDayStory": [
+      "Ott went undrafted in April 2026 — a stunning terminus for a player who was a fixture in early 2025 first-round mocks before the ankle injury and the Oklahoma faceplant. He signed with Kansas City within a day of the draft ending, and the connection was explicit: Chiefs running backs coach DeMarco Murray was Ott's position coach at Oklahoma in 2025 and brought him along when he joined Andy Reid's staff.",
+      "For a Chiefs backfield that let Isiah Pacheco's role fragment and spent only Day 3 capital at the position, Ott was a classic zero-cost lottery ticket on 2023 tape."
+    ],
+    "whyTheyDraftedHim": [
+      "The DeMarco Murray connection: his college position coach personally vouched for him and reunited with him in Kansas City",
+      "2023 first-team All-Pac-12 tape — a conference rushing title at age 20 — is the kind of pedigree that never costs $0 unless something broke, and KC bet it was circumstance, not talent",
+      "His receiving chops (46 catches as a freshman, 97 career) fit Andy Reid's pass-game-heavy usage of backs better than almost any team in football",
+      "Kansas City's RB room behind Kareem Hunt/Brashard Smith/rookie Emmett Johnson was wide open for a preseason riser"
+    ],
+    "campNotes": [
+      {"date": "Aug 15", "source": "Chiefs Wire / chiefs.com", "note": "In the preseason opener vs. the Rams, Ott led all Chiefs receivers with 2 catches for 40 yards, including a 27-yard catch-and-run, despite getting no carries. He played nine snaps — more than veteran Elijah Mitchell-tier depth."},
+      {"date": "Aug 17", "source": "Charles Goldman, A to Z Sports", "note": "Named among five Chiefs to watch in preseason Week 2, noting his receiving work was 'equal to, if not better than' Brashard Smith's and that most of his snaps came late in the game."},
+      {"date": "Aug 19", "source": "Kansas City Star", "note": "In the Week 1 snap accounting, Ott's nine snaps outpaced veteran Carson Steele-tier depth (Elijah Demercado had five), a small but real sign the staff wants a look before the Aug 30 cutdown."}
+    ],
+    "beatQuotes": [
+      {"quote": "Frankly, Ott didn't disappoint in his first performance with the team... He went 2-of-3 receiving for 40 yards total, which topped all Chiefs receivers on the day.", "attribution": "Charles Goldman, A to Z Sports, Aug 17"},
+      {"quote": "Obviously, there's a lot of competition in the room.", "attribution": "Eric Bieniemy, Chiefs offensive coordinator, via Kansas City Star, Aug 19"}
+    ],
+    "depthChart": "Ott is fighting from the back of Kansas City's backfield, behind Brashard Smith, fifth-round rookie Emmett Johnson and the veteran depth, with the Aug 30 cutdown looming. His receiving flashes have him in the practice-squad conversation, not the 53-man one — barring a huge preseason finale.",
+    "whyHeCouldSucceed": [
+      "The 2023 ceiling is real and recent: a Pac-12 rushing title with 15 touchdowns at age 20 is a profile almost no UDFA in this class can match",
+      "DeMarco Murray's advocacy gives him a coach in the building invested in his development — the single best predictor of a fringe back sticking",
+      "His receiving skill set fits Andy Reid's offense perfectly, and he immediately led the Chiefs in receiving in his preseason debut",
+      "He is still only 23.7 — younger than several drafted backs in this class despite the five-year college odyssey"
+    ],
+    "whyHeCouldFail": [
+      "He has not been an effective runner since 2023: 3.3 ypc in 2024, 3.2 in 2025, zero rushing touchdowns in two years, and zero preseason carries so far",
+      "The 2024 ankle injury may have permanently sapped the burst that made him special; Oklahoma coaches buried him even when healthy",
+      "Kansas City's roster math is brutal — Smith and Johnson have draft capital, and Ott is realistically playing for a practice-squad spot",
+      "He earned nine total snaps in preseason Week 1 and remains a zero in the run game charting; flashes as a receiver alone rarely make a 53"
+    ],
+    "fantasyOutlook": [
+      "Ott is the most fascinating pure lottery ticket in the back half of rookie drafts: the gap between his 2023 self and his 2026 draft-day price is as wide as any player's in the class. The FantasyPros consensus (rookie rank 60) and this board (#69) both treat him as a late-round dice roll, which is right. The realistic 2026 outcome is a practice-squad year in Kansas City with zero fantasy production. But he is a 23-year-old former conference rushing champion with plus receiving skills attached to the best offensive infrastructure in football.",
+      "In a superflex .5 PPR rookie draft, spend a late fifth on him only after the players with actual roles are gone — but if he survives to the FA pool, sprint to add him. If the ankle burst ever comes back under Reid and Murray, the payoff is a legitimate PPR flex; that's a better ceiling story than anyone ranked around him can tell."
+    ],
+    "comp": "A discount Rashaad Penny arc — an injury-derailed former star runner whose talent nobody disputes and whose availability and burst everybody does.",
+    "bottomLine": "The best pure upside dart of the UDFA backs. Take him over Hemby and Henry if you're drafting for ceiling; skip him if you need 2026 snaps.",
+    "sources": [
+      "https://soonersports.com/sports/football/roster/jaydn-ott/19567",
+      "https://en.wikipedia.org/wiki/Jaydn_Ott",
+      "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/08/15/kansas-city-chiefs-los-angeles-rams-final-score-nfl-preseason-week-1/91323378007/",
+      "https://www.yardbarker.com/nfl/articles/jaydn_ott_and_4_more_kansas_city_chiefs_players_i_want_to_see_more_of_in_preseason_week_2_against_the_tampa_bay_buccaneers/s1_17313_44184979",
+      "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article316923483.html",
+      "https://www.on3.com/teams/oklahoma-sooners/news/ou-footballs-jaydn-ott-signs-with-kansas-city-chiefs/"
+    ]
+  },
+  "1035": {
+    "id": 1035,
+    "name": "Jeff Caldwell",
+    "position": "WR",
+    "nflTeam": "KC",
+    "nflTeamName": "Kansas City Chiefs",
+    "college": "Cincinnati",
+    "hometown": "Louisville, Kentucky",
+    "classYear": "Senior",
+    "headline": "A 6'5\" Receiver Who Runs 4.3 — and Whose Rookie Year Just Ended in a Training Tent",
+    "subhead": "Jeff Caldwell's rare size-speed profile made him one of Kansas City's prized UDFAs; a late-camp leg injury got him waived a day before this draft.",
+    "draftPick": "Undrafted free agent, signed with the Kansas City Chiefs after the 2026 NFL Draft; waived with an injury designation Aug 24, 2026",
+    "measurables": {
+      "height": "6'5\"",
+      "weight": "215 lbs",
+      "age": "23",
+      "forty": "4.31",
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Caldwell was not a combine invitee, but his pre-draft testing went viral in scouting circles: a reported 4.31-second forty at 6'5\", 216 pounds — a size-speed combination that shows up a handful of times a decade and is the entire reason he got guaranteed UDFA money."
+    },
+    "collegeCareer": [
+      "Caldwell took the long road: three seasons at Division II Lindenwood, where he grew from an 8-catch reserve in 2022 into a bona fide small-school star — 53 catches for 1,032 yards (19.5 per catch) and 11 touchdowns in 2024. The 18-yards-a-catch career average told the story: a giant vertical receiver who simply outran and out-leveraged D-II corners.",
+      "He made the jump to Cincinnati for 2025 and held his own in the Big 12, starting 11 of 13 games and producing a 32-478-6 line at 14.9 per catch. It wasn't dominant volume — he was the deep-ball complement in a balanced offense — but six touchdowns on 61 targets and a 40-yard long showed the red-zone and vertical utility scouts wanted to see against real competition. That one season of FBS tape, plus the testing, was his entire draft case."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Lindenwood (D-II)", "line": "7 G, 8 rec, 141 yds, 17.6 ypr, 4 TD"},
+      {"season": "2023", "team": "Lindenwood (D-II)", "line": "9 G, 32 rec, 599 yds, 18.7 ypr, 8 TD"},
+      {"season": "2024", "team": "Lindenwood (D-II)", "line": "12 G, 53 rec, 1,032 yds, 19.5 ypr, 11 TD"},
+      {"season": "2025", "team": "Cincinnati", "line": "13 G (11 GS), 32 rec, 478 yds, 14.9 ypr, 6 TD, 61 targets"}
+    ],
+    "draftDayStory": [
+      "Caldwell went undrafted in April 2026 — one year of mid-volume FBS production wasn't enough to overcome the D-II résumé — but Kansas City moved aggressively the moment the draft ended, signing him to a three-year UDFA deal with a guarantee substantial enough that Heavy.com called him 'one of the more valued UDFAs in Kansas City this offseason.' The bet was pure traits: 6'5\" receivers who run 4.31 do not reach free agency with any regularity, and Andy Reid's staff wanted the developmental swing.",
+      "He held his 90-man roster spot for nearly four months, but the story ended abruptly: a left leg injury in the August 19 practice, a cart ride up the hill, and a waived/injured designation on August 24 — one day before this rookie draft."
+    ],
+    "whyTheyDraftedHim": [
+      "Pure traits bet: 6'5\", 216 pounds with a reported 4.31 forty is a physical profile that essentially never goes undrafted — KC paid real guarantee money to win the signing",
+      "A 29-touchdown, 18.0-yards-per-catch college career marked him as a vertical and red-zone specialist, the exact archetype KC's post-Kelce offense lacks",
+      "He proved the D-II production traveled by starting 11 games at Cincinnati in the Big 12 with 6 TDs on modest volume",
+      "Kansas City's receiver room was decimated by injuries all camp (Thornton, Allen, Armstrong), giving a traits developmental project a genuine runway"
+    ],
+    "campNotes": [
+      {"date": "Aug 15", "source": "Heavy.com / preseason box score", "note": "In the preseason opener against the Rams, Caldwell drew one target and did not record a catch — a quiet debut in a receiver rotation thinned by injuries."},
+      {"date": "Aug 19", "source": "Matt Derrick, Chiefs Digest", "note": "Caldwell took a hit on the final play of a team period, was examined in the training tent 'in immediate pain, gingerly putting weight on left side,' then was carted up the hill for further examination on his left leg."},
+      {"date": "Aug 24", "source": "Arrowhead Pride / Chiefs announcement", "note": "The Chiefs waived Caldwell with an injury designation and signed DE Niles King to his roster spot. If he clears waivers he reverts to KC's injured reserve for 2026, where the team could later reach an injury settlement."}
+    ],
+    "beatQuotes": [
+      {"quote": "Chiefs WR Jeff Caldwell in the training tent getting an exam in his left leg. Took a hit during the last play in team period and was in immediate pain, gingerly putting weight on left side.", "attribution": "Matt Derrick, Chiefs Digest, Aug 19"},
+      {"quote": "We have waived WR Jeff Caldwell with an injury designation.", "attribution": "Kansas City Chiefs official announcement, Aug 24"}
+    ],
+    "depthChart": "Caldwell is no longer on the Chiefs' active roster: waived/injured on August 24, he will revert to Kansas City's injured reserve for the 2026 season if unclaimed, with an injury settlement possible. He will not play football this fall barring a waiver claim.",
+    "whyHeCouldSucceed": [
+      "The traits are genuinely rare: 6'5\" with a reported 4.31 forty and an 18-yards-per-catch, 29-TD college career is a Day 2 profile hiding in a UDFA body",
+      "Kansas City valued him enough to pay a meaningful UDFA guarantee and hold his roster spot for four months — and may stash him on IR rather than cut him loose",
+      "He already proved one level-jump (D-II to Big 12) without his efficiency collapsing; the developmental arrow was pointing up before the injury",
+      "A year on injured reserve in the Chiefs' building is quietly a redshirt season with NFL coaching, not a career death sentence"
+    ],
+    "whyHeCouldFail": [
+      "He is currently injured and waived — the realistic 2026 outcome is zero snaps, and an injury settlement would make him a street free agent with a damaged leg",
+      "One target and zero catches in his only preseason action: he had not translated the testing into game reps even before he got hurt",
+      "The production profile is thin: a single 32-catch FBS season is the entire competitive résumé for a 23-year-old",
+      "Big receivers with track speed but modest college volume (route-running questions) have one of the worst hit rates of any WR archetype"
+    ],
+    "fantasyOutlook": [
+      "Caldwell's fantasy case died in a practice-field team period on August 19 — at least for 2026. He should not be drafted in this rookie draft outside of the truly bottomless taxi-squad formats. But file the name: if he reverts to Kansas City's IR, the Chiefs are effectively redshirting a 6'5\", 4.31 developmental receiver, and next spring he will re-enter camp as a second-year traits project in the league's best receiver-developing offense. That is a scenario worth a waiver claim in deep dynasty leagues twelve months from now, and worth nothing today.",
+      "At board rank #70 in a superflex .5 PPR league, the honest advice is: let someone else take him. If your league's final round is a pure dart-throw and your taxi squad has an IR-tolerant slot, he is a defensible last pick over practice-squad running backs — the trait ceiling is real even if the 2026 floor is literally zero."
+    ],
+    "comp": "A lottery-ticket Dontayvion Wicks-meets-Equanimeous St. Brown — enormous frame, absurd stopwatch, and a résumé that consists almost entirely of what he might become.",
+    "bottomLine": "Injured and waived the day before your draft — do not spend a pick unless it's your last one and you can stash him without a roster cost.",
+    "sources": [
+      "https://www.arrowheadpride.com/kansas-city-chiefs-news/208560/chiefs-sign-defensive-end-niles-king-waive-injured-rookie-jeff-caldwell",
+      "https://heavy.com/sports/nfl/kansas-city-chiefs/jeff-caldwell-injury-cyrus-allen-andrew-armstrong/",
+      "https://heavy.com/sports/nfl/kansas-city-chiefs/chiefs-cut-ties-with-promising-rookie-wr-after-injury-news/",
+      "https://cfbstats.com/2025/player/140/1132055/index.html",
+      "https://sportsdata.usatoday.com/football/ncaaf/players/jeff-caldwell/1339352/stats",
+      "https://www.footballdb.com/players/jeff-caldwell-caldw0058/splits"
+    ]
+  }
+}
