@@ -1,0 +1,464 @@
+{
+  "1054": {
+    "id": 1054,
+    "name": "Deion Burks",
+    "position": "WR",
+    "nflTeam": "IND",
+    "nflTeamName": "Indianapolis Colts",
+    "college": "Oklahoma",
+    "hometown": "Inkster, Michigan",
+    "classYear": "Redshirt Senior",
+    "headline": "The Fastest Man In The Draft Fell To The Last Pick Of The Seventh Round",
+    "subhead": "Deion Burks ran 4.30 and jumped 42.5 inches in Indianapolis in February, then waited until pick 254 to hear his name in the same building.",
+    "draftPick": "Round 7, Pick 38 (No. 254 overall), Indianapolis Colts",
+    "measurables": {
+      "height": "5'9 3/4\"",
+      "weight": "180 lbs",
+      "age": "23.6",
+      "forty": "4.30",
+      "tenSplit": "1.49",
+      "vertical": "42 1/2\"",
+      "broad": "10'11\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": "26 reps",
+      "armLength": "29 3/8\"",
+      "combineNote": "Burks was the athletic star of the receiver group at the 2026 Combine: a 4.30 forty with a 1.49 ten-yard split, the No. 1 vertical jump among wideouts at 42.5 inches, a 10'11\" broad and 26 bench reps, which tied for the most of any receiver in the class. Pound-for-pound it is one of the loudest workouts in recent memory at the position, and it is precisely why the Colts spent the draft weekend wondering how he was still on the board."
+    },
+    "collegeCareer": [
+      "Burks spent three seasons at Purdue and needed all of them to become a starter. He caught one pass as a true freshman in 2021 and 15 for 149 yards as a sophomore in 2022, then broke through in 2023 with 47 receptions for 629 yards and seven touchdowns in 12 games, including an 84-yard score. That was the season the traits and the production finally matched: a compact 5-9 slot who could uncover instantly, win vertically and take short throws a long way. He entered the portal as one of the more coveted Big Ten receivers on the market.",
+      "Oklahoma won that recruitment, and 2024 was cruel. Burks started all five games he played and set an OU record with the most receptions by any player in his first five games as a Sooner, 31 for 245 yards and three touchdowns, before injuries wiped out eight games. He rehabbed and returned as a fifth-year senior in 2025 to start all 13 games, leading the Sooners in targets and finishing second on the team with 620 receiving yards on 57 catches with four scores.",
+      "The 2025 tape is the argument for him. He posted seven catches for 101 yards and a touchdown against Michigan, five for 64 against Texas, six against Tennessee, a 45-yard touchdown against LSU, and then a career-best 107 yards and a score against Alabama in the College Football Playoff first round. He also flipped his alignment: mostly a slot in 2024, he lined up outside on roughly 78 percent of his snaps in 2025 and dropped only four passes on 128 targets across the two seasons. He was a semifinalist for the Jason Witten Collegiate Man of the Year award."
+    ],
+    "collegeStats": [
+      {"season": "2021", "team": "Purdue", "line": "4 G, 1 rec, 26 yds, 26.0 ypr, 0 TD"},
+      {"season": "2022", "team": "Purdue", "line": "14 G, 15 rec, 149 yds, 9.9 ypr, 0 TD"},
+      {"season": "2023", "team": "Purdue", "line": "12 G, 47 rec, 629 yds, 13.4 ypr, 7 TD, long 84"},
+      {"season": "2024", "team": "Oklahoma", "line": "5 G, 31 rec, 245 yds, 7.9 ypr, 3 TD (missed 8 games, injury)"},
+      {"season": "2025", "team": "Oklahoma", "line": "13 G, 57 rec, 620 yds, 10.9 ypr, 4 TD, long 45"},
+      {"season": "Career", "team": "Purdue/Oklahoma", "line": "48 G, 31 starts, 151 rec, 1,669 yds, 11.1 ypr, 14 TD"}
+    ],
+    "draftDayStory": [
+      "Indianapolis took Burks with the 254th pick, the last of its eight selections, and general manager Chris Ballard introduced him with a line that has followed the rookie all summer: \"The one we didn't think was going to be there.\" The Colts had him graded far higher than the seventh round and openly admitted they had no explanation for the fall beyond the injury-shortened 2024 and the frame. The pick cost them nothing of consequence; the value, if it hits, is a 4.3 receiver on a minimum contract in a receiver room that lost Michael Pittman Jr.",
+      "The assignment's draft capital, Round 7, Pick 38, matches the reporting exactly: No. 254 overall to the Colts. Ballard also said out loud what the roster math implied, that Indianapolis would try to work Burks into the return game even though he had barely returned kicks since 2022 at Purdue."
+    ],
+    "whyTheyDraftedHim": [
+      "Pure vertical speed in an offense that has built its passing profile on explosives; Colts scouts described him as \"a 4.2 guy\" whose job is to create chunk plays however they can get him the ball.",
+      "Southwest area scout Mike Lacy pushed back on the slot-only label: \"Not your typical size that you want (outside), but I think this kid, pound for pound, his play strength and how put together he is, I think he should not be exclusively labeled as a slot receiver.\"",
+      "Return-game upside was baked into the pick. Ballard said the team would \"try to get him worked in the return game too, even though he hasn't done a lot of it.\"",
+      "Reliability at the catch point: four drops on 128 targets across his last two college seasons, plus 26 combine bench reps that fed the Colts' belief that he can catch through contact.",
+      "Alignment flexibility. He played mostly slot in 2024 and mostly outside in 2025, which fits a Shane Steichen offense that moves receivers around by personnel grouping."
+    ],
+    "campNotes": [
+      {"date": "Jul 9", "source": "1075 The Fan (Colts Scouts Take)", "note": "The Colts' scouting staff went public with how much they liked Burks, emphasizing the 4.3 speed, the 26 bench reps and a plan to use him beyond the slot and in the return game."},
+      {"date": "Jul 30", "source": "Colts Wire", "note": "With Alec Pierce and Josh Downs locked in, Burks was framed as a wild card in a crowded competition behind them; the beat's read was that it remained to be seen whether he could push for playing time."},
+      {"date": "Aug 5", "source": "Get On Sports (camp Day 6)", "note": "Burks was singled out for a strong practice at Grand Park in Westfield, his first real camp splash after mostly working with the back half of the receiver rotation."},
+      {"date": "Aug 10", "source": "IndyStar", "note": "On the first unofficial depth chart, Burks was listed among the 'others' at receiver behind Pierce, Downs, Ashton Dulin and Nick Westbrook-Ikhine."},
+      {"date": "Aug 22", "source": "Falcons at Colts box score / Colts Wire", "note": "Burks led the Colts in receptions with four for 19 yards in the preseason loss to Atlanta and added 120 yards on five kickoff returns, including a 49-yarder wiped out by holding and a 31-yard return."},
+      {"date": "Aug 23", "source": "Horseshoe Heroes", "note": "The returns changed the calculus of the return-specialist competition: on both long returns Burks showed the one-cut decisiveness the staff wanted, turning a two-man race into three."},
+      {"date": "Aug 24-25", "source": "Colts Wire", "note": "The third and final unofficial depth chart listed Burks as the No. 4 receiver on his side of the formation, with the beat framing the last receiver spot as Burks vs. Coleman Owen and noting \"the better return man may win the job.\""}
+    ],
+    "beatQuotes": [
+      {"quote": "The one we didn't think was going to be there. Why was he there? I don't know, but fortunate for us.", "attribution": "Chris Ballard, Colts general manager, May 13"},
+      {"quote": "The first thing is speed. He's a 4.2 guy and that's what you want. You want to create explosive plays, get the ball in this guy's hands any way you can.", "attribution": "Colts scouting staff, via 1075 The Fan, Jul 9"},
+      {"quote": "I thought Burks played well against Atlanta, and getting him to the practice squad may be more challenging than Owen.", "attribution": "Colts Wire 53-man roster projection, Aug 23"}
+    ],
+    "depthChart": "Fifth or sixth in the pecking order behind Alec Pierce, Josh Downs, the newly signed Keenan Allen and the Dulin/Westbrook-Ikhine/Laquon Treadwell veteran cluster. His actual competition is Coleman Owen for the last receiver spot, and the tiebreaker is the kick-return job with Anthony Gould sidelined.",
+    "whyHeCouldSucceed": [
+      "The speed is real and rare: a 4.30 forty and 1.49 split with a 42.5-inch vertical give him a legitimate NFL trait, and Steichen's offense has consistently manufactured deep shots for whoever can run under them.",
+      "Michael Pittman Jr. is gone and the Colts have not replaced his volume with a young player; if Burks wins kick returns he gets a roster spot, a jersey every week and the chance to accumulate offensive snaps in-season.",
+      "Four drops on 128 college targets and 26 bench reps say he is not a fragile gadget body; the Colts explicitly view him as capable of playing outside the numbers, not just as a slot-only specialist.",
+      "He raised his level in the biggest games of 2025: 101 yards against Michigan, a 45-yard touchdown against LSU, 107 yards against Alabama in the Playoff. Nothing about his tape says he shrinks."
+    ],
+    "whyHeCouldFail": [
+      "He is a 23.6-year-old seventh-round pick at 5-9, 180 pounds who may spend cut weekend on the bubble; the difference between the 53 and the practice squad here is one special-teams evaluation.",
+      "Indianapolis added Keenan Allen in mid-August and still carries Pierce, Downs, Dulin, Westbrook-Ikhine and Treadwell. There is no obvious path to offensive volume in 2026.",
+      "Four catches for 19 yards in his best preseason showing is the honest summary of his receiving role: he is not currently an integral part of the passing attack.",
+      "The 2024 injury year cost him eight games and probably cost him three rounds of draft capital; small receivers who miss time do not get many chances to rebuild value.",
+      "If Coleman Owen, the incumbent starting return man, holds the job, Burks is the odd man out at a position where the Colts have no incentive to carry a seventh developmental body."
+    ],
+    "fantasyOutlook": [
+      "This is a speed lottery ticket, not a 2026 contributor. Even in the best case, the season looks like kick returns, four-to-six offensive snaps a game and a handful of designed deep shots, which is worth nothing in a lineup and only marginally more in best-ball. The dynasty case is entirely about the 2027 offseason: if Dulin, Westbrook-Ikhine or Treadwell fall off the roster and Burks has a year of Steichen's system behind him, a 4.30 receiver who can play outside is exactly the sort of player who converts one training camp into 40 percent of the snaps.",
+      "In a superflex .5 PPR dynasty rookie draft, Burks belongs at the very back of the board: late fourth round in a three-round-plus league, or a post-draft free-agent add. Paying anything inside the third for a seventh-round pick fighting Coleman Owen for a roster spot is a mistake, but he is a perfectly good final-pick swing if you would otherwise take a taxi-squad body with no traits."
+    ],
+    "comp": "A poor-man's Marquise Goodwin, in that the elite straight-line speed and vertical jumping create real deep-ball equity while the size and target share caps stay firmly in play.",
+    "bottomLine": "Take him with your last rookie pick and forget about him until someone in front of him gets hurt; the traits are top-50 in this class even if the role right now is kick returner on the bubble.",
+    "sources": [
+      "https://www.colts.com/news/deion-burks-wide-receiver-oklahoma-seventh-round-draft-pick-2026",
+      "https://www.indystar.com/story/sports/nfl/colts/2026/05/13/deion-burks-has-an-opportunity-with-the-colts-will-he-take-advantage-of-it/90014846007/",
+      "https://1075thefan.com/729246/colts-scouts-take-oklahoma-wide-receiver-deion-burks/",
+      "https://soonersports.com/sports/football/roster/deion-burks/19176",
+      "https://www.sportingnews.com/us/nfl/news/deion-burks-40-time-oklahoma-wr-2026-nfl-combine/65116a8766fe93ad5682ee37",
+      "https://coltswire.usatoday.com/story/sports/nfl/colts/2026/08/25/9-observations-indianapolis-colts-third-unofficial-preseason-depth-chart/91452919007/",
+      "https://horseshoeheroes.com/deion-burks-made-indianapolis-colts-roster-decision-painfully-difficult"
+    ]
+  },
+  "1034": {
+    "id": 1034,
+    "name": "Marlin Klein",
+    "position": "TE",
+    "nflTeam": "HOU",
+    "nflTeamName": "Houston Texans",
+    "college": "Michigan",
+    "hometown": "Germany (via Rabun Gap, Georgia)",
+    "classYear": "Redshirt Junior",
+    "headline": "Germany's Basketball Kid Became A Second-Round Tight End With One Real Season Of Tape",
+    "subhead": "Nick Caserio spent pick 59 on a 6-foot-6 project with 38 career catches, and by mid-August DeMeco Ryans was calling him a big threat in the passing game.",
+    "draftPick": "Round 2, Pick 27 (No. 59 overall), Houston Texans",
+    "measurables": {
+      "height": "6'6\"",
+      "weight": "248 lbs",
+      "age": "23.9",
+      "forty": "4.61",
+      "tenSplit": "1.64",
+      "vertical": "36\"",
+      "broad": "9'9\"",
+      "threeCone": "7.42",
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Klein tested like a big, functional athlete rather than a mover: 4.61 in the forty ranked seventh among tight ends, with a 1.64 split, a 36-inch vertical, a 9'9\" broad and a 7.42 three-cone. Nothing elite, but at 6-6 and 248 the speed score is fine, and Houston cared more about his formal combine interview than his drills — Caserio said the Texans were \"done with him as far as the person\" after meeting him in Indianapolis."
+    },
+    "collegeCareer": [
+      "Klein grew up in Germany playing soccer and basketball and did not touch American football until he was a teenager. He moved to the United States at 16 through the Gridiron Imports program to attend Rabun Gap-Nacoochee School in Georgia, and Michigan took the developmental swing. He redshirted in 2022 and caught one pass for eight yards in 2023, the season the Wolverines won the national championship, spending the year as a blocking and special-teams body behind a loaded room.",
+      "In 2024 he led Michigan's tight ends in offensive snaps and caught 13 passes for 108 yards, functionally becoming the starter while the passing offense collapsed around him. His only real season of production came in 2025: 24 catches for 248 yards and a touchdown in 11 games, honorable-mention All-Big Ten, and a captaincy voted by his teammates. He finished with four catches for 39 yards in the 41-27 Citrus Bowl loss to Texas and then declared with a year of eligibility left.",
+      "The evaluation was always about the projection rather than the production. He leaves Ann Arbor with 38 receptions for 364 yards and a single touchdown, and every scouting report on him reads the same way: enormous frame, real movement skill for the size, a willing in-line blocker who is still learning the position, and a player whose best football is obviously ahead of him."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Michigan", "line": "Redshirt (did not play)"},
+      {"season": "2023", "team": "Michigan", "line": "1 rec, 8 yds, 0 TD (CFP national champion)"},
+      {"season": "2024", "team": "Michigan", "line": "13 rec, 108 yds, 8.3 ypr, 0 TD (led Michigan TEs in offensive snaps)"},
+      {"season": "2025", "team": "Michigan", "line": "11 G, 24 rec, 248 yds, 10.3 ypr, 1 TD; honorable-mention All-Big Ten, team captain"},
+      {"season": "Career", "team": "Michigan", "line": "38 rec, 364 yds, 9.6 ypr, 1 TD"}
+    ],
+    "draftDayStory": [
+      "Houston stayed put at 59 to take Klein after nearly trading the pick. Caserio said the Texans had \"a few deals in place\" that fell apart, and when the phone stopped ringing Klein was the name on the board they liked most: \"Marlin was kind of a no-brainer. It's a player we really liked.\" He was widely projected as a Day 3 pick, so the selection registered as an aggressive bet on traits and makeup over box score.",
+      "The class context matters. Twenty-two tight ends were drafted in 2026, the most since 2002, and only Oregon's Kenyon Sadiq went in the first round (to the Jets). Klein was effectively the second tight end off the board despite catching 24 passes in his best college season. The assignment's Round 2, Pick 27 designation lines up with the reporting: No. 59 overall to the Texans."
+    ],
+    "whyTheyDraftedHim": [
+      "Caserio's evaluation was blunt about the timeline: \"Good size, runs well. I would say his best football is probably right in front of him. The type of player that has the right mentality, the right mindset, good work ethic, really smart.\"",
+      "Scheme fit for Nick Caley's offense, which wants tight ends who can block in-line and complement Dalton Schultz rather than duplicate him.",
+      "The combine interview effectively closed the evaluation for Houston: \"Really after the combine we were done with him as far as the person because there really wasn't much more there that we needed to talk about.\"",
+      "Positional need. Houston went into the offseason thin behind Schultz, with Brevin Jordan coming off back-to-back season-ending injuries and Cade Stover splitting time at fullback.",
+      "Developmental ceiling at 6-6 with soccer-and-basketball movement roots and only a handful of years of football under him."
+    ],
+    "campNotes": [
+      {"date": "Jul 23", "source": "Sports Illustrated (Texans OnSI)", "note": "Klein entered camp as one of four candidates for the TE2 job behind Schultz alongside Cade Stover, Brevin Jordan and Foster Moreau, with the beat's read that he would make the 53 but that his depth-chart slot was far from settled."},
+      {"date": "Aug 10", "source": "Texans Wire", "note": "Klein rotated between the first- and second-team offense and found the end zone in at least one of three straight practices, including two scores on Monday morning, one on a C.J. Stroud scramble that found him wide open."},
+      {"date": "Aug 13", "source": "Associated Press", "note": "In his NFL debut against the Chargers he played 11 snaps and caught a 31-yard pass on Houston's opening drive of a 27-7 loss."},
+      {"date": "Aug 22-23", "source": "Texans Wire", "note": "Klein played again in the loss to the Raiders and said afterward he felt \"a lot more comfortable\" after four weeks of camp and two games: \"I love it down here and I hope I stay here forever.\""},
+      {"date": "Aug 24", "source": "Jonathan M. Alexander, Houston Chronicle (via NBC Sports)", "note": "Alexander reported Klein \"will have some sort of role\" this season but still slotted him behind Schultz and apparent TE2 Foster Moreau; Klein sits at 4-of-5 targets for 62 yards on the preseason."},
+      {"date": "Aug 25", "source": "Houston Chronicle roster projection", "note": "Klein is projected to make the 53 as depth behind starter Dalton Schultz, alongside Moreau and Stover, with Brevin Jordan (knee) projected as a cut after not practicing in three weeks."}
+    ],
+    "beatQuotes": [
+      {"quote": "Marlin's progressed every single day. His trajectory is definitely pointing up. Seeing him in the pass game, you guys have seen him make a lot of plays out here in the passing game. He's still learning a lot. We're throwing a lot at him, but for a rookie to be where he is at this point in camp, I'm very encouraged.", "attribution": "DeMeco Ryans, Texans head coach, Aug 10"},
+      {"quote": "Marlin has gotten so much better. He's had multiple blocks I've seen.", "attribution": "Nick Caley, Texans offensive coordinator, Aug 8"},
+      {"quote": "It's something that I've been dreaming about ever since I was a little kid. It was the reason why I moved over here to the States to play in a game like this, so it meant a lot to me.", "attribution": "Marlin Klein, via AP, Aug 13"}
+    ],
+    "depthChart": "TE3 as of late August. Dalton Schultz is the unchallenged starter and Foster Moreau has held the TE2 job through camp on the strength of his blocking and experience, with Klein and Cade Stover behind them. Klein is a lock for the 53 and will be on the field in 12-personnel and short-yardage packages, but he is not the primary tight end target.",
+    "whyHeCouldSucceed": [
+      "Second-round capital in a scheme that needs a second real tight end: Houston used a top-60 pick on him and the head coach has already publicly described him as a big passing-game threat, which is how snaps get assigned in September.",
+      "The blocking curve moved fast. Caley volunteering praise for his run blocking in mid-August is the single most important development for a 6-6 rookie who needs a floor-level role to stay on the field.",
+      "Dalton Schultz turns 30 during the season and is not a long-term answer; Klein is the only tight end on the roster with a realistic 2027 starting projection.",
+      "He caught 4-of-5 preseason targets for 62 yards, including a 31-yarder on his first NFL drive, in a C.J. Stroud offense that has consistently supported a productive tight end."
+    ],
+    "whyHeCouldFail": [
+      "One real season of college production, 24 catches for 248 yards, is a paper-thin resume; the receiving projection is almost entirely inference from frame and testing.",
+      "Foster Moreau is ahead of him for the complementary role and Schultz absorbs the tight-end targets that matter, so 2026 volume could be near zero.",
+      "He is 23.9 and only started playing football as a teenager — the learning curve his coaches keep referencing cuts both ways in an offense that asks tight ends to identify fronts.",
+      "Houston's beat has explicitly cautioned that \"will have some sort of role\" is not a ringing endorsement, and the Texans keep adding pass-catchers, including trading for Kayshon Boutte in late August.",
+      "Athletically he is good-not-special: a 4.61 forty and 36-inch vertical do not project to separating against NFL safeties without technical growth."
+    ],
+    "fantasyOutlook": [
+      "Klein is the classic Year 2 tight end bet. The 2026 projection is something like 20-30 targets, most of them in-line and situational, with a chance the number spikes late if Moreau fades or Schultz misses time. Nobody should be starting him in a .5 PPR lineup this season, and drafting him with the expectation of production is how managers turn a good asset into a frustrating one. What you are buying is second-round draft capital, a stated developmental role in a good offense with a franchise quarterback, and a coaching staff volunteering praise in August.",
+      "In a superflex .5 PPR dynasty rookie draft his fair price is the late second to early third round, right where the board has him at rookie 52. That is roughly the market rate for a TE2-now/TE1-maybe in 2028, and it is a defensible pick if your roster can afford patience. Do not reach into the second round on the assumption the second-round capital forces early usage; Houston has shown no urgency."
+    ],
+    "comp": "A rawer Jonnu Smith build with more length and less current juice, or a Michael Mayer type in terms of role: in-line blocker first, useful secondary target as the offense trusts him.",
+    "bottomLine": "A patient, correctly-priced stash at rookie 50-55; the traits and draft capital are real, but do not budget any 2026 fantasy production behind Schultz and Moreau.",
+    "sources": [
+      "https://www.click2houston.com/sports/2026/04/25/texans-draft-michigan-tight-end-marlin-klein/",
+      "https://www.on3.com/teams/michigan-wolverines/news/michigan-wolverines-football-te-marlin-klein-selected-in-2026-nfl-draft/",
+      "https://texanswire.usatoday.com/story/sports/nfl/texans/2026/08/10/texans-marlin-klein-continues-to-impress-training-camp-practices-preseason/91249950007/",
+      "https://apnews.com/article/texans-chargers-score-3b1e4ca65ef45c07fb9d514a992a7306",
+      "https://www.nbcsports.com/fantasy/football/player-news/2026-08-23/beat-texans-te-klein-to-have-some-sort-of-role",
+      "https://www.houstonchronicle.com/sports/texans/article/roster-projection-depth-chart-22401951.php",
+      "https://bucswire.usatoday.com/story/sports/nfl/buccaneers/2026/02/28/2026-nfl-combine-tight-end-testing-results/88907868007/"
+    ]
+  },
+  "1073": {
+    "id": 1073,
+    "name": "Michael Trigg",
+    "position": "TE",
+    "nflTeam": "DAL",
+    "nflTeamName": "Dallas Cowboys",
+    "college": "Baylor",
+    "hometown": "Tampa, Florida",
+    "classYear": "Senior (fifth-year)",
+    "headline": "An All-American Tight End Went Undrafted, Then A Toe Cost Him The Rest Of August",
+    "subhead": "Michael Trigg owns the longest wingspan ever measured at the position and Baylor's best tight end season, and he is now fighting a foot injury for a roster spot.",
+    "draftPick": "Undrafted free agent, 2026; signed with the Dallas Cowboys (roughly $280,000 guaranteed, tied for the most of any 2026 UDFA)",
+    "measurables": {
+      "height": "6'3 3/4\"",
+      "weight": "240 lbs",
+      "age": "24.2",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "34 1/4\"",
+      "combineNote": "Trigg was invited to the combine and measured but did not run or jump in Indianapolis. The measurements were the story anyway: 6-3 3/4, 240 pounds, 10 1/2-inch hands, 34 1/4-inch arms and an 84 3/8-inch wingspan that set a new combine benchmark for tight ends, surpassing Darnell Washington's 83 3/4 from 2023. His on-field work came at Baylor's pro day in Waco, where Cowboys tight ends coach Lunda Wells personally ran him through drills."
+    },
+    "collegeCareer": [
+      "Trigg was a genuine dual-sport prospect out of Tampa, a Division I basketball recruit who caught 82 passes for 1,232 yards and 16 touchdowns as a high school junior at Seffner Christian before transferring to Carrollwood Day. He signed with USC in 2021 and flashed immediately as a freshman with seven catches for 109 yards and a touchdown in six games, then entered the portal after the season.",
+      "Two seasons at Ole Miss produced more noise than production: 17 catches for 156 yards and three touchdowns in seven games in 2022, then just three games and four catches in 2023 before he transferred again in January 2024. The stops and starts, plus off-field questions from his earlier stops, are the reason a player with this tape was still available after 22 tight ends were drafted.",
+      "Baylor is where it came together. He was second-team All-Big 12 in 2024 with 30 catches for 395 yards, then delivered the most productive tight end season in Baylor history in 2025: 50 receptions for 694 yards and six touchdowns, first-team All-Big 12, AP third-team All-America — the first All-America tight end in program history — and one of three finalists for the John Mackey Award. Nationally among tight ends he ranked second in receiving yards, fourth in receptions and tied for fifth in touchdowns, and he was one of only six FBS tight ends with 50-plus catches.",
+      "The playing style is exactly what the wingspan implies. Trigg is a jump-ball and contested-catch tight end who wins above the rim, plays like the basketball recruit he was, and needs to prove that the blocking and the special-teams work will keep him employed on Sundays."
+    ],
+    "collegeStats": [
+      {"season": "2021", "team": "USC", "line": "6 G, 7 rec, 109 yds, 15.6 ypr, 1 TD"},
+      {"season": "2022", "team": "Ole Miss", "line": "7 G, 17 rec, 156 yds, 9.2 ypr, 3 TD"},
+      {"season": "2023", "team": "Ole Miss", "line": "3 G, 4 rec, 65 yds, 16.3 ypr, 1 TD"},
+      {"season": "2024", "team": "Baylor", "line": "30 rec, 51 tgt, 395 yds, 13.2 ypr, 3 TD; second-team All-Big 12"},
+      {"season": "2025", "team": "Baylor", "line": "50 rec, 89 tgt, 694 yds, 13.9 ypr, 6 TD; first-team All-Big 12, AP third-team All-America, Mackey finalist"},
+      {"season": "Career", "team": "USC/Ole Miss/Baylor", "line": "108 rec, 1,419 yds, 13.1 ypr, 14 TD"}
+    ],
+    "draftDayStory": [
+      "Twenty-two tight ends came off the board in 2026, the most since 2002, and Trigg was not one of them. He had been projected as a fifth- or sixth-round pick and a \"surefire day three prospect\"; the reporting from Dallas and Fort Worth attributed the fall to off-field concerns dating to his USC and Ole Miss stops rather than to the tape. The assignment lists him as an undrafted free agent, which is correct.",
+      "Dallas moved fast and paid up: Trigg's roughly $280,000 in guarantees tied DJ Rogers of TCU for the most of any undrafted player in the class. The relationship built at his pro day carried the signing. \"Coach Wells showed me that he wanted me to be a part of his team and his room,\" Trigg said, noting that some of the rookie-minicamp drills were the same ones he had already run with the Cowboys' tight ends coach in Waco."
+    ],
+    "whyTheyDraftedHim": [
+      "Priority-UDFA money, tied for the highest guarantee in the class, which is how a team signals it graded a player as a mid-round pick.",
+      "Tight ends coach Lunda Wells drove the process personally, working Trigg out at Baylor's pro day and taking him to dinner the night before, then staying in contact through the draft.",
+      "Receiving profile that fits the modern position: long-armed, athletic, first-team All-Big 12, and a scheme in which Brian Schottenheimer heavily involves tight ends.",
+      "Trigg's own pitch was positional flexibility: \"Just my versatility. Being able to play multiple positions and being able to block through the gaps like they need me to do.\"",
+      "Roster opportunity behind Jake Ferguson, with Luke Schoonmaker in a contract year and Brevyn Spann-Ford unsettled as the TE2."
+    ],
+    "campNotes": [
+      {"date": "Jul 14", "source": "DallasCowboys.com (Role Call)", "note": "The team's own preview framed his path as clear but not easy: Ferguson is the definitive TE1, Schoonmaker and Spann-Ford are battling for TE2, and Trigg's route to the 53 runs through special teams as much as acrobatic catches."},
+      {"date": "Aug 15", "source": "Sports Illustrated (Cowboys OnSI)", "note": "With Dallas resting nearly every starter in the preseason opener at Seattle, Trigg was one of the surprise standouts, finishing with four catches for 30 yards."},
+      {"date": "Aug 18", "source": "Blogging The Boys", "note": "Trigg missed the joint scrimmage against the Saints with a toe injury, one of the more important practices of camp for a bubble player."},
+      {"date": "Aug 20", "source": "Sports Illustrated (Cowboys OnSI)", "note": "Brian Schottenheimer confirmed Trigg (toe) was out for the final Oxnard practice; the beat noted he could ill-afford to miss the second preseason game while competing with Schoonmaker for the last tight end spot."},
+      {"date": "Aug 24", "source": "Nick Harris, Fort Worth Star-Telegram (via SI)", "note": "With Trigg and DJ Rogers both hurt, Dallas signed ex-Patriots tight end Mitch Van Vooren for a healthy body. Schottenheimer had said hours earlier, \"We're looking at that ... I would expect us to add a tight end.\""},
+      {"date": "Aug 25", "source": "The Landry Hat 53-man projection", "note": "The latest projection removed Trigg from the 53 entirely, reasoning that the toe injury lets Dallas stash him on injured reserve to preserve his contract rather than risk exposing him to waivers."}
+    ],
+    "beatQuotes": [
+      {"quote": "Going undrafted was definitely not part of the dream that I had for myself. It's definitely humbling, it's definitely motivating. Honestly, with the way everything went, it's not good to harp on the bad. I'm just going to let it motivate me.", "attribution": "Michael Trigg, via Fort Worth Star-Telegram, May 5"},
+      {"quote": "We're looking at that ... I would expect us to add a tight end.", "attribution": "Brian Schottenheimer, Cowboys head coach, Aug 24"},
+      {"quote": "Just that I belong. I'm trying to stick in the league.", "attribution": "Michael Trigg, via DallasCowboys.com, May 1"}
+    ],
+    "depthChart": "Fourth at best and currently sidelined. Jake Ferguson is the starter, Brevyn Spann-Ford has been the front-runner for TE2 and Luke Schoonmaker is the veteran holding the third spot while Trigg's toe keeps him out. With Dallas signing Mitch Van Vooren for depth and local projections now putting Trigg on injured reserve, his most likely Week 1 outcome is an IR stash rather than an active role.",
+    "whyHeCouldSucceed": [
+      "The receiving profile is legitimately good: 50 catches, 694 yards and six touchdowns in 2025, an AP All-America nod, and a Mackey finalist berth in a class where three of the five tight ends ahead of him in receptions were drafted.",
+      "An 84 3/8-inch wingspan, the longest ever measured at the position at the combine, plus 10 1/2-inch hands and basketball ball-skills, gives him a red-zone and jump-ball niche that scheme cannot teach.",
+      "Dallas invested a class-leading UDFA guarantee and has his position coach personally invested; that combination usually buys a player at least a full developmental year.",
+      "Schoonmaker turns 28 in September on an expiring deal and releasing him clears about $1.6 million; a healthy Trigg in 2027 competes for TE2 in an offense that uses tight ends heavily."
+    ],
+    "whyHeCouldFail": [
+      "He went undrafted for reasons beyond the tape — reported off-field concerns from his USC and Ole Miss stops — and those questions do not disappear because he had a good spring in Frisco.",
+      "The toe injury cost him the two most important weeks of his evaluation; he played one preseason game and then watched Dallas sign another tight end for bodies.",
+      "Blocking and special-teams value are the actual price of admission for a fourth tight end, and Trigg has never been anything but a receiving specialist.",
+      "He is a 24.2-year-old rookie at a position where the Cowboys already have a locked-in starter and two drafted backups; the depth chart does not owe him a snap.",
+      "An IR stash means zero 2026 production and a 2027 camp where he is a year older and competing against whatever tight end Dallas drafts next spring."
+    ],
+    "fantasyOutlook": [
+      "For 2026, project nothing. The realistic outcomes are injured reserve, the practice squad or a fourth tight end who plays 10 special-teams snaps a week; none of those produce fantasy points. What makes him interesting is that the 2025 college season was genuinely elite for the position and the athletic markers are outliers, which means one injury to Ferguson in 2027 and a healthy camp could turn him into a starting-caliber receiving tight end on a minimum contract.",
+      "In a superflex .5 PPR dynasty league he is a taxi-squad or final-pick target, not a rookie-draft asset you should spend real capital on. Fair price is the very end of your board, roughly rookie 55-plus, and he is a better waiver add in November than a pick in August. If your league lets you stash IR bodies cheaply, he is exactly the profile to hold: high-variance receiving traits with a zero-cost 2026."
+    ],
+    "comp": "A less-refined Hunter Henry in the jump-ball sense, with the boom-or-bust career arc of a tight end who has been asked to prove he belongs at four different stops.",
+    "bottomLine": "Do not spend a real rookie pick on him, but put him at the top of your stash list: the wingspan, the hands and the All-America season are worth a free roster spot while the toe heals.",
+    "sources": [
+      "https://www.dallascowboys.com/news/michael-trigg-looking-to-prove-he-belongs-with-the-cowboys",
+      "https://www.star-telegram.com/sports/nfl/dallas-cowboys/article315638701.html",
+      "https://www.cbssports.com/nfl/draft/news/2026-nfl-combine-results-full-list-measurements-40-times/",
+      "https://baylorbears.com/news/2025/12/15/football-fbs-michael-trigg-garners-ap-all-america-honors",
+      "https://www.sports-reference.com/cfb/players/michael-trigg-1.html",
+      "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-injury-updates-training-camp-practice-oxnard",
+      "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-sign-new-tight-end-amid-micheal-trigg-injury-absence",
+      "https://thelandryhat.com/dallas-cowboys-53-man-roster-prediction-after-more-preseason-dominance"
+    ]
+  },
+  "1114": {
+    "id": 1114,
+    "name": "Jack Strand",
+    "position": "QB",
+    "nflTeam": "ATL",
+    "nflTeamName": "Atlanta Falcons",
+    "college": "Minnesota State-Moorhead",
+    "hometown": "Bloomer, Wisconsin",
+    "classYear": "Senior",
+    "headline": "The Zero-Star Division II Kid Who Took First-Team Reps And Then Threw For 212 In Indy",
+    "subhead": "An undrafted quarterback from Minnesota State-Moorhead opened Falcons camp as QB1 by attrition, and by late August he had forced his way back into the No. 3 conversation.",
+    "draftPick": "Undrafted free agent, 2026; signed with the Atlanta Falcons hours after the draft ended",
+    "measurables": {
+      "height": "6'5\"",
+      "weight": "240 lbs",
+      "age": "22.2",
+      "forty": null,
+      "tenSplit": null,
+      "vertical": null,
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": null,
+      "combineNote": "Strand was not invited to the 2026 NFL Combine and no verified testing numbers from his pro day have been published. What NFL evaluators had to work with was tape, the measurements (6-5, 240) and the arm strength teammates keep describing — Tua Tagovailoa's summary was that he \"can sling it,\" and Drake London called him \"a tank.\" He is also mobile enough to have rushed nine times for 22 yards and a touchdown in one preseason game."
+    },
+    "collegeCareer": [
+      "Strand was a zero-star recruit from Bloomer, Wisconsin, whose only scholarship offer came from Minnesota State-Moorhead after their staff came to see him. He had planned on graduate school at Minnesota and a career at NASA. Instead he became the most productive quarterback in NSIC history and one of the most productive in Division II history, throwing for 13,161 yards across 42 career games, which ranks 10th all-time at the D-II level.",
+      "The 2024 season put him on the national radar: he led the NSIC with 3,421 passing yards, fourth-most in Division II, on 344 completions, earning All-NSIC First Team and a Harlon Hill nomination. He was a Harlon Hill nominee in each of his last three seasons, which is the D-II Heisman.",
+      "His senior year in 2025 was the crescendo. Strand led the conference in passing (3,546 yards) and total offense (3,834), accounted for 47 total touchdowns and set the MSUM single-season record with 42 passing touchdowns. He reset NSIC career records for completions (1,147), passing yards (12,134) and passing touchdowns (115), threw for 300-plus yards in seven games, and tied the NSIC single-game record with seven touchdown passes against Bemidji State on Nov. 1. He was an AFCA and Walter Camp All-American, D2CCA First-Team All-America, NSIC Offensive Player of the Year, a Harlon Hill finalist who finished fourth in voting, and a William V. Campbell Trophy finalist and CSC Academic All-America first-teamer off the field."
+    ],
+    "collegeStats": [
+      {"season": "2024", "team": "Minnesota State-Moorhead", "line": "344 comp, 3,421 pass yds (led NSIC, 4th in D-II); All-NSIC First Team, Harlon Hill nominee"},
+      {"season": "2025", "team": "Minnesota State-Moorhead", "line": "3,546 pass yds, 42 pass TD (school record), 3,834 total yds, 47 total TD; NSIC Offensive Player of the Year, AFCA/Walter Camp All-American, Harlon Hill finalist (4th)"},
+      {"season": "Career", "team": "Minnesota State-Moorhead", "line": "42 G, 13,161 pass yds (10th all-time in D-II); NSIC career records: 1,147 comp, 12,134 pass yds, 115 pass TD"}
+    ],
+    "draftDayStory": [
+      "Nobody drafted him. Atlanta signed Strand to an undrafted rookie contract a few hours after taking Oklahoma linebacker Kendal Daniels in the fourth round, and the reasoning from the staff was consistent: pro-level size and arm talent, elite processing, and a Division II level of competition that explained why 32 teams passed. Head coach Kevin Stefanski put the limitation plainly: \"I think football is football ultimately, but those windows get really small in the NFL. And guys are typically not wide open when you're throwing to them.\"",
+      "The assignment's undrafted-free-agent designation is accurate. What no one projected was the opportunity: with Tua Tagovailoa (back) and Michael Penix Jr. (right knee) both rehabbing and third-stringer Trevor Siemian released, Strand took almost every first-team quarterback rep through the first week of training camp."
+    ],
+    "whyTheyDraftedHim": [
+      "Size and arm strength were the entry ticket at 6-5, 240; Tagovailoa's assessment was simply that he \"can sling it.\"",
+      "Football intelligence was the differentiator Atlanta cited pre-draft, and Stefanski said it showed up immediately: \"Jack continues to impress with his ability to command the offense, the ability to get in and out of the huddle, get us in and out of run plays to pass plays. He's a very, very bright young man.\"",
+      "Historic Division II production: 13,161 career passing yards, 42 touchdown passes as a senior, and every meaningful NSIC career passing record.",
+      "Roster circumstance. Atlanta needed a healthy arm behind two injured quarterbacks and preferred a developmental prospect to a journeyman body.",
+      "Off-field profile: William V. Campbell Trophy finalist and Academic All-America first-teamer, the kind of makeup a staff trusts to absorb an NFL playbook in one summer."
+    ],
+    "campNotes": [
+      {"date": "Aug 5", "source": "Marc Raimondi, ESPN", "note": "Five days into camp, Strand had taken nearly all the first-team quarterback reps with Tagovailoa and Penix rehabbing, and had gone 21-of-31 in 11-on-11 team periods over the first four practices."},
+      {"date": "Aug 14", "source": "Atlanta Journal-Constitution", "note": "By mid-August, with Cooper Rush signed and the starters healing, Strand had settled back to No. 4 on the depth chart while preparing to become the first Minnesota State-Moorhead alum to take an NFL snap this century."},
+      {"date": "Aug 15", "source": "Sports Illustrated (Falcons OnSI)", "note": "Strand was the lone bright spot of a 27-7 preseason home loss to Denver, starting the second half and playing the entire third and fourth quarters: 6-of-12 for 50 yards with a one-yard rushing touchdown."},
+      {"date": "Aug 22", "source": "Associated Press / Falcons box score", "note": "In the 34-6 rout of the Colts, Strand relieved Rush and finished 12-of-17 for 212 yards and a touchdown, plus nine carries for 22 yards and a 16-yard rushing score; the two quarterbacks combined to complete 16 of their first 17 throws."},
+      {"date": "Aug 24", "source": "Sporting News", "note": "The performance pushed Strand back into the competition for Atlanta's No. 3 quarterback job; Stefanski declined to single him out afterward, praising the decision-making of both quarterbacks."}
+    ],
+    "beatQuotes": [
+      {"quote": "It's not perfect as you would not expect any rookie to be perfect, but I think Jack continues to impress with his ability to command the offense, the ability to get in and out of the huddle, get us in and out of run plays to pass plays. He's a very, very bright young man.", "attribution": "Kevin Stefanski, Falcons head coach, via ESPN, Aug 5"},
+      {"quote": "That dude is a tank, bro. He's huge, man. He's a big person, but he's a quiet guy. He's about his business and it's dope to just see him out there.", "attribution": "Drake London, Falcons WR, via ESPN, Aug 5"},
+      {"quote": "My expectations were just whatever role that I was given on the team ... Wherever that fell, my mentality was not going to change. It was just going to be keep attacking, keep getting better every day.", "attribution": "Jack Strand, via ESPN, Aug 5"}
+    ],
+    "depthChart": "Fourth on paper and fighting for third. Tua Tagovailoa is the starter with Michael Penix Jr. cleared to practice again, and veteran Cooper Rush was signed in late July specifically to be the reliable backup. Strand's 212-yard preseason night against Indianapolis made the No. 3 job a live question again, but the likeliest outcome is a practice-squad or third-string developmental role.",
+    "whyHeCouldSucceed": [
+      "He has already run an NFL first-team offense with Drake London and Kyle Pitts for a full week of camp and completed 21 of 31 team-period throws doing it; almost no undrafted quarterback gets that runway, let alone handles it.",
+      "The preseason production was real, not garbage-time noise: 12-of-17 for 212 yards and a touchdown against Indianapolis, plus a 16-yard rushing score, in a game his staff scripted to evaluate him.",
+      "Size, arm strength and mobility at 6-5, 240 with 22 rushing yards on nine carries in one game give him the physical baseline teams keep on rosters while they develop the reads.",
+      "Atlanta's quarterback situation is unsettled beyond 2026 — Tagovailoa's health and Penix's knee are both open questions — and a bright 22-year-old on a rookie deal is the cheapest possible hedge."
+    ],
+    "whyHeCouldFail": [
+      "Division II competition is the entire scouting objection, and his own head coach named it: NFL throwing windows are far smaller and receivers are rarely open the way they were in the NSIC.",
+      "The Falcons signed Cooper Rush, who has won nine NFL games as a starter, precisely so they would not have to rely on Strand; experience usually wins the No. 3 job.",
+      "He lost ground in the competition in mid-August before the Colts game, which suggests the day-to-day practice consistency is not yet there.",
+      "Quarterbacks who make rosters as UDFAs rarely see a meaningful snap for years, and the fantasy shelf life of a QB4 in a superflex league is close to zero.",
+      "Kevin Stefanski and Tommy Rees's offense asks the quarterback to manage protections and checks at the line, a heavy load for a player who was calling D-II plays nine months ago."
+    ],
+    "fantasyOutlook": [
+      "In 2026 Strand is a zero. He is competing to be the third quarterback in Atlanta, which means the only path to a snap is two injuries ahead of him. What he offers a dynasty roster is superflex optionality: quarterbacks are the most valuable asset class in these formats, and a 22-year-old with NFL size, real arm talent and a coaching staff that publicly praises his processing is a plausible future No. 2 or spot starter. That is worth a roster spot in a deep league and nothing in a shallow one.",
+      "Fair price in a superflex .5 PPR rookie draft is the back of the third round or later, essentially where the board has him at rookie 54, and only if your quarterback room is already stable. He is the kind of asset whose value moves entirely on someone else's injury news, so buy him for free and check back next August rather than paying anything today."
+    ],
+    "comp": "A Division II Cooper Rush with more arm and legs: big-bodied, cerebral, unlikely to start but the sort of quarterback who hangs around NFL rosters for a decade.",
+    "bottomLine": "Only a superflex-league flier at the very end of your board; the tools and coaching praise are real, but he is Atlanta's fourth quarterback until something breaks.",
+    "sources": [
+      "https://www.espn.com/nfl/story/_/id/49531397/falcons-qb-jack-strand",
+      "https://www.ajc.com/sports/2026/08/atlanta-falcons-qb-jack-strand-went-from-nasa-dreams-to-nfl-opportunity/",
+      "https://apnews.com/article/falcons-colts-score-1433ec965912b7107c1ea39fd8359a70",
+      "https://www.si.com/nfl/falcons/onsi/falcons-qb-jack-strand-shines-in-otherwise-disastrous-preseason-opener",
+      "https://www.msumdragons.com/sports/football/roster/jack-strand/10120",
+      "https://www.msumdragons.com/news/2025/12/3/football-jack-strand-named-finalist-for-harlon-hill-trophy.aspx",
+      "https://www.sportingnews.com/us/nfl/atlanta-falcons/news/falcons-have-new-qb-problem-after-jack-strands-breakout/af3d2ff913c7b35e05db1723"
+    ]
+  },
+  "1060": {
+    "id": 1060,
+    "name": "Matthew Hibner",
+    "position": "TE",
+    "nflTeam": "BAL",
+    "nflTeamName": "Baltimore Ravens",
+    "college": "SMU",
+    "hometown": "Burke, Virginia",
+    "classYear": "Sixth-year Senior",
+    "headline": "Baltimore Traded Up 21 Spots For The Isaiah Likely Replacement, And August Says They Were Right",
+    "subhead": "A four-year Michigan special-teamer became SMU's downfield weapon, then opened the Ravens' preseason with five catches on the night Baltimore needed a No. 3 tight end.",
+    "draftPick": "Round 4, Pick 33 (No. 133 overall), Baltimore Ravens (via trade up 21 spots with San Francisco)",
+    "measurables": {
+      "height": "6'4 1/4\"",
+      "weight": "251 lbs",
+      "age": "24.5",
+      "forty": "4.57",
+      "tenSplit": "1.61",
+      "vertical": "37\"",
+      "broad": "9'8\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": null,
+      "armLength": "32 3/8\"",
+      "combineNote": "Hibner tested cleanly at the 2026 Combine, running 4.57 with a 1.61 ten-yard split at 251 pounds, fifth-fastest among tight ends, with a 37-inch vertical and a 9'8\" broad. The forty is the number that matters: it is the athletic evidence behind DeCosta's \"stretch the field\" projection, and it explains why Baltimore was willing to move up 21 spots for a player most consensus boards had graded lower."
+    },
+    "collegeCareer": [
+      "Hibner's first four seasons were an exercise in patience. A four-star recruit out of Lake Braddock in Burke, Virginia, he arrived at Michigan in 2020 and spent four years buried behind Colston Loveland, Luke Schoonmaker and Erick All, playing 28 games almost exclusively on special teams and catching two passes for 15 yards. He won a national championship in 2023 with seven appearances and two tackles, then entered the portal.",
+      "SMU changed everything. He started eight games in 2024 and posted 24 catches for 368 yards and four touchdowns, including an 80-yard catch-and-run against Pittsburgh for his first collegiate touchdown, helping the Mustangs to an 11-3 record and a College Football Playoff berth. He came back in 2025 and improved to 31 receptions for 436 yards and four scores on a 9-4 team.",
+      "Two seasons in Dallas produced 819 receiving yards and eight touchdowns and a Senior Bowl invitation. The profile scouts wrote up was a big-bodied tight end who runs like a wide receiver in the seam, has real awareness as a route-runner, plays with soft hands, and can create yards after the catch — with the caveat that four years of college inactivity means the technical polish is still arriving."
+    ],
+    "collegeStats": [
+      {"season": "2020-2023", "team": "Michigan", "line": "28 G, 2 rec, 15 yds, 0 TD, 5 tackles; CFP national champion (2023)"},
+      {"season": "2024", "team": "SMU", "line": "8 starts, 24 rec, 368 yds, 15.3 ypr, 4 TD (80-yd TD vs. Pitt); SMU reached the CFP at 11-3"},
+      {"season": "2025", "team": "SMU", "line": "31 rec, 436 yds, 14.1 ypr, 4 TD; Senior Bowl invitee"},
+      {"season": "SMU total", "team": "SMU", "line": "55 rec, 819 yds, 14.9 ypr, 8 TD across two seasons"}
+    ],
+    "draftDayStory": [
+      "Baltimore jumped 21 spots, trading from the top of the fifth round with San Francisco into the fourth at No. 133, to take Hibner. Nine tight ends had already gone before the fourth round even started, and Eric DeCosta decided he could not wait: \"We don't often trade up for players. There had been a run on tight ends. There weren't a lot of guys left that we really coveted. He was one guy we thought could really come in and help us this year.\" The assignment's Round 4, Pick 33 matches the reporting exactly — No. 133 overall to the Ravens.",
+      "The pick was widely graded as a reach, because Baltimore passed on higher-rated consensus names like N.C. State's Justin Joly, and because it came after the Ravens had already spent their No. 115 pick on a receiver. DeCosta's rationale was situational: Isaiah Likely had left in free agency after 69 receptions and seven touchdowns over two seasons, and the Ravens needed a pass-catching tight end who could threaten the middle of the field for Lamar Jackson."
+    ],
+    "whyTheyDraftedHim": [
+      "An explicit Isaiah Likely replacement. DeCosta: \"Athletic guy, catching radius, smart as heck, very productive this year. Checked off a lot of boxes. He reminded us of Isaiah Likely in some ways when we made that pick.\"",
+      "Field-stretching ability on tape: \"When we watched his tape, we saw this guy who could really stretch the field and make plays in the passing game.\"",
+      "Fit in Declan Doyle's new offense, which is expected to deploy 11-personnel at a much higher rate than the Ravens have in the Lamar Jackson era, putting a premium on a tight end who can win as a receiver.",
+      "Hibner's own self-scout matched the front office's: \"I see myself as more of an Isaiah Likely type of fit. Being able to play inline is important, but also being able to get downfield and make plays and be a consistent pass catcher as well.\"",
+      "Immediate need. Mark Andrews was the only returning tight end on the roster, and the Ravens signed blocking specialist Durham Smythe and drafted Josh Cuevas in the fifth as complements rather than answers."
+    ],
+    "campNotes": [
+      {"date": "Aug 14", "source": "Sports Illustrated (Ravens OnSI)", "note": "On Baltimore's first unofficial depth chart, the tight end room behind Mark Andrews was still openly described as underwhelming by fans and pundits, with Hibner competing against Smythe, Cuevas and UDFA Ty Pezza for defined roles."},
+      {"date": "Aug 15", "source": "BaltimoreRavens.com", "note": "In his first-ever preseason game against Philadelphia, Hibner finished second on the team in targets (5), receptions (5) and receiving yards (61), opening with a 29-yard wheel route down the left sideline on the Ravens' second offensive play and picking up first downs on three of his next four catches."},
+      {"date": "Aug 16", "source": "Matt Hibner, Ravens press conference", "note": "Hibner described the transition to Doyle's system as \"like drinking from a fire hose\" while talking about the culture in Baltimore's tight end room after his debut."},
+      {"date": "Aug 18", "source": "Sports Illustrated (Ravens OnSI)", "note": "Ranked among the six Ravens whose stock rose most in preseason Week 1; the beat's projection was that Smythe still opens as the 12-personnel partner for Andrews, but that Hibner would see the field early and often if he kept flashing."},
+      {"date": "Aug 22", "source": "CBS Sports / Ravens box score", "note": "Hibner started alongside Josh Cuevas with Andrews and Smythe resting in the 13-3 win at Minnesota and was blanked, failing to convert either of his two targets from Joe Fagnano."},
+      {"date": "Aug 24", "source": "ESPN 53-man roster projection", "note": "ESPN projected four tight ends — Andrews, Smythe, Hibner and Cuevas — and called Hibner the favorite to be Baltimore's No. 3 tight end over Cuevas after his strong preseason debut."}
+    ],
+    "beatQuotes": [
+      {"quote": "Athletic guy, catching radius, smart as heck, very productive this year. Checked off a lot of boxes. He reminded us of Isaiah Likely in some ways when we made that pick.", "attribution": "Eric DeCosta, Ravens general manager, The Lounge podcast, Apr 30"},
+      {"quote": "I see myself as more of an Isaiah Likely type of fit. Being able to play inline is important, but also being able to get downfield and make plays and be a consistent pass catcher as well.", "attribution": "Matt Hibner, via BaltimoreRavens.com, Apr 30"},
+      {"quote": "This fourth-round rookie silenced those doubters and gave them something to be excited about instead in his NFL debut.", "attribution": "Sports Illustrated (Ravens OnSI), Aug 18"}
+    ],
+    "depthChart": "TE2 or TE3 depending on the package. Mark Andrews is the entrenched starter and Durham Smythe, who played for new offensive coordinator Declan Doyle in Chicago last season, is expected to be the first man on the field in 12-personnel because of his blocking. Hibner has separated from fifth-rounder Josh Cuevas for the pass-catching complementary role and is the favorite to open the season as Baltimore's No. 3 with a real snap share in 11- and 12-personnel.",
+    "whyHeCouldSucceed": [
+      "The team told everyone the plan: DeCosta traded up 21 spots to replace Isaiah Likely's 69 receptions and seven touchdowns over the previous two years, and Likely's departure left an actual, quantified target vacancy in Lamar Jackson's offense.",
+      "He backed it up immediately, going 5-for-5 for 61 yards in his preseason debut with a 29-yard wheel route and three first-down conversions, then earning the beat's read that he would see the field early and often.",
+      "Declan Doyle's offense is expected to use 11-personnel far more than Baltimore ever has under Jackson, which turns the No. 2 tight end from a blocker into a route-runner.",
+      "Mark Andrews is 30 and has been the subject of trade and succession talk for two years; Hibner is the only tight end on the roster with the receiving profile to inherit that role in 2027.",
+      "Athletic testing supports the projection: 4.57 at 251 pounds with a 37-inch vertical is legitimate seam speed, and his 14.9 yards per catch at SMU showed he uses it."
+    ],
+    "whyHeCouldFail": [
+      "Andrews still commands the tight end targets that matter, and Durham Smythe's familiarity with Doyle's system means the two-tight-end snaps go to a blocker rather than to Hibner.",
+      "He is a 24.5-year-old rookie with two seasons of real production and four years of special-teams anonymity at Michigan; the sample of him as a featured player is small.",
+      "The pick was viewed as a reach over higher-graded tight ends, and consensus boards were not wrong often enough in this class to dismiss the concern.",
+      "He was blanked on two targets in Baltimore's second preseason game while starting against Minnesota, a reminder that his August has been one good night rather than a month of them.",
+      "Baltimore's offense funnels through Jackson, Derrick Henry and a receiver room that just added Ja'Kobi Lane; the tight end target tree behind Andrews may simply be thin."
+    ],
+    "fantasyOutlook": [
+      "Hibner is the most immediately useful dynasty asset in this range of the board. Likely averaged roughly 35 receptions and three-plus touchdowns a year in the same role, and that is a fair 2026 ceiling for Hibner if he holds the No. 3 job and takes over the 11-personnel receiving snaps: think 25-40 targets with red-zone equity attached to Lamar Jackson. That is not a startable weekly tight end in a .5 PPR league, but it is the sort of rookie season that makes a Year 2 leap plausible if Andrews is traded or moves on after 2026.",
+      "In a superflex .5 PPR dynasty rookie draft, he is worth a mid-to-late third-round pick, and taking him at rookie 55 as the board has him is straightforwardly good value. Fourth-round draft capital plus a general manager publicly naming the departed player he is replacing plus a strong preseason debut is a better bundle of signals than most tight ends available this late. Buy him over the fringe wide receivers around him."
+    ],
+    "comp": "A slightly bigger, slightly slower Isaiah Likely — which is precisely the comparison Baltimore's general manager made when they traded up for him.",
+    "bottomLine": "The best dynasty value in this tier: take him in the third round of your rookie draft and expect a real No. 3 tight end role in Baltimore this season with a clear path to more in 2027.",
+    "sources": [
+      "https://www.baltimoreravens.com/news/matt-hibner-role-isaiah-likely-eric-decosta-talks-trade-up",
+      "https://www.baltimoreravens.com/draft/2026/matthew-hibner",
+      "https://www.si.com/nfl/ravens/onsi/6-ravens-with-soaring-stock-who-flipped-depth-charts-in-preseason-game-1-01m09d6hq435",
+      "https://www.espn.com/nfl/story/_/id/49679524/2026-nfl-season-baltimore-ravens-final-roster-projection-depth-chart",
+      "https://www.cbssports.com/fantasy/football/news/ravens-matthew-hibner-blanked-vs-minnesota/",
+      "https://en.wikipedia.org/wiki/Matthew_Hibner",
+      "https://bucswire.usatoday.com/story/sports/nfl/buccaneers/2026/02/28/2026-nfl-combine-tight-end-testing-results/88907868007/"
+    ]
+  }
+}
