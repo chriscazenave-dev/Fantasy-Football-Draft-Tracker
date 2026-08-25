@@ -1,0 +1,454 @@
+{
+  "1050": {
+    "id": 1050,
+    "name": "CJ Daniels",
+    "position": "WR",
+    "nflTeam": "LAR",
+    "nflTeamName": "Los Angeles Rams",
+    "college": "Miami",
+    "hometown": "Lilburn, Georgia",
+    "classYear": "Sixth-Year Senior",
+    "headline": "Six Colleges, Three Schools, One Last Audition: CJ Daniels Keeps Catching Everything In Los Angeles",
+    "subhead": "The Rams traded up in the sixth round for a 24-year-old journeyman receiver, and he has answered by leading both teams in catches in the preseason.",
+    "draftPick": "Round 6, Pick 33 (No. 197 overall), Los Angeles Rams",
+    "measurables": {
+      "height": "6'2 1/4\"",
+      "weight": "202 lbs",
+      "age": "24.6",
+      "forty": "4.62",
+      "tenSplit": "1.61",
+      "vertical": "34 1/2\"",
+      "broad": "10'3\"",
+      "threeCone": "7.03",
+      "shuttle": "4.27",
+      "bench": null,
+      "armLength": "31 3/4\"",
+      "combineNote": "Daniels tested as a below-average straight-line athlete, and the reported numbers do not fully agree: Wikipedia's combine/pro-day table lists a 4.62 forty with a 1.61 ten-yard split, while Ourlads and The One Analytics both carry a 4.58. Either way, the forty sits in roughly the 24th percentile for the position, and the 34.5-inch vertical and 10-3 broad are ordinary. He was drafted on tape and hands, not testing."
+    },
+    "collegeCareer": [
+      "Daniels is one of the most-traveled pass catchers in this class. He arrived at Liberty in 2020 and caught 11 balls for 220 yards and three scores as a freshman at a preposterous 20.0 yards per catch, then stepped into a bigger role in 2021 with 37 grabs for 629 yards and seven touchdowns. A 2022 season that lasted three games gutted his momentum, but the 2023 breakout was real: 55 receptions for 1,067 yards and 10 touchdowns at 19.4 yards a pop, second-team All-Conference USA, and the kind of vertical tape that earned him a Power Five transfer.",
+      "The Power Five chapters were less kind. At LSU in 2024 he caught 42 of 56 targets for 480 yards and, remarkably for a receiver of his size and role, zero touchdowns. He transferred again for 2025, this time to Miami, where a sixth year of eligibility produced 50 catches on 61 targets for 557 yards and seven touchdowns at an 82 percent catch rate as the Hurricanes reached the national title game. The efficiency was excellent; the volume and the explosion were not.",
+      "The career line reads 198 receptions, 2,991 yards and 28 touchdowns over six seasons, which is a lot of football. The film says big-slot hybrid: strong hands, comfortable working the middle, willing at the catch point, and a route runner who wins with timing rather than separation speed. He has said publicly he models his game after Davante Adams, which is either fitting or awkward given who is now ahead of him in Los Angeles."
+    ],
+    "collegeStats": [
+      {"season": "2020", "team": "Liberty", "line": "11 G, 28 tgt, 11 rec, 220 yds, 20.0 ypr, 3 TD"},
+      {"season": "2021", "team": "Liberty", "line": "13 G, 64 tgt, 37 rec, 629 yds, 17.0 ypr, 7 TD"},
+      {"season": "2022", "team": "Liberty", "line": "3 G, 4 tgt, 3 rec, 38 yds, 12.7 ypr, 1 TD (season cut short)"},
+      {"season": "2023", "team": "Liberty", "line": "14 G, 87 tgt, 55 rec, 1,067 yds, 19.4 ypr, 10 TD (second-team All-CUSA)"},
+      {"season": "2024", "team": "LSU", "line": "11 G, 56 tgt, 42 rec, 480 yds, 11.4 ypr, 0 TD"},
+      {"season": "2025", "team": "Miami", "line": "13 G, 61 tgt, 50 rec, 557 yds, 11.1 ypr, 7 TD"}
+    ],
+    "draftDayStory": [
+      "Los Angeles did not simply let Daniels fall to them. The Rams sent picks 207, 251 and 252 to Philadelphia to move up 10 slots and take him at No. 197, then used their final selection on Alabama defensive lineman Tim Keenan III at 232. For a sixth-round receiver, three picks is a real declaration of interest, and the team's own draft coverage acknowledged they had been tracking Daniels for a while.",
+      "One bookkeeping note: the board lists this pick as Round 6, Pick 16. Team and league records are unambiguous that Daniels went 197th overall, which is the 33rd selection of the sixth round; the round and the team are correct, the intra-round number on the board is not."
+    ],
+    "whyTheyDraftedHim": [
+      "Les Snead and Sean McVay have a long history of finding contributors at receiver in the middle and late rounds, and Daniels fits the archetype they keep buying: big-bodied, high catch-rate, scheme-smart, cheap.",
+      "McVay flagged him unprompted as a player he wanted to see: \"I'm excited about CJ, and he'll be another guy, when you talk about the importance of the preseason, he'll be a guy I'm looking forward to watching play.\"",
+      "The trade up cost three Day 3 picks, which is the clearest evidence available that the staff had a specific grade on him rather than treating him as a body.",
+      "Six years of college production, including two 1,000-yard-adjacent seasons and an 82 percent catch rate in 2025, gives the Rams a receiver who already understands zone leverage and the middle of the field."
+    ],
+    "campNotes": [
+      {"date": "Jul 29", "source": "Los Angeles Rams On SI (via Yahoo Sports)", "note": "Daniels was the story of the first week of camp, making impressive catches during the pre-pads acclimation period, staying late for extra work, and catching essentially everything thrown his way on Monday while working with the backup quarterbacks."},
+      {"date": "Aug 10", "source": "therams.com", "note": "With a veteran roster and few reps to spare, the team framed the preseason games as the real audition for reserves. McVay had already named Daniels early in camp as one of the players he was most excited to watch."},
+      {"date": "Aug 15", "source": "CBS Sports", "note": "Quiet preseason debut at Kansas City: two catches on five targets for 18 yards. He was later featured in the team's Mic'd Up segment from the game."},
+      {"date": "Aug 22", "source": "CBS Sports", "note": "Broke out in the 34-0 win over New Orleans with eight catches on 13 targets for 68 yards, leading both teams in receptions, targets and receiving yards, including three grabs on the Rams' final first-half series."},
+      {"date": "Aug 24", "source": "Turf Show Times", "note": "Listed as \"still alive\" rather than locked in, in a three-way fight with Brennan Presley and Tyler Scott for the sixth receiver spot; ESPN, Turf Show Times and Ramblin Fan all included him in their 53-man projections, while ClutchPoints projected him as a cut bound for the practice squad."}
+    ],
+    "beatQuotes": [
+      {"quote": "I'm excited about CJ, and he'll be another guy, when you talk about the importance of the preseason, he'll be a guy I'm looking forward to watching play and obviously in these practice settings as well.", "attribution": "Sean McVay, Rams head coach, via Los Angeles Rams On SI, Jul 29"},
+      {"quote": "Daniels ended up leading both teams in catches, receiving yards and targets... he has real momentum toward earning a depth spot on the Rams' 53-man roster by the end of training camp.", "attribution": "CBS Sports fantasy staff, Aug 22"}
+    ],
+    "depthChart": "Daniels is fighting for the last receiver job in a room fronted by Davante Adams and Puka Nacua, with Jordan Whittington and Konata Mumpfield competing for the No. 3 role and Xavier Smith holding a spot largely on punt-return value. Most late-August projections carry six receivers and include Daniels; the ones that carry five cut him to the practice squad. A Nacua absence — injury or the suspension Adam Schefter has floated — would immediately matter to him.",
+    "whyHeCouldSucceed": [
+      "The Rams spent three picks to move up for him, and this staff has a documented record of turning mid-to-late receiver picks into real contributors inside a scheme that manufactures easy completions.",
+      "He led both teams in catches, targets and yards in the second preseason game, which is exactly the sort of concrete evidence that decides the final roster spot in a room where the top two are settled.",
+      "Six college seasons and 198 catches mean he is not learning how to play receiver; the 82 percent catch rate at Miami in 2025 speaks to reliable hands on contested and traffic throws.",
+      "Any absence at the top of the room — Nacua's health or a possible suspension — pushes a big-slot body like Daniels straight into meaningful snaps with Matthew Stafford."
+    ],
+    "whyHeCouldFail": [
+      "He turns 25 in January. A sixth-round receiver with that birthday has no developmental runway; he is competing on what he is, not what he might become.",
+      "The testing is genuinely poor — a 4.58-to-4.62 forty in roughly the 24th percentile — and he never separated consistently at LSU or Miami, which caps him as a possession piece.",
+      "The room ahead of him is Adams, Nacua, Whittington, Mumpfield and Smith. Even winning the sixth spot means being the sixth option in an offense that concentrates targets at the top.",
+      "At least one credible projection already has him cut and stashed on the practice squad, which is a real outcome for a player whose value is depth and special-teams-adjacent utility."
+    ],
+    "fantasyOutlook": [
+      "This is a zero-projection fantasy asset for 2026. Even in the best case, Daniels is the sixth receiver on a team whose top two accounted for a league-leading touchdown total and a league-leading catch total last season. Any week he matters will be an injury week, and even then the Rams would more likely elevate Whittington or Mumpfield first. Treat any 2026 production as noise.",
+      "In dynasty terms he is a taxi-squad name, not a roster asset. In a superflex 0.5 PPR league he should go undrafted in a 4-round rookie draft and belongs in the late fifth round or in free agency after the draft. If your league runs deep rookie drafts, he is a defensible final-pick flyer on the strength of the trade-up and the camp buzz — but you are paying for a 24-year-old sixth-round receiver whose most likely 2026 address is the practice squad. Do not spend a pick you could use on a younger body with a clearer path."
+    ],
+    "comp": "A less explosive Tutu Atwell in terms of role, or more accurately a poor man's Cooper Kupp body type without the burst — a big-slot chain-mover who has to earn his job on hands and detail.",
+    "bottomLine": "Real camp buzz and a genuine trade-up, attached to a 24-year-old with a 4.6 forty and five receivers ahead of him. Let someone else use the pick.",
+    "sources": [
+      "https://www.therams.com/news/read-rams-select-wr-cj-daniels-with-197th-overall-pick-in-the-2026-nfl-draft",
+      "https://www.therams.com/news/5-interesting-stats-from-the-rams-day-3-picks-what-wr-cj-daniels-and-dl-tim-keenan-iii-bring-to-los-angeles",
+      "https://sports.yahoo.com/articles/rookie-already-making-waves-rams-140000199.html",
+      "https://www.cbssports.com/fantasy/football/news/rams-cj-daniels-paces-lar-pass-catchers-saturday/",
+      "https://www.espn.ph/nfl/story/_/id/49658470/2026-nfl-season-los-angeles-rams-final-roster-projection-depth-chart",
+      "https://www.turfshowtimes.com/los-angeles-rams-depth-chart/146848/rams-jarquez-hunter-depth-chart",
+      "https://en.wikipedia.org/wiki/CJ_Daniels",
+      "https://www.statmuse.com/cfb/player/cj-daniels-60071/career-stats"
+    ]
+  },
+  "1098": {
+    "id": 1098,
+    "name": "J'Mari Taylor",
+    "position": "RB",
+    "nflTeam": "JAC",
+    "nflTeamName": "Jacksonville Jaguars",
+    "college": "Virginia",
+    "hometown": "Charlotte, North Carolina",
+    "classYear": "Redshirt Senior",
+    "headline": "From HBCU Walk-On To Duval Folk Hero: J'Mari Taylor Runs His Way Into The Roster Conversation",
+    "subhead": "Undrafted out of Virginia, Taylor posted the biggest rushing night by a Jaguar in a preseason game in a decade and turned a longshot into a real fight.",
+    "draftPick": "Undrafted free agent, signed by the Jacksonville Jaguars",
+    "measurables": {
+      "height": "5'9 7/8\"",
+      "weight": "199 lbs",
+      "age": "24.6",
+      "forty": "4.66",
+      "tenSplit": "1.63",
+      "vertical": "34 1/2\"",
+      "broad": "9'7\"",
+      "threeCone": null,
+      "shuttle": null,
+      "bench": "20 reps",
+      "armLength": "30\"",
+      "combineNote": "Taylor was a combine invitee but did not run the forty in Indianapolis, doing only the jumps and the bench (34 1/2-inch vertical, 20 reps). He ran at his pro day on March 17, 2026, and the 4.66 forty with a 1.63 ten-yard split — Draft Scout's range on him was 4.63 to 4.69 — is the single biggest reason a 1,000-yard ACC back went undrafted. Broad-jump reporting conflicts: Draft Scout lists 9'7\" and Fantasy Team Advice lists 115 inches."
+    },
+    "collegeCareer": [
+      "Taylor walked on at North Carolina Central, an HBCU in Durham, redshirted, and spent two years grinding for touches: 87 carries for 421 yards and seven scores in 2022, then 71 carries for 321 yards in 2023 with 16 catches mixed in. Nothing about the first three years suggested an NFL body of work.",
+      "Then 2024 happened. Handed the job, Taylor ran 196 times for 1,146 yards at 5.9 a carry with 15 rushing touchdowns, added 30 catches for 271 yards, and became the kind of FCS producer that Power Four staffs poach. Virginia won the transfer battle.",
+      "The 2025 season in Charlottesville validated the jump. Taylor carried 222 times for 1,062 yards and 14 touchdowns, third in the ACC in rushing, and was a genuine three-down weapon with 43 receptions for 253 yards. He went for 150 against NC State, 133 against Duke, 105 against Cal and 98 against Wake Forest, and in the Virginia Tech win he became the first ACC running back since 2021 to run for a touchdown and throw for one in the same game. Virginia reached the ACC championship game, where he touched it 19 times.",
+      "The profile is compact and dense rather than explosive: sub-5'10\", 199 pounds, low center of gravity, real contact balance, and enough hands to stay on the field on third down. He forced a heavy volume of missed tackles at both levels. He also turns 25 this fall, and he ran 4.66."
+    ],
+    "collegeStats": [
+      {"season": "2021", "team": "North Carolina Central", "line": "4 G, 0 car, 0 rush yds, 0 TD (redshirt)"},
+      {"season": "2022", "team": "North Carolina Central", "line": "12 G, 87 car, 421 rush yds, 4.8 ypc, 7 TD, 9 rec, 129 rec yds, 3 TD"},
+      {"season": "2023", "team": "North Carolina Central", "line": "11 G, 71 car, 321 rush yds, 4.5 ypc, 1 TD, 16 rec, 229 rec yds, 4 TD"},
+      {"season": "2024", "team": "North Carolina Central", "line": "11 G, 196 car, 1,146 rush yds, 5.9 ypc, 15 TD, 30 rec, 271 rec yds, 2 TD"},
+      {"season": "2025", "team": "Virginia", "line": "13 G, 222 car, 1,062 rush yds, 4.8 ypc, 14 TD, 43 rec, 253 rec yds, 1 TD (third in ACC in rushing)"}
+    ],
+    "draftDayStory": [
+      "Taylor was not drafted. Jacksonville had been on him throughout the pre-draft process — he says the Jaguars were the first team he talked to and believed he would be selected — and moved immediately once the seventh round ended, signing him as a priority undrafted free agent. \"When they found out that I wasn't [drafted] and they were the first team ... I was going with the first team, because that's the one who really wanted me the most,\" he said after rookie minicamp.",
+      "The board correctly lists him as an undrafted free agent. What the board cannot capture is the fit: Jacksonville let Travis Etienne leave in free agency and entered camp with a young, unsettled backfield, which is precisely the environment in which a UDFA with 2,900 college rushing yards can get real reps."
+    ],
+    "whyTheyDraftedHim": [
+      "Liam Coen singled out cross-comparison production: \"When you looked at him against some of the top backs in the draft, production against the same teams and what that looked like, I thought was pretty impressive.\"",
+      "The staff valued his tackle-breaking and dual-threat usage — Coen noted \"people just slip, like bounce off of him\" and that he \"forced a lot of missed tackles and he's super sharp.\"",
+      "Jacksonville's front office under James Gladstone has leaned into perseverance and toughness as roster traits, and a walk-on-to-ACC-1,000-yard-rusher arc is exactly that story.",
+      "Departing Etienne snaps and a backfield of Bhayshul Tuten, Chris Rodriguez Jr. and LeQuint Allen Jr. left a genuine opening for a fourth or fifth back who can handle three downs."
+    ],
+    "campNotes": [
+      {"date": "Jul 24", "source": "Black and Teal", "note": "Framed pre-camp as the most upside-laden candidate for the last backfield roster spot ahead of veterans DeeJay Dallas and Ameer Abdullah, having shown offseason explosiveness comparable to Tuten on big runs — with the caveat that he needs special-teams value to stick."},
+      {"date": "Aug 15", "source": "Ryan O'Halloran, Florida Times-Union / Jacksonville.com", "note": "Took over the preseason opener at New Orleans: 22 carries for 78 yards and a 2-yard fourth-quarter go-ahead touchdown in a 24-20 win, including a four-carry, 32-yard drive to open the third quarter. It was the most rushing yardage by a Jaguar in a preseason game since Corey Grant in September 2015. He was not targeted in the passing game."},
+      {"date": "Aug 19", "source": "Florida Times-Union / Jacksonville.com", "note": "Named among the Jaguars' camp standouts in week three alongside Bhayshul Tuten, specifically for running hard through the joint-practice week with Carolina."},
+      {"date": "Aug 21", "source": "Jaguars.com box score", "note": "Much quieter in the 34-17 home loss to Carolina: four carries for three yards and one catch for four yards, with Abdullah (6 for 45) and Dallas (8 for 27) getting the bulk of the reserve backfield work."}
+    ],
+    "beatQuotes": [
+      {"quote": "The season Virginia had, a lot of that had to do with (Taylor's) success and his ability to affect the game in the run and pass game. People just bounce off of him and he forced a lot of missed tackles. And he's super sharp.", "attribution": "Liam Coen, Jaguars head coach, via Florida Times-Union, May 18"},
+      {"quote": "I have always been an underdog in my whole football career. It's just that I love to play football, man. It is just the love of the game for me.", "attribution": "J'Mari Taylor, via Jaguars.com, May 20"},
+      {"quote": "You have to be determined and can't be scared out there. Your size doesn't really matter. It's what you have in your heart.", "attribution": "J'Mari Taylor, via Florida Times-Union, May 18"}
+    ],
+    "depthChart": "Taylor is the fifth or sixth back in a room led by Bhayshul Tuten, with Chris Rodriguez Jr. and LeQuint Allen Jr. next and 12-year veteran Ameer Abdullah likely holding the fourth spot on experience. His direct competition is DeeJay Dallas, whose special-teams value is the tiebreaker Taylor lacks. If Jacksonville keeps four backs, the realistic outcome is a practice-squad spot; the preseason finale against Tampa Bay is his last audition.",
+    "whyHeCouldSucceed": [
+      "He already produced the loudest single performance of any Jaguars reserve this preseason — 22 carries, 78 yards, the go-ahead touchdown — and the coaching staff had publicly praised his tackle-breaking before he ever put on pads.",
+      "The room ahead of him is young and unproven: Tuten is a second-year back, Rodriguez and Allen are unestablished, and a Jacksonville injury or two puts a 1,000-yard ACC rusher in the rotation quickly.",
+      "The receiving usage is real — 43 catches in 2025 and 30 the year before — which gives him third-down and screen-game value beyond short-yardage carries.",
+      "Jacksonville has a long institutional history of promoting undrafted rookies, and the staff signed him as a priority UDFA rather than a camp body."
+    ],
+    "whyHeCouldFail": [
+      "A 4.66 forty at 199 pounds is why he went undrafted, and nothing in the preseason has changed the athletic profile. He wins with density, not speed, at a position where NFL depth backs are usually chosen on burst.",
+      "He turns 25 this fall. An older UDFA has no development window and no dynasty runway; he is competing purely on current output.",
+      "He has not established special-teams value, which is the entire case for a fourth or fifth running back on a 53-man roster. Dallas has it, and that may be decisive.",
+      "The Carolina game was a reminder of where he actually sits: four carries for three yards while two veterans handled the reserve workload."
+    ],
+    "fantasyOutlook": [
+      "For 2026, project nothing. Taylor's realistic best case is making the 53 as the fourth or fifth back and touching the ball only if Tuten and one of Rodriguez or Allen miss time. The likelier outcome is a practice-squad stint with midseason elevations. He is a name to hold in your phone's notes app for a Jacksonville injury week, not a player to roster in a standard-size league.",
+      "In dynasty, the FantasyPros consensus rookie rank of 47 is generous relative to his path; the KTC value of 1170 is basically the price of a free agent. In a superflex 0.5 PPR rookie draft he should be undrafted through four rounds and picked up off waivers if he makes the roster. If you are in a 5-round league and value the profile — production, contact balance, pass-catching — spend the last pick, but understand you are buying a 25-year-old undrafted back stuck behind three younger players."
+    ],
+    "comp": "A stockier Boston Scott: a compact, low-to-the-ground back whose usable NFL role is short-yardage and third-down work rather than volume carries.",
+    "bottomLine": "The best preseason night any Jaguars reserve had, attached to a 25-year-old undrafted back with a 4.66 forty and no special-teams résumé. Waiver-wire name, not a rookie-draft pick.",
+    "sources": [
+      "https://www.jacksonville.com/story/sports/nfl/jaguars/2026/08/15/jacksonville-jaguars-undrafted-rookie-runnng-back-jmari-taylor-new-orleans-saints/91323435007/",
+      "https://www.jaguars.com/news/rookie-rb-looking-to-prove-himself-i-ve-always-been-an-underdog",
+      "https://www.jacksonville.com/story/sports/columns/ryan-o-halloran/2026/05/18/jacksonville-jaguars-jmari-taylor-liam-coen-virginia-cavaliers-nfl/90043637007/",
+      "https://blackandteal.com/undrafted-jaguars-rookie-quietly-forcing-his-way-into-the-53-man-roster-picture-jmari-taylor",
+      "https://www.jaguars.com/game-day/2026/pre/panthers-at-jaguars/box-score",
+      "https://www.footballdb.com/players/jmari-taylor-taylo0508",
+      "https://draftscout.com/dsprofile.php?DraftYear=2026&PlayerId=1104269",
+      "https://virginiasports.com/sports/football/roster/player/jmari-taylor"
+    ]
+  },
+  "1074": {
+    "id": 1074,
+    "name": "Jam Miller",
+    "position": "RB",
+    "nflTeam": "NE",
+    "nflTeamName": "New England Patriots",
+    "college": "Alabama",
+    "hometown": "Tyler, Texas",
+    "classYear": "Senior",
+    "headline": "Pads Down, Odds Long: Jam Miller Is Running Into A Vacancy In Foxborough",
+    "subhead": "An injury-shortened final year at Alabama pushed the 4.42 back to the last round, but a season-ending IR in front of him has opened the RB3 door.",
+    "draftPick": "Round 7, Pick 29 (No. 245 overall), New England Patriots",
+    "measurables": {
+      "height": "5'10\"",
+      "weight": "209 lbs",
+      "age": "22.3",
+      "forty": "4.42",
+      "tenSplit": "1.53",
+      "vertical": "30 1/2\"",
+      "broad": "9'7\"",
+      "threeCone": "DNP",
+      "shuttle": "DNP",
+      "bench": "DNP",
+      "armLength": "30 3/8\"",
+      "combineNote": "Miller ran a 4.42 in Indianapolis in late February, fourth among running backs at the combine, and that speed at 209 pounds is the reason a back with 504 yards in his final college season was drafted at all. The jumps were the opposite story: a 30.5-inch vertical and a 9'7\" broad both ranked last or near-last among tested backs. He skipped the bench, three-cone and shuttle, and did position drills only at Alabama's March 25 pro day."
+    },
+    "collegeCareer": [
+      "Miller was a four-star Texas recruit — the No. 4 running back nationally per 247Sports — who left Tyler Legacy with nearly 5,000 career rushing yards and a school record, then waited his turn in the deepest position room in college football. He carried 33 times for 223 yards as a true freshman in 2022 and 41 times for 201 yards in 2023, flashing 6.8 and 4.9 yards per carry in a rotation that never gave him volume.",
+      "The 2024 season was his: 145 carries for 668 yards and seven touchdowns, plus 16 catches for 155 yards, as Alabama's lead back. He scored on a 16-yard reception in the 41-34 upset of Georgia and closed the year with a 28-carry, 84-yard grind against Auburn. It was productive without being explosive — 4.6 a carry behind an offensive line in transition.",
+      "The 2025 season broke the momentum. Miller dealt with an upper-body injury in August, a concussion on Oct. 11, and a leg injury in November that ended his season, finishing with 130 carries for 504 yards at 3.9 a clip and three touchdowns, plus 19 catches for 109 yards. His most valuable film for NFL evaluators may have been the pass protection and the special-teams work, which is the door he is currently walking through in New England.",
+      "The playing style is what New England buys: downhill, physical, pads-down, willing in short yardage, with legitimate long speed once he clears the line. He described it himself as \"aggressive — with a little bit of speed to it.\""
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Alabama", "line": "13 G, 33 car, 223 rush yds, 6.8 ypc, 2 TD, 1 rec, -1 rec yds, 0 TD"},
+      {"season": "2023", "team": "Alabama", "line": "13 G, 41 car, 201 rush yds, 4.9 ypc, 1 TD, 4 rec, 73 rec yds, 1 TD"},
+      {"season": "2024", "team": "Alabama", "line": "13 G, 145 car, 668 rush yds, 4.6 ypc, 7 TD, 16 rec, 155 rec yds, 1 TD"},
+      {"season": "2025", "team": "Alabama", "line": "11 G, 130 car, 504 rush yds, 3.9 ypc, 3 TD, 19 rec, 109 rec yds, 0 TD (season ended by November leg injury)"}
+    ],
+    "draftDayStory": [
+      "Miller was the Patriots' second-to-last pick, No. 245 overall in the seventh round, and the 10th Alabama player selected in the 2026 draft. New England had already invested in Rhamondre Stevenson and TreVeyon Henderson, so this was explicitly a depth and special-teams selection rather than a bet on a future starter.",
+      "The board's Round 7, Pick 29 designation matches the official record: pick 29 of the seventh round is No. 245 overall, New England. No discrepancy."
+    ],
+    "whyTheyDraftedHim": [
+      "Special teams are the stated path. Alabama's staff believed Miller's ability to handle multiple kicking-game roles would translate immediately, which is how seventh-round backs make rosters.",
+      "Pass protection experience in the SEC — the Patriots' own draft coverage called it \"maybe the biggest key to early snaps beyond special teams\" in a room that prioritizes three-down capability.",
+      "Mike Vrabel has built the roster around multi-role, physical, accountable players, and Miller's downhill style mirrors Stevenson's, giving the offense a like-for-like backup behind its bruiser.",
+      "Alabama running backs coach Robert Gillespie's endorsement was unambiguous: \"I think his best football is ahead of him,\" a reasonable claim about a back whose final season was wrecked by injuries.",
+      "The 4.42 gives New England a speed element it can develop cheaply at the end of the draft."
+    ],
+    "campNotes": [
+      {"date": "Aug 3", "source": "Evan Lazar, Patriots.com (via CBS Sports)", "note": "Miller has been taking kickoff-return reps in camp, an important tiebreaker for a seventh-rounder. Lazar noted Lan Larison was getting the first crack at reps behind Stevenson and Henderson at that point."},
+      {"date": "Aug 13", "source": "Boston Globe / Boston.com", "note": "Terrell Jennings — the presumed leader for the RB3 job — was placed on season-ending injured reserve before the preseason opener, opening the competition."},
+      {"date": "Aug 13", "source": "Conor Ryan, Boston.com", "note": "Miller was a bright spot in the 13-13 tie with Indianapolis, gaining 55 total yards on 14 total carries and drawing direct praise from Vrabel for running with his pads down."},
+      {"date": "Aug 14", "source": "Boston Globe", "note": "New England signed veterans Hassan Haskins and JaMycal Hasty that week, adding two experienced bodies to a competition that also includes second-year pro Lan Larison and UDFA Myles Montgomery."},
+      {"date": "Aug 22", "source": "Patriots.com", "note": "Carried 11 times for 36 yards in the preseason win over Philadelphia, including a 20-yard burst through the pocket that the team highlighted. Vrabel's Aug. 24 theme after the game was blunt: \"Depth has to be built.\""}
+    ],
+    "beatQuotes": [
+      {"quote": "It was good to see Jam come out and have some nice runs. I felt like he ran with his pads down and had a couple, and [I] was happy for him.", "attribution": "Mike Vrabel, Patriots head coach, via Boston Globe, Aug 13"},
+      {"quote": "Aggressive — with a little bit of speed to it. I feel like I always had that. Just get downhill. If it's a 4th-and-1 play, just get that first down — just being strong and just running through somebody else.", "attribution": "Jam Miller, via Boston.com, Aug 14"},
+      {"quote": "I think his best football is ahead of him.", "attribution": "Robert Gillespie, Alabama running backs coach, via Patriots.com, May 20"}
+    ],
+    "depthChart": "Rhamondre Stevenson and TreVeyon Henderson are locked in as the top two. With Terrell Jennings on season-ending IR, Miller is in a live fight for the RB3 job against Lan Larison and midcamp veteran additions Hassan Haskins and JaMycal Hasty, with Myles Montgomery also in the room. His kickoff-return reps and pass-protection background are his edge; the roster spot is likely decided by the preseason finale against Cleveland.",
+    "whyHeCouldSucceed": [
+      "The one job he is chasing actually opened: Jennings' season-ending IR removed the presumed RB3, and Miller responded with the best reserve backfield performance of the preseason against Indianapolis.",
+      "He is only 22.3 years old with a 4.42 forty at 209 pounds, the youngest and fastest player in this tier of the board — genuine long-term upside if he sticks on the roster.",
+      "Kickoff-return reps plus SEC pass-protection tape give him the two non-carry skills that decide backup running back jobs, in a program that explicitly values multi-role players.",
+      "He is stylistically the Stevenson understudy: a downhill, pads-down runner who could inherit real short-yardage work if Stevenson (a frequent injury absence in recent seasons) misses time."
+    ],
+    "whyHeCouldFail": [
+      "His final college season was 3.9 yards per carry across 11 games with three separate injuries — upper body in August, a concussion in October, a season-ending leg injury in November — and durability is the whole question for a 209-pound back.",
+      "New England signed Haskins and Hasty in mid-August specifically because it wanted proven veteran depth, which is a direct vote against handing the job to a seventh-rounder.",
+      "The explosion testing was terrible: a 30.5-inch vertical and 9'7\" broad both at the bottom of the running back class, and it shows up as a lack of creation ability behind the line.",
+      "Even winning RB3 in New England means single-digit touches in most weeks behind two backs the team has invested far more in."
+    ],
+    "fantasyOutlook": [
+      "The 2026 projection is a special-teams roster spot with occasional handoffs — call it 25 to 50 carries if he makes the 53 and stays healthy, more only if Stevenson or Henderson misses time. He has no standalone weekly value and would need two injuries in front of him to become a startable flex.",
+      "Dynasty-wise, he is the most defensible flyer in this tier because of age and speed: 22.3 years old with a 4.42, on a run-first roster, behind a bruiser with an injury history. The KTC value of 1166 and the FantasyPros rank of 50 are about right. In a superflex 0.5 PPR rookie draft, he belongs at the very end of the fourth round or as a fifth-round pick, and he is a perfectly reasonable last-pick dart if your bench allows one. Buy the age and the vacancy, not the college production."
+    ],
+    "comp": "A poor man's Rhamondre Stevenson — same downhill, pads-down style and short-yardage disposition, without the vision or the size to carry a real workload.",
+    "bottomLine": "The best late-round dart in this tier: young, fast, and one Jennings IR away from an actual roster job. Take him with your last pick and forget about him until Stevenson gets hurt.",
+    "sources": [
+      "https://www.bostonglobe.com/2026/08/14/sports/patriots-jam-miller-running-back/",
+      "https://www.boston.com/sports/new-england-patriots/2026/08/14/new-england-patriots-jam-miller-nfl-football-running-back-competition/",
+      "https://www.cbssports.com/fantasy/football/news/patriots-jam-miller-logging-kickoff-return-reps/",
+      "https://www.patriots.com/news/jam-miller-brings-all-phase-value-to-patriots-backfield",
+      "https://www.si.com/college/alabama/football/what-to-know-about-alabama-running-back-nfl-draft-prospect-jam-miller",
+      "https://www.espn.com/college-football/player/_/id/4685477/jam-miller",
+      "https://rolltide.com/sports/football/roster/jam-miller/13815",
+      "https://en.wikipedia.org/wiki/Jam_Miller"
+    ]
+  },
+  "1046": {
+    "id": 1046,
+    "name": "Colbie Young",
+    "position": "WR",
+    "nflTeam": "CIN",
+    "nflTeamName": "Cincinnati Bengals",
+    "college": "Georgia",
+    "hometown": "Binghamton, New York",
+    "classYear": "Redshirt Senior",
+    "headline": "Six-Foot-Five And Learning Fast: Colbie Young Is Making Cincinnati's WR3 Job A Fight",
+    "subhead": "A fourth-round pick with a checkered past and a huge catch radius has spent August catching contested balls from Joe Burrow and pushing Andrei Iosivas.",
+    "draftPick": "Round 4, Pick 42 (No. 140 overall), Cincinnati Bengals",
+    "measurables": {
+      "height": "6'4 3/4\"",
+      "weight": "218 lbs",
+      "age": "24.1",
+      "forty": "4.49",
+      "tenSplit": "1.59",
+      "vertical": "33\"",
+      "broad": null,
+      "threeCone": null,
+      "shuttle": null,
+      "bench": "18 reps",
+      "armLength": "31 7/8\"",
+      "combineNote": "A 4.49 forty at 6'4 3/4\" and 218 pounds is the headline: legitimate long speed on a rare frame, with a 1.59 ten-yard split that says he gets going faster than his size suggests. The 33-inch vertical is unremarkable for a contested-catch specialist, and he did not post a broad jump, three-cone or shuttle in the publicly available combine/pro-day record."
+    },
+    "collegeCareer": [
+      "Young's path started at Lackawanna College in Scranton, Pennsylvania, where the Binghamton, New York native caught 24 passes for 472 yards and nine touchdowns in nine junior-college games in 2021. Miami took him for 2022 and he started immediately, leading the Hurricanes in touchdown catches with five on 32 receptions for 367 yards, then followed with 47 catches for 563 yards and five more scores in 2023 as an every-week starter.",
+      "Georgia was supposed to be the finishing school. Instead, 2024 fell apart: he played five games, caught 11 balls for 149 yards and two touchdowns, and was suspended for the remainder of the season following an October arrest stemming from a domestic incident. It is the single biggest non-football item on his file, and it is why a receiver with this frame lasted until the fourth round.",
+      "Reinstated for 2025, he was productive again before injury intervened — 26 catches for 358 yards and a touchdown in eight games, with a fractured leg against Ole Miss ending his regular season, though he returned for Georgia's College Football Playoff run. Kirby Smart publicly described Young's camp that summer as the best he had seen from any receiver in his Georgia tenure.",
+      "The résumé across three Division I stops: 116 receptions, 1,437 yards, 13 touchdowns in 35 games. He is a true X — a jump-ball, body-positioning, high-point receiver with hand strength, contact balance after the catch, and a genuinely good disposition as a run blocker. What he is not is a nuanced separator, and he never played the slot in college."
+    ],
+    "collegeStats": [
+      {"season": "2021", "team": "Lackawanna College (JUCO)", "line": "9 G, 24 rec, 472 yds, 19.7 ypr, 9 TD"},
+      {"season": "2022", "team": "Miami", "line": "32 rec, 367 yds, 11.5 ypr, 5 TD (led Hurricanes in TD catches)"},
+      {"season": "2023", "team": "Miami", "line": "11 starts, 47 rec, 563 yds, 12.0 ypr, 5 TD"},
+      {"season": "2024", "team": "Georgia", "line": "5 G, 11 rec, 149 yds, 13.5 ypr, 2 TD (suspended for remainder of season)"},
+      {"season": "2025", "team": "Georgia", "line": "8 G, 26 rec, 358 yds, 13.8 ypr, 1 TD (fractured leg vs. Ole Miss; returned for CFP)"}
+    ],
+    "draftDayStory": [
+      "Cincinnati maneuvered to get him. The Bengals sent picks 110 and 199 to the New York Jets for 128 and 140, used the first on Auburn center Connor Lew and the second on Young — the last pick of the fourth round, No. 140 overall. Zac Taylor made the call himself. He signed on May 8.",
+      "The board lists Round 4, Pick 40; the official record is the 42nd and final selection of the fourth round, No. 140 overall, Cincinnati. Round, team and overall value are right; the intra-round number is two off. Worth noting that the Bengals' history here is thematic — A.J. Green played with Tee Higgins' predecessor generation, and the franchise has repeatedly used mid-round picks on tall outside receivers to complement its stars."
+    ],
+    "whyTheyDraftedHim": [
+      "Assistant GM Steven Radicevic laid out the profile plainly: \"He has all the physical traits — height, weight, speed. He's a big possession receiver. He's really good in contested situations.\"",
+      "Toughness and blocking were explicit selling points — Radicevic singled out \"his toughness and his willingness to block in the run game\" and that \"he is tough after the catch,\" which matters in an offense that asks its third receiver to do dirty work.",
+      "Cincinnati wanted insurance and a different body type behind Ja'Marr Chase and Tee Higgins, and a 6'5\" jump-ball winner gives Joe Burrow a genuinely distinct red-zone and back-shoulder answer.",
+      "Offensive coordinator Dan Pitcher has publicly refused to frame it as an Iosivas-versus-Young battle, indicating the staff intends to use both rather than pick one."
+    ],
+    "campNotes": [
+      {"date": "Aug 6", "source": "Laurel Pfahler, Dayton Daily News", "note": "Young was drawing heavy attention with splash plays in camp, working mainly with the second-team offense but earning reps with Burrow and the first team. Pitcher declined to characterize it as a battle with Iosivas for the No. 3 job."},
+      {"date": "Aug 13", "source": "CBS Sports", "note": "NFL debut in the 16-14 preseason win over Detroit: two catches on four targets for 28 yards, working with Joe Flacco and the second unit."},
+      {"date": "Aug 15", "source": "Fox19", "note": "Beat assessment had Iosivas as the clear favorite for WR3 — he was the No. 3 in the preseason opener and has had the most first-team work all summer — with Young as the wild card who \"needs to show that he can be consistent right away.\" Note the caveat: he has not played much special teams."},
+      {"date": "Aug 17", "source": "Dan Hoard / Geoff Hobson, Bengals.com (via Yahoo Sports)", "note": "Young soared for a contested catch from Burrow over the weekend, footage of which circulated with a supporting quote from receivers coach Troy Walters. Young credited the timing route and Burrow's ball placement."},
+      {"date": "Aug 22", "source": "Sports Illustrated / OnSI Bengals", "note": "Caught the first preseason touchdown of his career, a 17-yard over-the-shoulder strike from Josh Johnson against Chicago that put Cincinnati up 10-6 late in the second quarter, plus an 18-yard contested sideline grab."}
+    ],
+    "beatQuotes": [
+      {"quote": "He has been a sponge. He wants to be great. Anything little or anything he does wrong, he wants to be coached and corrected. The first (preseason) game was OK. He made a couple of plays but had one drop. He understands it. He knows that he'll improve from this game to the next game.", "attribution": "Troy Walters, Bengals receivers coach, via Sports Illustrated / OnSI Bengals, Aug 22"},
+      {"quote": "As soon as I get out of my break, the ball is there. Like I've said, you can't guard a perfect ball. Just me and Joe trusting each other on that timing route. He makes it easy. All that pressure in his face, he has to read all the checks, and he still threw a perfect ball out there.", "attribution": "Colbie Young, via Geoff Hobson, Bengals.com, Aug 17"},
+      {"quote": "He has all the physical traits — height, weight, speed. He's a big possession receiver. He's really good in contested situations. One of the things that stuck out the most is his toughness and his willingness to block in the run game.", "attribution": "Steven Radicevic, Bengals assistant general manager, via Bengals.com"}
+    ],
+    "depthChart": "Ja'Marr Chase and Tee Higgins are untouchable at the top. Andrei Iosivas remains the favorite for the No. 3 job — he took the No. 3 reps in the preseason opener and has had the most first-team work all summer — with Young as the No. 4 pushing him and Mitchell Tinsley, Dohnte Meyers, Charlie Jones and Ke'Shawn Williams filling out the room. Young's limited special-teams work is the main thing keeping him from more snaps.",
+    "whyHeCouldSucceed": [
+      "He is the only receiver in this tier with real draft capital and a real path: a fourth-round pick catching contested balls from Joe Burrow in one of the league's most stable, highest-volume passing offenses.",
+      "The physical profile is genuinely rare — 6'4 3/4\", 218 pounds, 4.49 forty — and it gives Cincinnati a red-zone and back-shoulder answer that neither Chase nor Higgins duplicates.",
+      "If Chase or Higgins misses any time, Young is the body type the Bengals would most naturally slot into those outside, downfield, splash-play concepts. Beat coverage has said explicitly that the Bengals expect him to contribute this season.",
+      "Coaching signals are all positive: Walters calls him a sponge, Pitcher refuses to frame it as a loss to Iosivas, and he has already turned camp buzz into a preseason touchdown and multiple contested wins."
+    ],
+    "whyHeCouldFail": [
+      "Chase and Higgins are the most target-concentrated duo in football. Even winning WR3 outright leaves a rookie fighting for scraps in an offense with no vacated volume.",
+      "The off-field file is real: he was suspended for the balance of the 2024 season at Georgia after an October arrest, and that history is the reason he was available in Round 4.",
+      "He turns 24 in July of his rookie year and has never played the slot, so his usable role is the one Cincinnati least needs — a big outside X on a team with two of them.",
+      "Health is a live question after a fractured leg ended his 2025 regular season, and he has not established special-teams value, which limits his snap floor if he is not the WR3."
+    ],
+    "fantasyOutlook": [
+      "Young is the only player in this tier with a plausible 2026 relevance case, and it is still narrow: as the No. 4 in a Chase-Higgins offense, project roughly 15 to 25 catches with a couple of touchdowns if healthy. The upside scenario is real, though — a Higgins absence, which has happened in each of the last few seasons, hands the deep and red-zone role to the biggest receiver on the roster with Burrow throwing.",
+      "In dynasty this is the buy of the tier. Fourth-round capital, a top-five quarterback, and a distinct physical archetype are the three things you want in a late rookie-draft flyer. The KTC value of 1155 undersells the situation relative to the older, undrafted, and roster-bubble players ranked around him. In a superflex 0.5 PPR league, take him at the end of the third round or early in the fourth — ahead of the running backs in this tier — and hold through 2027, when Higgins' contract and Cincinnati's cap situation could hand Young a real role."
+    ],
+    "comp": "A rawer Josh Palmer with more size — a big-bodied outside receiver who wins jump balls and blocks willingly, valuable mostly when the players ahead of him get hurt.",
+    "bottomLine": "The one player in this range worth an actual rookie pick: Round 4 capital, Joe Burrow, and a 6'5\" frame that becomes fantasy-relevant the moment Higgins or Chase misses a game.",
+    "sources": [
+      "https://www.bengals.com/news/colbie-young-bengals-round-4-pick-140-2026-nfl-draft",
+      "https://www.bengals.com/team/players-roster/colbie-young/",
+      "https://sports.yahoo.com/articles/bengals-rookie-colbie-young-keeps-093112793.html",
+      "https://www.si.com/nfl/bengals/onsi/colbie-young-catches-first-nfl-preseason-touchdown-to-open-end-zone-trips-against-bears-01m0nvk7djm6",
+      "https://www.fox19.com/2026/08/15/parsing-through-bengals-depth-wide-receiver/",
+      "https://www.daytondailynews.com/sports/cincinnati-bengals-battle-brewing-behind-higgins-chase/article_7068f8a5-e155-577b-a025-f6feff3f8085.html",
+      "https://www.cbssports.com/fantasy/football/news/bengals-colbie-young-two-catches-in-first-nfl-action/",
+      "https://en.wikipedia.org/wiki/Colbie_Young",
+      "https://www.playerprofiler.com/nfl/colbie-young/bio/"
+    ]
+  },
+  "1033": {
+    "id": 1033,
+    "name": "Tanner Koziol",
+    "position": "TE",
+    "nflTeam": "JAC",
+    "nflTeamName": "Jacksonville Jaguars",
+    "college": "Houston",
+    "hometown": "Bloomingdale, Illinois",
+    "classYear": "Senior",
+    "headline": "Six-Foot-Seven And 237 Catches Later, Tanner Koziol Is Jacksonville's Big-Slot Experiment",
+    "subhead": "The Jaguars took two tight ends in April and immediately loaded Koziol's plate in camp; his blocking, not his hands, will decide whether he plays.",
+    "draftPick": "Round 5, Pick 27 (No. 164 overall), Jacksonville Jaguars",
+    "measurables": {
+      "height": "6'6 1/2\"",
+      "weight": "247 lbs",
+      "age": "22.6",
+      "forty": "4.70",
+      "tenSplit": "1.62",
+      "vertical": "36 1/2\"",
+      "broad": "10'2\"",
+      "threeCone": "7.08",
+      "shuttle": "4.43",
+      "bench": null,
+      "armLength": "33 3/4\"",
+      "combineNote": "Koziol tested better than his tape's play speed suggests. The 4.70 forty is unremarkable, but the 36.5-inch vertical and 10'2\" broad both ranked among the top six tight ends at the 2026 combine, and the 33 3/4-inch arms with a 6'8 3/4\" wingspan explain the catch radius. He did not post a bench number. Measured 6'6 1/2\" and 247 pounds in Indianapolis against listed dimensions of 6'7\", 250."
+    },
+    "collegeCareer": [
+      "Koziol was a Nazareth Academy recruit out of the Chicago suburbs who produced from the moment he arrived at Ball State: 35 catches for 373 yards and seven touchdowns as a true freshman in 2022, good enough for freshman All-America honors. He followed with 34 receptions for 295 yards and three scores in 2023 and third-team All-MAC recognition, then briefly transferred to Louisville before de-committing and returning to Muncie.",
+      "That decision produced the biggest tight end season in the MAC. In 2024 he caught 94 balls on 129 targets for 839 yards and eight touchdowns — a 29.3 percent target share, essentially the entire Ball State offense routed through one player — and was named second-team All-MAC. Then he transferred again, this time to Houston.",
+      "The Big 12 year answered the level-of-competition question. Koziol caught 74 of 93 targets for 727 yards and six touchdowns in 13 games, finishing top three among FBS tight ends in receiving yards and immediately becoming Houston's safety valve. He was the first Houston tight end drafted since 2010. He finished his career with 237 catches for 2,234 yards and 24 touchdowns in 49 games.",
+      "The scouting consensus is unusually consistent about what he is and is not. The pre-draft evaluation circulated by Big Cat Country described \"soft hands and overall ball skills,\" mismatch size and a high contested-catch rate, alongside \"monotonous route-running,\" average play speed, and a lack of \"the technique and toughness necessary to become a functional run blocker against pro competition.\" He is a big slot, not a Y."
+    ],
+    "collegeStats": [
+      {"season": "2022", "team": "Ball State", "line": "12 G, 68 tgt, 35 rec, 373 yds, 10.7 ypr, 7 TD (freshman All-America)"},
+      {"season": "2023", "team": "Ball State", "line": "12 G, 59 tgt, 34 rec, 295 yds, 8.7 ypr, 3 TD (third-team All-MAC)"},
+      {"season": "2024", "team": "Ball State", "line": "12 G, 129 tgt, 94 rec, 839 yds, 8.9 ypr, 8 TD (second-team All-MAC, 29.3% target share)"},
+      {"season": "2025", "team": "Houston", "line": "13 G, 93 tgt, 74 rec, 727 yds, 9.8 ypr, 6 TD (top three among FBS TEs in receiving yards)"}
+    ],
+    "draftDayStory": [
+      "Jacksonville took Koziol 164th overall in the fifth round and added Nebraska tight end Nate Boerkircher in the same draft, a double-dip that raised eyebrows because the Jaguars visibly used their own board rather than the consensus. The stated organizational goal was a physical, run-first identity, which is an odd frame for a pass-catching tight end — the counterargument the staff makes is that Koziol's ball skills and year-over-year growth were what they graded.",
+      "The board's Round 5, Pick 24 lines up with No. 164 overall to Jacksonville; the official record has it as the 27th selection of the fifth round. One correction worth flagging: the board lists his age at 23.6. Koziol was born Jan. 28, 2004, which makes him 22.6 as of this rookie draft — he is the youngest player in this tier by nearly two years, which materially improves his dynasty case."
+    ],
+    "whyTheyDraftedHim": [
+      "Offensive coordinator Grant Udinski named the traits directly: \"what we saw on tape from him was the ball skills and some of the toughness and the growth. Another guy that got better year over year over year.\"",
+      "Size and mismatch value — a 6'6 1/2\" target with 33 3/4-inch arms and a 68 percent-plus career catch rate gives Jacksonville a red-zone and big-slot weapon distinct from anything else in the room.",
+      "Production at two levels: he was the entire Ball State offense in 2024 and then finished top three among FBS tight ends in receiving yards in his first Big 12 season.",
+      "The Jaguars deliberately drafted two tight ends to build depth behind Brenton Strange, and Koziol's receiving profile complements Boerkircher's more traditional skill set."
+    ],
+    "campNotes": [
+      {"date": "Jul 30", "source": "John Shipley, Jaguars on SI", "note": "Three practices into camp, Koziol was getting more looks than Quintin Morris or Hunter Long. Shipley: \"The Jaguars have seemed to throw a ton on his plate early on in training camp. He has responded, too, making a highlight catch on Thursday and hauling in a touchdown on Friday.\""},
+      {"date": "Aug 3", "source": "Black and Teal", "note": "Both rookie tight ends have been getting extensive reps, including work with the first team, and Koziol in particular has been showcasing his catching skills and drawing coaching-staff attention."},
+      {"date": "Aug 11", "source": "Jaguars.com", "note": "Listed third on the first unofficial preseason depth chart — behind Brenton Strange and Nate Boerkircher, ahead of Quintin Morris, Hunter Long, Patrick Herbert and Ethan Conner."},
+      {"date": "Aug 21", "source": "CBS Sports", "note": "Started at tight end alongside Hunter Long with Strange and Boerkircher resting, but played 18 snaps (13 offense, five special teams) without a catch in the 34-17 loss to Carolina. He is competing with Long and Morris for the TE3 role; the preseason finale against Tampa Bay is his last audition."}
+    ],
+    "beatQuotes": [
+      {"quote": "But I think where we saw what we saw on tape from him was the ball skills and some of the toughness and the growth. Another guy that got better year over year over year.", "attribution": "Grant Udinski, Jaguars offensive coordinator, via Black and Teal, Aug 3"},
+      {"quote": "The Jaguars have seemed to throw a ton on his plate early on in training camp. He has responded, too, making a highlight catch on Thursday and hauling in a touchdown on Friday.", "attribution": "John Shipley, Jaguars on SI, late July"},
+      {"quote": "I couldn't have been drafted to a better spot. God has a perfect plan. The impressions of the people I've met already and how excited I am to continue to be coached by these guys and play with these players make me feel like I'm at a perfect spot.", "attribution": "Tanner Koziol, Jaguars.com rookie bio"}
+    ],
+    "depthChart": "Brenton Strange is entrenched as TE1 with rookie Nate Boerkircher second. Koziol was listed third on Jacksonville's first unofficial depth chart, though USA Today's chart has Quintin Morris ahead of him, and CBS frames it as a three-way fight with Morris and Hunter Long for the TE3 job. He drew a preseason start with the veterans resting and did not catch a pass, which is not what a bubble player needs.",
+    "whyHeCouldSucceed": [
+      "He is 22.6 years old — the youngest player in this tier by a wide margin — with fifth-round capital and 237 college catches, a combination that gives him more genuine developmental runway than anyone around him on the board.",
+      "The receiving profile is real and rare: top-three FBS tight end in receiving yards in his only Power Four season, 79.6 percent catch rate at Houston, and a 6'6 1/2\" frame with 33 3/4-inch arms built for contested and red-zone targets.",
+      "Jacksonville has already used him with the first team and loaded his plate in camp, and there is an obvious schematic path as the second tight end next to Strange in pass-heavy 12 personnel.",
+      "Trevor Lawrence's offense under Liam Coen has room for a big-slot target, and the only pass-catching tight end ahead of him is a former second-rounder who has never posted a big season."
+    ],
+    "whyHeCouldFail": [
+      "The blocking is the whole problem. Pre-draft evaluations described his run blocking as lacking the technique and toughness to be functional against pro competition, which is disqualifying on a team publicly committed to a physical run game.",
+      "He played 18 snaps in the second preseason game as a starter and caught nothing, and the depth-chart placement is contested — some charts have Quintin Morris ahead of him for TE3.",
+      "Route running was flagged as monotonous with average play speed and poor short-area quickness, meaning his separation problems from college transfer directly to the NFL.",
+      "Even the ceiling is limited: Brenton Strange is the established TE1 and fellow rookie Nate Boerkircher is ahead of him, so meaningful targets require two players to be displaced."
+    ],
+    "fantasyOutlook": [
+      "For 2026, Koziol is a zero-target proposition unless the room thins out. He is fighting for TE3 on a team with a settled starter and another rookie ahead of him, and his one extended preseason showcase produced no catches. Even if he makes the 53, the realistic outcome is a handful of 12-personnel snaps and a couple of red-zone looks across the season.",
+      "The dynasty case is entirely about age and archetype. A 22.6-year-old tight end with 237 college receptions, a 36.5-inch vertical and a fifth-round landing spot is exactly the kind of player who becomes a startable streaming TE in year three, which is standard for the position. His FantasyPros consensus rank of 45 is fair and his KTC value of 1137 is cheap. In a superflex 0.5 PPR league, he is a fourth-round rookie pick and a legitimate stash in leagues that start a tight end — the only reason to take him ahead of Colbie Young is if your roster needs a long-horizon tight end more than a receiver flyer."
+    ],
+    "comp": "A slower Dalton Kincaid archetype — a big-slot receiving tight end whose value is entirely in the pass game, with none of Kincaid's suddenness and real questions about whether he can stay on the field on run downs.",
+    "bottomLine": "Youngest player in this tier with the best pass-catching résumé and the worst blocking tape; a defensible fourth-round tight end stash, not a 2026 contributor.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tanner_Koziol",
+      "https://www.bigcatcountry.com/jacksonville-jaguars-draft/84882/jags-pick-tight-end-tanner-koziol-2026",
+      "https://blackandteal.com/tanner-koziol-s-quick-training-camp-emergence-is-making-the-jaguars-look-brilliant",
+      "https://www.jaguars.com/news/jaguars-2026-training-camp-first-unofficial-depth-chart-released",
+      "https://herosports.com/fbs-tanner-koziol-nfl-projection-profile-panthers-steelers-landing-spots-houston-te-cpcp/",
+      "https://fantasyteamadvice.com/nfl/players/13008/tanner-koziol/draft-profile",
+      "https://www.jaguars.com/rookies/rookie-bio-pages/tannerkoziol",
+      "https://www.playerprofiler.com/nfl/tanner-koziol/"
+    ]
+  }
+}
