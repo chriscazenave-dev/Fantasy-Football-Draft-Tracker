@@ -13,6 +13,7 @@ import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, DRAFT_SLOT_ORDER,
 import MockDraftHistory from './MockDraftHistory'
 import DraftPickCelebration from './DraftPickCelebration'
 import DraftCenter from './DraftCenter'
+import DraftResults from './DraftResults'
 import CollegeStatsTooltip from './CollegeStatsTooltip'
 import UploadPage from './UploadPage'
 import { generatePicksFromFutureData, formatTime, filterProspects, pickCpuPlayerSmart, loadStored, saveStored, STORAGE_KEYS, computeTradeSideValue, getTradeVerdict } from './draftLogic'
@@ -57,6 +58,8 @@ function App({ session, onLogout, onRequestLogin }) {
   const [rosters, setRosters] = useState(VETERAN_ROSTERS)
   const [draftedPlayers, setDraftedPlayers] = useState(() => storedDraftState?.draftedPlayers ?? {})
   const [draftOrder, setDraftOrder] = useState(() => storedDraftState?.draftOrder ?? [])
+  const [draftResults, setDraftResults] = useState(() => storedDraftState?.draftResults ?? null)
+  const [draftSubTab, setDraftSubTab] = useState('board')
   const [openDropdown, setOpenDropdown] = useState(null)
   const [filterPosition, setFilterPosition] = useState('All')
   const [filterStatus, setFilterStatus] = useState('All')
@@ -102,6 +105,7 @@ function App({ session, onLogout, onRequestLogin }) {
     if (!skipDraftFields) {
       if (state.draftedPlayers) setDraftedPlayers(state.draftedPlayers)
       if (state.draftOrder) setDraftOrder(state.draftOrder)
+      if ('draftResults' in state) setDraftResults(state.draftResults)
     }
     if (state.futurePickData) setFuturePickData(state.futurePickData)
     if (state.footnotes) setFootnotes(state.footnotes)
@@ -145,7 +149,7 @@ function App({ session, onLogout, onRequestLogin }) {
       return
     }
     clearTimeout(saveTimerRef.current)
-    const state = { lineups, rosters, prospects, draftedPlayers, draftOrder, futurePickData, footnotes }
+    const state = { lineups, rosters, prospects, draftedPlayers, draftOrder, draftResults, futurePickData, footnotes }
     saveTimerRef.current = setTimeout(() => {
       saveLeagueState(state)
         .then(({ version }) => {
@@ -154,7 +158,7 @@ function App({ session, onLogout, onRequestLogin }) {
         .catch(() => {})
     }, 800)
     return () => clearTimeout(saveTimerRef.current)
-  }, [isHydrated, isLoggedIn, isMockDraft, lineups, rosters, prospects, draftedPlayers, draftOrder, futurePickData, footnotes])
+  }, [isHydrated, isLoggedIn, isMockDraft, lineups, rosters, prospects, draftedPlayers, draftOrder, draftResults, futurePickData, footnotes])
 
   // Realtime sync: refetch when another member saves a change
   useEffect(() => {
@@ -186,12 +190,13 @@ function App({ session, onLogout, onRequestLogin }) {
     saveStored(STORAGE_KEYS.draftState, {
       draftedPlayers,
       draftOrder,
+      draftResults,
       isMockDraft,
       mockTeamId,
       mockSnapshot: mockSnapshotRef.current,
       showDraftCenter,
     })
-  }, [draftedPlayers, draftOrder, isMockDraft, mockTeamId, showDraftCenter])
+  }, [draftedPlayers, draftOrder, draftResults, isMockDraft, mockTeamId, showDraftCenter])
 
   useEffect(() => {
     saveStored(STORAGE_KEYS.mockHistory, mockHistory)
@@ -234,6 +239,24 @@ function App({ session, onLogout, onRequestLogin }) {
     () => generatePicksFromFutureData(futurePickData[DRAFT_YEAR], ROUNDS, DRAFT_SLOT_ORDER, OWNERS, OWNER_TO_TEAM_ID),
     [futurePickData]
   )
+  const realDraftComplete = !isMockDraft && draftPicks.length > 0 && draftOrder.length >= draftPicks.length
+  const draftCompletionRef = useRef(false)
+
+  useEffect(() => {
+    let tabChange
+    if (!realDraftComplete) {
+      draftCompletionRef.current = false
+    }
+    if (isMockDraft && draftSubTab === 'results') {
+      tabChange = setTimeout(() => setDraftSubTab('board'), 0)
+    } else if (realDraftComplete && !draftCompletionRef.current) {
+      tabChange = setTimeout(() => {
+        draftCompletionRef.current = true
+        setDraftSubTab('results')
+      }, 0)
+    }
+    return () => clearTimeout(tabChange)
+  }, [draftSubTab, isMockDraft, realDraftComplete])
 
   const userTeam = session?.team ? teams.find(t => t.name === session.team) : null
 
@@ -247,10 +270,40 @@ function App({ session, onLogout, onRequestLogin }) {
       [playerId]: teamId
     }))
     setDraftOrder(prev => [...prev, { playerId, teamId, pickNumber: currentPick?.id || prev.length + 1, reason }])
+    if (!isMockDraft && draftPicks.length > 0 && draftOrder.length + 1 >= draftPicks.length) {
+      setDraftSubTab('results')
+    }
     setOpenDropdown(null)
     if (isDraftActive) {
       setTimeRemaining(120)
     }
+  }
+
+  const handleConfirmDraftResults = () => {
+    if (!isAdmin || isMockDraft || !realDraftComplete) return
+    const picks = draftOrder.map((entry, index) => {
+      const boardPick = draftPicks.find(pick => pick.id === entry.pickNumber) || draftPicks[index]
+      const player = prospects.find(prospect => String(prospect.id) === String(entry.playerId))
+      return {
+        pickNumber: entry.pickNumber || boardPick?.id || index + 1,
+        round: boardPick?.round || Math.floor(index / teams.length) + 1,
+        pickInRound: boardPick?.pickInRound || (index % teams.length) + 1,
+        teamId: entry.teamId ?? boardPick?.currentTeamId,
+        playerId: entry.playerId,
+        playerName: player?.name || 'Unknown player',
+        position: player?.position || null,
+        nflTeam: player?.nflTeam || null,
+        college: player?.college || null,
+        rank: player?.rank ?? null,
+        reason: entry.reason || null,
+      }
+    })
+    setDraftResults({
+      year: DRAFT_YEAR,
+      confirmedAt: new Date().toISOString(),
+      confirmedBy: session?.name || session?.username,
+      picks,
+    })
   }
 
   const POSITION_LABELS = { QB: 'quarterback', RB: 'running back', WR: 'receiver', TE: 'tight end' }
@@ -318,6 +371,7 @@ function App({ session, onLogout, onRequestLogin }) {
       setDraftedPlayers({})
       setDraftOrder([])
       setIsMockDraft(true)
+      setDraftSubTab('board')
     }
     setIsDraftActive(true)
     setIsPaused(false)
@@ -365,7 +419,7 @@ function App({ session, onLogout, onRequestLogin }) {
   }
 
   useEffect(() => {
-    if (isDraftActive && !isPaused) {
+    if (isDraftActive && !isPaused && draftOrder.length < draftPicks.length) {
       timerRef.current = setInterval(() => {
         setTimeRemaining(prev => {
           if (prev <= 1) {
@@ -381,7 +435,7 @@ function App({ session, onLogout, onRequestLogin }) {
         timerRef.current = null
       }
     }
-  }, [isDraftActive, isPaused])
+  }, [draftOrder.length, draftPicks.length, isDraftActive, isPaused])
 
   const draftActionsRef = useRef(null)
   useEffect(() => {
@@ -389,10 +443,10 @@ function App({ session, onLogout, onRequestLogin }) {
   })
 
   useEffect(() => {
-    if (timeRemaining !== 0 || !isDraftActive || isPaused) return
+    if (timeRemaining !== 0 || !isDraftActive || isPaused || draftOrder.length >= draftPicks.length) return
     const timeout = setTimeout(() => draftActionsRef.current.handleAutoPick(), 0)
     return () => clearTimeout(timeout)
-  }, [timeRemaining, isDraftActive, isPaused])
+  }, [timeRemaining, isDraftActive, isPaused, draftOrder.length, draftPicks.length])
 
   useEffect(() => {
     if (!isMockDraft || !isDraftActive || isPaused) return
@@ -793,6 +847,33 @@ function App({ session, onLogout, onRequestLogin }) {
 
         {activeTab === 'prospects' && (
           <div className="space-y-6">
+            <div className="inline-flex items-center gap-1 rounded-xl border border-gray-200 bg-gray-50 p-1 shadow-sm">
+              <button
+                onClick={() => setDraftSubTab('board')}
+                className={`rounded-lg px-4 py-2 text-sm font-medium transition-all ${
+                  draftSubTab === 'board'
+                    ? 'bg-white text-gray-900 shadow-sm ring-1 ring-black/5'
+                    : 'text-gray-500 hover:bg-gray-100 hover:text-gray-900'
+                }`}
+              >
+                Draft Board
+              </button>
+              {!isMockDraft && (realDraftComplete || !!draftResults) && (
+                <button
+                  onClick={() => setDraftSubTab('results')}
+                  className={`rounded-lg px-4 py-2 text-sm font-medium transition-all ${
+                    draftSubTab === 'results'
+                      ? 'bg-white text-gray-900 shadow-sm ring-1 ring-black/5'
+                      : 'text-gray-500 hover:bg-gray-100 hover:text-gray-900'
+                  }`}
+                >
+                  Results
+                </button>
+              )}
+            </div>
+
+            {draftSubTab === 'board' ? (
+              <>
             {/* Draft Order Display */}
             <div className="bg-gray-50/80 rounded-2xl p-5 border border-gray-200 shadow-sm">
               <div className="flex items-center gap-2 mb-4">
@@ -1308,6 +1389,32 @@ function App({ session, onLogout, onRequestLogin }) {
                 teams={teams}
                 prospects={prospects}
                 onClear={() => setMockHistory([])}
+              />
+            )}
+              </>
+            ) : (
+              <DraftResults
+                year={DRAFT_YEAR}
+                teams={teams}
+                prospects={prospects}
+                draftOrder={draftOrder}
+                draftPicks={draftPicks}
+                getTeamById={getTeamById}
+                teamIdToOwner={TEAM_ID_TO_OWNER}
+                results={draftResults}
+                isAdmin={isAdmin}
+                isComplete={realDraftComplete}
+                isDirty={!!draftResults && (
+                  draftOrder.length !== draftResults.picks.length ||
+                  draftOrder.some((entry, index) => {
+                    const confirmedPick = draftResults.picks[index]
+                    return !confirmedPick ||
+                      entry.pickNumber !== confirmedPick.pickNumber ||
+                      String(entry.playerId) !== String(confirmedPick.playerId) ||
+                      String(entry.teamId) !== String(confirmedPick.teamId)
+                  })
+                )}
+                onConfirm={handleConfirmDraftResults}
               />
             )}
           </div>
