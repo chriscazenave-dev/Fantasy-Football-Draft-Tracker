@@ -38,6 +38,7 @@ export default function FutureDraftPicks({ pickData, footnotes, setFootnotes, ca
         {years.map(year => {
           const isExpanded = expandedYears.has(year)
           const yearData = pickData[year]
+          const hasCompensatoryPicks = ROUNDS.some(round => (yearData[round] || []).length > OWNERS.length)
           return (
             <div key={year} className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
               <button
@@ -61,43 +62,91 @@ export default function FutureDraftPicks({ pickData, footnotes, setFootnotes, ca
                               {owner}
                             </th>
                           ))}
+                          {hasCompensatoryPicks && (
+                            <th
+                              title="Compensatory pick"
+                              aria-label="Compensatory pick"
+                              className="text-center px-2 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider"
+                            >
+                              Comp
+                            </th>
+                          )}
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-gray-100">
                         {ROUNDS.map(round => {
                           const roundPicks = yearData[round] || []
+                          const compPicks = roundPicks.slice(OWNERS.length)
                           return (
                             <tr key={round} className="hover:bg-gray-50/50 transition-colors">
                               <td className="px-4 py-3 text-sm font-medium text-gray-700 whitespace-nowrap sticky left-0 bg-white z-10">{round}</td>
-                              {roundPicks.map((pick, idx) => {
-                              const isTraded = pick.owner !== OWNERS[idx]
-                              return (
-                                <td key={idx} className="px-2 py-3 text-center">
+                              {OWNERS.map((owner, idx) => {
+                                const pick = roundPicks[idx]
+                                if (!pick) return <td key={owner} className="px-2 py-3" />
+                                const originalOwner = pick.originalOwner ?? owner
+                                const isTraded = pick.owner !== originalOwner
+                                return (
+                                  <td key={owner} className="px-2 py-3 text-center">
+                                    <div className="flex flex-col items-center gap-1">
+                                      <span
+                                        className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold border ${
+                                          isTraded
+                                            ? getOwnerColor(pick.owner) + ' ring-1 ring-offset-1 ring-amber-300'
+                                            : getOwnerColor(pick.owner)
+                                        }`}
+                                      >
+                                        {pick.owner}
+                                      </span>
+                                      {pick.notes.length > 0 && (
+                                        <div className="flex gap-0.5 flex-wrap justify-center">
+                                          {pick.notes.map((noteId, noteIndex) => (
+                                            <FootnoteBadge
+                                              key={`${noteId}-${noteIndex}`}
+                                              noteId={noteId}
+                                              footnotes={footnotes}
+                                            />
+                                          ))}
+                                        </div>
+                                      )}
+                                    </div>
+                                  </td>
+                                )
+                              })}
+                              {hasCompensatoryPicks && (
+                                <td className="px-2 py-3 text-center">
                                   <div className="flex flex-col items-center gap-1">
-                                    <span
-                                      className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold border ${
-                                        isTraded
-                                          ? getOwnerColor(pick.owner) + ' ring-1 ring-offset-1 ring-amber-300'
-                                          : getOwnerColor(pick.owner)
-                                      }`}
-                                    >
-                                      {pick.owner}
-                                    </span>
-                                    {pick.notes.length > 0 && (
-                                      <div className="flex gap-0.5 flex-wrap justify-center">
-                                        {pick.notes.map((noteId, noteIndex) => (
-                                          <FootnoteBadge
-                                            key={`${noteId}-${noteIndex}`}
-                                            noteId={noteId}
-                                            footnotes={footnotes}
-                                          />
-                                        ))}
-                                      </div>
-                                    )}
+                                    {(compPicks.length > 0 ? compPicks : [null]).map((pick, compIdx) => {
+                                      if (!pick) return <span key="empty-comp" className="block h-7" aria-hidden="true" />
+                                      const originalOwner = pick.originalOwner ?? OWNERS[OWNERS.length + compIdx]
+                                      const isTraded = pick.owner !== originalOwner
+                                      return (
+                                        <div key={compIdx} className="flex flex-col items-center gap-1">
+                                          <span
+                                            className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold border ${
+                                              isTraded
+                                                ? getOwnerColor(pick.owner) + ' ring-1 ring-offset-1 ring-amber-300'
+                                                : getOwnerColor(pick.owner)
+                                            }`}
+                                          >
+                                            {pick.owner}
+                                          </span>
+                                          {pick.notes.length > 0 && (
+                                            <div className="flex gap-0.5 flex-wrap justify-center">
+                                              {pick.notes.map((noteId, noteIndex) => (
+                                                <FootnoteBadge
+                                                  key={`${noteId}-${noteIndex}`}
+                                                  noteId={noteId}
+                                                  footnotes={footnotes}
+                                                />
+                                              ))}
+                                            </div>
+                                          )}
+                                        </div>
+                                      )
+                                    })}
                                   </div>
                                 </td>
-                              )
-                              })}
+                              )}
                             </tr>
                           )
                         })}
