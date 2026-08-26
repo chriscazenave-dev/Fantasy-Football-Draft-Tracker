@@ -13,9 +13,10 @@ import { INITIAL_PICK_DATA, INITIAL_FOOTNOTES, OWNERS, ROUNDS, DRAFT_SLOT_ORDER,
 import MockDraftHistory from './MockDraftHistory'
 import DraftPickCelebration from './DraftPickCelebration'
 import DraftCenter from './DraftCenter'
+import { useDraftRoom } from './useDraftRoom'
 import CollegeStatsTooltip from './CollegeStatsTooltip'
 import UploadPage from './UploadPage'
-import { generatePicksFromFutureData, formatTime, filterProspects, pickCpuPlayerSmart, loadStored, saveStored, STORAGE_KEYS, computeTradeSideValue, getTradeVerdict } from './draftLogic'
+import { generatePicksFromFutureData, filterProspects, pickCpuPlayerSmart, loadStored, saveStored, STORAGE_KEYS, computeTradeSideValue, getTradeVerdict } from './draftLogic'
 import { PLAYER_VALUES } from './playerValuesData'
 import { fetchLeagueState, saveLeagueState } from './leagueState'
 
@@ -63,8 +64,6 @@ function App({ session, onLogout, onRequestLogin }) {
   const [searchQuery, setSearchQuery] = useState('')
   const [isDraftActive, setIsDraftActive] = useState(() => !!storedDraftState?.isMockDraft)
   const [isPaused, setIsPaused] = useState(() => !!storedDraftState?.isMockDraft)
-  const [timeRemaining, setTimeRemaining] = useState(120)
-  const timerRef = useRef(null)
   const [hypeMode, setHypeMode] = useState(null)
   const [showDraftCenter, setShowDraftCenter] = useState(() => !!storedDraftState?.showDraftCenter)
   const [isMockDraft, setIsMockDraft] = useState(() => !!storedDraftState?.isMockDraft)
@@ -236,6 +235,16 @@ function App({ session, onLogout, onRequestLogin }) {
   )
 
   const userTeam = session?.team ? teams.find(t => t.name === session.team) : null
+  const {
+    members: roomMembers,
+    joined: hasJoinedRoom,
+    joining: roomJoining,
+    error: joinError,
+    join: onJoinRoom,
+  } = useDraftRoom({ enabled: isDraftActive && !isMockDraft, session })
+  const checkedInTeams = new Set(roomMembers.map(member => member.team))
+  const roomCheckedInCount = teams.filter(team => checkedInTeams.has(team.name)).length
+  const missingRoomTeams = teams.filter(team => !checkedInTeams.has(team.name))
 
   const getCurrentPickNumber = () => draftOrder.length + 1
   const getCurrentPick = () => draftPicks.find(p => p.id === getCurrentPickNumber())
@@ -248,9 +257,6 @@ function App({ session, onLogout, onRequestLogin }) {
     }))
     setDraftOrder(prev => [...prev, { playerId, teamId, pickNumber: currentPick?.id || prev.length + 1, reason }])
     setOpenDropdown(null)
-    if (isDraftActive) {
-      setTimeRemaining(120)
-    }
   }
 
   const POSITION_LABELS = { QB: 'quarterback', RB: 'running back', WR: 'receiver', TE: 'tight end' }
@@ -287,20 +293,6 @@ function App({ session, onLogout, onRequestLogin }) {
     }
   }
 
-  const handleAutoPick = () => {
-    const currentPick = getCurrentPick()
-    if (!currentPick) return
-    const team = getTeamById(currentPick.currentTeamId)
-    const rosterPlayers = [
-      ...getTeamRoster(currentPick.currentTeamId),
-      ...prospects.filter(p => draftedPlayers[p.id] === currentPick.currentTeamId),
-    ]
-    const result = pickCpuPlayerSmart(prospects, draftedPlayers, team, rosterPlayers)
-    if (result) {
-      handleDraft(result.player.id, currentPick.currentTeamId, `Clock expired — ${result.reason}`)
-    }
-  }
-
   const handleStartDraft = () => {
     setHypeMode('real')
   }
@@ -321,7 +313,6 @@ function App({ session, onLogout, onRequestLogin }) {
     }
     setIsDraftActive(true)
     setIsPaused(false)
-    setTimeRemaining(120)
     setShowDraftCenter(true)
     setActiveTab('prospects')
   }
@@ -346,7 +337,6 @@ function App({ session, onLogout, onRequestLogin }) {
     setMockTeamId(null)
     setIsDraftActive(false)
     setIsPaused(false)
-    setTimeRemaining(120)
     setDraftedPlayers(snapshot?.draftedPlayers ?? {})
     setDraftOrder(snapshot?.draftOrder ?? [])
     refreshFromServer()
@@ -359,40 +349,14 @@ function App({ session, onLogout, onRequestLogin }) {
   const handleRestartDraft = () => {
     setIsDraftActive(false)
     setIsPaused(false)
-    setTimeRemaining(120)
     setDraftOrder([])
     setDraftedPlayers({})
   }
 
-  useEffect(() => {
-    if (isDraftActive && !isPaused) {
-      timerRef.current = setInterval(() => {
-        setTimeRemaining(prev => {
-          if (prev <= 1) {
-            return 0
-          }
-          return prev - 1
-        })
-      }, 1000)
-    }
-    return () => {
-      if (timerRef.current) {
-        clearInterval(timerRef.current)
-        timerRef.current = null
-      }
-    }
-  }, [isDraftActive, isPaused])
-
   const draftActionsRef = useRef(null)
   useEffect(() => {
-    draftActionsRef.current = { handleAutoPick, handleDraft, draftPicks, prospects, draftedPlayers, draftOrder, teams, getTeamRoster }
+    draftActionsRef.current = { handleDraft, draftPicks, prospects, draftedPlayers, draftOrder, teams, getTeamRoster }
   })
-
-  useEffect(() => {
-    if (timeRemaining !== 0 || !isDraftActive || isPaused) return
-    const timeout = setTimeout(() => draftActionsRef.current.handleAutoPick(), 0)
-    return () => clearTimeout(timeout)
-  }, [timeRemaining, isDraftActive, isPaused])
 
   useEffect(() => {
     if (!isMockDraft || !isDraftActive || isPaused) return
@@ -803,14 +767,6 @@ function App({ session, onLogout, onRequestLogin }) {
                 <span className="px-2 py-0.5 bg-white rounded-full text-xs text-gray-500 border border-gray-200">
                   Pick {getCurrentPickNumber()} of {draftPicks.length}
                 </span>
-                {isDraftActive && (
-                  <span className={`px-3 py-1 rounded-full text-sm font-bold border flex items-center gap-1.5 ${
-                    timeRemaining <= 30 ? 'bg-red-50 text-red-600 border-red-200' : timeRemaining <= 60 ? 'bg-yellow-50 text-yellow-600 border-yellow-200' : 'bg-green-50 text-green-600 border-green-200'
-                  }`}>
-                    <Clock size={14} />
-                    {formatTime(timeRemaining)}
-                  </span>
-                )}
                 {isMockDraft && (
                   <span className="px-2.5 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-purple-100 text-purple-700 border border-purple-200">
                     Mock Draft{mockTeamId ? ` · ${getTeamById(mockTeamId)?.name}` : ''}
@@ -845,7 +801,7 @@ function App({ session, onLogout, onRequestLogin }) {
                         <Zap size={14} />
                         Enter Draft Center
                       </button>
-                      {(isAdmin || isMockDraft) && (
+                      {isMockDraft && (
                         <button
                           onClick={handlePauseDraft}
                           className={`inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-medium rounded-lg transition-all shadow-sm ${
@@ -879,6 +835,26 @@ function App({ session, onLogout, onRequestLogin }) {
                   )}
                 </div>
               </div>
+
+              {isDraftActive && !isMockDraft && (
+                <div className="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1 rounded-xl border border-[#c9bb9c] bg-[#efe6d0]/60 px-4 py-3 text-sm text-[#5a4a32]">
+                  <span className="font-black">Draft room: {roomCheckedInCount} of 8 checked in</span>
+                  {missingRoomTeams.length > 0 && (
+                    <span className="text-[#8a7a5c]">
+                      Missing: {missingRoomTeams.map(team => team.owner).join(', ')}
+                    </span>
+                  )}
+                  {!hasJoinedRoom && (
+                    <button
+                      onClick={() => setShowDraftCenter(true)}
+                      className="ml-auto inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#2b2418] hover:bg-[#463b28] text-[#f3ecdb] text-xs font-bold uppercase tracking-wider rounded-lg transition-colors"
+                    >
+                      Join
+                      <ChevronRight size={13} />
+                    </button>
+                  )}
+                </div>
+              )}
               
               {isDraftActive && (() => {
                 const onClock = getCurrentPick()
@@ -1608,16 +1584,20 @@ function App({ session, onLogout, onRequestLogin }) {
           draftOrder={draftOrder}
           draftPicks={draftPicks}
           mockTeamId={mockTeamId}
-          timeRemaining={timeRemaining}
           isPaused={isPaused}
           isAdmin={isAdmin}
           isLoggedIn={isLoggedIn}
+          roomMembers={roomMembers}
+          hasJoinedRoom={hasJoinedRoom}
+          onJoinRoom={onJoinRoom}
+          joinError={joinError}
+          roomJoining={roomJoining}
+          onRequestLogin={onRequestLogin}
           onPauseToggle={handlePauseDraft}
           onEndMock={handleEndMockDraft}
           onRestart={() => {
             setDraftOrder([])
             setDraftedPlayers({})
-            setTimeRemaining(120)
           }}
           onUserMockPick={handleUserMockPick}
           onAdminDraft={handleUserMockPick}

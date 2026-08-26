@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Search, Play, Pause, X, RotateCcw, Minimize2, Newspaper, Clock, Trophy, Feather, ChevronRight, Sparkles } from 'lucide-react'
-import { formatTime } from './draftLogic'
+import DraftRoomPanel from './DraftRoomPanel'
 
 const POSITION_COLORS = {
   QB: 'text-rose-900 border-rose-900/50 bg-rose-900/5',
@@ -30,8 +30,8 @@ function Panel({ title, icon: Icon, children, className = '' }) {
 }
 
 // Full-screen "Draft Desk" overlay where the draft actually runs, styled as a
-// special live edition of the league newspaper. Live phase shows the clock,
-// big board, and wire feed; recap phase prints the morning-after edition.
+// special live edition of the league newspaper. Live phase shows the big board
+// and wire feed; recap phase prints the morning-after edition.
 export default function DraftCenter({
   mode,
   teams,
@@ -40,10 +40,15 @@ export default function DraftCenter({
   draftOrder,
   draftPicks,
   mockTeamId,
-  timeRemaining,
   isPaused,
   isAdmin,
   isLoggedIn,
+  roomMembers = [],
+  hasJoinedRoom = false,
+  onJoinRoom,
+  joinError,
+  onRequestLogin,
+  roomJoining = false,
   onPauseToggle,
   onEndMock,
   onRestart,
@@ -70,7 +75,7 @@ export default function DraftCenter({
   const onDeck = currentPick ? draftPicks.find(p => p.id === currentPick.id + 1) : null
   const onDeckTeam = onDeck ? getTeamById(onDeck.currentTeamId) : null
   const isYourTurn = isMock && mockTeamId && currentPick?.currentTeamId === mockTeamId
-  const canPick = isMock ? isYourTurn : (isAdmin || isLoggedIn)
+  const canPick = isMock ? isYourTurn : (isAdmin || isLoggedIn) && hasJoinedRoom
 
   const positions = ['All', ...new Set(prospects.map(p => p.position))]
   const availableProspects = useMemo(() => {
@@ -96,8 +101,53 @@ export default function DraftCenter({
     else onAdminDraft(playerId, currentPick.currentTeamId)
   }
 
-  const timerDanger = timeRemaining <= 30
-  const timerWarn = timeRemaining <= 60 && !timerDanger
+  const checkedInCount = teams.filter(team => roomMembers.some(member => member.team === team.name)).length
+
+  if (!isMock && !hasJoinedRoom) {
+    return (
+      <div className="fixed inset-0 z-[195] bg-[#f3ecdb] text-[#2b2418] font-serif overflow-y-auto">
+        <div className="max-w-3xl mx-auto px-4 py-10 md:py-16">
+          <div className="text-center space-y-3 border-y-4 border-double border-[#5a4a32] py-7 bg-[#efe6d0]">
+            <span className="text-[10px] font-black uppercase tracking-[0.35em] text-[#8a7a5c]">Special Draft Coverage</span>
+            <h1 className="text-4xl md:text-5xl font-black tracking-tight">The Draft Room</h1>
+            <p className="text-sm md:text-base text-[#8a7a5c] uppercase tracking-[0.2em]">Everybody checks in before the first pick</p>
+          </div>
+          <div className="py-6 text-center">
+            <p className="max-w-xl mx-auto text-lg text-[#5a4a32]">
+              The real draft is for league members only. Presence is tied to your login so everyone can see who is ready to draft.
+            </p>
+            {isLoggedIn ? (
+              <button
+                onClick={onJoinRoom}
+                disabled={roomJoining}
+                className="mt-5 inline-flex items-center justify-center px-7 py-3 border-2 border-[#2b2418] bg-[#2b2418] hover:bg-[#463b28] disabled:opacity-60 text-[#f3ecdb] text-sm font-black uppercase tracking-widest transition-colors"
+              >
+                {roomJoining ? 'Joining…' : 'Join the Draft Room'}
+              </button>
+            ) : (
+              <button
+                onClick={onRequestLogin}
+                className="mt-5 inline-flex items-center justify-center px-7 py-3 border-2 border-[#2b2418] bg-[#2b2418] hover:bg-[#463b28] text-[#f3ecdb] text-sm font-black uppercase tracking-widest transition-colors"
+              >
+                Sign in to join
+              </button>
+            )}
+            {joinError && <p className="mt-3 text-sm font-semibold text-[#8b2f2f]">{joinError}</p>}
+          </div>
+          <DraftRoomPanel teams={teams} members={roomMembers} />
+          <div className="flex justify-center pt-6">
+            <button
+              onClick={onMinimize}
+              className="inline-flex items-center gap-1.5 px-5 py-2 border-2 border-[#c9bb9c] bg-[#faf8f3] hover:bg-[#efe6d0] text-[#8a7a5c] text-[11px] font-bold uppercase tracking-widest transition-colors"
+            >
+              <Minimize2 size={13} />
+              Minimize
+            </button>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   if (effectivePhase === 'recap') {
     return (
@@ -142,15 +192,14 @@ export default function DraftCenter({
             <span className="text-sm text-[#8a7a5c] tabular-nums">{draftPicks.length}</span>
           </div>
 
-          <div className={`flex items-center gap-2 px-3 py-1 border-2 tabular-nums ${
-            timerDanger ? 'border-[#8b2f2f] bg-[#8b2f2f]/10 text-[#8b2f2f] animate-dc-blink' : timerWarn ? 'border-amber-700 bg-amber-700/10 text-amber-800' : 'border-[#5a4a32] bg-[#efe6d0] text-[#2b2418]'
-          }`}>
-            <Clock size={14} />
-            <span className="text-xl font-black">{formatTime(timeRemaining)}</span>
-          </div>
+          {!isMock && (
+            <span className="px-3 py-1 border-2 border-emerald-800/50 bg-emerald-900/5 text-emerald-900 text-[10px] font-black uppercase tracking-wider">
+              {checkedInCount}/8 in the room
+            </span>
+          )}
 
           <div className="ml-auto flex items-center gap-2">
-            {(isAdmin || isMock) && (
+            {isMock && (
               <button
                 onClick={onPauseToggle}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 border-2 border-[#5a4a32] bg-[#efe6d0] hover:bg-[#e5d9bd] text-[#2b2418] text-[11px] font-bold uppercase tracking-widest transition-colors"
@@ -339,6 +388,10 @@ export default function DraftCenter({
                 )}
               </div>
             </Panel>
+
+            {!isMock && (
+              <DraftRoomPanel teams={teams} members={roomMembers} compact title="The Draft Room · Who's In" />
+            )}
 
             {/* War room (mock only) */}
             {isMock && mockTeamId && (
