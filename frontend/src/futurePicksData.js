@@ -48,7 +48,9 @@ export function getOwnerColor(owner) {
   return OWNER_COLORS[owner] || 'bg-gray-100 text-gray-800 border-gray-200'
 }
 
-// Each entry: { owner: string, notes: number[] }
+// Each entry: { owner: string, notes: number[] }. Entries past OWNERS.length
+// are compensatory picks that slot in at the end of their round and carry
+// their own originalOwner.
 // notes are footnote reference numbers e.g. [3] [10]
 export const INITIAL_PICK_DATA = {
   2022: {
@@ -239,6 +241,7 @@ export const INITIAL_PICK_DATA = {
       { owner: 'Zack', notes: [] },
       { owner: 'Dylan', notes: [] },
       { owner: 'Perri', notes: [26] },
+      { owner: 'Sam', notes: [], comp: true, originalOwner: 'Sam' },
     ],
     '3rd Rounder': [
       { owner: 'Dedon', notes: [] },

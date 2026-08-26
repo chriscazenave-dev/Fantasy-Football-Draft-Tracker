@@ -36,6 +36,17 @@ export function generatePicksFromFutureData(yearData, rounds, slotOrder, owners,
       })
       id++
     })
+    ;(yearData?.[round] || []).slice(owners.length).forEach((cell, compIdx) => {
+      picks.push({
+        id,
+        round: roundIdx + 1,
+        pickInRound: slotOrder.length + compIdx + 1,
+        originalTeamId: ownerToTeamId[cell.originalOwner ?? cell.owner],
+        currentTeamId: ownerToTeamId[cell.owner] ?? ownerToTeamId[cell.originalOwner],
+        isComp: true,
+      })
+      id++
+    })
   })
   return picks
 }

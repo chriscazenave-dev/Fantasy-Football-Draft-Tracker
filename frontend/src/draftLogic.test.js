@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import { generateInitialPicks, formatTime, filterProspects, pickCpuPlayer, getFuturePickValue, computeTradeSideValue, getTradeVerdict } from './draftLogic'
+import { generateInitialPicks, generatePicksFromFutureData, formatTime, filterProspects, pickCpuPlayer, getFuturePickValue, computeTradeSideValue, getTradeVerdict } from './draftLogic'
+import { DRAFT_SLOT_ORDER, INITIAL_PICK_DATA, OWNER_TO_TEAM_ID, OWNERS, ROUNDS } from './futurePicksData'
 
 const TEAMS = [
   { id: 1, name: 'A' },
@@ -38,6 +39,60 @@ describe('formatTime', () => {
     expect(formatTime(120)).toBe('2:00')
     expect(formatTime(65)).toBe('1:05')
     expect(formatTime(0)).toBe('0:00')
+  })
+})
+
+describe('generatePicksFromFutureData', () => {
+  const owners = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+  const slotOrder = [...owners]
+  const ownerToTeamId = { A: 1, B: 2, C: 3, D: 4, E: 5, F: 6, G: 7, H: 8 }
+
+  it('includes the 2026 Sam compensatory pick as 2.09', () => {
+    const picks = generatePicksFromFutureData(INITIAL_PICK_DATA[2026], ROUNDS, DRAFT_SLOT_ORDER, OWNERS, OWNER_TO_TEAM_ID)
+
+    expect(picks).toHaveLength(33)
+    expect(picks[16]).toMatchObject({
+      id: 17,
+      round: 2,
+      pickInRound: 9,
+      originalTeamId: 2,
+      currentTeamId: 2,
+      isComp: true,
+    })
+    expect(picks[17]).toMatchObject({ id: 18, round: 3, pickInRound: 1 })
+  })
+
+  it('appends compensatory picks at the end of a round with contiguous ids', () => {
+    const compPick = { owner: 'B', notes: [], comp: true, originalOwner: 'B' }
+    const yearData = {
+      '1st Rounder': owners.map(owner => ({ owner, notes: [] })),
+      '2nd Rounder': [...owners.map(owner => ({ owner, notes: [] })), compPick],
+    }
+
+    const picks = generatePicksFromFutureData(yearData, ['1st Rounder', '2nd Rounder'], slotOrder, owners, ownerToTeamId)
+    const comp = picks[16]
+
+    expect(picks).toHaveLength(17)
+    expect(picks.map(pick => pick.id)).toEqual(Array.from({ length: 17 }, (_, index) => index + 1))
+    expect(comp).toMatchObject({ id: 17, round: 2, pickInRound: 9, isComp: true })
+  })
+
+  it('tracks original and current teams when a compensatory pick is traded', () => {
+    const yearData = {
+      '2nd Rounder': [
+        ...owners.map(owner => ({ owner, notes: [] })),
+        { owner: 'C', notes: [], comp: true, originalOwner: 'B' },
+      ],
+    }
+
+    const picks = generatePicksFromFutureData(yearData, ['2nd Rounder'], slotOrder, owners, ownerToTeamId)
+
+    expect(picks[8]).toMatchObject({
+      pickInRound: 9,
+      originalTeamId: 2,
+      currentTeamId: 3,
+      isComp: true,
+    })
   })
 })
 

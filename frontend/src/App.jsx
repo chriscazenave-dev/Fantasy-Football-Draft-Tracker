@@ -402,9 +402,10 @@ function App({ session, onLogout, onRequestLogin }) {
               year,
               round,
               ownerIdx: idx,
-              originalOwner: OWNERS[idx],
+              originalOwner: pick.originalOwner ?? OWNERS[idx],
               currentOwner: pick.owner,
               notes: pick.notes,
+              isComp: !!pick.comp,
               key: `${year}|${round}|${idx}`,
             })
           }
@@ -463,9 +464,11 @@ function App({ session, onLogout, onRequestLogin }) {
     // Auto-generate footnote for this trade
     const nextFootnoteId = footnotes.length > 0 ? Math.max(...footnotes.map(f => typeof f.id === 'number' ? f.id : 0)) + 1 : 1
 
+    const tradePicks = [...picksSentA, ...picksSentB]
     const describePicks = (pickKeys) => pickKeys.map(key => {
       const parts = key.split('|')
-      return `${parts[0]} ${parts[1].replace(' Rounder', '')}`
+      const pick = tradePicks.find(candidate => candidate.key === key)
+      return `${parts[0]} ${parts[1].replace(' Rounder', '')}${pick?.isComp ? ' (Comp)' : ''}`
     }).join(', ')
 
     const describeAssets = (pickKeys, playerNames) => {
@@ -1360,7 +1363,7 @@ function App({ session, onLogout, onRequestLogin }) {
                               }`}
                             >
                               <span className="text-[10px] text-gray-400 font-bold">{pick.year}</span>
-                              <span className={`text-xs font-semibold ${isSelected ? 'text-purple-700' : 'text-gray-900'}`}>{roundShort}</span>
+                              <span className={`text-xs font-semibold ${isSelected ? 'text-purple-700' : 'text-gray-900'}`}>{roundShort}{pick.isComp ? ' (Comp)' : ''}</span>
                               {isTraded && (
                                 <span className="text-[9px] text-amber-600 font-medium">via {pick.originalOwner}</span>
                               )}
@@ -1446,7 +1449,7 @@ function App({ session, onLogout, onRequestLogin }) {
                               }`}
                             >
                               <span className="text-[10px] text-gray-400 font-bold">{pick.year}</span>
-                              <span className={`text-xs font-semibold ${isSelected ? 'text-blue-700' : 'text-gray-900'}`}>{roundShort}</span>
+                              <span className={`text-xs font-semibold ${isSelected ? 'text-blue-700' : 'text-gray-900'}`}>{roundShort}{pick.isComp ? ' (Comp)' : ''}</span>
                               {isTraded && (
                                 <span className="text-[9px] text-amber-600 font-medium">via {pick.originalOwner}</span>
                               )}
