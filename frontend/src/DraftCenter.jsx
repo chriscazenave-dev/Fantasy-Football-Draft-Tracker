@@ -194,7 +194,7 @@ export default function DraftCenter({
 
           {!isMock && (
             <span className="px-3 py-1 border-2 border-emerald-800/50 bg-emerald-900/5 text-emerald-900 text-[10px] font-black uppercase tracking-wider">
-              {checkedInCount}/8 in the room
+              {checkedInCount}/{teams.length} in the room
             </span>
           )}
 

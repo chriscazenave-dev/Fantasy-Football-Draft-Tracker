@@ -8,7 +8,7 @@ export default function DraftRoomPanel({ teams, members = [], compact = false, t
       <div className={`border-b-2 border-[#5a4a32] bg-[#efe6d0] ${compact ? 'px-3 py-2' : 'px-4 py-3'}`}>
         {title && <div className="mb-1 text-[10px] font-black uppercase tracking-[0.25em] text-[#5a4a32]">{title}</div>}
         <div className="text-[10px] font-black uppercase tracking-[0.25em] text-[#5a4a32]">
-          {presentCount} of 8 owners in the room
+          {presentCount} of {teams.length} owners in the room
         </div>
       </div>
       <div className="divide-y divide-[#e0d5bc]">

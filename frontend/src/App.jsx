@@ -838,7 +838,7 @@ function App({ session, onLogout, onRequestLogin }) {
 
               {isDraftActive && !isMockDraft && (
                 <div className="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1 rounded-xl border border-[#c9bb9c] bg-[#efe6d0]/60 px-4 py-3 text-sm text-[#5a4a32]">
-                  <span className="font-black">Draft room: {roomCheckedInCount} of 8 checked in</span>
+                  <span className="font-black">Draft room: {roomCheckedInCount} of {teams.length} checked in</span>
                   {missingRoomTeams.length > 0 && (
                     <span className="text-[#8a7a5c]">
                       Missing: {missingRoomTeams.map(team => team.owner).join(', ')}
