@@ -114,7 +114,7 @@ export const TEAM_WRITEUPS = {
     body: [
       'Chris caz left the draft with the 1.02, Fernando Mendoza, plus Nicholas Singleton and Ted Hurst. Then came the wire activity: Barion Brown, Malachi Fields, and Caleb Douglas joined the roster, while Troy Franklin and Patriots D/ST were dropped. This is either a calculated refresh or the beginning of a very energetic spreadsheet.',
       'The strength is the starting spine. Drake Maye and Sam Darnold cover the superflex slots, Bijan Robinson and Breece Hall give the backfield two premier names, and Amon-Ra St. Brown, Rashee Rice, DeVonta Smith, and Jameson Williams create a weekly receiving traffic jam. Sam LaPorta is merely the tight end selected to make the rest feel unfair.',
-      'The weakness is that Tyreek Hill is still listed as a free agent, and the roster has no margin for the old names to stop being useful. The bench is full of intriguing receivers and quarterbacks, but the immediate lineup asks Drake Maye, Darnold, Rice, and Jameson Williams to turn potential into points right away.',
+      'The weakness is that rostered Tyreek Hill is still without an NFL team, and the roster has no margin for the old names to stop being useful. The bench is full of intriguing receivers and quarterbacks, but the immediate lineup asks Drake Maye, Darnold, Rice, and Jameson Williams to turn potential into points right away.',
       'Suave Shaheed arrives in Week 1 with Allen, Bo Nix, Chase, and Seahawks D/ST. Team caz counters with Maye, Bijan, Hall, Amon-Ra, Rice, LaPorta, DeVonta, Jameson, Darnold, and Texans D/ST. The Madness Times picks Team caz at home in spirit, on the strength of the young core and the less decorative defense.',
     ],
   },
