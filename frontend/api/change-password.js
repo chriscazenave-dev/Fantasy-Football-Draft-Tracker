@@ -1,4 +1,4 @@
-import { getDb, hashPassword, makeToken, readJsonBody, sessionPayload, verifyPassword, verifyToken } from './_authLib.js'
+import { getDb, getTokenFromRequest, hashPassword, makeToken, readJsonBody, sessionPayload, setSessionCookie, verifyPassword, verifyToken } from './_authLib.js'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -12,8 +12,7 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Auth is not configured yet. Set AUTH_SECRET and DATABASE_URL.' })
   }
 
-  const auth = String(req.headers.authorization ?? '')
-  const token = auth.startsWith('Bearer ') ? auth.slice(7) : null
+  const token = getTokenFromRequest(req)
   const session = token ? verifyToken(token, secret) : null
   if (!session) {
     return res.status(401).json({ error: 'You must be signed in to change your password.' })
@@ -59,5 +58,6 @@ export default async function handler(req, res) {
   }
 
   const payload = sessionPayload({ ...user, must_change_password: false })
-  return res.status(200).json({ token: makeToken(payload, secret), ...payload })
+  setSessionCookie(res, makeToken(payload, secret))
+  return res.status(200).json({ ...payload })
 }

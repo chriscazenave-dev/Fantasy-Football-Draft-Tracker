@@ -1,5 +1,3 @@
-import { getToken } from './auth'
-
 export async function fetchLeagueState() {
   const res = await fetch('/api/league-state')
   if (!res.ok) throw new Error('Could not load league data.')
@@ -7,13 +5,9 @@ export async function fetchLeagueState() {
 }
 
 export async function saveLeagueState(state) {
-  const token = getToken()
   const res = await fetch('/api/league-state', {
     method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json',
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
-    },
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ state }),
   })
   const data = await res.json().catch(() => null)

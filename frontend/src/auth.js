@@ -1,43 +1,11 @@
-const TOKEN_KEY = 'dynasty_auth_token'
+const LEGACY_TOKEN_KEY = 'dynasty_auth_token'
 
-export function getToken() {
-  return localStorage.getItem(TOKEN_KEY)
-}
-
-export function setToken(token) {
-  localStorage.setItem(TOKEN_KEY, token)
-}
-
-export function clearToken() {
-  localStorage.removeItem(TOKEN_KEY)
-}
-
-function decodePayload(token) {
-  try {
-    const payloadB64 = token.split('.')[0]
-    const json = atob(payloadB64.replace(/-/g, '+').replace(/_/g, '/'))
-    return JSON.parse(json)
-  } catch {
-    return null
-  }
-}
-
-export function getSession() {
-  const token = getToken()
-  if (!token) return null
-  const payload = decodePayload(token)
-  if (!payload || typeof payload.exp !== 'number') return null
-  if (Date.now() / 1000 >= payload.exp) {
-    clearToken()
-    return null
-  }
-  return {
-    username: payload.username,
-    name: payload.name,
-    team: payload.team,
-    isAdmin: !!payload.isAdmin,
-    mustChangePassword: !!payload.mustChangePassword,
-  }
+// The session token lives in an HttpOnly cookie managed by the server.
+// Clean up tokens persisted by older versions of the app.
+try {
+  localStorage.removeItem(LEGACY_TOKEN_KEY)
+} catch {
+  // storage unavailable
 }
 
 function isLocalDev() {
@@ -48,12 +16,42 @@ function isLocalDev() {
 const LOCAL_DEV_MESSAGE =
   'Sign-in is unavailable in local development. The /api auth endpoints only exist on the Vercel deployment (they need AUTH_SECRET and DATABASE_URL). Use "Continue without signing in" to browse the app.'
 
-async function postJson(url, body, headers = {}) {
+function toSession(data) {
+  return {
+    username: data.username,
+    name: data.name,
+    team: data.team,
+    isAdmin: !!data.isAdmin,
+    mustChangePassword: !!data.mustChangePassword,
+  }
+}
+
+export async function fetchSession() {
+  let res
+  try {
+    res = await fetch('/api/session')
+  } catch {
+    return null
+  }
+  if (!res.ok) return null
+  const data = await res.json().catch(() => null)
+  return data?.session ? toSession(data.session) : null
+}
+
+export async function logout() {
+  try {
+    await fetch('/api/session', { method: 'DELETE' })
+  } catch {
+    // best effort; the cookie expires on its own
+  }
+}
+
+async function postJson(url, body) {
   let res
   try {
     res = await fetch(url, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', ...headers },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
     })
   } catch {
@@ -72,12 +70,11 @@ async function postJson(url, body, headers = {}) {
     if (isLocalDev() && !data) throw new Error(LOCAL_DEV_MESSAGE)
     throw new Error(data?.error || 'Something went wrong. Please try again.')
   }
-  if (!data?.token) {
+  if (!data?.username) {
     throw new Error('Request failed. Please try again.')
   }
 
-  setToken(data.token)
-  return getSession()
+  return toSession(data)
 }
 
 export async function login(username, password) {
@@ -85,6 +82,5 @@ export async function login(username, password) {
 }
 
 export async function changePassword(currentPassword, newPassword) {
-  const token = getToken()
-  return postJson('/api/change-password', { currentPassword, newPassword }, { Authorization: `Bearer ${token}` })
+  return postJson('/api/change-password', { currentPassword, newPassword })
 }

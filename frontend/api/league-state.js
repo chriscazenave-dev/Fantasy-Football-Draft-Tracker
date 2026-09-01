@@ -1,4 +1,4 @@
-import { getDb, readJsonBody, verifyToken } from './_authLib.js'
+import { getDb, getTokenFromRequest, readJsonBody, verifyToken } from './_authLib.js'
 
 const LEAGUE_ID = 'default'
 
@@ -37,8 +37,7 @@ export default async function handler(req, res) {
 
   if (req.method === 'PUT') {
     const secret = process.env.AUTH_SECRET
-    const auth = String(req.headers.authorization ?? '')
-    const token = auth.startsWith('Bearer ') ? auth.slice(7) : null
+    const token = getTokenFromRequest(req)
     const session = token && secret ? verifyToken(token, secret) : null
     if (!session) {
       return res.status(401).json({ error: 'You must be signed in to save league changes.' })
