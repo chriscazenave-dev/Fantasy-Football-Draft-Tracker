@@ -10,38 +10,50 @@ const BOARD_SIZE = 75
 const POSITION_FILTERS = ['All', 'QB', 'RB', 'WR', 'TE']
 
 const LEAD_STORY = {
-  kicker: 'The 2026 Rookie Draft · Extra Edition',
-  headline: 'DRAFT DAY',
-  deck: 'Eight franchises, one loaded rookie class, and a big board the whole league has been arguing about since April. The Madness Times filed a full dossier on all 75 names — tap any prospect to read it.',
-  byline: 'By The Madness Times Scouting Bureau',
+  kicker: 'Week 1 · 2026 Season Kickoff Edition',
+  headline: 'KICKOFF',
+  deck: 'Eight franchises, one champion to dethrone, and a Week 1 slate with no interest in easing anybody into September. The Madness Times has filed the season preview, the power rankings, and the arguments you will pretend not to read before setting your lineup.',
+  byline: 'By The Madness Times Season Desk',
   body: [
-    'It is finally here. After an April draft that reshaped half the league, a summer of trade chatter, and a full training camp of depth-chart reshuffling, the Dynasty Madness rookie draft opens today with the most talked-about class since this league started keeping records. The board is 75 deep in this edition, every name carries a live KeepTradeCut superflex value, and the consensus at the top has not budged: Jeremiyah Love is the 1.01, and everyone else is negotiating.',
-    'What has moved is everything underneath him. Camp reporting turned Carnell Tate into the class\u2019s premier receiver bet, pushed Jadarian Price into the first tier of running backs, and dropped a hamstring-shortened Jordyn Tyson a few rungs on a board that punishes uncertainty in August. The quarterback question is the one that decides this room: in a format that starts two, Fernando Mendoza and Ty Simpson are worth more here than any model built for one-QB leagues will ever tell you.',
-    'Below is the Big Board, refreshed off live market data this morning, followed by the rest of today\u2019s paper. Every prospect on it is clickable: college career, per-season production, combine numbers, draft-night context, camp notes with dates and sources, what the beat writers are saying, where he actually sits on his depth chart, and the honest case for and against him. Read before you pick. Or do not, and let the rest of us enjoy it.',
+    'The 2026 season opens with the defending champion still wearing the crown and seven challengers insisting this is the year the crown becomes available. The Evil Empire brings back Patrick Mahomes, Saquon Barkley, Puka Nacua, Jaxon Smith-Njigba, and Brock Purdy in the OP, which is a fairly rude way to begin a title defense.',
+    'The draft recap fits in one breath: Hoidus’ Hemmroid took Jeremiyah Love at 1.01, Team caz answered with Fernando Mendoza at 1.02, and Sam Bowlin walked away with eight rookies while Perri Prevost collected seven. The wire was busy on the eve of kickoff too, with Team caz, Whatever who cares, and Hoidus all adding names before the games began.',
+    'Now the title race gets a schedule and a scoreboard. Below: the Week 1 matchup desk, the four urgent stories, and the power rankings that will age beautifully or embarrassingly. Settle in, pick your winners, and proceed to the Big Board whenever you need to remember who was supposed to be good.',
   ],
 }
 
 const ARTICLES = [
   {
+    id: 'week1',
+    kicker: 'Week 1 Preview',
+    headline: 'Four Games, Eight Opinions, One Chance to Pretend the Projections Are Science',
+    byline: 'By The Madness Times Game Desk',
+    body: [
+      'Team caz opens against Suave Shaheed in the matchup of young firepower and established swagger. Chris caz starts Drake Maye, Bijan Robinson, Breece Hall, Amon-Ra St. Brown, Rashee Rice, Sam LaPorta, DeVonta Smith, Jameson Williams, Sam Darnold in the OP, and Texans D/ST; Nick Casey answers with Josh Allen, Chase Brown, Travis Etienne Jr., Ja’Marr Chase, Parker Washington, Jake Ferguson, Emeka Egbuka, D’Andre Swift, Bo Nix in the OP, and Seahawks D/ST. The desk picks Suave Shaheed, because Josh Allen and Ja’Marr Chase are still allowed to be on the same card.',
+      'Whatever who cares meets Hoidus’ Hemmroid, with Sam Bowlin’s runner-up roster sending Jalen Hurts, Jahmyr Gibbs, Christian McCaffrey, George Pickens, Ladd McConkey, Tyler Warren, Bucky Irving, Davante Adams, Jaxson Dart in the OP, and Rams D/ST. Perri Prevost counters with Jordan Love, Kenneth Walker III, Jeremiyah Love, Drake London, A.J. Brown, Mark Andrews, Cam Skattebo, Javonte Williams, C.J. Stroud in the OP, and Vikings D/ST. The pick is Whatever who cares, whose eight-player class and veteran lineup have fewer reasons to apologize in Week 1.',
+      'The Evil Empire then receives Cheznovs Abduction in the first title-defense checkpoint. The champion starts Patrick Mahomes, Saquon Barkley, Kyren Williams, Puka Nacua, Jaxon Smith-Njigba, Tucker Kraft, Jaylen Waddle, Tee Higgins, Brock Purdy in the OP, and Eagles D/ST; Austin Dedon sends Lamar Jackson, James Cook III, Bhayshul Tuten, Nico Collins, Zay Flowers, Trey McBride, David Montgomery, MarShawn Lloyd, Justin Herbert in the OP, and an empty D/ST slot. The desk picks The Evil Empire, though Cheznovs finally having James Cook III makes this less of a public service announcement than it used to be.',
+      'Teddy Bongwater closes the page against Team Faircloth, with Dylan McElroy starting Jayden Daniels, Jonathan Taylor, Rico Dowdle, CeeDee Lamb, Justin Jefferson, Colston Loveland, Tetairoa McMillan, Garrett Wilson, Dak Prescott in the OP, and Steelers D/ST. Zachary Faircloth and Steven Lambou counter with Joe Burrow, Derrick Henry, De’Von Achane, Chris Olave, DJ Moore, Brock Bowers, Ashton Jeanty, Omarion Hampton, Caleb Williams in the OP, and no D/ST. The pick is Teddy Bongwater by the smallest possible margin: Faircloth has the terrifying skill group, but an empty defense is still an empty defense.',
+    ],
+  },
+  {
     id: 'schefter',
     kicker: 'League Insider',
-    headline: 'Sources: Evil Empire "Fully Expects" to Repeat, League Office Braces for Another Insufferable Year',
+    headline: 'Sources: Evil Empire Quietly Expects to Repeat, Which Is Somehow More Insufferable',
     byline: 'By Adam Schefter, Senior Dynasty Insider',
     body: [
-      'Sources close to the situation tell me that The Evil Empire, fresh off its 2025 championship, has been sending the trophy emoji in the league chat "at a rate that concerns everyone involved." Per sources, jmo morgan spent the offseason doing exactly nothing, because when you roster Patrick Mahomes, Saquon Barkley, and Puka Nacua, nothing is a strategy.',
-      'League sources confirm the real story is the return of Malik Nabers at full strength. One rival GM, speaking on condition of anonymity because "he will screenshot this," described the situation as "genuinely unfair" and "the kind of thing a commissioner should look into."',
-      'Meanwhile, sources say Whatever who cares has privately told confidants that second place "will not happen again." When reached for comment, Sam Bowlin replied "whatever," which sources describe as "on brand."',
+      'Sources close to the defending champion tell me The Evil Empire had a quiet offseason, which is what happens when Patrick Mahomes, Saquon Barkley, Puka Nacua, and Jaxon Smith-Njigba are already in the building. Per sources, jmo morgan did not confuse activity with improvement. The league calls this “patience”; the rest of us call it deeply annoying.',
+      'The core is not merely those four names. Brock Purdy occupies the OP, Jaylen Waddle and Tee Higgins flank the receiver room, and the Week 1 card includes Kyren Williams, Tucker Kraft, and Eagles D/ST. Sources say the roster has enough quality to make every opponent feel like it has already lost one coin flip.',
+      'The Malik Nabers situation has also changed: he is on the active roster now after his IR-adjacent limbo, while Jayden Higgins and Dont’e Thornton Jr. are the players actually parked on IR. One rival GM described this as “the cleanest injury bulletin in the league,” then declined to explain what that meant. Sources say the repeat watch is fully operational.',
     ],
   },
   {
     id: 'bigcat',
     kicker: 'Hot Take Central',
-    headline: "The Bottom of This League Is Electric Factory: A Loving Roast of Cheznovs Abduction and Hoidus' Hemmroid",
+    headline: "Cheznovs Found the Running Backs, Hoidus Found the 1.01, and Both Found Week 1 Trouble",
     byline: 'By Big Cat, Barstool Dynasty Desk',
     body: [
-      'Folks. FOLKS. Austin Dedon woke up, looked at a superflex dynasty league, and said "give me Lamar Jackson AND Justin Herbert." Awesome. Love it. Then he looked at his running back room and said "Blake Corum, that\'s a starter." That\'s not a fantasy team, that\'s a trust fall with no one standing behind you.',
-      "And Hoidus' Hemmroid. First of all, the name. Spelled wrong, medically inaccurate, absolutely perfect. Perri has A.J. Brown, Drake London, and Mark Andrews, which sounds good until you realize the QB room is Jordan Love and a bag of Cam Wards. This roster is fully healthy and still projected last. That's the most electric thing I've ever seen.",
-      'Vegas has both teams at +50000 to win the title. I\'m hammering the under on wins, the over on league-chat excuses, and Teddy Bongwater to somehow be involved in the most cursed trade of the season. Book it. And yes, both of these rosters are picking early today, which is the only mercy the schedule offers them.',
+      'Folks. FOLKS. Austin Dedon finally has running backs. James Cook III is in the building, and the room is 15 deep now, which is the fantasy equivalent of buying every lottery ticket and still starting Bhayshul Tuten at RB2. Lamar Jackson and Justin Herbert is awesome. Nico Collins, Zay Flowers, Trey McBride, also awesome. No D/ST starting Week 1? Less awesome.',
+      'And Hoidus’ Hemmroid has a rebuild that is at least honest about what it is. Perri drafted seven rookies, including the 1.01 Jeremiyah Love, and then put Love directly into the RB2 slot for Week 1. Jordan Love, C.J. Stroud, A.J. Brown, Drake London, and Mark Andrews are the veteran safety rails. The rookie is still driving the bus.',
+      'I am picking Hoidus to be more dangerous by the end of the year and Cheznovs to be more dangerous if Austin finds a defense before kickoff. For this Week 1 game, though, the projections say Whatever who cares over Hoidus and Evil Empire over Cheznovs. I hate that the boring answer is probably right. I hate it even more because the bottom of this league is now genuinely interesting.',
     ],
   },
   {
@@ -50,20 +62,20 @@ const ARTICLES = [
     headline: 'The Superflex Arms Race: Why the OP Slot Decides This League',
     byline: 'By The Madness Times Analytics Bureau',
     body: [
-      'Look at the top of the standings projection and a pattern emerges: the teams that treat the OP (superflex) slot as a second quarterback are lapping the field. Team Faircloth trots out Burrow AND Trevor Lawrence. The Evil Empire pairs Mahomes with Brock Purdy. Whatever who cares hands the keys to rookie-no-more Jaxson Dart.',
-      "Then there's Team caz, starting Aaron Rodgers, age redacted out of respect, and Teddy Bongwater flexing Jared Goff, which is fine in the way that lukewarm coffee is fine. The math is brutal: a bench QB scoring 12 a week beats a bench WR scoring 6, every week, forever.",
-      'Which is exactly why the rookie quarterbacks on today\u2019s board are priced the way they are. A day-one NFL starter in a two-QB format is not a luxury pick, it is an appreciating asset, and the manager who lets one slide two rounds past his market value is the manager who calls in October asking what it costs to fix the problem. It costs a first. It always costs a first.',
+      'The OP slot is not theoretical anymore; it has eight actual Week 1 occupants. Brock Purdy takes it for The Evil Empire, Jaxson Dart for Whatever who cares, Bo Nix for Suave Shaheed, Dak Prescott for Teddy Bongwater, Caleb Williams for Team Faircloth, Sam Darnold for Team caz, C.J. Stroud for Hoidus’ Hemmroid, and Justin Herbert for Cheznovs Abduction.',
+      'That is the entire league treating the superflex slot as a quarterback slot, which is exactly what a superflex league hopes to see and exactly what a bench quarterback fears. Purdy and Herbert bookend the list with championship and chaos energy; Dart, Nix, Williams, Darnold, Stroud, and Dak give the middle of the slate eight different arguments to have in the group chat.',
+      'The roster math matters because the OP does not exist in isolation. Hurts and Daniels start at QB for Whatever who cares and Teddy, while Maye, Burrow, Allen, Mahomes, and Love make the first quarterback slot just as consequential. In Week 1, the team that gets two usable passers is not guaranteed a win, but the team that leaves points on the quarterback table is volunteering for a difficult afternoon.',
     ],
   },
   {
     id: 'futures',
     kicker: 'The Ledger',
-    headline: 'Future Picks Are the Real Currency, and Half This League Is Already in Debt',
+    headline: 'Post-Draft Ledger: Perri and Sam Cashed Their Picks, Then the Wire Started Moving',
     byline: 'By The Madness Times Business Desk',
     body: [
-      'Forget the rosters for a second and read the ledger. The future picks board shows a league quietly splitting into lenders and borrowers: the contenders keep shipping out 2027 and 2028 firsts for right-now help, and the rebuilders keep cashing them like bonds that pay out in Jeremiyah Loves.',
-      'The analytics on this are unambiguous. In superflex dynasty formats, a future first inside a loaded class returns more value than all but the top fifteen veterans, and the 2027 class is already drawing "generational at quarterback" chatter from the college scouting desks. Every first traded this summer is a loan against a market that only goes up.',
-      "The Madness Times advice column, condensed: if you are winning now, spend, because flags fly forever. If you are not, hoard picks and let someone else's impatience fund your dynasty. And if you are not sure which one you are, check the power rankings on this very page. We ranked you. You know.",
+      'The draft is over, the picks have been converted into players, and the ledger now has two particularly loud entries. Perri Prevost cashed the 1.01 for Jeremiyah Love and completed a seven-man class; Sam Bowlin walked away with eight rookies, a haul large enough to require its own filing cabinet.',
+      'The rebuilders did not merely collect names. Hoidus’ Hemmroid added Germie Bernard, Ty Simpson, KC Concepcion, Chris Bell, Zachariah Branch, and Kenyon Sadiq around Love, while Whatever who cares added Omar Cooper Jr., Jordyn Tyson, Jadarian Price, Makai Lemon, Antonio Williams, Emmett Johnson, Demond Claiborne, and Seth McGowan. The future is now distributed in several inconvenient places.',
+      'Then came the eve-of-Week-1 wire. Team caz added Barion Brown, Malachi Fields, and Caleb Douglas while dropping Troy Franklin and Patriots D/ST; Whatever who cares added Tank Dell, Chris Brooks, Brian Robinson Jr., and Jordan James while dropping Dalton Schultz and Lions D/ST; Hoidus added Zavion Thomas and dropped Elic Ayomanor. The advice from the business desk is simple: if you hear the wire move, check whether your title odds just moved with it.',
     ],
   },
 ]
@@ -193,7 +205,7 @@ export default function HomePage({ dateline, initialRookieId, onRookieViewed }) 
         <div className="mt-3 flex items-center justify-center gap-4 text-[11px] uppercase tracking-widest text-[#8a7a5c] border-t border-[#c9bb9c] pt-2 mx-auto max-w-2xl">
           <span>{today}</span>
           <span className="hidden sm:inline">·</span>
-          <span className="hidden sm:inline font-black text-amber-800">Draft Day Extra</span>
+          <span className="hidden sm:inline font-black text-amber-800">Week 1 Kickoff</span>
           <span className="hidden sm:inline">·</span>
           <span className="hidden sm:inline">Price: One 2027 Second</span>
         </div>
@@ -228,7 +240,7 @@ export default function HomePage({ dateline, initialRookieId, onRookieViewed }) 
         <TeamWriteup team={selectedTeam} onBack={() => setSelectedTeam(null)} />
       ) : (
         <>
-          {/* DRAFT DAY banner */}
+          {/* KICKOFF banner */}
           <div className="border-b-4 border-double border-[#5a4a32] px-4 py-8 text-center bg-[#f7f1e1]">
             <p className="text-[11px] md:text-xs font-black tracking-[0.4em] uppercase text-amber-700 mb-3">
               {LEAD_STORY.kicker}
@@ -237,7 +249,7 @@ export default function HomePage({ dateline, initialRookieId, onRookieViewed }) 
               className="text-[3.6rem] leading-[0.85] sm:text-7xl md:text-[8.5rem] font-black uppercase tracking-tighter"
               style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}
             >
-              Draft Day
+              Kickoff
             </h2>
             <p className="mt-4 text-[15px] md:text-lg max-w-3xl mx-auto leading-snug font-semibold">{LEAD_STORY.deck}</p>
             <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[11px] uppercase tracking-widest text-[#5a4a32] border-t border-[#c9bb9c] pt-3 max-w-2xl mx-auto">
@@ -431,7 +443,7 @@ export default function HomePage({ dateline, initialRookieId, onRookieViewed }) 
               <div className="border-2 border-[#5a4a32] p-4 text-center bg-[#efe6d0]">
                 <p className="text-[10px] uppercase tracking-[0.25em] text-[#8a7a5c] mb-1">Classified Ads</p>
                 <p className="text-sm italic">
-                  WANTED: One (1) starting running back. Contact A. Dedon, Cheznovs Abduction. Will pay in quarterbacks.
+                  WANTED: One (1) starting defense. Contact Team Faircloth. Quarterbacks and tight ends available for negotiation.
                 </p>
               </div>
 
