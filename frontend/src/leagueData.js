@@ -1,5 +1,518 @@
 // Generated from ESPN league roster PDFs and Draft Sharks 2026 Dynasty Superflex Rookie Rankings
 export const VETERAN_ROSTERS = {
+  "6": [
+    {
+      "name": "Aaron Rodgers",
+      "position": "QB",
+      "nflTeam": "PIT"
+    },
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "nflTeam": "NE"
+    },
+    {
+      "name": "Michael Penix Jr.",
+      "position": "QB",
+      "nflTeam": "ATL"
+    },
+    {
+      "name": "Sam Darnold",
+      "position": "QB",
+      "nflTeam": "SEA"
+    },
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "nflTeam": "ATL"
+    },
+    {
+      "name": "Breece Hall",
+      "position": "RB",
+      "nflTeam": "NYJ"
+    },
+    {
+      "name": "Kendre Miller",
+      "position": "RB",
+      "nflTeam": "NO"
+    },
+    {
+      "name": "Rachaad White",
+      "position": "RB",
+      "nflTeam": "WAS"
+    },
+    {
+      "name": "TreVeyon Henderson",
+      "position": "RB",
+      "nflTeam": "NE"
+    },
+    {
+      "name": "Tyjae Spears",
+      "position": "RB",
+      "nflTeam": "TEN"
+    },
+    {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "nflTeam": "DET"
+    },
+    {
+      "name": "Barion Brown",
+      "position": "WR",
+      "nflTeam": "NO"
+    },
+    {
+      "name": "Caleb Douglas",
+      "position": "WR",
+      "nflTeam": "MIA"
+    },
+    {
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "nflTeam": "PHI"
+    },
+    {
+      "name": "Jameson Williams",
+      "position": "WR",
+      "nflTeam": "DET"
+    },
+    {
+      "name": "Malachi Fields",
+      "position": "WR",
+      "nflTeam": "NYG"
+    },
+    {
+      "name": "Mike Evans",
+      "position": "WR",
+      "nflTeam": "SF"
+    },
+    {
+      "name": "Rashee Rice",
+      "position": "WR",
+      "nflTeam": "KC"
+    },
+    {
+      "name": "Rome Odunze",
+      "position": "WR",
+      "nflTeam": "CHI"
+    },
+    {
+      "name": "Tre Tucker",
+      "position": "WR",
+      "nflTeam": "LV"
+    },
+    {
+      "name": "Tyreek Hill",
+      "position": "WR",
+      "nflTeam": "FA"
+    },
+    {
+      "name": "Dallas Goedert",
+      "position": "TE",
+      "nflTeam": "PHI"
+    },
+    {
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "nflTeam": "BUF"
+    },
+    {
+      "name": "Sam LaPorta",
+      "position": "TE",
+      "nflTeam": "DET"
+    },
+    {
+      "name": "Texans D/ST",
+      "position": "D/ST",
+      "nflTeam": "HOU"
+    }
+  ],
+  "1": [
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "nflTeam": "SF"
+    },
+    {
+      "name": "Daniel Jones",
+      "position": "QB",
+      "nflTeam": "IND"
+    },
+    {
+      "name": "Malik Willis",
+      "position": "QB",
+      "nflTeam": "MIA"
+    },
+    {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "nflTeam": "KC"
+    },
+    {
+      "name": "Isiah Pacheco",
+      "position": "RB",
+      "nflTeam": "DET"
+    },
+    {
+      "name": "Jacory Croskey-Merritt",
+      "position": "RB",
+      "nflTeam": "WAS"
+    },
+    {
+      "name": "Kyle Monangai",
+      "position": "RB",
+      "nflTeam": "CHI"
+    },
+    {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "nflTeam": "LAR"
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "nflTeam": "CLE"
+    },
+    {
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "nflTeam": "PHI"
+    },
+    {
+      "name": "Tyler Allgeier",
+      "position": "RB",
+      "nflTeam": "ARI"
+    },
+    {
+      "name": "Dont'e Thornton Jr.",
+      "position": "WR",
+      "nflTeam": "LV"
+    },
+    {
+      "name": "Jalen McMillan",
+      "position": "WR",
+      "nflTeam": "TB"
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "nflTeam": "SEA"
+    },
+    {
+      "name": "Jayden Higgins",
+      "position": "WR",
+      "nflTeam": "HOU"
+    },
+    {
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "nflTeam": "DEN"
+    },
+    {
+      "name": "Kyle Williams",
+      "position": "WR",
+      "nflTeam": "NE"
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "nflTeam": "NYG"
+    },
+    {
+      "name": "Pat Bryant",
+      "position": "WR",
+      "nflTeam": "DEN"
+    },
+    {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "nflTeam": "LAR"
+    },
+    {
+      "name": "Skyler Bell",
+      "position": "WR",
+      "nflTeam": "BUF"
+    },
+    {
+      "name": "Tee Higgins",
+      "position": "WR",
+      "nflTeam": "CIN"
+    },
+    {
+      "name": "Travis Hunter",
+      "position": "WR",
+      "nflTeam": "JAX"
+    },
+    {
+      "name": "Xavier Worthy",
+      "position": "WR",
+      "nflTeam": "KC"
+    },
+    {
+      "name": "Oronde Gadsden",
+      "position": "TE",
+      "nflTeam": "LAC"
+    },
+    {
+      "name": "Terrance Ferguson",
+      "position": "TE",
+      "nflTeam": "LAR"
+    },
+    {
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "nflTeam": "GB"
+    },
+    {
+      "name": "Chargers D/ST",
+      "position": "D/ST",
+      "nflTeam": "LAC"
+    },
+    {
+      "name": "Eagles D/ST",
+      "position": "D/ST",
+      "nflTeam": "PHI"
+    },
+    {
+      "name": "Jaguars D/ST",
+      "position": "D/ST",
+      "nflTeam": "JAX"
+    }
+  ],
+  "2": [
+    {
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "nflTeam": "PHI"
+    },
+    {
+      "name": "Jaxson Dart",
+      "position": "QB",
+      "nflTeam": "NYG"
+    },
+    {
+      "name": "Kirk Cousins",
+      "position": "QB",
+      "nflTeam": "LV"
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "nflTeam": "LAR"
+    },
+    {
+      "name": "Brian Robinson Jr.",
+      "position": "RB",
+      "nflTeam": "ATL"
+    },
+    {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "nflTeam": "TB"
+    },
+    {
+      "name": "Chris Brooks",
+      "position": "RB",
+      "nflTeam": "GB"
+    },
+    {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "nflTeam": "SF"
+    },
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "nflTeam": "DET"
+    },
+    {
+      "name": "James Conner",
+      "position": "RB",
+      "nflTeam": "ARI"
+    },
+    {
+      "name": "Jordan James",
+      "position": "RB",
+      "nflTeam": "SF"
+    },
+    {
+      "name": "Kenny Gainwell",
+      "position": "RB",
+      "nflTeam": "TB"
+    },
+    {
+      "name": "Davante Adams",
+      "position": "WR",
+      "nflTeam": "LAR"
+    },
+    {
+      "name": "George Pickens",
+      "position": "WR",
+      "nflTeam": "DAL"
+    },
+    {
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "nflTeam": "LAC"
+    },
+    {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "nflTeam": "GB"
+    },
+    {
+      "name": "Romeo Doubs",
+      "position": "WR",
+      "nflTeam": "NE"
+    },
+    {
+      "name": "Tank Dell",
+      "position": "WR",
+      "nflTeam": "HOU"
+    },
+    {
+      "name": "Terry McLaurin",
+      "position": "WR",
+      "nflTeam": "WAS"
+    },
+    {
+      "name": "Brenton Strange",
+      "position": "TE",
+      "nflTeam": "JAX"
+    },
+    {
+      "name": "Tyler Warren",
+      "position": "TE",
+      "nflTeam": "IND"
+    },
+    {
+      "name": "Rams D/ST",
+      "position": "D/ST",
+      "nflTeam": "LAR"
+    }
+  ],
+  "3": [
+    {
+      "name": "Baker Mayfield",
+      "position": "QB",
+      "nflTeam": "TB"
+    },
+    {
+      "name": "Bo Nix",
+      "position": "QB",
+      "nflTeam": "DEN"
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "nflTeam": "BUF"
+    },
+    {
+      "name": "Chase Brown",
+      "position": "RB",
+      "nflTeam": "CIN"
+    },
+    {
+      "name": "Chris Rodriguez Jr.",
+      "position": "RB",
+      "nflTeam": "JAX"
+    },
+    {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "nflTeam": "CHI"
+    },
+    {
+      "name": "Dylan Sampson",
+      "position": "RB",
+      "nflTeam": "CLE"
+    },
+    {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "nflTeam": "PIT"
+    },
+    {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "nflTeam": "TEN"
+    },
+    {
+      "name": "Travis Etienne Jr.",
+      "position": "RB",
+      "nflTeam": "NO"
+    },
+    {
+      "name": "Woody Marks",
+      "position": "RB",
+      "nflTeam": "HOU"
+    },
+    {
+      "name": "Chris Godwin Jr.",
+      "position": "WR",
+      "nflTeam": "TB"
+    },
+    {
+      "name": "Dontayvion Wicks",
+      "position": "WR",
+      "nflTeam": "PHI"
+    },
+    {
+      "name": "Emeka Egbuka",
+      "position": "WR",
+      "nflTeam": "TB"
+    },
+    {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "nflTeam": "CIN"
+    },
+    {
+      "name": "Khalil Shakir",
+      "position": "WR",
+      "nflTeam": "BUF"
+    },
+    {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "nflTeam": "ARI"
+    },
+    {
+      "name": "Parker Washington",
+      "position": "WR",
+      "nflTeam": "JAX"
+    },
+    {
+      "name": "Rashid Shaheed",
+      "position": "WR",
+      "nflTeam": "SEA"
+    },
+    {
+      "name": "George Kittle",
+      "position": "TE",
+      "nflTeam": "SF"
+    },
+    {
+      "name": "Jake Ferguson",
+      "position": "TE",
+      "nflTeam": "DAL"
+    },
+    {
+      "name": "T.J. Hockenson",
+      "position": "TE",
+      "nflTeam": "MIN"
+    },
+    {
+      "name": "Broncos D/ST",
+      "position": "D/ST",
+      "nflTeam": "DEN"
+    },
+    {
+      "name": "Seahawks D/ST",
+      "position": "D/ST",
+      "nflTeam": "SEA"
+    }
+  ],
   "4": [
     {
       "name": "Dak Prescott",
@@ -14,12 +527,7 @@ export const VETERAN_ROSTERS = {
     {
       "name": "Jayden Daniels",
       "position": "QB",
-      "nflTeam": "WSH"
-    },
-    {
-      "name": "Jerome Ford",
-      "position": "RB",
-      "nflTeam": "WSH"
+      "nflTeam": "WAS"
     },
     {
       "name": "Jonathan Taylor",
@@ -89,7 +597,7 @@ export const VETERAN_ROSTERS = {
     {
       "name": "Kayshon Boutte",
       "position": "WR",
-      "nflTeam": "NE"
+      "nflTeam": "HOU"
     },
     {
       "name": "Tetairoa McMillan",
@@ -100,11 +608,6 @@ export const VETERAN_ROSTERS = {
       "name": "Tre' Harris",
       "position": "WR",
       "nflTeam": "LAC"
-    },
-    {
-      "name": "Xavier Legette",
-      "position": "WR",
-      "nflTeam": "CAR"
     },
     {
       "name": "Colston Loveland",
@@ -127,485 +630,14 @@ export const VETERAN_ROSTERS = {
       "nflTeam": "ATL"
     },
     {
-      "name": "Mason Taylor",
-      "position": "TE",
-      "nflTeam": "NYJ"
-    },
-    {
-      "name": "Falcons D/ST",
-      "position": "D/ST",
-      "nflTeam": "ATL"
-    },
-    {
       "name": "Giants D/ST",
       "position": "D/ST",
       "nflTeam": "NYG"
     },
     {
-      "name": "Saints D/ST",
-      "position": "D/ST",
-      "nflTeam": "NO"
-    },
-    {
       "name": "Steelers D/ST",
       "position": "D/ST",
       "nflTeam": "PIT"
-    }
-  ],
-  "2": [
-    {
-      "name": "Jalen Hurts",
-      "position": "QB",
-      "nflTeam": "PHI"
-    },
-    {
-      "name": "Jaxson Dart",
-      "position": "QB",
-      "nflTeam": "NYG"
-    },
-    {
-      "name": "Josh Johnson",
-      "position": "QB",
-      "nflTeam": "CIN"
-    },
-    {
-      "name": "Kirk Cousins",
-      "position": "QB",
-      "nflTeam": "LV"
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "nflTeam": "LAR"
-    },
-    {
-      "name": "Tyler Shough",
-      "position": "QB",
-      "nflTeam": "NO"
-    },
-    {
-      "name": "Audric Estime",
-      "position": "RB",
-      "nflTeam": "NO"
-    },
-    {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "nflTeam": "TB"
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "nflTeam": "SF"
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "nflTeam": "DET"
-    },
-    {
-      "name": "James Conner",
-      "position": "RB",
-      "nflTeam": "ARI"
-    },
-    {
-      "name": "Jawhar Jordan",
-      "position": "RB",
-      "nflTeam": "HOU"
-    },
-    {
-      "name": "Kenny Gainwell",
-      "position": "RB",
-      "nflTeam": "TB"
-    },
-    {
-      "name": "Trey Benson",
-      "position": "RB",
-      "nflTeam": "ARI"
-    },
-    {
-      "name": "Alec Pierce",
-      "position": "WR",
-      "nflTeam": "IND"
-    },
-    {
-      "name": "Davante Adams",
-      "position": "WR",
-      "nflTeam": "LAR"
-    },
-    {
-      "name": "George Pickens",
-      "position": "WR",
-      "nflTeam": "DAL"
-    },
-    {
-      "name": "John Metchie III",
-      "position": "WR",
-      "nflTeam": "CAR"
-    },
-    {
-      "name": "Ladd McConkey",
-      "position": "WR",
-      "nflTeam": "LAC"
-    },
-    {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "nflTeam": "GB"
-    },
-    {
-      "name": "Michael Pittman Jr.",
-      "position": "WR",
-      "nflTeam": "PIT"
-    },
-    {
-      "name": "Romeo Doubs",
-      "position": "WR",
-      "nflTeam": "NE"
-    },
-    {
-      "name": "Terry McLaurin",
-      "position": "WR",
-      "nflTeam": "WSH"
-    },
-    {
-      "name": "Brenton Strange",
-      "position": "TE",
-      "nflTeam": "JAX"
-    },
-    {
-      "name": "Dalton Schultz",
-      "position": "TE",
-      "nflTeam": "HOU"
-    },
-    {
-      "name": "Darren Waller",
-      "position": "TE",
-      "nflTeam": "FA"
-    },
-    {
-      "name": "Tyler Warren",
-      "position": "TE",
-      "nflTeam": "IND"
-    },
-    {
-      "name": "Lions D/ST",
-      "position": "D/ST",
-      "nflTeam": "DET"
-    },
-    {
-      "name": "Packers D/ST",
-      "position": "D/ST",
-      "nflTeam": "GB"
-    },
-    {
-      "name": "Rams D/ST",
-      "position": "D/ST",
-      "nflTeam": "LAR"
-    }
-  ],
-  "3": [
-    {
-      "name": "Baker Mayfield",
-      "position": "QB",
-      "nflTeam": "TB"
-    },
-    {
-      "name": "Bo Nix",
-      "position": "QB",
-      "nflTeam": "DEN"
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "nflTeam": "BUF"
-    },
-    {
-      "name": "Brian Robinson Jr.",
-      "position": "RB",
-      "nflTeam": "ATL"
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "nflTeam": "CIN"
-    },
-    {
-      "name": "Chris Rodriguez Jr.",
-      "position": "RB",
-      "nflTeam": "JAX"
-    },
-    {
-      "name": "Dylan Sampson",
-      "position": "RB",
-      "nflTeam": "CLE"
-    },
-    {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "nflTeam": "SEA"
-    },
-    {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "nflTeam": "PIT"
-    },
-    {
-      "name": "Joe Mixon",
-      "position": "RB",
-      "nflTeam": "FA"
-    },
-    {
-      "name": "Ray Davis",
-      "position": "RB",
-      "nflTeam": "BUF"
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "nflTeam": "TEN"
-    },
-    {
-      "name": "Tyrone Tracy Jr.",
-      "position": "RB",
-      "nflTeam": "NYG"
-    },
-    {
-      "name": "Will Shipley",
-      "position": "RB",
-      "nflTeam": "PHI"
-    },
-    {
-      "name": "Woody Marks",
-      "position": "RB",
-      "nflTeam": "HOU"
-    },
-    {
-      "name": "Emeka Egbuka",
-      "position": "WR",
-      "nflTeam": "TB"
-    },
-    {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "nflTeam": "CIN"
-    },
-    {
-      "name": "Jauan Jennings",
-      "position": "WR",
-      "nflTeam": "MIN"
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "nflTeam": "SEA"
-    },
-    {
-      "name": "Khalil Shakir",
-      "position": "WR",
-      "nflTeam": "BUF"
-    },
-    {
-      "name": "Konata Mumpfield",
-      "position": "WR",
-      "nflTeam": "LAR"
-    },
-    {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "nflTeam": "ARI"
-    },
-    {
-      "name": "Parker Washington",
-      "position": "WR",
-      "nflTeam": "JAX"
-    },
-    {
-      "name": "Rashid Shaheed",
-      "position": "WR",
-      "nflTeam": "SEA"
-    },
-    {
-      "name": "Ryan Flournoy",
-      "position": "WR",
-      "nflTeam": "DAL"
-    },
-    {
-      "name": "Colby Parkinson",
-      "position": "TE",
-      "nflTeam": "LAR"
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "nflTeam": "SF"
-    },
-    {
-      "name": "Jake Ferguson",
-      "position": "TE",
-      "nflTeam": "DAL"
-    },
-    {
-      "name": "Broncos D/ST",
-      "position": "D/ST",
-      "nflTeam": "DEN"
-    },
-    {
-      "name": "Seahawks D/ST",
-      "position": "D/ST",
-      "nflTeam": "SEA"
-    }
-  ],
-  "1": [
-    {
-      "name": "Travis Hunter",
-      "position": "WR",
-      "nflTeam": "JAX"
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "nflTeam": "SF"
-    },
-    {
-      "name": "Daniel Jones",
-      "position": "QB",
-      "nflTeam": "IND"
-    },
-    {
-      "name": "Malik Willis",
-      "position": "QB",
-      "nflTeam": "MIA"
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "nflTeam": "KC"
-    },
-    {
-      "name": "Isiah Pacheco",
-      "position": "RB",
-      "nflTeam": "DET"
-    },
-    {
-      "name": "Jacory Croskey-Merritt",
-      "position": "RB",
-      "nflTeam": "WSH"
-    },
-    {
-      "name": "Kyle Monangai",
-      "position": "RB",
-      "nflTeam": "CHI"
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "nflTeam": "LAR"
-    },
-    {
-      "name": "Michael Carter",
-      "position": "RB",
-      "nflTeam": "TEN"
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "nflTeam": "CLE"
-    },
-    {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "nflTeam": "PHI"
-    },
-    {
-      "name": "Travis Etienne Jr.",
-      "position": "RB",
-      "nflTeam": "NO"
-    },
-    {
-      "name": "Tyler Allgeier",
-      "position": "RB",
-      "nflTeam": "ARI"
-    },
-    {
-      "name": "Cedric Tillman",
-      "position": "WR",
-      "nflTeam": "CLE"
-    },
-    {
-      "name": "Dont'e Thornton Jr.",
-      "position": "WR",
-      "nflTeam": "LV"
-    },
-    {
-      "name": "Jalen McMillan",
-      "position": "WR",
-      "nflTeam": "TB"
-    },
-    {
-      "name": "Jayden Higgins",
-      "position": "WR",
-      "nflTeam": "HOU"
-    },
-    {
-      "name": "Jaylen Waddle",
-      "position": "WR",
-      "nflTeam": "DEN"
-    },
-    {
-      "name": "Kyle Williams",
-      "position": "WR",
-      "nflTeam": "NE"
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "nflTeam": "NYG"
-    },
-    {
-      "name": "Pat Bryant",
-      "position": "WR",
-      "nflTeam": "DEN"
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "nflTeam": "LAR"
-    },
-    {
-      "name": "Tee Higgins",
-      "position": "WR",
-      "nflTeam": "CIN"
-    },
-    {
-      "name": "Xavier Worthy",
-      "position": "WR",
-      "nflTeam": "KC"
-    },
-    {
-      "name": "Oronde Gadsden",
-      "position": "TE",
-      "nflTeam": "LAC"
-    },
-    {
-      "name": "Tucker Kraft",
-      "position": "TE",
-      "nflTeam": "GB"
-    },
-    {
-      "name": "Buccaneers D/ST",
-      "position": "D/ST",
-      "nflTeam": "TB"
-    },
-    {
-      "name": "Eagles D/ST",
-      "position": "D/ST",
-      "nflTeam": "PHI"
-    },
-    {
-      "name": "Jaguars D/ST",
-      "position": "D/ST",
-      "nflTeam": "JAX"
     }
   ],
   "5": [
@@ -643,11 +675,6 @@ export const VETERAN_ROSTERS = {
       "name": "Kyler Murray",
       "position": "QB",
       "nflTeam": "MIN"
-    },
-    {
-      "name": "Mac Jones",
-      "position": "QB",
-      "nflTeam": "SF"
     },
     {
       "name": "Trevor Lawrence",
@@ -690,11 +717,6 @@ export const VETERAN_ROSTERS = {
       "nflTeam": "SEA"
     },
     {
-      "name": "Brandon Aiyuk",
-      "position": "WR",
-      "nflTeam": "SF"
-    },
-    {
       "name": "Chris Olave",
       "position": "WR",
       "nflTeam": "NO"
@@ -712,22 +734,12 @@ export const VETERAN_ROSTERS = {
     {
       "name": "Deebo Samuel",
       "position": "WR",
-      "nflTeam": "FA"
-    },
-    {
-      "name": "Jack Bech",
-      "position": "WR",
-      "nflTeam": "LV"
+      "nflTeam": "SF"
     },
     {
       "name": "Jaylin Noel",
       "position": "WR",
       "nflTeam": "HOU"
-    },
-    {
-      "name": "Jerry Jeudy",
-      "position": "WR",
-      "nflTeam": "CLE"
     },
     {
       "name": "Keon Coleman",
@@ -753,163 +765,6 @@ export const VETERAN_ROSTERS = {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "nflTeam": "CLE"
-    },
-    {
-      "name": "Michael Mayer",
-      "position": "TE",
-      "nflTeam": "LV"
-    }
-  ],
-  "6": [
-    {
-      "name": "Aaron Rodgers",
-      "position": "QB",
-      "nflTeam": "PIT"
-    },
-    {
-      "name": "Deshaun Watson",
-      "position": "QB",
-      "nflTeam": "CLE"
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "nflTeam": "NE"
-    },
-    {
-      "name": "J.J. McCarthy",
-      "position": "QB",
-      "nflTeam": "MIN"
-    },
-    {
-      "name": "Michael Penix Jr.",
-      "position": "QB",
-      "nflTeam": "ATL"
-    },
-    {
-      "name": "Shedeur Sanders",
-      "position": "QB",
-      "nflTeam": "CLE"
-    },
-    {
-      "name": "Spencer Rattler",
-      "position": "QB",
-      "nflTeam": "NO"
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "nflTeam": "ATL"
-    },
-    {
-      "name": "Breece Hall",
-      "position": "RB",
-      "nflTeam": "NYJ"
-    },
-    {
-      "name": "Kendre Miller",
-      "position": "RB",
-      "nflTeam": "NO"
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "nflTeam": "MIA"
-    },
-    {
-      "name": "Rachaad White",
-      "position": "RB",
-      "nflTeam": "WSH"
-    },
-    {
-      "name": "TreVeyon Henderson",
-      "position": "RB",
-      "nflTeam": "NE"
-    },
-    {
-      "name": "Tyjae Spears",
-      "position": "RB",
-      "nflTeam": "TEN"
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "nflTeam": "DET"
-    },
-    {
-      "name": "DeVonta Smith",
-      "position": "WR",
-      "nflTeam": "PHI"
-    },
-    {
-      "name": "Isaiah Bond",
-      "position": "WR",
-      "nflTeam": "CLE"
-    },
-    {
-      "name": "Jameson Williams",
-      "position": "WR",
-      "nflTeam": "DET"
-    },
-    {
-      "name": "Luke McCaffrey",
-      "position": "WR",
-      "nflTeam": "WSH"
-    },
-    {
-      "name": "Mike Evans",
-      "position": "WR",
-      "nflTeam": "SF"
-    },
-    {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "nflTeam": "KC"
-    },
-    {
-      "name": "Rome Odunze",
-      "position": "WR",
-      "nflTeam": "CHI"
-    },
-    {
-      "name": "Tre Tucker",
-      "position": "WR",
-      "nflTeam": "LV"
-    },
-    {
-      "name": "Troy Franklin",
-      "position": "WR",
-      "nflTeam": "DEN"
-    },
-    {
-      "name": "Tyreek Hill",
-      "position": "WR",
-      "nflTeam": "FA"
-    },
-    {
-      "name": "Dallas Goedert",
-      "position": "TE",
-      "nflTeam": "PHI"
-    },
-    {
-      "name": "Dalton Kincaid",
-      "position": "TE",
-      "nflTeam": "BUF"
-    },
-    {
-      "name": "Sam LaPorta",
-      "position": "TE",
-      "nflTeam": "DET"
-    },
-    {
-      "name": "Patriots D/ST",
-      "position": "D/ST",
-      "nflTeam": "NE"
-    },
-    {
-      "name": "Texans D/ST",
-      "position": "D/ST",
-      "nflTeam": "HOU"
     }
   ],
   "7": [
@@ -922,11 +777,6 @@ export const VETERAN_ROSTERS = {
       "name": "Cam Ward",
       "position": "QB",
       "nflTeam": "TEN"
-    },
-    {
-      "name": "Davis Mills",
-      "position": "QB",
-      "nflTeam": "HOU"
     },
     {
       "name": "Geno Smith",
@@ -944,11 +794,6 @@ export const VETERAN_ROSTERS = {
       "nflTeam": "NYG"
     },
     {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "nflTeam": "CHI"
-    },
-    {
       "name": "J.K. Dobbins",
       "position": "RB",
       "nflTeam": "DEN"
@@ -961,17 +806,17 @@ export const VETERAN_ROSTERS = {
     {
       "name": "Kaleb Johnson",
       "position": "RB",
-      "nflTeam": "PIT"
-    },
-    {
-      "name": "Kareem Hunt",
-      "position": "RB",
-      "nflTeam": "FA"
+      "nflTeam": "GB"
     },
     {
       "name": "Kenneth Walker III",
       "position": "RB",
       "nflTeam": "KC"
+    },
+    {
+      "name": "Malik Davis",
+      "position": "RB",
+      "nflTeam": "DAL"
     },
     {
       "name": "A.J. Brown",
@@ -989,19 +834,9 @@ export const VETERAN_ROSTERS = {
       "nflTeam": "NYG"
     },
     {
-      "name": "Chris Godwin Jr.",
-      "position": "WR",
-      "nflTeam": "TB"
-    },
-    {
       "name": "DK Metcalf",
       "position": "WR",
       "nflTeam": "PIT"
-    },
-    {
-      "name": "Darnell Mooney",
-      "position": "WR",
-      "nflTeam": "NYG"
     },
     {
       "name": "Drake London",
@@ -1009,14 +844,9 @@ export const VETERAN_ROSTERS = {
       "nflTeam": "ATL"
     },
     {
-      "name": "Elic Ayomanor",
+      "name": "Josh Downs",
       "position": "WR",
-      "nflTeam": "TEN"
-    },
-    {
-      "name": "Isaac TeSlaa",
-      "position": "WR",
-      "nflTeam": "DET"
+      "nflTeam": "IND"
     },
     {
       "name": "Luther Burden III",
@@ -1029,6 +859,11 @@ export const VETERAN_ROSTERS = {
       "nflTeam": "LAC"
     },
     {
+      "name": "Zavion Thomas",
+      "position": "WR",
+      "nflTeam": "CHI"
+    },
+    {
       "name": "Mark Andrews",
       "position": "TE",
       "nflTeam": "BAL"
@@ -1037,16 +872,6 @@ export const VETERAN_ROSTERS = {
       "name": "Travis Kelce",
       "position": "TE",
       "nflTeam": "KC"
-    },
-    {
-      "name": "Zach Ertz",
-      "position": "TE",
-      "nflTeam": "FA"
-    },
-    {
-      "name": "Colts D/ST",
-      "position": "D/ST",
-      "nflTeam": "IND"
     },
     {
       "name": "Vikings D/ST",
@@ -1066,9 +891,9 @@ export const VETERAN_ROSTERS = {
       "nflTeam": "BAL"
     },
     {
-      "name": "Sam Darnold",
+      "name": "Tyler Shough",
       "position": "QB",
-      "nflTeam": "SEA"
+      "nflTeam": "NO"
     },
     {
       "name": "Aaron Jones Sr.",
@@ -1101,11 +926,6 @@ export const VETERAN_ROSTERS = {
       "nflTeam": "HOU"
     },
     {
-      "name": "Devin Neal",
-      "position": "RB",
-      "nflTeam": "NO"
-    },
-    {
       "name": "Isaac Guerendo",
       "position": "RB",
       "nflTeam": "SF"
@@ -1114,6 +934,11 @@ export const VETERAN_ROSTERS = {
       "name": "James Cook III",
       "position": "RB",
       "nflTeam": "BUF"
+    },
+    {
+      "name": "Jonathon Brooks",
+      "position": "RB",
+      "nflTeam": "CAR"
     },
     {
       "name": "Jordan Mason",
@@ -1131,17 +956,12 @@ export const VETERAN_ROSTERS = {
       "nflTeam": "GB"
     },
     {
-      "name": "Adonai Mitchell",
+      "name": "Alec Pierce",
       "position": "WR",
-      "nflTeam": "NYJ"
+      "nflTeam": "IND"
     },
     {
       "name": "Calvin Ridley",
-      "position": "WR",
-      "nflTeam": "TEN"
-    },
-    {
-      "name": "Chimere Dike",
       "position": "WR",
       "nflTeam": "TEN"
     },
@@ -1163,12 +983,17 @@ export const VETERAN_ROSTERS = {
     {
       "name": "Keenan Allen",
       "position": "WR",
-      "nflTeam": "FA"
+      "nflTeam": "IND"
     },
     {
       "name": "Marvin Harrison Jr.",
       "position": "WR",
       "nflTeam": "ARI"
+    },
+    {
+      "name": "Michael Pittman Jr.",
+      "position": "WR",
+      "nflTeam": "PIT"
     },
     {
       "name": "Nico Collins",
@@ -1178,7 +1003,7 @@ export const VETERAN_ROSTERS = {
     {
       "name": "Stefon Diggs",
       "position": "WR",
-      "nflTeam": "FA"
+      "nflTeam": "WAS"
     },
     {
       "name": "Tory Horton",
@@ -1194,11 +1019,6 @@ export const VETERAN_ROSTERS = {
       "name": "Gunnar Helm",
       "position": "TE",
       "nflTeam": "TEN"
-    },
-    {
-      "name": "Theo Johnson",
-      "position": "TE",
-      "nflTeam": "NYG"
     },
     {
       "name": "Trey McBride",
