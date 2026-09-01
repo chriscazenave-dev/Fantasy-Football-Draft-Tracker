@@ -1,6 +1,31 @@
 import { getDb, readJsonBody, verifyToken } from './_authLib.js'
 
 const LEAGUE_ID = 'default'
+const MAX_STATE_BYTES = 1_000_000
+
+const STATE_SHAPE = {
+  lineups: isPlainObject,
+  rosters: isPlainObject,
+  prospects: Array.isArray,
+  draftedPlayers: isPlainObject,
+  draftOrder: Array.isArray,
+  futurePickData: isPlainObject,
+  footnotes: isPlainObject,
+}
+
+function isPlainObject(value) {
+  return typeof value === 'object' && value !== null && !Array.isArray(value)
+}
+
+function validateState(state) {
+  if (!isPlainObject(state)) return 'Missing state.'
+  for (const key of Object.keys(state)) {
+    const check = STATE_SHAPE[key]
+    if (!check) return `Unexpected field "${key}" in state.`
+    if (state[key] !== undefined && !check(state[key])) return `Invalid value for "${key}".`
+  }
+  return null
+}
 
 async function publishUpdate(version, updatedBy) {
   const key = process.env.ABLY_API_KEY
@@ -45,22 +70,50 @@ export default async function handler(req, res) {
     }
 
     const body = await readJsonBody(req)
-    if (!body.state || typeof body.state !== 'object') {
-      return res.status(400).json({ error: 'Missing state.' })
+    const validationError = validateState(body.state)
+    if (validationError) {
+      return res.status(400).json({ error: validationError })
+    }
+
+    const serialized = JSON.stringify(body.state)
+    if (Buffer.byteLength(serialized, 'utf8') > MAX_STATE_BYTES) {
+      return res.status(413).json({ error: 'League state is too large to save.' })
+    }
+
+    const baseVersion = Number(body.baseVersion)
+    if (!Number.isInteger(baseVersion) || baseVersion < 0) {
+      return res.status(400).json({ error: 'Missing baseVersion.' })
     }
 
     let version
     try {
+      const existing = await sql`SELECT state, version FROM league_state WHERE id = ${LEAGUE_ID}`
+      const currentVersion = existing[0] ? Number(existing[0].version) : 0
+      if (baseVersion !== currentVersion) {
+        return res.status(409).json({ error: 'League data changed since you loaded it. Refresh and try again.', version: currentVersion })
+      }
+
+      if (!session.isAdmin && existing[0]) {
+        const currentState = existing[0].state ?? {}
+        if (JSON.stringify(body.state.prospects ?? null) !== JSON.stringify(currentState.prospects ?? null)) {
+          return res.status(403).json({ error: 'Only admins can modify the prospect list.' })
+        }
+      }
+
       const rows = await sql`
         INSERT INTO league_state (id, state, version, updated_by, updated_at)
-        VALUES (${LEAGUE_ID}, ${JSON.stringify(body.state)}::jsonb, 1, ${session.username}, now())
+        VALUES (${LEAGUE_ID}, ${serialized}::jsonb, 1, ${session.username}, now())
         ON CONFLICT (id) DO UPDATE
           SET state = EXCLUDED.state,
               version = league_state.version + 1,
               updated_by = EXCLUDED.updated_by,
               updated_at = now()
+          WHERE league_state.version = ${baseVersion}
         RETURNING version
       `
+      if (!rows[0]) {
+        return res.status(409).json({ error: 'League data changed since you loaded it. Refresh and try again.' })
+      }
       version = Number(rows[0].version)
     } catch {
       return res.status(500).json({ error: 'Could not save league data. Try again shortly.' })

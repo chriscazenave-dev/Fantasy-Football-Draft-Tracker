@@ -6,7 +6,7 @@ export async function fetchLeagueState() {
   return res.json() // { state, version }
 }
 
-export async function saveLeagueState(state) {
+export async function saveLeagueState(state, baseVersion) {
   const token = getToken()
   const res = await fetch('/api/league-state', {
     method: 'PUT',
@@ -14,10 +14,14 @@ export async function saveLeagueState(state) {
       'Content-Type': 'application/json',
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
     },
-    body: JSON.stringify({ state }),
+    body: JSON.stringify({ state, baseVersion }),
   })
   const data = await res.json().catch(() => null)
-  if (!res.ok) throw new Error(data?.error || 'Could not save league data.')
+  if (!res.ok) {
+    const err = new Error(data?.error || 'Could not save league data.')
+    err.status = res.status
+    throw err
+  }
   return data // { version }
 }
 
