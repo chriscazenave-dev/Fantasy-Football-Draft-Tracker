@@ -317,6 +317,11 @@ function App({ session, onLogout, onRequestLogin }) {
     setActiveTab('prospects')
   }
 
+  const selectTab = tabId => {
+    setPaperRookieId(null)
+    setActiveTab(tabId)
+  }
+
   const openRookieDossier = prospectId => {
     setPaperRookieId(prospectId)
     setActiveTab('home')
@@ -672,7 +677,7 @@ function App({ session, onLogout, onRequestLogin }) {
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
+                  onClick={() => selectTab(tab.id)}
                   className={`flex items-center gap-2 px-4 py-1.5 text-sm font-medium rounded-md transition-all duration-200 ${
                     activeTab === tab.id
                       ? 'bg-white text-black shadow-sm ring-1 ring-black/5'
@@ -723,7 +728,7 @@ function App({ session, onLogout, onRequestLogin }) {
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
+              onClick={() => selectTab(tab.id)}
               className={`flex flex-col items-center justify-center gap-0.5 flex-1 py-2.5 transition-colors duration-200 ${
                 activeTab === tab.id
                   ? 'text-black'
