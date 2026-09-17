@@ -69,9 +69,12 @@ export function verifyPassword(password, stored) {
   return safeEqual(candidate, hash)
 }
 
-export async function readJsonBody(req) {
+export const MAX_BODY_BYTES = 100 * 1024
+
+export async function readJsonBody(req, maxBytes = MAX_BODY_BYTES) {
   if (req.body && typeof req.body === 'object') return req.body
   if (typeof req.body === 'string') {
+    if (Buffer.byteLength(req.body, 'utf8') > maxBytes) return {}
     try {
       return JSON.parse(req.body)
     } catch {
@@ -79,7 +82,15 @@ export async function readJsonBody(req) {
     }
   }
   const chunks = []
-  for await (const chunk of req) chunks.push(chunk)
+  let total = 0
+  for await (const chunk of req) {
+    total += chunk.length
+    if (total > maxBytes) {
+      req.destroy()
+      return {}
+    }
+    chunks.push(chunk)
+  }
   if (chunks.length === 0) return {}
   try {
     return JSON.parse(Buffer.concat(chunks).toString('utf8'))

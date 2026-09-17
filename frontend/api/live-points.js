@@ -4,6 +4,10 @@ import { readJsonBody } from './_authLib.js'
 const SLEEPER = 'https://api.sleeper.app/v1'
 const PLAYERS_TTL_MS = 6 * 60 * 60 * 1000
 const STATS_TTL_MS = 60 * 1000
+const MAX_PLAYERS = 300
+const MAX_STATS_CACHE_ENTRIES = 32
+const MIN_SEASON = 2009
+const MAX_WEEK = 18
 
 let playersCache = null
 let playersCacheAt = 0
@@ -47,14 +51,28 @@ async function getPlayersIndex() {
   return index
 }
 
+function isValidSeason(season) {
+  const n = Number(season)
+  return Number.isInteger(n) && n >= MIN_SEASON && n <= new Date().getFullYear() + 1
+}
+
+function isValidWeek(week) {
+  const n = Number(week)
+  return Number.isInteger(n) && n >= 1 && n <= MAX_WEEK
+}
+
 async function getStats(season, week) {
-  const cacheKey = `${season}|${week}`
+  const cacheKey = `${Number(season)}|${Number(week)}`
   const cached = statsCache.get(cacheKey)
   if (cached && Date.now() - cached.at < STATS_TTL_MS) return cached.data
-  const resp = await fetch(`${SLEEPER}/stats/nfl/regular/${season}/${week}`)
+  const resp = await fetch(`${SLEEPER}/stats/nfl/regular/${Number(season)}/${Number(week)}`)
   if (!resp.ok) throw new Error('sleeper stats fetch failed')
   const data = await resp.json()
+  statsCache.delete(cacheKey)
   statsCache.set(cacheKey, { data, at: Date.now() })
+  while (statsCache.size > MAX_STATS_CACHE_ENTRIES) {
+    statsCache.delete(statsCache.keys().next().value)
+  }
   return data
 }
 
@@ -78,9 +96,15 @@ export default async function handler(req, res) {
   if (players.length === 0) {
     return res.status(400).json({ error: 'Provide a players array of { name, position }.' })
   }
+  if (players.length > MAX_PLAYERS) {
+    return res.status(400).json({ error: `players array is limited to ${MAX_PLAYERS} entries.` })
+  }
 
   try {
     let { season, week } = body
+    if ((season != null && season !== '' && !isValidSeason(season)) || (week != null && week !== '' && !isValidWeek(week))) {
+      return res.status(400).json({ error: 'Invalid season or week.' })
+    }
     if (!season || !week) {
       const stateResp = await fetch(`${SLEEPER}/state/nfl`)
       const state = stateResp.ok ? await stateResp.json() : {}
