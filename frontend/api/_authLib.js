@@ -69,6 +69,92 @@ export function verifyPassword(password, stored) {
   return safeEqual(candidate, hash)
 }
 
+// Hash of an unguessable random value, used to equalize response timing
+// when the username does not exist.
+const DUMMY_PASSWORD_HASH = hashPassword(crypto.randomBytes(32).toString('hex'))
+
+export function verifyPasswordOrDummy(password, stored) {
+  if (stored) return verifyPassword(password, stored)
+  verifyPassword(password, DUMMY_PASSWORD_HASH)
+  return false
+}
+
+const THROTTLE_WINDOW_SECONDS = 15 * 60
+const LOCKOUT_SECONDS = 15 * 60
+const MAX_FAILURES_PER_USERNAME = 5
+const MAX_FAILURES_PER_IP = 20
+
+export function getClientIp(req) {
+  const forwarded = req.headers['x-forwarded-for']
+  if (typeof forwarded === 'string' && forwarded.length > 0) {
+    return forwarded.split(',')[0].trim()
+  }
+  return req.socket?.remoteAddress ?? 'unknown'
+}
+
+export async function ensureThrottleTable(sql) {
+  await sql`
+    CREATE TABLE IF NOT EXISTS draft_tracker_login_throttle (
+      key TEXT PRIMARY KEY,
+      fail_count INTEGER NOT NULL DEFAULT 0,
+      window_start TIMESTAMPTZ NOT NULL DEFAULT now(),
+      locked_until TIMESTAMPTZ
+    )
+  `
+}
+
+export async function isThrottled(sql, username, ip) {
+  const rows = await sql`
+    SELECT key, fail_count, window_start, locked_until
+    FROM draft_tracker_login_throttle
+    WHERE key IN (${`user:${username}`}, ${`ip:${ip}`})
+  `
+  const now = Date.now()
+  for (const row of rows) {
+    if (row.locked_until && new Date(row.locked_until).getTime() > now) return true
+    const windowFresh = new Date(row.window_start).getTime() > now - THROTTLE_WINDOW_SECONDS * 1000
+    const limit = row.key.startsWith('user:') ? MAX_FAILURES_PER_USERNAME : MAX_FAILURES_PER_IP
+    if (windowFresh && row.fail_count >= limit) return true
+  }
+  return false
+}
+
+export async function recordLoginFailure(sql, username, ip) {
+  for (const [key, limit] of [
+    [`user:${username}`, MAX_FAILURES_PER_USERNAME],
+    [`ip:${ip}`, MAX_FAILURES_PER_IP],
+  ]) {
+    await sql`
+      INSERT INTO draft_tracker_login_throttle (key, fail_count, window_start, locked_until)
+      VALUES (${key}, 1, now(), NULL)
+      ON CONFLICT (key) DO UPDATE SET
+        fail_count = CASE
+          WHEN draft_tracker_login_throttle.window_start < now() - make_interval(secs => ${THROTTLE_WINDOW_SECONDS})
+          THEN 1
+          ELSE draft_tracker_login_throttle.fail_count + 1
+        END,
+        window_start = CASE
+          WHEN draft_tracker_login_throttle.window_start < now() - make_interval(secs => ${THROTTLE_WINDOW_SECONDS})
+          THEN now()
+          ELSE draft_tracker_login_throttle.window_start
+        END,
+        locked_until = CASE
+          WHEN (CASE
+            WHEN draft_tracker_login_throttle.window_start < now() - make_interval(secs => ${THROTTLE_WINDOW_SECONDS})
+            THEN 1
+            ELSE draft_tracker_login_throttle.fail_count + 1
+          END) >= ${limit}
+          THEN now() + make_interval(secs => ${LOCKOUT_SECONDS})
+          ELSE NULL
+        END
+    `
+  }
+}
+
+export async function clearLoginFailures(sql, username) {
+  await sql`DELETE FROM draft_tracker_login_throttle WHERE key = ${`user:${username}`}`
+}
+
 export async function readJsonBody(req) {
   if (req.body && typeof req.body === 'object') return req.body
   if (typeof req.body === 'string') {
