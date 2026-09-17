@@ -3,6 +3,34 @@ import { neon } from '@neondatabase/serverless'
 
 export const TOKEN_TTL_SECONDS = 60 * 60 * 24 * 7 // 7 days
 
+export const SESSION_COOKIE = 'dynasty_session'
+
+export function getTokenFromRequest(req) {
+  const header = String(req.headers.cookie ?? '')
+  for (const part of header.split(';')) {
+    const eq = part.indexOf('=')
+    if (eq === -1) continue
+    if (part.slice(0, eq).trim() !== SESSION_COOKIE) continue
+    try {
+      return decodeURIComponent(part.slice(eq + 1).trim())
+    } catch {
+      return null
+    }
+  }
+  return null
+}
+
+export function setSessionCookie(res, token) {
+  res.setHeader(
+    'Set-Cookie',
+    `${SESSION_COOKIE}=${encodeURIComponent(token)}; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age=${TOKEN_TTL_SECONDS}`
+  )
+}
+
+export function clearSessionCookie(res) {
+  res.setHeader('Set-Cookie', `${SESSION_COOKIE}=; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age=0`)
+}
+
 export function getDb() {
   const url = process.env.DATABASE_URL
   if (!url) return null

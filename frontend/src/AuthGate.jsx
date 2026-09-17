@@ -1,12 +1,22 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import App from './App'
 import Login from './Login'
 import ChangePassword from './ChangePassword'
-import { getSession, clearToken } from './auth'
+import { fetchSession, logout } from './auth'
 
 export default function AuthGate() {
-  const [session, setSession] = useState(() => getSession())
+  const [session, setSession] = useState(null)
   const [showLogin, setShowLogin] = useState(false)
+
+  useEffect(() => {
+    let active = true
+    fetchSession().then((s) => {
+      if (active && s) setSession(s)
+    })
+    return () => {
+      active = false
+    }
+  }, [])
 
   if (session?.mustChangePassword) {
     return <ChangePassword session={session} onSuccess={setSession} />
@@ -22,7 +32,7 @@ export default function AuthGate() {
   }
 
   const handleLogout = () => {
-    clearToken()
+    logout()
     setSession(null)
   }
 
