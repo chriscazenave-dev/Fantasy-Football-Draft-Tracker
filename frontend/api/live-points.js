@@ -47,6 +47,12 @@ async function getPlayersIndex() {
   return index
 }
 
+function toBoundedInt(value, min, max) {
+  const n = Number(value)
+  if (!Number.isInteger(n) || n < min || n > max) return null
+  return n
+}
+
 async function getStats(season, week) {
   const cacheKey = `${season}|${week}`
   const cached = statsCache.get(cacheKey)
@@ -79,20 +85,33 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Provide a players array of { name, position }.' })
   }
 
+  if (body.season != null && toBoundedInt(body.season, 2000, 2100) === null) {
+    return res.status(400).json({ error: 'season must be a 4-digit year.' })
+  }
+  if (body.week != null && toBoundedInt(body.week, 1, 18) === null) {
+    return res.status(400).json({ error: 'week must be an integer between 1 and 18.' })
+  }
+
   try {
-    let { season, week } = body
+    let season = toBoundedInt(body.season, 2000, 2100)
+    let week = toBoundedInt(body.week, 1, 18)
     if (!season || !week) {
       const stateResp = await fetch(`${SLEEPER}/state/nfl`)
       const state = stateResp.ok ? await stateResp.json() : {}
       const inSeason = state.season_type === 'regular' && Number(state.week) >= 1
       if (inSeason) {
-        season = season || state.season
+        season = season || Number(state.season)
         week = week || Math.min(18, Number(state.week))
       } else {
         // Off-season: show the final week of the most recent completed season
         season = season || (Number(state.season || new Date().getFullYear()) - 1)
         week = week || 18
       }
+    }
+    season = toBoundedInt(season, 2000, 2100)
+    week = toBoundedInt(week, 1, 18)
+    if (!season || !week) {
+      return res.status(502).json({ error: 'Could not determine a valid season/week.' })
     }
 
     const [index, stats] = await Promise.all([getPlayersIndex(), getStats(season, week)])
@@ -106,7 +125,7 @@ export default async function handler(req, res) {
     }
 
     res.setHeader('Cache-Control', 's-maxage=30, stale-while-revalidate=60')
-    return res.status(200).json({ season: Number(season), week: Number(week), scoring: 'ppr', points })
+    return res.status(200).json({ season, week, scoring: 'ppr', points })
   } catch {
     return res.status(502).json({ error: 'Could not load live stats from Sleeper. Try again shortly.' })
   }
