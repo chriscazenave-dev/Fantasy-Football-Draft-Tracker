@@ -69,17 +69,37 @@ export function verifyPassword(password, stored) {
   return safeEqual(candidate, hash)
 }
 
-export async function readJsonBody(req) {
+export const MAX_BODY_BYTES = 1024 * 1024 // 1 MB
+
+export class BodyTooLargeError extends Error {
+  constructor() {
+    super('Request body too large')
+    this.name = 'BodyTooLargeError'
+  }
+}
+
+export async function readJsonBody(req, maxBytes = MAX_BODY_BYTES) {
   if (req.body && typeof req.body === 'object') return req.body
   if (typeof req.body === 'string') {
+    if (Buffer.byteLength(req.body, 'utf8') > maxBytes) throw new BodyTooLargeError()
     try {
       return JSON.parse(req.body)
     } catch {
       return {}
     }
   }
+  const contentLength = Number(req.headers?.['content-length'])
+  if (Number.isFinite(contentLength) && contentLength > maxBytes) throw new BodyTooLargeError()
   const chunks = []
-  for await (const chunk of req) chunks.push(chunk)
+  let received = 0
+  for await (const chunk of req) {
+    received += chunk.length
+    if (received > maxBytes) {
+      if (typeof req.destroy === 'function') req.destroy()
+      throw new BodyTooLargeError()
+    }
+    chunks.push(chunk)
+  }
   if (chunks.length === 0) return {}
   try {
     return JSON.parse(Buffer.concat(chunks).toString('utf8'))
