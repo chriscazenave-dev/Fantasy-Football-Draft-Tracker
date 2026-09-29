@@ -713,6 +713,7 @@ function App({ session, onLogout, onRequestLogin }) {
                 <span>Sign in</span>
               </button>
             )}
+            <img src="/espn-logo.svg" alt="ESPN" className="h-5 md:h-6 w-auto" />
           </div>
         </div>
       </header>
