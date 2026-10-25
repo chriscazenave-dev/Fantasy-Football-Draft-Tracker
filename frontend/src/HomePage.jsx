@@ -218,33 +218,62 @@ function FireworksCanvas() {
     }
   }, [])
 
-  return <canvas ref={canvasRef} className="pointer-events-none absolute inset-0 h-full w-full" aria-hidden="true" />
+  return <canvas ref={canvasRef} className="pointer-events-none fixed inset-0 h-full w-full" aria-hidden="true" />
 }
 
+let emilyWelcomeDismissed = false
+
 function EmilyWelcome({ onClose }) {
+  const dialogRef = useRef(null)
+
   useEffect(() => {
-    const closeOnEscape = event => {
-      if (event.key === 'Escape') onClose()
-    }
+    const dialog = dialogRef.current
+    const previouslyFocused = document.activeElement
     const previousOverflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
-    window.addEventListener('keydown', closeOnEscape)
+    dialog?.querySelector('button')?.focus()
+
+    const handleKeydown = event => {
+      if (event.key === 'Escape') {
+        onClose()
+        return
+      }
+      if (event.key !== 'Tab' || !dialog) return
+      const focusable = Array.from(dialog.querySelectorAll('button'))
+      if (focusable.length === 0) return
+      const first = focusable[0]
+      const last = focusable[focusable.length - 1]
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      } else if (!dialog.contains(document.activeElement)) {
+        event.preventDefault()
+        first.focus()
+      }
+    }
+
+    window.addEventListener('keydown', handleKeydown)
     return () => {
       document.body.style.overflow = previousOverflow
-      window.removeEventListener('keydown', closeOnEscape)
+      window.removeEventListener('keydown', handleKeydown)
+      previouslyFocused?.focus?.()
     }
   }, [onClose])
 
   return (
     <div
-      className="emily-overlay fixed inset-0 z-50 flex items-center justify-center overflow-hidden p-4"
+      ref={dialogRef}
+      className="emily-overlay fixed inset-0 z-50 overflow-y-auto"
       role="dialog"
       aria-modal="true"
       aria-labelledby="emily-welcome-title"
     >
       <FireworksCanvas />
 
-      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div className="pointer-events-none fixed inset-0 overflow-hidden" aria-hidden="true">
         {CONFETTI_PIECES.map(piece => (
           <span
             key={piece.id}
@@ -270,33 +299,35 @@ function EmilyWelcome({ onClose }) {
         ))}
       </div>
 
-      <div className="emily-card animate-emily-entrance relative w-full max-w-xl px-8 py-12 text-center text-white sm:px-14 sm:py-14">
-        <button
-          type="button"
-          onClick={onClose}
-          className="absolute right-3 top-3 rounded-full border-2 border-white/60 bg-black/30 p-2 text-white transition duration-300 hover:rotate-90 hover:border-white hover:bg-white hover:text-[#1b1038] focus:outline-none focus:ring-2 focus:ring-fuchsia-300"
-          aria-label="Close welcome message"
-        >
-          <X size={22} strokeWidth={3} />
-        </button>
+      <div className="flex min-h-full items-center justify-center p-4">
+        <div className="emily-card animate-emily-entrance relative w-full max-w-xl px-8 py-10 text-center text-white sm:px-14 sm:py-14">
+          <button
+            type="button"
+            onClick={onClose}
+            className="absolute right-3 top-3 rounded-full border-2 border-white/60 bg-black/30 p-2 text-white transition duration-300 hover:rotate-90 hover:border-white hover:bg-white hover:text-[#1b1038] focus:outline-none focus:ring-2 focus:ring-fuchsia-300"
+            aria-label="Close welcome message"
+          >
+            <X size={22} strokeWidth={3} />
+          </button>
 
-        <p className="emily-kicker mb-5 text-[11px] font-black uppercase tracking-[0.45em] text-cyan-200">Special Edition</p>
-        <h2 id="emily-welcome-title" className="emily-welcome-title text-6xl leading-none sm:text-8xl">
-          Hey Emily!
-        </h2>
-        <p className="emily-subtitle mt-6 text-lg uppercase tracking-[0.2em] text-fuchsia-200 sm:text-xl">
-          Welcome to The Madness Times
-        </p>
-        <div className="mx-auto mt-7 h-px w-40 bg-gradient-to-r from-transparent via-fuchsia-300 to-transparent" />
-        <p className="mt-6 text-sm text-white/75">Today&rsquo;s paper is waiting behind the fireworks.</p>
-        <button
-          type="button"
-          onClick={onClose}
-          className="emily-cta mt-7 inline-flex items-center gap-2 border-2 border-amber-300 bg-amber-300 px-7 py-3 text-xs font-black uppercase tracking-[0.3em] text-[#1b1038] transition hover:bg-transparent hover:text-amber-200"
-        >
-          Read the paper
-          <ChevronRight size={16} strokeWidth={3} />
-        </button>
+          <p className="emily-kicker mb-5 text-[11px] font-black uppercase tracking-[0.45em] text-cyan-200">Special Edition</p>
+          <h2 id="emily-welcome-title" className="emily-welcome-title text-6xl leading-none sm:text-8xl">
+            Hey Emily!
+          </h2>
+          <p className="emily-subtitle mt-6 text-lg uppercase tracking-[0.2em] text-fuchsia-200 sm:text-xl">
+            Welcome to The Madness Times
+          </p>
+          <div className="mx-auto mt-7 h-px w-40 bg-gradient-to-r from-transparent via-fuchsia-300 to-transparent" />
+          <p className="mt-6 text-sm text-white/75">Today&rsquo;s paper is waiting behind the fireworks.</p>
+          <button
+            type="button"
+            onClick={onClose}
+            className="emily-cta mt-7 inline-flex items-center gap-2 border-2 border-amber-300 bg-amber-300 px-7 py-3 text-xs font-black uppercase tracking-[0.3em] text-[#1b1038] transition hover:bg-transparent hover:text-amber-200"
+          >
+            Read the paper
+            <ChevronRight size={16} strokeWidth={3} />
+          </button>
+        </div>
       </div>
     </div>
   )
@@ -363,7 +394,7 @@ function BoardRow({ entry, onSelect }) {
 }
 
 export default function HomePage({ dateline, initialRookieId, onRookieViewed }) {
-  const [showEmilyWelcome, setShowEmilyWelcome] = useState(true)
+  const [showEmilyWelcome, setShowEmilyWelcome] = useState(() => !emilyWelcomeDismissed && !initialRookieId)
   const [selectedTeam, setSelectedTeam] = useState(null)
   const [localRookieId, setLocalRookieId] = useState(null)
   const [positionFilter, setPositionFilter] = useState('All')
@@ -419,7 +450,14 @@ export default function HomePage({ dateline, initialRookieId, onRookieViewed }) 
 
   return (
     <div className="max-w-5xl mx-auto font-serif text-[#2b2418]">
-      {showEmilyWelcome && <EmilyWelcome onClose={() => setShowEmilyWelcome(false)} />}
+      {showEmilyWelcome && (
+        <EmilyWelcome
+          onClose={() => {
+            emilyWelcomeDismissed = true
+            setShowEmilyWelcome(false)
+          }}
+        />
+      )}
 
       {/* Masthead */}
       <div className="border-y-4 border-double border-[#5a4a32] py-6 text-center bg-[#f3ecdb] px-4">
