@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react'
-import { Trophy, Medal, ArrowLeft, TrendingUp, TrendingDown, ChevronRight } from 'lucide-react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { Trophy, Medal, ArrowLeft, TrendingUp, TrendingDown, ChevronRight, X } from 'lucide-react'
 import { POWER_RANKINGS, TEAM_WRITEUPS } from './paperContent'
 import { ROOKIE_PROSPECTS } from './leagueData'
 import { ROOKIE_DETAILS } from './rookieDetailData'
@@ -80,6 +80,259 @@ const ARTICLES = [
   },
 ]
 
+const CONFETTI_COLORS = ['#fde047', '#f472b6', '#22d3ee', '#a78bfa', '#4ade80', '#fb923c', '#f9fafb']
+
+const CONFETTI_PIECES = Array.from({ length: 56 }, (_, i) => ({
+  id: i,
+  left: `${(i * 37) % 100}%`,
+  delay: `${((i * 53) % 400) / 100}s`,
+  duration: `${3.4 + ((i * 29) % 260) / 100}s`,
+  width: `${6 + ((i * 7) % 7)}px`,
+  height: `${10 + ((i * 11) % 9)}px`,
+  color: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
+  radius: i % 3 === 0 ? '9999px' : '2px',
+}))
+
+const SPARKLES = Array.from({ length: 28 }, (_, i) => ({
+  id: i,
+  left: `${(i * 41 + 7) % 100}%`,
+  top: `${(i * 23 + 11) % 100}%`,
+  delay: `${((i * 71) % 300) / 100}s`,
+  size: `${8 + ((i * 13) % 12)}px`,
+}))
+
+const FIREWORK_COLORS = ['#fde047', '#f472b6', '#22d3ee', '#a78bfa', '#4ade80', '#fb923c', '#ffffff']
+
+function FireworksCanvas() {
+  const canvasRef = useRef(null)
+
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return undefined
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return undefined
+
+    const ctx = canvas.getContext('2d')
+    let width = 0
+    let height = 0
+    let frame = 0
+    let lastLaunch = 0
+    let rockets = []
+    let particles = []
+
+    const resize = () => {
+      const dpr = window.devicePixelRatio || 1
+      width = window.innerWidth
+      height = window.innerHeight
+      canvas.width = width * dpr
+      canvas.height = height * dpr
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+    }
+
+    const pickColor = () => FIREWORK_COLORS[Math.floor(Math.random() * FIREWORK_COLORS.length)]
+
+    const launch = () => {
+      rockets.push({
+        x: width * (0.1 + Math.random() * 0.8),
+        y: height,
+        vx: (Math.random() - 0.5) * 2,
+        vy: -(height * 0.011 + Math.random() * height * 0.004),
+        targetY: height * (0.12 + Math.random() * 0.38),
+        color: pickColor(),
+      })
+    }
+
+    const explode = rocket => {
+      const count = 70 + Math.floor(Math.random() * 50)
+      const secondColor = pickColor()
+      for (let i = 0; i < count; i += 1) {
+        const angle = (Math.PI * 2 * i) / count + Math.random() * 0.2
+        const speed = 1.5 + Math.random() * 5.5
+        particles.push({
+          x: rocket.x,
+          y: rocket.y,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+          life: 1,
+          decay: 0.01 + Math.random() * 0.012,
+          size: 1.6 + Math.random() * 1.8,
+          color: i % 2 === 0 ? rocket.color : secondColor,
+        })
+      }
+    }
+
+    const tick = now => {
+      ctx.globalCompositeOperation = 'destination-out'
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.22)'
+      ctx.fillRect(0, 0, width, height)
+      ctx.globalCompositeOperation = 'lighter'
+
+      if (now - lastLaunch > 380) {
+        launch()
+        if (Math.random() > 0.55) launch()
+        lastLaunch = now
+      }
+
+      rockets = rockets.filter(rocket => {
+        rocket.x += rocket.vx
+        rocket.y += rocket.vy
+        rocket.vy += 0.14
+        ctx.globalAlpha = 1
+        ctx.fillStyle = rocket.color
+        ctx.beginPath()
+        ctx.arc(rocket.x, rocket.y, 2.4, 0, Math.PI * 2)
+        ctx.fill()
+        if (rocket.vy >= -1.5 || rocket.y <= rocket.targetY) {
+          explode(rocket)
+          return false
+        }
+        return true
+      })
+
+      particles = particles.filter(particle => {
+        particle.x += particle.vx
+        particle.y += particle.vy
+        particle.vy += 0.05
+        particle.vx *= 0.985
+        particle.vy *= 0.985
+        particle.life -= particle.decay
+        if (particle.life <= 0) return false
+        ctx.globalAlpha = Math.max(particle.life, 0)
+        ctx.fillStyle = particle.color
+        ctx.beginPath()
+        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
+        ctx.fill()
+        return true
+      })
+
+      ctx.globalAlpha = 1
+      frame = window.requestAnimationFrame(tick)
+    }
+
+    resize()
+    window.addEventListener('resize', resize)
+    frame = window.requestAnimationFrame(tick)
+
+    return () => {
+      window.cancelAnimationFrame(frame)
+      window.removeEventListener('resize', resize)
+    }
+  }, [])
+
+  return <canvas ref={canvasRef} className="pointer-events-none fixed inset-0 h-full w-full" aria-hidden="true" />
+}
+
+let emilyWelcomeDismissed = false
+
+function EmilyWelcome({ onClose }) {
+  const dialogRef = useRef(null)
+
+  useEffect(() => {
+    const dialog = dialogRef.current
+    const previouslyFocused = document.activeElement
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    dialog?.querySelector('button')?.focus()
+
+    const handleKeydown = event => {
+      if (event.key === 'Escape') {
+        onClose()
+        return
+      }
+      if (event.key !== 'Tab' || !dialog) return
+      const focusable = Array.from(dialog.querySelectorAll('button'))
+      if (focusable.length === 0) return
+      const first = focusable[0]
+      const last = focusable[focusable.length - 1]
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      } else if (!dialog.contains(document.activeElement)) {
+        event.preventDefault()
+        first.focus()
+      }
+    }
+
+    window.addEventListener('keydown', handleKeydown)
+    return () => {
+      document.body.style.overflow = previousOverflow
+      window.removeEventListener('keydown', handleKeydown)
+      previouslyFocused?.focus?.()
+    }
+  }, [onClose])
+
+  return (
+    <div
+      ref={dialogRef}
+      className="emily-overlay fixed inset-0 z-50 overflow-y-auto"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="emily-welcome-title"
+    >
+      <FireworksCanvas />
+
+      <div className="pointer-events-none fixed inset-0 overflow-hidden" aria-hidden="true">
+        {CONFETTI_PIECES.map(piece => (
+          <span
+            key={piece.id}
+            className="animate-confetti absolute top-0 block"
+            style={{
+              left: piece.left,
+              width: piece.width,
+              height: piece.height,
+              backgroundColor: piece.color,
+              borderRadius: piece.radius,
+              animationDelay: piece.delay,
+              animationDuration: piece.duration,
+              animationIterationCount: 'infinite',
+            }}
+          />
+        ))}
+        {SPARKLES.map(sparkle => (
+          <span
+            key={sparkle.id}
+            className="emily-sparkle"
+            style={{ left: sparkle.left, top: sparkle.top, width: sparkle.size, height: sparkle.size, animationDelay: sparkle.delay }}
+          />
+        ))}
+      </div>
+
+      <div className="flex min-h-full items-center justify-center p-4">
+        <div className="emily-card animate-emily-entrance relative w-full max-w-xl px-8 py-10 text-center text-white sm:px-14 sm:py-14">
+          <button
+            type="button"
+            onClick={onClose}
+            className="absolute right-3 top-3 rounded-full border-2 border-white/60 bg-black/30 p-2 text-white transition duration-300 hover:rotate-90 hover:border-white hover:bg-white hover:text-[#1b1038] focus:outline-none focus:ring-2 focus:ring-fuchsia-300"
+            aria-label="Close welcome message"
+          >
+            <X size={22} strokeWidth={3} />
+          </button>
+
+          <p className="emily-kicker mb-5 text-[11px] font-black uppercase tracking-[0.45em] text-cyan-200">Special Edition</p>
+          <h2 id="emily-welcome-title" className="emily-welcome-title text-6xl leading-none sm:text-8xl">
+            Hey Emily!
+          </h2>
+          <p className="emily-subtitle mt-6 text-lg uppercase tracking-[0.2em] text-fuchsia-200 sm:text-xl">
+            Welcome to The Madness Times
+          </p>
+          <div className="mx-auto mt-7 h-px w-40 bg-gradient-to-r from-transparent via-fuchsia-300 to-transparent" />
+          <p className="mt-6 text-sm text-white/75">Today&rsquo;s paper is waiting behind the fireworks.</p>
+          <button
+            type="button"
+            onClick={onClose}
+            className="emily-cta mt-7 inline-flex items-center gap-2 border-2 border-amber-300 bg-amber-300 px-7 py-3 text-xs font-black uppercase tracking-[0.3em] text-[#1b1038] transition hover:bg-transparent hover:text-amber-200"
+          >
+            Read the paper
+            <ChevronRight size={16} strokeWidth={3} />
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function TeamWriteup({ team, onBack }) {
   const writeup = TEAM_WRITEUPS[team.team]
   return (
@@ -141,6 +394,7 @@ function BoardRow({ entry, onSelect }) {
 }
 
 export default function HomePage({ dateline, initialRookieId, onRookieViewed }) {
+  const [showEmilyWelcome, setShowEmilyWelcome] = useState(() => !emilyWelcomeDismissed && !initialRookieId)
   const [selectedTeam, setSelectedTeam] = useState(null)
   const [localRookieId, setLocalRookieId] = useState(null)
   const [positionFilter, setPositionFilter] = useState('All')
@@ -196,6 +450,15 @@ export default function HomePage({ dateline, initialRookieId, onRookieViewed }) 
 
   return (
     <div className="max-w-5xl mx-auto font-serif text-[#2b2418]">
+      {showEmilyWelcome && (
+        <EmilyWelcome
+          onClose={() => {
+            emilyWelcomeDismissed = true
+            setShowEmilyWelcome(false)
+          }}
+        />
+      )}
+
       {/* Masthead */}
       <div className="border-y-4 border-double border-[#5a4a32] py-6 text-center bg-[#f3ecdb] px-4">
         <p className="text-[10px] tracking-[0.35em] uppercase text-[#8a7a5c] mb-2">Est. 2025 · All the takes fit to print</p>
