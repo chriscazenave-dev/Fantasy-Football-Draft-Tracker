@@ -82,6 +82,108 @@
   animation: confetti-fall linear forwards;
 }
 
+@keyframes emily-entrance {
+  0% { transform: scale(0.4) rotate(-6deg); opacity: 0; }
+  65% { transform: scale(1.05) rotate(1.5deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+
+@keyframes emily-neon {
+  0%, 100% {
+    text-shadow:
+      0 0 6px #fff,
+      0 0 14px #f0abfc,
+      0 0 30px #e879f9,
+      0 0 60px #c026d3,
+      0 0 90px #c026d3;
+  }
+  50% {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 24px #fde68a,
+      0 0 46px #fbbf24,
+      0 0 80px #f59e0b,
+      0 0 120px #f59e0b;
+  }
+}
+
+@keyframes emily-border-glow {
+  0%, 100% { box-shadow: 0 0 24px rgba(232, 121, 249, 0.6), 0 0 70px rgba(192, 38, 211, 0.45), inset 0 0 30px rgba(232, 121, 249, 0.15); }
+  50% { box-shadow: 0 0 30px rgba(251, 191, 36, 0.7), 0 0 90px rgba(245, 158, 11, 0.45), inset 0 0 36px rgba(251, 191, 36, 0.15); }
+}
+
+@keyframes emily-twinkle {
+  0%, 100% { transform: scale(0.2) rotate(0deg); opacity: 0; }
+  50% { transform: scale(1) rotate(45deg); opacity: 1; }
+}
+
+@keyframes emily-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.emily-overlay {
+  background:
+    radial-gradient(ellipse at 50% 120%, rgba(192, 38, 211, 0.35), transparent 60%),
+    radial-gradient(ellipse at 20% 0%, rgba(34, 211, 238, 0.25), transparent 50%),
+    radial-gradient(ellipse at 85% 10%, rgba(251, 191, 36, 0.2), transparent 45%),
+    linear-gradient(180deg, #0b0620 0%, #1b1038 55%, #2a1150 100%);
+}
+
+.animate-emily-entrance {
+  animation: emily-entrance 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.emily-card {
+  border: 3px solid rgba(240, 171, 252, 0.8);
+  border-radius: 1.25rem;
+  background: rgba(14, 7, 36, 0.78);
+  backdrop-filter: blur(10px);
+  animation: emily-border-glow 2.6s ease-in-out infinite;
+}
+
+.emily-welcome-title {
+  font-family: "Pacifico", "Brush Script MT", "Segoe Script", cursive;
+  font-weight: 400;
+  color: #fff;
+  padding: 0.15em 0.1em;
+  animation: emily-neon 2.6s ease-in-out infinite, emily-float 3.5s ease-in-out infinite;
+}
+
+.emily-subtitle,
+.emily-kicker,
+.emily-cta {
+  font-family: "Bungee", "Impact", "Arial Black", sans-serif;
+}
+
+.emily-subtitle {
+  text-shadow: 0 0 12px rgba(240, 171, 252, 0.8);
+}
+
+.emily-sparkle {
+  position: absolute;
+  display: block;
+  background: #fff;
+  clip-path: polygon(50% 0%, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0% 50%, 39% 39%);
+  filter: drop-shadow(0 0 6px #fde68a);
+  opacity: 0;
+  animation: emily-twinkle 2.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-emily-entrance,
+  .emily-card,
+  .emily-welcome-title,
+  .emily-sparkle,
+  .emily-overlay .animate-confetti {
+    animation: none;
+  }
+
+  .emily-sparkle {
+    opacity: 0.7;
+  }
+}
+
 body {
   background-color: #faf8f3;
   color: #211d16;
